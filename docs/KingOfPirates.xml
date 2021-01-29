@@ -1,1 +1,220 @@
-<mxfile host="Electron" modified="2021-01-29T18:16:22.724Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/13.9.9 Chrome/85.0.4183.121 Electron/10.1.5 Safari/537.36" etag="JaSnX4m_Td-GtkuECKpm" version="13.9.9" type="device" pages="3"><diagram id="7PDCJq6jiSmbugGUtCLq" name="Idee">3VpZU+M4EP41qWEf2PKRi0cSrqoBhoXd2qp9a9vC1mBbHlkGwq/fblnOZTmTqSVsQhWklHbblr4+9HUrPX+avV5KKJIbEbG05znRa88/63meO/a8Hv050cxIvEYSSx4Z2ULwwN+YETpGWvGIlSuKSohU8WJVGIo8Z6FakYGU4mVV7VGkq28tIDZvdBaChxBS1lL7m0cqMdKhs6R+xXicNK/2misZNNpGUCYQiZclkX/e86dSCFWPstcpSwm+Bpj6vouOq/OZSZarbW6YnJ9WP9xJ+M9ZchV8z9Xrt+n4eGjmpmbNilmEAJivQqpExCKH9HwhnUhR5RGjpzr4baFzLUSBQheF35lSM2NNqJRAUaKy1Fxtz9wsphSVDNmG6TYuADJmaoPeoNajtSy9wOByyUTGlJyhgmQpKP68amwwPhPP9Rao4sAA+wsge58UZc/fK5jNc58hrcybTmXIC3x3LHreMMWlTAKJo5hGx6h6IeQbZ5Lbr/amfm88JgxFWbKIAMZMBvhR5ZRyUshbdl212kvCFXsoQKP9gilySws9M6nY60ZIzdWR8XSTX4+HJtm8LCWrgZElS3lq5OzICP3DcnVvS1d398rTvZanT7Uz2rx4AjJMmP3aX+THipVCkmsfTYRSPBe/2ZXvq4yUniQEwUzDjSbp0D3NFQZdzktF4QK0oLsUZkza1R+qokCzz+NrL0KrCSUTWieWyPItkeU6uwqtQcvqX3keo0Q8Er5cApqyDfAlZKwF5k/gg7Ko2dQjfyXI3wNP310F9Nh1Bm1IhzZIh7uC9OSwstVoy2w13qtsNWpnK5EFmD14hgh0bM1/VjLv2JenICmtTDWflwEPef2lhLKkFEI6KX/qyHk3unpIeQhvXOSMLEFpycH5QBgmnGBB0qAq1fH6M8pQEaW2/E1nN/oPAiEjiGPesZzzHxUv6DrQmrl+AoZOyefvp5GSbGUmvxa070En/NUYdfve75YgHdmC1Bvsitc5LST2OkrH29LnvYpS1/2cKL97KWhuvRMcp7zY3U7sdKF5Qj1Pc9Oaqeaz+A/W8z+n9dw9C5LRJ4W5v1cwj1uMYVP1gCHFJMS8DGn3DAUVNZnII9tWfA36Iu6HtH3Na/mCaeaQg5S0vI5N/CvIDHr+KfELvVETg+B6Bo84U6QDOT2F0/qQCYTif9jBfW9tBx9Y6pa+bf92d0WymxheMucNcIL9qgoMX9tk32mCrAl0JXmLFA+qjkIXq1cW1+QMPy6ZpMaO8/CE8pn9lru66LQStgzyimkzMx1BShmuFomFlRX6XYKx2/GQO6HQK2rOV/vXc7sUW6QH90Pq2oHXqsPaHmLrGe3QQwaHlVabdHloFK/fCsRN3aF5zSLmaTVimGoznje1k7U+WtNxoNDlFo6C6vERZx6xevDhydFd6+nMk+XPXH+8M88/sA6Ee6CMwjuwGnJrnEf7BfOBFZFbw7xfHTW3TZBvWaYbYbaMfAW5piwK4pRTRj66k6hOM8PsXuU4YW5p5G9gKh/Tge+vdYx935KuPUu63lm/2GtT2dNUyQ76d6v3zBL4nC5WZAYRBBz9WZcZ1LdM9bkHeya1MhSF5LoNePRHBekXOoQ8Hff8i46TlrrYgIAHAT2GQal0O5HFccf2zCVX9VELozfqcwMaHN2zWGjCe4ZI0HZ9WSGHhs4jHk7nCuYpVO6AEppx11QhrPR66IM9C739T3iaknmvvwgZdGBmSgIcDiEjlzKu6NzwsjSEwnL1nlq2He6PFIcLOgXWzd3mMFf3YNcOc213f2usRTeIgkgNpO3e7EfHBuaAtULPxmWspyk7O/v1Du3w198y++/Zz0n8No1Hp94DPn08//XTDjI0fl38WKrumy5+dOaf/ws=</diagram><diagram id="ZmUvOkp1wgKRvehdi6I5" name="Flowchart">7Vtdc+I2FP01zLQPydjyB+RxYZN0Z0M2uyTpti8dYStGrWw5sgiQX18JZIwthzhZsJ2EGR7MtZDRPfecK13JHWsQzs8ZjCdD6iPSAYY/71ifOwCYPQA68mP4i5XFTg0Bw75qlBlG+BEpo6GsU+yjJNeQU0o4jvNGj0YR8njOBhmjs3yzO0ryT41hoJ5oZIaRBwnSmv2JfT5RVtfYaP4HwsEkfTRI74Qwba0MyQT6dLZhsk471oBRyldX4XyAiPRe6hijPze/fpvi5AbdD/tffsLR18ujVWdnL/nJegwMRfzVXV//fWddL74nYf92PAh/3JzF4+lROjS+SB2GfOE/9ZUyPqEBjSA5zax9RqeRj2SvhviWtbmgNBZGUxj/RZwvVDDAKafCNOEhUXcrDkcNO6FT5qEtY0jDCrIA8S3tnFU7OcCN2FDOOkc0RJwtRAOGCOT4IR9AUMVhsG6XuVpcKG+/wPOq3wdIpupJQ4gjYRmiaKqhImIvlpfCaZAQRGjAYJj3asIZ/W8d5GJg/RgxLP4sYsUfXmU3+rMJ5mgUw6WLZ0IEcgjLjiHzFJSm7DVZXRvHwHoxlg+IcTTf6n1198h0VGwq4emdqO+zDRqnXJ1sMNg19oQYaIIrPkwmayR2TBynInF6rSKO1TgMifAY/ySTkzB4BCYJ9lLzGSZ7krmqaJ20Ci27cbQagsE0W4WDo6WbSxG38JBp9ExjGqDpVOO+g2lZtypRWsWTrsaTkZR1nSYaBzYJojgUzgO5qjq+I3TmTUQ3x8sc8Q94gg37C3E3H+LdsggHJRG+DvudO7qnCxIK6COmHeAS8fT+mImrQF4JEZH/wLsXfuD4oFimVRAsswxOs07BOtHQvKAejHz4gdHaik6t6cR8F8v8qut8025VRjH1lf6V8GaJzo0giamsPGGxoqDRQelk4nIqSJ1VK5kaqQPsmkx2VTK1azlpNrL6b2bBXxkjy2oXRrYmeEMYx1AXvMRDhMNM8dBB8Y7MbmFyB3olimfXqniViwdynNgTzIJjRK5ogrlAVdwaU86pxC1t8IngQN7gkoFlSycPMv8JlBQQwNAxuhNkHFBCJfKRjKd9AnWSB+qkBCfbLcEJ2HsD6j3UDdKM86zsAdAu2et+KOe3bJLd+0DzgsoYue3CSC8SnDMcECxnAIQu9+zfTP6vNdM4hUWQbTdd7wGNVBRyfFNe3ySbsXuygcpVh3YtlIBedRjQcAw5FwyIZPXhQLktlCsQzrUaJxzQ8Bxij1GcUImhcTrnrGSF9ZuceeOI/n6AuUoh3TGbri6BD1TgAFULHKmYtUVb9QLHJXzAwnKJQuxNDppaRVNLuVavpjqNc62mSYxblWjtOuqV/u8Non0bY+Fd/CAnMDLfwVBGfDROVvvnxfzn0cjHj2+rtFgjJ8FJlQRY7ylL/QTGaeTr6P3K+QvzCZBq9LyjTT2Mxj2vH8m4nVKZ1lASC6cIH8jHRp647Fhnu4LERx5OlmXipjHR2OC6FTHZ3zEZoBdN9KQV+frcrabjkGnQNLA+Vj+9oliMJJvTF6YZ3W4BmtWQ1K8ydPSOnu1pNWatpyXO6wH9wkFnQ4P+L7gonbIs91tklkEilcDx8paRDwKodlw8gfsySxW3YkLs+6ScXlsjU725o57aWb8uU4F3NR0Y10shb5RCO3+DpTzy15OAdeSD13KoqKhWsad9c0gvm1y2iENpaLafQ5bmx3OU8NXE2vBpiCN5cvMwxS6r3hco4DRdY7L0+kWrBLHyBlddgihScUHH7OIeflVFPALPdvWEJAo4pHKtm8WyQbLlTxfjzsq9HyouVj3uVm/1oyI3iYe5fg64Mcm12ye5/vXoYg7ib+4X5/r7z/vu7e3nUckLotlu6UX51k1rj99oTq2qFi84J2WXnAx1eiW6ar1CWMXX7EXvFVmy9+Wt0/8B</diagram><diagram id="uVMBt1wQksTGwDdXKzJ8" name="UML">lZFRD4IgEIB/DY9tBNl6LdNqrvXgWs9MSNnQc0jT+vXphJT1UhsPx8fH3XEgGpbdQbO6OAMXChHMO0T3iJDlihA0LMyfI9k4kGvJrTSBVL6EhdjSh+Si8UQDoIysfZhBVYnMeIxpDa2v3UH5VWuW24p4AmnGlPjSbpKbwtI1nulHIfPClSbupGTOtqApGId2hmiEaKgBzBiVXSjUMD03mFMQscx0QaDZ9nItk12axIsxWfzPlc8btKjMr6n7YGqt33g/TKM3</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-01-29T22:30:45.701Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36" etag="1-FW6UV6sOTpIONAqv26" version="14.2.9" type="github" pages="3">
+  <diagram id="7PDCJq6jiSmbugGUtCLq" name="Idee">
+    <mxGraphModel dx="1822" dy="1162" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="BEAuq1BcZDhHbjntxOC8-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="BEAuq1BcZDhHbjntxOC8-1" target="BEAuq1BcZDhHbjntxOC8-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BEAuq1BcZDhHbjntxOC8-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="BEAuq1BcZDhHbjntxOC8-1" target="BEAuq1BcZDhHbjntxOC8-23" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BEAuq1BcZDhHbjntxOC8-1" value="Arcipelago&lt;br&gt;- Forzieri&lt;br&gt;- È posseduto da un clan" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="75" y="-60" width="150" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="BEAuq1BcZDhHbjntxOC8-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="BEAuq1BcZDhHbjntxOC8-2" target="BEAuq1BcZDhHbjntxOC8-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BEAuq1BcZDhHbjntxOC8-2" value="Clan&lt;br&gt;- Barche&lt;br&gt;- Un tesoro (Bottino)&lt;br&gt;- Rum (krabby patty)&lt;br&gt;- Antagonista al Player&lt;br&gt;- Supporto da clan" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="60" y="90" width="130" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="BEAuq1BcZDhHbjntxOC8-5" value="King of Pirates&lt;br&gt;Game" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="310" y="-105" width="160" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="BEAuq1BcZDhHbjntxOC8-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="BEAuq1BcZDhHbjntxOC8-7" target="BEAuq1BcZDhHbjntxOC8-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BEAuq1BcZDhHbjntxOC8-7" value="Combattimento&lt;br&gt;- Turni&lt;br&gt;- Carta, forbici, sasso - like&lt;br&gt;- Moltiplicazione per attacchi ripetuti&lt;br&gt;- Da distanza a abbordaggio&lt;br&gt;- Equipaggiamenti diversi per i tre attacchi" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="730" y="142.5" width="170" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="BEAuq1BcZDhHbjntxOC8-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="BEAuq1BcZDhHbjntxOC8-8" target="BEAuq1BcZDhHbjntxOC8-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BEAuq1BcZDhHbjntxOC8-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="BEAuq1BcZDhHbjntxOC8-8" target="BEAuq1BcZDhHbjntxOC8-5" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="390" y="90" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BEAuq1BcZDhHbjntxOC8-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="BEAuq1BcZDhHbjntxOC8-8" target="BEAuq1BcZDhHbjntxOC8-12" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BEAuq1BcZDhHbjntxOC8-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="BEAuq1BcZDhHbjntxOC8-8" target="BEAuq1BcZDhHbjntxOC8-14" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BEAuq1BcZDhHbjntxOC8-8" value="Player&lt;br&gt;- interagisce con mondo&lt;br&gt;-La morte ha un peso narrativo&lt;br&gt;- Karma: le azioni influenzano il gioco" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="320" y="150" width="140" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="BEAuq1BcZDhHbjntxOC8-12" value="Main Hub - Player&lt;br&gt;- Chiamata Nassau&lt;br&gt;- Bottega di Gerri Skotty&lt;br&gt;- Porto&lt;br&gt;- Emanuele e tatti perdono il traghetto&lt;br&gt;- Potenziamento nave" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="520" y="-10" width="150" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="BEAuq1BcZDhHbjntxOC8-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="BEAuq1BcZDhHbjntxOC8-14" target="BEAuq1BcZDhHbjntxOC8-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BEAuq1BcZDhHbjntxOC8-14" value="Barche&lt;br&gt;- Equipaggio con determinazione&lt;br&gt;- Determinazione applica buff/debuff" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="160" y="320" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="BEAuq1BcZDhHbjntxOC8-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="BEAuq1BcZDhHbjntxOC8-18" target="BEAuq1BcZDhHbjntxOC8-14" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BEAuq1BcZDhHbjntxOC8-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="BEAuq1BcZDhHbjntxOC8-18" target="BEAuq1BcZDhHbjntxOC8-7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BEAuq1BcZDhHbjntxOC8-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="BEAuq1BcZDhHbjntxOC8-18" target="BEAuq1BcZDhHbjntxOC8-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BEAuq1BcZDhHbjntxOC8-18" value="Nemici&lt;br&gt;- Hanno taglie (Premi aggiuntivi)&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="410" y="330" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BEAuq1BcZDhHbjntxOC8-22" value="Altro&lt;br&gt;- Non sai il tuo obbiettivo, lo devi scoprire (Qual&#39;è?)&lt;br&gt;- il gabibbo easter egg&lt;br&gt;- Diritto dei Pirati (Regole Della Guerra)&lt;br&gt;- Anime dei giocatori con cui si evoca Billy L&#39;orbo&lt;br&gt;- Hub --&amp;gt; Missione --&amp;gt; Ripeti&lt;br&gt;- arcipelaghi posseduti da un clan&lt;br&gt;- Obbiettivi opzionali" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-180" y="120" width="160" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="BEAuq1BcZDhHbjntxOC8-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="BEAuq1BcZDhHbjntxOC8-23" target="BEAuq1BcZDhHbjntxOC8-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BEAuq1BcZDhHbjntxOC8-23" value="Boss" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="160" y="-200" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="ZmUvOkp1wgKRvehdi6I5" name="Flowchart">
+    <mxGraphModel dx="1822" dy="422" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0Bx1KOuisUeqMBIXaSKN-0" />
+        <mxCell id="0Bx1KOuisUeqMBIXaSKN-1" parent="0Bx1KOuisUeqMBIXaSKN-0" />
+        <mxCell id="TZf3TyQsmBVbCmRUFpbu-0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="0Bx1KOuisUeqMBIXaSKN-1" source="TZf3TyQsmBVbCmRUFpbu-1" target="TZf3TyQsmBVbCmRUFpbu-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TZf3TyQsmBVbCmRUFpbu-1" value="Main Menu" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" parent="0Bx1KOuisUeqMBIXaSKN-1" vertex="1">
+          <mxGeometry x="-150" y="890" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TZf3TyQsmBVbCmRUFpbu-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" parent="0Bx1KOuisUeqMBIXaSKN-1" source="TZf3TyQsmBVbCmRUFpbu-5" target="TZf3TyQsmBVbCmRUFpbu-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TZf3TyQsmBVbCmRUFpbu-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;startArrow=classic;startFill=1;" parent="0Bx1KOuisUeqMBIXaSKN-1" source="TZf3TyQsmBVbCmRUFpbu-5" target="TZf3TyQsmBVbCmRUFpbu-9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TZf3TyQsmBVbCmRUFpbu-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" parent="0Bx1KOuisUeqMBIXaSKN-1" source="TZf3TyQsmBVbCmRUFpbu-5" target="TZf3TyQsmBVbCmRUFpbu-11" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TZf3TyQsmBVbCmRUFpbu-5" value="Nassau" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" parent="0Bx1KOuisUeqMBIXaSKN-1" vertex="1">
+          <mxGeometry x="-150" y="1020" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TZf3TyQsmBVbCmRUFpbu-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="0Bx1KOuisUeqMBIXaSKN-1" source="TZf3TyQsmBVbCmRUFpbu-7" target="TZf3TyQsmBVbCmRUFpbu-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TZf3TyQsmBVbCmRUFpbu-7" value="Start" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_2;whiteSpace=wrap;" parent="0Bx1KOuisUeqMBIXaSKN-1" vertex="1">
+          <mxGeometry x="-160" y="720" width="120" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="TZf3TyQsmBVbCmRUFpbu-8" value="Negozio&lt;br&gt;Per acquisti" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" parent="0Bx1KOuisUeqMBIXaSKN-1" vertex="1">
+          <mxGeometry x="130" y="1120" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TZf3TyQsmBVbCmRUFpbu-9" value="Locanda" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" parent="0Bx1KOuisUeqMBIXaSKN-1" vertex="1">
+          <mxGeometry y="1120" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TZf3TyQsmBVbCmRUFpbu-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="0Bx1KOuisUeqMBIXaSKN-1" source="TZf3TyQsmBVbCmRUFpbu-11" target="TZf3TyQsmBVbCmRUFpbu-14" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TZf3TyQsmBVbCmRUFpbu-11" value="Porto&lt;br&gt;Salpo missioni" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" parent="0Bx1KOuisUeqMBIXaSKN-1" vertex="1">
+          <mxGeometry x="-165" y="1120" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TZf3TyQsmBVbCmRUFpbu-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="0Bx1KOuisUeqMBIXaSKN-1" source="TZf3TyQsmBVbCmRUFpbu-14" target="TZf3TyQsmBVbCmRUFpbu-19" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TZf3TyQsmBVbCmRUFpbu-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;" parent="0Bx1KOuisUeqMBIXaSKN-1" source="TZf3TyQsmBVbCmRUFpbu-14" target="TZf3TyQsmBVbCmRUFpbu-33" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TZf3TyQsmBVbCmRUFpbu-14" value="Mappa&lt;br&gt;scelta missione" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" parent="0Bx1KOuisUeqMBIXaSKN-1" vertex="1">
+          <mxGeometry x="-170" y="1280" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TZf3TyQsmBVbCmRUFpbu-15" value="Nassau" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=card;whiteSpace=wrap;size=20;arcSize=12;fillColor=none;" parent="0Bx1KOuisUeqMBIXaSKN-1" vertex="1">
+          <mxGeometry x="-190" y="980" width="460" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="TZf3TyQsmBVbCmRUFpbu-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="0Bx1KOuisUeqMBIXaSKN-1" source="TZf3TyQsmBVbCmRUFpbu-19" target="TZf3TyQsmBVbCmRUFpbu-22" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TZf3TyQsmBVbCmRUFpbu-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="0Bx1KOuisUeqMBIXaSKN-1" source="TZf3TyQsmBVbCmRUFpbu-19" target="TZf3TyQsmBVbCmRUFpbu-24" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TZf3TyQsmBVbCmRUFpbu-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;" parent="0Bx1KOuisUeqMBIXaSKN-1" source="TZf3TyQsmBVbCmRUFpbu-19" target="TZf3TyQsmBVbCmRUFpbu-26" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TZf3TyQsmBVbCmRUFpbu-19" value="Griglia locale" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;fillColor=none;" parent="0Bx1KOuisUeqMBIXaSKN-1" vertex="1">
+          <mxGeometry x="-155" y="1440" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TZf3TyQsmBVbCmRUFpbu-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;startFill=0;" parent="0Bx1KOuisUeqMBIXaSKN-1" source="TZf3TyQsmBVbCmRUFpbu-21" target="TZf3TyQsmBVbCmRUFpbu-19" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TZf3TyQsmBVbCmRUFpbu-21" value="Combattimento locale" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;fillColor=none;" parent="0Bx1KOuisUeqMBIXaSKN-1" vertex="1">
+          <mxGeometry x="-5" y="1630" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TZf3TyQsmBVbCmRUFpbu-22" value="Microisole Extra&lt;br&gt;(bottino)" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;fillColor=none;" parent="0Bx1KOuisUeqMBIXaSKN-1" vertex="1">
+          <mxGeometry x="130" y="1510" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TZf3TyQsmBVbCmRUFpbu-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;" parent="0Bx1KOuisUeqMBIXaSKN-1" source="TZf3TyQsmBVbCmRUFpbu-24" target="TZf3TyQsmBVbCmRUFpbu-21" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TZf3TyQsmBVbCmRUFpbu-24" value="Navi Nemiche" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;fillColor=none;" parent="0Bx1KOuisUeqMBIXaSKN-1" vertex="1">
+          <mxGeometry x="-5" y="1510" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TZf3TyQsmBVbCmRUFpbu-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;startFill=0;" parent="0Bx1KOuisUeqMBIXaSKN-1" source="TZf3TyQsmBVbCmRUFpbu-26" target="TZf3TyQsmBVbCmRUFpbu-28" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TZf3TyQsmBVbCmRUFpbu-26" value="Obiettivo a&amp;nbsp;&lt;br&gt;condizione" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;fillColor=none;" parent="0Bx1KOuisUeqMBIXaSKN-1" vertex="1">
+          <mxGeometry x="290" y="1510" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TZf3TyQsmBVbCmRUFpbu-27" value="End" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;fillColor=none;" parent="0Bx1KOuisUeqMBIXaSKN-1" vertex="1">
+          <mxGeometry x="530" y="1500" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TZf3TyQsmBVbCmRUFpbu-28" value="Vuoi esplorare ancora?" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;fillColor=none;" parent="0Bx1KOuisUeqMBIXaSKN-1" vertex="1">
+          <mxGeometry x="290" y="1660" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="TZf3TyQsmBVbCmRUFpbu-29" value="" style="endArrow=classic;html=1;dashed=1;" parent="0Bx1KOuisUeqMBIXaSKN-1" source="TZf3TyQsmBVbCmRUFpbu-28" target="TZf3TyQsmBVbCmRUFpbu-19" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="15" y="1770" as="sourcePoint" />
+            <mxPoint x="115" y="1770" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZf3TyQsmBVbCmRUFpbu-30" value="Yay" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" parent="TZf3TyQsmBVbCmRUFpbu-29" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TZf3TyQsmBVbCmRUFpbu-31" value="" style="endArrow=classic;html=1;dashed=1;" parent="0Bx1KOuisUeqMBIXaSKN-1" source="TZf3TyQsmBVbCmRUFpbu-28" target="TZf3TyQsmBVbCmRUFpbu-15" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="510" y="1720" as="sourcePoint" />
+            <mxPoint x="190" y="1320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZf3TyQsmBVbCmRUFpbu-32" value="Nay" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" parent="TZf3TyQsmBVbCmRUFpbu-31" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TZf3TyQsmBVbCmRUFpbu-33" value="Gestione dominio" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;fillColor=none;" parent="0Bx1KOuisUeqMBIXaSKN-1" vertex="1">
+          <mxGeometry x="-15" y="1350" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TZf3TyQsmBVbCmRUFpbu-34" value="" style="endArrow=classic;html=1;dashed=1;" parent="0Bx1KOuisUeqMBIXaSKN-1" source="TZf3TyQsmBVbCmRUFpbu-19" target="TZf3TyQsmBVbCmRUFpbu-15" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-300" y="1440" as="sourcePoint" />
+            <mxPoint x="-200" y="1440" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-5" y="1330" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZf3TyQsmBVbCmRUFpbu-35" value="Uscita" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" parent="TZf3TyQsmBVbCmRUFpbu-34" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dTSLx2pO6I5TQXq7VVDS-1" value="Griglia Locale" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=card;whiteSpace=wrap;size=20;arcSize=12;fillColor=none;" vertex="1" parent="0Bx1KOuisUeqMBIXaSKN-1">
+          <mxGeometry x="-170" y="1420" width="580" height="360" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="uVMBt1wQksTGwDdXKzJ8" name="UML">
+    <mxGraphModel dx="1422" dy="822" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="I5Eactx55raAOUmKBSKF-0" />
+        <mxCell id="I5Eactx55raAOUmKBSKF-1" parent="I5Eactx55raAOUmKBSKF-0" />
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
