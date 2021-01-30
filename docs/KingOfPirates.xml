@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-01-29T22:30:45.701Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36" etag="1-FW6UV6sOTpIONAqv26" version="14.2.9" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2021-01-30T15:53:03.226Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36" etag="iSqoIKVHOkx-84RCR2ab" version="14.2.9" type="github" pages="3">
   <diagram id="7PDCJq6jiSmbugGUtCLq" name="Idee">
     <mxGraphModel dx="1822" dy="1162" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
       <root>
@@ -18,6 +18,9 @@
         </mxCell>
         <mxCell id="BEAuq1BcZDhHbjntxOC8-2" value="Clan&lt;br&gt;- Barche&lt;br&gt;- Un tesoro (Bottino)&lt;br&gt;- Rum (krabby patty)&lt;br&gt;- Antagonista al Player&lt;br&gt;- Supporto da clan" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="60" y="90" width="130" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="RYTlBl8_HeTusjW2p5Bg-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BEAuq1BcZDhHbjntxOC8-5" target="BEAuq1BcZDhHbjntxOC8-23">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="BEAuq1BcZDhHbjntxOC8-5" value="King of Pirates&lt;br&gt;Game" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
           <mxGeometry x="310" y="-105" width="160" height="160" as="geometry" />
@@ -69,11 +72,8 @@
         <mxCell id="BEAuq1BcZDhHbjntxOC8-22" value="Altro&lt;br&gt;- Non sai il tuo obbiettivo, lo devi scoprire (Qual&#39;è?)&lt;br&gt;- il gabibbo easter egg&lt;br&gt;- Diritto dei Pirati (Regole Della Guerra)&lt;br&gt;- Anime dei giocatori con cui si evoca Billy L&#39;orbo&lt;br&gt;- Hub --&amp;gt; Missione --&amp;gt; Ripeti&lt;br&gt;- arcipelaghi posseduti da un clan&lt;br&gt;- Obbiettivi opzionali" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-180" y="120" width="160" height="170" as="geometry" />
         </mxCell>
-        <mxCell id="BEAuq1BcZDhHbjntxOC8-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="BEAuq1BcZDhHbjntxOC8-23" target="BEAuq1BcZDhHbjntxOC8-5" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
         <mxCell id="BEAuq1BcZDhHbjntxOC8-23" value="Boss" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="160" y="-200" width="120" height="60" as="geometry" />
+          <mxGeometry x="190" y="-210" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
