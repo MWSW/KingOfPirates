@@ -25,12 +25,15 @@ Apri con Visual Studio 2019 e compila la soluzione, poi avvia l'.exe che dovrebb
 ## Crediti
 
 Username: chichibio-savoiardi  
-Nome: Iuri
+Nome: Iuri  
+Ruolo: Big Boss, Erede del Boss
 
 Username: andrearuben003  
-Nome: Ruben
+Nome: Ruben  
+Ruolo: Art Director, Hideo Kojima
 
 Username: EatPastaKillFasta  
-Nome: Emanuele
+Nome: Emanuele  
+Ruolo: Music Director, Capo della Chiesa Anglicana
 
 # [Licenza](https://github.com/chichibio-savoiardi/KingOfPirates/blob/master/docs/LICENSE)
