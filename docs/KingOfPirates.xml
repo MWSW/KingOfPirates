@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-01-31T14:43:50.402Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36" etag="L32qbw1Yl6KPOaSxZTVB" version="14.2.9" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2021-01-31T14:46:41.050Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36" etag="VQBXvw0H4pGeoZ0cX7o9" version="14.2.9" type="github" pages="3">
   <diagram id="7PDCJq6jiSmbugGUtCLq" name="Idee">
     <mxGraphModel dx="1822" dy="1162" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
       <root>
@@ -125,8 +125,8 @@
         <mxCell id="TZf3TyQsmBVbCmRUFpbu-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;" parent="0Bx1KOuisUeqMBIXaSKN-1" source="TZf3TyQsmBVbCmRUFpbu-14" target="TZf3TyQsmBVbCmRUFpbu-33" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="TZf3TyQsmBVbCmRUFpbu-14" value="Mappa&lt;br&gt;scelta missione" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" parent="0Bx1KOuisUeqMBIXaSKN-1" vertex="1">
-          <mxGeometry x="-170" y="1280" width="140" height="60" as="geometry" />
+        <mxCell id="TZf3TyQsmBVbCmRUFpbu-14" value="Cartina" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" parent="0Bx1KOuisUeqMBIXaSKN-1" vertex="1">
+          <mxGeometry x="-155" y="1280" width="110" height="60" as="geometry" />
         </mxCell>
         <mxCell id="TZf3TyQsmBVbCmRUFpbu-15" value="Nassau" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=card;whiteSpace=wrap;size=20;arcSize=12;fillColor=none;" parent="0Bx1KOuisUeqMBIXaSKN-1" vertex="1">
           <mxGeometry x="-180" y="980" width="460" height="240" as="geometry" />
