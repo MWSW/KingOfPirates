@@ -36,4 +36,4 @@ Username: EatPastaKillFasta
 Nome: Emanuele  
 Ruolo: Music Director, Capo della Chiesa Anglicana
 
-# [Licenza](https://github.com/chichibio-savoiardi/KingOfPirates/blob/master/docs/LICENSE)
+# [Licenza](https://github.com/chichibio-savoiardi/KingOfPirates/blob/master/LICENSE)
