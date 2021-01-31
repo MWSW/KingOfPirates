@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-01-30T15:53:03.226Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36" etag="iSqoIKVHOkx-84RCR2ab" version="14.2.9" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2021-01-31T14:43:50.402Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36" etag="L32qbw1Yl6KPOaSxZTVB" version="14.2.9" type="github" pages="3">
   <diagram id="7PDCJq6jiSmbugGUtCLq" name="Idee">
     <mxGraphModel dx="1822" dy="1162" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
       <root>
@@ -19,7 +19,7 @@
         <mxCell id="BEAuq1BcZDhHbjntxOC8-2" value="Clan&lt;br&gt;- Barche&lt;br&gt;- Un tesoro (Bottino)&lt;br&gt;- Rum (krabby patty)&lt;br&gt;- Antagonista al Player&lt;br&gt;- Supporto da clan" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="60" y="90" width="130" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="RYTlBl8_HeTusjW2p5Bg-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BEAuq1BcZDhHbjntxOC8-5" target="BEAuq1BcZDhHbjntxOC8-23">
+        <mxCell id="RYTlBl8_HeTusjW2p5Bg-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="BEAuq1BcZDhHbjntxOC8-5" target="BEAuq1BcZDhHbjntxOC8-23" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="BEAuq1BcZDhHbjntxOC8-5" value="King of Pirates&lt;br&gt;Game" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
@@ -79,7 +79,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="ZmUvOkp1wgKRvehdi6I5" name="Flowchart">
-    <mxGraphModel dx="1822" dy="422" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
+    <mxGraphModel dx="1822" dy="362" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
       <root>
         <mxCell id="0Bx1KOuisUeqMBIXaSKN-0" />
         <mxCell id="0Bx1KOuisUeqMBIXaSKN-1" parent="0Bx1KOuisUeqMBIXaSKN-0" />
@@ -129,7 +129,7 @@
           <mxGeometry x="-170" y="1280" width="140" height="60" as="geometry" />
         </mxCell>
         <mxCell id="TZf3TyQsmBVbCmRUFpbu-15" value="Nassau" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=card;whiteSpace=wrap;size=20;arcSize=12;fillColor=none;" parent="0Bx1KOuisUeqMBIXaSKN-1" vertex="1">
-          <mxGeometry x="-190" y="980" width="460" height="240" as="geometry" />
+          <mxGeometry x="-180" y="980" width="460" height="240" as="geometry" />
         </mxCell>
         <mxCell id="TZf3TyQsmBVbCmRUFpbu-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="0Bx1KOuisUeqMBIXaSKN-1" source="TZf3TyQsmBVbCmRUFpbu-19" target="TZf3TyQsmBVbCmRUFpbu-22" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -140,7 +140,7 @@
         <mxCell id="TZf3TyQsmBVbCmRUFpbu-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;" parent="0Bx1KOuisUeqMBIXaSKN-1" source="TZf3TyQsmBVbCmRUFpbu-19" target="TZf3TyQsmBVbCmRUFpbu-26" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="TZf3TyQsmBVbCmRUFpbu-19" value="Griglia locale" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;fillColor=none;" parent="0Bx1KOuisUeqMBIXaSKN-1" vertex="1">
+        <mxCell id="TZf3TyQsmBVbCmRUFpbu-19" value="Missione" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;fillColor=none;" parent="0Bx1KOuisUeqMBIXaSKN-1" vertex="1">
           <mxGeometry x="-155" y="1440" width="110" height="60" as="geometry" />
         </mxCell>
         <mxCell id="TZf3TyQsmBVbCmRUFpbu-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;startFill=0;" parent="0Bx1KOuisUeqMBIXaSKN-1" source="TZf3TyQsmBVbCmRUFpbu-21" target="TZf3TyQsmBVbCmRUFpbu-19" edge="1">
@@ -203,14 +203,14 @@
         <mxCell id="TZf3TyQsmBVbCmRUFpbu-35" value="Uscita" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" parent="TZf3TyQsmBVbCmRUFpbu-34" connectable="0" vertex="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="dTSLx2pO6I5TQXq7VVDS-1" value="Griglia Locale" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=card;whiteSpace=wrap;size=20;arcSize=12;fillColor=none;" vertex="1" parent="0Bx1KOuisUeqMBIXaSKN-1">
+        <mxCell id="dTSLx2pO6I5TQXq7VVDS-1" value="Missione" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=card;whiteSpace=wrap;size=20;arcSize=12;fillColor=none;" parent="0Bx1KOuisUeqMBIXaSKN-1" vertex="1">
           <mxGeometry x="-170" y="1420" width="580" height="360" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram id="uVMBt1wQksTGwDdXKzJ8" name="UML">
-    <mxGraphModel dx="1422" dy="822" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
       <root>
         <mxCell id="I5Eactx55raAOUmKBSKF-0" />
         <mxCell id="I5Eactx55raAOUmKBSKF-1" parent="I5Eactx55raAOUmKBSKF-0" />
