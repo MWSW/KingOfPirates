@@ -34,6 +34,6 @@ Ruolo: Art Director, Hideo Kojima
 
 Username: EatPastaKillFasta  
 Nome: Emanuele  
-Ruolo: Music Director, Capo della Chiesa Anglicana
+Ruolo: Mastero, Regina Elisabetta II
 
 # [Licenza](https://github.com/chichibio-savoiardi/KingOfPirates/blob/master/LICENSE)
