@@ -72,6 +72,7 @@
     <Compile Include="Missioni\ScontroCarte\Carte\CarteEffetto\CartaDannoContinuo.cs" />
     <Compile Include="Missioni\ScontroCarte\Carte\CarteEffetto\CartaDebuff.cs" />
     <Compile Include="Missioni\ScontroCarte\Carte\CarteEffetto\CartaResa.cs" />
+    <Compile Include="Missioni\ScontroCarte\Carte\CarteEffetto\CartaTurniExtra.cs" />
     <Compile Include="Missioni\ScontroCarte\Opponenti\Avversario.cs" />
     <Compile Include="Missioni\ScontroCarte\Opponenti\Giocatore.cs" />
     <Compile Include="Missioni\ScontroCarte\Opponenti\Inventario.cs" />
