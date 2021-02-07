@@ -25,33 +25,14 @@ namespace KingOfPirates.Missioni.ScontroCarte.Carte
 
         public abstract void UsaCarta(Giocatore utilizzatore); //FIXME
 
-        //Emanuele perchè hai messo un boolean? (Ruben)
-        public void AddDeterminazione(bool b)
-        {
-
-        }
-
-        //Alternativa proposta:
-        /*
-        public void addDeterminazione(int val)
+        public void AddDeterminazione(int val)
         {
            determinazione += val;
         } 
-        */
-
-        //Emanuele perchè restituisce un boolean? (Ruben)
-        public bool DimDeterminazione()
-        {
-            return false;
-        }
-
-        //Alternativa proposta:
-        /*
-        public void dimDeterminazione(int val)
+        public void DimDeterminazione(int val)
         {
            determinazione -= val;
         } 
-        */
 
         public bool GetUtilizzabile()
         {
