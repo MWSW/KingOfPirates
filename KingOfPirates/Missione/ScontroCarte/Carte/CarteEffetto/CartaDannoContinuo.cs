@@ -1,0 +1,27 @@
+﻿using KingOfPirates.Missione.ScontroCarte.Opponenti;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+using System.Drawing; //Per le Bitmap
+
+namespace KingOfPirates.Missione.ScontroCarte.Carte.CarteEffetto
+{
+    class CartaDannoContinuo : Carta
+    {
+        int danno;
+        int durata;
+        public CartaDannoContinuo(string nome_, int determinazione_, Bitmap immagine_, int danno_, int durata_)
+              : base(nome_, determinazione_, immagine_)
+        {
+            danno = danno_;
+            durata = durata_;
+        }
+        public override void usaCarta(Giocatore g)
+        {
+
+        }
+    }
+}
