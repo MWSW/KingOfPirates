@@ -55,6 +55,8 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Gioco.cs" />
+    <Compile Include="Missioni\GestoreMissione.cs" />
     <Compile Include="Missioni\Griglia.cs" />
     <Compile Include="Missioni\Missione.cs" />
     <Compile Include="Missioni\ScontroCarte\Carte\Carta.cs" />
@@ -80,6 +82,7 @@
     <Compile Include="Nassau\Porto.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Ranking.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
