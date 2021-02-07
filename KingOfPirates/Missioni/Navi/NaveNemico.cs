@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 
 using System.Drawing; //Per le Bitmap
-using KingOfPirates.Missione.Roba;
+using KingOfPirates.Missioni.Roba;
 
-namespace KingOfPirates.Missione.Navi
+namespace KingOfPirates.Missioni.Navi
 {
 
     class NaveNemico : Nave

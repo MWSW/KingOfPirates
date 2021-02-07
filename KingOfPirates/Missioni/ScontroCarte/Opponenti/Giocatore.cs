@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using KingOfPirates.Missione.ScontroCarte.Carte;
+using KingOfPirates.Missioni.ScontroCarte.Carte;
 
-namespace KingOfPirates.Missione.ScontroCarte.Opponenti
+namespace KingOfPirates.Missioni.ScontroCarte.Opponenti
 {
     abstract class Giocatore
     {
