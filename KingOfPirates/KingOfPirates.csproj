@@ -53,6 +53,15 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Missione\Navi\Nave.cs" />
+    <Compile Include="Missione\Navi\NaveGiocatore.cs" />
+    <Compile Include="Missione\Navi\NaveNemico.cs" />
+    <Compile Include="Missione\Roba\Loc2D.cs" />
+    <Compile Include="Missione\Roba\Stats.cs" />
+    <Compile Include="Nassau\Edificio.cs" />
+    <Compile Include="Nassau\Locanda.cs" />
+    <Compile Include="Nassau\Negozio.cs" />
+    <Compile Include="Nassau\Porto.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -77,8 +86,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Nemici\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
