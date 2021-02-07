@@ -21,7 +21,7 @@ namespace KingOfPirates.Missione.ScontroCarte.Carte.CarteEffetto
             durata = durata_;
         }
 
-        public override void usaCarta(Giocatore g)
+        public override void UsaCarta(Giocatore g)
         {
   
         }
