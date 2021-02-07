@@ -23,7 +23,7 @@ namespace KingOfPirates.Missioni.ScontroCarte.Carte
             elemento = elemento_;
         }
 
-        public override void usaCarta(Giocatore g)
+        public override void UsaCarta(Giocatore g)
         {
             
         }
