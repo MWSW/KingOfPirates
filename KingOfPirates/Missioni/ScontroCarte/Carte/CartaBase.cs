@@ -28,7 +28,7 @@ namespace KingOfPirates.Missioni.ScontroCarte.Carte
             
         }
 
-        public void applicaBuff(double buff) 
+        public void ApplicaBuff(double buff) 
         {
 
         }

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 //Per poter utilizzare la classe Bitmap
 using System.Drawing;
+using KingOfPirates.Missioni.ScontroCarte.Carte;
 
 namespace KingOfPirates.Nassau
 {
@@ -16,13 +17,13 @@ namespace KingOfPirates.Nassau
         private int nSlot; //Posti letto disponibili (per le carte)
         private int detPerTurno; //Determinazione ripristinata per turno
 
-        //TODO: Carta slotCarte[];
+        Carta[] slotCarte;
 
 
         //Fa riferimento al costruttore della sua superclasse
         public Locanda(Bitmap immagine_) : base("Locanda", immagine_) 
         {
-            //TODO: slotCarte = new Carta[nSlot];
+            slotCarte = new Carta[nSlot];
         }
 
         public override void Upgrade()
@@ -30,10 +31,10 @@ namespace KingOfPirates.Nassau
             
         }
 
-        public void curaCarte() { }
+        public void CuraCarte() { }
 
-        //TODO: void ripristinaCarta(Carta carta){}
+        public void RipristinaCarta(Carta carta){}
 
-        public String scottaGerri() { return ""; } //non ho capito Emanuele (Ruben)
+        public String ScottaGerri() { return ""; } //non ho Iuri (Ruben)
     }
 }
