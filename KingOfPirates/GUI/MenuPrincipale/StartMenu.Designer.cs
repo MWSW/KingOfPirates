@@ -1,7 +1,7 @@
 ﻿
-namespace KingOfPirates
+namespace KingOfPirates.GUI.MenuPrincipale
 {
-    partial class Form1
+    partial class StartMenu
     {
         /// <summary>
         /// Variabile di progettazione necessaria.
