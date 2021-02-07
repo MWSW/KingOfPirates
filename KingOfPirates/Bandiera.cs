@@ -8,14 +8,17 @@ namespace KingOfPirates
 {
     class Bandiera
     {
-        private static bool missionEnd;
-        private static bool gameEnd;
+        private static bool missioneEnd;
+        private static bool giocoEnd;
 
         public Bandiera()
         {
-            missionEnd = false;
-            gameEnd = false;
+            missioneEnd = false;
+            giocoEnd = false;
         }
+
+        public static bool MissioneEnd { get => missioneEnd; set => missioneEnd = value; }
+        public static bool GiocoEnd { get => giocoEnd; set => giocoEnd = value; }
 
         public void IsDone()
         {
