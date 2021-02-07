@@ -34,6 +34,6 @@ namespace KingOfPirates.Missione.Navi
 
         }
 
-        //TO-DO: public void UsaOggetto(Oggetto o){}
+        //TODO: public void UsaOggetto(Oggetto o){}
     }
 }

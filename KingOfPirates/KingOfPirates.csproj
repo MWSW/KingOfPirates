@@ -53,11 +53,23 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Missione\ScontroCarte\Carte\Carta.cs" />
+    <Compile Include="Missione\ScontroCarte\Carte\CartaBase.cs" />
     <Compile Include="Missione\Navi\Nave.cs" />
     <Compile Include="Missione\Navi\NaveGiocatore.cs" />
     <Compile Include="Missione\Navi\NaveNemico.cs" />
     <Compile Include="Missione\Roba\Loc2D.cs" />
     <Compile Include="Missione\Roba\Stats.cs" />
+    <Compile Include="Missione\ScontroCarte\Carte\CarteEffetto\CartaBuff.cs" />
+    <Compile Include="Missione\ScontroCarte\Carte\CarteEffetto\CartaCuraBase.cs" />
+    <Compile Include="Missione\ScontroCarte\Carte\CarteEffetto\CartaCuraEstesa.cs" />
+    <Compile Include="Missione\ScontroCarte\Carte\CarteEffetto\CartaDannoContinuo.cs" />
+    <Compile Include="Missione\ScontroCarte\Carte\CarteEffetto\CartaDebuff.cs" />
+    <Compile Include="Missione\ScontroCarte\Carte\CarteEffetto\CartaResa.cs" />
+    <Compile Include="Missione\ScontroCarte\Opponenti\Avversario.cs" />
+    <Compile Include="Missione\ScontroCarte\Opponenti\Giocatore.cs" />
+    <Compile Include="Missione\ScontroCarte\Opponenti\Inventario.cs" />
+    <Compile Include="Missione\ScontroCarte\Opponenti\Player.cs" />
     <Compile Include="Nassau\Edificio.cs" />
     <Compile Include="Nassau\Locanda.cs" />
     <Compile Include="Nassau\Negozio.cs" />

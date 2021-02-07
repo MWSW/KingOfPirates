@@ -27,9 +27,9 @@ namespace KingOfPirates.Nassau
 
         }
 
-        //TO-DO: public void PotenziaCannoni(Nave nave) { }
-        //TO-DO: public void PotenziaVele(Nave nave) { }
-        //TO-DO: public void PotenziaScafo(Nave nave) { }
+        //TODO: public void PotenziaCannoni(Nave nave) { }
+        //TODO: public void PotenziaVele(Nave nave) { }
+        //TODO: public void PotenziaScafo(Nave nave) { }
 
         public override void Upgrade()
         {
