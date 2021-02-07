@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 
 using System.Drawing; //Per le Bitmap
-using KingOfPirates.Missione.ScontroCarte.Opponenti;
+using KingOfPirates.Missioni.ScontroCarte.Opponenti;
 
-namespace KingOfPirates.Missione.ScontroCarte.Carte
+namespace KingOfPirates.Missioni.ScontroCarte.Carte
 {
     abstract class Carta
     {

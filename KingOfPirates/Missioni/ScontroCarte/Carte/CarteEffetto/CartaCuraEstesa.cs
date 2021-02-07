@@ -1,4 +1,4 @@
-﻿using KingOfPirates.Missione.ScontroCarte.Opponenti;
+﻿using KingOfPirates.Missioni.ScontroCarte.Opponenti;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 using System.Drawing; //per le Bitmap
 
-namespace KingOfPirates.Missione.ScontroCarte.Carte.CarteEffetto
+namespace KingOfPirates.Missioni.ScontroCarte.Carte.CarteEffetto
 {
     class CartaCuraEstesa : Carta
     {

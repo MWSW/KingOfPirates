@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KingOfPirates.Missione.ScontroCarte.Opponenti
+namespace KingOfPirates.Missioni.ScontroCarte.Opponenti
 {
     class Player : Giocatore
     {

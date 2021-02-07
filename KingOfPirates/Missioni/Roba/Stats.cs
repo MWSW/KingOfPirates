@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KingOfPirates.Missione.Roba
+namespace KingOfPirates.Missioni.Roba
 {
     class Stats
     {
