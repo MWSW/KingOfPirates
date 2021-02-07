@@ -16,13 +16,13 @@ namespace KingOfPirates.Nassau
         private int nSlot; //Posti letto disponibili (per le carte)
         private int detPerTurno; //Determinazione ripristinata per turno
 
-        //TO-DO: Carta slotCarte[];
+        //TODO: Carta slotCarte[];
 
 
         //Fa riferimento al costruttore della sua superclasse
         public Locanda(Bitmap immagine_) : base("Locanda", immagine_) 
         {
-            //TO-DO: slotCarte = new Carta[nSlot];
+            //TODO: slotCarte = new Carta[nSlot];
         }
 
         public override void Upgrade()
@@ -32,7 +32,7 @@ namespace KingOfPirates.Nassau
 
         public void curaCarte() { }
 
-        //TO-DO: void ripristinaCarta(Carta carta){}
+        //TODO: void ripristinaCarta(Carta carta){}
 
         public String scottaGerri() { return ""; } //non ho capito Emanuele (Ruben)
     }

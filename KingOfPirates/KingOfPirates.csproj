@@ -65,7 +65,10 @@
     <Compile Include="Missione\ScontroCarte\Carte\CarteEffetto\CartaDannoContinuo.cs" />
     <Compile Include="Missione\ScontroCarte\Carte\CarteEffetto\CartaDebuff.cs" />
     <Compile Include="Missione\ScontroCarte\Carte\CarteEffetto\CartaResa.cs" />
+    <Compile Include="Missione\ScontroCarte\Opponenti\Avversario.cs" />
     <Compile Include="Missione\ScontroCarte\Opponenti\Giocatore.cs" />
+    <Compile Include="Missione\ScontroCarte\Opponenti\Inventario.cs" />
+    <Compile Include="Missione\ScontroCarte\Opponenti\Player.cs" />
     <Compile Include="Nassau\Edificio.cs" />
     <Compile Include="Nassau\Locanda.cs" />
     <Compile Include="Nassau\Negozio.cs" />

@@ -18,12 +18,12 @@ namespace KingOfPirates.Nassau
 
         }
 
-        //TO-DO: public void RiscattaTaglie(Player p){}
-        //TO-DO: public void AcquistaBevandaDeterminazione(Player p){}
-        //TO-DO: public void AcquistaRum(Player p){}
-        //TO-DO: public void AcquistaAntiubriachezza(Player p){}
-        //TO-DO: public void AcquistaAssiLegno(Player p){}
-        //TO-DO: public void AcquistaCarta(Player p, Carta c){}
+        //TODO: public void RiscattaTaglie(Player p){}
+        //TODO: public void AcquistaBevandaDeterminazione(Player p){}
+        //TODO: public void AcquistaRum(Player p){}
+        //TODO: public void AcquistaAntiubriachezza(Player p){}
+        //TODO: public void AcquistaAssiLegno(Player p){}
+        //TODO: public void AcquistaCarta(Player p, Carta c){}
 
         public override void Upgrade()
         {

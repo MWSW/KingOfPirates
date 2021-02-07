@@ -11,7 +11,9 @@ namespace KingOfPirates.Missione.ScontroCarte.Opponenti
     abstract class Giocatore
     {
         private int hp;
-        private Carta[] mazzo;
+        protected Carta[] mazzo;
+
+        private Inventario inv;
 
         public Giocatore(int hp_, int nCarte)
         {
