@@ -23,10 +23,10 @@ namespace KingOfPirates.Missione.ScontroCarte.Carte
             immagine = immagine_;
         }
 
-        public abstract void usaCarta(Giocatore g);
+        public abstract void UsaCarta(Giocatore utilizzatore); //FIXME
 
         //Emanuele perchè hai messo un boolean? (Ruben)
-        public void addDeterminazione(bool b)
+        public void AddDeterminazione(bool b)
         {
 
         }
@@ -40,7 +40,7 @@ namespace KingOfPirates.Missione.ScontroCarte.Carte
         */
 
         //Emanuele perchè restituisce un boolean? (Ruben)
-        public bool dimDeterminazione()
+        public bool DimDeterminazione()
         {
             return false;
         }
@@ -53,12 +53,12 @@ namespace KingOfPirates.Missione.ScontroCarte.Carte
         } 
         */
 
-        public bool getUtilizzabile()
+        public bool GetUtilizzabile()
         {
             return utilizzabile;
         }
 
-        public void setUtilizzabile(bool b)
+        public void SetUtilizzabile(bool b)
         {
             utilizzabile = b;
         }
