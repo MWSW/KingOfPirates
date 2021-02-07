@@ -46,7 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Bandiera.cs" />
+    <Compile Include="Missioni\Bandiera.cs" />
+    <Compile Include="Cartina\Cartina.cs" />
+    <Compile Include="Cartina\GestioneDominio.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,31 +56,33 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Gioco.cs" />
-    <Compile Include="Missione\GestoreMissione.cs" />
-    <Compile Include="Missione\ScontroCarte\Carte\Carta.cs" />
-    <Compile Include="Missione\ScontroCarte\Carte\CartaBase.cs" />
-    <Compile Include="Missione\Navi\Nave.cs" />
-    <Compile Include="Missione\Navi\NaveGiocatore.cs" />
-    <Compile Include="Missione\Navi\NaveNemico.cs" />
-    <Compile Include="Missione\Roba\Loc2D.cs" />
-    <Compile Include="Missione\Roba\Stats.cs" />
-    <Compile Include="Missione\ScontroCarte\Carte\CarteEffetto\CartaBuff.cs" />
-    <Compile Include="Missione\ScontroCarte\Carte\CarteEffetto\CartaCuraBase.cs" />
-    <Compile Include="Missione\ScontroCarte\Carte\CarteEffetto\CartaCuraEstesa.cs" />
-    <Compile Include="Missione\ScontroCarte\Carte\CarteEffetto\CartaDannoContinuo.cs" />
-    <Compile Include="Missione\ScontroCarte\Carte\CarteEffetto\CartaDebuff.cs" />
-    <Compile Include="Missione\ScontroCarte\Carte\CarteEffetto\CartaResa.cs" />
-    <Compile Include="Missione\ScontroCarte\Opponenti\Avversario.cs" />
-    <Compile Include="Missione\ScontroCarte\Opponenti\Giocatore.cs" />
-    <Compile Include="Missione\ScontroCarte\Opponenti\Inventario.cs" />
-    <Compile Include="Missione\ScontroCarte\Opponenti\Player.cs" />
+    <Compile Include="Missioni\GestoreMissione.cs" />
+    <Compile Include="Missioni\Griglia.cs" />
+    <Compile Include="Missioni\Missione.cs" />
+    <Compile Include="Missioni\Navi\Nave.cs" />
+    <Compile Include="Missioni\Navi\NaveGiocatore.cs" />
+    <Compile Include="Missioni\Navi\NaveNemico.cs" />
+    <Compile Include="Missioni\Roba\Loc2D.cs" />
+    <Compile Include="Missioni\Roba\Stats.cs" />
+    <Compile Include="Missioni\ScontroCarte\Carte\Carta.cs" />
+    <Compile Include="Missioni\ScontroCarte\Carte\CartaBase.cs" />
+    <Compile Include="Missioni\ScontroCarte\Carte\CarteEffetto\CartaBuff.cs" />
+    <Compile Include="Missioni\ScontroCarte\Carte\CarteEffetto\CartaCuraBase.cs" />
+    <Compile Include="Missioni\ScontroCarte\Carte\CarteEffetto\CartaCuraEstesa.cs" />
+    <Compile Include="Missioni\ScontroCarte\Carte\CarteEffetto\CartaDannoContinuo.cs" />
+    <Compile Include="Missioni\ScontroCarte\Carte\CarteEffetto\CartaDebuff.cs" />
+    <Compile Include="Missioni\ScontroCarte\Carte\CarteEffetto\CartaResa.cs" />
+    <Compile Include="Missioni\ScontroCarte\Opponenti\Avversario.cs" />
+    <Compile Include="Missioni\ScontroCarte\Opponenti\Giocatore.cs" />
+    <Compile Include="Missioni\ScontroCarte\Opponenti\Inventario.cs" />
+    <Compile Include="Missioni\ScontroCarte\Opponenti\Player.cs" />
     <Compile Include="Nassau\Edificio.cs" />
     <Compile Include="Nassau\Locanda.cs" />
     <Compile Include="Nassau\Negozio.cs" />
     <Compile Include="Nassau\Porto.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Ranking.cs" />
+    <Compile Include="Missioni\Ranking.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
