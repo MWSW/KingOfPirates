@@ -14,7 +14,7 @@ Gioco sui pirati fatto con i form di windows come compito per scuola
 ### File importanti:
 - [Wiki](https://github.com/chichibio-savoiardi/KingOfPirates/wiki)
 - [/docs/GiocoPirati.pdf](https://github.com/chichibio-savoiardi/KingOfPirates/blob/master/docs/GiocoPirati.pdf): PDF con le consegne.
-- [/docs/KingOfPirates.xml](https://github.com/chichibio-savoiardi/KingOfPirates/blob/master/docs/KingOfPirates.xml): da aprire con draw.io, contiene tutti i grafici creati in progettazione tra cui l'UML ([Viewer](https://viewer.diagrams.net/?target=self&highlight=0000ff&layers=1&nav=1&title=KingOfPirates.xml#Uhttps%3A%2F%2Fraw.githubusercontent.com%2Fchichibio-savoiardi%2FKingOfPirates%2Fmaster%2Fdocs%2FKingOfPirates.xml)).
+- [/docs/KingOfPirates.xml](https://github.com/chichibio-savoiardi/KingOfPirates/blob/master/docs/KingOfPirates.xml): da aprire con draw.io, contiene tutti i grafici creati in progettazione tra cui l'UML ([Viewer](https://viewer.diagrams.net/?target=blank&highlight=0000ff&layers=1&nav=1&title=KingOfPirates.xml#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1qKUfOE-O4eVKeHfDIJbAjwY-hfnbIuws%26export%3Ddownload)).
 - [/docs/Pre-Meccaniche.pdf](https://github.com/chichibio-savoiardi/KingOfPirates/blob/master/docs/Pre-meccaniche.pdf): Disegni in preparazione alla creazione delle meccaniche di gioco
 - [/docs/Meccaniche.pdf](https://github.com/chichibio-savoiardi/KingOfPirates/blob/master/docs/Meccaniche.pdf): Meccaniche che verranno usate nel gioco
 
