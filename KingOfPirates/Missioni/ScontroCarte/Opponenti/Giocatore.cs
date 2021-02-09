@@ -13,7 +13,6 @@ namespace KingOfPirates.Missioni.ScontroCarte.Opponenti
         private int hp;
         protected Carta[] mazzo;
 
-        private Inventario inv;
 
         public Giocatore(int hp_, int nCarte)
         {
