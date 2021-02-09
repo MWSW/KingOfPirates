@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KingOfPirates.Missioni.ScontroCarte.Opponenti
+namespace KingOfPirates.Missioni.Navi.Opponenti
 {
     class Inventario
     {
