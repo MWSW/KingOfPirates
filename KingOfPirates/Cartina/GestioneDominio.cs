@@ -14,7 +14,7 @@ namespace KingOfPirates.Cartina
 
         public GestioneDominio()
         {
-
+            //TODO
         }
 
         public void AddTasse(int val)

@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GUI\Missioni\MenuMissioni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Missioni\MenuMissioni.Designer.cs">
+      <DependentUpon>MenuMissioni.cs</DependentUpon>
+    </Compile>
     <Compile Include="Missioni\Bandiera.cs" />
     <Compile Include="Cartina\Cartina.cs" />
     <Compile Include="Cartina\GestioneDominio.cs" />

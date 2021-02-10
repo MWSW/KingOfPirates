@@ -8,19 +8,31 @@ namespace KingOfPirates.Missioni
 {
     class Griglia
     {
-        private int righe;
-        private int colonne;
+        private int righe, colonne;
 
-        int[] mat;
+        private int[,] mat;
 
-        public Griglia(int righe_, int colonne_)
+        public Griglia(int righe_, int colonne_, bool randomizzaMatr)
         {
             righe = righe_;
             colonne = colonne_;
+            mat = new int[righe, colonne];
 
-            //usare y*colonne + x -> per trovare una posizione della matrice [x][y]
-            //realizzata così perchè dava errore nella generazione della matrice classica
-            mat = new int[righe*colonne];
+            if (randomizzaMatr) RandMatrice();
         }
+
+        private void RandMatrice()
+        {
+            foreach (var num in mat)
+            {
+                //
+            }
+        }
+
+        //Properties/Proprieta'
+
+        public int[,] Mat { get => mat; set => mat = value; }
+        public int Righe { get => righe; set => righe = value; }
+        public int Colonne { get => colonne; set => colonne = value; }
     }
 }
