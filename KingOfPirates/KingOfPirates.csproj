@@ -79,10 +79,12 @@
     <Compile Include="Missioni\ScontroCarte\Carte\CarteEffetto\CartaDebuff.cs" />
     <Compile Include="Missioni\ScontroCarte\Carte\CarteEffetto\CartaResa.cs" />
     <Compile Include="Missioni\ScontroCarte\Carte\CarteEffetto\CartaTurniExtra.cs" />
-    <Compile Include="Missioni\ScontroCarte\Opponenti\Avversario.cs" />
-    <Compile Include="Missioni\ScontroCarte\Opponenti\Giocatore.cs" />
+    <Compile Include="Missioni\ScontroCarte\Opponenti\ListaCarte.cs" />
+    <Compile Include="Missioni\ScontroCarte\Opponenti\Mazzo.cs" />
+    <Compile Include="Missioni\ScontroCarte\Opponenti\Nemico_carte.cs" />
+    <Compile Include="Missioni\ScontroCarte\Opponenti\Giocatore_carte_base.cs" />
     <Compile Include="Missioni\Navi\Inventario.cs" />
-    <Compile Include="Missioni\ScontroCarte\Opponenti\Player.cs" />
+    <Compile Include="Missioni\ScontroCarte\Opponenti\Player_carte.cs" />
     <Compile Include="Nassau\Edificio.cs" />
     <Compile Include="Nassau\Locanda.cs" />
     <Compile Include="Nassau\Negozio.cs" />
@@ -133,6 +135,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Sasso.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pun_pun1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pun_pun2.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

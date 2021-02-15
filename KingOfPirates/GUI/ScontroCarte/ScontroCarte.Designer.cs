@@ -33,46 +33,54 @@
             this.label_giocatore = new System.Windows.Forms.Label();
             this.label_avversario = new System.Windows.Forms.Label();
             this.vita_avversario = new System.Windows.Forms.Label();
-            this.Att_1 = new System.Windows.Forms.Label();
-            this.Def_1 = new System.Windows.Forms.Label();
-            this.Elem_1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.img_avversario = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.att1 = new System.Windows.Forms.Label();
+            this.def1 = new System.Windows.Forms.Label();
+            this.def2 = new System.Windows.Forms.Label();
+            this.att2 = new System.Windows.Forms.Label();
+            this.def4 = new System.Windows.Forms.Label();
+            this.att4 = new System.Windows.Forms.Label();
+            this.def3 = new System.Windows.Forms.Label();
+            this.att3 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.cartaScelta = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.det1 = new System.Windows.Forms.Label();
+            this.nomeCarta1 = new System.Windows.Forms.Label();
+            this.nomeCarta2 = new System.Windows.Forms.Label();
+            this.det2 = new System.Windows.Forms.Label();
+            this.nomeCarta3 = new System.Windows.Forms.Label();
+            this.det3 = new System.Windows.Forms.Label();
+            this.det4 = new System.Windows.Forms.Label();
+            this.nomeCarta4 = new System.Windows.Forms.Label();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.Elem_1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.img_avversario)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cartaScelta)).BeginInit();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.cartaScelta = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.elem4 = new System.Windows.Forms.PictureBox();
+            this.img_carta4 = new System.Windows.Forms.PictureBox();
+            this.elem3 = new System.Windows.Forms.PictureBox();
+            this.img_carta3 = new System.Windows.Forms.PictureBox();
+            this.elem2 = new System.Windows.Forms.PictureBox();
+            this.img_carta2 = new System.Windows.Forms.PictureBox();
+            this.elem1 = new System.Windows.Forms.PictureBox();
+            this.img_carta1 = new System.Windows.Forms.PictureBox();
+            this.img_avversario = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cartaScelta)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.elem4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.img_carta4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.elem3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.img_carta3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.elem2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.img_carta2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.elem1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.img_carta1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.img_avversario)).BeginInit();
             this.SuspendLayout();
             // 
             // vita_giocatore
@@ -115,219 +123,93 @@
             this.vita_avversario.TabIndex = 3;
             this.vita_avversario.Text = "HP: 10/10";
             // 
-            // Att_1
+            // att1
             // 
-            this.Att_1.AutoSize = true;
-            this.Att_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Att_1.Font = new System.Drawing.Font("Agency FB", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Att_1.Location = new System.Drawing.Point(189, 535);
-            this.Att_1.Name = "Att_1";
-            this.Att_1.Size = new System.Drawing.Size(40, 35);
-            this.Att_1.TabIndex = 9;
-            this.Att_1.Text = "A:7";
+            this.att1.AutoSize = true;
+            this.att1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.att1.Font = new System.Drawing.Font("Agency FB", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.att1.Location = new System.Drawing.Point(202, 536);
+            this.att1.Name = "att1";
+            this.att1.Size = new System.Drawing.Size(40, 35);
+            this.att1.TabIndex = 9;
+            this.att1.Text = "A:7";
             // 
-            // Def_1
+            // def1
             // 
-            this.Def_1.AutoSize = true;
-            this.Def_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Def_1.Font = new System.Drawing.Font("Agency FB", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Def_1.Location = new System.Drawing.Point(189, 579);
-            this.Def_1.Name = "Def_1";
-            this.Def_1.Size = new System.Drawing.Size(43, 35);
-            this.Def_1.TabIndex = 10;
-            this.Def_1.Text = "D:4";
+            this.def1.AutoSize = true;
+            this.def1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.def1.Font = new System.Drawing.Font("Agency FB", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.def1.Location = new System.Drawing.Point(202, 580);
+            this.def1.Name = "def1";
+            this.def1.Size = new System.Drawing.Size(43, 35);
+            this.def1.TabIndex = 10;
+            this.def1.Text = "D:4";
             // 
-            // Elem_1
+            // def2
             // 
-            this.Elem_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.Elem_1.Image = global::KingOfPirates.Properties.Resources.fuoco;
-            this.Elem_1.Location = new System.Drawing.Point(343, 613);
-            this.Elem_1.Name = "Elem_1";
-            this.Elem_1.Size = new System.Drawing.Size(33, 38);
-            this.Elem_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Elem_1.TabIndex = 11;
-            this.Elem_1.TabStop = false;
+            this.def2.AutoSize = true;
+            this.def2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.def2.Font = new System.Drawing.Font("Agency FB", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.def2.Location = new System.Drawing.Point(441, 580);
+            this.def2.Name = "def2";
+            this.def2.Size = new System.Drawing.Size(43, 35);
+            this.def2.TabIndex = 14;
+            this.def2.Text = "D:4";
             // 
-            // pictureBox2
+            // att2
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.White;
-            this.pictureBox2.BackgroundImage = global::KingOfPirates.Properties.Resources.pun_pun;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Image = global::KingOfPirates.Properties.Resources.cartaVuota;
-            this.pictureBox2.Location = new System.Drawing.Point(208, 431);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(168, 220);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 8;
-            this.pictureBox2.TabStop = false;
+            this.att2.AutoSize = true;
+            this.att2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.att2.Font = new System.Drawing.Font("Agency FB", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.att2.Location = new System.Drawing.Point(441, 536);
+            this.att2.Name = "att2";
+            this.att2.Size = new System.Drawing.Size(40, 35);
+            this.att2.TabIndex = 13;
+            this.att2.Text = "A:7";
             // 
-            // img_avversario
+            // def4
             // 
-            this.img_avversario.Image = ((System.Drawing.Image)(resources.GetObject("img_avversario.Image")));
-            this.img_avversario.Location = new System.Drawing.Point(978, 124);
-            this.img_avversario.Name = "img_avversario";
-            this.img_avversario.Size = new System.Drawing.Size(201, 204);
-            this.img_avversario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.img_avversario.TabIndex = 7;
-            this.img_avversario.TabStop = false;
+            this.def4.AutoSize = true;
+            this.def4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.def4.Font = new System.Drawing.Font("Agency FB", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.def4.Location = new System.Drawing.Point(884, 580);
+            this.def4.Name = "def4";
+            this.def4.Size = new System.Drawing.Size(43, 35);
+            this.def4.TabIndex = 22;
+            this.def4.Text = "D:4";
             // 
-            // pictureBox1
+            // att4
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.pictureBox1.Image = global::KingOfPirates.Properties.Resources.ghiaccio;
-            this.pictureBox1.Location = new System.Drawing.Point(582, 613);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(33, 38);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 15;
-            this.pictureBox1.TabStop = false;
+            this.att4.AutoSize = true;
+            this.att4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.att4.Font = new System.Drawing.Font("Agency FB", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.att4.Location = new System.Drawing.Point(884, 536);
+            this.att4.Name = "att4";
+            this.att4.Size = new System.Drawing.Size(40, 35);
+            this.att4.TabIndex = 21;
+            this.att4.Text = "A:7";
             // 
-            // label1
+            // def3
             // 
-            this.label1.AutoSize = true;
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label1.Font = new System.Drawing.Font("Agency FB", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(428, 579);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(43, 35);
-            this.label1.TabIndex = 14;
-            this.label1.Text = "D:4";
+            this.def3.AutoSize = true;
+            this.def3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.def3.Font = new System.Drawing.Font("Agency FB", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.def3.Location = new System.Drawing.Point(674, 580);
+            this.def3.Name = "def3";
+            this.def3.Size = new System.Drawing.Size(43, 35);
+            this.def3.TabIndex = 18;
+            this.def3.Text = "D:4";
             // 
-            // label2
+            // att3
             // 
-            this.label2.AutoSize = true;
-            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label2.Font = new System.Drawing.Font("Agency FB", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(428, 535);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(40, 35);
-            this.label2.TabIndex = 13;
-            this.label2.Text = "A:7";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.White;
-            this.pictureBox3.BackgroundImage = global::KingOfPirates.Properties.Resources.pun_pun;
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Image = global::KingOfPirates.Properties.Resources.cartaVuota;
-            this.pictureBox3.Location = new System.Drawing.Point(447, 431);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(168, 220);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 12;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.pictureBox4.Image = global::KingOfPirates.Properties.Resources.fuoco;
-            this.pictureBox4.Location = new System.Drawing.Point(1025, 613);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(33, 38);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 23;
-            this.pictureBox4.TabStop = false;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label3.Font = new System.Drawing.Font("Agency FB", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(871, 579);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(43, 35);
-            this.label3.TabIndex = 22;
-            this.label3.Text = "D:4";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label4.Font = new System.Drawing.Font("Agency FB", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(871, 535);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(40, 35);
-            this.label4.TabIndex = 21;
-            this.label4.Text = "A:7";
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackColor = System.Drawing.Color.White;
-            this.pictureBox5.BackgroundImage = global::KingOfPirates.Properties.Resources.pun_pun;
-            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox5.Image = global::KingOfPirates.Properties.Resources.cartaVuota;
-            this.pictureBox5.Location = new System.Drawing.Point(890, 431);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(168, 220);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 20;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.pictureBox6.Image = global::KingOfPirates.Properties.Resources.Sasso;
-            this.pictureBox6.Location = new System.Drawing.Point(815, 613);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(33, 38);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 19;
-            this.pictureBox6.TabStop = false;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label5.Font = new System.Drawing.Font("Agency FB", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(661, 579);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(43, 35);
-            this.label5.TabIndex = 18;
-            this.label5.Text = "D:4";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label6.Font = new System.Drawing.Font("Agency FB", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(661, 535);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(40, 35);
-            this.label6.TabIndex = 17;
-            this.label6.Text = "A:7";
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.BackColor = System.Drawing.Color.White;
-            this.pictureBox7.BackgroundImage = global::KingOfPirates.Properties.Resources.pun_pun;
-            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox7.Image = global::KingOfPirates.Properties.Resources.cartaVuota;
-            this.pictureBox7.Location = new System.Drawing.Point(680, 431);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(168, 220);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 16;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(34, 124);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(201, 204);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox8.TabIndex = 24;
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox9.Location = new System.Drawing.Point(582, 306);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(33, 38);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox9.TabIndex = 28;
-            this.pictureBox9.TabStop = false;
+            this.att3.AutoSize = true;
+            this.att3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.att3.Font = new System.Drawing.Font("Agency FB", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.att3.Location = new System.Drawing.Point(674, 536);
+            this.att3.Name = "att3";
+            this.att3.Size = new System.Drawing.Size(40, 35);
+            this.att3.TabIndex = 17;
+            this.att3.Text = "A:7";
             // 
             // label7
             // 
@@ -351,27 +233,6 @@
             this.label8.TabIndex = 26;
             this.label8.Text = "--";
             // 
-            // cartaScelta
-            // 
-            this.cartaScelta.BackColor = System.Drawing.Color.Transparent;
-            this.cartaScelta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.cartaScelta.Location = new System.Drawing.Point(447, 124);
-            this.cartaScelta.Name = "cartaScelta";
-            this.cartaScelta.Size = new System.Drawing.Size(168, 220);
-            this.cartaScelta.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.cartaScelta.TabIndex = 25;
-            this.cartaScelta.TabStop = false;
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox11.Location = new System.Drawing.Point(824, 306);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(33, 38);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox11.TabIndex = 32;
-            this.pictureBox11.TabStop = false;
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -394,6 +255,112 @@
             this.label10.TabIndex = 30;
             this.label10.Text = "--";
             // 
+            // det1
+            // 
+            this.det1.AutoSize = true;
+            this.det1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.det1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.det1.Font = new System.Drawing.Font("Agency FB", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.det1.Location = new System.Drawing.Point(356, 432);
+            this.det1.Name = "det1";
+            this.det1.Size = new System.Drawing.Size(33, 35);
+            this.det1.TabIndex = 33;
+            this.det1.Text = "10";
+            // 
+            // nomeCarta1
+            // 
+            this.nomeCarta1.AutoSize = true;
+            this.nomeCarta1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.nomeCarta1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.nomeCarta1.Font = new System.Drawing.Font("Agency FB", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nomeCarta1.Location = new System.Drawing.Point(221, 432);
+            this.nomeCarta1.Name = "nomeCarta1";
+            this.nomeCarta1.Size = new System.Drawing.Size(68, 35);
+            this.nomeCarta1.TabIndex = 34;
+            this.nomeCarta1.Text = "Ezio g.";
+            // 
+            // nomeCarta2
+            // 
+            this.nomeCarta2.AutoSize = true;
+            this.nomeCarta2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.nomeCarta2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.nomeCarta2.Font = new System.Drawing.Font("Agency FB", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nomeCarta2.Location = new System.Drawing.Point(460, 432);
+            this.nomeCarta2.Name = "nomeCarta2";
+            this.nomeCarta2.Size = new System.Drawing.Size(82, 35);
+            this.nomeCarta2.TabIndex = 35;
+            this.nomeCarta2.Text = "Enzino I.";
+            // 
+            // det2
+            // 
+            this.det2.AutoSize = true;
+            this.det2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.det2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.det2.Font = new System.Drawing.Font("Agency FB", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.det2.Location = new System.Drawing.Point(595, 432);
+            this.det2.Name = "det2";
+            this.det2.Size = new System.Drawing.Size(33, 35);
+            this.det2.TabIndex = 36;
+            this.det2.Text = "10";
+            // 
+            // nomeCarta3
+            // 
+            this.nomeCarta3.AutoSize = true;
+            this.nomeCarta3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.nomeCarta3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.nomeCarta3.Font = new System.Drawing.Font("Agency FB", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nomeCarta3.Location = new System.Drawing.Point(693, 432);
+            this.nomeCarta3.Name = "nomeCarta3";
+            this.nomeCarta3.Size = new System.Drawing.Size(80, 35);
+            this.nomeCarta3.TabIndex = 37;
+            this.nomeCarta3.Text = "Gerri S.";
+            // 
+            // det3
+            // 
+            this.det3.AutoSize = true;
+            this.det3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.det3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.det3.Font = new System.Drawing.Font("Agency FB", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.det3.Location = new System.Drawing.Point(828, 432);
+            this.det3.Name = "det3";
+            this.det3.Size = new System.Drawing.Size(33, 35);
+            this.det3.TabIndex = 38;
+            this.det3.Text = "10";
+            // 
+            // det4
+            // 
+            this.det4.AutoSize = true;
+            this.det4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.det4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.det4.Font = new System.Drawing.Font("Agency FB", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.det4.Location = new System.Drawing.Point(1038, 432);
+            this.det4.Name = "det4";
+            this.det4.Size = new System.Drawing.Size(33, 35);
+            this.det4.TabIndex = 39;
+            this.det4.Text = "10";
+            // 
+            // nomeCarta4
+            // 
+            this.nomeCarta4.AutoSize = true;
+            this.nomeCarta4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.nomeCarta4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.nomeCarta4.Font = new System.Drawing.Font("Agency FB", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nomeCarta4.Location = new System.Drawing.Point(903, 432);
+            this.nomeCarta4.Name = "nomeCarta4";
+            this.nomeCarta4.Size = new System.Drawing.Size(102, 35);
+            this.nomeCarta4.TabIndex = 40;
+            this.nomeCarta4.Text = "Michelle H.";
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox11.Location = new System.Drawing.Point(824, 306);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(33, 38);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox11.TabIndex = 32;
+            this.pictureBox11.TabStop = false;
+            // 
             // pictureBox12
             // 
             this.pictureBox12.BackColor = System.Drawing.Color.Transparent;
@@ -405,11 +372,156 @@
             this.pictureBox12.TabIndex = 29;
             this.pictureBox12.TabStop = false;
             // 
+            // pictureBox9
+            // 
+            this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox9.Location = new System.Drawing.Point(582, 306);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(33, 38);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox9.TabIndex = 28;
+            this.pictureBox9.TabStop = false;
+            // 
+            // cartaScelta
+            // 
+            this.cartaScelta.BackColor = System.Drawing.Color.Transparent;
+            this.cartaScelta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.cartaScelta.Location = new System.Drawing.Point(447, 124);
+            this.cartaScelta.Name = "cartaScelta";
+            this.cartaScelta.Size = new System.Drawing.Size(168, 220);
+            this.cartaScelta.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.cartaScelta.TabIndex = 25;
+            this.cartaScelta.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
+            this.pictureBox8.Location = new System.Drawing.Point(34, 124);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(201, 204);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox8.TabIndex = 24;
+            this.pictureBox8.TabStop = false;
+            // 
+            // elem4
+            // 
+            this.elem4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.elem4.Image = global::KingOfPirates.Properties.Resources.fuoco;
+            this.elem4.Location = new System.Drawing.Point(1038, 614);
+            this.elem4.Name = "elem4";
+            this.elem4.Size = new System.Drawing.Size(33, 38);
+            this.elem4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.elem4.TabIndex = 23;
+            this.elem4.TabStop = false;
+            // 
+            // img_carta4
+            // 
+            this.img_carta4.BackColor = System.Drawing.Color.White;
+            this.img_carta4.BackgroundImage = global::KingOfPirates.Properties.Resources.pun_pun;
+            this.img_carta4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.img_carta4.Image = global::KingOfPirates.Properties.Resources.cartaVuota;
+            this.img_carta4.Location = new System.Drawing.Point(903, 432);
+            this.img_carta4.Name = "img_carta4";
+            this.img_carta4.Size = new System.Drawing.Size(168, 220);
+            this.img_carta4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.img_carta4.TabIndex = 20;
+            this.img_carta4.TabStop = false;
+            // 
+            // elem3
+            // 
+            this.elem3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.elem3.Image = global::KingOfPirates.Properties.Resources.Sasso;
+            this.elem3.Location = new System.Drawing.Point(828, 614);
+            this.elem3.Name = "elem3";
+            this.elem3.Size = new System.Drawing.Size(33, 38);
+            this.elem3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.elem3.TabIndex = 19;
+            this.elem3.TabStop = false;
+            // 
+            // img_carta3
+            // 
+            this.img_carta3.BackColor = System.Drawing.Color.White;
+            this.img_carta3.BackgroundImage = global::KingOfPirates.Properties.Resources.pun_pun1;
+            this.img_carta3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.img_carta3.Image = global::KingOfPirates.Properties.Resources.cartaVuota;
+            this.img_carta3.Location = new System.Drawing.Point(693, 432);
+            this.img_carta3.Name = "img_carta3";
+            this.img_carta3.Size = new System.Drawing.Size(168, 220);
+            this.img_carta3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.img_carta3.TabIndex = 16;
+            this.img_carta3.TabStop = false;
+            // 
+            // elem2
+            // 
+            this.elem2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.elem2.Image = global::KingOfPirates.Properties.Resources.ghiaccio;
+            this.elem2.Location = new System.Drawing.Point(595, 614);
+            this.elem2.Name = "elem2";
+            this.elem2.Size = new System.Drawing.Size(33, 38);
+            this.elem2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.elem2.TabIndex = 15;
+            this.elem2.TabStop = false;
+            // 
+            // img_carta2
+            // 
+            this.img_carta2.BackColor = System.Drawing.Color.White;
+            this.img_carta2.BackgroundImage = global::KingOfPirates.Properties.Resources.pun_pun2;
+            this.img_carta2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.img_carta2.Image = global::KingOfPirates.Properties.Resources.cartaVuota;
+            this.img_carta2.Location = new System.Drawing.Point(460, 432);
+            this.img_carta2.Name = "img_carta2";
+            this.img_carta2.Size = new System.Drawing.Size(168, 220);
+            this.img_carta2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.img_carta2.TabIndex = 12;
+            this.img_carta2.TabStop = false;
+            // 
+            // elem1
+            // 
+            this.elem1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.elem1.Image = global::KingOfPirates.Properties.Resources.fuoco;
+            this.elem1.Location = new System.Drawing.Point(356, 614);
+            this.elem1.Name = "elem1";
+            this.elem1.Size = new System.Drawing.Size(33, 38);
+            this.elem1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.elem1.TabIndex = 11;
+            this.elem1.TabStop = false;
+            // 
+            // img_carta1
+            // 
+            this.img_carta1.BackColor = System.Drawing.Color.White;
+            this.img_carta1.BackgroundImage = global::KingOfPirates.Properties.Resources.pun_pun;
+            this.img_carta1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.img_carta1.Image = global::KingOfPirates.Properties.Resources.cartaVuota;
+            this.img_carta1.Location = new System.Drawing.Point(221, 432);
+            this.img_carta1.Name = "img_carta1";
+            this.img_carta1.Size = new System.Drawing.Size(168, 220);
+            this.img_carta1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.img_carta1.TabIndex = 8;
+            this.img_carta1.TabStop = false;
+            // 
+            // img_avversario
+            // 
+            this.img_avversario.Image = ((System.Drawing.Image)(resources.GetObject("img_avversario.Image")));
+            this.img_avversario.Location = new System.Drawing.Point(978, 124);
+            this.img_avversario.Name = "img_avversario";
+            this.img_avversario.Size = new System.Drawing.Size(201, 204);
+            this.img_avversario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.img_avversario.TabIndex = 7;
+            this.img_avversario.TabStop = false;
+            // 
             // ScontroCarte
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1262, 673);
+            this.Controls.Add(this.nomeCarta4);
+            this.Controls.Add(this.det4);
+            this.Controls.Add(this.det3);
+            this.Controls.Add(this.nomeCarta3);
+            this.Controls.Add(this.det2);
+            this.Controls.Add(this.nomeCarta2);
+            this.Controls.Add(this.nomeCarta1);
+            this.Controls.Add(this.det1);
             this.Controls.Add(this.pictureBox11);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label10);
@@ -419,22 +531,22 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.cartaScelta);
             this.Controls.Add(this.pictureBox8);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.pictureBox7);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.Elem_1);
-            this.Controls.Add(this.Def_1);
-            this.Controls.Add(this.Att_1);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.elem4);
+            this.Controls.Add(this.def4);
+            this.Controls.Add(this.att4);
+            this.Controls.Add(this.img_carta4);
+            this.Controls.Add(this.elem3);
+            this.Controls.Add(this.def3);
+            this.Controls.Add(this.att3);
+            this.Controls.Add(this.img_carta3);
+            this.Controls.Add(this.elem2);
+            this.Controls.Add(this.def2);
+            this.Controls.Add(this.att2);
+            this.Controls.Add(this.img_carta2);
+            this.Controls.Add(this.elem1);
+            this.Controls.Add(this.def1);
+            this.Controls.Add(this.att1);
+            this.Controls.Add(this.img_carta1);
             this.Controls.Add(this.img_avversario);
             this.Controls.Add(this.label_avversario);
             this.Controls.Add(this.vita_avversario);
@@ -443,20 +555,20 @@
             this.Name = "ScontroCarte";
             this.Text = "ScontroCarte";
             this.Load += new System.EventHandler(this.OnLoad);
-            ((System.ComponentModel.ISupportInitialize)(this.Elem_1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.img_avversario)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cartaScelta)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cartaScelta)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.elem4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.img_carta4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.elem3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.img_carta3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.elem2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.img_carta2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.elem1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.img_carta1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.img_avversario)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -469,22 +581,22 @@
         private System.Windows.Forms.Label label_avversario;
         private System.Windows.Forms.Label vita_avversario;
         private System.Windows.Forms.PictureBox img_avversario;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label Att_1;
-        private System.Windows.Forms.Label Def_1;
-        private System.Windows.Forms.PictureBox Elem_1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox img_carta1;
+        private System.Windows.Forms.Label att1;
+        private System.Windows.Forms.Label def1;
+        private System.Windows.Forms.PictureBox elem1;
+        private System.Windows.Forms.PictureBox elem2;
+        private System.Windows.Forms.Label def2;
+        private System.Windows.Forms.Label att2;
+        private System.Windows.Forms.PictureBox img_carta2;
+        private System.Windows.Forms.PictureBox elem4;
+        private System.Windows.Forms.Label def4;
+        private System.Windows.Forms.Label att4;
+        private System.Windows.Forms.PictureBox img_carta4;
+        private System.Windows.Forms.PictureBox elem3;
+        private System.Windows.Forms.Label def3;
+        private System.Windows.Forms.Label att3;
+        private System.Windows.Forms.PictureBox img_carta3;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.Label label7;
@@ -494,5 +606,13 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.PictureBox pictureBox12;
+        private System.Windows.Forms.Label det1;
+        private System.Windows.Forms.Label nomeCarta1;
+        private System.Windows.Forms.Label nomeCarta2;
+        private System.Windows.Forms.Label det2;
+        private System.Windows.Forms.Label nomeCarta3;
+        private System.Windows.Forms.Label det3;
+        private System.Windows.Forms.Label det4;
+        private System.Windows.Forms.Label nomeCarta4;
     }
 }

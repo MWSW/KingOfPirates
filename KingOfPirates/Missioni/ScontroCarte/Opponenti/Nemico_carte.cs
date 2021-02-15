@@ -1,26 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 
 using KingOfPirates.Missioni.ScontroCarte.Carte;
 
 namespace KingOfPirates.Missioni.ScontroCarte.Opponenti
 {
-    abstract class Giocatore
+    class Nemico_carte : Giocatore_carte_base
     {
-        private int hp;
-        protected Carta[] mazzo;
-
-
-        public Giocatore(int hp_, int nCarte)
+        public Nemico_carte(int hp_, Bitmap img_, Mazzo mazzo_)
+            : base(hp_, img_, mazzo_)
         {
-            hp = hp_;
-            mazzo = new Carta[nCarte]; //istanzia nuovo mazzo
+
         }
 
-        public void AssegnaCarta(Carta carta, int n)
+        public void UsaCarta()
         {
 
         }
