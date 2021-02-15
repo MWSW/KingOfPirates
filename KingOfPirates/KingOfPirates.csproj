@@ -46,11 +46,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="GUI\Missioni\MenuMissioni.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\Missioni\MenuMissioni.Designer.cs">
       <DependentUpon>MenuMissioni.cs</DependentUpon>
+=======
+    <Compile Include="GUI\ScontroCarte\ScontroCarte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ScontroCarte\ScontroCarte.Designer.cs">
+      <DependentUpon>ScontroCarte.cs</DependentUpon>
+>>>>>>> Ruben
     </Compile>
     <Compile Include="Missioni\Bandiera.cs" />
     <Compile Include="Cartina\Cartina.cs" />
@@ -90,8 +98,13 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Missioni\Ranking.cs" />
+<<<<<<< HEAD
     <EmbeddedResource Include="GUI\Missioni\MenuMissioni.resx">
       <DependentUpon>MenuMissioni.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="GUI\ScontroCarte\ScontroCarte.resx">
+      <DependentUpon>ScontroCarte.cs</DependentUpon>
+>>>>>>> Ruben
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -101,6 +114,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -115,6 +129,23 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\pun_pun.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="GUI\ScontroCarte\img_test\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cartaVuota.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fuoco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ghiaccio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sasso.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
