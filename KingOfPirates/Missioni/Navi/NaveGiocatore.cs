@@ -18,10 +18,10 @@ namespace KingOfPirates.Missioni.Navi
 
         private Inventario inventario;
 
-        //TO-FIX: Per ora Stats e Loc2D sono a zero
+        //FIXME: Per ora Stats e Loc2D sono a zero
         public NaveGiocatore(String nome_, Bitmap immagine_) : base(nome_, immagine_, new Stats(), new Loc2D())
         {
-
+            //
         }
         public override void Movimento(Loc2D spostamento)
         {
