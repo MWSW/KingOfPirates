@@ -23,9 +23,12 @@ namespace KingOfPirates.Missioni
 
         private void RandMatrice()
         {
-            foreach (var num in mat)
+            for(int i = 0; i < righe; i++)
             {
-                //
+                for (int j = 0; j < colonne; j++)
+                {
+                    mat[i, j] = new Random().Next(2);
+                }
             }
         }
 
