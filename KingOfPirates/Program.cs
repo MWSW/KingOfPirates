@@ -19,7 +19,8 @@ namespace KingOfPirates
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            new StartMenu().Show();
+            //new StartMenu().Show();
+            new ScontroCarte().Show();
             Application.Run();
         }
     }
