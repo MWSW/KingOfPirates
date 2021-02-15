@@ -1,17 +1,11 @@
-﻿using KingOfPirates.GUI.ScontroCarte;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-<<<<<<< HEAD
 using KingOfPirates;
 using KingOfPirates.GUI.MenuPrincipale;
-=======
-//using KingOfPirates.GUI.MenuPrincipale;
-
-
->>>>>>> Ruben
+using KingOfPirates.GUI.ScontroCarte;
 
 namespace KingOfPirates
 {
@@ -25,12 +19,8 @@ namespace KingOfPirates
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-<<<<<<< HEAD
-            new StartMenu().Show();
-=======
             //new StartMenu().Show();
             new ScontroCarte().Show();
->>>>>>> Ruben
             Application.Run();
         }
     }

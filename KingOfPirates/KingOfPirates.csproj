@@ -52,6 +52,12 @@
     <Compile Include="GUI\Missioni\MenuMissioni.Designer.cs">
       <DependentUpon>MenuMissioni.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\ScontroCarte\ScontroCarte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ScontroCarte\ScontroCarte.Designer.cs">
+      <DependentUpon>ScontroCarte.cs</DependentUpon>
+    </Compile>
     <Compile Include="Missioni\Bandiera.cs" />
     <Compile Include="Cartina\Cartina.cs" />
     <Compile Include="Cartina\GestioneDominio.cs" />
@@ -93,6 +99,9 @@
     <EmbeddedResource Include="GUI\Missioni\MenuMissioni.resx">
       <DependentUpon>MenuMissioni.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ScontroCarte\ScontroCarte.resx">
+      <DependentUpon>ScontroCarte.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -119,9 +128,7 @@
   <ItemGroup>
     <None Include="Resources\pun_pun.jpg" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="GUI\ScontroCarte\img_test\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\cartaVuota.PNG" />
   </ItemGroup>
