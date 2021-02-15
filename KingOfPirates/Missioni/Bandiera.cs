@@ -17,17 +17,12 @@ namespace KingOfPirates.Missioni
             giocoEnd = false;
         }
 
+        public static bool MissioneEnd { get => missioneEnd; set => missioneEnd = value; }
+        public static bool GiocoEnd { get => giocoEnd; set => giocoEnd = value; }
+
         public void IsDone()
         {
-            if (missioneEnd)
-            {
-                //TODO
-            }
-
-            if (giocoEnd)
-            {
-                Termina("App terminata in Bandiera.IsDone");
-            }
+            // TODO
         }
 
         public void Termina(string msg)
@@ -35,8 +30,5 @@ namespace KingOfPirates.Missioni
             Console.WriteLine(msg);
             System.Windows.Forms.Application.Exit();
         }
-
-        public static bool MissioneEnd { get => missioneEnd; set => missioneEnd = value; }
-        public static bool GiocoEnd { get => giocoEnd; set => giocoEnd = value; }
     }
 }

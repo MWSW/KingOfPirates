@@ -29,17 +29,10 @@ namespace KingOfPirates.GUI.Missioni
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // MenuMissioni
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1264, 681);
-            this.Name = "MenuMissioni";
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Text = "MenuMissioni";
-            this.ResumeLayout(false);
-
         }
 
         #endregion
