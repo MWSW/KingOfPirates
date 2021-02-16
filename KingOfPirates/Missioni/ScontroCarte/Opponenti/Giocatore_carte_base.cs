@@ -11,22 +11,37 @@ namespace KingOfPirates.Missioni.ScontroCarte.Opponenti
 {
     abstract class Giocatore_carte_base
     {
-        private int hp;
-        protected Mazzo mazzo;
+        private int maxHp;
+        private int curHp;
 
         private Bitmap img;
 
 
-        public Giocatore_carte_base(int hp_, Bitmap img_, Mazzo mazzo_)
+        public Giocatore_carte_base(int maxHp_, Bitmap img_)
         {
-            hp = hp_;
+            maxHp = maxHp_;
+            curHp = maxHp;
+
             img = img_;
-            mazzo = mazzo_;
         }
 
-        public void AssegnaCarta(Carta carta, int n)
+
+
+        public void AddHp(int val)
         {
-
+            curHp += val;
+            if (curHp >= maxHp)
+                curHp = maxHp;
         }
+
+        public void LessHp(int val)
+        {
+            curHp -= val;
+            if (curHp < 0)
+                curHp = 0;
+        }
+
+        public int CurHp {get => curHp;}
+        public int MaxHp { get => maxHp; }
     }
 }

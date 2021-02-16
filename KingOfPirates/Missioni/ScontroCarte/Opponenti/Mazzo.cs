@@ -42,6 +42,6 @@ namespace KingOfPirates.Missioni.ScontroCarte.Opponenti
             return disponibile[indice];
         }
 
-        public int Lenght { get => carte.Length; }
+        public int Length { get => carte.Length; }
     }
 }

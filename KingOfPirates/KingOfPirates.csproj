@@ -46,6 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GUI\MenuPrincipale\StartMenu.cs" />
+    <Compile Include="GUI\MenuPrincipale\StartMenu.Designer.cs">
+      <DependentUpon>StartMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\ScontroCarte\ScontroCarte.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -149,6 +153,9 @@
     <None Include="Resources\SpazioVuoto.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\nascondi.png" />
+    <None Include="Resources\next.png" />
+    <None Include="Resources\bottone_attacco.png" />
     <Content Include="Resources\sfondo_carta.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

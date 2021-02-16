@@ -12,15 +12,19 @@ namespace KingOfPirates.Missioni.ScontroCarte.Opponenti
 {
     class Nemico_carte : Giocatore_carte_base
     {
-        public Nemico_carte(int hp_, Bitmap img_, Mazzo mazzo_)
-            : base(hp_, img_, mazzo_)
-        {
+        private Carta[] mazzo;
 
+        public Nemico_carte(int hp_, Bitmap img_, Carta[] mazzo_)
+            : base(hp_, img_)
+        {
+            mazzo = mazzo_;
         }
 
-        public void UsaCarta()
+        public Carta UsaCarta()
         {
-
+            Random rng = new Random();
+            return mazzo[rng.Next(0, mazzo.Length -1)];  //FIX-ME (non va bene il mazzo)
         }
+
     }
 }

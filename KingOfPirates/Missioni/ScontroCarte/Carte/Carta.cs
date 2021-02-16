@@ -26,6 +26,7 @@ namespace KingOfPirates.Missioni.ScontroCarte.Carte
 
         public void Visualizza(PictureBox img_carta, Label nomeCarta, Label det)
         {
+            img_carta.Image = Properties.Resources.cartaVuota;
             img_carta.Show();
             nomeCarta.Show();
             det.Show();
@@ -37,6 +38,7 @@ namespace KingOfPirates.Missioni.ScontroCarte.Carte
 
         public void Nascondi(PictureBox img_carta, Label nomeCarta, Label det)
         {
+            img_carta.BackgroundImage = null;
             img_carta.Hide();
             nomeCarta.Hide();
             det.Hide();

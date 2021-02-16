@@ -63,6 +63,16 @@ namespace KingOfPirates.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bottone_attacco {
+            get {
+                object obj = ResourceManager.GetObject("bottone_attacco", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cartaVuota {
             get {
                 object obj = ResourceManager.GetObject("cartaVuota", resourceCulture);
@@ -86,6 +96,26 @@ namespace KingOfPirates.Properties {
         internal static System.Drawing.Bitmap ghiaccio {
             get {
                 object obj = ResourceManager.GetObject("ghiaccio", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap nascondi {
+            get {
+                object obj = ResourceManager.GetObject("nascondi", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap next {
+            get {
+                object obj = ResourceManager.GetObject("next", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
