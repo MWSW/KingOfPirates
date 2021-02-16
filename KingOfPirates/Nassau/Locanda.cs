@@ -21,9 +21,10 @@ namespace KingOfPirates.Nassau
 
 
         //Fa riferimento al costruttore della sua superclasse
-        public Locanda(Bitmap immagine_) : base("Locanda", immagine_) 
+        public Locanda() 
         {
             slotCarte = new Carta[nSlot];
+            nome = "Locanda";
         }
 
         public override void Upgrade()

@@ -117,11 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="rotolo-della-pergamena-insegna-dorata-carta-d-114354616" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\rotolo-della-pergamena-insegna-dorata-carta-d-114354616.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="scroll-png-clipart-image-5a1ca0ed7e0df8.5794533815118256455163" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\scroll-png-clipart-image-5a1ca0ed7e0df8.5794533815118256455163.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
 </root>

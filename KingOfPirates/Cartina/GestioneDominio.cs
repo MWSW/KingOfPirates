@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace KingOfPirates.Cartina
 {
-    class GestioneDominio
+    public class GestioneDominio
     {
-        private int tasse; //dobloni per turno
+        private int dobloniPerTurno; //dobloni per turno
         private int cassaDobloni;
         private int cassaRubini;
 
@@ -19,7 +19,7 @@ namespace KingOfPirates.Cartina
 
         public void AddTasse(int val)
         {
-            tasse += val;
+            dobloniPerTurno += val;
         }
 
         public void AddDobloni(int dobloni)
@@ -30,6 +30,21 @@ namespace KingOfPirates.Cartina
         public void AddRubini(int rubini)
         {
             cassaRubini += rubini;
+        }
+
+        public void AddTaglieMercantile(int nTaglie)
+        {
+            taglieMercantile += nTaglie;
+        }
+
+        public void AddTaglieCaravella(int nTaglie)
+        {
+            taglieMercantile += nTaglie;
+        }
+
+        public void AddTaglieFregata(int nTaglie)
+        {
+            taglieMercantile += nTaglie;
         }
 
         public void RemDobloni(int dobloni)

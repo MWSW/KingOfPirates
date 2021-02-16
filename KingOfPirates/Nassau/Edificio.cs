@@ -3,25 +3,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-//Per poter usare la classe Bitmap
-using System.Drawing;
+using System.Drawing;   //Per poter usare la classe Bitmap
 
 namespace KingOfPirates.Nassau
 {
     abstract class Edificio //L'oggetto Edificio non puo' essere creato
     {
 
-        private string nome;
-        private Bitmap immagine;
+        protected string nome;
+        protected Bitmap immagine;
 
 
-        protected Edificio(string nome_, Bitmap immagine_)
+        protected Edificio()
         {
-            nome = nome_;
-            immagine = immagine_;
+
         }
 
-        public abstract void Upgrade(); //Sarà definito dalle classi figlie
+        public abstract void Upgrade();     //Sarà definito dalle classi figlie
     }
 }

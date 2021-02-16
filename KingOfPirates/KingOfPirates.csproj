@@ -46,6 +46,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GUI\MenuNassau\Locanda_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\MenuNassau\Locanda_form.Designer.cs">
+      <DependentUpon>Locanda_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\MenuNassau\Nassau_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\MenuNassau\Nassau_form.Designer.cs">
+      <DependentUpon>Nassau_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\MenuNassau\Negozio_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\MenuNassau\Negozio_form.Designer.cs">
+      <DependentUpon>Negozio_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\MenuNassau\Porto_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\MenuNassau\Porto_form.Designer.cs">
+      <DependentUpon>Porto_form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Missioni\Bandiera.cs" />
     <Compile Include="Cartina\Cartina.cs" />
     <Compile Include="Cartina\GestioneDominio.cs" />
@@ -84,6 +108,12 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Missioni\Ranking.cs" />
+    <EmbeddedResource Include="GUI\MenuNassau\Nassau_form.resx">
+      <DependentUpon>Nassau_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\MenuNassau\Negozio_form.resx">
+      <DependentUpon>Negozio_form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -92,6 +122,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -106,6 +137,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\rotolo-della-pergamena-insegna-dorata-carta-d-114354616.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scroll-png-clipart-image-5a1ca0ed7e0df8.5794533815118256455163.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

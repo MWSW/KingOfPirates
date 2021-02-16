@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using KingOfPirates.GUI.MenuPrincipale;
+using KingOfPirates.GUI.MenuNassau;
 
 namespace KingOfPirates
 {
@@ -17,7 +18,7 @@ namespace KingOfPirates
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            new StartMenu().Show();
+            new Nassau_form().Show();
             Application.Run();
         }
     }

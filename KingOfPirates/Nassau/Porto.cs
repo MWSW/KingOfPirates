@@ -17,9 +17,13 @@ namespace KingOfPirates.Nassau
 
         private int livelloPorto;
 
-        public Porto(Bitmap immagine_) : base("Porto", immagine_)
+        public Porto()
         {
-
+            nome = "Porto";
+            livelloPorto = 0;
+            livelloCannoni = 0;
+            livelloVele = 0;
+            livelloScafo = 0;
         }
 
         public void Salpa() 

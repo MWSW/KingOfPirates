@@ -12,22 +12,59 @@ namespace KingOfPirates.Nassau
     {
 
         private int livelloNegozio; //salva il livello degli upgrade
+        private int[] prezziOggetti;
 
-        public Negozio(Bitmap immagine_) : base("Negozio", immagine_)
+        public Negozio()
         {
-
+            livelloNegozio = 0;
+            nome = "Negozio";
+            prezziOggetti = new int[4];
         }
 
-        //TODO: public void RiscattaTaglie(Player p){}
-        //TODO: public void AcquistaBevandaDeterminazione(Player p){}
-        //TODO: public void AcquistaRum(Player p){}
-        //TODO: public void AcquistaAntiubriachezza(Player p){}
-        //TODO: public void AcquistaAssiLegno(Player p){}
-        //TODO: public void AcquistaCarta(Player p, Carta c){}
+        public void RiscattaTaglie(GestioneDominio gest){
+            int taglieMerca = gest.TaglieMercantile;            //assegnazione del numero di taglie per tipo
+            int taglieCarav = gest.TaglieCaravella;
+            int taglieFrega = gest.TaglieFregata;
+
+            int valoreMerca = 1;                                //valore per tipo di taglia
+            int valoreCarav = 1;
+            int valoreFrega = 1;
+
+            gest.AddDobloni(taglieMerca * valoreMerca);         //riscossione taglia, aggiunta dobloni alla cassa
+            gest.AddDobloni(taglieCarav * valoreCarav);
+            gest.AddDobloni(taglieFrega * valoreFrega);
+
+            gest.TaglieMercantile = 0;                          //reset nTaglie
+            gest.TaglieCaravella = 0;
+            gest.TaglieFregata = 0;
+        }
+
+        public void AcquistaBevandaDeterminazione(NaveGiocatore nave){
+            //incrementa il numero di bevante
+        }
+
+        public void AcquistaRum(NaveGiocatore nave)
+        {
+            //incrementa il numero di bottiglie di rum
+        }
+        
+        public void AcquistaAntiubriachezza(NaveGiocatore nave)
+        {
+            //incrementa il numero di antiubriachezza
+        }
+
+        public void AcquistaAssiLegno(NaveGiocatore nave)
+        {
+            //incrementa il numero di assi di legno
+        }
+        
+        public void AcquistaCarta(){
+            //...
+        }
 
         public override void Upgrade()
         {
-
+            livelloNegozio ++;
         }
     }
 }
