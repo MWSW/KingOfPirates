@@ -16,15 +16,5 @@ namespace KingOfPirates.GUI.Missioni
         {
             InitializeComponent();
         }
-
-        private void MenuMissioni_Load(object sender, EventArgs e)
-        {
-            //TODO
-        }
-
-        private void test()
-        {
-            //
-        }
     }
 }
