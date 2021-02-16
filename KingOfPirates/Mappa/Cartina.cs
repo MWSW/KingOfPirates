@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using System.Drawing;
 using KingOfPirates.Missioni;
 
-namespace KingOfPirates.Cartina
+namespace KingOfPirates.Mappa
 {
     class Cartina
     {

@@ -59,8 +59,8 @@
       <DependentUpon>ScontroCarte.cs</DependentUpon>
     </Compile>
     <Compile Include="Missioni\Bandiera.cs" />
-    <Compile Include="Cartina\Cartina.cs" />
-    <Compile Include="Cartina\GestioneDominio.cs" />
+    <Compile Include="Mappa\Cartina.cs" />
+    <Compile Include="Mappa\GestioneDominio.cs" />
     <Compile Include="GUI\MenuPrincipale\StartMenu.cs">
       <SubType>Form</SubType>
     </Compile>
