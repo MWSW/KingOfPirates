@@ -24,7 +24,7 @@ namespace KingOfPirates.GUI.Missioni
 
         private void test()
         {
-            Griglia_TableLayoutPanel.
+            Griglia_TableLayoutPanel.Get;
         }
     }
 }
