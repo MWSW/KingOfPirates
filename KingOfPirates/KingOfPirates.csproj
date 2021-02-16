@@ -75,7 +75,7 @@
     <Compile Include="Missioni\ScontroCarte\Carte\CarteEffetto\CartaTurniExtra.cs" />
     <Compile Include="Missioni\ScontroCarte\Opponenti\Avversario.cs" />
     <Compile Include="Missioni\ScontroCarte\Opponenti\Giocatore.cs" />
-    <Compile Include="Missioni\ScontroCarte\Opponenti\Inventario.cs" />
+    <Compile Include="Missioni\Navi\Inventario.cs" />
     <Compile Include="Missioni\ScontroCarte\Opponenti\Player.cs" />
     <Compile Include="Nassau\Edificio.cs" />
     <Compile Include="Nassau\Locanda.cs" />
