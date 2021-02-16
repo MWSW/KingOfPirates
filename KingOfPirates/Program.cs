@@ -6,6 +6,7 @@ using System.Windows.Forms;
 using KingOfPirates;
 using KingOfPirates.GUI.MenuPrincipale;
 using KingOfPirates.GUI.ScontroCarte;
+using KingOfPirates.GUI.Missioni;
 
 namespace KingOfPirates
 {
@@ -20,7 +21,7 @@ namespace KingOfPirates
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //new StartMenu().Show();
-            new ScontroCarte().Show();
+            new MenuMissioni().Show();
             Application.Run();
         }
     }

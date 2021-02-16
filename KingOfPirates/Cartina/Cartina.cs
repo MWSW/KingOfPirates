@@ -13,8 +13,8 @@ namespace KingOfPirates.Cartina
     {
         private Bitmap immagine;
 
-        //Missione[] arcipelago1;
-        //Missioni[] arcipelago2;
+        Missione[] arcipelago1;
+        Missione[] arcipelago2;
 
         public Cartina(Bitmap immagine_)
         {

@@ -96,6 +96,12 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Missioni\Ranking.cs" />
+    <EmbeddedResource Include="GUI\MenuPrincipale\StartMenu.resx">
+      <DependentUpon>StartMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Missioni\MenuMissioni.resx">
+      <DependentUpon>MenuMissioni.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\ScontroCarte\ScontroCarte.resx">
       <DependentUpon>ScontroCarte.cs</DependentUpon>
     </EmbeddedResource>
@@ -109,6 +115,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Properties\DataSources\KingOfPirates.Cartina.Cartina.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
