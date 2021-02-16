@@ -36,6 +36,21 @@ namespace KingOfPirates.Missioni.ScontroCarte.Opponenti
             }
         }
 
+        public void PescaCarta(int posizione)
+        {
+            mazzo.RiponiCarta(carteInMano[posizione].Indice);
+
+            Random rng = new Random();
+            int num;
+            do
+            {
+               num = rng.Next(0, mazzo.Length);
+            }
+            while (!mazzo.CartaDisponibile(num)); //ripesca se la carta non è disponibile
+
+            carteInMano[posizione] = mazzo.PrendiCarta(num); //assegna carte random dalla mano               
+        }
+
         public void UsaOggetto(int n)
         {
 

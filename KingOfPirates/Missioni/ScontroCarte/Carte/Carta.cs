@@ -17,6 +17,8 @@ namespace KingOfPirates.Missioni.ScontroCarte.Carte
         protected bool utilizzabile; //Non so se va in conflitto con mazzo
         protected Bitmap immagine;
 
+        private int indice;
+
         protected Carta(string nome_, int determinazione_, Bitmap immagine_)
         {
             nome = nome_;
@@ -78,5 +80,6 @@ namespace KingOfPirates.Missioni.ScontroCarte.Carte
         public Bitmap Immagine { get => immagine; }
         public string Nome { get => nome; }
         public int Determinazione { get => determinazione; }
+        public int Indice { get => indice; set => indice = value; }
     }
 }

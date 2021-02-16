@@ -440,6 +440,7 @@
             this.bt_successivo.TabIndex = 54;
             this.bt_successivo.TabStop = false;
             this.bt_successivo.Visible = false;
+            this.bt_successivo.Click += new System.EventHandler(this.bt_successivo_Click);
             // 
             // bt_attacco
             // 

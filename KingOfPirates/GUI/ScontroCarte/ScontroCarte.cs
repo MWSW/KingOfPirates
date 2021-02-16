@@ -22,6 +22,8 @@ namespace KingOfPirates.GUI.ScontroCarte
 
         int cartaSelezionata;
 
+        bool staiAttaccando;
+
         //Componenti grafiche
         PictureBox[] img_carta;
         Label[] nomeCarta;
@@ -82,7 +84,7 @@ namespace KingOfPirates.GUI.ScontroCarte
             //Inizializzo gli oggetti
 
             Carta[] carte = {ListaCarte.GetCarta(0),
-                 ListaCarte.GetCarta(1), ListaCarte.GetCarta(1), ListaCarte.GetCarta(2), ListaCarte.GetCarta(0)};
+                 ListaCarte.GetCarta(1), ListaCarte.GetCarta(2), ListaCarte.GetCarta(3), ListaCarte.GetCarta(4), ListaCarte.GetCarta(5)};
 
             player = new Player_carte(10, new Mazzo(carte));
             nemico = new Nemico_carte(10, null, carte); //FIX-ME
@@ -216,10 +218,10 @@ namespace KingOfPirates.GUI.ScontroCarte
                 elem0.BackColor = Color.LightGreen;
                 elemA.BackColor = Color.LightCoral;
             }
-            else if(cartaTua.Elemento != cartaNemico.Elemento) //parità
+            else if(cartaTua.Elemento == cartaNemico.Elemento) //parità
             {
-                elem0.BackColor = Color.LightSteelBlue;
-                elemA.BackColor = Color.LightSteelBlue;
+                elem0.BackColor = Color.Bisque;
+                elemA.BackColor = Color.Bisque;
             }
             else //sconfitta elementale
             {
@@ -241,8 +243,6 @@ namespace KingOfPirates.GUI.ScontroCarte
             vita_avversario.Text = "HP: " + nemico.CurHp + "/" + nemico.MaxHp;
             vita_avversario.ForeColor = Color.Red;
 
-           // MessageBox.Show(dmg.ToString());
-           // MessageBox.Show(nemico.CurHp.ToString());
 
         }
 
@@ -264,6 +264,40 @@ namespace KingOfPirates.GUI.ScontroCarte
             bt_nascondi.Hide();
 
             cartaSelezionata = -1;
+        }
+
+        private void bt_successivo_Click(object sender, EventArgs e)
+        {
+            bt_successivo.Hide();
+
+            //rimuovi dalla selezione
+            player.CarteInMano[cartaSelezionata].Nascondi(img_carta0, nomeCarta0, det0, att0, def0, elem0);
+
+            img_carta0.Show();
+            img_carta0.Image = Properties.Resources.SpazioVuoto;
+
+            //peschi una nuova carta
+            player.PescaCarta(cartaSelezionata);
+
+            player.CarteInMano[cartaSelezionata]
+               .Visualizza(img_carta[cartaSelezionata], nomeCarta[cartaSelezionata], det[cartaSelezionata],
+               att[cartaSelezionata], def[cartaSelezionata], elem[cartaSelezionata]);
+
+            cartaSelezionata = -1;
+
+            //Il nemico sceglie una nuova carta con cui attaccare
+            CartaBase cartaNemico = (CartaBase)(nemico.UsaCarta());
+            cartaNemico.Visualizza(img_cartaA, nomeCartaA, detA, attA, defA, elemA);
+
+            defA.BackColor = Color.LightGray;
+
+            attA.BackColor = Color.LightBlue;
+            elemA.BackColor = Color.LightBlue;
+
+            detA.BackColor = Color.LightGoldenrodYellow;
+
+            vita_avversario.ForeColor = Color.Black;
+
         }
     }
 }
