@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using KingOfPirates.Cartina;
+using KingOfPirates.Missioni.Navi;
 
 namespace KingOfPirates.GUI.MenuNassau
 {
@@ -17,12 +18,20 @@ namespace KingOfPirates.GUI.MenuNassau
         private Locanda_form locanda;
         private Porto_form porto;
 
-        private GestioneDominio gestoreDomino = new GestioneDominio();      //da spostare nel 'main' per renderlo utilizzabile anche dalla missione
+        private Bitmap img = Properties.Resources.prova;                                    //immagine prova
+
+        private GestioneDominio gestoreDomino = new GestioneDominio();                      //da spostare nel 'main' per renderlo utilizzabile anche dalla missione
+        private NaveGiocatore naveGiocatore;                                                //da spostare nel 'main' per renderlo utilizzabile anche dalla missione
 
         public Nassau_form()
         {
+            naveGiocatore = new NaveGiocatore("MortadellaBella", img);                      //da spostare nel 'main' per renderlo utilizzabile anche dalla missione
+            gestoreDomino.CassaDobloni = 100;   //=
+            gestoreDomino.TaglieCaravella = 2;  //=
+            gestoreDomino.TaglieMercantile = 3; //=
+
             InitializeComponent();
-            negozio = new Negozio_form(gestoreDomino);
+            negozio = new Negozio_form(gestoreDomino, naveGiocatore);
             locanda = new Locanda_form();
             porto = new Porto_form();
         }

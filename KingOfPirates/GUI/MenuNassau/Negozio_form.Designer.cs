@@ -36,10 +36,6 @@ namespace KingOfPirates.GUI.MenuNassau
             this.Negozio_AcqAssLeg_Button = new System.Windows.Forms.Button();
             this.Negozio_AcqCarte_Button = new System.Windows.Forms.Button();
             this.Negozio_CostoBevDet_Label = new System.Windows.Forms.Label();
-            this.Negozio_BevDet_Img = new System.Windows.Forms.PictureBox();
-            this.Negozio_Rum_Img = new System.Windows.Forms.PictureBox();
-            this.Negozio_BevAnt_Img = new System.Windows.Forms.PictureBox();
-            this.Negozio_AssLeg_Img = new System.Windows.Forms.PictureBox();
             this.back_Button = new System.Windows.Forms.Button();
             this.Negozio_CostoRum_Label = new System.Windows.Forms.Label();
             this.Negozio_CostoBevAnt_Label = new System.Windows.Forms.Label();
@@ -49,15 +45,25 @@ namespace KingOfPirates.GUI.MenuNassau
             this.Negozio_nRum_Label = new System.Windows.Forms.Label();
             this.Negozio_nBevAnt_Label = new System.Windows.Forms.Label();
             this.Negozio_nAssLeg_Label = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.Negozio_BevDet_Img)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Negozio_Rum_Img)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Negozio_BevAnt_Img)).BeginInit();
+            this.Negozio_AssLeg_Img = new System.Windows.Forms.PictureBox();
+            this.Negozio_BevAnt_Img = new System.Windows.Forms.PictureBox();
+            this.Negozio_Rum_Img = new System.Windows.Forms.PictureBox();
+            this.Negozio_BevDet_Img = new System.Windows.Forms.PictureBox();
+            this.Negozio_nTaglieMerc_Label = new System.Windows.Forms.Label();
+            this.Negozio_nTaglieCara_Label = new System.Windows.Forms.Label();
+            this.Negozio_nTaglieFreg_Label = new System.Windows.Forms.Label();
+            this.Negozio_acqCarte_Panel = new System.Windows.Forms.Panel();
+            this.backToNegozio_Button = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Negozio_AssLeg_Img)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Negozio_BevAnt_Img)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Negozio_Rum_Img)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Negozio_BevDet_Img)).BeginInit();
+            this.Negozio_acqCarte_Panel.SuspendLayout();
             this.SuspendLayout();
             // 
             // Negozio_RiscattaTaglie_Button
             // 
-            this.Negozio_RiscattaTaglie_Button.Location = new System.Drawing.Point(153, 253);
+            this.Negozio_RiscattaTaglie_Button.Location = new System.Drawing.Point(153, 194);
             this.Negozio_RiscattaTaglie_Button.Name = "Negozio_RiscattaTaglie_Button";
             this.Negozio_RiscattaTaglie_Button.Size = new System.Drawing.Size(193, 62);
             this.Negozio_RiscattaTaglie_Button.TabIndex = 4;
@@ -107,7 +113,7 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             // Negozio_AcqCarte_Button
             // 
-            this.Negozio_AcqCarte_Button.Location = new System.Drawing.Point(865, 253);
+            this.Negozio_AcqCarte_Button.Location = new System.Drawing.Point(869, 252);
             this.Negozio_AcqCarte_Button.Name = "Negozio_AcqCarte_Button";
             this.Negozio_AcqCarte_Button.Size = new System.Drawing.Size(193, 62);
             this.Negozio_AcqCarte_Button.TabIndex = 9;
@@ -124,38 +130,6 @@ namespace KingOfPirates.GUI.MenuNassau
             this.Negozio_CostoBevDet_Label.TabIndex = 10;
             this.Negozio_CostoBevDet_Label.Text = "n $";
             this.Negozio_CostoBevDet_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Negozio_BevDet_Img
-            // 
-            this.Negozio_BevDet_Img.Location = new System.Drawing.Point(454, 514);
-            this.Negozio_BevDet_Img.Name = "Negozio_BevDet_Img";
-            this.Negozio_BevDet_Img.Size = new System.Drawing.Size(100, 119);
-            this.Negozio_BevDet_Img.TabIndex = 19;
-            this.Negozio_BevDet_Img.TabStop = false;
-            // 
-            // Negozio_Rum_Img
-            // 
-            this.Negozio_Rum_Img.Location = new System.Drawing.Point(630, 514);
-            this.Negozio_Rum_Img.Name = "Negozio_Rum_Img";
-            this.Negozio_Rum_Img.Size = new System.Drawing.Size(100, 119);
-            this.Negozio_Rum_Img.TabIndex = 20;
-            this.Negozio_Rum_Img.TabStop = false;
-            // 
-            // Negozio_BevAnt_Img
-            // 
-            this.Negozio_BevAnt_Img.Location = new System.Drawing.Point(815, 514);
-            this.Negozio_BevAnt_Img.Name = "Negozio_BevAnt_Img";
-            this.Negozio_BevAnt_Img.Size = new System.Drawing.Size(100, 119);
-            this.Negozio_BevAnt_Img.TabIndex = 21;
-            this.Negozio_BevAnt_Img.TabStop = false;
-            // 
-            // Negozio_AssLeg_Img
-            // 
-            this.Negozio_AssLeg_Img.Location = new System.Drawing.Point(995, 514);
-            this.Negozio_AssLeg_Img.Name = "Negozio_AssLeg_Img";
-            this.Negozio_AssLeg_Img.Size = new System.Drawing.Size(100, 119);
-            this.Negozio_AssLeg_Img.TabIndex = 22;
-            this.Negozio_AssLeg_Img.TabStop = false;
             // 
             // back_Button
             // 
@@ -212,9 +186,9 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Negozio_nBevDet_Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Negozio_nBevDet_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Negozio_nBevDet_Label.Location = new System.Drawing.Point(527, 600);
+            this.Negozio_nBevDet_Label.Location = new System.Drawing.Point(508, 600);
             this.Negozio_nBevDet_Label.Name = "Negozio_nBevDet_Label";
-            this.Negozio_nBevDet_Label.Size = new System.Drawing.Size(27, 33);
+            this.Negozio_nBevDet_Label.Size = new System.Drawing.Size(46, 33);
             this.Negozio_nBevDet_Label.TabIndex = 28;
             this.Negozio_nBevDet_Label.Text = "n";
             this.Negozio_nBevDet_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -223,9 +197,9 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Negozio_nRum_Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Negozio_nRum_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Negozio_nRum_Label.Location = new System.Drawing.Point(703, 600);
+            this.Negozio_nRum_Label.Location = new System.Drawing.Point(684, 600);
             this.Negozio_nRum_Label.Name = "Negozio_nRum_Label";
-            this.Negozio_nRum_Label.Size = new System.Drawing.Size(27, 33);
+            this.Negozio_nRum_Label.Size = new System.Drawing.Size(46, 33);
             this.Negozio_nRum_Label.TabIndex = 29;
             this.Negozio_nRum_Label.Text = "n";
             this.Negozio_nRum_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -234,9 +208,9 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Negozio_nBevAnt_Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Negozio_nBevAnt_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Negozio_nBevAnt_Label.Location = new System.Drawing.Point(888, 600);
+            this.Negozio_nBevAnt_Label.Location = new System.Drawing.Point(869, 600);
             this.Negozio_nBevAnt_Label.Name = "Negozio_nBevAnt_Label";
-            this.Negozio_nBevAnt_Label.Size = new System.Drawing.Size(27, 33);
+            this.Negozio_nBevAnt_Label.Size = new System.Drawing.Size(46, 33);
             this.Negozio_nBevAnt_Label.TabIndex = 30;
             this.Negozio_nBevAnt_Label.Text = "n";
             this.Negozio_nBevAnt_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -245,18 +219,112 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Negozio_nAssLeg_Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Negozio_nAssLeg_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Negozio_nAssLeg_Label.Location = new System.Drawing.Point(1068, 600);
+            this.Negozio_nAssLeg_Label.Location = new System.Drawing.Point(1049, 600);
             this.Negozio_nAssLeg_Label.Name = "Negozio_nAssLeg_Label";
-            this.Negozio_nAssLeg_Label.Size = new System.Drawing.Size(27, 33);
+            this.Negozio_nAssLeg_Label.Size = new System.Drawing.Size(46, 33);
             this.Negozio_nAssLeg_Label.TabIndex = 31;
             this.Negozio_nAssLeg_Label.Text = "n";
             this.Negozio_nAssLeg_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Negozio_AssLeg_Img
+            // 
+            this.Negozio_AssLeg_Img.Image = global::KingOfPirates.Properties.Resources.assLeg;
+            this.Negozio_AssLeg_Img.Location = new System.Drawing.Point(995, 514);
+            this.Negozio_AssLeg_Img.Name = "Negozio_AssLeg_Img";
+            this.Negozio_AssLeg_Img.Size = new System.Drawing.Size(100, 119);
+            this.Negozio_AssLeg_Img.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Negozio_AssLeg_Img.TabIndex = 22;
+            this.Negozio_AssLeg_Img.TabStop = false;
+            // 
+            // Negozio_BevAnt_Img
+            // 
+            this.Negozio_BevAnt_Img.Image = global::KingOfPirates.Properties.Resources.ant;
+            this.Negozio_BevAnt_Img.Location = new System.Drawing.Point(815, 514);
+            this.Negozio_BevAnt_Img.Name = "Negozio_BevAnt_Img";
+            this.Negozio_BevAnt_Img.Size = new System.Drawing.Size(100, 119);
+            this.Negozio_BevAnt_Img.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Negozio_BevAnt_Img.TabIndex = 21;
+            this.Negozio_BevAnt_Img.TabStop = false;
+            // 
+            // Negozio_Rum_Img
+            // 
+            this.Negozio_Rum_Img.Image = global::KingOfPirates.Properties.Resources.rum;
+            this.Negozio_Rum_Img.Location = new System.Drawing.Point(630, 514);
+            this.Negozio_Rum_Img.Name = "Negozio_Rum_Img";
+            this.Negozio_Rum_Img.Size = new System.Drawing.Size(100, 119);
+            this.Negozio_Rum_Img.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Negozio_Rum_Img.TabIndex = 20;
+            this.Negozio_Rum_Img.TabStop = false;
+            // 
+            // Negozio_BevDet_Img
+            // 
+            this.Negozio_BevDet_Img.Image = global::KingOfPirates.Properties.Resources.bevDet;
+            this.Negozio_BevDet_Img.Location = new System.Drawing.Point(454, 514);
+            this.Negozio_BevDet_Img.Name = "Negozio_BevDet_Img";
+            this.Negozio_BevDet_Img.Size = new System.Drawing.Size(100, 119);
+            this.Negozio_BevDet_Img.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Negozio_BevDet_Img.TabIndex = 19;
+            this.Negozio_BevDet_Img.TabStop = false;
+            // 
+            // Negozio_nTaglieMerc_Label
+            // 
+            this.Negozio_nTaglieMerc_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Negozio_nTaglieMerc_Label.Location = new System.Drawing.Point(153, 277);
+            this.Negozio_nTaglieMerc_Label.Name = "Negozio_nTaglieMerc_Label";
+            this.Negozio_nTaglieMerc_Label.Size = new System.Drawing.Size(193, 34);
+            this.Negozio_nTaglieMerc_Label.TabIndex = 32;
+            this.Negozio_nTaglieMerc_Label.Text = "-";
+            this.Negozio_nTaglieMerc_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Negozio_nTaglieCara_Label
+            // 
+            this.Negozio_nTaglieCara_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Negozio_nTaglieCara_Label.Location = new System.Drawing.Point(153, 311);
+            this.Negozio_nTaglieCara_Label.Name = "Negozio_nTaglieCara_Label";
+            this.Negozio_nTaglieCara_Label.Size = new System.Drawing.Size(193, 34);
+            this.Negozio_nTaglieCara_Label.TabIndex = 33;
+            this.Negozio_nTaglieCara_Label.Tag = "";
+            this.Negozio_nTaglieCara_Label.Text = "-";
+            this.Negozio_nTaglieCara_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Negozio_nTaglieFreg_Label
+            // 
+            this.Negozio_nTaglieFreg_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Negozio_nTaglieFreg_Label.Location = new System.Drawing.Point(153, 345);
+            this.Negozio_nTaglieFreg_Label.Name = "Negozio_nTaglieFreg_Label";
+            this.Negozio_nTaglieFreg_Label.Size = new System.Drawing.Size(193, 34);
+            this.Negozio_nTaglieFreg_Label.TabIndex = 34;
+            this.Negozio_nTaglieFreg_Label.Text = "-";
+            this.Negozio_nTaglieFreg_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Negozio_acqCarte_Panel
+            // 
+            this.Negozio_acqCarte_Panel.Controls.Add(this.backToNegozio_Button);
+            this.Negozio_acqCarte_Panel.Location = new System.Drawing.Point(1, 0);
+            this.Negozio_acqCarte_Panel.Name = "Negozio_acqCarte_Panel";
+            this.Negozio_acqCarte_Panel.Size = new System.Drawing.Size(1264, 682);
+            this.Negozio_acqCarte_Panel.TabIndex = 35;
+            this.Negozio_acqCarte_Panel.Visible = false;
+            // 
+            // backToNegozio_Button
+            // 
+            this.backToNegozio_Button.Location = new System.Drawing.Point(11, 12);
+            this.backToNegozio_Button.Name = "backToNegozio_Button";
+            this.backToNegozio_Button.Size = new System.Drawing.Size(89, 79);
+            this.backToNegozio_Button.TabIndex = 1;
+            this.backToNegozio_Button.Text = "<--";
+            this.backToNegozio_Button.UseVisualStyleBackColor = true;
+            this.backToNegozio_Button.Click += new System.EventHandler(this.backToNegozio_Button_Click);
             // 
             // Negozio_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.Negozio_acqCarte_Panel);
+            this.Controls.Add(this.Negozio_nTaglieFreg_Label);
+            this.Controls.Add(this.Negozio_nTaglieCara_Label);
+            this.Controls.Add(this.Negozio_nTaglieMerc_Label);
             this.Controls.Add(this.Negozio_nAssLeg_Label);
             this.Controls.Add(this.Negozio_nBevAnt_Label);
             this.Controls.Add(this.Negozio_nRum_Label);
@@ -279,10 +347,11 @@ namespace KingOfPirates.GUI.MenuNassau
             this.Controls.Add(this.Negozio_RiscattaTaglie_Button);
             this.Name = "Negozio_form";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.Negozio_BevDet_Img)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Negozio_Rum_Img)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Negozio_BevAnt_Img)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Negozio_AssLeg_Img)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Negozio_BevAnt_Img)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Negozio_Rum_Img)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Negozio_BevDet_Img)).EndInit();
+            this.Negozio_acqCarte_Panel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -309,5 +378,10 @@ namespace KingOfPirates.GUI.MenuNassau
         private System.Windows.Forms.Label Negozio_nRum_Label;
         private System.Windows.Forms.Label Negozio_nBevAnt_Label;
         private System.Windows.Forms.Label Negozio_nAssLeg_Label;
+        private System.Windows.Forms.Label Negozio_nTaglieMerc_Label;
+        private System.Windows.Forms.Label Negozio_nTaglieCara_Label;
+        private System.Windows.Forms.Label Negozio_nTaglieFreg_Label;
+        private System.Windows.Forms.Panel Negozio_acqCarte_Panel;
+        private System.Windows.Forms.Button backToNegozio_Button;
     }
 }

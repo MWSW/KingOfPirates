@@ -8,7 +8,7 @@ namespace KingOfPirates.Cartina
 {
     public class GestioneDominio
     {
-        private int dobloniPerTurno; //dobloni per turno
+        private int dobloniPerTurno;    //dobloni per turno
         private int cassaDobloni;
         private int cassaRubini;
         private int taglieMercantile;
@@ -17,8 +17,9 @@ namespace KingOfPirates.Cartina
 
         public GestioneDominio()
         {
-            cassaDobloni = 0;
-            cassaRubini = 0;
+            dobloniPerTurno = 0;
+            CassaDobloni = 0;
+            CassaRubini = 0;
             taglieMercantile = 0;
             taglieCaravella = 0;
             taglieFregata = 0;
@@ -30,6 +31,10 @@ namespace KingOfPirates.Cartina
 
         public int TaglieFregata { get => taglieFregata; set => taglieFregata = value; }
 
+        public int CassaDobloni { get => cassaDobloni; set => cassaDobloni = value; }
+
+        public int CassaRubini { get => cassaRubini; set => cassaRubini = value; }
+
         public void AddTasse(int val)
         {
             dobloniPerTurno += val;
@@ -37,12 +42,12 @@ namespace KingOfPirates.Cartina
 
         public void AddDobloni(int dobloni)
         {
-            cassaDobloni += dobloni;
+            CassaDobloni += dobloni;
         }
 
         public void AddRubini(int rubini)
         {
-            cassaRubini += rubini;
+            CassaRubini += rubini;
         }
 
         public void AddTaglieMercantile(int nTaglie)
@@ -62,12 +67,12 @@ namespace KingOfPirates.Cartina
 
         public void RemDobloni(int dobloni)
         {
-            cassaDobloni -= dobloni;
+            CassaDobloni -= dobloni;
         }
 
         public void RemRubini(int rubini)
         {
-            cassaRubini -= rubini;
+            CassaRubini -= rubini;
         }
 
     }

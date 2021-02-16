@@ -63,9 +63,9 @@ namespace KingOfPirates.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap rotolo_della_pergamena_insegna_dorata_carta_d_114354616 {
+        internal static System.Drawing.Bitmap ant {
             get {
-                object obj = ResourceManager.GetObject("rotolo-della-pergamena-insegna-dorata-carta-d-114354616", resourceCulture);
+                object obj = ResourceManager.GetObject("ant", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,39 @@ namespace KingOfPirates.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap scroll_png_clipart_image_5a1ca0ed7e0df8_5794533815118256455163 {
+        internal static System.Drawing.Bitmap assLeg {
             get {
-                object obj = ResourceManager.GetObject("scroll-png-clipart-image-5a1ca0ed7e0df8.5794533815118256455163", resourceCulture);
+                object obj = ResourceManager.GetObject("assLeg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bevDet {
+            get {
+                object obj = ResourceManager.GetObject("bevDet", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap prova {
+            get {
+                object obj = ResourceManager.GetObject("prova", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rum {
+            get {
+                object obj = ResourceManager.GetObject("rum", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

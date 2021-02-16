@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace KingOfPirates.Missioni.Roba
 {
-    class Loc2D
+    public class Loc2D
     {
         private int x;
         private int y;
