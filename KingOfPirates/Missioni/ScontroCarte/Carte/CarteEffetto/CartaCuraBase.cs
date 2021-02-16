@@ -17,7 +17,7 @@ namespace KingOfPirates.Missioni.ScontroCarte.Carte.CarteEffetto
         {
             cura = cura_;
         }
-        public override void UsaCarta(Giocatore g)
+        public override void UsaCarta(Giocatore_carte_base g)
         {
      
         }

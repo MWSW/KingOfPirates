@@ -18,7 +18,7 @@ namespace KingOfPirates.Missioni.ScontroCarte.Carte.CarteEffetto
         {
             nTurni = nTurni_;
         }
-        public override void UsaCarta(Giocatore utilizzatore)
+        public override void UsaCarta(Giocatore_carte_base utilizzatore)
         {
             
         }

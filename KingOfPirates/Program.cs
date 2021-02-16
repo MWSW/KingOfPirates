@@ -1,9 +1,12 @@
-﻿using System;
+﻿using KingOfPirates.GUI.ScontroCarte;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using KingOfPirates.GUI.MenuPrincipale;
+//using KingOfPirates.GUI.MenuPrincipale;
+
+
 
 namespace KingOfPirates
 {
@@ -17,7 +20,8 @@ namespace KingOfPirates
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            new StartMenu().Show();
+            //new StartMenu().Show();
+            new ScontroCarte().Show();
             Application.Run();
         }
     }
