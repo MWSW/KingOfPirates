@@ -13,6 +13,7 @@ namespace KingOfPirates.Missioni.ScontroCarte.Opponenti
     class Nemico_carte : Giocatore_carte_base
     {
         private Carta[] mazzo;
+        private Carta cartaUsata;
 
         public Nemico_carte(int hp_, Bitmap img_, Carta[] mazzo_)
             : base(hp_, img_)
@@ -20,11 +21,12 @@ namespace KingOfPirates.Missioni.ScontroCarte.Opponenti
             mazzo = mazzo_;
         }
 
-        public Carta UsaCarta()
+        public void ScegliCarta()
         {
             Random rng = new Random();
-            return mazzo[rng.Next(0, mazzo.Length -1)];  //FIX-ME (non va bene il mazzo)
+            cartaUsata = mazzo[rng.Next(0, mazzo.Length -1)];  //FIX-ME (non va bene il mazzo)
         }
 
+        public Carta CartaUsata { get => cartaUsata; }
     }
 }

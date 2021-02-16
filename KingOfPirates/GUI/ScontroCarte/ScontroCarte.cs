@@ -22,7 +22,7 @@ namespace KingOfPirates.GUI.ScontroCarte
 
         int cartaSelezionata;
 
-        bool staiAttaccando;
+        bool tuoTurno;
 
         //Componenti grafiche
         PictureBox[] img_carta;
@@ -42,6 +42,7 @@ namespace KingOfPirates.GUI.ScontroCarte
         private void OnLoad(object sender, EventArgs e)
         {
             cartaSelezionata = -1;
+            tuoTurno = true; //inizi sempre tu 
 
             //Componenti grafiche
             img_carta = new PictureBox[4];
@@ -98,17 +99,26 @@ namespace KingOfPirates.GUI.ScontroCarte
 
         }
 
-        private void img_carta1_Click(object sender, EventArgs e)
+        private void ScegliCarta(int indice)
         {
             if (cartaSelezionata == -1) //Se nessuna carta è stata selezionata puoi interagire
             {
-                player.CarteInMano[0].Nascondi(img_carta1, nomeCarta1, det1, att1, def1, elem1);
-                cartaSelezionata = 0;
+                player.CarteInMano[indice].Nascondi(img_carta[indice], nomeCarta[indice], det[indice], att[indice], def[indice], elem[indice]);
+                cartaSelezionata = indice;
 
                 //Mostra carta selezionata
-                player.CarteInMano[0].Visualizza(img_carta0, nomeCarta0, det0, att0, def0, elem0);
+                player.CarteInMano[indice].Visualizza(img_carta0, nomeCarta0, det0, att0, def0, elem0);
 
-                att0.BackColor = Color.LightBlue;
+                if (tuoTurno)
+                {
+                    def0.BackColor = Color.LightGray;
+                    att0.BackColor = Color.LightBlue;
+                }
+                else
+                {
+                    def0.BackColor = Color.LightBlue;
+                    att0.BackColor = Color.LightGray;
+                }
                 elem0.BackColor = Color.LightBlue;
 
                 det0.BackColor = Color.LightGoldenrodYellow;
@@ -119,85 +129,8 @@ namespace KingOfPirates.GUI.ScontroCarte
             }
         }
 
-        private void img_carta2_Click(object sender, EventArgs e)
+        private void Scontro(CartaBase attaccante, CartaBase difensore, Giocatore_carte_base vittima, Label vita_vittima)
         {
-            if (cartaSelezionata == -1) //Se nessuna carta è stata selezionata puoi interagire
-            {
-                player.CarteInMano[1].Nascondi(img_carta2, nomeCarta2, det2, att2, def2, elem2);
-                cartaSelezionata = 1;
-
-                //Mostra carta selezionata
-                player.CarteInMano[1].Visualizza(img_carta0, nomeCarta0, det0, att0, def0, elem0);
-
-                att0.BackColor = Color.LightBlue;
-                elem0.BackColor = Color.LightBlue;
-
-                det0.BackColor = Color.LightGoldenrodYellow;
-
-                //Mostra bottone attacco e nascondi
-                bt_attacco.Show();
-                bt_nascondi.Show();
-            }
-        }
-
-        private void img_carta3_Click(object sender, EventArgs e)
-        {
-            if (cartaSelezionata == -1) //Se nessuna carta è stata selezionata puoi interagire
-            {
-                player.CarteInMano[2].Nascondi(img_carta3, nomeCarta3, det3, att3, def3, elem3);
-                cartaSelezionata = 2;
-
-                //Mostra carta selezionata
-                player.CarteInMano[2].Visualizza(img_carta0, nomeCarta0, det0, att0, def0, elem0);
-
-                att0.BackColor = Color.LightBlue;
-                elem0.BackColor = Color.LightBlue;
-
-                det0.BackColor = Color.LightGoldenrodYellow;
-
-                //Mostra bottone attacco e nascondi
-                bt_attacco.Show();
-                bt_nascondi.Show();
-            }
-        }
-
-        private void img_carta4_Click(object sender, EventArgs e)
-        {
-            if (cartaSelezionata == -1) //Se nessuna carta è stata selezionata puoi interagire
-            {
-                player.CarteInMano[3].Nascondi(img_carta4, nomeCarta4, det4, att4, def4, elem4);
-                cartaSelezionata = 3;
-
-                //Mostra carta selezionata
-                player.CarteInMano[3].Visualizza(img_carta0, nomeCarta0, det0, att0, def0, elem0);
-
-                att0.BackColor = Color.LightBlue;
-                elem0.BackColor = Color.LightBlue;
-
-                det0.BackColor = Color.LightGoldenrodYellow;
-
-                //Mostra bottone attacco e nascondi
-                bt_attacco.Show();
-                bt_nascondi.Show();
-            }
-        }
-
-        private void bt_attacco_Click(object sender, EventArgs e)
-        {
-            bt_attacco.Hide();
-            bt_nascondi.Hide();
-
-            bt_successivo.Show();
-
-            //Il nemico sceglie una carta
-            CartaBase cartaNemico = (CartaBase)(nemico.UsaCarta());
-            cartaNemico.Visualizza(img_cartaA, nomeCartaA, detA, attA, defA, elemA);
-
-            detA.BackColor = Color.LightGoldenrodYellow;
-
-            defA.BackColor = Color.LightBlue;
-
-            CartaBase cartaTua = (CartaBase)(player.CarteInMano[cartaSelezionata]);
 
             //Controlla gli elementi
 
@@ -206,19 +139,19 @@ namespace KingOfPirates.GUI.ScontroCarte
             //ghiaccio - sasso (sasso)
             //fuoco - ghiaccio (ghiaccio)
 
-            bool vittoria = cartaTua.Elemento == 'f' && cartaNemico.Elemento == 's' ||
-                              cartaTua.Elemento == 's' && cartaNemico.Elemento == 'g' ||
-                              cartaTua.Elemento == 'g' && cartaNemico.Elemento == 'f';
+            bool vittoria = attaccante.Elemento == 'f' && difensore.Elemento == 's' ||
+                              attaccante.Elemento == 's' && difensore.Elemento == 'g' ||
+                              attaccante.Elemento == 'g' && difensore.Elemento == 'f';
 
             float defPerc = 1.0f;
             float attPerc = 1.0f;
-            if(vittoria) //vittoria elementale
+            if (vittoria) //vittoria elementale
             {
                 attPerc = 1.3f;
                 elem0.BackColor = Color.LightGreen;
                 elemA.BackColor = Color.LightCoral;
             }
-            else if(cartaTua.Elemento == cartaNemico.Elemento) //parità
+            else if (attaccante.Elemento == difensore.Elemento) //parità
             {
                 elem0.BackColor = Color.Bisque;
                 elemA.BackColor = Color.Bisque;
@@ -231,18 +164,68 @@ namespace KingOfPirates.GUI.ScontroCarte
             }
 
             //Per ora la determinazione non conta
-            int dmg = (int)((cartaTua.Atk*attPerc) - (cartaNemico.Def * defPerc));
+            int dmg = (int)((attaccante.Atk * attPerc) - (difensore.Def * defPerc));
 
             if (dmg < 0)
                 dmg = 0;
 
-            nemico.LessHp(dmg);
+            vittima.LessHp(dmg);
 
             //Output vita
 
-            vita_avversario.Text = "HP: " + nemico.CurHp + "/" + nemico.MaxHp;
-            vita_avversario.ForeColor = Color.Red;
+            vita_vittima.Text = "HP: " + nemico.CurHp + "/" + nemico.MaxHp;
+            vita_vittima.ForeColor = Color.Red;
 
+        }
+
+        private void img_carta1_Click(object sender, EventArgs e)
+        {
+            ScegliCarta(0);
+        }
+
+        private void img_carta2_Click(object sender, EventArgs e)
+        {
+            ScegliCarta(1);
+        }
+
+        private void img_carta3_Click(object sender, EventArgs e)
+        {
+            ScegliCarta(2);
+        }
+
+        private void img_carta4_Click(object sender, EventArgs e)
+        {
+            ScegliCarta(3);
+        }
+
+        private void bt_attacco_Click(object sender, EventArgs e)
+        {
+            bt_attacco.Hide();
+            bt_nascondi.Hide();
+
+            bt_successivo.Show();
+
+            CartaBase cartaTua = (CartaBase)(player.CarteInMano[cartaSelezionata]);
+            if (tuoTurno)
+            {
+                //Il nemico sceglie una carta
+                nemico.ScegliCarta();
+
+                CartaBase cartaNemico = (CartaBase)(nemico.CartaUsata);
+
+                cartaNemico.Visualizza(img_cartaA, nomeCartaA, detA, attA, defA, elemA);
+
+                detA.BackColor = Color.LightGoldenrodYellow;
+
+                defA.BackColor = Color.LightBlue;
+                attA.BackColor = Color.LightGray;
+
+                Scontro(cartaTua, cartaNemico, nemico, vita_avversario);
+            }
+            else
+            {
+                Scontro((CartaBase)(nemico.CartaUsata), cartaTua, player, vita_giocatore);
+            }
 
         }
 
@@ -285,19 +268,41 @@ namespace KingOfPirates.GUI.ScontroCarte
 
             cartaSelezionata = -1;
 
-            //Il nemico sceglie una nuova carta con cui attaccare
-            CartaBase cartaNemico = (CartaBase)(nemico.UsaCarta());
-            cartaNemico.Visualizza(img_cartaA, nomeCartaA, detA, attA, defA, elemA);
+            tuoTurno = !tuoTurno; //cambia turno
 
-            defA.BackColor = Color.LightGray;
-
-            attA.BackColor = Color.LightBlue;
-            elemA.BackColor = Color.LightBlue;
-
-            detA.BackColor = Color.LightGoldenrodYellow;
-
+            //Entrambi tornano neri nel caso uno dei due fosse rosso
             vita_avversario.ForeColor = Color.Black;
+            vita_giocatore.ForeColor = Color.Black;
 
+
+            if (!tuoTurno)
+            {
+                //Il nemico sceglie una nuova carta con cui attaccare
+                nemico.ScegliCarta();
+                CartaBase cartaNemico = (CartaBase)(nemico.CartaUsata);
+
+                cartaNemico.Visualizza(img_cartaA, nomeCartaA, detA, attA, defA, elemA);
+
+                defA.BackColor = Color.LightGray;
+
+                attA.BackColor = Color.LightBlue;
+                elemA.BackColor = Color.LightBlue;
+
+                detA.BackColor = Color.LightGoldenrodYellow;
+
+                messaggioGiocatore.Hide();
+                messaggioNemico.Show();
+            }
+            else
+            {
+                ((CartaBase)(nemico.CartaUsata)).Nascondi(img_cartaA, nomeCartaA, detA, attA, defA, elemA);
+
+                img_cartaA.Show();
+                img_cartaA.Image = Properties.Resources.SpazioVuoto;
+
+                messaggioGiocatore.Show();
+                messaggioNemico.Hide();
+            }
         }
     }
 }
