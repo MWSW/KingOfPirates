@@ -26,9 +26,25 @@ namespace KingOfPirates.Missioni.ScontroCarte.Carte
 
         public void Visualizza(PictureBox img_carta, Label nomeCarta, Label det)
         {
-            img_carta.Image = immagine;
+            img_carta.Show();
+            nomeCarta.Show();
+            det.Show();
+
+            img_carta.BackgroundImage = immagine;
             nomeCarta.Text = nome;
             det.Text = determinazione.ToString();
+        }
+
+        public void Nascondi(PictureBox img_carta, Label nomeCarta, Label det)
+        {
+            img_carta.Hide();
+            nomeCarta.Hide();
+            det.Hide();
+        }
+
+        public virtual void Nascondi(PictureBox img_carta, Label nomeCarta, Label det, Label atk_label, Label def_label, PictureBox elem)
+        {
+            Nascondi(img_carta, nomeCarta, det);
         }
 
         public virtual void Visualizza(PictureBox img_carta, Label nomeCarta, Label det, Label atk_label, Label def_label, PictureBox elem)

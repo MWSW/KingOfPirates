@@ -18,6 +18,9 @@ namespace KingOfPirates.GUI.ScontroCarte
         //due sfindanti dello scontro a carte
         Player_carte player;
         //Nemico_carte nemico;
+        Nemico_carte nemico;
+
+        bool cartaSelezionata;
 
         
 
@@ -28,8 +31,7 @@ namespace KingOfPirates.GUI.ScontroCarte
 
         private void OnLoad(object sender, EventArgs e)
         {
-            //Assegnare delle carte al giocatore
-            MessageBox.Show("Hello my friends!");
+            cartaSelezionata = false;
 
             //Inizializzo gli oggetti
 
@@ -46,6 +48,54 @@ namespace KingOfPirates.GUI.ScontroCarte
             player.CarteInMano[2].Visualizza(img_carta3, nomeCarta3, det3, att3, def3, elem3);
             player.CarteInMano[3].Visualizza(img_carta4, nomeCarta4, det4, att4, def4, elem4);
 
+        }
+
+        private void img_carta1_Click(object sender, EventArgs e)
+        {
+            if (!cartaSelezionata) //Se nessuna carta è stata selezionata puoi interagire
+            {
+                player.CarteInMano[0].Nascondi(img_carta1, nomeCarta1, det1, att1, def1, elem1);
+                cartaSelezionata = true;
+
+                //Mostra carta selezionata
+                player.CarteInMano[0].Visualizza(img_carta0, nomeCarta0, det0, att0, def0, elem0);
+            }
+        }
+
+        private void img_carta2_Click(object sender, EventArgs e)
+        {
+            if (!cartaSelezionata) //Se nessuna carta è stata selezionata puoi interagire
+            {
+                player.CarteInMano[1].Nascondi(img_carta2, nomeCarta2, det2, att2, def2, elem2);
+                cartaSelezionata = true;
+
+                //Mostra carta selezionata
+                player.CarteInMano[1].Visualizza(img_carta0, nomeCarta0, det0, att0, def0, elem0);
+            }
+        }
+
+        private void img_carta3_Click(object sender, EventArgs e)
+        {
+            if (!cartaSelezionata) //Se nessuna carta è stata selezionata puoi interagire
+            {
+                player.CarteInMano[2].Nascondi(img_carta3, nomeCarta3, det3, att3, def3, elem3);
+                cartaSelezionata = true;
+
+                //Mostra carta selezionata
+                player.CarteInMano[2].Visualizza(img_carta0, nomeCarta0, det0, att0, def0, elem0);
+            }
+        }
+
+        private void img_carta4_Click(object sender, EventArgs e)
+        {
+            if (!cartaSelezionata) //Se nessuna carta è stata selezionata puoi interagire
+            {
+                player.CarteInMano[3].Nascondi(img_carta4, nomeCarta4, det4, att4, def4, elem4);
+                cartaSelezionata = true;
+
+                //Mostra carta selezionata
+                player.CarteInMano[3].Visualizza(img_carta0, nomeCarta0, det0, att0, def0, elem0);
+            }
         }
     }
 }

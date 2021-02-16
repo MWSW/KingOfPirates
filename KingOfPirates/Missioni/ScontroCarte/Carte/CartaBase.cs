@@ -28,6 +28,10 @@ namespace KingOfPirates.Missioni.ScontroCarte.Carte
         {
             base.Visualizza(img_carta, nomeCarta, det);
 
+            atk_label.Show();
+            def_label.Show();
+            elem.Show();
+
             atk_label.Text = "A:" + atk.ToString();
             def_label.Text = "D:" + def.ToString();
 
@@ -46,6 +50,14 @@ namespace KingOfPirates.Missioni.ScontroCarte.Carte
                     //errore
                     break;
             }
+        }
+
+        public override void Nascondi(PictureBox img_carta, Label nomeCarta, Label det, Label atk_label, Label def_label, PictureBox elem)
+        {
+            base.Nascondi(img_carta, nomeCarta, det);
+            atk_label.Hide();
+            def_label.Hide();
+            elem.Hide();
         }
 
         public override void UsaCarta(Giocatore_carte_base g)
