@@ -21,18 +21,17 @@ namespace KingOfPirates.Missioni
         {
             for (int i = 0; i < mat.Length; i++)
             {
-                for (int j = 0; j < mat.Length-2; j++)
+                for (int j = 0; j < mat.Length; j++)
                 {
                     try
                     {
-                        mat[i, j] = new Random().Next(2);
+                        mat[i, j] = new Random().Next(3);
                     }
-                    catch (Exception ex)
+                    catch (IndexOutOfRangeException ex)
                     {
                         Console.WriteLine(ex.StackTrace);
-                        j = 0;
+                        break;
                     }
-
                 }
             }
         }
