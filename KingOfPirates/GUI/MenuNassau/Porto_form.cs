@@ -16,5 +16,10 @@ namespace KingOfPirates.GUI.MenuNassau
         {
             InitializeComponent();
         }
+
+        private void Porto_Salpa_Button_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
