@@ -1,4 +1,5 @@
 ﻿using KingOfPirates.Missioni.ScontroCarte.Carte;
+using KingOfPirates.Missioni.ScontroCarte.Carte.CarteEffetto;
 using KingOfPirates.Missioni.ScontroCarte.Opponenti;
 using System;
 using System.Collections.Generic;
@@ -84,18 +85,30 @@ namespace KingOfPirates.GUI.ScontroCarte
 
             //Inizializzo gli oggetti
 
-            Carta[] carte = {ListaCarte.GetCarta(0),
+            Carta[] carte_nemico = {ListaCarte.GetCarta(0),
                  ListaCarte.GetCarta(1), ListaCarte.GetCarta(2), ListaCarte.GetCarta(3), ListaCarte.GetCarta(4), ListaCarte.GetCarta(5)};
 
-            player = new Player_carte(10, new Mazzo(carte));
-            nemico = new Nemico_carte(10, null, carte); //FIX-ME
+
+            Carta[] carte_player = {ListaCarte.GetCarta(6),
+                 ListaCarte.GetCarta(7), ListaCarte.GetCarta(8), ListaCarte.GetCarta(3), ListaCarte.GetCarta(4), ListaCarte.GetCarta(5)};
+
+
+            player = new Player_carte(10, new Mazzo(carte_player));
+            nemico = new Nemico_carte(10, null, carte_nemico); //FIX-ME
 
             //Devo differenziare se poi la carta è normale oppure effetto
 
             //Prima mano
-            for(int i = 0; i < player.CarteInMano.Length; i++)
-                 player.CarteInMano[i].Visualizza(img_carta[i], nomeCarta[i], det[i], att[i], def[i], elem[i]);
-            
+            for (int i = 0; i < player.CarteInMano.Length; i++)
+            {
+                player.CarteInMano[i].Visualizza(img_carta[i], nomeCarta[i], det[i], att[i], def[i], elem[i]);
+                if(player.CarteInMano[i].Tipo != "attacco")
+                {
+                    att[i].Hide();
+                    def[i].Hide();
+                    elem[i].Hide();
+                }
+            }     
 
         }
 
@@ -126,10 +139,26 @@ namespace KingOfPirates.GUI.ScontroCarte
                 //Mostra bottone attacco e nascondi
                 bt_attacco.Show();
                 bt_nascondi.Show();
+
+                //mostra buffer a livello grafico
+
+                if (player.BuffApplicato)
+                {
+                    att0.Text += "+" + player.ValBuff.ToString();
+                    def0.Text += "+" + player.ValBuff.ToString();
+
+                    att0.ForeColor = Color.BlueViolet;
+                    def0.ForeColor = Color.BlueViolet;
+                }
+                else
+                {
+                    att0.ForeColor = Color.Black;
+                    def0.ForeColor = Color.Black;
+                }
             }
         }
 
-        private void Scontro(CartaBase attaccante, CartaBase difensore, Giocatore_carte_base vittima, Label vita_vittima)
+        private void Scontro(CartaBase attaccante, CartaBase difensore, PictureBox elemAtt, PictureBox elemDif, Giocatore_carte_base vittima, Label vita_vittima)
         {
 
             //Controlla gli elementi
@@ -143,28 +172,28 @@ namespace KingOfPirates.GUI.ScontroCarte
                               attaccante.Elemento == 's' && difensore.Elemento == 'g' ||
                               attaccante.Elemento == 'g' && difensore.Elemento == 'f';
 
-            float defPerc = 1.0f;
-            float attPerc = 1.0f;
+            int plus = 0;
             if (vittoria) //vittoria elementale
             {
-                attPerc = 1.3f;
-                elem0.BackColor = Color.LightGreen;
-                elemA.BackColor = Color.LightCoral;
+                plus = 1;
+                elemAtt.BackColor = Color.LightGreen;
+                elemDif.BackColor = Color.LightCoral;
             }
             else if (attaccante.Elemento == difensore.Elemento) //parità
             {
-                elem0.BackColor = Color.Bisque;
-                elemA.BackColor = Color.Bisque;
+                elemAtt.BackColor = Color.Bisque;
+                elemDif.BackColor = Color.Bisque;
             }
             else //sconfitta elementale
             {
-                defPerc = 1.3f;
-                elem0.BackColor = Color.LightCoral;
-                elemA.BackColor = Color.LightGreen;
+                plus = -1;
+                elemAtt.BackColor = Color.LightCoral;
+                elemDif.BackColor = Color.LightGreen;
             }
 
             //Per ora la determinazione non conta
-            int dmg = (int)((attaccante.Atk * attPerc) - (difensore.Def * defPerc));
+            int dmg = attaccante.Atk - difensore.Def;
+            dmg += plus; 
 
             if (dmg < 0)
                 dmg = 0;
@@ -173,7 +202,7 @@ namespace KingOfPirates.GUI.ScontroCarte
 
             //Output vita
 
-            vita_vittima.Text = "HP: " + nemico.CurHp + "/" + nemico.MaxHp;
+            vita_vittima.Text = "HP: " + vittima.CurHp + "/" + vittima.MaxHp;
             vita_vittima.ForeColor = Color.Red;
 
         }
@@ -205,27 +234,122 @@ namespace KingOfPirates.GUI.ScontroCarte
 
             bt_successivo.Show();
 
-            CartaBase cartaTua = (CartaBase)(player.CarteInMano[cartaSelezionata]);
+            string tipo = player.CarteInMano[cartaSelezionata].Tipo;
+
+            if (tipo == "attacco")
+            {
+                CartaBase cartaTua = (CartaBase)(player.CarteInMano[cartaSelezionata]);
+                cartaTua.SetBuff(player.ValBuff);
+
+                if (tuoTurno)
+                {
+                    //Il nemico sceglie una carta
+                    nemico.ScegliCarta();
+
+                    CartaBase cartaNemico = (CartaBase)(nemico.CartaUsata);
+
+                    cartaNemico.Visualizza(img_cartaA, nomeCartaA, detA, attA, defA, elemA);
+
+                    detA.BackColor = Color.LightGoldenrodYellow;
+
+                    defA.BackColor = Color.LightBlue;
+                    attA.BackColor = Color.LightGray;
+
+                    Scontro(cartaTua, cartaNemico,elem0, elemA, nemico, vita_avversario);
+                }
+                else
+                {
+                    Scontro((CartaBase)(nemico.CartaUsata), cartaTua, elemA, elem0, player, vita_giocatore);
+                }
+                cartaTua.SetBuff(0); //finito il turno levo il buff
+            }
+            else if(tipo == "cura")
+            {
+                Carta cartaTua = player.CarteInMano[cartaSelezionata];
+                ((CartaCura)cartaTua).UsaCarta(player);
+
+                //Output vita
+
+                vita_giocatore.Text = "HP: " + player.CurHp + "/" + player.MaxHp;
+                vita_giocatore.ForeColor = Color.Green;
+
+                if(!tuoTurno) 
+                {
+                    //Per ora la determinazione non conta
+                    int dmg = ((CartaBase)(nemico.CartaUsata)).Atk;
+
+                    if (dmg < 0)
+                        dmg = 0;
+
+                    player.LessHp(dmg);
+
+                    //Output vita
+
+                    vita_giocatore.Text = "HP: " + player.CurHp + "/" + player.MaxHp;
+                    vita_giocatore.ForeColor = Color.Red;
+                }
+            }
+            else if(tipo == "curaEstesa")
+            {
+                Carta cartaTua = player.CarteInMano[cartaSelezionata];
+                ((CartaCuraEstesa)cartaTua).UsaCarta(player);
+
+                curaEstesa.Show();
+
+                if (!tuoTurno)
+                {
+                    //Per ora la determinazione non conta
+                    int dmg = ((CartaBase)(nemico.CartaUsata)).Atk;
+
+                    if (dmg < 0)
+                        dmg = 0;
+
+                    player.LessHp(dmg);
+
+                    //Output vita
+
+                    vita_giocatore.Text = "HP: " + player.CurHp + "/" + player.MaxHp;
+                    vita_giocatore.ForeColor = Color.Red;
+                }
+            }
+            else if(tipo == "buff")
+            {
+                Carta cartaTua = player.CarteInMano[cartaSelezionata];
+                ((CartaBuff)cartaTua).UsaCarta(player);
+
+                img_buff.Show();
+            }
+
+
+            //icone buff/debuff
             if (tuoTurno)
             {
-                //Il nemico sceglie una carta
-                nemico.ScegliCarta();
+                if (player.CuraEstesa)
+                {
+                    player.ApplicaBuffCura();
+                    vita_giocatore.Text = "HP: " + player.CurHp + "/" + player.MaxHp;
+                    vita_giocatore.ForeColor = Color.YellowGreen;
+                    curaEstesa.Show();
+                }
 
-                CartaBase cartaNemico = (CartaBase)(nemico.CartaUsata);
-
-                cartaNemico.Visualizza(img_cartaA, nomeCartaA, detA, attA, defA, elemA);
-
-                detA.BackColor = Color.LightGoldenrodYellow;
-
-                defA.BackColor = Color.LightBlue;
-                attA.BackColor = Color.LightGray;
-
-                Scontro(cartaTua, cartaNemico, nemico, vita_avversario);
+                if(player.BuffApplicato)
+                {
+                    player.ApplicaBuffStats();
+                    img_buff.Show();
+                }
             }
-            else
+
+            //roba
+           if (!player.CuraEstesa)
             {
-                Scontro((CartaBase)(nemico.CartaUsata), cartaTua, player, vita_giocatore);
+                curaEstesa.Hide();
             }
+
+            if (!player.BuffApplicato)
+            {
+                img_buff.Hide();
+            }
+
 
         }
 
@@ -303,6 +427,8 @@ namespace KingOfPirates.GUI.ScontroCarte
                 messaggioGiocatore.Show();
                 messaggioNemico.Hide();
             }
+
+
         }
     }
 }

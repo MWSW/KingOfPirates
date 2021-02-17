@@ -13,10 +13,24 @@ namespace KingOfPirates.Missioni.ScontroCarte.Opponenti
         private Carta[] carteInMano;
         private Mazzo mazzo;
 
+        private int buffCura;
+        private int turniBuffCura;
+
+        private bool curaEstesa;
+
+        private int buffStats;
+        private int turniBuffStats;
+
+        private bool buffApplicato;
+
         public Player_carte(int hp_, Mazzo mazzo_)
             : base(hp_, Properties.Resources.pun_pun) //pup pun è un'immagine di prova
         {
             mazzo = mazzo_;
+
+            curaEstesa = false;
+            buffCura = 0;
+            turniBuffCura = 0;
 
             //assegna delle carte alla mano
             carteInMano = new Carta[4];
@@ -38,8 +52,6 @@ namespace KingOfPirates.Missioni.ScontroCarte.Opponenti
 
         public void PescaCarta(int posizione)
         {
-            mazzo.RiponiCarta(carteInMano[posizione].Indice);
-
             Random rng = new Random();
             int num;
             do
@@ -48,7 +60,53 @@ namespace KingOfPirates.Missioni.ScontroCarte.Opponenti
             }
             while (!mazzo.CartaDisponibile(num)); //ripesca se la carta non è disponibile
 
+            mazzo.RiponiCarta(carteInMano[posizione].Indice); 
+            //riponi la carta dopo l'estrazione così da non riceverla subito indietro
+
             carteInMano[posizione] = mazzo.PrendiCarta(num); //assegna carte random dalla mano               
+        }
+
+        public void BuffCura(int buffCura_, int turniBuffCura_)
+        {
+            buffCura = buffCura_;
+            turniBuffCura = turniBuffCura_;
+
+            curaEstesa = true;
+        }
+
+        public void BuffStats(int buffStats_, int turniBuffStats_)
+        {
+            buffStats = buffStats_;
+            turniBuffStats = turniBuffStats_;
+
+            buffApplicato = true;
+        }
+
+        public void ApplicaBuffCura()
+        {
+            if((turniBuffCura -1)> 0 && curaEstesa)
+            {
+                AddHp(buffCura);
+                turniBuffCura--;
+            }
+            else
+            {
+                curaEstesa = false;
+            }
+        }
+
+        public void ApplicaBuffStats()
+        {
+            //riduco turni per il buff
+            if ((turniBuffStats - 1) > 0 && buffApplicato)
+            {
+                turniBuffStats--;
+            }
+            else
+            {
+                buffApplicato = false;
+                buffStats = 0;
+            }
         }
 
         public void UsaOggetto(int n)
@@ -57,5 +115,8 @@ namespace KingOfPirates.Missioni.ScontroCarte.Opponenti
         }
 
         public Carta[] CarteInMano { get => carteInMano; }
+        public bool CuraEstesa { get => curaEstesa; }
+        public bool BuffApplicato { get => buffApplicato; }
+        public int ValBuff { get => buffStats; }
     }
 }

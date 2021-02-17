@@ -14,7 +14,7 @@ namespace KingOfPirates.Missioni.ScontroCarte.Carte.CarteEffetto
         private int nTurni; //turni extra ottenuti
 
         public CartaTurniExtra(string nome_, int determinazione_, Bitmap immagine_, int nTurni_)
-            : base(nome_, determinazione_, immagine_)
+            : base(nome_, determinazione_, immagine_, "turni extra")
         {
             nTurni = nTurni_;
         }

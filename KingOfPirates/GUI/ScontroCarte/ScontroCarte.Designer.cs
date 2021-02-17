@@ -57,6 +57,12 @@
             this.nomeCartaA = new System.Windows.Forms.Label();
             this.defA = new System.Windows.Forms.Label();
             this.attA = new System.Windows.Forms.Label();
+            this.dialogueBox = new System.Windows.Forms.Label();
+            this.messaggioGiocatore = new System.Windows.Forms.Label();
+            this.messaggioNemico = new System.Windows.Forms.Label();
+            this.img_buff = new System.Windows.Forms.PictureBox();
+            this.curaEstesa = new System.Windows.Forms.PictureBox();
+            this.infoBox = new System.Windows.Forms.PictureBox();
             this.bt_nascondi = new System.Windows.Forms.PictureBox();
             this.bt_successivo = new System.Windows.Forms.PictureBox();
             this.bt_attacco = new System.Windows.Forms.PictureBox();
@@ -74,9 +80,9 @@
             this.elem1 = new System.Windows.Forms.PictureBox();
             this.img_carta1 = new System.Windows.Forms.PictureBox();
             this.img_avversario = new System.Windows.Forms.PictureBox();
-            this.dialogueBox = new System.Windows.Forms.Label();
-            this.messaggioGiocatore = new System.Windows.Forms.Label();
-            this.messaggioNemico = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.img_buff)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.curaEstesa)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.infoBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bt_nascondi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bt_successivo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bt_attacco)).BeginInit();
@@ -420,6 +426,75 @@
             this.attA.Text = "A:7";
             this.attA.Visible = false;
             // 
+            // dialogueBox
+            // 
+            this.dialogueBox.AutoSize = true;
+            this.dialogueBox.Location = new System.Drawing.Point(499, 74);
+            this.dialogueBox.Name = "dialogueBox";
+            this.dialogueBox.Size = new System.Drawing.Size(0, 17);
+            this.dialogueBox.TabIndex = 56;
+            // 
+            // messaggioGiocatore
+            // 
+            this.messaggioGiocatore.AutoSize = true;
+            this.messaggioGiocatore.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.messaggioGiocatore.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.messaggioGiocatore.Font = new System.Drawing.Font("Agency FB", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.messaggioGiocatore.Location = new System.Drawing.Point(338, 48);
+            this.messaggioGiocatore.Name = "messaggioGiocatore";
+            this.messaggioGiocatore.Size = new System.Drawing.Size(261, 41);
+            this.messaggioGiocatore.TabIndex = 57;
+            this.messaggioGiocatore.Text = "E\' il tuo turno: Attacca!\r\n";
+            this.messaggioGiocatore.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // messaggioNemico
+            // 
+            this.messaggioNemico.AutoSize = true;
+            this.messaggioNemico.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.messaggioNemico.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.messaggioNemico.Font = new System.Drawing.Font("Agency FB", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.messaggioNemico.Location = new System.Drawing.Point(659, 48);
+            this.messaggioNemico.Name = "messaggioNemico";
+            this.messaggioNemico.Size = new System.Drawing.Size(272, 41);
+            this.messaggioNemico.TabIndex = 58;
+            this.messaggioNemico.Text = "Turno nemico: Difenditi!\r\n";
+            this.messaggioNemico.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.messaggioNemico.Visible = false;
+            // 
+            // img_buff
+            // 
+            this.img_buff.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.img_buff.Image = global::KingOfPirates.Properties.Resources.pow_buff;
+            this.img_buff.Location = new System.Drawing.Point(109, 339);
+            this.img_buff.Name = "img_buff";
+            this.img_buff.Size = new System.Drawing.Size(58, 54);
+            this.img_buff.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.img_buff.TabIndex = 61;
+            this.img_buff.TabStop = false;
+            this.img_buff.Visible = false;
+            // 
+            // curaEstesa
+            // 
+            this.curaEstesa.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.curaEstesa.Image = global::KingOfPirates.Properties.Resources.vita_buff;
+            this.curaEstesa.Location = new System.Drawing.Point(34, 339);
+            this.curaEstesa.Name = "curaEstesa";
+            this.curaEstesa.Size = new System.Drawing.Size(58, 54);
+            this.curaEstesa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.curaEstesa.TabIndex = 60;
+            this.curaEstesa.TabStop = false;
+            this.curaEstesa.Visible = false;
+            // 
+            // infoBox
+            // 
+            this.infoBox.Image = global::KingOfPirates.Properties.Resources.info;
+            this.infoBox.Location = new System.Drawing.Point(34, 513);
+            this.infoBox.Name = "infoBox";
+            this.infoBox.Size = new System.Drawing.Size(112, 102);
+            this.infoBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.infoBox.TabIndex = 59;
+            this.infoBox.TabStop = false;
+            // 
             // bt_nascondi
             // 
             this.bt_nascondi.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -533,7 +608,7 @@
             // img_carta4
             // 
             this.img_carta4.BackColor = System.Drawing.Color.White;
-            this.img_carta4.BackgroundImage = global::KingOfPirates.Properties.Resources.pun_pun;
+            this.img_carta4.BackgroundImage = global::KingOfPirates.Properties.Resources.BufferDrink;
             this.img_carta4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.img_carta4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.img_carta4.Image = global::KingOfPirates.Properties.Resources.cartaVuota;
@@ -633,46 +708,14 @@
             this.img_avversario.TabIndex = 7;
             this.img_avversario.TabStop = false;
             // 
-            // dialogueBox
-            // 
-            this.dialogueBox.AutoSize = true;
-            this.dialogueBox.Location = new System.Drawing.Point(499, 74);
-            this.dialogueBox.Name = "dialogueBox";
-            this.dialogueBox.Size = new System.Drawing.Size(0, 17);
-            this.dialogueBox.TabIndex = 56;
-            // 
-            // messaggioGiocatore
-            // 
-            this.messaggioGiocatore.AutoSize = true;
-            this.messaggioGiocatore.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.messaggioGiocatore.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.messaggioGiocatore.Font = new System.Drawing.Font("Agency FB", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.messaggioGiocatore.Location = new System.Drawing.Point(338, 48);
-            this.messaggioGiocatore.Name = "messaggioGiocatore";
-            this.messaggioGiocatore.Size = new System.Drawing.Size(268, 43);
-            this.messaggioGiocatore.TabIndex = 57;
-            this.messaggioGiocatore.Text = "E\' il tuo turno: Attacca!\r\n";
-            this.messaggioGiocatore.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // messaggioNemico
-            // 
-            this.messaggioNemico.AutoSize = true;
-            this.messaggioNemico.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.messaggioNemico.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.messaggioNemico.Font = new System.Drawing.Font("Agency FB", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.messaggioNemico.Location = new System.Drawing.Point(659, 48);
-            this.messaggioNemico.Name = "messaggioNemico";
-            this.messaggioNemico.Size = new System.Drawing.Size(276, 43);
-            this.messaggioNemico.TabIndex = 58;
-            this.messaggioNemico.Text = "Turno nemico: Difenditi!\r\n";
-            this.messaggioNemico.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.messaggioNemico.Visible = false;
-            // 
             // ScontroCarte
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1262, 673);
+            this.Controls.Add(this.img_buff);
+            this.Controls.Add(this.curaEstesa);
+            this.Controls.Add(this.infoBox);
             this.Controls.Add(this.messaggioNemico);
             this.Controls.Add(this.messaggioGiocatore);
             this.Controls.Add(this.dialogueBox);
@@ -724,6 +767,9 @@
             this.Name = "ScontroCarte";
             this.Text = "ScontroCarte";
             this.Load += new System.EventHandler(this.OnLoad);
+            ((System.ComponentModel.ISupportInitialize)(this.img_buff)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.curaEstesa)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.infoBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bt_nascondi)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bt_successivo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bt_attacco)).EndInit();
@@ -796,5 +842,8 @@
         private System.Windows.Forms.Label dialogueBox;
         private System.Windows.Forms.Label messaggioGiocatore;
         private System.Windows.Forms.Label messaggioNemico;
+        private System.Windows.Forms.PictureBox infoBox;
+        private System.Windows.Forms.PictureBox curaEstesa;
+        private System.Windows.Forms.PictureBox img_buff;
     }
 }

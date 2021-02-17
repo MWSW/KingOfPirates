@@ -14,7 +14,7 @@ namespace KingOfPirates.Missioni.ScontroCarte.Carte.CarteEffetto
         int danno;
         int durata;
         public CartaDannoContinuo(string nome_, int determinazione_, Bitmap immagine_, int danno_, int durata_)
-              : base(nome_, determinazione_, immagine_)
+              : base(nome_, determinazione_, immagine_, "dannoContiuno")
         {
             danno = danno_;
             durata = durata_;

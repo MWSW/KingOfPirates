@@ -77,7 +77,7 @@
     <Compile Include="Missioni\ScontroCarte\Carte\Carta.cs" />
     <Compile Include="Missioni\ScontroCarte\Carte\CartaBase.cs" />
     <Compile Include="Missioni\ScontroCarte\Carte\CarteEffetto\CartaBuff.cs" />
-    <Compile Include="Missioni\ScontroCarte\Carte\CarteEffetto\CartaCuraBase.cs" />
+    <Compile Include="Missioni\ScontroCarte\Carte\CarteEffetto\CartaCura.cs" />
     <Compile Include="Missioni\ScontroCarte\Carte\CarteEffetto\CartaCuraEstesa.cs" />
     <Compile Include="Missioni\ScontroCarte\Carte\CarteEffetto\CartaDannoContinuo.cs" />
     <Compile Include="Missioni\ScontroCarte\Carte\CarteEffetto\CartaDebuff.cs" />
@@ -153,9 +153,15 @@
     <None Include="Resources\SpazioVuoto.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\vita_buff.png" />
     <None Include="Resources\nascondi.png" />
     <None Include="Resources\next.png" />
     <None Include="Resources\bottone_attacco.png" />
+    <None Include="Resources\info.png" />
+    <None Include="Resources\curaPozione.png" />
+    <None Include="Resources\curaEstesa.jpg" />
+    <None Include="Resources\BufferDrink.jpg" />
+    <None Include="Resources\pow_buff.png" />
     <Content Include="Resources\sfondo_carta.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

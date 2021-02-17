@@ -14,11 +14,15 @@ namespace KingOfPirates.Missioni.ScontroCarte.Carte
     {
         private int atk;
         private int def;
-        private double buffApplicato; //Emanuele perche double e non int? (Ruben)
         private char elemento;
+
+        private int buff;
+
         public CartaBase(string nome_, int determinazione_, Bitmap immagine_, int atk_, int def_, char elemento_)
-            :base(nome_, determinazione_, immagine_)
+            :base(nome_, determinazione_, immagine_, "attacco")
         {
+            buff = 0;
+
             atk = atk_;
             def = def_;
             elemento = elemento_;
@@ -65,13 +69,12 @@ namespace KingOfPirates.Missioni.ScontroCarte.Carte
             
         }
 
-        public void ApplicaBuff(double buff) 
-        {
-
-        }
-
-        public int Atk { get => atk; }
-        public int Def { get => def; }
+        public int Atk { get => atk + buff; }
+        public int Def { get => def + buff; }
         public char Elemento { get => elemento; }
+        public void SetBuff(int buff_)
+        {
+            buff = buff_;
+        }
     }
 }

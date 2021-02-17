@@ -19,11 +19,15 @@ namespace KingOfPirates.Missioni.ScontroCarte.Carte
 
         private int indice;
 
-        protected Carta(string nome_, int determinazione_, Bitmap immagine_)
+        private string tipo;
+
+        protected Carta(string nome_, int determinazione_, Bitmap immagine_, string tipo_)
         {
             nome = nome_;
             determinazione = determinazione_;
             immagine = immagine_;
+
+            tipo = tipo_;
         }
 
         public void Visualizza(PictureBox img_carta, Label nomeCarta, Label det)
@@ -81,5 +85,7 @@ namespace KingOfPirates.Missioni.ScontroCarte.Carte
         public string Nome { get => nome; }
         public int Determinazione { get => determinazione; }
         public int Indice { get => indice; set => indice = value; }
+
+        public string Tipo { get => tipo; }
     }
 }
