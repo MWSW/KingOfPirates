@@ -108,11 +108,17 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Missioni\Ranking.cs" />
+    <EmbeddedResource Include="GUI\MenuNassau\Locanda_form.resx">
+      <DependentUpon>Locanda_form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\MenuNassau\Nassau_form.resx">
       <DependentUpon>Nassau_form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\MenuNassau\Negozio_form.resx">
       <DependentUpon>Negozio_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\MenuNassau\Porto_form.resx">
+      <DependentUpon>Porto_form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -151,6 +157,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\assLeg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back_arrow.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
