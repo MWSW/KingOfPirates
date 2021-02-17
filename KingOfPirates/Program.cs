@@ -20,8 +20,8 @@ namespace KingOfPirates
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            new StartMenu().Show();
-            //new MenuMissioni().Show();
+            //new StartMenu().Show();
+            new MenuMissioni().Show();
             Application.Run();
         }
     }
