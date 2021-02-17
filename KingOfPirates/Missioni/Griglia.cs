@@ -8,26 +8,30 @@ namespace KingOfPirates.Missioni
 {
     class Griglia
     {
-        private int righe, colonne;
-
         private int[,] mat;
 
-        public Griglia(int righe_, int colonne_, bool randomizzaMatr)
+        public Griglia(int matSize, bool randomizzaMatr)
         {
-            righe = righe_;
-            colonne = colonne_;
-            mat = new int[righe, colonne];
+            mat = new int[matSize, matSize];
 
             if (randomizzaMatr) RandMatrice();
         }
 
         private void RandMatrice()
         {
-            for(int i = 0; i < righe; i++)
+            for (int i = 0; i < mat.Length; i++)
             {
-                for (int j = 0; j < colonne; j++)
+                for (int j = 0; j < mat.Length; j++)
                 {
-                    mat[i, j] = new Random().Next(2);
+                    try
+                    {
+                        mat[i, j] = new Random().Next(3);
+                    }
+                    catch (IndexOutOfRangeException ex)
+                    {
+                        Console.WriteLine(ex.StackTrace);
+                        break;
+                    }
                 }
             }
         }
@@ -35,7 +39,5 @@ namespace KingOfPirates.Missioni
         //Properties/Proprieta'
 
         public int[,] Mat { get => mat; set => mat = value; }
-        public int Righe { get => righe; set => righe = value; }
-        public int Colonne { get => colonne; set => colonne = value; }
     }
 }
