@@ -14,8 +14,8 @@ namespace KingOfPirates.Nassau
     class Locanda : Edificio
     {
 
-        private int nSlot;                              //Posti letto disponibili (per le carte)
-        private int detPerTurno;                        //Determinazione ripristinata per turno
+        private int nSlot; //Posti letto disponibili (per le carte)
+        private int detPerTurno; //Determinazione ripristinata per turno
 
         Carta[] slotCarte;
 
@@ -36,6 +36,6 @@ namespace KingOfPirates.Nassau
 
         public void RipristinaCarta(Carta carta){}
 
-        public String ScottaGerri() { return ""; }      //non ho Iuri (Ruben)
+        public String ScottaGerri() { return ""; } //non ho Iuri (Ruben)
     }
 }

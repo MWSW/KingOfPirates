@@ -98,6 +98,6 @@ namespace KingOfPirates.GUI.MenuNassau
             Negozio_nTaglieMerc_Label.Text = "Taglie mercantili: " + (gestoreDominio.TaglieMercantile).ToString();
             Negozio_nTaglieCara_Label.Text = "Taglie caravelle: " + (gestoreDominio.TaglieCaravella).ToString();
             Negozio_nTaglieFreg_Label.Text = "Taglie fregate: " + (gestoreDominio.TaglieFregata).ToString();
-        }
+        } 
     }
 }

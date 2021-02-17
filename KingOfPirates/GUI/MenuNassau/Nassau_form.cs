@@ -32,22 +32,25 @@ namespace KingOfPirates.GUI.MenuNassau
 
             InitializeComponent();
             negozio = new Negozio_form(gestoreDomino, naveGiocatore);
-            locanda = new Locanda_form(gestoreDomino);
+            locanda = new Locanda_form();
             porto = new Porto_form();
         }
         
         private void NegozioImgButton_Click(object sender, EventArgs e)
         {
+            this.Hide();
             negozio.Show();
         }
 
         private void LocandaImgButton_Click(object sender, EventArgs e)
         {
+            this.Hide();
             locanda.Show();
         }
 
         private void PortoImgButton_Click(object sender, EventArgs e)
         {
+            this.Hide();
             porto.Show();
         }
     }
