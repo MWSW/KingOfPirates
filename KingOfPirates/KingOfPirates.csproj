@@ -117,6 +117,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="KingOfPirates.Properties.Resources.datasource" />
+    <None Include="KingOfPirates.Properties.Settings.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -159,6 +161,84 @@
     <None Include="Resources\SpazioVuoto.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\HUD - interfaccia\box_5_mosse.png" />
+    <Content Include="Resources\HUD - interfaccia\box_5_mosse_blocchi.png" />
+    <Content Include="Resources\HUD - interfaccia\box_domanda.png" />
+    <Content Include="Resources\HUD - interfaccia\box_fight.png" />
+    <Content Include="Resources\HUD - interfaccia\box_lose.png" />
+    <Content Include="Resources\HUD - interfaccia\box_seleziona_attacchi.png" />
+    <Content Include="Resources\HUD - interfaccia\box_sfida.png" />
+    <Content Include="Resources\HUD - interfaccia\box_win.png" />
+    <Content Include="Resources\HUD - interfaccia\interfaccia_punteggui.png" />
+    <Content Include="Resources\HUD - interfaccia\mossa_attacca.png" />
+    <Content Include="Resources\HUD - interfaccia\mossa_difesa.png" />
+    <Content Include="Resources\HUD - interfaccia\mossa_strategia.png" />
+    <Content Include="Resources\HUD - interfaccia\sfondo_interfaccia.png" />
+    <Content Include="Resources\isolaDelTesoro_pezzi\tile_01.png" />
+    <Content Include="Resources\isolaDelTesoro_pezzi\tile_02.png" />
+    <Content Include="Resources\isolaDelTesoro_pezzi\tile_03.png" />
+    <Content Include="Resources\isolaDelTesoro_pezzi\tile_04.png" />
+    <Content Include="Resources\isolaDelTesoro_pezzi\tile_05.png" />
+    <Content Include="Resources\isolaDelTesoro_pezzi\tile_06.png" />
+    <Content Include="Resources\isolaDelTesoro_pezzi\tile_07.png" />
+    <Content Include="Resources\isolaDelTesoro_pezzi\tile_08.png" />
+    <Content Include="Resources\isolaDelTesoro_pezzi\tile_09.png" />
+    <Content Include="Resources\isolaDelTesoro_pezzi\tile_17.png" />
+    <Content Include="Resources\isolaDelTesoro_pezzi\tile_18.png" />
+    <Content Include="Resources\isolaDelTesoro_pezzi\tile_19.png" />
+    <Content Include="Resources\isolaDelTesoro_pezzi\tile_20.png" />
+    <Content Include="Resources\isolaDelTesoro_pezzi\tile_21.png" />
+    <Content Include="Resources\isolaDelTesoro_pezzi\tile_22.png" />
+    <Content Include="Resources\isolaDelTesoro_pezzi\tile_23.png" />
+    <Content Include="Resources\isolaDelTesoro_pezzi\tile_24.png" />
+    <Content Include="Resources\isolaDelTesoro_pezzi\tile_25.png" />
+    <Content Include="Resources\isolaDelTesoro_pezzi\tile_33.png" />
+    <Content Include="Resources\isolaDelTesoro_pezzi\tile_34.png" />
+    <Content Include="Resources\isolaDelTesoro_pezzi\tile_35.png" />
+    <Content Include="Resources\isolaDelTesoro_pezzi\tile_36.png" />
+    <Content Include="Resources\isolaDelTesoro_pezzi\tile_37.png" />
+    <Content Include="Resources\isolaDelTesoro_pezzi\tile_38.png" />
+    <Content Include="Resources\isolaDelTesoro_pezzi\tile_39.png" />
+    <Content Include="Resources\isolaDelTesoro_pezzi\tile_40.png" />
+    <Content Include="Resources\isolaDelTesoro_pezzi\tile_41.png" />
+    <Content Include="Resources\isolaDelTesoro_pezzi\tile_52.png" />
+    <Content Include="Resources\isolaDelTesoro_pezzi\tile_53.png" />
+    <Content Include="Resources\isolaDelTesoro_pezzi\tile_54.png" />
+    <Content Include="Resources\isolaDelTesoro_pezzi\tile_55.png" />
+    <Content Include="Resources\isolaDelTesoro_pezzi\tile_56.png" />
+    <Content Include="Resources\isolaDelTesoro_pezzi\tile_57.png" />
+    <Content Include="Resources\isolaDelTesoro_pezzi\tile_68.png" />
+    <Content Include="Resources\isolaDelTesoro_pezzi\tile_69.png" />
+    <Content Include="Resources\isole_default\isola1.png" />
+    <Content Include="Resources\isole_default\isola2.png" />
+    <Content Include="Resources\isole_default\isola3.png" />
+    <Content Include="Resources\isole_default\isola4.png" />
+    <Content Include="Resources\isole_default\isola5.png" />
+    <Content Include="Resources\mare.png" />
+    <Content Include="Resources\nave Nera\pos_1.png" />
+    <Content Include="Resources\nave Nera\pos_2.png" />
+    <Content Include="Resources\nave Nera\pos_3.png" />
+    <Content Include="Resources\nave Nera\pos_4.png" />
+    <Content Include="Resources\naveBianca\ship1_1.png" />
+    <Content Include="Resources\naveBianca\ship1_2.png" />
+    <Content Include="Resources\naveBianca\ship1_3.png" />
+    <Content Include="Resources\naveBianca\ship1_4.png" />
+    <Content Include="Resources\naveNemica\ship1_1.png" />
+    <Content Include="Resources\naveNemica\ship1_2.png" />
+    <Content Include="Resources\naveNemica\ship1_3.png" />
+    <Content Include="Resources\naveNemica\ship1_4.png" />
+    <Content Include="Resources\naveRossa\ship1_1.png" />
+    <Content Include="Resources\naveRossa\ship1_2.png" />
+    <Content Include="Resources\naveRossa\ship1_3.png" />
+    <Content Include="Resources\naveRossa\ship1_4.png" />
+    <Content Include="Resources\naveVerde\ship2_1.png" />
+    <Content Include="Resources\naveVerde\ship2_2.png" />
+    <Content Include="Resources\naveVerde\ship2_3.png" />
+    <Content Include="Resources\naveVerde\ship2_4.png" />
+    <Content Include="Resources\navi_laterali\nave_bianca.png" />
+    <Content Include="Resources\navi_laterali\nave_pirata.png" />
+    <Content Include="Resources\navi_laterali\nave_rossa.png" />
+    <Content Include="Resources\navi_laterali\nave_verde.png" />
     <Content Include="Resources\sfondo_carta.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
