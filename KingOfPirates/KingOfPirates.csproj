@@ -116,11 +116,17 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Missioni\Ranking.cs" />
+    <EmbeddedResource Include="GUI\MenuNassau\Locanda_form.resx">
+      <DependentUpon>Locanda_form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\MenuNassau\Nassau_form.resx">
       <DependentUpon>Nassau_form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\MenuNassau\Negozio_form.resx">
       <DependentUpon>Negozio_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\MenuNassau\Porto_form.resx">
+      <DependentUpon>Porto_form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\ScontroCarte\ScontroCarte.resx">
       <DependentUpon>ScontroCarte.cs</DependentUpon>
@@ -164,6 +170,7 @@
     <None Include="Resources\assLeg.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\back_arrow.jpg" />
     <Content Include="Resources\bottone_attacco.png" />
     <Content Include="Resources\BufferDrink.jpg" />
     <Content Include="Resources\cartaVuota.PNG" />

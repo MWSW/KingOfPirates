@@ -111,7 +111,17 @@ namespace KingOfPirates.Properties {
         }
         
         /// <summary>
-        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap back_arrow1 {
+            get {
+                object obj = ResourceManager.GetObject("back_arrow1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap bevDet {
             get {
@@ -242,26 +252,6 @@ namespace KingOfPirates.Properties {
         
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap metalCannon {
-            get {
-                object obj = ResourceManager.GetObject("metalCannon", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap metalCannon1 {
-            get {
-                object obj = ResourceManager.GetObject("metalCannon1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap prova {
             get {
