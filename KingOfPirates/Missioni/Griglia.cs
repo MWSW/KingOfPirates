@@ -23,15 +23,7 @@ namespace KingOfPirates.Missioni
             {
                 for (int j = 0; j < mat.Length; j++)
                 {
-                    try
-                    {
-                        mat[i, j] = new Random().Next(3);
-                    }
-                    catch (IndexOutOfRangeException ex)
-                    {
-                        Console.WriteLine(ex.StackTrace);
-                        break;
-                    }
+                    mat[i, j] = new Random().Next(3);
                 }
             }
         }
