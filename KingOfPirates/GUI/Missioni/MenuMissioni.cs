@@ -15,7 +15,7 @@ namespace KingOfPirates.GUI.Missioni
 {
     public partial class MenuMissioni : Form
     {
-        Griglia griglia;
+        private Griglia griglia;
 
         public MenuMissioni()
         {

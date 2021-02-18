@@ -125,7 +125,7 @@ namespace KingOfPirates.GUI.Missioni
             this.Griglia_flowLayoutPanel.TabIndex = 6;
             // 
             // Griglia_pictureBox[,]
-            // 103 pixel
+            // 100 + 3 pixel
             int tmp_locX = 3;
             int tmp_locY = 3;
             for (int i = 0; i < imgArrSize; i++)
@@ -155,7 +155,7 @@ namespace KingOfPirates.GUI.Missioni
             }
             // 
             // MenuMissioni
-            // 
+            // 16 pixel tolti dalla cornice, 39 pixel tolti dalla barra del titolo
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 681);
