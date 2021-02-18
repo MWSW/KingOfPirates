@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace KingOfPirates 
+namespace KingOfPirates.GUI.MenuNassau
 {
-    public partial class Form1 : Form
+    public partial class Porto_form : Form
     {
-        public Form1()
+        public Porto_form()
         {
             InitializeComponent();
+        }
+
+        private void Porto_Salpa_Button_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
