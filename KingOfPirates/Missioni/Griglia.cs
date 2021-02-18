@@ -9,19 +9,21 @@ namespace KingOfPirates.Missioni
     class Griglia
     {
         private int[,] mat;
+        private int matSize;
 
         public Griglia(int matSize, bool randomizzaMatr)
         {
             mat = new int[matSize, matSize];
+            this.matSize = matSize;
 
             if (randomizzaMatr) RandMatrice();
         }
 
         private void RandMatrice()
         {
-            for (int i = 0; i < mat.Length; i++)
+            for (int i = 0; i < matSize; i++)
             {
-                for (int j = 0; j < mat.Length; j++)
+                for (int j = 0; j < matSize; j++)
                 {
                     mat[i, j] = new Random().Next(3);
                 }
