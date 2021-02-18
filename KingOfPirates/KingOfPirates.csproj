@@ -128,6 +128,9 @@
     <EmbeddedResource Include="GUI\MenuNassau\Porto_form.resx">
       <DependentUpon>Porto_form.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\MenuPrincipale\StartMenu.resx">
+      <DependentUpon>StartMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\ScontroCarte\ScontroCarte.resx">
       <DependentUpon>ScontroCarte.cs</DependentUpon>
     </EmbeddedResource>
@@ -189,6 +192,9 @@
     <Content Include="Resources\sfondo_carta.jpg" />
     <Content Include="Resources\SpazioVuoto.png" />
     <Content Include="Resources\vita_buff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Nemici\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
