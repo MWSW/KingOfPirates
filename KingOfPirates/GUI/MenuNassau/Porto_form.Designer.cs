@@ -114,6 +114,7 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             // Porto_Back_Button
             // 
+            this.Porto_Back_Button.BackgroundImage = global::KingOfPirates.Properties.Resources.back_arrow;
             this.Porto_Back_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Porto_Back_Button.Location = new System.Drawing.Point(12, 12);
             this.Porto_Back_Button.Name = "Porto_Back_Button";
