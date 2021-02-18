@@ -20,9 +20,9 @@ namespace KingOfPirates
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            new StartMenu().Show();
-            new ScontroCarte().Show();
-            new Nassau_form().Show();
+            //new StartMenu().Show();
+            //new ScontroCarte().Show();
+            //new Nassau_form().Show();
             new MenuMissioni().Show();
             Application.Run();
         }
