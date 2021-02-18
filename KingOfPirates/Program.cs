@@ -7,7 +7,7 @@ using KingOfPirates;
 using KingOfPirates.GUI.MenuPrincipale;
 using KingOfPirates.GUI.MenuNassau;
 using KingOfPirates.GUI.ScontroCarte;
-using KingOfPirates.GUI.Missioni;
+using KingOfPirates.GUI.MenuMissioni;
 
 namespace KingOfPirates
 {
@@ -26,34 +26,40 @@ namespace KingOfPirates
         }
     }
 
-    // Classe per aiutare nell'avvio e terminazione del programma
+    // Classe per aiutare nell'avvio e terminazione del programma, da aggiornare per il programma finale
 
     static class Gioco
     {
         public static GUI.MenuPrincipale.StartMenu startMenu;
         public static GUI.MenuNassau.Nassau_form nassauForm;
-        public static GUI.Missioni.MenuMissioni menuMissioni;
+        public static GUI.MenuMissioni.MenuMissioni menuMissioni;
         public static GUI.ScontroCarte.ScontroCarte scontroCarte;
+        private static Task initTask = new Task(() =>
+        {
+            Console.WriteLine("#+ Inizio inizializzazione Forms con Task");
+            nassauForm = new GUI.MenuNassau.Nassau_form();
+            menuMissioni = new GUI.MenuMissioni.MenuMissioni();
+            scontroCarte = new GUI.ScontroCarte.ScontroCarte();
+            Console.WriteLine("#- Fine inizializzazione Forms con Task");
+        });
 
         public static void Start()
         {
+            initTask.Start();
             startMenu = new GUI.MenuPrincipale.StartMenu();
-            nassauForm = new GUI.MenuNassau.Nassau_form();
-            menuMissioni = new GUI.Missioni.MenuMissioni();
-            scontroCarte = new GUI.ScontroCarte.ScontroCarte();
             startMenu.Show();
+            initTask.Wait();
         }
 
         public static void End()
         {
-            startMenu.Close();
             nassauForm.Close();
             menuMissioni.Close();
             scontroCarte.Close();
-            startMenu.Dispose();
             nassauForm.Dispose();
             menuMissioni.Dispose();
             scontroCarte.Dispose();
+            startMenu.Dispose();
             Application.Exit();
         }
     }

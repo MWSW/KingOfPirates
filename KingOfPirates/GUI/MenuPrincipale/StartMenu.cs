@@ -16,5 +16,28 @@ namespace KingOfPirates.GUI.MenuPrincipale
         {
             InitializeComponent();
         }
+
+        private void Nassau_button_Click(object sender, EventArgs e)
+        {
+            Gioco.nassauForm.Show();
+            this.Hide();
+        }
+
+        private void Missioni_button_Click(object sender, EventArgs e)
+        {
+            Gioco.menuMissioni.Show();
+            this.Hide();
+        }
+
+        private void ScontroCarte_button_Click(object sender, EventArgs e)
+        {
+            Gioco.scontroCarte.Show();
+            this.Hide();
+        }
+
+        private void StartMenu_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Gioco.End();
+        }
     }
 }

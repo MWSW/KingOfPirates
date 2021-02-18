@@ -32,6 +32,6 @@ namespace KingOfPirates.Missioni
 
         //Properties/Proprieta'
 
-        public int[,] Mat { get => mat; set => mat = value; }
+        public int[,] Mat { get => mat; }
     }
 }

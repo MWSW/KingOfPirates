@@ -11,15 +11,13 @@ using KingOfPirates.Missioni;
 
 // Sto facendo l'interfaccia a mano e non è finita
 
-namespace KingOfPirates.GUI.Missioni
+namespace KingOfPirates.GUI.MenuMissioni
 {
     public partial class MenuMissioni : Form
     {
-        private Griglia griglia;
-
         public MenuMissioni()
         {
-            InitializeComponent(36);
+            InitializeComponent(19, 12);
         }
 
         private void Sopra_button_Click(object sender, EventArgs e)
@@ -41,6 +39,13 @@ namespace KingOfPirates.GUI.Missioni
         private void Destra_button_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void MenuMissioni_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            e.Cancel = true;
+            this.Hide();
+            Gioco.startMenu.Show();
         }
     }
 }

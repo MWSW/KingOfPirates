@@ -5,8 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Resources;
 using KingOfPirates.Missioni;
+using System.Windows.Forms;
 
-namespace KingOfPirates.GUI.Missioni
+namespace KingOfPirates.GUI.MenuMissioni
 {
     partial class MenuMissioni
     {
@@ -28,16 +29,12 @@ namespace KingOfPirates.GUI.Missioni
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
-
         /// <summary>
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent(int imgArrSize)
+        private void InitializeComponent(int picBoxXSize, int picBoxYSize)
         {
-            griglia = new Griglia(imgArrSize, true);
-
             this.components = new System.ComponentModel.Container();
             this.cartinaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.Sopra_button = new System.Windows.Forms.Button();
@@ -46,22 +43,27 @@ namespace KingOfPirates.GUI.Missioni
             this.Destra_button = new System.Windows.Forms.Button();
             this.Movimento_label = new System.Windows.Forms.Label();
             this.Griglia_flowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.Griglia_pictureBox = new System.Windows.Forms.PictureBox[imgArrSize, imgArrSize];
+            this.Griglia_pictureBox = new System.Windows.Forms.PictureBox[picBoxXSize, picBoxYSize];
             ((System.ComponentModel.ISupportInitialize)(this.cartinaBindingSource)).BeginInit();
             this.Griglia_flowLayoutPanel.SuspendLayout();
-            for (int i = 0; i < imgArrSize; i++)
+            for (int i = 0; i < picBoxXSize; i++)
             {
-                for (int j = 0; j < imgArrSize; j++)
+                for (int j = 0; j < picBoxYSize; j++)
                 {
                     this.Griglia_pictureBox[i, j] = new System.Windows.Forms.PictureBox();
                     ((System.ComponentModel.ISupportInitialize)(this.Griglia_pictureBox[i, j])).BeginInit();
                 }
             }
             this.SuspendLayout();
+
+            #region Joystick
+
+            int JoystickStartPointX = 1090;
+            int JoystickStartPointY = 500;
             // 
             // Sopra_button
             // 
-            this.Sopra_button.Location = new System.Drawing.Point(440, 507);
+            this.Sopra_button.Location = new System.Drawing.Point(JoystickStartPointX + 53, JoystickStartPointY);
             this.Sopra_button.Name = "Sopra_button";
             this.Sopra_button.Size = new System.Drawing.Size(50, 50);
             this.Sopra_button.TabIndex = 1;
@@ -71,7 +73,7 @@ namespace KingOfPirates.GUI.Missioni
             // 
             // Sinistra_button
             // 
-            this.Sinistra_button.Location = new System.Drawing.Point(384, 563);
+            this.Sinistra_button.Location = new System.Drawing.Point(JoystickStartPointX, JoystickStartPointY + 53);
             this.Sinistra_button.Name = "Sinistra_button";
             this.Sinistra_button.Size = new System.Drawing.Size(50, 50);
             this.Sinistra_button.TabIndex = 2;
@@ -81,7 +83,7 @@ namespace KingOfPirates.GUI.Missioni
             // 
             // Sotto_button
             // 
-            this.Sotto_button.Location = new System.Drawing.Point(440, 619);
+            this.Sotto_button.Location = new System.Drawing.Point(JoystickStartPointX + 53, JoystickStartPointY + 106);
             this.Sotto_button.Name = "Sotto_button";
             this.Sotto_button.Size = new System.Drawing.Size(50, 50);
             this.Sotto_button.TabIndex = 3;
@@ -91,7 +93,7 @@ namespace KingOfPirates.GUI.Missioni
             // 
             // Destra_button
             // 
-            this.Destra_button.Location = new System.Drawing.Point(496, 563);
+            this.Destra_button.Location = new System.Drawing.Point(JoystickStartPointX + 106, JoystickStartPointY + 53);
             this.Destra_button.Name = "Destra_button";
             this.Destra_button.Size = new System.Drawing.Size(50, 50);
             this.Destra_button.TabIndex = 4;
@@ -101,58 +103,54 @@ namespace KingOfPirates.GUI.Missioni
             // 
             // Movimento_label
             // 
-            this.Movimento_label.Location = new System.Drawing.Point(440, 563);
+            this.Movimento_label.Location = new System.Drawing.Point(JoystickStartPointX + 53, JoystickStartPointY + 53);
             this.Movimento_label.Name = "Movimento_label";
             this.Movimento_label.Size = new System.Drawing.Size(50, 50);
             this.Movimento_label.TabIndex = 5;
             this.Movimento_label.Text = "Move";
             this.Movimento_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+
+            #endregion
+
+            #region Matrice pictureBox
+
             // 
             // Griglia_flowLayoutPanel
             // 
-
-            for (int i = 0; i < imgArrSize; i++)
+            for (int i = 0; i < picBoxXSize; i++)
             {
-                for (int j = 0; j < imgArrSize; j++)
+                for (int j = 0; j < picBoxYSize; j++)
                 {
                     this.Griglia_flowLayoutPanel.Controls.Add(this.Griglia_pictureBox[i, j]);
                 }
             }
-
-            this.Griglia_flowLayoutPanel.Location = new System.Drawing.Point(615, 32);
+            this.Griglia_flowLayoutPanel.Location = new System.Drawing.Point(0, 0);
             this.Griglia_flowLayoutPanel.Name = "Griglia_flowLayoutPanel";
-            this.Griglia_flowLayoutPanel.Size = new System.Drawing.Size(636, 636);
+            this.Griglia_flowLayoutPanel.Size = new System.Drawing.Size(1090, 680);
             this.Griglia_flowLayoutPanel.TabIndex = 6;
             // 
             // Griglia_pictureBox[,]
-            // 100 + 3 pixel
+            // 50 + 3 pixel
             int tmp_locX = 3;
             int tmp_locY = 3;
-            for (int i = 0; i < imgArrSize; i++)
+            for (int i = 0; i < picBoxXSize; i++)
             {
-                for (int j = 0; j < imgArrSize; j++)
+                for (int j = 0; j < picBoxYSize; j++)
                 {
                     this.Griglia_pictureBox[i, j].Location = new System.Drawing.Point(tmp_locX, tmp_locY);
                     this.Griglia_pictureBox[i, j].Name = "Griglia_pictureBox" + i + j;
-                    this.Griglia_pictureBox[i, j].Size = new System.Drawing.Size(100, 100);
+                    this.Griglia_pictureBox[i, j].Size = new System.Drawing.Size(50, 50);
                     this.Griglia_pictureBox[i, j].TabIndex = 0;
                     this.Griglia_pictureBox[i, j].TabStop = false;
-                    switch (griglia.Mat[i, j])
-                    {
-                        case 0:
-                            this.Griglia_pictureBox[i, j].Image = Properties.Resources.mare;
-                            break;
-                        case 1:
-                            this.Griglia_pictureBox[i, j].Image = Properties.Resources.isola2;
-                            break;
-                        case 2:
-                            this.Griglia_pictureBox[i, j].Image = Properties.Resources.SpazioVuoto;
-                            break;
-                    }
-                    tmp_locX += 103;
+                    this.Griglia_pictureBox[i, j].BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+                    this.Griglia_pictureBox[i, j].BackgroundImage = Properties.Resources.mare;
+                    tmp_locX += 53;
                 }
-                tmp_locY += 103;
+                tmp_locY += 53;
             }
+
+            #endregion
+
             // 
             // MenuMissioni
             // 16 pixel tolti dalla cornice, 39 pixel tolti dalla barra del titolo
@@ -165,13 +163,14 @@ namespace KingOfPirates.GUI.Missioni
             this.Controls.Add(this.Sotto_button);
             this.Controls.Add(this.Sinistra_button);
             this.Controls.Add(this.Sopra_button);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MenuMissioni_FormClosing);
             this.Name = "MenuMissioni";
             this.Text = "MenuMissioni";
             ((System.ComponentModel.ISupportInitialize)(this.cartinaBindingSource)).EndInit();
             this.Griglia_flowLayoutPanel.ResumeLayout(false);
-            for (int i = 0; i < imgArrSize; i++)
+            for (int i = 0; i < picBoxXSize; i++)
             {
-                for (int j = 0; j < imgArrSize; j++)
+                for (int j = 0; j < picBoxYSize; j++)
                 {
                     ((System.ComponentModel.ISupportInitialize)(this.Griglia_pictureBox[i, j])).EndInit();
                 }
@@ -179,7 +178,7 @@ namespace KingOfPirates.GUI.Missioni
             this.ResumeLayout(false);
         }
 
-        #endregion
+        // Variabili
 
         private System.Windows.Forms.BindingSource cartinaBindingSource;
         private System.Windows.Forms.Button Sopra_button;
@@ -189,5 +188,9 @@ namespace KingOfPirates.GUI.Missioni
         private System.Windows.Forms.Label Movimento_label;
         private System.Windows.Forms.FlowLayoutPanel Griglia_flowLayoutPanel;
         private System.Windows.Forms.PictureBox[,] Griglia_pictureBox;
+
+        // Propieta'
+
+        public PictureBox[,] Griglia_pictureBox_ { get => Griglia_pictureBox; set => Griglia_pictureBox = value; }
     }
 }
