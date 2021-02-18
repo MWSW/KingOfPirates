@@ -57,8 +57,17 @@
             this.nomeCartaA = new System.Windows.Forms.Label();
             this.defA = new System.Windows.Forms.Label();
             this.attA = new System.Windows.Forms.Label();
+            this.dialogueBox = new System.Windows.Forms.Label();
+            this.messaggioGiocatore = new System.Windows.Forms.Label();
+            this.messaggioNemico = new System.Windows.Forms.Label();
+            this.img_buff = new System.Windows.Forms.PictureBox();
+            this.curaEstesa = new System.Windows.Forms.PictureBox();
+            this.infoBox = new System.Windows.Forms.PictureBox();
+            this.bt_nascondi = new System.Windows.Forms.PictureBox();
+            this.bt_successivo = new System.Windows.Forms.PictureBox();
+            this.bt_attacco = new System.Windows.Forms.PictureBox();
             this.elemA = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.img_cartaA = new System.Windows.Forms.PictureBox();
             this.elem0 = new System.Windows.Forms.PictureBox();
             this.img_carta0 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
@@ -71,8 +80,14 @@
             this.elem1 = new System.Windows.Forms.PictureBox();
             this.img_carta1 = new System.Windows.Forms.PictureBox();
             this.img_avversario = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.img_buff)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.curaEstesa)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.infoBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bt_nascondi)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bt_successivo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bt_attacco)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.elemA)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.img_cartaA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.elem0)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_carta0)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -317,7 +332,7 @@
             this.nomeCarta0.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.nomeCarta0.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.nomeCarta0.Font = new System.Drawing.Font("Agency FB", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nomeCarta0.Location = new System.Drawing.Point(418, 124);
+            this.nomeCarta0.Location = new System.Drawing.Point(338, 173);
             this.nomeCarta0.Name = "nomeCarta0";
             this.nomeCarta0.Size = new System.Drawing.Size(68, 35);
             this.nomeCarta0.TabIndex = 46;
@@ -330,7 +345,7 @@
             this.det0.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.det0.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.det0.Font = new System.Drawing.Font("Agency FB", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.det0.Location = new System.Drawing.Point(553, 124);
+            this.det0.Location = new System.Drawing.Point(473, 173);
             this.det0.Name = "det0";
             this.det0.Size = new System.Drawing.Size(33, 35);
             this.det0.TabIndex = 45;
@@ -342,7 +357,7 @@
             this.def0.AutoSize = true;
             this.def0.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.def0.Font = new System.Drawing.Font("Agency FB", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.def0.Location = new System.Drawing.Point(399, 272);
+            this.def0.Location = new System.Drawing.Point(319, 321);
             this.def0.Name = "def0";
             this.def0.Size = new System.Drawing.Size(43, 35);
             this.def0.TabIndex = 43;
@@ -354,7 +369,7 @@
             this.att0.AutoSize = true;
             this.att0.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.att0.Font = new System.Drawing.Font("Agency FB", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.att0.Location = new System.Drawing.Point(399, 228);
+            this.att0.Location = new System.Drawing.Point(319, 277);
             this.att0.Name = "att0";
             this.att0.Size = new System.Drawing.Size(40, 35);
             this.att0.TabIndex = 42;
@@ -367,7 +382,7 @@
             this.detA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.detA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.detA.Font = new System.Drawing.Font("Agency FB", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.detA.Location = new System.Drawing.Point(846, 124);
+            this.detA.Location = new System.Drawing.Point(894, 173);
             this.detA.Name = "detA";
             this.detA.Size = new System.Drawing.Size(33, 35);
             this.detA.TabIndex = 52;
@@ -380,7 +395,7 @@
             this.nomeCartaA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.nomeCartaA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.nomeCartaA.Font = new System.Drawing.Font("Agency FB", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nomeCartaA.Location = new System.Drawing.Point(711, 124);
+            this.nomeCartaA.Location = new System.Drawing.Point(759, 173);
             this.nomeCartaA.Name = "nomeCartaA";
             this.nomeCartaA.Size = new System.Drawing.Size(82, 35);
             this.nomeCartaA.TabIndex = 51;
@@ -392,7 +407,7 @@
             this.defA.AutoSize = true;
             this.defA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.defA.Font = new System.Drawing.Font("Agency FB", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.defA.Location = new System.Drawing.Point(692, 272);
+            this.defA.Location = new System.Drawing.Point(740, 321);
             this.defA.Name = "defA";
             this.defA.Size = new System.Drawing.Size(43, 35);
             this.defA.TabIndex = 49;
@@ -404,18 +419,126 @@
             this.attA.AutoSize = true;
             this.attA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.attA.Font = new System.Drawing.Font("Agency FB", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.attA.Location = new System.Drawing.Point(692, 228);
+            this.attA.Location = new System.Drawing.Point(740, 277);
             this.attA.Name = "attA";
             this.attA.Size = new System.Drawing.Size(40, 35);
             this.attA.TabIndex = 48;
             this.attA.Text = "A:7";
             this.attA.Visible = false;
             // 
+            // dialogueBox
+            // 
+            this.dialogueBox.AutoSize = true;
+            this.dialogueBox.Location = new System.Drawing.Point(499, 74);
+            this.dialogueBox.Name = "dialogueBox";
+            this.dialogueBox.Size = new System.Drawing.Size(0, 17);
+            this.dialogueBox.TabIndex = 56;
+            // 
+            // messaggioGiocatore
+            // 
+            this.messaggioGiocatore.AutoSize = true;
+            this.messaggioGiocatore.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.messaggioGiocatore.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.messaggioGiocatore.Font = new System.Drawing.Font("Agency FB", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.messaggioGiocatore.Location = new System.Drawing.Point(338, 48);
+            this.messaggioGiocatore.Name = "messaggioGiocatore";
+            this.messaggioGiocatore.Size = new System.Drawing.Size(261, 41);
+            this.messaggioGiocatore.TabIndex = 57;
+            this.messaggioGiocatore.Text = "E\' il tuo turno: Attacca!\r\n";
+            this.messaggioGiocatore.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // messaggioNemico
+            // 
+            this.messaggioNemico.AutoSize = true;
+            this.messaggioNemico.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.messaggioNemico.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.messaggioNemico.Font = new System.Drawing.Font("Agency FB", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.messaggioNemico.Location = new System.Drawing.Point(659, 48);
+            this.messaggioNemico.Name = "messaggioNemico";
+            this.messaggioNemico.Size = new System.Drawing.Size(272, 41);
+            this.messaggioNemico.TabIndex = 58;
+            this.messaggioNemico.Text = "Turno nemico: Difenditi!\r\n";
+            this.messaggioNemico.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.messaggioNemico.Visible = false;
+            // 
+            // img_buff
+            // 
+            this.img_buff.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.img_buff.Image = global::KingOfPirates.Properties.Resources.pow_buff;
+            this.img_buff.Location = new System.Drawing.Point(109, 339);
+            this.img_buff.Name = "img_buff";
+            this.img_buff.Size = new System.Drawing.Size(58, 54);
+            this.img_buff.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.img_buff.TabIndex = 61;
+            this.img_buff.TabStop = false;
+            this.img_buff.Visible = false;
+            // 
+            // curaEstesa
+            // 
+            this.curaEstesa.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.curaEstesa.Image = global::KingOfPirates.Properties.Resources.vita_buff;
+            this.curaEstesa.Location = new System.Drawing.Point(34, 339);
+            this.curaEstesa.Name = "curaEstesa";
+            this.curaEstesa.Size = new System.Drawing.Size(58, 54);
+            this.curaEstesa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.curaEstesa.TabIndex = 60;
+            this.curaEstesa.TabStop = false;
+            this.curaEstesa.Visible = false;
+            // 
+            // infoBox
+            // 
+            this.infoBox.Image = global::KingOfPirates.Properties.Resources.info;
+            this.infoBox.Location = new System.Drawing.Point(34, 513);
+            this.infoBox.Name = "infoBox";
+            this.infoBox.Size = new System.Drawing.Size(112, 102);
+            this.infoBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.infoBox.TabIndex = 59;
+            this.infoBox.TabStop = false;
+            // 
+            // bt_nascondi
+            // 
+            this.bt_nascondi.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_nascondi.Image = global::KingOfPirates.Properties.Resources.nascondi;
+            this.bt_nascondi.Location = new System.Drawing.Point(396, 110);
+            this.bt_nascondi.Name = "bt_nascondi";
+            this.bt_nascondi.Size = new System.Drawing.Size(53, 52);
+            this.bt_nascondi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.bt_nascondi.TabIndex = 55;
+            this.bt_nascondi.TabStop = false;
+            this.bt_nascondi.Visible = false;
+            this.bt_nascondi.Click += new System.EventHandler(this.bt_nascondi_Click);
+            // 
+            // bt_successivo
+            // 
+            this.bt_successivo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_successivo.Image = global::KingOfPirates.Properties.Resources.next;
+            this.bt_successivo.Location = new System.Drawing.Point(567, 281);
+            this.bt_successivo.Name = "bt_successivo";
+            this.bt_successivo.Size = new System.Drawing.Size(141, 92);
+            this.bt_successivo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.bt_successivo.TabIndex = 54;
+            this.bt_successivo.TabStop = false;
+            this.bt_successivo.Visible = false;
+            this.bt_successivo.Click += new System.EventHandler(this.bt_successivo_Click);
+            // 
+            // bt_attacco
+            // 
+            this.bt_attacco.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_attacco.Image = global::KingOfPirates.Properties.Resources.bottone_attacco;
+            this.bt_attacco.Location = new System.Drawing.Point(567, 201);
+            this.bt_attacco.Name = "bt_attacco";
+            this.bt_attacco.Size = new System.Drawing.Size(141, 65);
+            this.bt_attacco.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.bt_attacco.TabIndex = 53;
+            this.bt_attacco.TabStop = false;
+            this.bt_attacco.Visible = false;
+            this.bt_attacco.Click += new System.EventHandler(this.bt_attacco_Click);
+            // 
             // elemA
             // 
             this.elemA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.elemA.Image = global::KingOfPirates.Properties.Resources.ghiaccio;
-            this.elemA.Location = new System.Drawing.Point(846, 306);
+            this.elemA.Location = new System.Drawing.Point(894, 355);
             this.elemA.Name = "elemA";
             this.elemA.Size = new System.Drawing.Size(33, 38);
             this.elemA.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -423,23 +546,24 @@
             this.elemA.TabStop = false;
             this.elemA.Visible = false;
             // 
-            // pictureBox2
+            // img_cartaA
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.pictureBox2.BackgroundImage = global::KingOfPirates.Properties.Resources.SpazioVuoto;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(711, 124);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(168, 220);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 47;
-            this.pictureBox2.TabStop = false;
+            this.img_cartaA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.img_cartaA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.img_cartaA.Cursor = System.Windows.Forms.Cursors.Default;
+            this.img_cartaA.Image = global::KingOfPirates.Properties.Resources.SpazioVuoto;
+            this.img_cartaA.Location = new System.Drawing.Point(759, 173);
+            this.img_cartaA.Name = "img_cartaA";
+            this.img_cartaA.Size = new System.Drawing.Size(168, 220);
+            this.img_cartaA.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.img_cartaA.TabIndex = 47;
+            this.img_cartaA.TabStop = false;
             // 
             // elem0
             // 
             this.elem0.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.elem0.Image = global::KingOfPirates.Properties.Resources.fuoco;
-            this.elem0.Location = new System.Drawing.Point(553, 306);
+            this.elem0.Location = new System.Drawing.Point(473, 355);
             this.elem0.Name = "elem0";
             this.elem0.Size = new System.Drawing.Size(33, 38);
             this.elem0.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -450,9 +574,10 @@
             // img_carta0
             // 
             this.img_carta0.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.img_carta0.BackgroundImage = global::KingOfPirates.Properties.Resources.SpazioVuoto;
             this.img_carta0.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.img_carta0.Location = new System.Drawing.Point(418, 124);
+            this.img_carta0.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.img_carta0.Image = global::KingOfPirates.Properties.Resources.SpazioVuoto;
+            this.img_carta0.Location = new System.Drawing.Point(338, 173);
             this.img_carta0.Name = "img_carta0";
             this.img_carta0.Size = new System.Drawing.Size(168, 220);
             this.img_carta0.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -483,8 +608,9 @@
             // img_carta4
             // 
             this.img_carta4.BackColor = System.Drawing.Color.White;
-            this.img_carta4.BackgroundImage = global::KingOfPirates.Properties.Resources.pun_pun;
+            this.img_carta4.BackgroundImage = global::KingOfPirates.Properties.Resources.BufferDrink;
             this.img_carta4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.img_carta4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.img_carta4.Image = global::KingOfPirates.Properties.Resources.cartaVuota;
             this.img_carta4.Location = new System.Drawing.Point(903, 432);
             this.img_carta4.Name = "img_carta4";
@@ -510,6 +636,7 @@
             this.img_carta3.BackColor = System.Drawing.Color.White;
             this.img_carta3.BackgroundImage = global::KingOfPirates.Properties.Resources.pun_pun1;
             this.img_carta3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.img_carta3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.img_carta3.Image = global::KingOfPirates.Properties.Resources.cartaVuota;
             this.img_carta3.Location = new System.Drawing.Point(693, 432);
             this.img_carta3.Name = "img_carta3";
@@ -535,6 +662,7 @@
             this.img_carta2.BackColor = System.Drawing.Color.White;
             this.img_carta2.BackgroundImage = global::KingOfPirates.Properties.Resources.pun_pun2;
             this.img_carta2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.img_carta2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.img_carta2.Image = global::KingOfPirates.Properties.Resources.cartaVuota;
             this.img_carta2.Location = new System.Drawing.Point(460, 432);
             this.img_carta2.Name = "img_carta2";
@@ -560,6 +688,7 @@
             this.img_carta1.BackColor = System.Drawing.Color.White;
             this.img_carta1.BackgroundImage = global::KingOfPirates.Properties.Resources.pun_pun;
             this.img_carta1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.img_carta1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.img_carta1.Image = global::KingOfPirates.Properties.Resources.cartaVuota;
             this.img_carta1.Location = new System.Drawing.Point(221, 432);
             this.img_carta1.Name = "img_carta1";
@@ -584,12 +713,21 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1262, 673);
+            this.Controls.Add(this.img_buff);
+            this.Controls.Add(this.curaEstesa);
+            this.Controls.Add(this.infoBox);
+            this.Controls.Add(this.messaggioNemico);
+            this.Controls.Add(this.messaggioGiocatore);
+            this.Controls.Add(this.dialogueBox);
+            this.Controls.Add(this.bt_nascondi);
+            this.Controls.Add(this.bt_successivo);
+            this.Controls.Add(this.bt_attacco);
             this.Controls.Add(this.detA);
             this.Controls.Add(this.nomeCartaA);
             this.Controls.Add(this.elemA);
             this.Controls.Add(this.defA);
             this.Controls.Add(this.attA);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.img_cartaA);
             this.Controls.Add(this.nomeCarta0);
             this.Controls.Add(this.det0);
             this.Controls.Add(this.elem0);
@@ -629,8 +767,14 @@
             this.Name = "ScontroCarte";
             this.Text = "ScontroCarte";
             this.Load += new System.EventHandler(this.OnLoad);
+            ((System.ComponentModel.ISupportInitialize)(this.img_buff)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.curaEstesa)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.infoBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bt_nascondi)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bt_successivo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bt_attacco)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.elemA)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.img_cartaA)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.elem0)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_carta0)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
@@ -691,6 +835,15 @@
         private System.Windows.Forms.PictureBox elemA;
         private System.Windows.Forms.Label defA;
         private System.Windows.Forms.Label attA;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox img_cartaA;
+        private System.Windows.Forms.PictureBox bt_attacco;
+        private System.Windows.Forms.PictureBox bt_successivo;
+        private System.Windows.Forms.PictureBox bt_nascondi;
+        private System.Windows.Forms.Label dialogueBox;
+        private System.Windows.Forms.Label messaggioGiocatore;
+        private System.Windows.Forms.Label messaggioNemico;
+        private System.Windows.Forms.PictureBox infoBox;
+        private System.Windows.Forms.PictureBox curaEstesa;
+        private System.Windows.Forms.PictureBox img_buff;
     }
 }

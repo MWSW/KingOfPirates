@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace KingOfPirates.Missioni.Roba
 {
-    class Stats
+    public class Stats
     {
         private int hp;
         private int pa; //punti azione

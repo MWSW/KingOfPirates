@@ -10,7 +10,7 @@ using KingOfPirates.Missioni.Navi.Opponenti;
 
 namespace KingOfPirates.Missioni.Navi
 {
-    class NaveGiocatore : Nave
+    public class NaveGiocatore : Nave
     {
 
         private bool staNavigando; //Verifica che sia su terreno o meno
@@ -19,10 +19,14 @@ namespace KingOfPirates.Missioni.Navi
         private Inventario inventario;
 
         //TO-FIX: Per ora Stats e Loc2D sono a zero
+
         public NaveGiocatore(String nome_, Bitmap immagine_) : base(nome_, immagine_, new Stats(), new Loc2D())
         {
-
+            inventario = new Inventario();
         }
+        
+        public Inventario Inventario { get => inventario; set => inventario = value; }
+
         public override void Movimento(Loc2D spostamento)
         {
             base.Movimento(spostamento);

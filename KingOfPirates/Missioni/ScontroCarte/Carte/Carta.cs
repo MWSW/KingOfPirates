@@ -17,15 +17,22 @@ namespace KingOfPirates.Missioni.ScontroCarte.Carte
         protected bool utilizzabile; //Non so se va in conflitto con mazzo
         protected Bitmap immagine;
 
-        protected Carta(string nome_, int determinazione_, Bitmap immagine_)
+        private int indice;
+
+        private string tipo;
+
+        protected Carta(string nome_, int determinazione_, Bitmap immagine_, string tipo_)
         {
             nome = nome_;
             determinazione = determinazione_;
             immagine = immagine_;
+
+            tipo = tipo_;
         }
 
         public void Visualizza(PictureBox img_carta, Label nomeCarta, Label det)
         {
+            img_carta.Image = Properties.Resources.cartaVuota;
             img_carta.Show();
             nomeCarta.Show();
             det.Show();
@@ -37,6 +44,7 @@ namespace KingOfPirates.Missioni.ScontroCarte.Carte
 
         public void Nascondi(PictureBox img_carta, Label nomeCarta, Label det)
         {
+            img_carta.BackgroundImage = null;
             img_carta.Hide();
             nomeCarta.Hide();
             det.Hide();
@@ -76,5 +84,8 @@ namespace KingOfPirates.Missioni.ScontroCarte.Carte
         public Bitmap Immagine { get => immagine; }
         public string Nome { get => nome; }
         public int Determinazione { get => determinazione; }
+        public int Indice { get => indice; set => indice = value; }
+
+        public string Tipo { get => tipo; }
     }
 }
