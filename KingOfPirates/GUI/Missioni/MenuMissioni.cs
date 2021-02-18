@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using KingOfPirates.Missioni;
 
+// Sto facendo l'interfaccia a mano e non è finita
+
 namespace KingOfPirates.GUI.Missioni
 {
     public partial class MenuMissioni : Form

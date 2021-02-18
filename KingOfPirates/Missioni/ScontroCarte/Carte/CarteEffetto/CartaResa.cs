@@ -12,7 +12,7 @@ namespace KingOfPirates.Missioni.ScontroCarte.Carte.CarteEffetto
     class CartaResa : Carta
     {
         public CartaResa(string nome_, int determinazione_, Bitmap immagine_)
-            : base(nome_, determinazione_, immagine_)
+            : base(nome_, determinazione_, immagine_, "resa")
         {
             
         }

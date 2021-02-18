@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using KingOfPirates;
 using KingOfPirates.GUI.MenuPrincipale;
+using KingOfPirates.GUI.MenuNassau;
 using KingOfPirates.GUI.ScontroCarte;
 using KingOfPirates.GUI.Missioni;
 
@@ -20,7 +20,9 @@ namespace KingOfPirates
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //new StartMenu().Show();
+            new StartMenu().Show();
+            new ScontroCarte().Show();
+            new Nassau_form().Show();
             new MenuMissioni().Show();
             Application.Run();
         }

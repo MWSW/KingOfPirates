@@ -16,7 +16,8 @@ namespace KingOfPirates.Missioni.ScontroCarte.Carte.CarteEffetto
 
         private int durata; //durata in turni
 
-        public CartaDebuff(string nome_, int determinazione_, Bitmap immagine_, int debuffAtk_, int debuffDef_, int durata_) : base(nome_, determinazione_, immagine_)
+        public CartaDebuff(string nome_, int determinazione_, Bitmap immagine_, int debuffAtk_, int debuffDef_, int durata_) 
+            : base(nome_, determinazione_, immagine_, "debuff")
         {
             debuffAtk = debuffAtk_;
             debuffDef = debuffDef_;

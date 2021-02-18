@@ -47,11 +47,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GUI\MenuPrincipale\StartMenu.cs">
+    <Compile Include="GUI\MenuNassau\Locanda_form.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\MenuPrincipale\StartMenu.Designer.cs">
-      <DependentUpon>StartMenu.cs</DependentUpon>
+    <Compile Include="GUI\MenuNassau\Locanda_form.Designer.cs">
+      <DependentUpon>Locanda_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\MenuNassau\Nassau_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\MenuNassau\Nassau_form.Designer.cs">
+      <DependentUpon>Nassau_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\MenuNassau\Negozio_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\MenuNassau\Negozio_form.Designer.cs">
+      <DependentUpon>Negozio_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\MenuNassau\Porto_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\MenuNassau\Porto_form.Designer.cs">
+      <DependentUpon>Porto_form.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\Missioni\MenuMissioni.cs">
       <SubType>Form</SubType>
@@ -68,6 +86,12 @@
     <Compile Include="Mappa\Cartina.cs" />
     <Compile Include="Mappa\GestioneDominio.cs" />
     <Compile Include="Missioni\Bandiera.cs" />
+    <Compile Include="GUI\MenuPrincipale\StartMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\MenuPrincipale\StartMenu.Designer.cs">
+      <DependentUpon>StartMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Gioco.cs" />
     <Compile Include="Missioni\GestoreMissione.cs" />
     <Compile Include="Missioni\Griglia.cs" />
@@ -80,17 +104,17 @@
     <Compile Include="Missioni\ScontroCarte\Carte\Carta.cs" />
     <Compile Include="Missioni\ScontroCarte\Carte\CartaBase.cs" />
     <Compile Include="Missioni\ScontroCarte\Carte\CarteEffetto\CartaBuff.cs" />
-    <Compile Include="Missioni\ScontroCarte\Carte\CarteEffetto\CartaCuraBase.cs" />
+    <Compile Include="Missioni\ScontroCarte\Carte\CarteEffetto\CartaCura.cs" />
     <Compile Include="Missioni\ScontroCarte\Carte\CarteEffetto\CartaCuraEstesa.cs" />
     <Compile Include="Missioni\ScontroCarte\Carte\CarteEffetto\CartaDannoContinuo.cs" />
     <Compile Include="Missioni\ScontroCarte\Carte\CarteEffetto\CartaDebuff.cs" />
     <Compile Include="Missioni\ScontroCarte\Carte\CarteEffetto\CartaResa.cs" />
     <Compile Include="Missioni\ScontroCarte\Carte\CarteEffetto\CartaTurniExtra.cs" />
+    <Compile Include="Missioni\Navi\Inventario.cs" />
+    <Compile Include="Missioni\ScontroCarte\Opponenti\Giocatore_carte_base.cs" />
     <Compile Include="Missioni\ScontroCarte\Opponenti\ListaCarte.cs" />
     <Compile Include="Missioni\ScontroCarte\Opponenti\Mazzo.cs" />
     <Compile Include="Missioni\ScontroCarte\Opponenti\Nemico_carte.cs" />
-    <Compile Include="Missioni\ScontroCarte\Opponenti\Giocatore_carte_base.cs" />
-    <Compile Include="Missioni\Navi\Inventario.cs" />
     <Compile Include="Missioni\ScontroCarte\Opponenti\Player_carte.cs" />
     <Compile Include="Nassau\Edificio.cs" />
     <Compile Include="Nassau\Locanda.cs" />
@@ -99,6 +123,18 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Missioni\Ranking.cs" />
+    <EmbeddedResource Include="GUI\MenuNassau\Locanda_form.resx">
+      <DependentUpon>Locanda_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\MenuNassau\Nassau_form.resx">
+      <DependentUpon>Nassau_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\MenuNassau\Negozio_form.resx">
+      <DependentUpon>Negozio_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\MenuNassau\Porto_form.resx">
+      <DependentUpon>Porto_form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\MenuPrincipale\StartMenu.resx">
       <DependentUpon>StartMenu.cs</DependentUpon>
     </EmbeddedResource>
@@ -110,20 +146,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
-    <None Include="KingOfPirates.Properties.Resources.datasource" />
-    <None Include="KingOfPirates.Properties.Settings.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -134,34 +168,29 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\pun_pun.jpg" />
+    <None Include="Resources\prova.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="GUI\ScontroCarte\img_test\" />
-    <Folder Include="Nemici\" />
+    <None Include="Resources\bevDet.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\cartaVuota.PNG" />
+    <None Include="Resources\rum.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\fuoco.png" />
+    <None Include="Resources\ant.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\ghiaccio.png" />
+    <None Include="Resources\assLeg.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Sasso.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\pun_pun1.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\pun_pun2.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\SpazioVuoto.png" />
-  </ItemGroup>
-  <ItemGroup>
+    <Content Include="Resources\back_arrow.jpg" />
+    <Content Include="Resources\bottone_attacco.png" />
+    <Content Include="Resources\BufferDrink.jpg" />
+    <Content Include="Resources\cartaVuota.PNG" />
+    <Content Include="Resources\curaEstesa.jpg" />
+    <Content Include="Resources\curaPozione.png" />
+    <Content Include="Resources\fuoco.png" />
+    <Content Include="Resources\ghiaccio.png" />
     <Content Include="Resources\HUD - interfaccia\box_5_mosse.png" />
     <Content Include="Resources\HUD - interfaccia\box_5_mosse_blocchi.png" />
     <Content Include="Resources\HUD - interfaccia\box_domanda.png" />
@@ -175,6 +204,7 @@
     <Content Include="Resources\HUD - interfaccia\mossa_difesa.png" />
     <Content Include="Resources\HUD - interfaccia\mossa_strategia.png" />
     <Content Include="Resources\HUD - interfaccia\sfondo_interfaccia.png" />
+    <Content Include="Resources\info.png" />
     <Content Include="Resources\isolaDelTesoro_pezzi\tile_01.png" />
     <Content Include="Resources\isolaDelTesoro_pezzi\tile_02.png" />
     <Content Include="Resources\isolaDelTesoro_pezzi\tile_03.png" />
@@ -216,6 +246,7 @@
     <Content Include="Resources\isole_default\isola4.png" />
     <Content Include="Resources\isole_default\isola5.png" />
     <Content Include="Resources\mare.png" />
+    <Content Include="Resources\nascondi.png" />
     <Content Include="Resources\nave Nera\pos_1.png" />
     <Content Include="Resources\nave Nera\pos_2.png" />
     <Content Include="Resources\nave Nera\pos_3.png" />
@@ -240,7 +271,18 @@
     <Content Include="Resources\navi_laterali\nave_pirata.png" />
     <Content Include="Resources\navi_laterali\nave_rossa.png" />
     <Content Include="Resources\navi_laterali\nave_verde.png" />
+    <Content Include="Resources\next.png" />
+    <Content Include="Resources\pow_buff.png" />
+    <Content Include="Resources\pun_pun.jpg" />
+    <Content Include="Resources\pun_pun1.jpg" />
+    <Content Include="Resources\pun_pun2.jpg" />
+    <Content Include="Resources\Sasso.png" />
     <Content Include="Resources\sfondo_carta.jpg" />
+    <Content Include="Resources\SpazioVuoto.png" />
+    <Content Include="Resources\vita_buff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Nemici\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -10,8 +10,7 @@ using KingOfPirates.Missioni.Roba;
 
 namespace KingOfPirates.Missioni.Navi
 {
-
-    class NaveNemico : Nave
+    public class NaveNemico : Nave
     {
         private int dimensioneTrigger;
         private int dobloni; //Ricompensa per il giocatore

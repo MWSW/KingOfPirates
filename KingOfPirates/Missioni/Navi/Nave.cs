@@ -11,7 +11,7 @@ using KingOfPirates.Missioni.Roba;
 
 namespace KingOfPirates.Missioni.Navi
 {
-    abstract class Nave
+    public abstract class Nave
     {
         private string nome;
         private Bitmap immagine;

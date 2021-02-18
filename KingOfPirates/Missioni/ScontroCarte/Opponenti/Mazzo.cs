@@ -18,7 +18,10 @@ namespace KingOfPirates.Missioni.ScontroCarte.Opponenti
             disponibile = new bool[carte.Length];
 
             for (int i = 0; i < disponibile.Length; i++)
+            {
                 disponibile[i] = true;
+                carte[i].Indice = i;
+            }
         }
 
         public Carta PrendiCarta(int indice)
@@ -42,6 +45,6 @@ namespace KingOfPirates.Missioni.ScontroCarte.Opponenti
             return disponibile[indice];
         }
 
-        public int Lenght { get => carte.Length; }
+        public int Length { get => carte.Length; }
     }
 }

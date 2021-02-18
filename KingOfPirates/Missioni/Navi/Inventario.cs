@@ -6,21 +6,64 @@ using System.Threading.Tasks;
 
 namespace KingOfPirates.Missioni.Navi.Opponenti
 {
-    class Inventario
+    public class Inventario
     {
         private int bevandaDeterminazione;
         private int rum;
         private int antiUbriachezza;
         private int assiLegno;
 
+        public int BevandaDeterminazione { get => bevandaDeterminazione; set => bevandaDeterminazione = value; }
+        public int Rum { get => rum; set => rum = value; }
+        public int AntiUbriachezza { get => antiUbriachezza; set => antiUbriachezza = value; }
+        public int AssiLegno { get => assiLegno; set => assiLegno = value; }
+
         public Inventario()
         {
-            bevandaDeterminazione = 0;
-            rum = 0;
-            antiUbriachezza = 0;
-            assiLegno = 0;
+            BevandaDeterminazione = 0;
+            Rum = 0;
+            AntiUbriachezza = 0;
+            AssiLegno = 0;
         }
 
-        //TODO: metodi per modificare l'inventario
+        public void IncBevandaDeterminazione()
+        {
+            BevandaDeterminazione ++;
+        }
+
+        public void IncRum()
+        {
+            Rum ++;
+        }
+
+        public void IncAntiUbriachezza()
+        {
+            AntiUbriachezza ++;
+        }
+
+        public void IncAssiLegno()
+        {
+            AssiLegno ++;
+        }
+
+        public void DecBevandaDeterminazione()
+        {
+            BevandaDeterminazione --;
+        }
+
+        public void DecRum()
+        {
+            Rum --;
+        }
+
+        public void DecAntiUbriachezza()
+        {
+            AntiUbriachezza --;
+        }
+
+        public void DecAssiLegno()
+        {
+            AssiLegno --;
+        }
     }
 }
