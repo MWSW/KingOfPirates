@@ -21,6 +21,8 @@ namespace KingOfPirates.Missioni.ScontroCarte.Carte.CarteEffetto
         }
         public override void UsaCarta(Giocatore_carte_base g)
         {
+            base.UsaCarta(g);
+
             //funziona solo sui nemici
             Nemico_carte nemico = (Nemico_carte)g;
             nemico.DannoPerpetuo(danno, durata);

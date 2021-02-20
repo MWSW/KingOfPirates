@@ -25,6 +25,8 @@ namespace KingOfPirates.Missioni.ScontroCarte.Carte.CarteEffetto
         }
         public override void UsaCarta(Giocatore_carte_base g)
         {
+            base.UsaCarta(g);
+
             Nemico_carte nemico = (Nemico_carte)g; //funziona solo sul nemico
 
             if (nemico != null)

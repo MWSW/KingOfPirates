@@ -24,6 +24,8 @@ namespace KingOfPirates.Missioni.ScontroCarte.Carte.CarteEffetto
 
         public override void UsaCarta(Giocatore_carte_base g)
         {
+            base.UsaCarta(g);
+
             //solo per il player
             Player_carte player = ((Player_carte)(g));
             player.BuffCura(cura, durata);

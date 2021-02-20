@@ -25,6 +25,8 @@ namespace KingOfPirates.Missioni.ScontroCarte.Carte.CarteEffetto
         }
         public override void UsaCarta(Giocatore_carte_base utilizzatore)
         {
+            base.UsaCarta(utilizzatore);
+
             Player_carte player = (Player_carte)utilizzatore; //funziona solo sul player
 
             if(player != null)

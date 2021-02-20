@@ -6,7 +6,9 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -33,15 +35,24 @@ namespace KingOfPirates.GUI.ScontroCarte
         Label[] def;
         PictureBox[] elem;
 
-        
+        SoundPlayer musicBox; //FIXME
+        bool isPlaying;
 
         public ScontroCarte()
         {
             InitializeComponent();
+            // isPlaying = true;
+            //musicBox.PlayLooping();
+
         }
 
         private void OnLoad(object sender, EventArgs e)
         {
+
+            musicBox = new SoundPlayer(Properties.Resources.Rude_Buster_HQ); //il volume non è regolabile
+            musicBox.PlayLooping();
+            isPlaying = true;
+
             cartaSelezionata = -1;
             tuoTurno = true; //inizi sempre tu 
 
@@ -160,7 +171,7 @@ namespace KingOfPirates.GUI.ScontroCarte
             }
         }
 
-        private void Scontro(CartaBase attaccante, CartaBase difensore, PictureBox elemAtt, PictureBox elemDif, Giocatore_carte_base vittima, Label vita_vittima)
+        private int Scontro(CartaBase attaccante, CartaBase difensore, PictureBox elemAtt, PictureBox elemDif, Giocatore_carte_base vittima, Label vita_vittima)
         {
 
             //Controlla gli elementi
@@ -207,6 +218,8 @@ namespace KingOfPirates.GUI.ScontroCarte
             vita_vittima.Text = "HP: " + vittima.CurHp + "/" + vittima.MaxHp;
             vita_vittima.ForeColor = Color.Red;
 
+            return dmg;
+
         }
 
         private void img_carta1_Click(object sender, EventArgs e)
@@ -243,6 +256,8 @@ namespace KingOfPirates.GUI.ScontroCarte
                 CartaBase cartaTua = (CartaBase)(player.CarteInMano[cartaSelezionata]);
                 cartaTua.SetBuff(player.ValBuff);
 
+                cartaTua.UsaCarta(player);
+
                 if (tuoTurno)
                 {
                     //Il nemico sceglie una carta
@@ -272,49 +287,72 @@ namespace KingOfPirates.GUI.ScontroCarte
                         defA.ForeColor = Color.Black;
                     }
 
-                    Scontro(cartaTua, cartaNemico, elem0, elemA, nemico, vita_avversario);
+                    int dmg = Scontro(cartaTua, cartaNemico, elem0, elemA, nemico, vita_avversario);
+
+                    if (dmg >= 3)//aggiungi determinazione quando fai un buon danno
+                    {
+                        cartaTua.AddDeterminazione(2);
+
+                        det0.Text = cartaTua.Determinazione.ToString();
+                        det0.ForeColor = Color.GreenYellow;
+                    }
+                    else //comunque ogni turni perdi punti
+                    {
+                        cartaTua.DimDeterminazione(1); //perdi un punto
+                        det0.Text = cartaTua.Determinazione.ToString(); //aggiorni la scritta
+                    }
                 }
                 else
                 {
                     CartaBase cartaNemico = (CartaBase)(nemico.CartaUsata);
 
                     cartaNemico.SetBuff(nemico.DebuffVal);
-                    Scontro(cartaNemico, cartaTua, elemA, elem0, player, vita_giocatore);
+                    int dmg = Scontro(cartaNemico, cartaTua, elemA, elem0, player, vita_giocatore);
                     cartaNemico.SetBuff(0);
+
+                    if (dmg >= 2)  //perdi determinazione quando subisci troppi danni
+                    {
+                        cartaTua.DimDeterminazione(2);
+
+                        det0.Text = cartaTua.Determinazione.ToString();
+                        det0.ForeColor = Color.Crimson;
+                    }
+                    else //comunque ogni turni perdi punti
+                    {
+                        cartaTua.DimDeterminazione(1); //perdi un punto
+                        det0.Text = cartaTua.Determinazione.ToString(); //aggiorni la scritta
+                    }
+
                 }
                 cartaTua.SetBuff(0); //finito il turno levo il buff
             }
             else
             {
+                Carta cartaTua = player.CarteInMano[cartaSelezionata];
                 if (tipo == "cura")
                 {
-                    Carta cartaTua = player.CarteInMano[cartaSelezionata];
                     ((CartaCura)cartaTua).UsaCarta(player);
                 }
                 else if (tipo == "curaEstesa")
                 {
-                    Carta cartaTua = player.CarteInMano[cartaSelezionata];
                     ((CartaCuraEstesa)cartaTua).UsaCarta(player);
 
                     curaEstesa.Show();
                 }
                 else if (tipo == "buff")
                 {
-                    Carta cartaTua = player.CarteInMano[cartaSelezionata];
                     ((CartaBuff)cartaTua).UsaCarta(player);
 
                     img_buff.Show();
                 }
                 else if (tipo == "debuff")
                 {
-                    Carta cartaTua = player.CarteInMano[cartaSelezionata];
                     ((CartaDebuff)cartaTua).UsaCarta(nemico); //applica l'effetto sul nemico
 
                     img_debuff.Show();
                 }
                 else if (tipo == "dannoContiuno")
                 {
-                    Carta cartaTua = player.CarteInMano[cartaSelezionata];
                     ((CartaDannoContinuo)cartaTua).UsaCarta(nemico); //applica l'effetto sul nemico
 
                     img_dannoPerpetuo.Show();
@@ -335,6 +373,11 @@ namespace KingOfPirates.GUI.ScontroCarte
                     vita_giocatore.Text = "HP: " + player.CurHp + "/" + player.MaxHp;
                     vita_giocatore.ForeColor = Color.Red;
                 }
+
+                //Ogni volta che usi una carta effetto perdi determinazione 
+
+                cartaTua.DimDeterminazione(1); //perdi un punto
+                det0.Text = cartaTua.Determinazione.ToString(); //aggiorni la scritta
             }
 
             //icone buff/debuff
@@ -417,6 +460,8 @@ namespace KingOfPirates.GUI.ScontroCarte
         {
             bt_successivo.Hide();
 
+            det0.ForeColor = Color.Black;
+
             //rimuovi dalla selezione
             player.CarteInMano[cartaSelezionata].Nascondi(img_carta0, nomeCarta0, det0, att0, def0, elem0);
 
@@ -487,6 +532,22 @@ namespace KingOfPirates.GUI.ScontroCarte
 
             }
 
+        }
+
+        private void audio_Click(object sender, EventArgs e)
+        {
+            if(isPlaying)
+            {
+                musicBox.Stop();
+                audio.Image = Properties.Resources.play;
+                isPlaying = false;
+            }
+            else
+            {
+                musicBox.PlayLooping();
+                audio.Image = Properties.Resources.mute;
+                isPlaying = true;
+            }
         }
     }
 }
