@@ -20,7 +20,9 @@ namespace KingOfPirates.Missioni.ScontroCarte.Opponenti
         new CartaBase("Punpunya", 4, Properties.Resources.pun_pun1, 3, 5, 'f'),
         new CartaCura("Cura", 4, Properties.Resources.curaPozione, 4),
         new CartaCuraEstesa("Cura+", 4, Properties.Resources.curaEstesa, 1, 3),
-        new CartaBuff("Pow", 4, Properties.Resources.BufferDrink, 1, 3)};
+        new CartaBuff("Pow", 4, Properties.Resources.BufferDrink, 1, 3),
+        new CartaDebuff("Fear", 4, Properties.Resources.depotenziamento, -1, 3),
+        new CartaDannoContinuo("Bleeding", 4, Properties.Resources.dannoPerpetuo, 1, 3)};
        public static Carta GetCarta(int indice)
        {
             return listaCarte[indice]; //passaggio per riferimento

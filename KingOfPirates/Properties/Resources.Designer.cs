@@ -113,6 +113,36 @@ namespace KingOfPirates.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap dannoPerpetuo {
+            get {
+                object obj = ResourceManager.GetObject("dannoPerpetuo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap debuff {
+            get {
+                object obj = ResourceManager.GetObject("debuff", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap depotenziamento {
+            get {
+                object obj = ResourceManager.GetObject("depotenziamento", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap fuoco {
             get {
                 object obj = ResourceManager.GetObject("fuoco", resourceCulture);
@@ -196,6 +226,16 @@ namespace KingOfPirates.Properties {
         internal static System.Drawing.Bitmap pun_pun2 {
             get {
                 object obj = ResourceManager.GetObject("pun_pun2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sangue {
+            get {
+                object obj = ResourceManager.GetObject("sangue", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

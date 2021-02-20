@@ -90,7 +90,9 @@ namespace KingOfPirates.GUI.ScontroCarte
 
 
             Carta[] carte_player = {ListaCarte.GetCartaClone(6),
-                 ListaCarte.GetCartaClone(7), ListaCarte.GetCartaClone(8), ListaCarte.GetCartaClone(3), ListaCarte.GetCartaClone(4), ListaCarte.GetCartaClone(5)};
+                 ListaCarte.GetCartaClone(7), ListaCarte.GetCartaClone(8), ListaCarte.GetCartaClone(3),
+                 ListaCarte.GetCartaClone(4), ListaCarte.GetCartaClone(5), ListaCarte.GetCartaClone(9),
+                 ListaCarte.GetCartaClone(10)};
 
 
             player = new Player_carte(10, new Mazzo(carte_player));
@@ -140,12 +142,11 @@ namespace KingOfPirates.GUI.ScontroCarte
                 bt_attacco.Show();
                 bt_nascondi.Show();
 
-                //mostra buffer a livello grafico
-
-                if (player.BuffApplicato)
+                //Buff a livello grafico
+                if(player.BuffApplicato)
                 {
-                    att0.Text += "+" + player.ValBuff.ToString();
-                    def0.Text += "+" + player.ValBuff.ToString();
+                    att0.Text += "+" + player.ValBuff;
+                    def0.Text += "+" + player.ValBuff;
 
                     att0.ForeColor = Color.BlueViolet;
                     def0.ForeColor = Color.BlueViolet;
@@ -155,6 +156,7 @@ namespace KingOfPirates.GUI.ScontroCarte
                     att0.ForeColor = Color.Black;
                     def0.ForeColor = Color.Black;
                 }
+
             }
         }
 
@@ -255,46 +257,68 @@ namespace KingOfPirates.GUI.ScontroCarte
                     defA.BackColor = Color.LightBlue;
                     attA.BackColor = Color.LightGray;
 
-                    Scontro(cartaTua, cartaNemico,elem0, elemA, nemico, vita_avversario);
+                    //Buff a livello grafico
+                    if (nemico.DebuffApplicato)
+                    {
+                        attA.Text += nemico.DebuffVal;
+                        defA.Text += nemico.DebuffVal;
+
+                        attA.ForeColor = Color.BlueViolet;
+                        defA.ForeColor = Color.BlueViolet;
+                    }
+                    else
+                    {
+                        attA.ForeColor = Color.Black;
+                        defA.ForeColor = Color.Black;
+                    }
+
+                    Scontro(cartaTua, cartaNemico, elem0, elemA, nemico, vita_avversario);
                 }
                 else
                 {
-                    Scontro((CartaBase)(nemico.CartaUsata), cartaTua, elemA, elem0, player, vita_giocatore);
+                    CartaBase cartaNemico = (CartaBase)(nemico.CartaUsata);
+
+                    cartaNemico.SetBuff(nemico.DebuffVal);
+                    Scontro(cartaNemico, cartaTua, elemA, elem0, player, vita_giocatore);
+                    cartaNemico.SetBuff(0);
                 }
                 cartaTua.SetBuff(0); //finito il turno levo il buff
             }
-            else if(tipo == "cura")
+            else
             {
-                Carta cartaTua = player.CarteInMano[cartaSelezionata];
-                ((CartaCura)cartaTua).UsaCarta(player);
-
-                //Output vita
-
-                vita_giocatore.Text = "HP: " + player.CurHp + "/" + player.MaxHp;
-                vita_giocatore.ForeColor = Color.Green;
-
-                if(!tuoTurno) 
+                if (tipo == "cura")
                 {
-                    //Per ora la determinazione non conta
-                    int dmg = ((CartaBase)(nemico.CartaUsata)).Atk;
-
-                    if (dmg < 0)
-                        dmg = 0;
-
-                    player.LessHp(dmg);
-
-                    //Output vita
-
-                    vita_giocatore.Text = "HP: " + player.CurHp + "/" + player.MaxHp;
-                    vita_giocatore.ForeColor = Color.Red;
+                    Carta cartaTua = player.CarteInMano[cartaSelezionata];
+                    ((CartaCura)cartaTua).UsaCarta(player);
                 }
-            }
-            else if(tipo == "curaEstesa")
-            {
-                Carta cartaTua = player.CarteInMano[cartaSelezionata];
-                ((CartaCuraEstesa)cartaTua).UsaCarta(player);
+                else if (tipo == "curaEstesa")
+                {
+                    Carta cartaTua = player.CarteInMano[cartaSelezionata];
+                    ((CartaCuraEstesa)cartaTua).UsaCarta(player);
 
-                curaEstesa.Show();
+                    curaEstesa.Show();
+                }
+                else if (tipo == "buff")
+                {
+                    Carta cartaTua = player.CarteInMano[cartaSelezionata];
+                    ((CartaBuff)cartaTua).UsaCarta(player);
+
+                    img_buff.Show();
+                }
+                else if (tipo == "debuff")
+                {
+                    Carta cartaTua = player.CarteInMano[cartaSelezionata];
+                    ((CartaDebuff)cartaTua).UsaCarta(nemico); //applica l'effetto sul nemico
+
+                    img_debuff.Show();
+                }
+                else if (tipo == "dannoContiuno")
+                {
+                    Carta cartaTua = player.CarteInMano[cartaSelezionata];
+                    ((CartaDannoContinuo)cartaTua).UsaCarta(nemico); //applica l'effetto sul nemico
+
+                    img_dannoPerpetuo.Show();
+                }
 
                 if (!tuoTurno)
                 {
@@ -312,16 +336,9 @@ namespace KingOfPirates.GUI.ScontroCarte
                     vita_giocatore.ForeColor = Color.Red;
                 }
             }
-            else if(tipo == "buff")
-            {
-                Carta cartaTua = player.CarteInMano[cartaSelezionata];
-                ((CartaBuff)cartaTua).UsaCarta(player);
-
-                img_buff.Show();
-            }
-
 
             //icone buff/debuff
+
             if (tuoTurno)
             {
                 if (player.CuraEstesa)
@@ -338,9 +355,23 @@ namespace KingOfPirates.GUI.ScontroCarte
                     img_buff.Show();
                 }
             }
+            else
+            {
+                if(nemico.DebuffApplicato)
+                {
+                    nemico.ApplicaDebuff();
+                }
 
-            //roba
-           if (!player.CuraEstesa)
+                if(nemico.DannoApplicato)
+                {
+                    nemico.ApplicaDannoPerpetuo();
+                    vita_avversario.Text = "HP: " + nemico.CurHp + "/" + nemico.MaxHp;
+                    vita_avversario.ForeColor = Color.Red;
+                }
+            }
+
+            //Allo scadere dei turni toglie i flags di status
+            if (!player.CuraEstesa)
             {
                 curaEstesa.Hide();
             }
@@ -350,6 +381,15 @@ namespace KingOfPirates.GUI.ScontroCarte
                 img_buff.Hide();
             }
 
+            if(!nemico.DebuffApplicato)
+            {
+                img_debuff.Hide();
+            }
+
+            if(!nemico.DannoApplicato)
+            {
+                img_dannoPerpetuo.Hide();
+            }
 
         }
 
@@ -415,7 +455,25 @@ namespace KingOfPirates.GUI.ScontroCarte
                 detA.BackColor = Color.LightGoldenrodYellow;
 
                 messaggioGiocatore.Hide();
-                messaggioNemico.Show();
+                messaggioNemico.Show();    
+                    
+                    
+                //Buff a livello grafico
+                if (nemico.DebuffApplicato)
+                {
+                    attA.Text += nemico.DebuffVal;
+                    defA.Text += nemico.DebuffVal;
+
+                    attA.ForeColor = Color.BlueViolet;
+                    defA.ForeColor = Color.BlueViolet;
+                }
+                else
+                {
+                    attA.ForeColor = Color.Black;
+                    defA.ForeColor = Color.Black;
+                }
+
+
             }
             else
             {
@@ -426,8 +484,8 @@ namespace KingOfPirates.GUI.ScontroCarte
 
                 messaggioGiocatore.Show();
                 messaggioNemico.Hide();
-            }
 
+            }
 
         }
     }

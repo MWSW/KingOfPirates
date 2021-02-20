@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using System.Drawing; //Per le Bitmap
 using KingOfPirates.Missioni.ScontroCarte.Opponenti;
+using System.Windows.Forms;
 
 namespace KingOfPirates.Missioni.ScontroCarte.Carte.CarteEffetto
 {
@@ -24,12 +25,21 @@ namespace KingOfPirates.Missioni.ScontroCarte.Carte.CarteEffetto
         }
         public override void UsaCarta(Giocatore_carte_base g)
         {
+            Nemico_carte nemico = (Nemico_carte)g; //funziona solo sul nemico
 
+            if (nemico != null)
+            {
+                nemico.Debuff(debuff, durata); //applichi il buff al giocatore, poi questo si occuperara di passare il buff alle carte
+            }
+            else
+            {
+                MessageBox.Show("Error - non puoi usare una carta Buff con un nemico");
+            }
         }
 
         public override Carta Clona()
         {
-            return new CartaBuff(nome, determinazione, immagine, debuff, durata);
+            return new CartaDebuff(nome, determinazione, immagine, debuff, durata);
         }
     }
 }

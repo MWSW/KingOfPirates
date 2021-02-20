@@ -46,7 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GUI\MenuPrincipale\StartMenu.cs" />
+    <Compile Include="GUI\MenuPrincipale\StartMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="GUI\MenuPrincipale\StartMenu.Designer.cs">
       <DependentUpon>StartMenu.cs</DependentUpon>
     </Compile>
@@ -162,6 +164,10 @@
     <None Include="Resources\curaEstesa.jpg" />
     <None Include="Resources\BufferDrink.jpg" />
     <None Include="Resources\pow_buff.png" />
+    <None Include="Resources\sangue.png" />
+    <None Include="Resources\debuff.png" />
+    <None Include="Resources\depotenziamento.jpg" />
+    <None Include="Resources\dannoPerpetuo.jpg" />
     <Content Include="Resources\sfondo_carta.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
