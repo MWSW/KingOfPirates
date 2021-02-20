@@ -36,5 +36,10 @@ namespace KingOfPirates.Missioni.ScontroCarte.Carte.CarteEffetto
                 MessageBox.Show("Error - non puoi usare una carta Buff con un nemico");
             }
         }
+
+        public override Carta Clona()
+        {
+            return new CartaBuff(nome, determinazione, immagine, buff, durata);
+        }
     }
 }

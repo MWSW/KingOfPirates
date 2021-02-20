@@ -22,5 +22,10 @@ namespace KingOfPirates.Missioni.ScontroCarte.Carte.CarteEffetto
         {
             
         }
+
+        public override Carta Clona()
+        {
+            return new CartaTurniExtra(nome, determinazione, immagine, nTurni);
+        }
     }
 }

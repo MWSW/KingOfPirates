@@ -24,5 +24,10 @@ namespace KingOfPirates.Missioni.ScontroCarte.Carte.CarteEffetto
 
             g.AddHp(rng.Next(2, cura)); //cura il personaggio
         }
+
+        public override Carta Clona()
+        {
+            return new CartaCura(nome, determinazione, immagine, cura);
+        }
     }
 }

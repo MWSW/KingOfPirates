@@ -85,12 +85,12 @@ namespace KingOfPirates.GUI.ScontroCarte
 
             //Inizializzo gli oggetti
 
-            Carta[] carte_nemico = {ListaCarte.GetCarta(0),
-                 ListaCarte.GetCarta(1), ListaCarte.GetCarta(2), ListaCarte.GetCarta(3), ListaCarte.GetCarta(4), ListaCarte.GetCarta(5)};
+            Carta[] carte_nemico = {ListaCarte.GetCartaClone(0),
+                 ListaCarte.GetCartaClone(1), ListaCarte.GetCartaClone(2), ListaCarte.GetCartaClone(3), ListaCarte.GetCartaClone(4), ListaCarte.GetCartaClone(5)};
 
 
-            Carta[] carte_player = {ListaCarte.GetCarta(6),
-                 ListaCarte.GetCarta(7), ListaCarte.GetCarta(8), ListaCarte.GetCarta(3), ListaCarte.GetCarta(4), ListaCarte.GetCarta(5)};
+            Carta[] carte_player = {ListaCarte.GetCartaClone(6),
+                 ListaCarte.GetCartaClone(7), ListaCarte.GetCartaClone(8), ListaCarte.GetCartaClone(3), ListaCarte.GetCartaClone(4), ListaCarte.GetCartaClone(5)};
 
 
             player = new Player_carte(10, new Mazzo(carte_player));

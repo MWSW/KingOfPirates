@@ -23,5 +23,10 @@ namespace KingOfPirates.Missioni.ScontroCarte.Carte.CarteEffetto
         {
 
         }
+
+        public override Carta Clona()
+        {
+            return new CartaDannoContinuo(nome, determinazione, immagine, danno, durata);
+        }
     }
 }

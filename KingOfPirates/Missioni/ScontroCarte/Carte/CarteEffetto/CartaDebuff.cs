@@ -11,22 +11,25 @@ namespace KingOfPirates.Missioni.ScontroCarte.Carte.CarteEffetto
 {
     class CartaDebuff : Carta
     {
-        private double debuffAtk;
-        private double debuffDef;
+        private int debuff;
 
         private int durata; //durata in turni
 
-        public CartaDebuff(string nome_, int determinazione_, Bitmap immagine_, int debuffAtk_, int debuffDef_, int durata_) 
+        public CartaDebuff(string nome_, int determinazione_, Bitmap immagine_, int debuff_, int durata_) 
             : base(nome_, determinazione_, immagine_, "debuff")
         {
-            debuffAtk = debuffAtk_;
-            debuffDef = debuffDef_;
+            debuff = debuff_;
 
             durata = durata_;
         }
         public override void UsaCarta(Giocatore_carte_base g)
         {
 
+        }
+
+        public override Carta Clona()
+        {
+            return new CartaBuff(nome, determinazione, immagine, debuff, durata);
         }
     }
 }

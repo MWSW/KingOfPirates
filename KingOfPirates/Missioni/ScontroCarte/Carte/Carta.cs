@@ -81,6 +81,8 @@ namespace KingOfPirates.Missioni.ScontroCarte.Carte
             utilizzabile = b;
         }
 
+        public abstract Carta Clona();
+
         public Bitmap Immagine { get => immagine; }
         public string Nome { get => nome; }
         public int Determinazione { get => determinazione; }

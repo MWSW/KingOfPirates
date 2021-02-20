@@ -28,5 +28,10 @@ namespace KingOfPirates.Missioni.ScontroCarte.Carte.CarteEffetto
             Player_carte player = ((Player_carte)(g));
             player.BuffCura(cura, durata);
         }
+
+        public override Carta Clona()
+        {
+            return new CartaCuraEstesa(nome, determinazione, immagine, cura, durata);
+        }
     }
 }
