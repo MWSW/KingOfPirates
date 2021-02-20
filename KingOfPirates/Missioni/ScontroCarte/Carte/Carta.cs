@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace KingOfPirates.Missioni.ScontroCarte.Carte
 {
-    abstract class Carta
+    public abstract class Carta
     {
         protected string nome;
         protected int determinazione;

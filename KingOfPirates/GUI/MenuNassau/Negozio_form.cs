@@ -79,6 +79,21 @@ namespace KingOfPirates.GUI.MenuNassau
             Negozio_acqCarte_Panel.Hide();
         }
 
+        private void Seleziona(int indice)
+        {
+            Negozio_CarteInfo_Img.BackgroundImage = /*getCarta(indice).[...]*/;
+            Negozio_CarteAtk_Label.Text = "ATK: " + /*[...]*/;
+            Negozio_CarteDef_Label.Text = "DEF: " + /*[...]*/;
+            Negozio_CarteElemento_Label.Text = "Elemento: " + /*[...]*/;
+            Negozio_CarteDescrizione_Label.Text = "Descrizione: " + /*[...]*/;
+            Negozio_CartePossedute_Label.Text = "Possiedi " + /*[...]*/ + " carte di questo tipo";
+        }
+
+        private void Negozio_CarteAcquista_Button_Click(object sender, EventArgs e)
+        {
+            negozio.AcquistaCarta(gestoreDominio);
+        }
+
         private void LoadData()
         {
             //Negozio principale
@@ -161,6 +176,7 @@ namespace KingOfPirates.GUI.MenuNassau
         private void UpdateOutput()
         {
             Negozio_Fondi_Label.Text = (gestoreDominio.CassaDobloni).ToString() + " $";
+            Negozio_CarteFondi_Label.Text = (gestoreDominio.CassaDobloni).ToString() + " $";
 
             Negozio_nBevDet_Label.Text = (naveGiocatore.Inventario.BevandaDeterminazione).ToString();
             Negozio_nRum_Label.Text = (naveGiocatore.Inventario.Rum).ToString();
@@ -170,6 +186,108 @@ namespace KingOfPirates.GUI.MenuNassau
             Negozio_nTaglieMerc_Label.Text = "Taglie mercantili: " + (gestoreDominio.TaglieMercantile).ToString();
             Negozio_nTaglieCara_Label.Text = "Taglie caravelle: " + (gestoreDominio.TaglieCaravella).ToString();
             Negozio_nTaglieFreg_Label.Text = "Taglie fregate: " + (gestoreDominio.TaglieFregata).ToString();
+        }
+
+        //SELEZIONE CARTA - richiamo alla funzione seleziona
+
+        private void Pirata1_Click(object sender, EventArgs e)
+        {
+            Seleziona(0);
+        }
+
+        private void Pirata2_Click(object sender, EventArgs e)
+        {
+            Seleziona(1);
+        }
+
+        private void Pirata3_Click(object sender, EventArgs e)
+        {
+            Seleziona(2);
+        }
+
+        private void Pirata4_Click(object sender, EventArgs e)
+        {
+            Seleziona(3);
+        }
+
+        private void Pirata5_Click(object sender, EventArgs e)
+        {
+            Seleziona(4);
+        }
+
+        private void Pirata6_Click(object sender, EventArgs e)
+        {
+            Seleziona(5);
+        }
+
+        private void Pirata7_Click(object sender, EventArgs e)
+        {
+            Seleziona(6);
+        }
+
+        private void Pirata8_Click(object sender, EventArgs e)
+        {
+            Seleziona(7);
+        }
+
+        private void Pirata9_Click(object sender, EventArgs e)
+        {
+            Seleziona(8);
+        }
+
+        private void Pirata10_Click(object sender, EventArgs e)
+        {
+            Seleziona(9);
+        }
+
+        private void Pirata11_Click(object sender, EventArgs e)
+        {
+            Seleziona(10);
+        }
+
+        private void Pirata12_Click(object sender, EventArgs e)
+        {
+            Seleziona(11);
+        }
+
+        private void Pirata13_Click(object sender, EventArgs e)
+        {
+            Seleziona(12);
+        }
+
+        private void Pirata14_Click(object sender, EventArgs e)
+        {
+            Seleziona(13);
+        }
+
+        private void Pirata15_Click(object sender, EventArgs e)
+        {
+            Seleziona(14);
+        }
+
+        private void Pirata16_Click(object sender, EventArgs e)
+        {
+            Seleziona(15);
+        }
+
+        private void Pirata17_Click(object sender, EventArgs e)
+        {
+            Seleziona(16);
+        }
+
+        private void Pirata18_Click(object sender, EventArgs e)
+        {
+            Seleziona(17);
+        }
+
+        private void Pirata19_Click(object sender, EventArgs e)
+        {
+            Seleziona(18);
+        }
+
+        private void Pirata20_Click(object sender, EventArgs e)
+        {
+            Seleziona(19);
         }
     }
 }
