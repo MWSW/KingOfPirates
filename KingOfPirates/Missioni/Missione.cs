@@ -4,38 +4,40 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using KingOfPirates.Missioni.Roba;
 using KingOfPirates.GUI;
 
 namespace KingOfPirates.Missioni
 {
-    class Missione
+    public class Missione
     {
-        private int reward;
-        private string descrizione;
+        private int Reward { get; set; }
+        private string Descrizione { get; set; }
+        protected GUI.MenuMissioni.FormMissione Mappa { get; set; }
+        protected NaveNemico[] Nemici { get; set; }
+        internal Loc2D PosNave { get; set; }
+        internal Loc2D PosBandiera { get; set; }
 
-        Bandiera bandiera { get; set; }
 
-        GUI.MenuMissioni.FormMissione mappa;
-
-        NaveNemico[] nemici;
-
-        public Missione(int reward_)
+        public Missione(Loc2D posNave, Loc2D posBandiera, int reward)
         {
-            bandiera = new Bandiera(5, 5);
-            reward = reward_;
+            this.PosBandiera = posBandiera;
+            this.PosNave = posNave;
+            this.Reward = reward;
+            this.Mappa = new GUI.MenuMissioni.FormMissione(this);
         }
 
         public void StartMissione()
         {
-            mappa.Activate();
+            Mappa.Activate();
             //TODO: Altro codice necessario all'avvio corretto della missione
         }
 
         public void CicloGioco()
         {
-            while (Gioco.Giocatore.Loc != bandiera.Coords)
+            while (true)
             {
-                //
+                //cringe
             }
         }
 
@@ -43,11 +45,5 @@ namespace KingOfPirates.Missioni
         {
             //TODO: Da il reward e contrassegna la missione come completata sulla cartina
         }
-
-        //Getter e Setters dello standard C#
-
-        public int Reward { get => reward; set => reward = value; }
-        private string Descrizione { get => descrizione; set => descrizione = value; }
-
     }
 }

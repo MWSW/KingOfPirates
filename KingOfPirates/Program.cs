@@ -4,6 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using KingOfPirates;
+using KingOfPirates.Missioni;
+using KingOfPirates.Missioni.Navi;
+using KingOfPirates.Missioni.Roba;
 using KingOfPirates.GUI.MenuPrincipale;
 using KingOfPirates.GUI.MenuNassau;
 using KingOfPirates.GUI.ScontroCarte;
@@ -39,17 +42,16 @@ namespace KingOfPirates
         {
             Console.WriteLine("#+ Inizio inizializzazione Forms con Task");
             nassauForm = new GUI.MenuNassau.Nassau_form();
-            menuMissioni = new GUI.MenuMissioni.FormMissione(3, 3);
+            menuMissioni = new GUI.MenuMissioni.FormMissione(new Missione(new Loc2D(4, 4), new Loc2D(10, 10), 10));
             scontroCarte = new GUI.ScontroCarte.ScontroCarte();
             Console.WriteLine("#- Fine inizializzazione Forms con Task");
         });
 
         public static void Start()
         {
-            Giocatore = 
-                new Missioni.Navi.NaveGiocatore("Nave da Test", Properties.Resources.nave_rossa, new Missioni.Roba.Stats(), new Missioni.Roba.Loc2D(), 0, 10);
+            Giocatore = new NaveGiocatore("Nave da Test", Properties.Resources.nave_rossa, new Stats(), new Loc2D(), 0, 10);
             initTask.Start();
-            startMenu = new GUI.MenuPrincipale.StartMenu();
+            startMenu = new StartMenu();
             startMenu.Show();
             initTask.Wait();
         }

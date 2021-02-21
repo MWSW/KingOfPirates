@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using KingOfPirates;
 using KingOfPirates.Missioni;
+using KingOfPirates.Missioni.Roba;
 using KingOfPirates.Missioni.Navi;
 
 /* L'Interfaccia grafica e' stata fatta a mano
@@ -20,10 +21,12 @@ namespace KingOfPirates.GUI.MenuMissioni
 {
     public partial class FormMissione : Form
     {
-        public FormMissione(int puntoX, int puntoY)
+        private Missione missione;
+        public FormMissione(Missione missione)
         {
             InitializeComponent(19, 12);
-            Gioco.Giocatore.Loc.X = puntoX; Gioco.Giocatore.Loc.Y = puntoY;
+            this.missione = missione;
+            Gioco.Giocatore.Loc.X = missione.PosNave.X; Gioco.Giocatore.Loc.Y = missione.PosNave.Y;
             Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = Properties.Resources.nave_pirata;
         }
 
