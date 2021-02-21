@@ -15,6 +15,7 @@ namespace KingOfPirates.Missioni.Navi
 
         private bool staNavigando; //Verifica che sia su terreno o meno
         private int ubriachezza;
+        public int Energia { get; set; }
 
         private Inventario inventario;
 
@@ -39,6 +40,11 @@ namespace KingOfPirates.Missioni.Navi
         public void Scavare() 
         {
 
+        }
+
+        public void RemEnergia(int enTolta)
+        {
+            Energia += enTolta;
         }
 
         //TODO: public void UsaOggetto(Oggetto o){}

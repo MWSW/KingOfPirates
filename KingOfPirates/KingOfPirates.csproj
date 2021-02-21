@@ -71,11 +71,11 @@
     <Compile Include="GUI\MenuNassau\Porto_form.Designer.cs">
       <DependentUpon>Porto_form.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\MenuMissioni\MenuMissioni.cs">
+    <Compile Include="GUI\MenuMissioni\FormMissione.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\MenuMissioni\MenuMissioni.Designer.cs">
-      <DependentUpon>MenuMissioni.cs</DependentUpon>
+    <Compile Include="GUI\MenuMissioni\FormMissione.Designer.cs">
+      <DependentUpon>FormMissione.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\ScontroCarte\ScontroCarte.cs">
       <SubType>Form</SubType>
@@ -137,8 +137,8 @@
     <EmbeddedResource Include="GUI\MenuPrincipale\StartMenu.resx">
       <DependentUpon>StartMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\MenuMissioni\MenuMissioni.resx">
-      <DependentUpon>MenuMissioni.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\MenuMissioni\FormMissione.resx">
+      <DependentUpon>FormMissione.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\ScontroCarte\ScontroCarte.resx">
       <DependentUpon>ScontroCarte.cs</DependentUpon>

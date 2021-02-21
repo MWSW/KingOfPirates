@@ -9,7 +9,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using KingOfPirates.Missioni;
 
-// Sto facendo l'interfaccia a mano e non è finita
+/* L'Interfaccia grafica e' stata fatta a mano
+ * La matrice e' stata pensata come piano cartesiano (x e y invertiti)
+ * Corregerla richiede riscrivere la classe, che non ho intenzione di fare
+ */
 
 namespace KingOfPirates.GUI.MenuMissioni
 {
@@ -19,13 +22,13 @@ namespace KingOfPirates.GUI.MenuMissioni
         public FormMissione()
         {
             InitializeComponent(19, 12);
-            xCorr = 10; yCorr = 6;
+            xCorr = 9; yCorr = 5;
             Griglia_pictureBox[xCorr, yCorr].BackgroundImage = Properties.Resources.nave_pirata;
         }
 
         private void Sopra_button_Click(object sender, EventArgs e)
         {
-            if (yCorr + 1 > 19 || yCorr - 1 < 0 || xCorr + 1 > 12 || xCorr - 1 < 0)
+            if (yCorr - 1 < 0)
             {
                 return;
             }
@@ -33,21 +36,10 @@ namespace KingOfPirates.GUI.MenuMissioni
             yCorr--;
             Griglia_pictureBox[xCorr, yCorr].BackgroundImage = Properties.Resources.nave_pirata;
         }
-
-        private void Sinistra_button_Click(object sender, EventArgs e)
-        {
-            if (yCorr + 1 > 19 || yCorr - 1 < 0 || xCorr + 1 > 12 || xCorr - 1 < 0)
-            {
-                return;
-            }
-            Griglia_pictureBox[xCorr, yCorr].BackgroundImage = Properties.Resources.mare;
-            xCorr--;
-            Griglia_pictureBox[xCorr, yCorr].BackgroundImage = Properties.Resources.nave_pirata;
-        }
-
+        
         private void Sotto_button_Click(object sender, EventArgs e)
         {
-            if (yCorr + 1 > 19 || yCorr - 1 < 0 || xCorr + 1 > 12 || xCorr - 1 < 0)
+            if (yCorr + 1 > 11)
             {
                 return;
             }
@@ -56,9 +48,20 @@ namespace KingOfPirates.GUI.MenuMissioni
             Griglia_pictureBox[xCorr, yCorr].BackgroundImage = Properties.Resources.nave_pirata;
         }
 
+        private void Sinistra_button_Click(object sender, EventArgs e)
+        {
+            if (xCorr - 1 < 0)
+            {
+                return;
+            }
+            Griglia_pictureBox[xCorr, yCorr].BackgroundImage = Properties.Resources.mare;
+            xCorr--;
+            Griglia_pictureBox[xCorr, yCorr].BackgroundImage = Properties.Resources.nave_pirata;
+        }
+
         private void Destra_button_Click(object sender, EventArgs e)
         {
-            if (yCorr + 1 > 19 || yCorr - 1 < 0 || xCorr + 1 > 12 || xCorr - 1 < 0)
+            if (xCorr + 1 > 18)
             {
                 return;
             }
