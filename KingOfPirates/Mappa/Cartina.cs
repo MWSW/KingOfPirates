@@ -23,7 +23,7 @@ namespace KingOfPirates.Mappa
 
         public void AvvioMissione()
         {
-
+            //TODO
         }
     }
 }

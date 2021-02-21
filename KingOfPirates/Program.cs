@@ -30,11 +30,11 @@ namespace KingOfPirates
 
     static class Gioco
     {
+        public static KingOfPirates.Missioni.Navi.NaveGiocatore Giocatore { get; set; }
         public static GUI.MenuPrincipale.StartMenu startMenu;
         public static GUI.MenuNassau.Nassau_form nassauForm;
         public static GUI.MenuMissioni.FormMissione menuMissioni;
         public static GUI.ScontroCarte.ScontroCarte scontroCarte;
-        public static KingOfPirates.Missioni.Navi.NaveGiocatore Giocatore { get; set; }
         private static Task initTask = new Task(() =>
         {
             Console.WriteLine("#+ Inizio inizializzazione Forms con Task");
