@@ -13,12 +13,15 @@ namespace KingOfPirates.Missioni
         private int reward;
         private string descrizione;
 
+        Bandiera bandiera { get; set; }
+
         GUI.MenuMissioni.FormMissione mappa;
 
         NaveNemico[] nemici;
 
         public Missione(int reward_)
         {
+            bandiera = new Bandiera(5, 5);
             reward = reward_;
         }
 
@@ -26,6 +29,14 @@ namespace KingOfPirates.Missioni
         {
             mappa.Activate();
             //TODO: Altro codice necessario all'avvio corretto della missione
+        }
+
+        public void CicloGioco()
+        {
+            while (Gioco.Giocatore.Loc != bandiera.Coords)
+            {
+                //
+            }
         }
 
         public void EndMissione()
