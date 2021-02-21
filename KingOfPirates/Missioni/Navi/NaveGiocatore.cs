@@ -16,17 +16,18 @@ namespace KingOfPirates.Missioni.Navi
         private bool staNavigando; //Verifica che sia su terreno o meno
         private int ubriachezza;
         public int Energia { get; set; }
+        public int EnergiaMax { get; set; }
 
-        private Inventario inventario;
+        private Inventario InventarioNave { get; set; }
 
         //TO-FIX: Per ora Stats e Loc2D sono a zero
 
         public NaveGiocatore(String nome_, Bitmap immagine_) : base(nome_, immagine_, new Stats(), new Loc2D())
         {
-            inventario = new Inventario();
+            Energia = 0;
+            EnergiaMax = 10;
+            InventarioNave = new Inventario();
         }
-        
-        public Inventario Inventario { get => inventario; set => inventario = value; }
 
         public override void Movimento(Loc2D spostamento)
         {

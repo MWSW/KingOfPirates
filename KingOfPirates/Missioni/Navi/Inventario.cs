@@ -8,15 +8,10 @@ namespace KingOfPirates.Missioni.Navi.Opponenti
 {
     public class Inventario
     {
-        private int bevandaDeterminazione;
-        private int rum;
-        private int antiUbriachezza;
-        private int assiLegno;
-
-        public int BevandaDeterminazione { get => bevandaDeterminazione; set => bevandaDeterminazione = value; }
-        public int Rum { get => rum; set => rum = value; }
-        public int AntiUbriachezza { get => antiUbriachezza; set => antiUbriachezza = value; }
-        public int AssiLegno { get => assiLegno; set => assiLegno = value; }
+        public int BevandaDeterminazione { get; set; }
+        public int Rum { get; set; }
+        public int AntiUbriachezza { get; set; }
+        public int AssiLegno { get; set; }
 
         public Inventario()
         {

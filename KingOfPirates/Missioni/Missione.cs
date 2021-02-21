@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using KingOfPirates.GUI;
 
 namespace KingOfPirates.Missioni
 {
@@ -13,7 +14,7 @@ namespace KingOfPirates.Missioni
         private int reward;
         private string descrizione;
 
-        Griglia mappa;
+        GUI.MenuMissioni.FormMissione mappa;
 
         NaveNemico[] nemici;
 

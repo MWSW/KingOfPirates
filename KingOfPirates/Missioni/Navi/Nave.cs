@@ -32,7 +32,7 @@ namespace KingOfPirates.Missioni.Navi
 
         public virtual void Movimento(Loc2D spostamento) //(Virtual) indica che può essere esteso dai figli
         {
-
+            //
         }
 
         public void Attacca(Nave nave) 
