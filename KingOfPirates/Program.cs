@@ -34,17 +34,20 @@ namespace KingOfPirates
         public static GUI.MenuNassau.Nassau_form nassauForm;
         public static GUI.MenuMissioni.FormMissione menuMissioni;
         public static GUI.ScontroCarte.ScontroCarte scontroCarte;
+        public static KingOfPirates.Missioni.Navi.NaveGiocatore Giocatore { get; set; }
         private static Task initTask = new Task(() =>
         {
             Console.WriteLine("#+ Inizio inizializzazione Forms con Task");
             nassauForm = new GUI.MenuNassau.Nassau_form();
-            menuMissioni = new GUI.MenuMissioni.FormMissione();
+            menuMissioni = new GUI.MenuMissioni.FormMissione(3, 3);
             scontroCarte = new GUI.ScontroCarte.ScontroCarte();
             Console.WriteLine("#- Fine inizializzazione Forms con Task");
         });
 
         public static void Start()
         {
+            Giocatore = 
+                new Missioni.Navi.NaveGiocatore("Nave da Test", Properties.Resources.nave_rossa, new Missioni.Roba.Stats(), new Missioni.Roba.Loc2D(), 0, 10);
             initTask.Start();
             startMenu = new GUI.MenuPrincipale.StartMenu();
             startMenu.Show();

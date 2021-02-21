@@ -7,7 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using KingOfPirates;
 using KingOfPirates.Missioni;
+using KingOfPirates.Missioni.Navi;
 
 /* L'Interfaccia grafica e' stata fatta a mano
  * La matrice e' stata pensata come piano cartesiano (x e y invertiti)
@@ -18,56 +20,55 @@ namespace KingOfPirates.GUI.MenuMissioni
 {
     public partial class FormMissione : Form
     {
-        int xCorr, yCorr;
-        public FormMissione()
+        public FormMissione(int puntoX, int puntoY)
         {
             InitializeComponent(19, 12);
-            xCorr = 9; yCorr = 5;
-            Griglia_pictureBox[xCorr, yCorr].BackgroundImage = Properties.Resources.nave_pirata;
+            Gioco.Giocatore.Loc.X = puntoX; Gioco.Giocatore.Loc.Y = puntoY;
+            Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = Properties.Resources.nave_pirata;
         }
 
         private void Sopra_button_Click(object sender, EventArgs e)
         {
-            if (yCorr - 1 < 0)
+            if (Gioco.Giocatore.Loc.Y - 1 < 0)
             {
                 return;
             }
-            Griglia_pictureBox[xCorr, yCorr].BackgroundImage = Properties.Resources.mare;
-            yCorr--;
-            Griglia_pictureBox[xCorr, yCorr].BackgroundImage = Properties.Resources.nave_pirata;
+            Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = Properties.Resources.mare;
+            Gioco.Giocatore.Loc.Y--;
+            Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = Properties.Resources.nave_pirata;
         }
-        
+
         private void Sotto_button_Click(object sender, EventArgs e)
         {
-            if (yCorr + 1 > 11)
+            if (Gioco.Giocatore.Loc.Y + 1 > 11)
             {
                 return;
             }
-            Griglia_pictureBox[xCorr, yCorr].BackgroundImage = Properties.Resources.mare;
-            yCorr++;
-            Griglia_pictureBox[xCorr, yCorr].BackgroundImage = Properties.Resources.nave_pirata;
+            Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = Properties.Resources.mare;
+            Gioco.Giocatore.Loc.Y++;
+            Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = Properties.Resources.nave_pirata;
         }
 
         private void Sinistra_button_Click(object sender, EventArgs e)
         {
-            if (xCorr - 1 < 0)
+            if (Gioco.Giocatore.Loc.X - 1 < 0)
             {
                 return;
             }
-            Griglia_pictureBox[xCorr, yCorr].BackgroundImage = Properties.Resources.mare;
-            xCorr--;
-            Griglia_pictureBox[xCorr, yCorr].BackgroundImage = Properties.Resources.nave_pirata;
+            Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = Properties.Resources.mare;
+            Gioco.Giocatore.Loc.X--;
+            Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = Properties.Resources.nave_pirata;
         }
 
         private void Destra_button_Click(object sender, EventArgs e)
         {
-            if (xCorr + 1 > 18)
+            if (Gioco.Giocatore.Loc.X + 1 > 18)
             {
                 return;
             }
-            Griglia_pictureBox[xCorr, yCorr].BackgroundImage = Properties.Resources.mare;
-            xCorr++;
-            Griglia_pictureBox[xCorr, yCorr].BackgroundImage = Properties.Resources.nave_pirata;
+            Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = Properties.Resources.mare;
+            Gioco.Giocatore.Loc.X++;
+            Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = Properties.Resources.nave_pirata;
         }
 
         private void MenuMissioni_FormClosing(object sender, FormClosingEventArgs e)

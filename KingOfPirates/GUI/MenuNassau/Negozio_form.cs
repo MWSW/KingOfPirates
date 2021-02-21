@@ -17,14 +17,12 @@ namespace KingOfPirates.GUI.MenuNassau
     {
         Negozio negozio = new Negozio();
         GestioneDominio gestoreDominio;
-        NaveGiocatore naveGiocatore;
 
         public Negozio_form(GestioneDominio gestoreDominio, NaveGiocatore naveGiocatore)
         {
             InitializeComponent();
             
             this.gestoreDominio = gestoreDominio;
-            this.naveGiocatore = naveGiocatore;
             
             LoadData();
         }
@@ -42,25 +40,25 @@ namespace KingOfPirates.GUI.MenuNassau
 
         private void Negozio_AcqBevDet_Button_Click(object sender, EventArgs e)
         {
-            negozio.AcquistaBevandaDeterminazione(naveGiocatore, gestoreDominio);
+            negozio.AcquistaBevandaDeterminazione(Gioco.Giocatore, gestoreDominio);
             UpdateOutput();
         }
 
         private void Negozio_AcqRum_Button_Click(object sender, EventArgs e)
         {
-            negozio.AcquistaRum(naveGiocatore, gestoreDominio);
+            negozio.AcquistaRum(Gioco.Giocatore, gestoreDominio);
             UpdateOutput();
         }
 
         private void Negozio_AcqBevAnt_Button_Click(object sender, EventArgs e)
         {
-            negozio.AcquistaAntiubriachezza(naveGiocatore, gestoreDominio);
+            negozio.AcquistaAntiubriachezza(Gioco.Giocatore, gestoreDominio);
             UpdateOutput();
         }
 
         private void Negozio_AcqAssLeg_Button_Click(object sender, EventArgs e)
         {
-            negozio.AcquistaAssiLegno(naveGiocatore, gestoreDominio);
+            negozio.AcquistaAssiLegno(Gioco.Giocatore, gestoreDominio);
             UpdateOutput();
         }
 
@@ -90,10 +88,10 @@ namespace KingOfPirates.GUI.MenuNassau
         {
             Negozio_Fondi_Label.Text = (gestoreDominio.CassaDobloni).ToString() + " $";
 
-            Negozio_nBevDet_Label.Text = (naveGiocatore.Inventario.BevandaDeterminazione).ToString();
-            Negozio_nRum_Label.Text = (naveGiocatore.Inventario.Rum).ToString();
-            Negozio_nBevAnt_Label.Text = (naveGiocatore.Inventario.AntiUbriachezza).ToString();
-            Negozio_nAssLeg_Label.Text = (naveGiocatore.Inventario.AssiLegno).ToString();
+            Negozio_nBevDet_Label.Text = (Gioco.Giocatore.Inventario.BevandaDeterminazione).ToString();
+            Negozio_nRum_Label.Text = (Gioco.Giocatore.Inventario.Rum).ToString();
+            Negozio_nBevAnt_Label.Text = (Gioco.Giocatore.Inventario.AntiUbriachezza).ToString();
+            Negozio_nAssLeg_Label.Text = (Gioco.Giocatore.Inventario.AssiLegno).ToString();
 
             Negozio_nTaglieMerc_Label.Text = "Taglie mercantili: " + (gestoreDominio.TaglieMercantile).ToString();
             Negozio_nTaglieCara_Label.Text = "Taglie caravelle: " + (gestoreDominio.TaglieCaravella).ToString();

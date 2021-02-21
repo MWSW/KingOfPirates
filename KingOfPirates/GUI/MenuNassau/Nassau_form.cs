@@ -25,7 +25,7 @@ namespace KingOfPirates.GUI.MenuNassau
 
         public Nassau_form()
         {
-            naveGiocatore = new NaveGiocatore("MortadellaBella", img);                      //da spostare nel 'main' per renderlo utilizzabile anche dalla missione
+            //naveGiocatore = new NaveGiocatore("MortadellaBella", img);                      //da spostare nel 'main' per renderlo utilizzabile anche dalla missione
             gestoreDomino.CassaDobloni = 100;   //=
             gestoreDomino.TaglieCaravella = 2;  //=
             gestoreDomino.TaglieMercantile = 3; //=
