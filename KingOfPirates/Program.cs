@@ -32,13 +32,13 @@ namespace KingOfPirates
     {
         public static GUI.MenuPrincipale.StartMenu startMenu;
         public static GUI.MenuNassau.Nassau_form nassauForm;
-        public static GUI.MenuMissioni.MenuMissioni menuMissioni;
+        public static GUI.MenuMissioni.FormMissione menuMissioni;
         public static GUI.ScontroCarte.ScontroCarte scontroCarte;
         private static Task initTask = new Task(() =>
         {
             Console.WriteLine("#+ Inizio inizializzazione Forms con Task");
             nassauForm = new GUI.MenuNassau.Nassau_form();
-            menuMissioni = new GUI.MenuMissioni.MenuMissioni();
+            menuMissioni = new GUI.MenuMissioni.FormMissione();
             scontroCarte = new GUI.ScontroCarte.ScontroCarte();
             Console.WriteLine("#- Fine inizializzazione Forms con Task");
         });

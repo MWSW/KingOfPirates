@@ -13,32 +13,58 @@ using KingOfPirates.Missioni;
 
 namespace KingOfPirates.GUI.MenuMissioni
 {
-    public partial class MenuMissioni : Form
+    public partial class FormMissione : Form
     {
-        public MenuMissioni()
+        int xCorr, yCorr;
+        public FormMissione()
         {
             InitializeComponent(19, 12);
+            xCorr = 10; yCorr = 6;
+            Griglia_pictureBox[xCorr, yCorr].BackgroundImage = Properties.Resources.nave_pirata;
         }
 
         private void Sopra_button_Click(object sender, EventArgs e)
         {
-            //TODO
+            if (yCorr + 1 > 19 || yCorr - 1 < 0 || xCorr + 1 > 12 || xCorr - 1 < 0)
+            {
+                return;
+            }
+            Griglia_pictureBox[xCorr, yCorr].BackgroundImage = Properties.Resources.mare;
+            yCorr--;
+            Griglia_pictureBox[xCorr, yCorr].BackgroundImage = Properties.Resources.nave_pirata;
         }
 
         private void Sinistra_button_Click(object sender, EventArgs e)
         {
-            //Griglia_flowLayoutPanel.GetChildAtPoint(Griglia_pictureBox.Location);
-            Griglia_flowLayoutPanel.Controls.Find("Griglia_pictureBox.Image",false);
+            if (yCorr + 1 > 19 || yCorr - 1 < 0 || xCorr + 1 > 12 || xCorr - 1 < 0)
+            {
+                return;
+            }
+            Griglia_pictureBox[xCorr, yCorr].BackgroundImage = Properties.Resources.mare;
+            xCorr--;
+            Griglia_pictureBox[xCorr, yCorr].BackgroundImage = Properties.Resources.nave_pirata;
         }
 
         private void Sotto_button_Click(object sender, EventArgs e)
         {
-
+            if (yCorr + 1 > 19 || yCorr - 1 < 0 || xCorr + 1 > 12 || xCorr - 1 < 0)
+            {
+                return;
+            }
+            Griglia_pictureBox[xCorr, yCorr].BackgroundImage = Properties.Resources.mare;
+            yCorr++;
+            Griglia_pictureBox[xCorr, yCorr].BackgroundImage = Properties.Resources.nave_pirata;
         }
 
         private void Destra_button_Click(object sender, EventArgs e)
         {
-
+            if (yCorr + 1 > 19 || yCorr - 1 < 0 || xCorr + 1 > 12 || xCorr - 1 < 0)
+            {
+                return;
+            }
+            Griglia_pictureBox[xCorr, yCorr].BackgroundImage = Properties.Resources.mare;
+            xCorr++;
+            Griglia_pictureBox[xCorr, yCorr].BackgroundImage = Properties.Resources.nave_pirata;
         }
 
         private void MenuMissioni_FormClosing(object sender, FormClosingEventArgs e)
@@ -46,6 +72,15 @@ namespace KingOfPirates.GUI.MenuMissioni
             e.Cancel = true;
             this.Hide();
             Gioco.startMenu.Show();
+        }
+
+        private void Griglia_ErrorBox()
+        {
+            const string message = "Non puoi andare in quella direzione";
+            const string caption = "Avviso";
+            var result = MessageBox.Show(message, caption,
+                                         MessageBoxButtons.OK,
+                                         MessageBoxIcon.Exclamation);
         }
     }
 }
