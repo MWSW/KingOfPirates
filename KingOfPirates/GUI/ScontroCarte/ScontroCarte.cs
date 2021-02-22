@@ -100,10 +100,10 @@ namespace KingOfPirates.GUI.ScontroCarte
                  ListaCarte.GetCartaClone(1), ListaCarte.GetCartaClone(2), ListaCarte.GetCartaClone(3), ListaCarte.GetCartaClone(4), ListaCarte.GetCartaClone(5)};
 
 
-            Carta[] carte_player = {ListaCarte.GetCartaClone(6),
-                 ListaCarte.GetCartaClone(7), ListaCarte.GetCartaClone(8), ListaCarte.GetCartaClone(3),
-                 ListaCarte.GetCartaClone(4), ListaCarte.GetCartaClone(5), ListaCarte.GetCartaClone(9),
-                 ListaCarte.GetCartaClone(10)};
+            Carta[] carte_player = {ListaCarte.GetCartaClone(19),
+                 ListaCarte.GetCartaClone(18), ListaCarte.GetCartaClone(17), ListaCarte.GetCartaClone(16),
+                 ListaCarte.GetCartaClone(15), ListaCarte.GetCartaClone(5), ListaCarte.GetCartaClone(9),
+                 ListaCarte.GetCartaClone(10), ListaCarte.GetCartaClone(1)};
 
 
             player = new Player_carte(10, new Mazzo(carte_player));
