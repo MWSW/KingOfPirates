@@ -74,6 +74,21 @@ namespace KingOfPirates.GUI.MenuMissioni
             Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = Properties.Resources.nave_pirata;
         }
 
+        private void Azione_button_Click(object sender, EventArgs e)
+        {
+            Gioco.Giocatore.Energia = 10;
+        }
+
+        private void Rum_button_Click(object sender, EventArgs e)
+        {
+            //
+        }
+
+        private void AssLeg_button_Click(object sender, EventArgs e)
+        {
+            //
+        }
+
         private void MenuMissioni_FormClosing(object sender, FormClosingEventArgs e)
         {
             e.Cancel = true;

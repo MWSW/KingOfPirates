@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Resources;
 using KingOfPirates.Missioni;
 using System.Windows.Forms;
+using KingOfPirates.Missioni.Roba;
 
 namespace KingOfPirates.GUI.MenuMissioni
 {
@@ -41,8 +42,12 @@ namespace KingOfPirates.GUI.MenuMissioni
             this.Sinistra_button = new System.Windows.Forms.Button();
             this.Sotto_button = new System.Windows.Forms.Button();
             this.Destra_button = new System.Windows.Forms.Button();
-            this.Movimento_label = new System.Windows.Forms.Label();
+            this.Azione_button = new System.Windows.Forms.Button();
             this.Griglia_tableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.Rum_button = new Button();
+            this.Rum_label = new Label();
+            this.AssLeg_button = new Button();
+            this.AssLeg_label = new Label();
             this.Griglia_pictureBox = new System.Windows.Forms.PictureBox[picBoxXSize, picBoxYSize];
             ((System.ComponentModel.ISupportInitialize)(this.cartinaBindingSource)).BeginInit();
             this.Griglia_tableLayoutPanel.SuspendLayout();
@@ -101,14 +106,60 @@ namespace KingOfPirates.GUI.MenuMissioni
             this.Destra_button.UseVisualStyleBackColor = true;
             this.Destra_button.Click += new System.EventHandler(this.Destra_button_Click);
             // 
-            // Movimento_label
+            // Azione_button
             // 
-            this.Movimento_label.Location = new System.Drawing.Point(JoystickStartPointX + 53, JoystickStartPointY + 53);
-            this.Movimento_label.Name = "Movimento_label";
-            this.Movimento_label.Size = new System.Drawing.Size(50, 50);
-            this.Movimento_label.TabIndex = 5;
-            this.Movimento_label.Text = "Move";
-            this.Movimento_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Azione_button.Location = new System.Drawing.Point(JoystickStartPointX + 53, JoystickStartPointY + 53);
+            this.Azione_button.Name = "Azione_button";
+            this.Azione_button.Size = new System.Drawing.Size(50, 50);
+            this.Azione_button.TabIndex = 4;
+            this.Azione_button.Text = "Passa";
+            this.Azione_button.Click += new System.EventHandler(this.Azione_button_Click);
+
+            #endregion
+
+            #region Bottoni Consumabili
+
+            Loc2D consumabiliStartPoint = new Loc2D(1090, 3);
+            //
+            // Rum_button
+            //
+            this.Rum_button.Location = new System.Drawing.Point(consumabiliStartPoint.X, consumabiliStartPoint.Y);
+            this.Rum_button.Name = "Rum_button";
+            this.Rum_button.Size = new System.Drawing.Size(100, 50);
+            this.Rum_button.TabIndex = 1;
+            this.Rum_button.Text = "Usa Rum";
+            this.Rum_button.UseVisualStyleBackColor = true;
+            this.Rum_button.Click += new System.EventHandler(this.Rum_button_Click);
+            //
+            // Rum_label
+            //
+            this.Rum_label.Location = new System.Drawing.Point(consumabiliStartPoint.X, consumabiliStartPoint.Y + 53);
+            this.Rum_label.Name = "Rum_label";
+            this.Rum_label.Size = new System.Drawing.Size(100, 15);
+            this.Rum_label.TabIndex = 1;
+            this.Rum_label.Text = "Rum rimasto: ";
+            this.Rum_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Rum_label.AutoSize = false;
+            //
+            // AssLeg_button
+            //
+            this.AssLeg_button.Location = new System.Drawing.Point(consumabiliStartPoint.X, consumabiliStartPoint.Y + 70);
+            this.AssLeg_button.Name = "AssLeg_button";
+            this.AssLeg_button.Size = new System.Drawing.Size(100, 50);
+            this.AssLeg_button.TabIndex = 1;
+            this.AssLeg_button.Text = "Usa Assi";
+            this.AssLeg_button.UseVisualStyleBackColor = true;
+            this.AssLeg_button.Click += new System.EventHandler(this.AssLeg_button_Click);
+            //
+            // AssLeg_label
+            //
+            this.AssLeg_label.Location = new System.Drawing.Point(consumabiliStartPoint.X, consumabiliStartPoint.Y + 123);
+            this.AssLeg_label.Name = "AssLeg_label";
+            this.AssLeg_label.Size = new System.Drawing.Size(100, 15);
+            this.AssLeg_label.TabIndex = 1;
+            this.AssLeg_label.Text = "Assi rimaste: ";
+            this.AssLeg_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.AssLeg_label.AutoSize = false;
 
             #endregion
 
@@ -117,7 +168,7 @@ namespace KingOfPirates.GUI.MenuMissioni
             //
             // Griglia_tableLayoutPanel
             //
-            
+
             this.Griglia_tableLayoutPanel.Location = new System.Drawing.Point(0, 0);
             this.Griglia_tableLayoutPanel.Size = new System.Drawing.Size(1090, 680);
             this.Griglia_tableLayoutPanel.Name = "Griglia_tableLayoutPanel";
@@ -165,11 +216,15 @@ namespace KingOfPirates.GUI.MenuMissioni
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.Griglia_tableLayoutPanel);
-            this.Controls.Add(this.Movimento_label);
+            this.Controls.Add(this.Azione_button);
             this.Controls.Add(this.Destra_button);
             this.Controls.Add(this.Sotto_button);
             this.Controls.Add(this.Sinistra_button);
             this.Controls.Add(this.Sopra_button);
+            this.Controls.Add(this.Rum_button);
+            this.Controls.Add(this.Rum_label);
+            this.Controls.Add(this.AssLeg_button);
+            this.Controls.Add(this.AssLeg_label);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MenuMissioni_FormClosing);
             this.Name = "MenuMissioni";
             this.Text = "MenuMissioni";
@@ -186,18 +241,17 @@ namespace KingOfPirates.GUI.MenuMissioni
         }
 
         // Variabili
-
+        private System.Windows.Forms.PictureBox[,] Griglia_pictureBox { get; set; }
         private System.Windows.Forms.BindingSource cartinaBindingSource;
         private System.Windows.Forms.Button Sopra_button;
         private System.Windows.Forms.Button Sinistra_button;
         private System.Windows.Forms.Button Sotto_button;
         private System.Windows.Forms.Button Destra_button;
-        private System.Windows.Forms.Label Movimento_label;
+        private System.Windows.Forms.Button Azione_button;
         private System.Windows.Forms.TableLayoutPanel Griglia_tableLayoutPanel;
-        private System.Windows.Forms.PictureBox[,] Griglia_pictureBox;
-
-        // Propieta'
-
-        public PictureBox[,] Griglia_pictureBox_ { get => Griglia_pictureBox; set => Griglia_pictureBox = value; }
+        private System.Windows.Forms.Button Rum_button;
+        private Button AssLeg_button;
+        private Label AssLeg_label;
+        private Label Rum_label;
     }
 }
