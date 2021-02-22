@@ -43,17 +43,29 @@ namespace KingOfPirates
         Console.WriteLine("#+ Inizializzazione Forms con Task");
         nassauForm = new GUI.MenuNassau.Nassau_form();
 
-        Griglia griglia_prova[,] = new {{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
-            { 0,0,0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
-            { 0,0,0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
-            { 0,0,0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
-                                     0,0,0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                                     0,0,0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                                     0,0,0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                                     {0,0,0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,} }
-            menuMissioni = new GUI.MenuMissioni.FormMissione(new Missione(new Loc2D(4, 4), new Loc2D(10, 10), 10));
-            scontroCarte = new GUI.ScontroCarte.ScontroCarte();
-            Console.WriteLine("#- Inizializzazione Forms con Task");
+            Griglia griglia_prova = new Griglia(new int [19,12] {{0,0,0,0,0,0,0,0,0,0,0,0},
+                                                                 {0,0,0,0,0,0,0,0,0,0,0,0},
+                                                                 {0,1,1,1,1,1,1,1,1,0,0,0},
+                                                                 {0,0,0,0,0,0,0,0,0,0,0,0},
+                                                                 {0,0,0,0,0,0,0,0,0,0,0,0},
+                                                                 {0,0,0,0,0,0,0,0,0,0,0,0},
+                                                                 {0,0,0,0,0,0,0,0,0,0,0,0},
+                                                                 {0,0,0,0,0,0,0,0,0,0,0,0},
+                                                                 {0,0,0,0,0,0,0,0,0,0,0,0},
+                                                                 {0,0,0,0,0,0,0,0,0,0,0,0},
+                                                                 {0,0,0,0,0,0,0,0,0,0,0,0},
+                                                                 {0,0,0,0,0,0,0,0,0,0,0,0},
+                                                                 {0,0,0,0,0,0,0,0,0,0,0,0},
+                                                                 {0,0,0,0,0,0,0,0,0,0,0,0},
+                                                                 {0,0,0,0,0,0,0,0,0,0,0,0},
+                                                                 {0,0,0,0,0,0,0,0,0,0,0,0},
+                                                                 {0,0,0,0,0,0,0,0,0,0,0,0},
+                                                                 {0,0,0,0,0,0,0,0,0,0,0,0},
+                                                                 {0,0,0,0,0,0,0,0,0,0,0,0}});
+
+            menuMissioni = new GUI.MenuMissioni.FormMissione(new Missione(griglia_prova, new Loc2D(4, 4), new Loc2D(10, 10), 10));
+                scontroCarte = new GUI.ScontroCarte.ScontroCarte();
+                Console.WriteLine("#- Inizializzazione Forms con Task");
         });
 
         public static void Start()

@@ -248,11 +248,15 @@ namespace KingOfPirates.GUI.MenuMissioni
                     this.Griglia_pictureBox[i, j].TabIndex = 0;
                     this.Griglia_pictureBox[i, j].TabStop = false;
                     this.Griglia_pictureBox[i, j].BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-                    switch (0)
+
+                    switch (missione.Griglia_numerica.Mat[i, j])
                     {
                         default:
                         case 0:
                             this.Griglia_pictureBox[i, j].BackgroundImage = Properties.Resources.mare;
+                            break;
+                        case 1:
+                            this.Griglia_pictureBox[i, j].BackgroundImage = Properties.Resources.isola1;
                             break;
                     }
                 }

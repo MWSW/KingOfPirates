@@ -25,8 +25,9 @@ namespace KingOfPirates.GUI.MenuMissioni
 
         public FormMissione(Missione missione)
         {
-            InitializeComponent(19, 12);
             this.missione = missione;
+            InitializeComponent(19, 12);
+
             Gioco.Giocatore.Loc.X = missione.PosNave.X; Gioco.Giocatore.Loc.Y = missione.PosNave.Y;
             Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = Properties.Resources.nave_pirata;
         }
