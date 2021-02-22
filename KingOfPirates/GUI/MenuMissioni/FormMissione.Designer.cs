@@ -48,6 +48,10 @@ namespace KingOfPirates.GUI.MenuMissioni
             this.Rum_label = new Label();
             this.AssLeg_button = new Button();
             this.AssLeg_label = new Label();
+            this.BevandaDet_button = new Button();
+            this.BevandaDet_label = new Label();
+            this.AntiUbriachezza_button = new Button();
+            this.AntiUbriachezza_label = new Label();
             this.Griglia_pictureBox = new System.Windows.Forms.PictureBox[picBoxXSize, picBoxYSize];
             ((System.ComponentModel.ISupportInitialize)(this.cartinaBindingSource)).BeginInit();
             this.Griglia_tableLayoutPanel.SuspendLayout();
@@ -119,13 +123,13 @@ namespace KingOfPirates.GUI.MenuMissioni
 
             #region Bottoni Consumabili
 
-            Loc2D consumabiliStartPoint = new Loc2D(1090, 3);
+            Loc2D consumabiliStartPoint = new Loc2D(1090, 9);
             //
             // Rum_button
             //
             this.Rum_button.Location = new System.Drawing.Point(consumabiliStartPoint.X, consumabiliStartPoint.Y);
             this.Rum_button.Name = "Rum_button";
-            this.Rum_button.Size = new System.Drawing.Size(100, 50);
+            this.Rum_button.Size = new System.Drawing.Size(156, 35);
             this.Rum_button.TabIndex = 1;
             this.Rum_button.Text = "Usa Rum";
             this.Rum_button.UseVisualStyleBackColor = true;
@@ -133,9 +137,10 @@ namespace KingOfPirates.GUI.MenuMissioni
             //
             // Rum_label
             //
-            this.Rum_label.Location = new System.Drawing.Point(consumabiliStartPoint.X, consumabiliStartPoint.Y + 53);
+            consumabiliStartPoint.Y += 38;
+            this.Rum_label.Location = new System.Drawing.Point(consumabiliStartPoint.X, consumabiliStartPoint.Y);
             this.Rum_label.Name = "Rum_label";
-            this.Rum_label.Size = new System.Drawing.Size(100, 15);
+            this.Rum_label.Size = new System.Drawing.Size(156, 15);
             this.Rum_label.TabIndex = 1;
             this.Rum_label.Text = "Rum rimasto: ";
             this.Rum_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -143,9 +148,10 @@ namespace KingOfPirates.GUI.MenuMissioni
             //
             // AssLeg_button
             //
-            this.AssLeg_button.Location = new System.Drawing.Point(consumabiliStartPoint.X, consumabiliStartPoint.Y + 70);
+            consumabiliStartPoint.Y += 18;
+            this.AssLeg_button.Location = new System.Drawing.Point(consumabiliStartPoint.X, consumabiliStartPoint.Y);
             this.AssLeg_button.Name = "AssLeg_button";
-            this.AssLeg_button.Size = new System.Drawing.Size(100, 50);
+            this.AssLeg_button.Size = new System.Drawing.Size(156, 35);
             this.AssLeg_button.TabIndex = 1;
             this.AssLeg_button.Text = "Usa Assi";
             this.AssLeg_button.UseVisualStyleBackColor = true;
@@ -153,13 +159,58 @@ namespace KingOfPirates.GUI.MenuMissioni
             //
             // AssLeg_label
             //
-            this.AssLeg_label.Location = new System.Drawing.Point(consumabiliStartPoint.X, consumabiliStartPoint.Y + 123);
+            consumabiliStartPoint.Y += 38;
+            this.AssLeg_label.Location = new System.Drawing.Point(consumabiliStartPoint.X, consumabiliStartPoint.Y);
             this.AssLeg_label.Name = "AssLeg_label";
-            this.AssLeg_label.Size = new System.Drawing.Size(100, 15);
+            this.AssLeg_label.Size = new System.Drawing.Size(156, 15);
             this.AssLeg_label.TabIndex = 1;
             this.AssLeg_label.Text = "Assi rimaste: ";
             this.AssLeg_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.AssLeg_label.AutoSize = false;
+            //
+            // BevandaDet_button
+            //
+            consumabiliStartPoint.Y += 18;
+            this.BevandaDet_button.Location = new System.Drawing.Point(consumabiliStartPoint.X, consumabiliStartPoint.Y);
+            this.BevandaDet_button.Name = "BevandaDet_button";
+            this.BevandaDet_button.Size = new System.Drawing.Size(156, 35);
+            this.BevandaDet_button.TabIndex = 1;
+            this.BevandaDet_button.Text = "Usa Bevanda Determinazione";
+            this.BevandaDet_button.UseVisualStyleBackColor = true;
+            this.BevandaDet_button.Click += new System.EventHandler(this.BevandaDet_button_Click);
+            //
+            // BevandaDet_label
+            //
+            consumabiliStartPoint.Y += 38;
+            this.BevandaDet_label.Location = new System.Drawing.Point(consumabiliStartPoint.X, consumabiliStartPoint.Y);
+            this.BevandaDet_label.Name = "BevandaDet_label";
+            this.BevandaDet_label.Size = new System.Drawing.Size(156, 15);
+            this.BevandaDet_label.TabIndex = 1;
+            this.BevandaDet_label.Text = "Bevande Det Rimaste: ";
+            this.BevandaDet_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.BevandaDet_label.AutoSize = false;
+            //
+            // AntiUbriachezza_button
+            //
+            consumabiliStartPoint.Y += 18;
+            this.AntiUbriachezza_button.Location = new System.Drawing.Point(consumabiliStartPoint.X, consumabiliStartPoint.Y);
+            this.AntiUbriachezza_button.Name = "AntiUbriachezza_button";
+            this.AntiUbriachezza_button.Size = new System.Drawing.Size(156, 35);
+            this.AntiUbriachezza_button.TabIndex = 1;
+            this.AntiUbriachezza_button.Text = "Usa AntiUbriachezza";
+            this.AntiUbriachezza_button.UseVisualStyleBackColor = true;
+            this.AntiUbriachezza_button.Click += new System.EventHandler(this.AntiUbriachezza_button_Click);
+            //
+            // AntiUbriachezza_label
+            //
+            consumabiliStartPoint.Y += 38;
+            this.AntiUbriachezza_label.Location = new System.Drawing.Point(consumabiliStartPoint.X, consumabiliStartPoint.Y);
+            this.AntiUbriachezza_label.Name = "AntiUbriachezza_label";
+            this.AntiUbriachezza_label.Size = new System.Drawing.Size(156, 15);
+            this.AntiUbriachezza_label.TabIndex = 1;
+            this.AntiUbriachezza_label.Text = "AntiUbriachezza rimasti: ";
+            this.AntiUbriachezza_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.AntiUbriachezza_label.AutoSize = false;
 
             #endregion
 
@@ -167,7 +218,7 @@ namespace KingOfPirates.GUI.MenuMissioni
 
             //
             // Griglia_tableLayoutPanel
-            //
+            // Inserisce nella tabella la matrice di pictureBox
 
             this.Griglia_tableLayoutPanel.Location = new System.Drawing.Point(0, 0);
             this.Griglia_tableLayoutPanel.Size = new System.Drawing.Size(1090, 680);
@@ -184,26 +235,27 @@ namespace KingOfPirates.GUI.MenuMissioni
                 }
             }
 
-            // 
-            // Griglia_pictureBox[,]
             // 50 + 3 pixel
+            // Griglia_pictureBox[,]
+            // Inizializza la matrice di pictureBox
 
-            //int tmp_locX = 0;
-            //int tmp_locY = 0;
             for (int i = 0; i < picBoxXSize; i++)
             {
                 for (int j = 0; j < picBoxYSize; j++)
                 {
-                    //this.Griglia_pictureBox[i, j].Location = new System.Drawing.Point(tmp_locX, tmp_locY);
                     this.Griglia_pictureBox[i, j].Name = "Griglia_pictureBox" + i + j;
                     this.Griglia_pictureBox[i, j].Size = new System.Drawing.Size(50, 50);
                     this.Griglia_pictureBox[i, j].TabIndex = 0;
                     this.Griglia_pictureBox[i, j].TabStop = false;
                     this.Griglia_pictureBox[i, j].BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-                    this.Griglia_pictureBox[i, j].BackgroundImage = Properties.Resources.mare;
-                    //tmp_locY += 53;
+                    switch (0)
+                    {
+                        default:
+                        case 0:
+                            this.Griglia_pictureBox[i, j].BackgroundImage = Properties.Resources.mare;
+                            break;
+                    }
                 }
-                //tmp_locX += 53;
             }
 
             #endregion
@@ -225,6 +277,10 @@ namespace KingOfPirates.GUI.MenuMissioni
             this.Controls.Add(this.Rum_label);
             this.Controls.Add(this.AssLeg_button);
             this.Controls.Add(this.AssLeg_label);
+            this.Controls.Add(this.BevandaDet_button);
+            this.Controls.Add(this.BevandaDet_label);
+            this.Controls.Add(this.AntiUbriachezza_button);
+            this.Controls.Add(this.AntiUbriachezza_label);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MenuMissioni_FormClosing);
             this.Name = "MenuMissioni";
             this.Text = "MenuMissioni";
@@ -249,9 +305,13 @@ namespace KingOfPirates.GUI.MenuMissioni
         private System.Windows.Forms.Button Destra_button;
         private System.Windows.Forms.Button Azione_button;
         private System.Windows.Forms.TableLayoutPanel Griglia_tableLayoutPanel;
-        private System.Windows.Forms.Button Rum_button;
+        private Button Rum_button;
+        private Label Rum_label;
         private Button AssLeg_button;
         private Label AssLeg_label;
-        private Label Rum_label;
+        private Button BevandaDet_button;
+        private Label BevandaDet_label;
+        private Button AntiUbriachezza_button;
+        private Label AntiUbriachezza_label;
     }
 }

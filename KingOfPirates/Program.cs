@@ -40,11 +40,20 @@ namespace KingOfPirates
         public static GUI.ScontroCarte.ScontroCarte scontroCarte;
         private static Task initTask = new Task(() =>
         {
-            Console.WriteLine("#+ Inizio inizializzazione Forms con Task");
-            nassauForm = new GUI.MenuNassau.Nassau_form();
+        Console.WriteLine("#+ Inizializzazione Forms con Task");
+        nassauForm = new GUI.MenuNassau.Nassau_form();
+
+        Griglia griglia_prova[,] = new {{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+            { 0,0,0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+            { 0,0,0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+            { 0,0,0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+                                     0,0,0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                                     0,0,0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                                     0,0,0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                                     {0,0,0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,} }
             menuMissioni = new GUI.MenuMissioni.FormMissione(new Missione(new Loc2D(4, 4), new Loc2D(10, 10), 10));
             scontroCarte = new GUI.ScontroCarte.ScontroCarte();
-            Console.WriteLine("#- Fine inizializzazione Forms con Task");
+            Console.WriteLine("#- Inizializzazione Forms con Task");
         });
 
         public static void Start()

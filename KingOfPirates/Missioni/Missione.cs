@@ -17,13 +17,16 @@ namespace KingOfPirates.Missioni
         protected NaveNemico[] Nemici { get; set; }
         internal Loc2D PosNave { get; set; }
         internal Loc2D PosBandiera { get; set; }
+        internal Griglia Griglia_numerica { get; set; }
 
 
-        public Missione(Loc2D posNave, Loc2D posBandiera, int reward)
+        public Missione(Griglia Griglia_numerica, Loc2D posNave, Loc2D posBandiera, int reward)
         {
             this.PosBandiera = posBandiera;
             this.PosNave = posNave;
             this.Reward = reward;
+
+            this.Griglia_numerica = Griglia_numerica;
             this.Mappa = new GUI.MenuMissioni.FormMissione(this);
         }
 

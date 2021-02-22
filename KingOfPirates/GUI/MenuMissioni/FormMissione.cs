@@ -22,6 +22,7 @@ namespace KingOfPirates.GUI.MenuMissioni
     public partial class FormMissione : Form
     {
         private Missione missione;
+
         public FormMissione(Missione missione)
         {
             InitializeComponent(19, 12);
@@ -85,6 +86,16 @@ namespace KingOfPirates.GUI.MenuMissioni
         }
 
         private void AssLeg_button_Click(object sender, EventArgs e)
+        {
+            //
+        }
+
+        private void BevandaDet_button_Click(object sender, EventArgs e)
+        {
+            //
+        }
+
+        private void AntiUbriachezza_button_Click(object sender, EventArgs e)
         {
             //
         }
