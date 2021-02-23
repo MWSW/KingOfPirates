@@ -22,6 +22,7 @@ namespace KingOfPirates.GUI.MenuMissioni
     public partial class FormMissione : Form
     {
         private Missione missione;
+        private Image temp;
 
         public FormMissione(Missione missione)
         {
@@ -29,18 +30,18 @@ namespace KingOfPirates.GUI.MenuMissioni
             InitializeComponent(19, 12);
 
             Gioco.Giocatore.Loc.X = missione.PosNave.X; Gioco.Giocatore.Loc.Y = missione.PosNave.Y;
+            temp = Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage;
             Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = Properties.Resources.nave_pirata;
         }
 
         private void Sopra_button_Click(object sender, EventArgs e)
         {
-            if (Gioco.Giocatore.Loc.Y - 1 < 0)
-            {
-                return;
-            }
-            Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = Properties.Resources.mare;
-            Gioco.Giocatore.Loc.Y--;
-            Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = Properties.Resources.nave_pirata;
+            if (Gioco.Giocatore.Loc.Y - 1 < 0) return;
+
+            Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = temp; //texture vecchia
+            Gioco.Giocatore.Loc.Y--; //aggiorno la posizione
+            temp = Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage; //aggiorno temp
+            Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = Properties.Resources.nave_pirata; //mostri nave
         }
 
         private void Sotto_button_Click(object sender, EventArgs e)
@@ -49,8 +50,9 @@ namespace KingOfPirates.GUI.MenuMissioni
             {
                 return;
             }
-            Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = Properties.Resources.mare;
+            Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = temp;
             Gioco.Giocatore.Loc.Y++;
+            temp = Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage;
             Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = Properties.Resources.nave_pirata;
         }
 
@@ -60,8 +62,9 @@ namespace KingOfPirates.GUI.MenuMissioni
             {
                 return;
             }
-            Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = Properties.Resources.mare;
+            Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = temp;
             Gioco.Giocatore.Loc.X--;
+            temp = Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage;
             Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = Properties.Resources.nave_pirata;
         }
 
@@ -71,8 +74,9 @@ namespace KingOfPirates.GUI.MenuMissioni
             {
                 return;
             }
-            Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = Properties.Resources.mare;
+            Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = temp;
             Gioco.Giocatore.Loc.X++;
+            temp = Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage;
             Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = Properties.Resources.nave_pirata;
         }
 
