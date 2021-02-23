@@ -224,6 +224,8 @@ namespace KingOfPirates.GUI.MenuMissioni
             this.Griglia_tableLayoutPanel.Size = new System.Drawing.Size(1090, 680);
             this.Griglia_tableLayoutPanel.Name = "Griglia_tableLayoutPanel";
             this.Griglia_tableLayoutPanel.TabIndex = 4;
+            this.Griglia_tableLayoutPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Griglia_tableLayoutPanel.BackgroundImage = Properties.Resources.mare;
             this.Griglia_tableLayoutPanel.ColumnCount = picBoxXSize;
             this.Griglia_tableLayoutPanel.RowCount = picBoxYSize;
 
