@@ -29,7 +29,9 @@ namespace KingOfPirates
         }
     }
 
-    // Classe per aiutare nell'avvio e terminazione del programma, da aggiornare per il programma finale
+    /// <summary>
+    /// Classe per aiutare nell'avvio e terminazione del programma, da aggiornare per il programma finale
+    /// </summary>
 
     static class Gioco
     {
@@ -40,10 +42,10 @@ namespace KingOfPirates
         public static GUI.ScontroCarte.ScontroCarte scontroCarte;
         private static Task initTask = new Task(() =>
         {
-        Console.WriteLine("#+ Inizializzazione Forms con Task");
-        nassauForm = new GUI.MenuNassau.Nassau_form();
+            Console.WriteLine("#+ Inizializzazione con Task");
+            nassauForm = new GUI.MenuNassau.Nassau_form();
 
-            Griglia griglia_prova = new Griglia(new int [19,12] {{0,0,0,0,0,0,0,0,0,0,0,0},
+            Griglia griglia_prova = new Griglia(new int[19, 12] {{0,0,0,0,0,0,0,0,0,0,0,0},
                                                                  {0,0,0,0,0,0,0,0,0,0,0,0},
                                                                  {0,1,1,1,1,1,1,1,1,0,0,0},
                                                                  {0,0,1,1,1,1,1,1,0,0,0,0},
@@ -64,8 +66,8 @@ namespace KingOfPirates
                                                                  {0,0,0,0,0,0,0,0,0,0,0,0}});
 
             menuMissioni = new GUI.MenuMissioni.FormMissione(new Missione(griglia_prova, new Loc2D(4, 4), new Loc2D(10, 10), 10));
-                scontroCarte = new GUI.ScontroCarte.ScontroCarte();
-                Console.WriteLine("#- Inizializzazione Forms con Task");
+            scontroCarte = new GUI.ScontroCarte.ScontroCarte();
+            Console.WriteLine("#- Inizializzazione con Task");
         });
 
         public static void Start()
