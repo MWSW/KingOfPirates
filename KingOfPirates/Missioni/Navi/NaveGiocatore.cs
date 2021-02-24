@@ -13,14 +13,16 @@ namespace KingOfPirates.Missioni.Navi
     public class NaveGiocatore : Nave
     {
         private bool StaNavigando { get; set; } //Verifica che sia su terreno o meno
-        private int Ubriachezza { get; set; }
+        public int Ubriachezza { get; set; }
+        public int UbriachezzaMax { get; set; }
         public int Energia { get; set; }
         public int EnergiaMax { get; set; }
         public Inventario Inventario { get; set; }
 
-        public NaveGiocatore(string nome_, Bitmap immagine_, Stats stats_, Loc2D loc_, int energiaMax) : base(nome_, immagine_, stats_, loc_)
+        public NaveGiocatore(string nome_, Bitmap immagine_, Stats stats_, Loc2D loc_, int energiaMax, int ubriachezzaMax) : base(nome_, immagine_, stats_, loc_)
         {
             StaNavigando = false;
+            UbriachezzaMax = ubriachezzaMax;
             Ubriachezza = 0;
             EnergiaMax = energiaMax;
             Energia = EnergiaMax;
@@ -44,6 +46,22 @@ namespace KingOfPirates.Missioni.Navi
         public void RemEnergia(int enTolta)
         {
             Energia -= enTolta;
+        }
+
+        public void IncUbriachezza(int punti)
+        {
+            Ubriachezza += punti;
+
+            if (Ubriachezza > UbriachezzaMax)
+                Ubriachezza = UbriachezzaMax;
+        }
+
+        public void DecUbriachezza(int punti)
+        {
+            Ubriachezza -= punti;
+
+            if (Ubriachezza < 0)
+                Ubriachezza = 0;
         }
 
         //TODO: public void UsaOggetto(Oggetto o){}

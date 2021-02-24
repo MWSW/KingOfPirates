@@ -53,6 +53,7 @@ namespace KingOfPirates.GUI.MenuMissioni
             this.AntiUbriachezza_button = new Button();
             this.AntiUbriachezza_label = new Label();
             this.EnergiaNave_label = new Label();
+            this.Ubriachezza_label = new Label();
             this.Griglia_pictureBox = new System.Windows.Forms.PictureBox[picBoxXSize, picBoxYSize];
             ((System.ComponentModel.ISupportInitialize)(this.cartinaBindingSource)).BeginInit();
             this.Griglia_tableLayoutPanel.SuspendLayout();
@@ -81,6 +82,19 @@ namespace KingOfPirates.GUI.MenuMissioni
             this.EnergiaNave_label.Text = "Punti azione: " + Gioco.Giocatore.Energia + "/" + Gioco.Giocatore.EnergiaMax;
             this.EnergiaNave_label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.EnergiaNave_label.AutoSize = false;
+            // 
+            // Ubriachezza
+            // 
+
+            StatusStartPointY += 18;
+
+            this.Ubriachezza_label.Location = new System.Drawing.Point(StatusStartPointX, StatusStartPointY);
+            this.Ubriachezza_label.Name = "Ubriacchezza_label";
+            this.Ubriachezza_label.Size = new System.Drawing.Size(156, 15);
+            this.Ubriachezza_label.TabIndex = 1;
+            this.Ubriachezza_label.Text = "Ubriachezza: " + Gioco.Giocatore.Ubriachezza + "/" + Gioco.Giocatore.UbriachezzaMax;
+            this.Ubriachezza_label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Ubriachezza_label.AutoSize = false;
             #endregion
 
             #region Joystick
@@ -309,6 +323,7 @@ namespace KingOfPirates.GUI.MenuMissioni
             this.Controls.Add(this.AntiUbriachezza_button);
             this.Controls.Add(this.AntiUbriachezza_label);
             this.Controls.Add(this.EnergiaNave_label);
+            this.Controls.Add(this.Ubriachezza_label);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MenuMissioni_FormClosing);
             this.Name = "MenuMissioni";
             this.Text = "MenuMissioni";
@@ -343,5 +358,6 @@ namespace KingOfPirates.GUI.MenuMissioni
         private Label AntiUbriachezza_label;
 
         private Label EnergiaNave_label;
+        private Label Ubriachezza_label;
     }
 }

@@ -50,7 +50,12 @@ namespace KingOfPirates.GUI.MenuMissioni
                 Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = temp; //texture vecchia
                 Gioco.Giocatore.Loc.Y--; //aggiorno la posizione
                 temp = Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage; //aggiorno temp
-                Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = Properties.Resources.nave_pirata; //mostri nave
+
+                //cambia immagine se è sopra una isola
+                if (missione.Griglia_numerica.Mat[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y + 1] == 1)
+                    Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = Properties.Resources.omino;
+                else
+                    Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = Properties.Resources.nave_pirata;
 
                 Gioco.Giocatore.RemEnergia(1); //consumi energia
                 this.EnergiaNave_label.Text = "Punti azione: " + Gioco.Giocatore.Energia + "/" + Gioco.Giocatore.EnergiaMax; //aggiorna energia_label
@@ -59,6 +64,7 @@ namespace KingOfPirates.GUI.MenuMissioni
             {
                 MessageBox.Show("Energia finita!");
                 Gioco.Giocatore.Energia = Gioco.Giocatore.EnergiaMax; //ripristino energia
+                this.EnergiaNave_label.Text = "Punti azione: " + Gioco.Giocatore.Energia + "/" + Gioco.Giocatore.EnergiaMax; //aggiorna energia_label
             }
 
         }
@@ -88,6 +94,7 @@ namespace KingOfPirates.GUI.MenuMissioni
             {
                 MessageBox.Show("Energia finita!");
                 Gioco.Giocatore.Energia = Gioco.Giocatore.EnergiaMax; //ripristino energia
+                this.EnergiaNave_label.Text = "Punti azione: " + Gioco.Giocatore.Energia + "/" + Gioco.Giocatore.EnergiaMax; //aggiorna energia_label
             }
         }
 
@@ -116,6 +123,7 @@ namespace KingOfPirates.GUI.MenuMissioni
             {
                 MessageBox.Show("Energia finita!");
                 Gioco.Giocatore.Energia = Gioco.Giocatore.EnergiaMax; //ripristino energia
+                this.EnergiaNave_label.Text = "Punti azione: " + Gioco.Giocatore.Energia + "/" + Gioco.Giocatore.EnergiaMax; //aggiorna energia_label
             }
         }
 
@@ -145,6 +153,7 @@ namespace KingOfPirates.GUI.MenuMissioni
             {
                 MessageBox.Show("Energia finita!");
                 Gioco.Giocatore.Energia = Gioco.Giocatore.EnergiaMax; //ripristino energia
+                this.EnergiaNave_label.Text = "Punti azione: " + Gioco.Giocatore.Energia + "/" + Gioco.Giocatore.EnergiaMax; //aggiorna energia_label
             }
         }
 
@@ -157,8 +166,12 @@ namespace KingOfPirates.GUI.MenuMissioni
         private void Rum_button_Click(object sender, EventArgs e)
         {
             Gioco.Giocatore.Inventario.DecRum(); //consumi una unità di rum
+
+            Gioco.Giocatore.IncUbriachezza(2); //aumenta l'ubriachezza
+
             //aggiorno label
             this.Rum_label.Text = "Rum rimasto: " + Gioco.Giocatore.Inventario.Rum;
+            this.Ubriachezza_label.Text = "Ubriachezza: " + Gioco.Giocatore.Ubriachezza + "/" + Gioco.Giocatore.UbriachezzaMax;
         }
 
         private void AssLeg_button_Click(object sender, EventArgs e)
@@ -178,8 +191,11 @@ namespace KingOfPirates.GUI.MenuMissioni
         private void AntiUbriachezza_button_Click(object sender, EventArgs e)
         {
             Gioco.Giocatore.Inventario.DecAntiUbriachezza(); //consumi una bevanda anti ubriachezza
+            Gioco.Giocatore.DecUbriachezza(2); //diminuisce l'ubriachezza
+
             //aggiorno il label
             this.AntiUbriachezza_label.Text = "AntiUbriachezza rimasti: " + Gioco.Giocatore.Inventario.AntiUbriachezza;
+            this.Ubriachezza_label.Text = "Ubriachezza: " + Gioco.Giocatore.Ubriachezza + "/" + Gioco.Giocatore.UbriachezzaMax;
         }
 
         private void MenuMissioni_FormClosing(object sender, FormClosingEventArgs e)
