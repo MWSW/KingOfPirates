@@ -21,6 +21,14 @@ namespace KingOfPirates.Missioni.Navi.Opponenti
             AssiLegno = 0;
         }
 
+        public Inventario(int bevandaDeterminazione, int rum, int antiUbriachezza, int assiLegno)
+        {
+            BevandaDeterminazione = bevandaDeterminazione;
+            Rum = rum;
+            AntiUbriachezza = antiUbriachezza;
+            AssiLegno = assiLegno;
+        }
+
         public void IncBevandaDeterminazione()
         {
             BevandaDeterminazione ++;
@@ -44,21 +52,33 @@ namespace KingOfPirates.Missioni.Navi.Opponenti
         public void DecBevandaDeterminazione()
         {
             BevandaDeterminazione --;
+
+            if (BevandaDeterminazione < 0)
+                BevandaDeterminazione = 0;
         }
 
         public void DecRum()
         {
             Rum --;
+
+            if (Rum < 0)
+                Rum = 0;
         }
 
         public void DecAntiUbriachezza()
         {
             AntiUbriachezza --;
+
+            if (AntiUbriachezza < 0)
+                AntiUbriachezza = 0;
         }
 
         public void DecAssiLegno()
         {
             AssiLegno --;
+
+            if (AssiLegno < 0)
+                AssiLegno = 0;
         }
     }
 }

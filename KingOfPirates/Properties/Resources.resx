@@ -124,8 +124,8 @@
   <data name="cartaVuota" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cartaVuota.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pow_buff" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pow_buff.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="depotenziamento" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\depotenziamento.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ant" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ant.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,8 +157,8 @@
   <data name="nascondi" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\nascondi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="depotenziamento" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\depotenziamento.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bevDet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bevDet.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="debuff" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\debuff.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,6 +169,9 @@
   <data name="sfondo_carta" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sfondo_carta.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="pow_buff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pow_buff.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="nave_bianca" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\navi_laterali\nave_bianca.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -178,17 +181,14 @@
   <data name="nave_verde" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\navi_laterali\nave_verde.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="sangue" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sangue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="rum" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rum.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="isola2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\isole_default\isola2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="SpazioVuoto" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SpazioVuoto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="sangue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sangue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="info" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\info.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -232,8 +232,11 @@
   <data name="BufferDrink" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BufferDrink.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bevDet" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bevDet.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="montagna" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\montagna.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SpazioVuoto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SpazioVuoto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="mare" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mare.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -244,7 +247,7 @@
   <data name="vita_buff" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\vita_buff.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="montagna" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\montagna.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="omino" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\omino.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

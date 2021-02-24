@@ -100,7 +100,6 @@ namespace KingOfPirates.Missioni.ScontroCarte.Carte
         public string Nome { get => nome; }
         public int Determinazione { get => curDet; }
         public int Indice { get => indice; set => indice = value; }
-
         public string Tipo { get => tipo; }
     }
 }
