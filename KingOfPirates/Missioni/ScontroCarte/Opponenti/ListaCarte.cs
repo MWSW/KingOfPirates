@@ -9,7 +9,7 @@ using KingOfPirates.Missioni.ScontroCarte.Carte.CarteEffetto;
 
 namespace KingOfPirates.Missioni.ScontroCarte.Opponenti
 {
-    abstract class ListaCarte
+    public abstract class ListaCarte
     {
        public static Carta GetCarta(int indice)
        {

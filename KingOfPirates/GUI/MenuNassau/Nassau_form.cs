@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using KingOfPirates.Cartina;
 using KingOfPirates.Missioni.Navi;
+using KingOfPirates.Missioni.ScontroCarte.Opponenti;
 
 namespace KingOfPirates.GUI.MenuNassau
 {
@@ -22,6 +23,7 @@ namespace KingOfPirates.GUI.MenuNassau
 
         private GestioneDominio gestoreDomino = new GestioneDominio();                      //da spostare nel 'main' per renderlo utilizzabile anche dalla missione
         private NaveGiocatore naveGiocatore;                                                //da spostare nel 'main' per renderlo utilizzabile anche dalla missione
+        private ListaCarte listaCarte;
 
         public Nassau_form()
         {
@@ -31,9 +33,9 @@ namespace KingOfPirates.GUI.MenuNassau
             gestoreDomino.TaglieMercantile = 3; //=
 
             InitializeComponent();
-            negozio = new Negozio_form(gestoreDomino, naveGiocatore);
+            negozio = new Negozio_form(gestoreDomino, naveGiocatore, listaCarte);
             locanda = new Locanda_form(gestoreDomino);
-            porto = new Porto_form();
+            porto = new Porto_form(gestoreDomino, naveGiocatore);
         }
         
         private void NegozioImgButton_Click(object sender, EventArgs e)

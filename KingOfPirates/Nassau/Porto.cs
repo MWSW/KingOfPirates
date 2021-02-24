@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 using System.Drawing; //per le Bitmap
+using KingOfPirates.Missioni.Navi;
+using KingOfPirates.Cartina;
 
 namespace KingOfPirates.Nassau
 {
@@ -17,23 +18,69 @@ namespace KingOfPirates.Nassau
 
         private int livelloPorto;
 
+        private int[] prezzoCannoni;
+        private int[] prezzoScafo;
+        private int[] prezzoVele;
+
         public Porto()
         {
             nome = "Porto";
             livelloPorto = 0;
-            livelloCannoni = 0;
-            livelloVele = 0;
-            livelloScafo = 0;
+            LivelloCannoni = 0;
+            LivelloVele = 0;
+            LivelloScafo = 0;
+
+            PrezzoCannoni = new int[3];
+            PrezzoScafo = new int[3];
+            PrezzoVele = new int[3];
+
+            PrezzoCannoni[0] = 55;
+            PrezzoScafo[0] = 45;
+            PrezzoVele[0] = 52;
+
+            PrezzoCannoni[1] = 120;
+            PrezzoScafo[1] = 100;
+            PrezzoVele[1] = 110;
+
+            PrezzoCannoni[2] = 200;
+            PrezzoScafo[2] = 180;
+            PrezzoVele[2] = 190;
         }
+        public int LivelloCannoni { get => livelloCannoni; set => livelloCannoni = value; }
+        public int LivelloVele { get => livelloVele; set => livelloVele = value; }
+        public int LivelloScafo { get => livelloScafo; set => livelloScafo = value; }
+        public int[] PrezzoCannoni { get => prezzoCannoni; set => prezzoCannoni = value; }
+        public int[] PrezzoScafo { get => prezzoScafo; set => prezzoScafo = value; }
+        public int[] PrezzoVele { get => prezzoVele; set => prezzoVele = value; }
 
         public void Salpa() 
         {
 
         }
 
-        //TODO: public void PotenziaCannoni(Nave nave) { }
-        //TODO: public void PotenziaVele(Nave nave) { }
-        //TODO: public void PotenziaScafo(Nave nave) { }
+        public void PotenziaCannoni(NaveGiocatore nave, GestioneDominio gestoreDominio) {
+            if(LivelloCannoni <= 3)
+            {
+                gestoreDominio.RemDobloni(PrezzoCannoni[LivelloCannoni]);
+                LivelloCannoni ++;
+            }
+        }
+
+        public void PotenziaVele(NaveGiocatore nave, GestioneDominio gestoreDominio) {
+            if (LivelloVele <= 3)
+            {
+                gestoreDominio.RemDobloni(PrezzoVele[LivelloVele]);
+                LivelloVele ++;
+            }
+        }
+
+        public void PotenziaScafo(NaveGiocatore nave, GestioneDominio gestoreDominio) {
+            if (LivelloScafo <= 3)
+            {
+                gestoreDominio.RemDobloni(PrezzoScafo[LivelloScafo]);
+                LivelloScafo ++;
+            }
+        }
 
         public override void Upgrade()
         {
