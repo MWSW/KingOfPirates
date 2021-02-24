@@ -32,47 +32,47 @@ namespace KingOfPirates.GUI.MenuNassau
 
         public void LoadData()
         {
-            Locanda_Carta1_Panel.BackgroundImage = /*mazzo.getCarta().getImage()*/;
-            Locanda_Carta2_Panel.BackgroundImage = /*mazzo.getCarta().getImage()*/;
-            Locanda_Carta3_Panel.BackgroundImage = /*mazzo.getCarta().getImage()*/;
-            Locanda_Carta4_Panel.BackgroundImage = /*mazzo.getCarta().getImage()*/;
-            Locanda_Carta5_Panel.BackgroundImage = /*mazzo.getCarta().getImage()*/;
-            Locanda_Carta6_Panel.BackgroundImage = /*mazzo.getCarta().getImage()*/;
-            Locanda_Carta7_Panel.BackgroundImage = /*mazzo.getCarta().getImage()*/;
-            Locanda_Carta8_Panel.BackgroundImage = /*mazzo.getCarta().getImage()*/;
-            Locanda_Carta9_Panel.BackgroundImage = /*mazzo.getCarta().getImage()*/;
-            Locanda_Carta10_Panel.BackgroundImage = /*mazzo.getCarta().getImage()*/;
-            Locanda_Carta11_Panel.BackgroundImage = /*mazzo.getCarta().getImage()*/;
-            Locanda_Carta12_Panel.BackgroundImage = /*mazzo.getCarta().getImage()*/;
-            Locanda_Carta13_Panel.BackgroundImage = /*mazzo.getCarta().getImage()*/;
-            Locanda_Carta14_Panel.BackgroundImage = /*mazzo.getCarta().getImage()*/;
-            Locanda_Carta15_Panel.BackgroundImage = /*mazzo.getCarta().getImage()*/;
-            Locanda_Carta16_Panel.BackgroundImage = /*mazzo.getCarta().getImage()*/;
-            Locanda_Carta17_Panel.BackgroundImage = /*mazzo.getCarta().getImage()*/;
-            Locanda_Carta18_Panel.BackgroundImage = /*mazzo.getCarta().getImage()*/;
-            Locanda_Carta19_Panel.BackgroundImage = /*mazzo.getCarta().getImage()*/;
-            Locanda_Carta20_Panel.BackgroundImage = /*mazzo.getCarta().getImage()*/;
+            Locanda_Carta1_Panel.BackgroundImage = mazzo.getCarta().getImage();
+            Locanda_Carta2_Panel.BackgroundImage = mazzo.getCarta().getImage();
+            Locanda_Carta3_Panel.BackgroundImage = mazzo.getCarta().getImage();
+            Locanda_Carta4_Panel.BackgroundImage = mazzo.getCarta().getImage();
+            Locanda_Carta5_Panel.BackgroundImage = mazzo.getCarta().getImage();
+            Locanda_Carta6_Panel.BackgroundImage = mazzo.getCarta().getImage();
+            Locanda_Carta7_Panel.BackgroundImage = mazzo.getCarta().getImage();
+            Locanda_Carta8_Panel.BackgroundImage = mazzo.getCarta().getImage();
+            Locanda_Carta9_Panel.BackgroundImage = mazzo.getCarta().getImage();
+            Locanda_Carta10_Panel.BackgroundImage = mazzo.getCarta().getImage();
+            Locanda_Carta11_Panel.BackgroundImage = mazzo.getCarta().getImage();
+            Locanda_Carta12_Panel.BackgroundImage = mazzo.getCarta().getImage();
+            Locanda_Carta13_Panel.BackgroundImage = mazzo.getCarta().getImage();
+            Locanda_Carta14_Panel.BackgroundImage = mazzo.getCarta().getImage();
+            Locanda_Carta15_Panel.BackgroundImage = mazzo.getCarta().getImage();
+            Locanda_Carta16_Panel.BackgroundImage = mazzo.getCarta().getImage();
+            Locanda_Carta17_Panel.BackgroundImage = mazzo.getCarta().getImage();
+            Locanda_Carta18_Panel.BackgroundImage = mazzo.getCarta().getImage();
+            Locanda_Carta19_Panel.BackgroundImage = mazzo.getCarta().getImage();
+            Locanda_Carta20_Panel.BackgroundImage = mazzo.getCarta().getImage();
 
-            Locanda_Det1_Label.Text = /*mazzo.getCarta().getDeterminazione()*/;
-            Locanda_Det2_Label.Text = /*mazzo.getCarta().getDeterminazione()*/;
-            Locanda_Det3_Label.Text = /*mazzo.getCarta().getDeterminazione()*/;
-            Locanda_Det4_Label.Text = /*mazzo.getCarta().getDeterminazione()*/;
-            Locanda_Det5_Label.Text = /*mazzo.getCarta().getDeterminazione()*/;
-            Locanda_Det6_Label.Text = /*mazzo.getCarta().getDeterminazione()*/;
-            Locanda_Det7_Label.Text = /*mazzo.getCarta().getDeterminazione()*/;
-            Locanda_Det8_Label.Text = /*mazzo.getCarta().getDeterminazione()*/;
-            Locanda_Det9_Label.Text = /*mazzo.getCarta().getDeterminazione()*/;
-            Locanda_Det10_Label.Text = /*mazzo.getCarta().getDeterminazione()*/;
-            Locanda_Det11_Label.Text = /*mazzo.getCarta().getDeterminazione()*/;
-            Locanda_Det12_Label.Text = /*mazzo.getCarta().getDeterminazione()*/;
-            Locanda_Det13_Label.Text = /*mazzo.getCarta().getDeterminazione()*/;
-            Locanda_Det14_Label.Text = /*mazzo.getCarta().getDeterminazione()*/;
-            Locanda_Det15_Label.Text = /*mazzo.getCarta().getDeterminazione()*/;
-            Locanda_Det16_Label.Text = /*mazzo.getCarta().getDeterminazione()*/;
-            Locanda_Det17_Label.Text = /*mazzo.getCarta().getDeterminazione()*/;
-            Locanda_Det18_Label.Text = /*mazzo.getCarta().getDeterminazione()*/;
-            Locanda_Det19_Label.Text = /*mazzo.getCarta().getDeterminazione()*/;
-            Locanda_Det20_Label.Text = /*mazzo.getCarta().getDeterminazione()*/;
+            Locanda_Det1_Label.Text = mazzo.getCarta().getDeterminazione();
+            Locanda_Det2_Label.Text = mazzo.getCarta().getDeterminazione();
+            Locanda_Det3_Label.Text = mazzo.getCarta().getDeterminazione();
+            Locanda_Det4_Label.Text = mazzo.getCarta().getDeterminazione();
+            Locanda_Det5_Label.Text = mazzo.getCarta().getDeterminazione();
+            Locanda_Det6_Label.Text = mazzo.getCarta().getDeterminazione();
+            Locanda_Det7_Label.Text = mazzo.getCarta().getDeterminazione();
+            Locanda_Det8_Label.Text = mazzo.getCarta().getDeterminazione();
+            Locanda_Det9_Label.Text = mazzo.getCarta().getDeterminazione();
+            Locanda_Det10_Label.Text = mazzo.getCarta().getDeterminazione();
+            Locanda_Det11_Label.Text = mazzo.getCarta().getDeterminazione();
+            Locanda_Det12_Label.Text = mazzo.getCarta().getDeterminazione();
+            Locanda_Det13_Label.Text = mazzo.getCarta().getDeterminazione();
+            Locanda_Det14_Label.Text = mazzo.getCarta().getDeterminazione();
+            Locanda_Det15_Label.Text = mazzo.getCarta().getDeterminazione();
+            Locanda_Det16_Label.Text = mazzo.getCarta().getDeterminazione();
+            Locanda_Det17_Label.Text = mazzo.getCarta().getDeterminazione();
+            Locanda_Det18_Label.Text = mazzo.getCarta().getDeterminazione();
+            Locanda_Det19_Label.Text = mazzo.getCarta().getDeterminazione();
+            Locanda_Det20_Label.Text = mazzo.getCarta().getDeterminazione();
 
 
         }

@@ -549,5 +549,12 @@ namespace KingOfPirates.GUI.ScontroCarte
                 isPlaying = true;
             }
         }
+
+        private void ScontroCarte_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            e.Cancel = true;
+            this.Hide();
+            Gioco.startMenu.Show();
+        }
     }
 }
