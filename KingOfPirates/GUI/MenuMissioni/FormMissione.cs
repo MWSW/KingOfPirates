@@ -36,55 +36,95 @@ namespace KingOfPirates.GUI.MenuMissioni
 
         private void Sopra_button_Click(object sender, EventArgs e)
         {
-            if (Gioco.Giocatore.Loc.Y - 1 < 0) return;
-            if (missione.Griglia_numerica.Mat[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y - 1] == 2) return;
+            if (Gioco.Giocatore.Energia > 0) //Hai abbastanza energia
+            {
+                if (Gioco.Giocatore.Loc.Y - 1 < 0) return;
+                if (missione.Griglia_numerica.Mat[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y - 1] == 2) return;
 
-            Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = temp; //texture vecchia
-            Gioco.Giocatore.Loc.Y--; //aggiorno la posizione
-            temp = Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage; //aggiorno temp
-            Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = Properties.Resources.nave_pirata; //mostri nave
+                Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = temp; //texture vecchia
+                Gioco.Giocatore.Loc.Y--; //aggiorno la posizione
+                temp = Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage; //aggiorno temp
+                Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = Properties.Resources.nave_pirata; //mostri nave
+
+                Gioco.Giocatore.RemEnergia(1); //consumi energia
+                this.EnergiaNave_label.Text = "Punti azione: " + Gioco.Giocatore.Energia + "/" + Gioco.Giocatore.EnergiaMax; //aggiorna energia_label
+            }
+            else
+            {
+                MessageBox.Show("Energia finita!");
+                Gioco.Giocatore.Energia = Gioco.Giocatore.EnergiaMax; //ripristino energia
+            }
+
         }
 
         private void Sotto_button_Click(object sender, EventArgs e)
         {
-            if (Gioco.Giocatore.Loc.Y + 1 > 11)
+            if (Gioco.Giocatore.Energia > 0) //Hai abbastanza energia
             {
-                return;
-            }
-            if (missione.Griglia_numerica.Mat[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y + 1] == 2) return;
+                if (Gioco.Giocatore.Loc.Y + 1 > 11) return;
+                if (missione.Griglia_numerica.Mat[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y + 1] == 2) return;
 
-            Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = temp;
-            Gioco.Giocatore.Loc.Y++;
-            temp = Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage;
-            Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = Properties.Resources.nave_pirata;
+                Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = temp;
+                Gioco.Giocatore.Loc.Y++;
+                temp = Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage;
+                Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = Properties.Resources.nave_pirata;
+
+
+                Gioco.Giocatore.RemEnergia(1); //consumi energia
+                this.EnergiaNave_label.Text = "Punti azione: " + Gioco.Giocatore.Energia + "/" + Gioco.Giocatore.EnergiaMax; //aggiorna energia_label
+            }
+            else
+            {
+                MessageBox.Show("Energia finita!");
+                Gioco.Giocatore.Energia = Gioco.Giocatore.EnergiaMax; //ripristino energia
+            }
         }
 
         private void Sinistra_button_Click(object sender, EventArgs e)
         {
-            if (Gioco.Giocatore.Loc.X - 1 < 0)
+            if (Gioco.Giocatore.Energia > 0) //Hai abbastanza energia
             {
-                return;
-            }
-            if (missione.Griglia_numerica.Mat[Gioco.Giocatore.Loc.X - 1, Gioco.Giocatore.Loc.Y] == 2) return;
+                //Controlli sulle posizioni
+                if (Gioco.Giocatore.Loc.X - 1 < 0) return;
+                if (missione.Griglia_numerica.Mat[Gioco.Giocatore.Loc.X - 1, Gioco.Giocatore.Loc.Y] == 2) return;
 
-            Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = temp;
-            Gioco.Giocatore.Loc.X--;
-            temp = Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage;
-            Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = Properties.Resources.nave_pirata;
+                Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = temp;
+                Gioco.Giocatore.Loc.X--;
+                temp = Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage;
+                Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = Properties.Resources.nave_pirata;
+
+
+                Gioco.Giocatore.RemEnergia(1); //consumi energia
+                this.EnergiaNave_label.Text = "Punti azione: " + Gioco.Giocatore.Energia + "/" + Gioco.Giocatore.EnergiaMax; //aggiorna energia_label
+            }
+            else
+            {
+                MessageBox.Show("Energia finita!");
+                Gioco.Giocatore.Energia = Gioco.Giocatore.EnergiaMax; //ripristino energia
+            }
         }
 
         private void Destra_button_Click(object sender, EventArgs e)
         {
-            if (Gioco.Giocatore.Loc.X + 1 > 18)
+            if (Gioco.Giocatore.Energia > 0) //Hai abbastanza energia
             {
-                return;
-            }
-            if (missione.Griglia_numerica.Mat[Gioco.Giocatore.Loc.X + 1, Gioco.Giocatore.Loc.Y] == 2) return;
+                if (Gioco.Giocatore.Loc.X + 1 > 18) return;
+                if (missione.Griglia_numerica.Mat[Gioco.Giocatore.Loc.X + 1, Gioco.Giocatore.Loc.Y] == 2) return;
 
-            Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = temp;
-            Gioco.Giocatore.Loc.X++;
-            temp = Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage;
-            Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = Properties.Resources.nave_pirata;
+                Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = temp;
+                Gioco.Giocatore.Loc.X++;
+                temp = Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage;
+                Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = Properties.Resources.nave_pirata;
+
+
+                Gioco.Giocatore.RemEnergia(1); //consumi energia
+                this.EnergiaNave_label.Text = "Punti azione: " + Gioco.Giocatore.Energia + "/" + Gioco.Giocatore.EnergiaMax; //aggiorna energia_label
+            }
+            else
+            {
+                MessageBox.Show("Energia finita!");
+                Gioco.Giocatore.Energia = Gioco.Giocatore.EnergiaMax; //ripristino energia
+            }
         }
 
         private void Azione_button_Click(object sender, EventArgs e)

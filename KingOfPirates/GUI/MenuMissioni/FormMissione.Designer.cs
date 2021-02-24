@@ -52,6 +52,7 @@ namespace KingOfPirates.GUI.MenuMissioni
             this.BevandaDet_label = new Label();
             this.AntiUbriachezza_button = new Button();
             this.AntiUbriachezza_label = new Label();
+            this.EnergiaNave_label = new Label();
             this.Griglia_pictureBox = new System.Windows.Forms.PictureBox[picBoxXSize, picBoxYSize];
             ((System.ComponentModel.ISupportInitialize)(this.cartinaBindingSource)).BeginInit();
             this.Griglia_tableLayoutPanel.SuspendLayout();
@@ -64,6 +65,23 @@ namespace KingOfPirates.GUI.MenuMissioni
                 }
             }
             this.SuspendLayout();
+
+            #region StatusNaveGiocatore
+
+            int StatusStartPointX = 1090;
+            int StatusStartPointY = 350;
+
+            // 
+            // Energia Nave
+            // 
+            this.EnergiaNave_label.Location = new System.Drawing.Point(StatusStartPointX, StatusStartPointY);
+            this.EnergiaNave_label.Name = "EnergiaNave_label";
+            this.EnergiaNave_label.Size = new System.Drawing.Size(156, 15);
+            this.EnergiaNave_label.TabIndex = 1;
+            this.EnergiaNave_label.Text = "Punti azione: " + Gioco.Giocatore.Energia + "/" + Gioco.Giocatore.EnergiaMax;
+            this.EnergiaNave_label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.EnergiaNave_label.AutoSize = false;
+            #endregion
 
             #region Joystick
 
@@ -290,6 +308,7 @@ namespace KingOfPirates.GUI.MenuMissioni
             this.Controls.Add(this.BevandaDet_label);
             this.Controls.Add(this.AntiUbriachezza_button);
             this.Controls.Add(this.AntiUbriachezza_label);
+            this.Controls.Add(this.EnergiaNave_label);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MenuMissioni_FormClosing);
             this.Name = "MenuMissioni";
             this.Text = "MenuMissioni";
@@ -322,5 +341,7 @@ namespace KingOfPirates.GUI.MenuMissioni
         private Label BevandaDet_label;
         private Button AntiUbriachezza_button;
         private Label AntiUbriachezza_label;
+
+        private Label EnergiaNave_label;
     }
 }

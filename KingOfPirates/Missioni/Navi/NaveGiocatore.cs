@@ -18,12 +18,12 @@ namespace KingOfPirates.Missioni.Navi
         public int EnergiaMax { get; set; }
         public Inventario Inventario { get; set; }
 
-        public NaveGiocatore(string nome_, Bitmap immagine_, Stats stats_, Loc2D loc_, int energia, int energiaMax) : base(nome_, immagine_, stats_, loc_)
+        public NaveGiocatore(string nome_, Bitmap immagine_, Stats stats_, Loc2D loc_, int energiaMax) : base(nome_, immagine_, stats_, loc_)
         {
             StaNavigando = false;
             Ubriachezza = 0;
-            Energia = energia;
             EnergiaMax = energiaMax;
+            Energia = EnergiaMax;
             Inventario = new Inventario();
         }
 
@@ -43,7 +43,7 @@ namespace KingOfPirates.Missioni.Navi
 
         public void RemEnergia(int enTolta)
         {
-            Energia += enTolta;
+            Energia -= enTolta;
         }
 
         //TODO: public void UsaOggetto(Oggetto o){}
