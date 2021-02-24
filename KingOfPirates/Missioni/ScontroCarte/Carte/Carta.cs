@@ -14,6 +14,8 @@ namespace KingOfPirates.Missioni.ScontroCarte.Carte
     {
         protected string nome;
         protected int determinazione;
+        private int curDet;
+
         protected bool utilizzabile; //Non so se va in conflitto con mazzo
         protected Bitmap immagine;
 
@@ -25,6 +27,8 @@ namespace KingOfPirates.Missioni.ScontroCarte.Carte
         {
             nome = nome_;
             determinazione = determinazione_;
+            curDet = determinazione;
+
             immagine = immagine_;
 
             tipo = tipo_;
@@ -60,15 +64,24 @@ namespace KingOfPirates.Missioni.ScontroCarte.Carte
             Visualizza(img_carta, nomeCarta, det);
         }
 
-        public abstract void UsaCarta(Giocatore_carte_base utilizzatore); //FIXME
+        public virtual void UsaCarta(Giocatore_carte_base utilizzatore)
+        {
+           // determinazione--;
+        }
 
         public void AddDeterminazione(int val)
         {
-           determinazione += val;
+           curDet += val;
+
+            if (curDet >= determinazione)
+                curDet = determinazione;
         } 
         public void DimDeterminazione(int val)
         {
-           determinazione -= val;
+           curDet -= val;
+
+            if (curDet < 0) //Dovrebbe settare la carta come morta... TODO
+                curDet = 0;
         } 
 
         public bool GetUtilizzabile()
@@ -81,9 +94,11 @@ namespace KingOfPirates.Missioni.ScontroCarte.Carte
             utilizzabile = b;
         }
 
+        public abstract Carta Clona();
+
         public Bitmap Immagine { get => immagine; }
         public string Nome { get => nome; }
-        public int Determinazione { get => determinazione; }
+        public int Determinazione { get => curDet; }
         public int Indice { get => indice; set => indice = value; }
 
         public string Tipo { get => tipo; }

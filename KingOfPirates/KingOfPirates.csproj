@@ -33,9 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PresentationCore" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -47,35 +47,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GUI\MenuNassau\Locanda_form.cs">
+    <Compile Include="GUI\MenuPrincipale\StartMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\MenuNassau\Locanda_form.Designer.cs">
-      <DependentUpon>Locanda_form.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\MenuNassau\Nassau_form.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\MenuNassau\Nassau_form.Designer.cs">
-      <DependentUpon>Nassau_form.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\MenuNassau\Negozio_form.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\MenuNassau\Negozio_form.Designer.cs">
-      <DependentUpon>Negozio_form.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\MenuNassau\Porto_form.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\MenuNassau\Porto_form.Designer.cs">
-      <DependentUpon>Porto_form.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\MenuMissioni\FormMissione.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\MenuMissioni\FormMissione.Designer.cs">
-      <DependentUpon>FormMissione.cs</DependentUpon>
+    <Compile Include="GUI\MenuPrincipale\StartMenu.Designer.cs">
+      <DependentUpon>StartMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\ScontroCarte\ScontroCarte.cs">
       <SubType>Form</SubType>
@@ -83,15 +59,16 @@
     <Compile Include="GUI\ScontroCarte\ScontroCarte.Designer.cs">
       <DependentUpon>ScontroCarte.cs</DependentUpon>
     </Compile>
-    <Compile Include="Mappa\Cartina.cs" />
-    <Compile Include="Mappa\GestioneDominio.cs" />
     <Compile Include="Missioni\Bandiera.cs" />
-    <Compile Include="GUI\MenuPrincipale\StartMenu.cs">
+    <Compile Include="Cartina\Cartina.cs" />
+    <Compile Include="Cartina\GestioneDominio.cs" />
+    <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\MenuPrincipale\StartMenu.Designer.cs">
-      <DependentUpon>StartMenu.cs</DependentUpon>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Gioco.cs" />
     <Compile Include="Missioni\GestoreMissione.cs" />
     <Compile Include="Missioni\Griglia.cs" />
     <Compile Include="Missioni\Missione.cs" />
@@ -109,11 +86,11 @@
     <Compile Include="Missioni\ScontroCarte\Carte\CarteEffetto\CartaDebuff.cs" />
     <Compile Include="Missioni\ScontroCarte\Carte\CarteEffetto\CartaResa.cs" />
     <Compile Include="Missioni\ScontroCarte\Carte\CarteEffetto\CartaTurniExtra.cs" />
-    <Compile Include="Missioni\Navi\Inventario.cs" />
-    <Compile Include="Missioni\ScontroCarte\Opponenti\Giocatore_carte_base.cs" />
     <Compile Include="Missioni\ScontroCarte\Opponenti\ListaCarte.cs" />
     <Compile Include="Missioni\ScontroCarte\Opponenti\Mazzo.cs" />
     <Compile Include="Missioni\ScontroCarte\Opponenti\Nemico_carte.cs" />
+    <Compile Include="Missioni\ScontroCarte\Opponenti\Giocatore_carte_base.cs" />
+    <Compile Include="Missioni\Navi\Inventario.cs" />
     <Compile Include="Missioni\ScontroCarte\Opponenti\Player_carte.cs" />
     <Compile Include="Nassau\Edificio.cs" />
     <Compile Include="Nassau\Locanda.cs" />
@@ -122,41 +99,26 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Missioni\Ranking.cs" />
-    <EmbeddedResource Include="GUI\MenuNassau\Locanda_form.resx">
-      <DependentUpon>Locanda_form.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\MenuNassau\Nassau_form.resx">
-      <DependentUpon>Nassau_form.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\MenuNassau\Negozio_form.resx">
-      <DependentUpon>Negozio_form.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\MenuNassau\Porto_form.resx">
-      <DependentUpon>Porto_form.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\MenuPrincipale\StartMenu.resx">
-      <DependentUpon>StartMenu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\MenuMissioni\FormMissione.resx">
-      <DependentUpon>FormMissione.cs</DependentUpon>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\ScontroCarte\ScontroCarte.resx">
       <DependentUpon>ScontroCarte.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -167,121 +129,51 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\prova.jpg" />
+    <None Include="Resources\pun_pun.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\bevDet.jpg" />
+    <Folder Include="GUI\ScontroCarte\img_test\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\rum.jpg" />
+    <None Include="Resources\cartaVuota.PNG" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\ant.jpg" />
+    <None Include="Resources\fuoco.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\assLeg.png" />
+    <None Include="Resources\ghiaccio.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\back_arrow.jpg" />
-    <Content Include="Resources\bottone_attacco.png" />
-    <Content Include="Resources\BufferDrink.jpg" />
-    <Content Include="Resources\cartaVuota.PNG" />
-    <Content Include="Resources\curaEstesa.jpg" />
-    <Content Include="Resources\curaPozione.png" />
-    <Content Include="Resources\fuoco.png" />
-    <Content Include="Resources\ghiaccio.png" />
-    <Content Include="Resources\HUD - interfaccia\box_5_mosse.png" />
-    <Content Include="Resources\HUD - interfaccia\box_5_mosse_blocchi.png" />
-    <Content Include="Resources\HUD - interfaccia\box_domanda.png" />
-    <Content Include="Resources\HUD - interfaccia\box_fight.png" />
-    <Content Include="Resources\HUD - interfaccia\box_lose.png" />
-    <Content Include="Resources\HUD - interfaccia\box_seleziona_attacchi.png" />
-    <Content Include="Resources\HUD - interfaccia\box_sfida.png" />
-    <Content Include="Resources\HUD - interfaccia\box_win.png" />
-    <Content Include="Resources\HUD - interfaccia\interfaccia_punteggui.png" />
-    <Content Include="Resources\HUD - interfaccia\mossa_attacca.png" />
-    <Content Include="Resources\HUD - interfaccia\mossa_difesa.png" />
-    <Content Include="Resources\HUD - interfaccia\mossa_strategia.png" />
-    <Content Include="Resources\HUD - interfaccia\sfondo_interfaccia.png" />
-    <Content Include="Resources\info.png" />
-    <Content Include="Resources\isolaDelTesoro_pezzi\tile_01.png" />
-    <Content Include="Resources\isolaDelTesoro_pezzi\tile_02.png" />
-    <Content Include="Resources\isolaDelTesoro_pezzi\tile_03.png" />
-    <Content Include="Resources\isolaDelTesoro_pezzi\tile_04.png" />
-    <Content Include="Resources\isolaDelTesoro_pezzi\tile_05.png" />
-    <Content Include="Resources\isolaDelTesoro_pezzi\tile_06.png" />
-    <Content Include="Resources\isolaDelTesoro_pezzi\tile_07.png" />
-    <Content Include="Resources\isolaDelTesoro_pezzi\tile_08.png" />
-    <Content Include="Resources\isolaDelTesoro_pezzi\tile_09.png" />
-    <Content Include="Resources\isolaDelTesoro_pezzi\tile_17.png" />
-    <Content Include="Resources\isolaDelTesoro_pezzi\tile_18.png" />
-    <Content Include="Resources\isolaDelTesoro_pezzi\tile_19.png" />
-    <Content Include="Resources\isolaDelTesoro_pezzi\tile_20.png" />
-    <Content Include="Resources\isolaDelTesoro_pezzi\tile_21.png" />
-    <Content Include="Resources\isolaDelTesoro_pezzi\tile_22.png" />
-    <Content Include="Resources\isolaDelTesoro_pezzi\tile_23.png" />
-    <Content Include="Resources\isolaDelTesoro_pezzi\tile_24.png" />
-    <Content Include="Resources\isolaDelTesoro_pezzi\tile_25.png" />
-    <Content Include="Resources\isolaDelTesoro_pezzi\tile_33.png" />
-    <Content Include="Resources\isolaDelTesoro_pezzi\tile_34.png" />
-    <Content Include="Resources\isolaDelTesoro_pezzi\tile_35.png" />
-    <Content Include="Resources\isolaDelTesoro_pezzi\tile_36.png" />
-    <Content Include="Resources\isolaDelTesoro_pezzi\tile_37.png" />
-    <Content Include="Resources\isolaDelTesoro_pezzi\tile_38.png" />
-    <Content Include="Resources\isolaDelTesoro_pezzi\tile_39.png" />
-    <Content Include="Resources\isolaDelTesoro_pezzi\tile_40.png" />
-    <Content Include="Resources\isolaDelTesoro_pezzi\tile_41.png" />
-    <Content Include="Resources\isolaDelTesoro_pezzi\tile_52.png" />
-    <Content Include="Resources\isolaDelTesoro_pezzi\tile_53.png" />
-    <Content Include="Resources\isolaDelTesoro_pezzi\tile_54.png" />
-    <Content Include="Resources\isolaDelTesoro_pezzi\tile_55.png" />
-    <Content Include="Resources\isolaDelTesoro_pezzi\tile_56.png" />
-    <Content Include="Resources\isolaDelTesoro_pezzi\tile_57.png" />
-    <Content Include="Resources\isolaDelTesoro_pezzi\tile_68.png" />
-    <Content Include="Resources\isolaDelTesoro_pezzi\tile_69.png" />
-    <Content Include="Resources\isole_default\isola1.png" />
-    <Content Include="Resources\isole_default\isola2.png" />
-    <Content Include="Resources\isole_default\isola3.png" />
-    <Content Include="Resources\isole_default\isola4.png" />
-    <Content Include="Resources\isole_default\isola5.png" />
-    <Content Include="Resources\mare.png" />
-    <Content Include="Resources\nascondi.png" />
-    <Content Include="Resources\nave Nera\pos_1.png" />
-    <Content Include="Resources\nave Nera\pos_2.png" />
-    <Content Include="Resources\nave Nera\pos_3.png" />
-    <Content Include="Resources\nave Nera\pos_4.png" />
-    <Content Include="Resources\naveBianca\ship1_1.png" />
-    <Content Include="Resources\naveBianca\ship1_2.png" />
-    <Content Include="Resources\naveBianca\ship1_3.png" />
-    <Content Include="Resources\naveBianca\ship1_4.png" />
-    <Content Include="Resources\naveNemica\ship1_1.png" />
-    <Content Include="Resources\naveNemica\ship1_2.png" />
-    <Content Include="Resources\naveNemica\ship1_3.png" />
-    <Content Include="Resources\naveNemica\ship1_4.png" />
-    <Content Include="Resources\naveRossa\ship1_1.png" />
-    <Content Include="Resources\naveRossa\ship1_2.png" />
-    <Content Include="Resources\naveRossa\ship1_3.png" />
-    <Content Include="Resources\naveRossa\ship1_4.png" />
-    <Content Include="Resources\naveVerde\ship2_1.png" />
-    <Content Include="Resources\naveVerde\ship2_2.png" />
-    <Content Include="Resources\naveVerde\ship2_3.png" />
-    <Content Include="Resources\naveVerde\ship2_4.png" />
-    <Content Include="Resources\navi_laterali\nave_bianca.png" />
-    <Content Include="Resources\navi_laterali\nave_pirata.png" />
-    <Content Include="Resources\navi_laterali\nave_rossa.png" />
-    <Content Include="Resources\navi_laterali\nave_verde.png" />
-    <Content Include="Resources\next.png" />
-    <Content Include="Resources\pow_buff.png" />
-    <Content Include="Resources\pun_pun.jpg" />
-    <Content Include="Resources\pun_pun1.jpg" />
-    <Content Include="Resources\pun_pun2.jpg" />
-    <Content Include="Resources\Sasso.png" />
+    <None Include="Resources\Sasso.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pun_pun1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pun_pun2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpazioVuoto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vita_buff.png" />
+    <None Include="Resources\nascondi.png" />
+    <None Include="Resources\next.png" />
+    <None Include="Resources\bottone_attacco.png" />
+    <None Include="Resources\info.png" />
+    <None Include="Resources\curaPozione.png" />
+    <None Include="Resources\curaEstesa.jpg" />
+    <None Include="Resources\BufferDrink.jpg" />
+    <None Include="Resources\pow_buff.png" />
+    <None Include="Resources\sangue.png" />
+    <None Include="Resources\debuff.png" />
+    <None Include="Resources\depotenziamento.jpg" />
+    <None Include="Resources\dannoPerpetuo.jpg" />
+    <Content Include="OST\file_example_WAV_1MG.wav" />
+    <Content Include="OST\Rude Buster-HQ.wav" />
+    <None Include="Resources\mute.png" />
+    <None Include="Resources\play.png" />
     <Content Include="Resources\sfondo_carta.jpg" />
-    <Content Include="Resources\SpazioVuoto.png" />
-    <Content Include="Resources\vita_buff.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Nemici\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

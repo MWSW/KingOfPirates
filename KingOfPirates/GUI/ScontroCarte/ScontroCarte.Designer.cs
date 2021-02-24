@@ -60,6 +60,9 @@
             this.dialogueBox = new System.Windows.Forms.Label();
             this.messaggioGiocatore = new System.Windows.Forms.Label();
             this.messaggioNemico = new System.Windows.Forms.Label();
+            this.audio = new System.Windows.Forms.PictureBox();
+            this.img_debuff = new System.Windows.Forms.PictureBox();
+            this.img_dannoPerpetuo = new System.Windows.Forms.PictureBox();
             this.img_buff = new System.Windows.Forms.PictureBox();
             this.curaEstesa = new System.Windows.Forms.PictureBox();
             this.infoBox = new System.Windows.Forms.PictureBox();
@@ -80,6 +83,9 @@
             this.elem1 = new System.Windows.Forms.PictureBox();
             this.img_carta1 = new System.Windows.Forms.PictureBox();
             this.img_avversario = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.audio)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.img_debuff)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.img_dannoPerpetuo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_buff)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.curaEstesa)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoBox)).BeginInit();
@@ -461,6 +467,41 @@
             this.messaggioNemico.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.messaggioNemico.Visible = false;
             // 
+            // audio
+            // 
+            this.audio.Image = global::KingOfPirates.Properties.Resources.mute;
+            this.audio.Location = new System.Drawing.Point(1121, 508);
+            this.audio.Name = "audio";
+            this.audio.Size = new System.Drawing.Size(113, 107);
+            this.audio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.audio.TabIndex = 64;
+            this.audio.TabStop = false;
+            this.audio.Click += new System.EventHandler(this.audio_Click);
+            // 
+            // img_debuff
+            // 
+            this.img_debuff.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.img_debuff.Image = global::KingOfPirates.Properties.Resources.debuff;
+            this.img_debuff.Location = new System.Drawing.Point(1121, 334);
+            this.img_debuff.Name = "img_debuff";
+            this.img_debuff.Size = new System.Drawing.Size(58, 59);
+            this.img_debuff.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.img_debuff.TabIndex = 63;
+            this.img_debuff.TabStop = false;
+            this.img_debuff.Visible = false;
+            // 
+            // img_dannoPerpetuo
+            // 
+            this.img_dannoPerpetuo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.img_dannoPerpetuo.Image = global::KingOfPirates.Properties.Resources.sangue;
+            this.img_dannoPerpetuo.Location = new System.Drawing.Point(1053, 334);
+            this.img_dannoPerpetuo.Name = "img_dannoPerpetuo";
+            this.img_dannoPerpetuo.Size = new System.Drawing.Size(58, 54);
+            this.img_dannoPerpetuo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.img_dannoPerpetuo.TabIndex = 62;
+            this.img_dannoPerpetuo.TabStop = false;
+            this.img_dannoPerpetuo.Visible = false;
+            // 
             // img_buff
             // 
             this.img_buff.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -608,7 +649,7 @@
             // img_carta4
             // 
             this.img_carta4.BackColor = System.Drawing.Color.White;
-            this.img_carta4.BackgroundImage = global::KingOfPirates.Properties.Resources.BufferDrink;
+            this.img_carta4.BackgroundImage = global::KingOfPirates.Properties.Resources.dannoPerpetuo;
             this.img_carta4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.img_carta4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.img_carta4.Image = global::KingOfPirates.Properties.Resources.cartaVuota;
@@ -713,6 +754,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1262, 673);
+            this.Controls.Add(this.audio);
+            this.Controls.Add(this.img_debuff);
+            this.Controls.Add(this.img_dannoPerpetuo);
             this.Controls.Add(this.img_buff);
             this.Controls.Add(this.curaEstesa);
             this.Controls.Add(this.infoBox);
@@ -767,6 +811,9 @@
             this.Name = "ScontroCarte";
             this.Text = "ScontroCarte";
             this.Load += new System.EventHandler(this.OnLoad);
+            ((System.ComponentModel.ISupportInitialize)(this.audio)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.img_debuff)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.img_dannoPerpetuo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_buff)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.curaEstesa)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoBox)).EndInit();
@@ -845,5 +892,8 @@
         private System.Windows.Forms.PictureBox infoBox;
         private System.Windows.Forms.PictureBox curaEstesa;
         private System.Windows.Forms.PictureBox img_buff;
+        private System.Windows.Forms.PictureBox img_dannoPerpetuo;
+        private System.Windows.Forms.PictureBox img_debuff;
+        private System.Windows.Forms.PictureBox audio;
     }
 }
