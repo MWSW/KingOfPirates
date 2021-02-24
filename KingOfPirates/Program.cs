@@ -81,10 +81,10 @@ namespace KingOfPirates
 
         public static void End()
         {
-            nassauForm.Close();
+            //nassauForm.Close();
             menuMissioni.Close();
             scontroCarte.Close();
-            nassauForm.Dispose();
+            //nassauForm.Dispose();
             menuMissioni.Dispose();
             scontroCarte.Dispose();
             startMenu.Dispose();
