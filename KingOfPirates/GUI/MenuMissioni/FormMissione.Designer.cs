@@ -55,6 +55,7 @@ namespace KingOfPirates.GUI.MenuMissioni
             this.EnergiaNave_label = new Label();
             this.Ubriachezza_label = new Label();
             this.Determinazione_label = new Label();
+            this.VitaNave_label = new Label();
             this.Griglia_pictureBox = new System.Windows.Forms.PictureBox[picBoxXSize, picBoxYSize];
             ((System.ComponentModel.ISupportInitialize)(this.cartinaBindingSource)).BeginInit();
             this.Griglia_tableLayoutPanel.SuspendLayout();
@@ -71,7 +72,7 @@ namespace KingOfPirates.GUI.MenuMissioni
             #region StatusNaveGiocatore
 
             int StatusStartPointX = 1090;
-            int StatusStartPointY = 350;
+            int StatusStartPointY = 320;
 
             // 
             // Energia Nave
@@ -109,6 +110,19 @@ namespace KingOfPirates.GUI.MenuMissioni
             this.Determinazione_label.Text = "Determinazione: " + Gioco.Giocatore.Determinazione + "/" + Gioco.Giocatore.DeterminazioneMax;
             this.Determinazione_label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Determinazione_label.AutoSize = false;
+            // 
+            // VitaNave
+            // 
+
+            StatusStartPointY += 18;
+
+            this.VitaNave_label.Location = new System.Drawing.Point(StatusStartPointX, StatusStartPointY);
+            this.VitaNave_label.Name = "VitaNave_label";
+            this.VitaNave_label.Size = new System.Drawing.Size(156, 15);
+            this.VitaNave_label.TabIndex = 1;
+            this.VitaNave_label.Text = "Punti Vita: " + Gioco.Giocatore.PuntiVita + "/" + Gioco.Giocatore.PuntiVitaMax;
+            this.VitaNave_label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.VitaNave_label.AutoSize = false;
             #endregion
 
             #region Joystick
@@ -339,6 +353,7 @@ namespace KingOfPirates.GUI.MenuMissioni
             this.Controls.Add(this.EnergiaNave_label);
             this.Controls.Add(this.Ubriachezza_label);
             this.Controls.Add(this.Determinazione_label);
+            this.Controls.Add(this.VitaNave_label);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MenuMissioni_FormClosing);
             this.Name = "MenuMissioni";
             this.Text = "MenuMissioni";
@@ -375,5 +390,6 @@ namespace KingOfPirates.GUI.MenuMissioni
         private Label EnergiaNave_label;
         private Label Ubriachezza_label;
         private Label Determinazione_label;
+        private Label VitaNave_label;
     }
 }

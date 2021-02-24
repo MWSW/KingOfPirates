@@ -177,8 +177,12 @@ namespace KingOfPirates.GUI.MenuMissioni
         private void AssLeg_button_Click(object sender, EventArgs e)
         {
             Gioco.Giocatore.Inventario.DecAssiLegno(); //consumi un'asse di legno
+
+            Gioco.Giocatore.IncPuntiVita(3); //aumenta punti vita
+
             //aggiorno label
             this.AssLeg_label.Text = "Assi rimaste: " + Gioco.Giocatore.Inventario.AssiLegno;
+            this.VitaNave_label.Text = "Punti Vita: " + Gioco.Giocatore.PuntiVita + "/" + Gioco.Giocatore.PuntiVitaMax;
         }
 
         private void BevandaDet_button_Click(object sender, EventArgs e)
