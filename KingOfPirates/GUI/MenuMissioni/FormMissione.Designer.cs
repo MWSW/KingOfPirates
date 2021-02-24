@@ -56,6 +56,9 @@ namespace KingOfPirates.GUI.MenuMissioni
             this.Ubriachezza_label = new Label();
             this.Determinazione_label = new Label();
             this.VitaNave_label = new Label();
+            this.Dobloni_label = new Label();
+            this.Rubini_label = new Label();
+            this.Scavo_button = new Button();
             this.Griglia_pictureBox = new System.Windows.Forms.PictureBox[picBoxXSize, picBoxYSize];
             ((System.ComponentModel.ISupportInitialize)(this.cartinaBindingSource)).BeginInit();
             this.Griglia_tableLayoutPanel.SuspendLayout();
@@ -72,7 +75,7 @@ namespace KingOfPirates.GUI.MenuMissioni
             #region StatusNaveGiocatore
 
             int StatusStartPointX = 1090;
-            int StatusStartPointY = 320;
+            int StatusStartPointY = 255;
 
             // 
             // Energia Nave
@@ -123,6 +126,34 @@ namespace KingOfPirates.GUI.MenuMissioni
             this.VitaNave_label.Text = "Punti Vita: " + Gioco.Giocatore.PuntiVita + "/" + Gioco.Giocatore.PuntiVitaMax;
             this.VitaNave_label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.VitaNave_label.AutoSize = false;
+
+
+            // 
+            // Dobloni
+            // 
+
+            StatusStartPointY += 36;
+
+            this.Dobloni_label.Location = new System.Drawing.Point(StatusStartPointX, StatusStartPointY);
+            this.Dobloni_label.Name = "Dobloni_label";
+            this.Dobloni_label.Size = new System.Drawing.Size(156, 15);
+            this.Dobloni_label.TabIndex = 1;
+            this.Dobloni_label.Text = "Dobloni: " + Gioco.Dominio.CassaDobloni + "$";
+            this.Dobloni_label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Dobloni_label.AutoSize = false;
+            // 
+            // Rubini
+            // 
+
+            StatusStartPointY += 18;
+
+            this.Rubini_label.Location = new System.Drawing.Point(StatusStartPointX, StatusStartPointY);
+            this.Rubini_label.Name = "Rubini_label";
+            this.Rubini_label.Size = new System.Drawing.Size(156, 15);
+            this.Rubini_label.TabIndex = 1;
+            this.Rubini_label.Text = "Rubini: " + Gioco.Dominio.CassaRubini;
+            this.Rubini_label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Rubini_label.AutoSize = false;
             #endregion
 
             #region Joystick
@@ -274,6 +305,23 @@ namespace KingOfPirates.GUI.MenuMissioni
 
             #endregion
 
+            #region Bottoni azioni
+
+            #endregion
+
+            int ActionButtonStartPointX = 1090;
+            int ActionButtonStartPointY = 400;
+
+            //
+            // Scavo_button
+            //
+            this.Scavo_button.Location = new System.Drawing.Point(ActionButtonStartPointX, ActionButtonStartPointY);
+            this.Scavo_button.Name = "Scavo_button";
+            this.Scavo_button.Size = new System.Drawing.Size(156, 35);
+            this.Scavo_button.TabIndex = 1;
+            this.Scavo_button.Text = "Scava!";
+            this.Scavo_button.UseVisualStyleBackColor = true;
+            this.Scavo_button.Click += new System.EventHandler(this.Scavo_button_Click);
             #region Matrice pictureBox
 
             //
@@ -354,6 +402,9 @@ namespace KingOfPirates.GUI.MenuMissioni
             this.Controls.Add(this.Ubriachezza_label);
             this.Controls.Add(this.Determinazione_label);
             this.Controls.Add(this.VitaNave_label);
+            this.Controls.Add(this.Dobloni_label);
+            this.Controls.Add(this.Rubini_label);
+            this.Controls.Add(this.Scavo_button);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MenuMissioni_FormClosing);
             this.Name = "MenuMissioni";
             this.Text = "MenuMissioni";
@@ -391,5 +442,10 @@ namespace KingOfPirates.GUI.MenuMissioni
         private Label Ubriachezza_label;
         private Label Determinazione_label;
         private Label VitaNave_label;
+
+        private Label Dobloni_label;
+        private Label Rubini_label;
+
+        private Button Scavo_button;
     }
 }

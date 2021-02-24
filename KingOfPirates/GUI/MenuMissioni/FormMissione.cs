@@ -11,6 +11,7 @@ using KingOfPirates;
 using KingOfPirates.Missioni;
 using KingOfPirates.Missioni.Roba;
 using KingOfPirates.Missioni.Navi;
+using KingOfPirates.Cartina;
 
 /* L'Interfaccia grafica e' stata fatta a mano
  * La matrice e' stata pensata come piano cartesiano (x e y invertiti)
@@ -33,11 +34,16 @@ namespace KingOfPirates.GUI.MenuMissioni
             temp = Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage;
 
 
-            //cambia immagine se è sopra una isola
-            if (missione.Griglia_numerica.Mat[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y + 1] == 1)
-                Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = Properties.Resources.omino;
-            else
+            if (missione.Griglia_numerica.Mat[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y] == 0)
+            {
                 Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = Properties.Resources.nave_pirata;
+                Scavo_button.Hide();
+            }
+            else
+            {
+                Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = Properties.Resources.omino;
+                Scavo_button.Show();
+            }
         }
 
         private void Sopra_button_Click(object sender, EventArgs e)
@@ -52,18 +58,18 @@ namespace KingOfPirates.GUI.MenuMissioni
                 temp = Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage; //aggiorno temp
 
                 //cambia immagine se è sopra una isola
-                if (missione.Griglia_numerica.Mat[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y + 1] == 1)
-                    Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = Properties.Resources.omino;
-                else
+                if (missione.Griglia_numerica.Mat[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y] == 0)
+                {
                     Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = Properties.Resources.nave_pirata;
+                    Scavo_button.Hide();
+                }
+                else
+                {
+                    Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = Properties.Resources.omino;
+                    Scavo_button.Show();
+                }
 
                 Gioco.Giocatore.RemEnergia(1); //consumi energia
-                this.EnergiaNave_label.Text = "Punti azione: " + Gioco.Giocatore.Energia + "/" + Gioco.Giocatore.EnergiaMax; //aggiorna energia_label
-            }
-            else
-            {
-                MessageBox.Show("Energia finita!");
-                Gioco.Giocatore.Energia = Gioco.Giocatore.EnergiaMax; //ripristino energia
                 this.EnergiaNave_label.Text = "Punti azione: " + Gioco.Giocatore.Energia + "/" + Gioco.Giocatore.EnergiaMax; //aggiorna energia_label
             }
 
@@ -80,22 +86,21 @@ namespace KingOfPirates.GUI.MenuMissioni
                 Gioco.Giocatore.Loc.Y++;
                 temp = Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage;
 
-                //cambia immagine se è sopra una isola
-                if (missione.Griglia_numerica.Mat[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y + 1] == 1) 
-                    Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = Properties.Resources.omino;
-                else
+                if (missione.Griglia_numerica.Mat[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y] == 0)
+                {
                     Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = Properties.Resources.nave_pirata;
-
+                    Scavo_button.Hide();
+                }
+                else
+                {
+                    Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = Properties.Resources.omino;
+                    Scavo_button.Show();
+                }
 
                 Gioco.Giocatore.RemEnergia(1); //consumi energia
                 this.EnergiaNave_label.Text = "Punti azione: " + Gioco.Giocatore.Energia + "/" + Gioco.Giocatore.EnergiaMax; //aggiorna energia_label
             }
-            else
-            {
-                MessageBox.Show("Energia finita!");
-                Gioco.Giocatore.Energia = Gioco.Giocatore.EnergiaMax; //ripristino energia
-                this.EnergiaNave_label.Text = "Punti azione: " + Gioco.Giocatore.Energia + "/" + Gioco.Giocatore.EnergiaMax; //aggiorna energia_label
-            }
+
         }
 
         private void Sinistra_button_Click(object sender, EventArgs e)
@@ -110,19 +115,18 @@ namespace KingOfPirates.GUI.MenuMissioni
                 Gioco.Giocatore.Loc.X--;
                 temp = Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage;
 
-                if (missione.Griglia_numerica.Mat[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y + 1] == 1) //isola
-                    Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = Properties.Resources.omino;
-                else
+                if (missione.Griglia_numerica.Mat[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y] == 0)
+                {
                     Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = Properties.Resources.nave_pirata;
-
+                    Scavo_button.Hide();
+                }
+                else
+                {
+                    Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = Properties.Resources.omino;
+                    Scavo_button.Show();
+                }
 
                 Gioco.Giocatore.RemEnergia(1); //consumi energia
-                this.EnergiaNave_label.Text = "Punti azione: " + Gioco.Giocatore.Energia + "/" + Gioco.Giocatore.EnergiaMax; //aggiorna energia_label
-            }
-            else
-            {
-                MessageBox.Show("Energia finita!");
-                Gioco.Giocatore.Energia = Gioco.Giocatore.EnergiaMax; //ripristino energia
                 this.EnergiaNave_label.Text = "Punti azione: " + Gioco.Giocatore.Energia + "/" + Gioco.Giocatore.EnergiaMax; //aggiorna energia_label
             }
         }
@@ -140,21 +144,21 @@ namespace KingOfPirates.GUI.MenuMissioni
                 Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = Properties.Resources.nave_pirata;
 
 
-                if (missione.Griglia_numerica.Mat[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y + 1] == 1) //isola
-                    Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = Properties.Resources.omino;
-                else
+                if (missione.Griglia_numerica.Mat[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y] == 0)
+                {
                     Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = Properties.Resources.nave_pirata;
-
+                    Scavo_button.Hide();
+                }
+                else
+                {
+                    Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = Properties.Resources.omino;
+                    Scavo_button.Show();
+                }
 
                 Gioco.Giocatore.RemEnergia(1); //consumi energia
                 this.EnergiaNave_label.Text = "Punti azione: " + Gioco.Giocatore.Energia + "/" + Gioco.Giocatore.EnergiaMax; //aggiorna energia_label
             }
-            else
-            {
-                MessageBox.Show("Energia finita!");
-                Gioco.Giocatore.Energia = Gioco.Giocatore.EnergiaMax; //ripristino energia
-                this.EnergiaNave_label.Text = "Punti azione: " + Gioco.Giocatore.Energia + "/" + Gioco.Giocatore.EnergiaMax; //aggiorna energia_label
-            }
+
         }
 
         private void Azione_button_Click(object sender, EventArgs e)
@@ -204,6 +208,29 @@ namespace KingOfPirates.GUI.MenuMissioni
             //aggiorno il label
             this.AntiUbriachezza_label.Text = "AntiUbriachezza rimasti: " + Gioco.Giocatore.Inventario.AntiUbriachezza;
             this.Ubriachezza_label.Text = "Ubriachezza: " + Gioco.Giocatore.Ubriachezza + "/" + Gioco.Giocatore.UbriachezzaMax;
+        }
+
+        private void Scavo_button_Click(object sender, EventArgs e)
+        {
+            if (missione.Griglia_numerica.Mat[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y] != -1)
+            {
+                Random rand = new Random();
+
+                int rng = rand.Next() * 100;
+
+                if (rng < 70)
+                    temp = Properties.Resources.cross; //sostituisco la texure sabbia con quella scavo
+                else
+                {
+                    temp = Properties.Resources.ruby; //sostituisco la texure sabbia con rubino
+                    Gioco.Dominio.CassaRubini++; //ottieni un rubino
+                    this.Rubini_label.Text = "Rubini: " + Gioco.Dominio.CassaRubini;
+                }
+
+                //uso la matrice di inizializzazione per verificare se le celle sono già state scavate
+                missione.Griglia_numerica.Mat[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y] = -1;
+                Scavo_button.Hide(); //la componente non serve più quindi la si nasconde
+            }
         }
 
         private void MenuMissioni_FormClosing(object sender, FormClosingEventArgs e)

@@ -11,6 +11,7 @@ using KingOfPirates.GUI.MenuPrincipale;
 using KingOfPirates.GUI.MenuNassau;
 using KingOfPirates.GUI.ScontroCarte;
 using KingOfPirates.GUI.MenuMissioni;
+using KingOfPirates.Cartina;
 
 namespace KingOfPirates
 {
@@ -36,6 +37,8 @@ namespace KingOfPirates
     static class Gioco
     {
         public static KingOfPirates.Missioni.Navi.NaveGiocatore Giocatore { get; set; }
+        public static KingOfPirates.Cartina.GestioneDominio Dominio { get; set; }
+
         public static GUI.MenuPrincipale.StartMenu startMenu;
         public static GUI.MenuNassau.Nassau_form nassauForm;
         public static GUI.MenuMissioni.FormMissione menuMissioni;
@@ -73,6 +76,8 @@ namespace KingOfPirates
         public static void Start()
         {
             Giocatore = new NaveGiocatore("Nave da Test", Properties.Resources.nave_rossa, new Stats(), new Loc2D(), 5, 10, 20, 10);
+            Dominio = new GestioneDominio();
+
             initTask.Start();
             startMenu = new StartMenu();
             startMenu.Show();

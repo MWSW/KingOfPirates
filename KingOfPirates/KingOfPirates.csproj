@@ -217,6 +217,7 @@
     <Content Include="Resources\assLeg.png" />
     <Content Include="Resources\back_arrow.jpg" />
     <Content Include="Resources\bevDet.jpg" />
+    <None Include="Resources\cross.png" />
     <Content Include="Resources\HUD - interfaccia\box_5_mosse.png" />
     <Content Include="Resources\HUD - interfaccia\box_5_mosse_blocchi.png" />
     <Content Include="Resources\HUD - interfaccia\box_domanda.png" />
@@ -298,6 +299,7 @@
     <Content Include="Resources\navi_laterali\nave_verde.png" />
     <None Include="Resources\omino.png" />
     <Content Include="Resources\prova.jpg" />
+    <None Include="Resources\ruby.png" />
     <Content Include="Resources\rum.jpg" />
     <Content Include="Resources\sfondo_carta.jpg" />
   </ItemGroup>
