@@ -254,11 +254,14 @@ namespace KingOfPirates.GUI.MenuMissioni
                     switch (missione.Griglia_numerica.Mat[i, j])
                     {
                         default:
-                        case 0:
+                        case 0: //mare
                             this.Griglia_pictureBox[i, j].BackgroundImage = Properties.Resources.mare;
                             break;
-                        case 1:
+                        case 1: //isola
                             this.Griglia_pictureBox[i, j].BackgroundImage = Properties.Resources.isola1;
+                            break;
+                        case 2: //montagna
+                            this.Griglia_pictureBox[i, j].BackgroundImage = Properties.Resources.montagna;
                             break;
                     }
                 }

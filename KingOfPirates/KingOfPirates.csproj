@@ -269,6 +269,7 @@
     <Content Include="Resources\isole_default\isola4.png" />
     <Content Include="Resources\isole_default\isola5.png" />
     <Content Include="Resources\mare.png" />
+    <None Include="Resources\montagna.png" />
     <Content Include="Resources\nave Nera\pos_1.png" />
     <Content Include="Resources\nave Nera\pos_2.png" />
     <Content Include="Resources\nave Nera\pos_3.png" />

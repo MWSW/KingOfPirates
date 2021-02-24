@@ -86,8 +86,8 @@ namespace KingOfPirates.Nassau
         }
         
         public void AcquistaCarta(GestioneDominio gestoreDominio){
-            gestoreDominio.RemDobloni(/*listaCarte.getCarta.getPrezzo*/);
-            listaCarte.getCarta().setUtilizzabile(true);
+            //gestoreDominio.RemDobloni(/*listaCarte.getCarta.getPrezzo*/);
+            //listaCarte.getCarta().setUtilizzabile(true);
         }
 
         public override void Upgrade()

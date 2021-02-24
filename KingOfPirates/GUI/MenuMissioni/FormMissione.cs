@@ -37,6 +37,7 @@ namespace KingOfPirates.GUI.MenuMissioni
         private void Sopra_button_Click(object sender, EventArgs e)
         {
             if (Gioco.Giocatore.Loc.Y - 1 < 0) return;
+            if (missione.Griglia_numerica.Mat[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y - 1] == 2) return;
 
             Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = temp; //texture vecchia
             Gioco.Giocatore.Loc.Y--; //aggiorno la posizione
@@ -50,6 +51,8 @@ namespace KingOfPirates.GUI.MenuMissioni
             {
                 return;
             }
+            if (missione.Griglia_numerica.Mat[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y + 1] == 2) return;
+
             Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = temp;
             Gioco.Giocatore.Loc.Y++;
             temp = Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage;
@@ -62,6 +65,8 @@ namespace KingOfPirates.GUI.MenuMissioni
             {
                 return;
             }
+            if (missione.Griglia_numerica.Mat[Gioco.Giocatore.Loc.X - 1, Gioco.Giocatore.Loc.Y] == 2) return;
+
             Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = temp;
             Gioco.Giocatore.Loc.X--;
             temp = Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage;
@@ -74,6 +79,8 @@ namespace KingOfPirates.GUI.MenuMissioni
             {
                 return;
             }
+            if (missione.Griglia_numerica.Mat[Gioco.Giocatore.Loc.X + 1, Gioco.Giocatore.Loc.Y] == 2) return;
+
             Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = temp;
             Gioco.Giocatore.Loc.X++;
             temp = Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage;

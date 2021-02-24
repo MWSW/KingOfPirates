@@ -43,17 +43,17 @@ namespace KingOfPirates
         private static Task initTask = new Task(() =>
         {
             Console.WriteLine("#+ Inizializzazione con Task");
-            nassauForm = new GUI.MenuNassau.Nassau_form();
+            //nassauForm = new GUI.MenuNassau.Nassau_form();
 
             Griglia griglia_prova = new Griglia(new int[19, 12] {{0,0,0,0,0,0,0,0,0,0,0,0},
-                                                                 {0,0,0,0,0,0,0,0,0,0,0,0},
+                                                                 {0,0,0,0,2,2,2,0,0,0,0,0},
                                                                  {0,1,1,1,1,1,1,1,1,0,0,0},
                                                                  {0,0,1,1,1,1,1,1,0,0,0,0},
                                                                  {0,0,0,1,1,1,1,0,0,0,0,0},
                                                                  {0,0,0,0,1,1,0,0,0,0,0,0},
                                                                  {0,0,0,0,0,0,0,0,0,0,0,0},
-                                                                 {0,0,0,0,0,0,0,0,0,0,0,0},
-                                                                 {0,0,0,0,0,0,0,0,0,0,0,0},
+                                                                 {0,0,0,0,0,0,2,0,0,0,0,0},
+                                                                 {0,0,0,0,0,0,2,2,0,0,0,0},
                                                                  {0,0,0,0,0,0,0,0,0,0,0,0},
                                                                  {0,0,0,0,0,0,0,0,0,0,0,0},
                                                                  {0,0,0,0,0,0,0,0,0,0,0,0},

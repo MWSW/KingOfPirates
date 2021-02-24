@@ -70,7 +70,7 @@ namespace KingOfPirates.GUI.MenuNassau
         private void Negozio_AcqCarte_Button_Click(object sender, EventArgs e)
         {
             Negozio_acqCarte_Panel.Show();
-            negozio.AcquistaCarta();
+            //negozio.AcquistaCarta();
             UpdateOutput();
         }
 
@@ -81,12 +81,14 @@ namespace KingOfPirates.GUI.MenuNassau
 
         private void Seleziona(int indice)
         {
-            Negozio_CarteInfo_Img.BackgroundImage = /*getCarta(indice).[...]*/;
-            Negozio_CarteAtk_Label.Text = "ATK: " + /*[...]*/;
-            Negozio_CarteDef_Label.Text = "DEF: " + /*[...]*/;
-            Negozio_CarteElemento_Label.Text = "Elemento: " + /*[...]*/;
-            Negozio_CarteDescrizione_Label.Text = "Descrizione: " + /*[...]*/;
-            Negozio_CartePossedute_Label.Text = "Possiedi " + /*[...]*/ + " carte di questo tipo";
+          
+            //Negozio_CarteInfo_Img.BackgroundImage = /*getCarta(indice).[...]*/;
+            //Negozio_CarteAtk_Label.Text = "ATK: " + /*[...]*/;
+            //Negozio_CarteDef_Label.Text = "DEF: " + /*[...]*/;
+            //Negozio_CarteElemento_Label.Text = "Elemento: " + /*[...]*/;
+            //Negozio_CarteDescrizione_Label.Text = "Descrizione: " + /*[...]*/;
+            //Negozio_CartePossedute_Label.Text = "Possiedi " + /*[...]*/ + " carte di questo tipo";
+            
         }
 
         private void Negozio_CarteAcquista_Button_Click(object sender, EventArgs e)
@@ -105,70 +107,70 @@ namespace KingOfPirates.GUI.MenuNassau
             //Negozio carte
 
             //Riga - nome
-            Negozio_CartePirata1_Label.Text = ;
-            Negozio_CartePirata2_Label.Text = ;
-            Negozio_CartePirata3_Label.Text = ;
-            Negozio_CartePirata4_Label.Text = ;
-            Negozio_CartePirata5_Label.Text = ;
-            Negozio_CartePirata6_Label.Text = ;
-            Negozio_CartePirata7_Label.Text = ;
-            Negozio_CartePirata8_Label.Text = ;
-            Negozio_CartePirata9_Label.Text = ;
-            Negozio_CartePirata10_Label.Text = ;
-            Negozio_CartePirata11_Label.Text = ;
-            Negozio_CartePirata12_Label.Text = ;
-            Negozio_CartePirata13_Label.Text = ;
-            Negozio_CartePirata14_Label.Text = ;
-            Negozio_CartePirata15_Label.Text = ;
-            Negozio_CartePirata16_Label.Text = ;
-            Negozio_CartePirata17_Label.Text = ;
-            Negozio_CartePirata18_Label.Text = ;
-            Negozio_CartePirata19_Label.Text = ;
-            Negozio_CartePirata20_Label.Text = ;
+            //Negozio_CartePirata1_Label.Text = ;
+            //Negozio_CartePirata2_Label.Text = ;
+            //Negozio_CartePirata3_Label.Text = ;
+            //Negozio_CartePirata4_Label.Text = ;
+            //Negozio_CartePirata5_Label.Text = ;
+            //Negozio_CartePirata6_Label.Text = ;
+            //Negozio_CartePirata7_Label.Text = ;
+            //Negozio_CartePirata8_Label.Text = ;
+            //Negozio_CartePirata9_Label.Text = ;
+            //Negozio_CartePirata10_Label.Text = ;
+            //Negozio_CartePirata11_Label.Text = ;
+            //Negozio_CartePirata12_Label.Text = ;
+            //Negozio_CartePirata13_Label.Text = ;
+            //Negozio_CartePirata14_Label.Text = ;
+            //Negozio_CartePirata15_Label.Text = ;
+            //Negozio_CartePirata16_Label.Text = ;
+            //Negozio_CartePirata17_Label.Text = ;
+            //Negozio_CartePirata18_Label.Text = ;
+            //Negozio_CartePirata19_Label.Text = ;
+            //Negozio_CartePirata20_Label.Text = ;
 
-            //Riga - prezzo
-            Negozio_CartePrezzo1_Label.Text = ;
-            Negozio_CartePrezzo2_Label.Text = ;
-            Negozio_CartePrezzo3_Label.Text = ;
-            Negozio_CartePrezzo4_Label.Text = ;
-            Negozio_CartePrezzo5_Label.Text = ;
-            Negozio_CartePrezzo6_Label.Text = ;
-            Negozio_CartePrezzo7_Label.Text = ;
-            Negozio_CartePrezzo8_Label.Text = ;
-            Negozio_CartePrezzo9_Label.Text = ;
-            Negozio_CartePrezzo10_Label.Text = ;
-            Negozio_CartePrezzo11_Label.Text = ;
-            Negozio_CartePrezzo12_Label.Text = ;
-            Negozio_CartePrezzo13_Label.Text = ;
-            Negozio_CartePrezzo14_Label.Text = ;
-            Negozio_CartePrezzo15_Label.Text = ;
-            Negozio_CartePrezzo16_Label.Text = ;
-            Negozio_CartePrezzo17_Label.Text = ;
-            Negozio_CartePrezzo18_Label.Text = ;
-            Negozio_CartePrezzo19_Label.Text = ;
-            Negozio_CartePrezzo20_Label.Text = ;
+            ////Riga - prezzo
+            //Negozio_CartePrezzo1_Label.Text = ;
+            //Negozio_CartePrezzo2_Label.Text = ;
+            //Negozio_CartePrezzo3_Label.Text = ;
+            //Negozio_CartePrezzo4_Label.Text = ;
+            //Negozio_CartePrezzo5_Label.Text = ;
+            //Negozio_CartePrezzo6_Label.Text = ;
+            //Negozio_CartePrezzo7_Label.Text = ;
+            //Negozio_CartePrezzo8_Label.Text = ;
+            //Negozio_CartePrezzo9_Label.Text = ;
+            //Negozio_CartePrezzo10_Label.Text = ;
+            //Negozio_CartePrezzo11_Label.Text = ;
+            //Negozio_CartePrezzo12_Label.Text = ;
+            //Negozio_CartePrezzo13_Label.Text = ;
+            //Negozio_CartePrezzo14_Label.Text = ;
+            //Negozio_CartePrezzo15_Label.Text = ;
+            //Negozio_CartePrezzo16_Label.Text = ;
+            //Negozio_CartePrezzo17_Label.Text = ;
+            //Negozio_CartePrezzo18_Label.Text = ;
+            //Negozio_CartePrezzo19_Label.Text = ;
+            //Negozio_CartePrezzo20_Label.Text = ;
 
-            //Riga - immagineTipo
-            Negozio_CartaPirata1_Img.Image = ;
-            Negozio_CartaPirata2_Img.Image = ;
-            Negozio_CartaPirata3_Img.Image = ;
-            Negozio_CartaPirata4_Img.Image = ;
-            Negozio_CartaPirata5_Img.Image = ;
-            Negozio_CartaPirata6_Img.Image = ;
-            Negozio_CartaPirata7_Img.Image = ;
-            Negozio_CartaPirata8_Img.Image = ;
-            Negozio_CartaPirata9_Img.Image = ;
-            Negozio_CartaPirata10_Img.Image = ;
-            Negozio_CartaPirata11_Img.Image = ;
-            Negozio_CartaPirata12_Img.Image = ;
-            Negozio_CartaPirata13_Img.Image = ;
-            Negozio_CartaPirata14_Img.Image = ;
-            Negozio_CartaPirata15_Img.Image = ;
-            Negozio_CartaPirata16_Img.Image = ;
-            Negozio_CartaPirata17_Img.Image = ;
-            Negozio_CartaPirata18_Img.Image = ;
-            Negozio_CartaPirata19_Img.Image = ;
-            Negozio_CartaPirata20_Img.Image = ;
+            ////Riga - immagineTipo
+            //Negozio_CartaPirata1_Img.Image = ;
+            //Negozio_CartaPirata2_Img.Image = ;
+            //Negozio_CartaPirata3_Img.Image = ;
+            //Negozio_CartaPirata4_Img.Image = ;
+            //Negozio_CartaPirata5_Img.Image = ;
+            //Negozio_CartaPirata6_Img.Image = ;
+            //Negozio_CartaPirata7_Img.Image = ;
+            //Negozio_CartaPirata8_Img.Image = ;
+            //Negozio_CartaPirata9_Img.Image = ;
+            //Negozio_CartaPirata10_Img.Image = ;
+            //Negozio_CartaPirata11_Img.Image = ;
+            //Negozio_CartaPirata12_Img.Image = ;
+            //Negozio_CartaPirata13_Img.Image = ;
+            //Negozio_CartaPirata14_Img.Image = ;
+            //Negozio_CartaPirata15_Img.Image = ;
+            //Negozio_CartaPirata16_Img.Image = ;
+            //Negozio_CartaPirata17_Img.Image = ;
+            //Negozio_CartaPirata18_Img.Image = ;
+            //Negozio_CartaPirata19_Img.Image = ;
+            //Negozio_CartaPirata20_Img.Image = ;
 
             UpdateOutput();
         }

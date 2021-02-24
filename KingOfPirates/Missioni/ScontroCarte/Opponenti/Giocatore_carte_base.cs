@@ -9,7 +9,7 @@ using KingOfPirates.Missioni.ScontroCarte.Carte;
 
 namespace KingOfPirates.Missioni.ScontroCarte.Opponenti
 {
-    abstract class Giocatore_carte_base
+    public abstract class Giocatore_carte_base
     {
         private int maxHp;
         private int curHp;
