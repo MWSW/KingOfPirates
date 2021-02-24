@@ -17,15 +17,20 @@ namespace KingOfPirates.Missioni.Navi
         public int UbriachezzaMax { get; set; }
         public int Energia { get; set; }
         public int EnergiaMax { get; set; }
+
+        public int Determinazione { get; set; }
+        public int DeterminazioneMax { get; set; }
         public Inventario Inventario { get; set; }
 
-        public NaveGiocatore(string nome_, Bitmap immagine_, Stats stats_, Loc2D loc_, int energiaMax, int ubriachezzaMax) : base(nome_, immagine_, stats_, loc_)
+        public NaveGiocatore(string nome_, Bitmap immagine_, Stats stats_, Loc2D loc_, int energiaMax, int ubriachezzaMax, int determinazioneMax) : base(nome_, immagine_, stats_, loc_)
         {
             StaNavigando = false;
             UbriachezzaMax = ubriachezzaMax;
             Ubriachezza = 0;
             EnergiaMax = energiaMax;
             Energia = EnergiaMax;
+            DeterminazioneMax = determinazioneMax;
+            Determinazione = (int)(DeterminazioneMax * 0.75f); //parte da 3/4 del totale
             Inventario = new Inventario(5,5,5,5); //TEMP
         }
 
@@ -62,6 +67,22 @@ namespace KingOfPirates.Missioni.Navi
 
             if (Ubriachezza < 0)
                 Ubriachezza = 0;
+        }
+
+        public void IncDeterminazione(int punti)
+        {
+            Determinazione += punti;
+
+            if (Determinazione > DeterminazioneMax)
+                Determinazione = DeterminazioneMax;
+        }
+
+        public void DecDeterminazione(int punti)
+        {
+            Determinazione -= punti;
+
+            if (Determinazione < 0)
+                Determinazione = 0;
         }
 
         //TODO: public void UsaOggetto(Oggetto o){}

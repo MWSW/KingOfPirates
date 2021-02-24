@@ -72,7 +72,7 @@ namespace KingOfPirates
 
         public static void Start()
         {
-            Giocatore = new NaveGiocatore("Nave da Test", Properties.Resources.nave_rossa, new Stats(), new Loc2D(), 5, 10);
+            Giocatore = new NaveGiocatore("Nave da Test", Properties.Resources.nave_rossa, new Stats(), new Loc2D(), 5, 10, 20);
             initTask.Start();
             startMenu = new StartMenu();
             startMenu.Show();

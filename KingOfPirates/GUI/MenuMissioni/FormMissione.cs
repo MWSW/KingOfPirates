@@ -184,8 +184,12 @@ namespace KingOfPirates.GUI.MenuMissioni
         private void BevandaDet_button_Click(object sender, EventArgs e)
         {
             Gioco.Giocatore.Inventario.DecBevandaDeterminazione(); //consumi una bevanda della determinazione
+
+            Gioco.Giocatore.IncDeterminazione(2); //aumenta determinazione
             //aggiorno il label
             this.BevandaDet_label.Text = "Bevande Det Rimaste: " + Gioco.Giocatore.Inventario.BevandaDeterminazione;
+            this.Determinazione_label.Text = "Determinazione: " + Gioco.Giocatore.Determinazione + "/" + Gioco.Giocatore.DeterminazioneMax;
+
         }
 
         private void AntiUbriachezza_button_Click(object sender, EventArgs e)
