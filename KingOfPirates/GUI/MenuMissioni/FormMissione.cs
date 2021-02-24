@@ -150,27 +150,36 @@ namespace KingOfPirates.GUI.MenuMissioni
 
         private void Azione_button_Click(object sender, EventArgs e)
         {
-            Gioco.Giocatore.Energia = 10;
+            MessageBox.Show("Hai passato il turno!");
+            Gioco.Giocatore.Energia = Gioco.Giocatore.EnergiaMax;
         }
 
         private void Rum_button_Click(object sender, EventArgs e)
         {
-            //
+            Gioco.Giocatore.Inventario.DecRum(); //consumi una unità di rum
+            //aggiorno label
+            this.Rum_label.Text = "Rum rimasto: " + Gioco.Giocatore.Inventario.Rum;
         }
 
         private void AssLeg_button_Click(object sender, EventArgs e)
         {
-            //
+            Gioco.Giocatore.Inventario.DecAssiLegno(); //consumi un'asse di legno
+            //aggiorno label
+            this.AssLeg_label.Text = "Assi rimaste: " + Gioco.Giocatore.Inventario.AssiLegno;
         }
 
         private void BevandaDet_button_Click(object sender, EventArgs e)
         {
-            //
+            Gioco.Giocatore.Inventario.DecBevandaDeterminazione(); //consumi una bevanda della determinazione
+            //aggiorno il label
+            this.BevandaDet_label.Text = "Bevande Det Rimaste: " + Gioco.Giocatore.Inventario.BevandaDeterminazione;
         }
 
         private void AntiUbriachezza_button_Click(object sender, EventArgs e)
         {
-            //
+            Gioco.Giocatore.Inventario.DecAntiUbriachezza(); //consumi una bevanda anti ubriachezza
+            //aggiorno il label
+            this.AntiUbriachezza_label.Text = "AntiUbriachezza rimasti: " + Gioco.Giocatore.Inventario.AntiUbriachezza;
         }
 
         private void MenuMissioni_FormClosing(object sender, FormClosingEventArgs e)

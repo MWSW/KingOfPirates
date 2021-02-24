@@ -24,7 +24,7 @@ namespace KingOfPirates.Missioni.Navi
             Ubriachezza = 0;
             EnergiaMax = energiaMax;
             Energia = EnergiaMax;
-            Inventario = new Inventario();
+            Inventario = new Inventario(5,5,5,5); //TEMP
         }
 
         public override void Movimento(Loc2D spostamento)
