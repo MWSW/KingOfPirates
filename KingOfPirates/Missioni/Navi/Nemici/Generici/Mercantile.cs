@@ -11,10 +11,10 @@ using KingOfPirates.Missioni.ScontroCarte.Carte;
 
 namespace KingOfPirates.Missioni.Navi.Nemici.Generici
 {
-    internal class Mercantile : Nave
+    internal class Mercantile
     {
-        Carta[] Mazzo { get; set; }
-        Mercantile(string nome, Image immagine, Stats stats, Loc2D loc, Carta[] mazzo) : base(nome, immagine, stats, loc)
+        Carta[] Mazzo { get; }
+        Mercantile(string nome, Image immagine, Stats stats, Loc2D loc, Carta[] mazzo) //: base(nome, immagine, stats, loc)
         {
             Mazzo = mazzo;
         }

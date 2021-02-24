@@ -21,8 +21,8 @@ namespace KingOfPirates.GUI.MenuMissioni
 {
     public partial class FormMissione : Form
     {
-        private Missione missione;
-        private Image temp;
+        internal Missione missione;
+        internal Image temp;
 
         public FormMissione(Missione missione)
         {
@@ -41,7 +41,7 @@ namespace KingOfPirates.GUI.MenuMissioni
         }
 
         private void Sopra_button_Click(object sender, EventArgs e)
-        {
+        {/*
             if (Gioco.Giocatore.Energia > 0) //Hai abbastanza energia
             {
                 if (Gioco.Giocatore.Loc.Y - 1 < 0) return;
@@ -65,8 +65,8 @@ namespace KingOfPirates.GUI.MenuMissioni
                 MessageBox.Show("Energia finita!");
                 Gioco.Giocatore.Energia = Gioco.Giocatore.EnergiaMax; //ripristino energia
                 this.EnergiaNave_label.Text = "Punti azione: " + Gioco.Giocatore.Energia + "/" + Gioco.Giocatore.EnergiaMax; //aggiorna energia_label
-            }
-
+            }*/
+            Gioco.Giocatore.Movimento(Gioco.Giocatore, Direzione.SOPRA);
         }
 
         private void Sotto_button_Click(object sender, EventArgs e)
@@ -161,6 +161,7 @@ namespace KingOfPirates.GUI.MenuMissioni
         {
             MessageBox.Show("Hai passato il turno!");
             Gioco.Giocatore.Energia = Gioco.Giocatore.EnergiaMax;
+            this.EnergiaNave_label.Text = "Punti azione: " + Gioco.Giocatore.Energia + "/" + Gioco.Giocatore.EnergiaMax; //aggiorna energia_label
         }
 
         private void Rum_button_Click(object sender, EventArgs e)
@@ -211,15 +212,6 @@ namespace KingOfPirates.GUI.MenuMissioni
             e.Cancel = true;
             this.Hide();
             Gioco.startMenu.Show();
-        }
-
-        private void Griglia_ErrorBox()
-        {
-            const string message = "Non puoi andare in quella direzione";
-            const string caption = "Avviso";
-            var result = MessageBox.Show(message, caption,
-                                         MessageBoxButtons.OK,
-                                         MessageBoxIcon.Exclamation);
         }
     }
 }

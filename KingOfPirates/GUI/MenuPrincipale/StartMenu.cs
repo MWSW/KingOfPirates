@@ -25,7 +25,7 @@ namespace KingOfPirates.GUI.MenuPrincipale
 
         private void Missioni_button_Click(object sender, EventArgs e)
         {
-            Gioco.menuMissioni.Show();
+            Gioco.TestMissione.Mappa.Show();
             this.Hide();
         }
 

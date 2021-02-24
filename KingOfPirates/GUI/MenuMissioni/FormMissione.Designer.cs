@@ -370,7 +370,7 @@ namespace KingOfPirates.GUI.MenuMissioni
         }
 
         // Variabili
-        private System.Windows.Forms.PictureBox[,] Griglia_pictureBox { get; set; }
+        internal System.Windows.Forms.PictureBox[,] Griglia_pictureBox { get; set; }
         private System.Windows.Forms.BindingSource cartinaBindingSource;
         private System.Windows.Forms.Button Sopra_button;
         private System.Windows.Forms.Button Sinistra_button;
@@ -387,7 +387,7 @@ namespace KingOfPirates.GUI.MenuMissioni
         private Button AntiUbriachezza_button;
         private Label AntiUbriachezza_label;
 
-        private Label EnergiaNave_label;
+        internal Label EnergiaNave_label;
         private Label Ubriachezza_label;
         private Label Determinazione_label;
         private Label VitaNave_label;

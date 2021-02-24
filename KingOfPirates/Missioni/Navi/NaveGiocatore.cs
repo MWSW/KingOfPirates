@@ -24,7 +24,7 @@ namespace KingOfPirates.Missioni.Navi
         public int PuntiVitaMax { get; set; }
         public Inventario Inventario { get; set; }
 
-        public NaveGiocatore(string nome_, Bitmap immagine_, Stats stats_, Loc2D loc_, int energiaMax, int ubriachezzaMax, int determinazioneMax, int puntiVitaMax) : base(nome_, immagine_, stats_, loc_)
+        public NaveGiocatore(Missione missione, string nome_, Image immagine_, Stats stats_, Loc2D loc_, int energiaMax, int ubriachezzaMax, int determinazioneMax, int puntiVitaMax) : base(missione, nome_, immagine_, stats_, loc_)
         {
             StaNavigando = false;
             UbriachezzaMax = ubriachezzaMax;
@@ -38,11 +38,6 @@ namespace KingOfPirates.Missioni.Navi
             Inventario = new Inventario(5,5,5,5); //TEMP
         }
 
-        public override void Movimento(Loc2D spostamento)
-        {
-            base.Movimento(spostamento);
-        }
-
         public void Abborda(NaveNemico nave)
         {
 
@@ -52,12 +47,12 @@ namespace KingOfPirates.Missioni.Navi
 
         }
 
-        public void RemEnergia(int enTolta)
+        public override void RemEnergia(int enTolta)
         {
             Energia -= enTolta;
         }
 
-        public void IncUbriachezza(int punti)
+        public override void IncUbriachezza(int punti)
         {
             Ubriachezza += punti;
 
@@ -65,7 +60,7 @@ namespace KingOfPirates.Missioni.Navi
                 Ubriachezza = UbriachezzaMax;
         }
 
-        public void DecUbriachezza(int punti)
+        public override void DecUbriachezza(int punti)
         {
             Ubriachezza -= punti;
 
@@ -73,7 +68,7 @@ namespace KingOfPirates.Missioni.Navi
                 Ubriachezza = 0;
         }
 
-        public void IncDeterminazione(int punti)
+        public override void IncDeterminazione(int punti)
         {
             Determinazione += punti;
 
@@ -81,7 +76,7 @@ namespace KingOfPirates.Missioni.Navi
                 Determinazione = DeterminazioneMax;
         }
 
-        public void DecDeterminazione(int punti)
+        public override void DecDeterminazione(int punti)
         {
             Determinazione -= punti;
 
@@ -89,7 +84,7 @@ namespace KingOfPirates.Missioni.Navi
                 Determinazione = 0;
         }
 
-        public void IncPuntiVita(int punti)
+        public override void IncPuntiVita(int punti)
         {
             PuntiVita += punti;
 
@@ -97,7 +92,7 @@ namespace KingOfPirates.Missioni.Navi
                 PuntiVita = PuntiVitaMax;
         }
 
-        public void DecPuntiVita(int punti)
+        public override void DecPuntiVita(int punti)
         {
             PuntiVita -= punti;
 

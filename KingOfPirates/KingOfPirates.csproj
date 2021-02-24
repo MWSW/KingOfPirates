@@ -101,6 +101,7 @@
     <Compile Include="Missioni\Navi\Nemici\Generici\Caravella.cs" />
     <Compile Include="Missioni\Navi\Nemici\Generici\Fregata.cs" />
     <Compile Include="Missioni\Navi\Nemici\Generici\Mercantile.cs" />
+    <Compile Include="Missioni\Roba\Enumerazioni.cs" />
     <Compile Include="Missioni\Roba\Loc2D.cs" />
     <Compile Include="Missioni\Roba\Stats.cs" />
     <Compile Include="Missioni\ScontroCarte\Carte\Carta.cs" />
