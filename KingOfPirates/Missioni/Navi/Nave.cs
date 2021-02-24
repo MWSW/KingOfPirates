@@ -14,13 +14,13 @@ namespace KingOfPirates.Missioni.Navi
     public abstract class Nave
     {
         private string nome;
-        private Bitmap immagine;
+        private Image immagine;
         private bool isGameOver;
 
         public Stats Stats { get; set; }
         public Loc2D Loc { get; set; }
 
-        protected Nave(String nome_, Bitmap immagine_, Stats stats_,  Loc2D loc_)
+        protected Nave(String nome_, Image immagine_, Stats stats_,  Loc2D loc_)
         {
             nome = nome_;
             immagine = immagine_;
@@ -35,7 +35,7 @@ namespace KingOfPirates.Missioni.Navi
             //
         }
 
-        public void Attacca(Nave nave) 
+        public virtual void Attacca(Nave nave) 
         {
 
         }

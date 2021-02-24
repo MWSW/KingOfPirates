@@ -98,6 +98,9 @@
     <Compile Include="Missioni\Navi\Nave.cs" />
     <Compile Include="Missioni\Navi\NaveGiocatore.cs" />
     <Compile Include="Missioni\Navi\NaveNemico.cs" />
+    <Compile Include="Missioni\Navi\Nemici\Generici\Caravella.cs" />
+    <Compile Include="Missioni\Navi\Nemici\Generici\Fregata.cs" />
+    <Compile Include="Missioni\Navi\Nemici\Generici\Mercantile.cs" />
     <Compile Include="Missioni\Roba\Loc2D.cs" />
     <Compile Include="Missioni\Roba\Stats.cs" />
     <Compile Include="Missioni\ScontroCarte\Carte\Carta.cs" />
@@ -170,7 +173,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="GUI\ScontroCarte\img_test\" />
-    <Folder Include="Nemici\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\cartaVuota.PNG" />

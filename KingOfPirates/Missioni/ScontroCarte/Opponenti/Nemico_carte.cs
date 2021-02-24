@@ -4,8 +4,6 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-
 using KingOfPirates.Missioni.ScontroCarte.Carte;
 
 namespace KingOfPirates.Missioni.ScontroCarte.Opponenti
