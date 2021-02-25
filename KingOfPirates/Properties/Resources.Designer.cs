@@ -123,29 +123,9 @@ namespace KingOfPirates.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap assLeg {
-            get {
-                object obj = ResourceManager.GetObject("assLeg", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap assLeg1 {
             get {
                 object obj = ResourceManager.GetObject("assLeg1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap back_arrow {
-            get {
-                object obj = ResourceManager.GetObject("back_arrow", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -163,29 +143,9 @@ namespace KingOfPirates.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap bevDet {
-            get {
-                object obj = ResourceManager.GetObject("bevDet", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap bevDet1 {
             get {
                 object obj = ResourceManager.GetObject("bevDet1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap bottone_attacco {
-            get {
-                object obj = ResourceManager.GetObject("bottone_attacco", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -336,16 +296,6 @@ namespace KingOfPirates.Properties {
         internal static System.Drawing.Bitmap pun_pun2 {
             get {
                 object obj = ResourceManager.GetObject("pun_pun2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap rum {
-            get {
-                object obj = ResourceManager.GetObject("rum", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

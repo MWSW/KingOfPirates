@@ -85,7 +85,6 @@
     <Compile Include="GUI\MenuPrincipale\StartMenu.Designer.cs">
       <DependentUpon>StartMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Gioco.cs" />
     <Compile Include="Missioni\GestoreMissione.cs" />
     <Compile Include="Missioni\Griglia.cs" />
     <Compile Include="Missioni\Missione.cs" />
