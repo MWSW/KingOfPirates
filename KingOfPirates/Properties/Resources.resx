@@ -127,8 +127,8 @@
   <data name="depotenziamento" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\depotenziamento.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ant" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ant.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bevDet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bevDet.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="curaPozione" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\curaPozione.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -156,9 +156,6 @@
   </data>
   <data name="nascondi" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\nascondi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bevDet" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bevDet.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="debuff" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\debuff.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -205,8 +202,8 @@
   <data name="isola3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\isole_default\isola3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="file_example_WAV_1MG" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\OST\file_example_WAV_1MG.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="ant" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ant.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bottone_attacco" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bottone_attacco.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -220,8 +217,14 @@
   <data name="Rude_Buster_HQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\OST\Rude Buster-HQ.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="mare" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mare.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="assLeg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\assLeg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="omino" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\omino.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="fuoco" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fuoco.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -238,8 +241,8 @@
   <data name="SpazioVuoto" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SpazioVuoto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="mare" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mare.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="file_example_WAV_1MG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\OST\file_example_WAV_1MG.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="nave_rossa" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\navi_laterali\nave_rossa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -247,7 +250,10 @@
   <data name="vita_buff" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\vita_buff.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="omino" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\omino.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cross" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cross.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ruby" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ruby.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
