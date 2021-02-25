@@ -17,22 +17,22 @@ namespace KingOfPirates.Missioni.Navi
         private Bitmap immagine;
         private bool isGameOver;
 
-        private Stats stats;
-        private Loc2D loc;
+        public Stats Stats { get; set; }
+        public Loc2D Loc { get; set; }
 
         protected Nave(String nome_, Bitmap immagine_, Stats stats_,  Loc2D loc_)
         {
             nome = nome_;
             immagine = immagine_;
-            stats = stats_;
-            loc = loc_;
+            Stats = stats_;
+            Loc = loc_;
 
             isGameOver = false; //la nave parte in vita
         }
 
         public virtual void Movimento(Loc2D spostamento) //(Virtual) indica che può essere esteso dai figli
         {
-
+            //
         }
 
         public void Attacca(Nave nave) 

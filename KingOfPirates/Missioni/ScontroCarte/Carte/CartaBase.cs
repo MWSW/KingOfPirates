@@ -66,7 +66,12 @@ namespace KingOfPirates.Missioni.ScontroCarte.Carte
 
         public override void UsaCarta(Giocatore_carte_base g)
         {
-            
+            base.UsaCarta(g);
+        }
+
+        public override Carta Clona()
+        {
+            return new CartaBase(nome, determinazione, immagine, atk, def, elemento);
         }
 
         public int Atk { get => atk + buff; }

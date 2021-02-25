@@ -81,6 +81,7 @@ namespace KingOfPirates.GUI.MenuNassau
             this.Controls.Add(this.PortoImgButton);
             this.Name = "Nassau_form";
             this.Text = "King of Pirates - Nassau";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Nassau_form_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.NegozioImgButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LocandaImgButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PortoImgButton)).EndInit();

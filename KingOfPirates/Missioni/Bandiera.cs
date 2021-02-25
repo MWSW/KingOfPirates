@@ -3,22 +3,26 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using KingOfPirates.Missioni.Roba;
 
 namespace KingOfPirates.Missioni
 {
     class Bandiera
     {
-        private static bool missioneEnd;
-        private static bool giocoEnd;
+        private bool missioneEnd;
+        private bool giocoEnd;
+        public Loc2D Coords { get; set; }
 
-        public Bandiera()
+        public Bandiera(int coordX, int coordY)
         {
+            Coords.X = coordX;
+            Coords.Y = coordY;
             missioneEnd = false;
             giocoEnd = false;
         }
 
-        public static bool MissioneEnd { get => missioneEnd; set => missioneEnd = value; }
-        public static bool GiocoEnd { get => giocoEnd; set => giocoEnd = value; }
+        public bool MissioneEnd { get => missioneEnd; set => missioneEnd = value; }
+        public bool GiocoEnd { get => giocoEnd; set => giocoEnd = value; }
 
         public void IsDone()
         {
@@ -28,7 +32,7 @@ namespace KingOfPirates.Missioni
         public void Termina(string msg)
         {
             Console.WriteLine(msg);
-            System.Windows.Forms.Application.Exit();
+            Gioco.End();
         }
     }
 }

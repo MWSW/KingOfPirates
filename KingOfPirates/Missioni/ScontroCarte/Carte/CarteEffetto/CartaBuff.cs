@@ -25,6 +25,8 @@ namespace KingOfPirates.Missioni.ScontroCarte.Carte.CarteEffetto
         }
         public override void UsaCarta(Giocatore_carte_base utilizzatore)
         {
+            base.UsaCarta(utilizzatore);
+
             Player_carte player = (Player_carte)utilizzatore; //funziona solo sul player
 
             if(player != null)
@@ -35,6 +37,11 @@ namespace KingOfPirates.Missioni.ScontroCarte.Carte.CarteEffetto
             {
                 MessageBox.Show("Error - non puoi usare una carta Buff con un nemico");
             }
+        }
+
+        public override Carta Clona()
+        {
+            return new CartaBuff(nome, determinazione, immagine, buff, durata);
         }
     }
 }

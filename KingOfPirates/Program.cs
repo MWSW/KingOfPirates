@@ -3,9 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using KingOfPirates;
+using KingOfPirates.Missioni;
+using KingOfPirates.Missioni.Navi;
+using KingOfPirates.Missioni.Roba;
 using KingOfPirates.GUI.MenuPrincipale;
 using KingOfPirates.GUI.MenuNassau;
 using KingOfPirates.GUI.ScontroCarte;
+using KingOfPirates.GUI.MenuMissioni;
 
 namespace KingOfPirates
 {
@@ -19,8 +24,7 @@ namespace KingOfPirates
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            new Nassau_form().Show();
-            //new ScontroCarte().Show();
+            Gioco.Start();
             Application.Run();
         }
     }
@@ -32,7 +36,6 @@ namespace KingOfPirates
     static class Gioco
     {
         public static KingOfPirates.Missioni.Navi.NaveGiocatore Giocatore { get; set; }
-        public static KingOfPirates.Cartina.GestioneDominio Dominio { get; set; }
         public static GUI.MenuPrincipale.StartMenu startMenu;
         public static GUI.MenuNassau.Nassau_form nassauForm;
         public static GUI.MenuMissioni.FormMissione menuMissioni;
@@ -40,7 +43,6 @@ namespace KingOfPirates
         private static Task initTask = new Task(() =>
         {
             Console.WriteLine("#+ Inizializzazione con Task");
-            Dominio = new Cartina.GestioneDominio();
             nassauForm = new GUI.MenuNassau.Nassau_form();
 
             Griglia griglia_prova = new Griglia(new int[19, 12] {{0,0,0,0,0,0,0,0,0,0,0,0},

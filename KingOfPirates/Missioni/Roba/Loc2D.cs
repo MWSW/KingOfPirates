@@ -8,23 +8,19 @@ namespace KingOfPirates.Missioni.Roba
 {
     public class Loc2D
     {
-        private int x;
-        private int y;
+        public int X { get; set; }
+        public int Y { get; set; }
+
         public Loc2D(int x_, int y_)
         {
-            x = x_;
-            y = y_;
+            X = x_;
+            Y = y_;
         }
 
         public Loc2D()
         {
-            x = 0;
-            y = 0;
+            X = 0;
+            Y = 0;
         }
-
-        public int GetX() { return x; }
-        public int GetY() { return y; }
-        public void SetX(int x_) { x = x_; }
-        public void SetY(int y_) { y = y_; }
     }
 }

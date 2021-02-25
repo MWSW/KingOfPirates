@@ -118,7 +118,7 @@ namespace KingOfPirates.GUI.MenuNassau
             Negozio_CostoRum_Label.Text = (negozio.getPrezziOggetti(1)).ToString() + " $";
             Negozio_CostoBevAnt_Label.Text = (negozio.getPrezziOggetti(2)).ToString() + " $";
             Negozio_CostoAssLeg_Label.Text = (negozio.getPrezziOggetti(3)).ToString() + " $";
-
+            
             //Negozio carte
 
             //Riga - nome

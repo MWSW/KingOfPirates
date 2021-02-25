@@ -12,20 +12,20 @@ namespace KingOfPirates.Missioni.Navi
 {
     public class NaveGiocatore : Nave
     {
+        private bool StaNavigando { get; set; } //Verifica che sia su terreno o meno
+        private int Ubriachezza { get; set; }
+        public int Energia { get; set; }
+        public int EnergiaMax { get; set; }
+        public Inventario Inventario { get; set; }
 
-        private bool staNavigando; //Verifica che sia su terreno o meno
-        private int ubriachezza;
-
-        private Inventario inventario;
-
-        //TO-FIX: Per ora Stats e Loc2D sono a zero
-
-        public NaveGiocatore(String nome_, Bitmap immagine_) : base(nome_, immagine_, new Stats(), new Loc2D())
+        public NaveGiocatore(string nome_, Bitmap immagine_, Stats stats_, Loc2D loc_, int energia, int energiaMax) : base(nome_, immagine_, stats_, loc_)
         {
-            inventario = new Inventario();
+            StaNavigando = false;
+            Ubriachezza = 0;
+            Energia = energia;
+            EnergiaMax = energiaMax;
+            Inventario = new Inventario();
         }
-        
-        public Inventario Inventario { get => inventario; set => inventario = value; }
 
         public override void Movimento(Loc2D spostamento)
         {
@@ -39,6 +39,11 @@ namespace KingOfPirates.Missioni.Navi
         public void Scavare() 
         {
 
+        }
+
+        public void RemEnergia(int enTolta)
+        {
+            Energia += enTolta;
         }
 
         //TODO: public void UsaOggetto(Oggetto o){}

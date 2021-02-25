@@ -20,7 +20,7 @@ namespace KingOfPirates.Missioni.Navi
         //Le varianti: Mercantile, Fregata, Vascello (saranno definite tramite i parametri degli oggetti
         public NaveNemico(String nome_, Bitmap immagine_, Stats stats_, Loc2D loc_) : base(nome_, immagine_, stats_, loc_)
         {
-
+            //
         }
 
         public override void Movimento(Loc2D spostamento)

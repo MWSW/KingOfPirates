@@ -20,9 +20,16 @@ namespace KingOfPirates.Missioni.ScontroCarte.Carte.CarteEffetto
         }
         public override void UsaCarta(Giocatore_carte_base g)
         {
+            base.UsaCarta(g);
+
             Random rng = new Random();
 
             g.AddHp(rng.Next(2, cura)); //cura il personaggio
+        }
+
+        public override Carta Clona()
+        {
+            return new CartaCura(nome, determinazione, immagine, cura);
         }
     }
 }

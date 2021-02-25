@@ -20,5 +20,10 @@ namespace KingOfPirates.Missioni.ScontroCarte.Carte.CarteEffetto
         {
            
         }
+
+        public override Carta Clona()
+        {
+            throw new NotImplementedException(); //da vedere poi
+        }
     }
 }
