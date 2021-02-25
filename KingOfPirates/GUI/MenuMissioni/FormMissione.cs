@@ -113,6 +113,29 @@ namespace KingOfPirates.GUI.MenuMissioni
             this.Ubriachezza_label.Text = "Ubriachezza: " + Gioco.Giocatore.Ubriachezza + "/" + Gioco.Giocatore.UbriachezzaMax;
         }
 
+        private void Scavo_button_Click(object sender, EventArgs e)
+        {
+            if (missione.Griglia_numerica.Mat[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y] != -1)
+            {
+                Random rand = new Random();
+
+                int rng = rand.Next() * 100;
+
+                if (rng < 70)
+                    temp = Properties.Resources.cross; //sostituisco la texure sabbia con quella scavo
+                else
+                {
+                    temp = Properties.Resources.ruby; //sostituisco la texure sabbia con rubino
+                    Gioco.Dominio.CassaRubini++; //ottieni un rubino
+                    this.Rubini_label.Text = "Rubini: " + Gioco.Dominio.CassaRubini;
+                }
+
+                //uso la matrice di inizializzazione per verificare se le celle sono già state scavate
+                missione.Griglia_numerica.Mat[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y] = -1;
+                Scavo_button.Hide(); //la componente non serve più quindi la si nasconde
+            }
+        }
+
         private void MenuMissioni_FormClosing(object sender, FormClosingEventArgs e)
         {
             e.Cancel = true;
