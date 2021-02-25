@@ -40,9 +40,11 @@ namespace KingOfPirates
         public static GUI.MenuNassau.Nassau_form nassauForm;
         public static GUI.MenuMissioni.FormMissione menuMissioni;
         public static GUI.ScontroCarte.ScontroCarte scontroCarte;
+        public static Mappa.GestioneDominio Dominio;
         private static Task initTask = new Task(() =>
         {
             Console.WriteLine("#+ Inizializzazione con Task");
+            Dominio = new Mappa.GestioneDominio();
             nassauForm = new GUI.MenuNassau.Nassau_form();
 
             Griglia griglia_prova = new Griglia(new int[19, 12] {{0,0,0,0,0,0,0,0,0,0,0,0},

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Drawing; //per le Bitmap
 using KingOfPirates.Missioni.Navi;
-using KingOfPirates.Cartina;
+using KingOfPirates.Mappa;
 
 namespace KingOfPirates.Nassau
 {

@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using KingOfPirates.Nassau;
-using KingOfPirates.Cartina;
+using KingOfPirates.Mappa;
 using KingOfPirates.Missioni.ScontroCarte.Opponenti;
 
 namespace KingOfPirates.GUI.MenuNassau
