@@ -15,18 +15,14 @@ namespace KingOfPirates.GUI.MenuNassau
 {
     public partial class Porto_form : Form
     {
-        GestioneDominio gestoreDominio;
-        NaveGiocatore naveGiocatore;
 
         private Porto porto = new Porto();
 
 
-        public Porto_form(GestioneDominio gestoreDominio, NaveGiocatore naveGiocatore)
+        public Porto_form()
         {
-            this.gestoreDominio = gestoreDominio;
-            this.naveGiocatore = naveGiocatore;
-
             InitializeComponent();
+
             LoadData();
         }
 
@@ -37,23 +33,28 @@ namespace KingOfPirates.GUI.MenuNassau
 
         private void Porto_UpCannoni_Button_Click(object sender, EventArgs e)
         {
-            porto.PotenziaCannoni(naveGiocatore, gestoreDominio);
+            porto.PotenziaCannoni();
         }
 
         private void Porto_UpScafo_Button_Click(object sender, EventArgs e)
         {
-            porto.PotenziaScafo(naveGiocatore, gestoreDominio);
+            porto.PotenziaScafo();
         }
 
         private void Porto_UpVela_Button_Click(object sender, EventArgs e)
         {
-            porto.PotenziaVele(naveGiocatore, gestoreDominio);
+            porto.PotenziaVele();
         }
 
         private void LoadData() {
             Porto_CanPrezzo_Label.Text = (porto.PrezzoCannoni[porto.LivelloCannoni]).ToString() + " $";
             Porto_ScaPrezzo_Label.Text = (porto.PrezzoScafo[porto.LivelloScafo]).ToString() + " $";
             Porto_VelPrezzo_Label.Text = (porto.PrezzoVele[porto.LivelloVele]).ToString() + " $";
+        }
+
+        private void Porto_Back_Button_Click(object sender, EventArgs e)
+        {
+            this.Hide();
         }
     }
 }

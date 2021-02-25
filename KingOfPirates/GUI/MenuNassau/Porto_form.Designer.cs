@@ -125,6 +125,7 @@ namespace KingOfPirates.GUI.MenuNassau
             this.Porto_Back_Button.Size = new System.Drawing.Size(89, 79);
             this.Porto_Back_Button.TabIndex = 13;
             this.Porto_Back_Button.UseVisualStyleBackColor = true;
+            this.Porto_Back_Button.Click += new System.EventHandler(this.Porto_Back_Button_Click);
             // 
             // Porto_Fondi_Label
             // 

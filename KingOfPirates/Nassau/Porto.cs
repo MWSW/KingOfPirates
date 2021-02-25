@@ -58,26 +58,26 @@ namespace KingOfPirates.Nassau
 
         }
 
-        public void PotenziaCannoni(NaveGiocatore nave, GestioneDominio gestoreDominio) {
+        public void PotenziaCannoni() {
             if(LivelloCannoni <= 3)
             {
-                gestoreDominio.RemDobloni(PrezzoCannoni[LivelloCannoni]);
+                Gioco.Dominio.RemDobloni(PrezzoCannoni[LivelloCannoni]);
                 LivelloCannoni ++;
             }
         }
 
-        public void PotenziaVele(NaveGiocatore nave, GestioneDominio gestoreDominio) {
+        public void PotenziaVele() {
             if (LivelloVele <= 3)
             {
-                gestoreDominio.RemDobloni(PrezzoVele[LivelloVele]);
+                Gioco.Dominio.RemDobloni(PrezzoVele[LivelloVele]);
                 LivelloVele ++;
             }
         }
 
-        public void PotenziaScafo(NaveGiocatore nave, GestioneDominio gestoreDominio) {
+        public void PotenziaScafo() {
             if (LivelloScafo <= 3)
             {
-                gestoreDominio.RemDobloni(PrezzoScafo[LivelloScafo]);
+                Gioco.Dominio.RemDobloni(PrezzoScafo[LivelloScafo]);
                 LivelloScafo ++;
             }
         }

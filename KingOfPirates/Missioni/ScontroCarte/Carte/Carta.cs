@@ -13,7 +13,11 @@ namespace KingOfPirates.Missioni.ScontroCarte.Carte
     public abstract class Carta
     {
         protected string nome;
+        private string descrizione;
         protected int determinazione;
+        private int prezzo;
+        private int curDet;
+
         protected bool utilizzabile; //Non so se va in conflitto con mazzo
         protected Bitmap immagine;
 
@@ -25,6 +29,10 @@ namespace KingOfPirates.Missioni.ScontroCarte.Carte
         {
             nome = nome_;
             determinazione = determinazione_;
+            curDet = determinazione;
+
+            utilizzabile = false;
+
             immagine = immagine_;
 
             tipo = tipo_;
@@ -87,5 +95,7 @@ namespace KingOfPirates.Missioni.ScontroCarte.Carte
         public int Indice { get => indice; set => indice = value; }
 
         public string Tipo { get => tipo; }
+        public int Prezzo { get => prezzo; set => prezzo = value; }
+        public string Descrizione { get => descrizione; set => descrizione = value; }
     }
 }

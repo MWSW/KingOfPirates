@@ -24,4 +24,69 @@ namespace KingOfPirates
             Application.Run();
         }
     }
+
+    /// <summary>
+    /// Classe per aiutare nell'avvio e terminazione del programma, da aggiornare per il programma finale
+    /// </summary>
+
+    static class Gioco
+    {
+        public static KingOfPirates.Missioni.Navi.NaveGiocatore Giocatore { get; set; }
+        public static KingOfPirates.Cartina.GestioneDominio Dominio { get; set; }
+        public static GUI.MenuPrincipale.StartMenu startMenu;
+        public static GUI.MenuNassau.Nassau_form nassauForm;
+        public static GUI.MenuMissioni.FormMissione menuMissioni;
+        public static GUI.ScontroCarte.ScontroCarte scontroCarte;
+        private static Task initTask = new Task(() =>
+        {
+            Console.WriteLine("#+ Inizializzazione con Task");
+            Dominio = new Cartina.GestioneDominio();
+            nassauForm = new GUI.MenuNassau.Nassau_form();
+
+            Griglia griglia_prova = new Griglia(new int[19, 12] {{0,0,0,0,0,0,0,0,0,0,0,0},
+                                                                 {0,0,0,0,0,0,0,0,0,0,0,0},
+                                                                 {0,1,1,1,1,1,1,1,1,0,0,0},
+                                                                 {0,0,1,1,1,1,1,1,0,0,0,0},
+                                                                 {0,0,0,1,1,1,1,0,0,0,0,0},
+                                                                 {0,0,0,0,1,1,0,0,0,0,0,0},
+                                                                 {0,0,0,0,0,0,0,0,0,0,0,0},
+                                                                 {0,0,0,0,0,0,0,0,0,0,0,0},
+                                                                 {0,0,0,0,0,0,0,0,0,0,0,0},
+                                                                 {0,0,0,0,0,0,0,0,0,0,0,0},
+                                                                 {0,0,0,0,0,0,0,0,0,0,0,0},
+                                                                 {0,0,0,0,0,0,0,0,0,0,0,0},
+                                                                 {0,0,0,0,0,0,0,0,0,0,0,0},
+                                                                 {0,0,0,0,0,0,0,0,0,0,0,0},
+                                                                 {0,0,0,0,0,0,0,0,0,0,0,0},
+                                                                 {0,0,0,0,0,0,0,0,0,0,0,0},
+                                                                 {0,0,0,0,0,0,0,0,0,0,0,0},
+                                                                 {0,0,0,0,0,0,0,0,0,0,0,0},
+                                                                 {0,0,0,0,0,0,0,0,0,0,0,0}});
+
+            menuMissioni = new GUI.MenuMissioni.FormMissione(new Missione(griglia_prova, new Loc2D(4, 4), new Loc2D(10, 10), 10));
+            scontroCarte = new GUI.ScontroCarte.ScontroCarte();
+            Console.WriteLine("#- Inizializzazione con Task");
+        });
+
+        public static void Start()
+        {
+            Giocatore = new NaveGiocatore("Nave da Test", Properties.Resources.nave_rossa, new Stats(), new Loc2D(), 0, 10);
+            initTask.Start();
+            startMenu = new StartMenu();
+            startMenu.Show();
+            initTask.Wait();
+        }
+
+        public static void End()
+        {
+            nassauForm.Close();
+            menuMissioni.Close();
+            scontroCarte.Close();
+            nassauForm.Dispose();
+            menuMissioni.Dispose();
+            scontroCarte.Dispose();
+            startMenu.Dispose();
+            Application.Exit();
+        }
+    }
 }
