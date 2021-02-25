@@ -7,6 +7,9 @@ using KingOfPirates.Missioni.Roba;
 
 namespace KingOfPirates.Missioni
 {
+    /// <summary>
+    /// Griglia numerica su cui verrà basata la griglia grafica
+    /// </summary>
     public class Griglia
     {
         private int[,] mat;

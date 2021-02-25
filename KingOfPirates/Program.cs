@@ -13,8 +13,13 @@ using KingOfPirates.GUI.ScontroCarte;
 using KingOfPirates.GUI.MenuMissioni;
 using KingOfPirates.Cartina;
 
+
+
 namespace KingOfPirates
 {
+    /// <summary>
+    /// Classe di ingresso principale.
+    /// </summary>
     static class Program
     {
         /// <summary>
@@ -31,9 +36,8 @@ namespace KingOfPirates
     }
 
     /// <summary>
-    /// Classe che contiene variabili necessarie per il funzionamento del programma e per aiutare nell'avvio e terminazione del programma.
+    /// Classe che contiene variabili necessarie per il funzionamento del programma.
     /// </summary>
-
     static class Gioco
     {
         /// <summary>

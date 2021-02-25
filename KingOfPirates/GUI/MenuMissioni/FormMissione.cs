@@ -20,12 +20,17 @@ using KingOfPirates.Missioni.Navi;
 namespace KingOfPirates.GUI.MenuMissioni
 {
     /// <summary>
-    /// Funzioni degli eventi del form FormMissione
+    /// Form che rappresenta la griglia grafica della missione, fatto a mano.
     /// </summary>
     public partial class FormMissione : Form
     {
         internal Missione missione;
         internal Image temp;
+
+        /// <summary>
+        /// Costruttore, inizializza i componenti grafici.
+        /// </summary>
+        /// <param name="missione">Per manipolare la missione nel Form.</param>
 
         public FormMissione(Missione missione)
         {

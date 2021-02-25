@@ -1,6 +1,5 @@
 var NAVTREEINDEX3 =
 {
-"de/d8c/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_opponenti_1_1_giocatore__carte__base.html#a311951c837865ce08214e11c781ea843":[1,0,0,3,2,1,0,3],
 "de/d8c/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_opponenti_1_1_giocatore__carte__base.html#a32ca7c57943689be3200628d08a44dfe":[1,0,0,3,2,1,0,1],
 "de/d8c/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_opponenti_1_1_giocatore__carte__base.html#a61398321cf8981881991a05abb8bc468":[1,0,0,3,2,1,0,2],
 "de/d8c/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_opponenti_1_1_giocatore__carte__base.html#a745ae71d9b87b0e5498f5fe00bfb4f27":[1,0,0,3,2,1,0,5],
@@ -198,15 +197,15 @@ var NAVTREEINDEX3 =
 "dir_f0c602063eb70b353ff095feabf00f79.html":[2,0,0,2,2,0,0],
 "dir_f64b589fec7bc40320dd15d48d3afbd2.html":[2,0,0,4],
 "files.html":[2,0],
-"functions.html":[1,3,0,0],
 "functions.html":[1,3,0],
+"functions.html":[1,3,0,0],
 "functions_b.html":[1,3,0,1],
 "functions_c.html":[1,3,0,2],
 "functions_d.html":[1,3,0,3],
 "functions_e.html":[1,3,0,4],
 "functions_f.html":[1,3,0,5],
-"functions_func.html":[1,3,1,0],
 "functions_func.html":[1,3,1],
+"functions_func.html":[1,3,1,0],
 "functions_func_b.html":[1,3,1,1],
 "functions_func_c.html":[1,3,1,2],
 "functions_func_d.html":[1,3,1,3],
@@ -249,5 +248,6 @@ var NAVTREEINDEX3 =
 "functions_vars_i.html":[1,3,2,7],
 "functions_vars_l.html":[1,3,2,8],
 "functions_vars_m.html":[1,3,2,9],
-"functions_vars_n.html":[1,3,2,10]
+"functions_vars_n.html":[1,3,2,10],
+"functions_vars_p.html":[1,3,2,11]
 };

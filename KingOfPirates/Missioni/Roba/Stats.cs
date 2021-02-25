@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace KingOfPirates.Missioni.Roba
 {
     /// <summary>
-    /// Contenitore di variabili per le navi
+    /// Contenitore di statistiche per le navi
     /// </summary>
     public class Stats
     {
@@ -21,12 +21,12 @@ namespace KingOfPirates.Missioni.Roba
         /// <summary>
         /// Inizializza le Stats per navi con tutti parametri
         /// </summary>
-        /// <param name="hp"></param>
-        /// <param name="hpMax"></param>
-        /// <param name="pa"></param>
-        /// <param name="paMax"></param>
-        /// <param name="minHit"></param>
-        /// <param name="maxHit"></param>
+        /// <param name="hp">Punti vita.</param>
+        /// <param name="hpMax">Punti vita massimi.</param>
+        /// <param name="pa">Punti azione.</param>
+        /// <param name="paMax">Punti azione massimi.</param>
+        /// <param name="minHit">Danno minimo per l'attacco</param>
+        /// <param name="maxHit">Danno massimo per l'attacco</param>
 
         public Stats(int hp,int hpMax , int pa, int paMax, int minHit, int maxHit)
         {

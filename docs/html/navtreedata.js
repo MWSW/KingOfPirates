@@ -54,8 +54,8 @@ var NAVTREEINDEX =
 "annotated.html",
 "d6/d4b/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_carte_1_1_carte_effetto_1_1_carta_debuff.html",
 "db/d60/class_king_of_pirates_1_1_g_u_i_1_1_menu_nassau_1_1_negozio__form.html#a66caba66f562ddb708bb39edf7ee1401",
-"de/d8c/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_opponenti_1_1_giocatore__carte__base.html#a311951c837865ce08214e11c781ea843",
-"functions_vars_p.html"
+"de/d8c/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_opponenti_1_1_giocatore__carte__base.html#a32ca7c57943689be3200628d08a44dfe",
+"functions_vars_r.html"
 ];
 
 var SYNCONMSG = 'cliccare per disabilitare la sincronizzazione del pannello';

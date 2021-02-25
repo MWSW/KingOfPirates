@@ -9,7 +9,6 @@ var class_king_of_pirates_1_1_missioni_1_1_navi_1_1_nave =
     [ "IncPuntiVita", "dc/dc9/class_king_of_pirates_1_1_missioni_1_1_navi_1_1_nave.html#adad3edf8d5b42dfdf243518055aed1a2", null ],
     [ "IncUbriachezza", "dc/dc9/class_king_of_pirates_1_1_missioni_1_1_navi_1_1_nave.html#a2c345a2fc5d0ed625d70be4f1d931c3a", null ],
     [ "Movimento", "dc/dc9/class_king_of_pirates_1_1_missioni_1_1_navi_1_1_nave.html#a52c6a171902190028f80aaea950e9296", null ],
-    [ "Movimento", "dc/dc9/class_king_of_pirates_1_1_missioni_1_1_navi_1_1_nave.html#a3bf6086c0dfeb91338da5fc133e36842", null ],
     [ "RemEnergia", "dc/dc9/class_king_of_pirates_1_1_missioni_1_1_navi_1_1_nave.html#a8c438562070fd6f448437619abc2a246", null ],
     [ "immagine", "dc/dc9/class_king_of_pirates_1_1_missioni_1_1_navi_1_1_nave.html#aed466dbfaa42abfe4a6d7876ef6edfa3", null ],
     [ "isGameOver", "dc/dc9/class_king_of_pirates_1_1_missioni_1_1_navi_1_1_nave.html#a3f426d0de20153c696e675f5ea1dd3c4", null ],

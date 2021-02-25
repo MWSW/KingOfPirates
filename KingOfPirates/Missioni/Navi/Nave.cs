@@ -10,6 +10,9 @@ using KingOfPirates.GUI.MenuMissioni;
 
 namespace KingOfPirates.Missioni.Navi
 {
+    /// <summary>
+    /// Contiene tutti i metodi di base per tutte le navi.
+    /// </summary>
     public abstract class Nave
     {
         private string nome;
@@ -19,6 +22,13 @@ namespace KingOfPirates.Missioni.Navi
         public Stats Stats { get; set; }
         public Loc2D Loc { get; set; }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="nome_">Assegna il nome alla nave.</param>
+        /// <param name="immagine_">Assegna l'aspetto della nave per il FormMissione.</param>
+        /// <param name="stats_">Statistiche per la nave.</param>
+        /// <param name="loc_">Coordinate da usare nel FormMissione.</param>
         protected Nave(String nome_, Image immagine_, Stats stats_,  Loc2D loc_)
         {
             nome = nome_;
@@ -30,10 +40,10 @@ namespace KingOfPirates.Missioni.Navi
         }
 
         /// <summary>
-        /// La funzione fa muovere la nave data la missione in cui effetuare il movimento e la direzione in cui muoversi
+        /// La funzione fa muovere la nave data la missione in cui effetuare il movimento e la direzione in cui muoversi.
         /// </summary>
-        /// <param name="missione"></param>
-        /// <param name="direzione"></param>
+        /// <param name="missione">Per permettere il movimento all'interno della mappa della missione.</param>
+        /// <param name="direzione">per specificare la direzione in cui effetuare il movimento.</param>
 
         public virtual void Movimento(Missione missione, Direzione direzione) //(Virtual) indica che può essere esteso dai figli
         {
@@ -117,12 +127,7 @@ namespace KingOfPirates.Missioni.Navi
                     break;
             }
         }
-
-        public virtual void Movimento(Nave nave, Loc2D spostamento) //(Virtual) indica che può essere esteso dai figli
-        {
-            //
-        }
-
+        
         public virtual void Attacca(Nave nave) 
         {
             //

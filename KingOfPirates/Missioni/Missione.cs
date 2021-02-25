@@ -14,36 +14,36 @@ namespace KingOfPirates.Missioni
     /// </summary>
     public class Missione
     {
-        /// <value> Soldi che vengono dati al giocatore come premio </value>
+        /// <value> Soldi che vengono dati al giocatore come premio. </value>
         private int Reward { get; set; }
-        /// <value> Descrizione della missione, viene visualizzata nella scelta missione </value>
+        /// <value> Descrizione della missione, viene visualizzata nella scelta missione. </value>
         private string Descrizione { get; set; }
         /// <value>
-        /// Griglia della missione
+        /// Griglia della missione.
         /// </value>
         internal FormMissione Mappa { get; set; }
         /// <value>
-        /// Array dei nemici presenti nella missione
+        /// Array dei nemici presenti nella missione.
         /// </value>
         protected NaveNemico[] Nemici { get; set; }
         /// <value>
-        /// Posizione iniziale nave
+        /// Posizione iniziale nave.
         /// </value>
         internal Loc2D PosNave { get; set; }
         /// <value>
-        /// Posizione bandiera
+        /// Posizione bandiera.
         /// </value>
         internal Loc2D PosBandiera { get; set; }
-        /// <value> Griglia su cui viene generata la mappa grafica </value>
+        /// <value> Griglia su cui viene generata la mappa grafica. </value>
         internal Griglia Griglia_numerica { get; set; }
 
         /// <summary>
-        /// Costruttore che prende tutti i parametri
+        /// Costruttore che prende tutti i parametri.
         /// </summary>
-        /// <param name="Griglia_numerica"></param>
-        /// <param name="posNave"></param>
-        /// <param name="posBandiera"></param>
-        /// <param name="reward"></param>
+        /// <param name="Griglia_numerica">Griglia su cui verra basata la griglia grafica</param>
+        /// <param name="posNave">Posizione iniziale nave giocatore</param>
+        /// <param name="posBandiera">Posizione obiettivo finale</param>
+        /// <param name="reward">Premio per il raggiungimento della bandiera</param>
 
         public Missione(Griglia Griglia_numerica, Loc2D posNave, Loc2D posBandiera, int reward)
         {

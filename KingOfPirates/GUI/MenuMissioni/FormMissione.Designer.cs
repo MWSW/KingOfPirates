@@ -10,9 +10,6 @@ using KingOfPirates.Missioni.Roba;
 
 namespace KingOfPirates.GUI.MenuMissioni
 {
-    /// <summary>
-    /// Form che rappresenta la mappa di una missione
-    /// </summary>
     partial class FormMissione
     {
         /// <summary>
@@ -34,7 +31,7 @@ namespace KingOfPirates.GUI.MenuMissioni
         }
 
         /// <summary>
-        /// Inizializzatore componenti
+        /// Inizializzatore componenti grafici.
         /// </summary>
         private void InitializeComponent(int picBoxXSize, int picBoxYSize)
         {
