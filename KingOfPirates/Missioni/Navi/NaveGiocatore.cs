@@ -24,7 +24,7 @@ namespace KingOfPirates.Missioni.Navi
         public int PuntiVitaMax { get; set; }
         public Inventario Inventario { get; set; }
 
-        public NaveGiocatore(Missione missione, string nome_, Image immagine_, Stats stats_, Loc2D loc_, int energiaMax, int ubriachezzaMax, int determinazioneMax, int puntiVitaMax) : base(missione, nome_, immagine_, stats_, loc_)
+        public NaveGiocatore(string nome_, Image immagine_, Stats stats_, Loc2D loc_, int energiaMax, int ubriachezzaMax, int determinazioneMax, int puntiVitaMax) : base(nome_, immagine_, stats_, loc_)
         {
             StaNavigando = false;
             UbriachezzaMax = ubriachezzaMax;

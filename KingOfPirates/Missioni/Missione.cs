@@ -32,7 +32,6 @@ namespace KingOfPirates.Missioni
 
         public void StartMissione()
         {
-            Gioco.Giocatore.Missione = this;
             Mappa.Activate();
             //TODO: Altro codice necessario all'avvio corretto della missione
         }

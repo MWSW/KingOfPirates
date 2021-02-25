@@ -12,7 +12,6 @@ namespace KingOfPirates.Missioni.Navi
 {
     public abstract class Nave
     {
-        internal Missione Missione { get; set; }
         private string nome;
         private Image immagine;
         private bool isGameOver;
@@ -22,9 +21,8 @@ namespace KingOfPirates.Missioni.Navi
         public int Energia { get; set; }
         public int EnergiaMax { get; set; }
 
-        protected Nave(Missione missione, String nome_, Image immagine_, Stats stats_,  Loc2D loc_)
+        protected Nave(String nome_, Image immagine_, Stats stats_,  Loc2D loc_)
         {
-            Missione = missione;
             nome = nome_;
             immagine = immagine_;
             Stats = stats_;
@@ -33,53 +31,81 @@ namespace KingOfPirates.Missioni.Navi
             isGameOver = false; //la nave parte in vita
         }
 
-        public virtual void Movimento(Nave nave, Direzione direzione) //(Virtual) indica che può essere esteso dai figli
+        public virtual void Movimento(Missione missione, Direzione direzione) //(Virtual) indica che può essere esteso dai figli
         {
             if (Gioco.Giocatore.Loc.Y - 1 < 0) return;
-            if (nave.Loc.Y - 1 <= 0)
+            if (this.Loc.Y - 1 <= 0)
             {
                 MessageBox.Show("Energia finita!");
                 Gioco.Giocatore.Energia = Gioco.Giocatore.EnergiaMax; //ripristino energia
-                Missione.Mappa.EnergiaNave_label.Text = "Punti azione: " + Gioco.Giocatore.Energia + "/" + Gioco.Giocatore.EnergiaMax; //aggiorna energia_label
+                missione.Mappa.EnergiaNave_label.Text = "Punti azione: " + Gioco.Giocatore.Energia + "/" + Gioco.Giocatore.EnergiaMax; //aggiorna energia_label
                 return;
             }
             switch (direzione)
             {
                 case Direzione.SOPRA:
-                    if (Missione.Griglia_numerica.Mat[nave.Loc.X, nave.Loc.Y - 1] == 2) return;
+                    if (missione.Griglia_numerica.Mat[this.Loc.X, this.Loc.Y - 1] == 2) return;
 
-                    Missione.Mappa.Griglia_pictureBox[nave.Loc.X, nave.Loc.Y].BackgroundImage = Missione.Mappa.temp; //texture vecchia
-                    nave.Loc.Y--; //aggiorno la posizione
-                    Missione.Mappa.temp = Missione.Mappa.Griglia_pictureBox[nave.Loc.X, nave.Loc.Y].BackgroundImage; //aggiorno temp
+                    missione.Mappa.Griglia_pictureBox[this.Loc.X, this.Loc.Y].BackgroundImage = missione.Mappa.temp; //texture vecchia
+                    this.Loc.Y--; //aggiorno la posizione
+                    missione.Mappa.temp =missione.Mappa.Griglia_pictureBox[this.Loc.X, this.Loc.Y].BackgroundImage; //aggiorno temp
 
                     //cambia immagine se è sopra una isola
-                    if (Missione.Griglia_numerica.Mat[nave.Loc.X, nave.Loc.Y + 1] == 1)
-                        Missione.Mappa.Griglia_pictureBox[nave.Loc.X, nave.Loc.Y].BackgroundImage = Properties.Resources.omino;
+                    if (missione.Griglia_numerica.Mat[Loc.X, Loc.Y] == 1)
+                        missione.Mappa.Griglia_pictureBox[Loc.X, Loc.Y].BackgroundImage = Properties.Resources.omino;
                     else
-                        Missione.Mappa.Griglia_pictureBox[nave.Loc.X, nave.Loc.Y].BackgroundImage = Properties.Resources.nave_pirata;
+                        missione.Mappa.Griglia_pictureBox[Loc.X, Loc.Y].BackgroundImage = Properties.Resources.nave_pirata;
 
                     Gioco.Giocatore.RemEnergia(1); //consumi energia
-                    Missione.Mappa.EnergiaNave_label.Text = "Punti azione: " + nave.Energia + "/" + nave.EnergiaMax; //aggiorna energia_label
+                    missione.Mappa.EnergiaNave_label.Text = "Punti azione: " + Energia + "/" + EnergiaMax; //aggiorna energia_label
                     break;
                 case Direzione.DESTRA:
-                    break;
-                case Direzione.SINISTRA:
-                    break;
-                case Direzione.SOTTO:
-                    if (Missione.Griglia_numerica.Mat[nave.Loc.X, nave.Loc.Y + 1] == 2) return;
+                    if (missione.Griglia_numerica.Mat[this.Loc.X + 1, this.Loc.Y] == 2) return;
 
-                    Missione.Mappa.Griglia_pictureBox[nave.Loc.X, nave.Loc.Y].BackgroundImage = Missione.Mappa.temp; //texture vecchia
-                    nave.Loc.Y++; //aggiorno la posizione
-                    Missione.Mappa.temp = Missione.Mappa.Griglia_pictureBox[nave.Loc.X, nave.Loc.Y].BackgroundImage; //aggiorno temp
+                    missione.Mappa.Griglia_pictureBox[this.Loc.X, this.Loc.Y].BackgroundImage = missione.Mappa.temp; //texture vecchia
+                    this.Loc.X++; //aggiorno la posizione
+                    missione.Mappa.temp = missione.Mappa.Griglia_pictureBox[this.Loc.X, this.Loc.Y].BackgroundImage; //aggiorno temp
 
                     //cambia immagine se è sopra una isola
-                    if (Missione.Griglia_numerica.Mat[nave.Loc.X, nave.Loc.Y] == 1)
-                        Missione.Mappa.Griglia_pictureBox[nave.Loc.X, nave.Loc.Y].BackgroundImage = Properties.Resources.omino;
+                    if (missione.Griglia_numerica.Mat[Loc.X, Loc.Y] == 1)
+                        missione.Mappa.Griglia_pictureBox[Loc.X, Loc.Y].BackgroundImage = Properties.Resources.omino;
                     else
-                        Missione.Mappa.Griglia_pictureBox[nave.Loc.X, nave.Loc.Y].BackgroundImage = Properties.Resources.nave_pirata;
+                        missione.Mappa.Griglia_pictureBox[Loc.X, Loc.Y].BackgroundImage = Properties.Resources.nave_pirata;
 
                     Gioco.Giocatore.RemEnergia(1); //consumi energia
-                    Missione.Mappa.EnergiaNave_label.Text = "Punti azione: " + nave.Energia + "/" + nave.EnergiaMax; //aggiorna energia_label
+                    missione.Mappa.EnergiaNave_label.Text = "Punti azione: " + Energia + "/" + EnergiaMax; //aggiorna energia_label
+                    break;
+                case Direzione.SINISTRA:
+                    if (missione.Griglia_numerica.Mat[this.Loc.X - 1, this.Loc.Y] == 2) return;
+
+                    missione.Mappa.Griglia_pictureBox[this.Loc.X, this.Loc.Y].BackgroundImage = missione.Mappa.temp; //texture vecchia
+                    this.Loc.X--; //aggiorno la posizione
+                    missione.Mappa.temp = missione.Mappa.Griglia_pictureBox[this.Loc.X, this.Loc.Y].BackgroundImage; //aggiorno temp
+
+                    //cambia immagine se è sopra una isola
+                    if (missione.Griglia_numerica.Mat[Loc.X, Loc.Y] == 1)
+                        missione.Mappa.Griglia_pictureBox[Loc.X, Loc.Y].BackgroundImage = Properties.Resources.omino;
+                    else
+                        missione.Mappa.Griglia_pictureBox[Loc.X, Loc.Y].BackgroundImage = Properties.Resources.nave_pirata;
+
+                    Gioco.Giocatore.RemEnergia(1); //consumi energia
+                    missione.Mappa.EnergiaNave_label.Text = "Punti azione: " + Energia + "/" + EnergiaMax; //aggiorna energia_label
+                    break;
+                case Direzione.SOTTO:
+                    if (missione.Griglia_numerica.Mat[this.Loc.X, this.Loc.Y + 1] == 2) return;
+
+                    missione.Mappa.Griglia_pictureBox[this.Loc.X, this.Loc.Y].BackgroundImage = missione.Mappa.temp; //texture vecchia
+                    this.Loc.Y++; //aggiorno la posizione
+                    missione.Mappa.temp = missione.Mappa.Griglia_pictureBox[this.Loc.X, this.Loc.Y].BackgroundImage; //aggiorno temp
+
+                    //cambia immagine se è sopra una isola
+                    if (missione.Griglia_numerica.Mat[Loc.X, Loc.Y] == 1)
+                        missione.Mappa.Griglia_pictureBox[Loc.X, Loc.Y].BackgroundImage = Properties.Resources.omino;
+                    else
+                        missione.Mappa.Griglia_pictureBox[Loc.X, Loc.Y].BackgroundImage = Properties.Resources.nave_pirata;
+
+                    RemEnergia(1); //consumi energia
+                    missione.Mappa.EnergiaNave_label.Text = "Punti azione: " + Energia + "/" + EnergiaMax; //aggiorna energia_label
                     break;
                 default:
                     break;
