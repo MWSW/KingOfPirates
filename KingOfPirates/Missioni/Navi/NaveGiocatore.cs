@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-using System.Drawing; //Per le Bitmap
+using System.Drawing; //Per le Image
 using KingOfPirates.Missioni.Roba;
 using KingOfPirates.Missioni.Navi.Opponenti;
 
@@ -15,41 +14,32 @@ namespace KingOfPirates.Missioni.Navi
         private bool StaNavigando { get; set; } //Verifica che sia su terreno o meno
         public int Ubriachezza { get; set; }
         public int UbriachezzaMax { get; set; }
-        public int Energia { get; set; }
-        public int EnergiaMax { get; set; }
-
         public int Determinazione { get; set; }
         public int DeterminazioneMax { get; set; }
-        public int PuntiVita { get; set; }
-        public int PuntiVitaMax { get; set; }
         public Inventario Inventario { get; set; }
 
-        public NaveGiocatore(string nome_, Image immagine_, Stats stats_, Loc2D loc_, int energiaMax, int ubriachezzaMax, int determinazioneMax, int puntiVitaMax) : base(nome_, immagine_, stats_, loc_)
+        public NaveGiocatore(string nome_, Image immagine_, Stats stats_, Loc2D loc_, int ubriachezzaMax, int determinazioneMax) : base(nome_, immagine_, stats_, loc_)
         {
             StaNavigando = false;
             UbriachezzaMax = ubriachezzaMax;
             Ubriachezza = 0;
-            EnergiaMax = energiaMax;
-            Energia = EnergiaMax;
             DeterminazioneMax = determinazioneMax;
             Determinazione = (int)(DeterminazioneMax * 0.75f); //parte da 3/4 del totale
-            PuntiVitaMax = puntiVitaMax;
-            PuntiVita = 6; //FIXME
-            Inventario = new Inventario(5,5,5,5); //TEMP
+            Inventario = new Inventario(5,5,5,5); //FIXME
         }
 
         public void Abborda(NaveNemico nave)
         {
-
+            //
         }
         public void Scavare() 
         {
-
+            //
         }
 
         public override void RemEnergia(int enTolta)
         {
-            Energia -= enTolta;
+            Stats.PaMax -= enTolta;
         }
 
         public override void IncUbriachezza(int punti)
@@ -86,20 +76,20 @@ namespace KingOfPirates.Missioni.Navi
 
         public override void IncPuntiVita(int punti)
         {
-            PuntiVita += punti;
+            Stats.Hp += punti;
 
-            if (PuntiVita > PuntiVitaMax)
-                PuntiVita = PuntiVitaMax;
+            if (Stats.Hp > Stats.HpMax)
+                Stats.Hp = Stats.HpMax;
         }
 
         public override void DecPuntiVita(int punti)
         {
-            PuntiVita -= punti;
+            Stats.Hp -= punti;
 
-            if (PuntiVita < 0)
-                PuntiVita = 0;
+            if (Stats.Hp < 0)
+                Stats.Hp = 0;
         }
 
-        //TODO: public void UsaOggetto(Oggetto o){}
+        //TODO: public void UsaOggetto(Oggetto ob){}
     }
 }

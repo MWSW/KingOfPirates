@@ -120,7 +120,7 @@ namespace KingOfPirates.GUI.MenuMissioni
             this.VitaNave_label.Name = "VitaNave_label";
             this.VitaNave_label.Size = new System.Drawing.Size(156, 15);
             this.VitaNave_label.TabIndex = 1;
-            this.VitaNave_label.Text = "Punti Vita: " + Gioco.Giocatore.PuntiVita + "/" + Gioco.Giocatore.PuntiVitaMax;
+            this.VitaNave_label.Text = "Punti Vita: " + Gioco.Giocatore.Stats.Hp + "/" + Gioco.Giocatore.PuntiVitaMax;
             this.VitaNave_label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.VitaNave_label.AutoSize = false;
             #endregion

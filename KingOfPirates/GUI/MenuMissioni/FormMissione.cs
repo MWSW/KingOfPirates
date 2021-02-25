@@ -186,7 +186,7 @@ namespace KingOfPirates.GUI.MenuMissioni
 
             //aggiorno label
             this.AssLeg_label.Text = "Assi rimaste: " + Gioco.Giocatore.Inventario.AssiLegno;
-            this.VitaNave_label.Text = "Punti Vita: " + Gioco.Giocatore.PuntiVita + "/" + Gioco.Giocatore.PuntiVitaMax;
+            this.VitaNave_label.Text = "Punti Vita: " + Gioco.Giocatore.Stats.Hp + "/" + Gioco.Giocatore.PuntiVitaMax;
         }
 
         private void BevandaDet_button_Click(object sender, EventArgs e)

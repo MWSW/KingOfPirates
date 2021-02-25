@@ -11,16 +11,12 @@ namespace KingOfPirates.Missioni.Roba
         public int X { get; set; }
         public int Y { get; set; }
 
-        public Loc2D(int x_, int y_)
+        public Loc2D(int x, int y)
         {
-            X = x_;
-            Y = y_;
+            X = x;
+            Y = y;
         }
 
-        public Loc2D()
-        {
-            X = 0;
-            Y = 0;
-        }
+        public override string ToString() => $"({X}, {Y})";
     }
 }
