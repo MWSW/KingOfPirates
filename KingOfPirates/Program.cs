@@ -47,7 +47,6 @@ namespace KingOfPirates
         private static Task initTask = new Task(() =>
         {
             Console.WriteLine("#+ Inizializzazione con Task");
-            nassauForm = new GUI.MenuNassau.Nassau_form();
             Giocatore = new NaveGiocatore("Nave da Test", Properties.Resources.nave_rossa, new Stats(), new Loc2D(), 5, 10);
 
             Griglia griglia_prova = new Griglia(new int[19, 12] {{0,0,0,0,0,0,0,0,0,0,0,0},
@@ -70,8 +69,9 @@ namespace KingOfPirates
                                                                  {0,0,0,0,0,0,0,0,0,0,0,0},
                                                                  {0,0,0,0,0,0,0,0,0,0,0,0}});
             Gioco.TestMissione = new Missione(griglia_prova, new Loc2D(10, 6), new Loc2D(4, 2), 10);
-            
+
             scontroCarte = new ScontroCarte();
+            nassauForm = new GUI.MenuNassau.Nassau_form();
             Console.WriteLine("#- Inizializzazione con Task");
         });
         /// <summary>

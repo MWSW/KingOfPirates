@@ -1,11 +1,11 @@
-﻿using KingOfPirates.Missioni.Navi;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using KingOfPirates.Missioni.Navi;
 using KingOfPirates.Missioni.Roba;
-using KingOfPirates.GUI;
+using KingOfPirates.GUI.MenuMissioni;
 
 namespace KingOfPirates.Missioni
 {
@@ -21,7 +21,7 @@ namespace KingOfPirates.Missioni
         /// <value>
         /// Griglia della missione
         /// </value>
-        internal GUI.MenuMissioni.FormMissione Mappa { get; set; }
+        internal FormMissione Mappa { get; set; }
         /// <value>
         /// Array dei nemici presenti nella missione
         /// </value>
