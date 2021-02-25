@@ -29,6 +29,12 @@ namespace KingOfPirates.Missioni.Navi
             isGameOver = false; //la nave parte in vita
         }
 
+        /// <summary>
+        /// La funzione fa muovere la nave data la missione in cui effetuare il movimento e la direzione in cui muoversi
+        /// </summary>
+        /// <param name="missione"></param>
+        /// <param name="direzione"></param>
+
         public virtual void Movimento(Missione missione, Direzione direzione) //(Virtual) indica che può essere esteso dai figli
         {
             if (Stats.Pa <= 0) {
@@ -54,7 +60,7 @@ namespace KingOfPirates.Missioni.Navi
                         missione.Mappa.Griglia_pictureBox[Loc.X, Loc.Y].BackgroundImage = Properties.Resources.nave_pirata;
 
                     Gioco.Giocatore.RemEnergia(1); //consumi energia
-                    missione.Mappa.EnergiaNave_label.Text = "Punti azione: " + Energia + "/" + EnergiaMax; //aggiorna energia_label
+                    missione.Mappa.EnergiaNave_label.Text = "Punti azione: " + Stats.Pa + "/" + Stats.PaMax; //aggiorna energia_label
                     break;
                 case Direzione.DESTRA:
                     if (Gioco.Giocatore.Loc.X - 1 < 0) return;
@@ -71,7 +77,7 @@ namespace KingOfPirates.Missioni.Navi
                         missione.Mappa.Griglia_pictureBox[Loc.X, Loc.Y].BackgroundImage = Properties.Resources.nave_pirata;
 
                     Gioco.Giocatore.RemEnergia(1); //consumi energia
-                    missione.Mappa.EnergiaNave_label.Text = "Punti azione: " + Energia + "/" + EnergiaMax; //aggiorna energia_label
+                    missione.Mappa.EnergiaNave_label.Text = "Punti azione: " + Stats.Pa + "/" + Stats.PaMax; //aggiorna energia_label
                     break;
                 case Direzione.SINISTRA:
                     if (Gioco.Giocatore.Loc.X + 1 < 0) return;
@@ -88,7 +94,7 @@ namespace KingOfPirates.Missioni.Navi
                         missione.Mappa.Griglia_pictureBox[Loc.X, Loc.Y].BackgroundImage = Properties.Resources.nave_pirata;
 
                     Gioco.Giocatore.RemEnergia(1); //consumi energia
-                    missione.Mappa.EnergiaNave_label.Text = "Punti azione: " + Energia + "/" + EnergiaMax; //aggiorna energia_label
+                    missione.Mappa.EnergiaNave_label.Text = "Punti azione: " + Stats.Pa + "/" + Stats.PaMax; //aggiorna energia_label
                     break;
                 case Direzione.SOTTO:
                     if (Gioco.Giocatore.Loc.Y + 1 < 0) return;
@@ -105,7 +111,7 @@ namespace KingOfPirates.Missioni.Navi
                         missione.Mappa.Griglia_pictureBox[Loc.X, Loc.Y].BackgroundImage = Properties.Resources.nave_pirata;
 
                     RemEnergia(1); //consumi energia
-                    missione.Mappa.EnergiaNave_label.Text = "Punti azione: " + Energia + "/" + EnergiaMax; //aggiorna energia_label
+                    missione.Mappa.EnergiaNave_label.Text = "Punti azione: " + Stats.Pa + "/" + Stats.PaMax; //aggiorna energia_label
                     break;
                 default:
                     break;

@@ -10,6 +10,9 @@ using KingOfPirates.Missioni.Roba;
 
 namespace KingOfPirates.GUI.MenuMissioni
 {
+    /// <summary>
+    /// Form che rappresenta la mappa di una missione
+    /// </summary>
     partial class FormMissione
     {
         /// <summary>
@@ -31,8 +34,7 @@ namespace KingOfPirates.GUI.MenuMissioni
         }
 
         /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
+        /// Inizializzatore componenti
         /// </summary>
         private void InitializeComponent(int picBoxXSize, int picBoxYSize)
         {
@@ -81,7 +83,7 @@ namespace KingOfPirates.GUI.MenuMissioni
             this.EnergiaNave_label.Name = "EnergiaNave_label";
             this.EnergiaNave_label.Size = new System.Drawing.Size(156, 15);
             this.EnergiaNave_label.TabIndex = 1;
-            this.EnergiaNave_label.Text = "Punti azione: " + Gioco.Giocatore.Energia + "/" + Gioco.Giocatore.EnergiaMax;
+            this.EnergiaNave_label.Text = "Punti azione: " + Gioco.Giocatore.Stats.Pa + "/" + Gioco.Giocatore.Stats.PaMax;
             this.EnergiaNave_label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.EnergiaNave_label.AutoSize = false;
             // 
@@ -120,7 +122,7 @@ namespace KingOfPirates.GUI.MenuMissioni
             this.VitaNave_label.Name = "VitaNave_label";
             this.VitaNave_label.Size = new System.Drawing.Size(156, 15);
             this.VitaNave_label.TabIndex = 1;
-            this.VitaNave_label.Text = "Punti Vita: " + Gioco.Giocatore.Stats.Hp + "/" + Gioco.Giocatore.PuntiVitaMax;
+            this.VitaNave_label.Text = "Punti Vita: " + Gioco.Giocatore.Stats.Hp + "/" + Gioco.Giocatore.Stats.HpMax;
             this.VitaNave_label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.VitaNave_label.AutoSize = false;
             #endregion

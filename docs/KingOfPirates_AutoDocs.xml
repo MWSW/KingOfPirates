@@ -1,0 +1,516 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>KingOfPirates</name>
+    </assembly>
+    <members>
+        <member name="T:KingOfPirates.GUI.MenuMissioni.FormMissione">
+            <summary>
+            Funzioni degli eventi del form FormMissione
+            </summary>
+            <summary>
+            Form che rappresenta la mappa di una missione
+            </summary>
+        </member>
+        <member name="F:KingOfPirates.GUI.MenuMissioni.FormMissione.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:KingOfPirates.GUI.MenuMissioni.FormMissione.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:KingOfPirates.GUI.MenuMissioni.FormMissione.InitializeComponent(System.Int32,System.Int32)">
+            <summary>
+            Inizializzatore componenti
+            </summary>
+        </member>
+        <member name="F:KingOfPirates.GUI.MenuNassau.Locanda_form.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:KingOfPirates.GUI.MenuNassau.Locanda_form.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:KingOfPirates.GUI.MenuNassau.Locanda_form.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:KingOfPirates.GUI.MenuNassau.Nassau_form.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:KingOfPirates.GUI.MenuNassau.Nassau_form.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:KingOfPirates.GUI.MenuNassau.Nassau_form.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:KingOfPirates.GUI.MenuNassau.Negozio_form.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:KingOfPirates.GUI.MenuNassau.Negozio_form.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:KingOfPirates.GUI.MenuNassau.Negozio_form.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:KingOfPirates.GUI.MenuNassau.Porto_form.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:KingOfPirates.GUI.MenuNassau.Porto_form.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:KingOfPirates.GUI.MenuNassau.Porto_form.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:KingOfPirates.GUI.MenuPrincipale.StartMenu.components">
+            <summary>
+            Variabile di progettazione necessaria.
+            </summary>
+        </member>
+        <member name="M:KingOfPirates.GUI.MenuPrincipale.StartMenu.Dispose(System.Boolean)">
+            <summary>
+            Pulire le risorse in uso.
+            </summary>
+            <param name="disposing">ha valore true se le risorse gestite devono essere eliminate, false in caso contrario.</param>
+        </member>
+        <member name="M:KingOfPirates.GUI.MenuPrincipale.StartMenu.InitializeComponent">
+            <summary>
+            Metodo necessario per il supporto della finestra di progettazione. Non modificare
+            il contenuto del metodo con l'editor di codice.
+            </summary>
+        </member>
+        <member name="F:KingOfPirates.GUI.ScontroCarte.ScontroCarte.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:KingOfPirates.GUI.ScontroCarte.ScontroCarte.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:KingOfPirates.GUI.ScontroCarte.ScontroCarte.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:KingOfPirates.Missioni.Missione">
+            <summary>
+            Classe rappresentante una missione nel gioco
+            </summary>
+        </member>
+        <member name="P:KingOfPirates.Missioni.Missione.Reward">
+            <value> Soldi che vengono dati al giocatore come premio </value>
+        </member>
+        <member name="P:KingOfPirates.Missioni.Missione.Descrizione">
+            <value> Descrizione della missione, viene visualizzata nella scelta missione </value>
+        </member>
+        <member name="P:KingOfPirates.Missioni.Missione.Mappa">
+            <value>
+            Griglia della missione
+            </value>
+        </member>
+        <member name="P:KingOfPirates.Missioni.Missione.Nemici">
+            <value>
+            Array dei nemici presenti nella missione
+            </value>
+        </member>
+        <member name="P:KingOfPirates.Missioni.Missione.PosNave">
+            <value>
+            Posizione iniziale nave
+            </value>
+        </member>
+        <member name="P:KingOfPirates.Missioni.Missione.PosBandiera">
+            <value>
+            Posizione bandiera
+            </value>
+        </member>
+        <member name="P:KingOfPirates.Missioni.Missione.Griglia_numerica">
+            <value> Griglia su cui viene generata la mappa grafica </value>
+        </member>
+        <member name="M:KingOfPirates.Missioni.Navi.Nave.Movimento(KingOfPirates.Missioni.Missione,KingOfPirates.Missioni.Roba.Direzione)">
+            <summary>
+            La funzione fa muovere la nave data la missione in cui effetuare il movimento e la direzione in cui muoversi
+            </summary>
+            <param name="missione"></param>
+            <param name="direzione"></param>
+        </member>
+        <member name="P:KingOfPirates.Missioni.Navi.NaveGiocatore.StaNavigando">
+            <summary>
+            Verifica che sia su terreno o meno
+            </summary>
+        </member>
+        <member name="M:KingOfPirates.Missioni.Navi.NaveGiocatore.#ctor(System.String,System.Drawing.Image,KingOfPirates.Missioni.Roba.Stats,KingOfPirates.Missioni.Roba.Loc2D,System.Int32,System.Int32)">
+            <summary>
+            Unico costruttore con tutti parametri
+            </summary>
+            <param name="nome_"></param>
+            <param name="immagine_"></param>
+            <param name="stats_"></param>
+            <param name="loc_"></param>
+            <param name="ubriachezzaMax"></param>
+            <param name="determinazioneMax"></param>
+        </member>
+        <member name="T:KingOfPirates.Missioni.Navi.Nemici.Generici.Mercantile">
+            <summary>
+            Nave più debole
+            </summary>
+        </member>
+        <member name="T:KingOfPirates.Missioni.Roba.Direzione">
+            <summary>
+            Tipi personalizzati che indicano una direzione per lo spostamento
+            </summary>
+        </member>
+        <member name="T:KingOfPirates.Missioni.Roba.Loc2D">
+            <summary>
+            Classe che rappresenta delle coordinate in una griglia
+            </summary>
+        </member>
+        <member name="P:KingOfPirates.Missioni.Roba.Loc2D.X">
+            <summary>
+            Coordinata X
+            </summary>
+        </member>
+        <member name="P:KingOfPirates.Missioni.Roba.Loc2D.Y">
+            <summary>
+            Coordinata Y
+            </summary>
+        </member>
+        <member name="M:KingOfPirates.Missioni.Roba.Loc2D.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Costruttore con tutti parametri
+            </summary>
+            <param name="x"></param>
+            <param name="y"></param>
+        </member>
+        <member name="M:KingOfPirates.Missioni.Roba.Loc2D.#ctor">
+            <summary>
+            Costruttore con nessun parametro
+            </summary>
+        </member>
+        <member name="M:KingOfPirates.Missioni.Roba.Loc2D.ToString">
+            <summary>
+            Traduce l'oggetto in stringa
+            </summary>
+            <returns>
+            Stringa che restituisce le Coordinate
+            </returns>
+        </member>
+        <member name="T:KingOfPirates.Missioni.Roba.Stats">
+            <summary>
+            Contenitore di variabili per le navi
+            </summary>
+        </member>
+        <member name="M:KingOfPirates.Missioni.Roba.Stats.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Inizializza le Stats per navi con tutti parametri
+            </summary>
+            <param name="hp"></param>
+            <param name="hpMax"></param>
+            <param name="pa"></param>
+            <param name="paMax"></param>
+            <param name="minHit"></param>
+            <param name="maxHit"></param>
+        </member>
+        <member name="M:KingOfPirates.Missioni.Roba.Stats.#ctor">
+            <summary>
+            Inizializza le Stats per navi con nessun parametro
+            </summary>
+        </member>
+        <member name="M:KingOfPirates.Program.Main">
+            <summary>
+            Punto di ingresso principale dell'applicazione.
+            </summary>
+        </member>
+        <member name="T:KingOfPirates.Gioco">
+            <summary>
+            Classe per tenere variabili importanti e aiutare nell'avvio e terminazione del programma, da aggiornare per il programma finale
+            </summary>
+        </member>
+        <member name="P:KingOfPirates.Gioco.Giocatore">
+            <value> Variabile che rappresenta il giocatore </value>
+        </member>
+        <member name="F:KingOfPirates.Gioco.initTask">
+            <summary>
+            Task che esegue in un thread separato l'inizializzazione di alcune componenti pesanti
+            </summary>
+        </member>
+        <member name="M:KingOfPirates.Gioco.Start">
+            <summary>
+            Avvia il programma e 
+            </summary>
+        </member>
+        <member name="T:KingOfPirates.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:KingOfPirates.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:KingOfPirates.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:KingOfPirates.Properties.Resources.ant">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:KingOfPirates.Properties.Resources.assLeg">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:KingOfPirates.Properties.Resources.back_arrow">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:KingOfPirates.Properties.Resources.bevDet">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:KingOfPirates.Properties.Resources.bottone_attacco">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:KingOfPirates.Properties.Resources.BufferDrink">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:KingOfPirates.Properties.Resources.cartaVuota">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:KingOfPirates.Properties.Resources.curaEstesa">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:KingOfPirates.Properties.Resources.curaPozione">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:KingOfPirates.Properties.Resources.dannoPerpetuo">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:KingOfPirates.Properties.Resources.debuff">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:KingOfPirates.Properties.Resources.depotenziamento">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:KingOfPirates.Properties.Resources.file_example_WAV_1MG">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:KingOfPirates.Properties.Resources.fuoco">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:KingOfPirates.Properties.Resources.ghiaccio">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:KingOfPirates.Properties.Resources.info">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:KingOfPirates.Properties.Resources.isola1">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:KingOfPirates.Properties.Resources.isola2">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:KingOfPirates.Properties.Resources.isola3">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:KingOfPirates.Properties.Resources.isola4">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:KingOfPirates.Properties.Resources.isola5">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:KingOfPirates.Properties.Resources.mare">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:KingOfPirates.Properties.Resources.montagna">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:KingOfPirates.Properties.Resources.mute">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:KingOfPirates.Properties.Resources.nascondi">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:KingOfPirates.Properties.Resources.nave_bianca">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:KingOfPirates.Properties.Resources.nave_pirata">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:KingOfPirates.Properties.Resources.nave_rossa">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:KingOfPirates.Properties.Resources.nave_verde">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:KingOfPirates.Properties.Resources.next">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:KingOfPirates.Properties.Resources.omino">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:KingOfPirates.Properties.Resources.play">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:KingOfPirates.Properties.Resources.pow_buff">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:KingOfPirates.Properties.Resources.prova">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:KingOfPirates.Properties.Resources.pun_pun">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:KingOfPirates.Properties.Resources.pun_pun1">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:KingOfPirates.Properties.Resources.pun_pun2">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:KingOfPirates.Properties.Resources.Rude_Buster_HQ">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:KingOfPirates.Properties.Resources.rum">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:KingOfPirates.Properties.Resources.sangue">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:KingOfPirates.Properties.Resources.Sasso">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:KingOfPirates.Properties.Resources.sfondo_carta">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:KingOfPirates.Properties.Resources.SpazioVuoto">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:KingOfPirates.Properties.Resources.vita_buff">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+    </members>
+</doc>

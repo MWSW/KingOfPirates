@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace KingOfPirates.Missioni.Roba
 {
+    /// <summary>
+    /// Tipi personalizzati che indicano una direzione per lo spostamento
+    /// </summary>
     public enum Direzione
     {
         SOPRA,

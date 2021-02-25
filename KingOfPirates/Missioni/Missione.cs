@@ -9,14 +9,32 @@ using KingOfPirates.GUI;
 
 namespace KingOfPirates.Missioni
 {
+    /// <summary>
+    /// Classe rappresentante una missione nel gioco
+    /// </summary>
     public class Missione
     {
+        /// <value> Soldi che vengono dati al giocatore come premio </value>
         private int Reward { get; set; }
+        /// <value> Descrizione della missione, viene visualizzata nella scelta missione </value>
         private string Descrizione { get; set; }
+        /// <value>
+        /// Griglia della missione
+        /// </value>
         internal GUI.MenuMissioni.FormMissione Mappa { get; set; }
+        /// <value>
+        /// Array dei nemici presenti nella missione
+        /// </value>
         protected NaveNemico[] Nemici { get; set; }
+        /// <value>
+        /// Posizione iniziale nave
+        /// </value>
         internal Loc2D PosNave { get; set; }
+        /// <value>
+        /// Posizione bandiera
+        /// </value>
         internal Loc2D PosBandiera { get; set; }
+        /// <value> Griglia su cui viene generata la mappa grafica </value>
         internal Griglia Griglia_numerica { get; set; }
 
 
