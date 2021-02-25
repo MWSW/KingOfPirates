@@ -53,6 +53,7 @@ namespace KingOfPirates
         private static Task initTask = new Task(() =>
         {
             Console.WriteLine("#+ Inizializzazione con Task");
+            // Il giocatore deve essere inizializzato per primo
             Giocatore = new NaveGiocatore("Nave da Test", Properties.Resources.nave_rossa, new Stats(), new Loc2D(), 5, 10);
             Dominio = new GestioneDominio();
 
@@ -77,8 +78,6 @@ namespace KingOfPirates
                                                                  {0,0,0,0,0,0,0,0,0,0,0,0}});
             TestMissione = new Missione(griglia_prova, new Loc2D(3, 3), new Loc2D(10, 10), 5);
 
-
-            menuMissioni = new GUI.MenuMissioni.FormMissione(new Missione(griglia_prova, new Loc2D(4, 4), new Loc2D(10, 10), 10));
             scontroCarte = new GUI.ScontroCarte.ScontroCarte();
             nassauForm = new GUI.MenuNassau.Nassau_form();
             Console.WriteLine("#- Inizializzazione con Task");
@@ -94,6 +93,9 @@ namespace KingOfPirates
 
         public static void End()
         {
+            TestMissione.EndMissione();
+            scontroCarte.Dispose();
+            nassauForm.Dispose();
             startMenu.Dispose();
             Application.Exit();
         }

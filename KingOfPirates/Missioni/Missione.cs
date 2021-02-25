@@ -57,20 +57,13 @@ namespace KingOfPirates.Missioni
 
         public void StartMissione()
         {
-            Mappa.Activate();
+            Mappa.Show();
             //TODO: Altro codice necessario all'avvio corretto della missione
-        }
-
-        public void CicloGioco()
-        {
-            while (true)
-            {
-                //cringe
-            }
         }
 
         public void EndMissione()
         {
+            Mappa.Dispose();
             //TODO: Da il reward e contrassegna la missione come completata sulla cartina
         }
     }

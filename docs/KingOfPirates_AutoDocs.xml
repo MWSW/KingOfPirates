@@ -164,6 +164,15 @@
         <member name="P:KingOfPirates.Missioni.Missione.Griglia_numerica">
             <value> Griglia su cui viene generata la mappa grafica </value>
         </member>
+        <member name="M:KingOfPirates.Missioni.Missione.#ctor(KingOfPirates.Missioni.Griglia,KingOfPirates.Missioni.Roba.Loc2D,KingOfPirates.Missioni.Roba.Loc2D,System.Int32)">
+            <summary>
+            Costruttore che prende tutti i parametri
+            </summary>
+            <param name="Griglia_numerica"></param>
+            <param name="posNave"></param>
+            <param name="posBandiera"></param>
+            <param name="reward"></param>
+        </member>
         <member name="M:KingOfPirates.Missioni.Navi.Nave.Movimento(KingOfPirates.Missioni.Missione,KingOfPirates.Missioni.Roba.Direzione)">
             <summary>
             La funzione fa muovere la nave data la missione in cui effetuare il movimento e la direzione in cui muoversi
@@ -260,20 +269,17 @@
         </member>
         <member name="T:KingOfPirates.Gioco">
             <summary>
-            Classe per tenere variabili importanti e aiutare nell'avvio e terminazione del programma, da aggiornare per il programma finale
+            Classe che contiene variabili necessarie per il funzionamento del programma e per aiutare nell'avvio e terminazione del programma.
             </summary>
         </member>
         <member name="P:KingOfPirates.Gioco.Giocatore">
-            <value> Variabile che rappresenta il giocatore </value>
+            <summary>
+            Proprietà rappresentante il giocatore
+            </summary>
         </member>
         <member name="F:KingOfPirates.Gioco.initTask">
             <summary>
-            Task che esegue in un thread separato l'inizializzazione di alcune componenti pesanti
-            </summary>
-        </member>
-        <member name="M:KingOfPirates.Gioco.Start">
-            <summary>
-            Avvia il programma e 
+            Task asincrona per inizializzare componenti pesanti
             </summary>
         </member>
         <member name="T:KingOfPirates.Properties.Resources">
@@ -323,6 +329,11 @@
             </summary>
         </member>
         <member name="P:KingOfPirates.Properties.Resources.cartaVuota">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:KingOfPirates.Properties.Resources.cross">
             <summary>
               Looks up a localized resource of type System.Drawing.Bitmap.
             </summary>
@@ -473,6 +484,11 @@
             </summary>
         </member>
         <member name="P:KingOfPirates.Properties.Resources.pun_pun2">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:KingOfPirates.Properties.Resources.ruby">
             <summary>
               Looks up a localized resource of type System.Drawing.Bitmap.
             </summary>
