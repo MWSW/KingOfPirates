@@ -1,0 +1,4 @@
+var namespace_king_of_pirates_1_1_missioni_1_1_navi_1_1_opponenti =
+[
+    [ "Inventario", "class_king_of_pirates_1_1_missioni_1_1_navi_1_1_opponenti_1_1_inventario.html", "class_king_of_pirates_1_1_missioni_1_1_navi_1_1_opponenti_1_1_inventario" ]
+];
