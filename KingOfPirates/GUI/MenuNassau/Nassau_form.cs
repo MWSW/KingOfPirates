@@ -42,5 +42,12 @@ namespace KingOfPirates.GUI.MenuNassau
         {
             porto.Show();
         }
+
+        private void Nassau_form_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            e.Cancel = true;
+            this.Hide();
+            Gioco.startMenu.Show();
+        }
     }
 }

@@ -417,5 +417,50 @@ namespace KingOfPirates.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+
+        internal static System.Drawing.Bitmap rum
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("rum", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
+        internal static System.Drawing.Bitmap bevDet
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("bevDet", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
+        internal static System.Drawing.Bitmap back_arrow
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("back_arrow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
+        internal static System.Drawing.Bitmap assLeg
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("assLeg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
+        internal static System.Drawing.Bitmap ant
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("ant", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
