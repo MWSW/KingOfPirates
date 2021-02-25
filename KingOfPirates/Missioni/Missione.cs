@@ -37,6 +37,13 @@ namespace KingOfPirates.Missioni
         /// <value> Griglia su cui viene generata la mappa grafica </value>
         internal Griglia Griglia_numerica { get; set; }
 
+        /// <summary>
+        /// Costruttore che prende tutti i parametri
+        /// </summary>
+        /// <param name="Griglia_numerica"></param>
+        /// <param name="posNave"></param>
+        /// <param name="posBandiera"></param>
+        /// <param name="reward"></param>
 
         public Missione(Griglia Griglia_numerica, Loc2D posNave, Loc2D posBandiera, int reward)
         {

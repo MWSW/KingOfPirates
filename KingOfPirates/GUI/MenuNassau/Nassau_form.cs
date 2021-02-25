@@ -33,9 +33,9 @@ namespace KingOfPirates.GUI.MenuNassau
             gestoreDomino.TaglieMercantile = 3; //=
 
             InitializeComponent();
-            negozio = new Negozio_form(gestoreDomino, naveGiocatore, listaCarte);
+            negozio = new Negozio_form(gestoreDomino, Gioco.Giocatore, listaCarte);
             locanda = new Locanda_form(gestoreDomino);
-            porto = new Porto_form(gestoreDomino, naveGiocatore);
+            porto = new Porto_form(gestoreDomino, Gioco.Giocatore);
         }
         
         private void NegozioImgButton_Click(object sender, EventArgs e)
