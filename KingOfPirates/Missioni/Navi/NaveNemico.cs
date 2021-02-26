@@ -42,27 +42,29 @@ namespace KingOfPirates.Missioni.Navi
         /// <param name="direzione"></param>
         public override void Movimento(Missione missione, Direzione direzione)
         {
-            // Controlla se l'indice punta alla fine dell'array di movimento
-            // e nel caso accenda una flag che fa diminuire l'indice invece che aumentare
-            if (patrolIndex > patrol.Length) patrolInv = true;
-            else if (patrolIndex < 0) patrolInv = false;
-            
 
-            for (int i = 0; i < missione.Nemici.Length; i++)
+            Loc = patrol[patrolIndex];
+            missione.Mappa.Griglia_pictureBox[patrol[patrolIndex].X, patrol[patrolIndex].Y].BackgroundImage = temp;
+            if (patrolInv)
             {
-                if (this.Equals(missione.Nemici[i]))
-                {
-                    missione.Nemici[i].Loc = patrol[patrolIndex];
-                    missione.Mappa.Griglia_pictureBox[patrol[patrolIndex].X, patrol[patrolIndex].Y].BackgroundImage = temp;
-                    if (patrolInv)
-                        patrolIndex--;
-                    else
-                        patrolIndex++;
-                    temp = missione.Mappa.Griglia_pictureBox[patrol[patrolIndex].X, patrol[patrolIndex].Y].BackgroundImage;
-                    missione.Mappa.Griglia_pictureBox[patrol[patrolIndex].X, patrol[patrolIndex].Y].BackgroundImage = immagine;
-                }
-                else continue;
+                patrolIndex--;
+
+                // Controlla se l'indice punta alla base dell'array di movimento
+                // e nel caso accenda una flag che fa aumentare l'indice invece che diminuire
+                if (patrolIndex <= 0)
+                    patrolInv = false;
             }
+            else
+            {
+                patrolIndex++;
+
+                // Controlla se l'indice punta alla fine dell'array di movimento
+                // e nel caso accenda una flag che fa diminuire l'indice invece che aumentare
+                if (patrolIndex >= patrol.Length - 1)
+                    patrolInv = true;
+            }
+            temp = missione.Mappa.Griglia_pictureBox[patrol[patrolIndex].X, patrol[patrolIndex].Y].BackgroundImage;
+            missione.Mappa.Griglia_pictureBox[patrol[patrolIndex].X, patrol[patrolIndex].Y].BackgroundImage = immagine;
         }
 
         public void Affonda()

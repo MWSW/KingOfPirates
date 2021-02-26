@@ -306,8 +306,6 @@ namespace KingOfPirates.GUI.MenuMissioni
 
             #region Bottoni azioni
 
-            #endregion
-
             int ActionButtonStartPointX = 1090;
             int ActionButtonStartPointY = 400;
 
@@ -321,6 +319,10 @@ namespace KingOfPirates.GUI.MenuMissioni
             this.Scavo_button.Text = "Scava!";
             this.Scavo_button.UseVisualStyleBackColor = true;
             this.Scavo_button.Click += new System.EventHandler(this.Scavo_button_Click);
+            #endregion
+
+
+
             #region Matrice pictureBox
 
             //
