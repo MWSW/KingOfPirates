@@ -11,6 +11,7 @@ using KingOfPirates;
 using KingOfPirates.Missioni;
 using KingOfPirates.Missioni.Roba;
 using KingOfPirates.Missioni.Navi;
+using KingOfPirates.Missioni.Navi.Nemici.Generici;
 
 /* L'Interfaccia grafica e' stata fatta a mano
  * La matrice e' stata pensata come piano cartesiano (x e y invertiti)
@@ -40,11 +41,20 @@ namespace KingOfPirates.GUI.MenuMissioni
             Gioco.Giocatore.Loc.X = missione.PosNave.X; Gioco.Giocatore.Loc.Y = missione.PosNave.Y;
             temp = Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage;
 
+            //stampa del giocatore
             //cambia immagine se è sopra una isola
             if (missione.Griglia_numerica.Mat[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y + 1] == 1)
                 Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = Properties.Resources.omino;
             else
-                Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = Properties.Resources.nave_pirata;
+                Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = Gioco.Giocatore.Immagine;
+
+
+            //mostra nemici a schermo
+            foreach(NaveNemico n in missione.Nemici)
+            {
+                Griglia_pictureBox[n.Loc.X, n.Loc.Y].BackgroundImage = n.Immagine;
+            }
+            
         }
 
         private void Sopra_button_Click(object sender, EventArgs e)

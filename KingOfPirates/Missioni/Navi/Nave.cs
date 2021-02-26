@@ -73,5 +73,7 @@ namespace KingOfPirates.Missioni.Navi
         /// </summary>
         /// <param name="enTolta">punti da rimuovere</param>
         public abstract void RemEnergia(int enTolta);
+
+        public Image Immagine { get => immagine; set => immagine = value; }
     }
 }
