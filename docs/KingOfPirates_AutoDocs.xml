@@ -6,11 +6,14 @@
     <members>
         <member name="T:KingOfPirates.GUI.MenuMissioni.FormMissione">
             <summary>
-            Funzioni degli eventi del form FormMissione
+            Form che rappresenta la griglia grafica della missione, fatto a mano.
             </summary>
+        </member>
+        <member name="M:KingOfPirates.GUI.MenuMissioni.FormMissione.#ctor(KingOfPirates.Missioni.Missione)">
             <summary>
-            Form che rappresenta la mappa di una missione
+            Costruttore, inizializza i componenti grafici.
             </summary>
+            <param name="missione">Per manipolare la missione nel Form.</param>
         </member>
         <member name="F:KingOfPirates.GUI.MenuMissioni.FormMissione.components">
             <summary>
@@ -25,7 +28,7 @@
         </member>
         <member name="M:KingOfPirates.GUI.MenuMissioni.FormMissione.InitializeComponent(System.Int32,System.Int32)">
             <summary>
-            Inizializzatore componenti
+            Inizializzatore componenti grafici.
             </summary>
         </member>
         <member name="F:KingOfPirates.GUI.MenuNassau.Locanda_form.components">
@@ -130,75 +133,129 @@
             the contents of this method with the code editor.
             </summary>
         </member>
+        <member name="T:KingOfPirates.Missioni.Griglia">
+            <summary>
+            Griglia numerica su cui verrà basata la griglia grafica
+            </summary>
+        </member>
         <member name="T:KingOfPirates.Missioni.Missione">
             <summary>
             Classe rappresentante una missione nel gioco
             </summary>
         </member>
         <member name="P:KingOfPirates.Missioni.Missione.Reward">
-            <value> Soldi che vengono dati al giocatore come premio </value>
+            <value> Soldi che vengono dati al giocatore come premio. </value>
         </member>
         <member name="P:KingOfPirates.Missioni.Missione.Descrizione">
-            <value> Descrizione della missione, viene visualizzata nella scelta missione </value>
+            <value> Descrizione della missione, viene visualizzata nella scelta missione. </value>
         </member>
         <member name="P:KingOfPirates.Missioni.Missione.Mappa">
             <value>
-            Griglia della missione
+            Griglia della missione.
             </value>
         </member>
         <member name="P:KingOfPirates.Missioni.Missione.Nemici">
             <value>
-            Array dei nemici presenti nella missione
+            Array dei nemici presenti nella missione.
             </value>
         </member>
         <member name="P:KingOfPirates.Missioni.Missione.PosNave">
             <value>
-            Posizione iniziale nave
+            Posizione iniziale nave.
             </value>
         </member>
         <member name="P:KingOfPirates.Missioni.Missione.PosBandiera">
             <value>
-            Posizione bandiera
+            Posizione bandiera.
             </value>
         </member>
         <member name="P:KingOfPirates.Missioni.Missione.Griglia_numerica">
-            <value> Griglia su cui viene generata la mappa grafica </value>
+            <value> Griglia su cui viene generata la mappa grafica. </value>
         </member>
         <member name="M:KingOfPirates.Missioni.Missione.#ctor(KingOfPirates.Missioni.Griglia,KingOfPirates.Missioni.Roba.Loc2D,KingOfPirates.Missioni.Roba.Loc2D,System.Int32)">
             <summary>
-            Costruttore che prende tutti i parametri
+            Costruttore che prende tutti i parametri.
             </summary>
-            <param name="Griglia_numerica"></param>
-            <param name="posNave"></param>
-            <param name="posBandiera"></param>
-            <param name="reward"></param>
+            <param name="Griglia_numerica">Griglia su cui verra basata la griglia grafica</param>
+            <param name="posNave">Posizione iniziale nave giocatore</param>
+            <param name="posBandiera">Posizione obiettivo finale</param>
+            <param name="reward">Premio per il raggiungimento della bandiera</param>
+        </member>
+        <member name="T:KingOfPirates.Missioni.Navi.Nave">
+            <summary>
+            Contiene tutti i metodi di base per tutte le navi.
+            </summary>
+        </member>
+        <member name="M:KingOfPirates.Missioni.Navi.Nave.#ctor(System.String,System.Drawing.Image,KingOfPirates.Missioni.Roba.Stats,KingOfPirates.Missioni.Roba.Loc2D)">
+            <summary>
+            Costruttore con tutti i parametri necessari.
+            </summary>
+            <param name="nome_">Assegna il nome alla nave.</param>
+            <param name="immagine_">Assegna l'aspetto della nave per il FormMissione.</param>
+            <param name="stats_">Statistiche per la nave.</param>
+            <param name="loc_">Coordinate da usare nel FormMissione.</param>
         </member>
         <member name="M:KingOfPirates.Missioni.Navi.Nave.Movimento(KingOfPirates.Missioni.Missione,KingOfPirates.Missioni.Roba.Direzione)">
             <summary>
-            La funzione fa muovere la nave data la missione in cui effetuare il movimento e la direzione in cui muoversi
+            La funzione fa muovere la nave data la missione in cui effetuare il movimento e la direzione in cui muoversi.
             </summary>
-            <param name="missione"></param>
-            <param name="direzione"></param>
+            <param name="missione">Per permettere il movimento all'interno della mappa della missione.</param>
+            <param name="direzione">per specificare la direzione in cui effetuare il movimento.</param>
+        </member>
+        <member name="T:KingOfPirates.Missioni.Navi.NaveGiocatore">
+            <summary>
+            Nave rappresentante con funzioni speciali per il giocatore.
+            </summary>
         </member>
         <member name="P:KingOfPirates.Missioni.Navi.NaveGiocatore.StaNavigando">
             <summary>
-            Verifica che sia su terreno o meno
+            Verifica che sia su terreno o meno.
+            </summary>
+        </member>
+        <member name="P:KingOfPirates.Missioni.Navi.NaveGiocatore.Ubriachezza">
+            <summary>
+            Parte da 0, Aumenta più si scava
+            </summary>
+        </member>
+        <member name="P:KingOfPirates.Missioni.Navi.NaveGiocatore.Determinazione">
+            <summary>
+            Inizia al 75% della DeterminazioneMax
+            </summary>
+        </member>
+        <member name="P:KingOfPirates.Missioni.Navi.NaveGiocatore.Inventario">
+            <summary>
+            Il giocatore ha degli oggetti speciali che vengono immagazzinati qui
             </summary>
         </member>
         <member name="M:KingOfPirates.Missioni.Navi.NaveGiocatore.#ctor(System.String,System.Drawing.Image,KingOfPirates.Missioni.Roba.Stats,KingOfPirates.Missioni.Roba.Loc2D,System.Int32,System.Int32)">
             <summary>
-            Unico costruttore con tutti parametri
+            Unico costruttore con tutti parametri.
             </summary>
-            <param name="nome_"></param>
-            <param name="immagine_"></param>
-            <param name="stats_"></param>
-            <param name="loc_"></param>
-            <param name="ubriachezzaMax"></param>
-            <param name="determinazioneMax"></param>
+            <param name="nome_">Assegna il nome alla nave.</param>
+            <param name="immagine_">Assegna l'aspetto della nave per il FormMissione.</param>
+            <param name="stats_">Statistiche per la nave.</param>
+            <param name="loc_">Coordinate da usare nel FormMissione.</param>
+            <param name="ubriachezzaMax">Indicatore per l'equipaggio.</param>
+            <param name="determinazioneMax">Indicatore per le carte</param>
+        </member>
+        <member name="T:KingOfPirates.Missioni.Navi.Nemici.Generici.Caravella">
+            <summary>
+            Nave di forza intermedia
+            </summary>
+        </member>
+        <member name="T:KingOfPirates.Missioni.Navi.Nemici.Generici.Fregata">
+            <summary>
+            Nave più forte
+            </summary>
         </member>
         <member name="T:KingOfPirates.Missioni.Navi.Nemici.Generici.Mercantile">
             <summary>
             Nave più debole
+            </summary>
+        </member>
+        <member name="T:KingOfPirates.Missioni.Navi.Opponenti.Inventario">
+            <summary>
+            Contiene i consumabili del giocatore, usabili i missione
             </summary>
         </member>
         <member name="T:KingOfPirates.Missioni.Roba.Direzione">
@@ -243,23 +300,28 @@
         </member>
         <member name="T:KingOfPirates.Missioni.Roba.Stats">
             <summary>
-            Contenitore di variabili per le navi
+            Contenitore di statistiche per le navi
             </summary>
         </member>
         <member name="M:KingOfPirates.Missioni.Roba.Stats.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
             <summary>
             Inizializza le Stats per navi con tutti parametri
             </summary>
-            <param name="hp"></param>
-            <param name="hpMax"></param>
-            <param name="pa"></param>
-            <param name="paMax"></param>
-            <param name="minHit"></param>
-            <param name="maxHit"></param>
+            <param name="hp">Punti vita.</param>
+            <param name="hpMax">Punti vita massimi.</param>
+            <param name="pa">Punti azione.</param>
+            <param name="paMax">Punti azione massimi.</param>
+            <param name="minHit">Danno minimo per l'attacco</param>
+            <param name="maxHit">Danno massimo per l'attacco</param>
         </member>
         <member name="M:KingOfPirates.Missioni.Roba.Stats.#ctor">
             <summary>
             Inizializza le Stats per navi con nessun parametro
+            </summary>
+        </member>
+        <member name="T:KingOfPirates.Program">
+            <summary>
+            Classe di ingresso principale.
             </summary>
         </member>
         <member name="M:KingOfPirates.Program.Main">
@@ -269,7 +331,7 @@
         </member>
         <member name="T:KingOfPirates.Gioco">
             <summary>
-            Classe che contiene variabili necessarie per il funzionamento del programma e per aiutare nell'avvio e terminazione del programma.
+            Classe che contiene variabili necessarie per il funzionamento del programma.
             </summary>
         </member>
         <member name="P:KingOfPirates.Gioco.Giocatore">

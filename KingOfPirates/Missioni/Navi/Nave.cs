@@ -23,7 +23,7 @@ namespace KingOfPirates.Missioni.Navi
         public Loc2D Loc { get; set; }
 
         /// <summary>
-        /// 
+        /// Costruttore con tutti i parametri necessari.
         /// </summary>
         /// <param name="nome_">Assegna il nome alla nave.</param>
         /// <param name="immagine_">Assegna l'aspetto della nave per il FormMissione.</param>
@@ -47,6 +47,7 @@ namespace KingOfPirates.Missioni.Navi
 
         public virtual void Movimento(Missione missione, Direzione direzione) //(Virtual) indica che può essere esteso dai figli
         {
+            // Controlla se l'energia è finita
             if (Stats.Pa <= 0) {
                 MessageBox.Show("Energia finita!");
                 Stats.Pa = Stats.PaMax; //ripristino energia
@@ -56,8 +57,8 @@ namespace KingOfPirates.Missioni.Navi
             switch (direzione)
             {
                 case Direzione.SOPRA:
-                    if (Gioco.Giocatore.Loc.Y - 1 < 0) return;
-                    if (missione.Griglia_numerica.Mat[this.Loc.X, this.Loc.Y - 1] == 2) return;
+                    if (Gioco.Giocatore.Loc.Y - 1 < 0) return;// Controllo se è al limite della mappa e vieta il movimento
+                    if (missione.Griglia_numerica.Mat[this.Loc.X, this.Loc.Y - 1] == 2) return;// Controlla se è vicino a una montagna e vieta il movimento
 
                     missione.Mappa.Griglia_pictureBox[this.Loc.X, this.Loc.Y].BackgroundImage = missione.Mappa.temp; //texture vecchia
                     this.Loc.Y--; //aggiorno la posizione
@@ -127,11 +128,21 @@ namespace KingOfPirates.Missioni.Navi
                     break;
             }
         }
+
+        /// <summary>
+        /// Attacca la neva specificata con danno random.
+        /// </summary>
+        /// <param name="nave">Nave da attaccare</param>
         
         public virtual void Attacca(Nave nave) 
         {
             //
         }
+
+        /// <summary>
+        /// Rimuove punti azione dopo un'azione
+        /// </summary>
+        /// <param name="enTolta">punti da rimuovere</param>
 
         public abstract void RemEnergia(int enTolta);
         public abstract void IncUbriachezza(int punti);
