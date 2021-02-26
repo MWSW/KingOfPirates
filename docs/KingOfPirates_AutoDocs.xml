@@ -574,6 +574,11 @@
               Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
             </summary>
         </member>
+        <member name="P:KingOfPirates.Properties.Resources.pirataJerriSkotty">
+            <summary>
+              Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
         <member name="P:KingOfPirates.Properties.Resources.play">
             <summary>
               Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.

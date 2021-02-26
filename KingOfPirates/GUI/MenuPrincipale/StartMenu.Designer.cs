@@ -82,9 +82,11 @@ namespace KingOfPirates.GUI.MenuPrincipale
             // 
             // Start_button
             // 
-            this.Start_button.BackColor = System.Drawing.Color.Transparent;
+            this.Start_button.BackColor = System.Drawing.Color.Peru;
+            this.Start_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Start_button.FlatAppearance.BorderColor = System.Drawing.Color.Peru;
             this.Start_button.ForeColor = System.Drawing.Color.Black;
-            this.Start_button.Location = new System.Drawing.Point(12, 236);
+            this.Start_button.Location = new System.Drawing.Point(12, 582);
             this.Start_button.Name = "Start_button";
             this.Start_button.Size = new System.Drawing.Size(110, 25);
             this.Start_button.TabIndex = 4;
@@ -94,22 +96,24 @@ namespace KingOfPirates.GUI.MenuPrincipale
             // 
             // Crediti_button
             // 
-            this.Crediti_button.Location = new System.Drawing.Point(12, 267);
+            this.Crediti_button.BackColor = System.Drawing.Color.Peru;
+            this.Crediti_button.Location = new System.Drawing.Point(12, 613);
             this.Crediti_button.Name = "Crediti_button";
             this.Crediti_button.Size = new System.Drawing.Size(110, 25);
             this.Crediti_button.TabIndex = 5;
             this.Crediti_button.Text = "Crediti";
-            this.Crediti_button.UseVisualStyleBackColor = true;
+            this.Crediti_button.UseVisualStyleBackColor = false;
             this.Crediti_button.Click += new System.EventHandler(this.Crediti_button_Click);
             // 
             // Exit_button
             // 
-            this.Exit_button.Location = new System.Drawing.Point(12, 298);
+            this.Exit_button.BackColor = System.Drawing.Color.Peru;
+            this.Exit_button.Location = new System.Drawing.Point(12, 644);
             this.Exit_button.Name = "Exit_button";
             this.Exit_button.Size = new System.Drawing.Size(110, 25);
             this.Exit_button.TabIndex = 6;
             this.Exit_button.Text = "Esci";
-            this.Exit_button.UseVisualStyleBackColor = true;
+            this.Exit_button.UseVisualStyleBackColor = false;
             this.Exit_button.Click += new System.EventHandler(this.Exit_button_Click);
             // 
             // StartMenu
