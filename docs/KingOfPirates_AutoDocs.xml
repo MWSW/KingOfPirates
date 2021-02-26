@@ -6,11 +6,14 @@
     <members>
         <member name="T:KingOfPirates.GUI.MenuMissioni.FormMissione">
             <summary>
-            Funzioni degli eventi del form FormMissione
+            Form che rappresenta la griglia grafica della missione, fatto a mano.
             </summary>
+        </member>
+        <member name="M:KingOfPirates.GUI.MenuMissioni.FormMissione.#ctor(KingOfPirates.Missioni.Missione)">
             <summary>
-            Form che rappresenta la mappa di una missione
+            Costruttore, inizializza i componenti grafici.
             </summary>
+            <param name="missione">Per manipolare la missione nel Form.</param>
         </member>
         <member name="F:KingOfPirates.GUI.MenuMissioni.FormMissione.components">
             <summary>
@@ -25,7 +28,7 @@
         </member>
         <member name="M:KingOfPirates.GUI.MenuMissioni.FormMissione.InitializeComponent(System.Int32,System.Int32)">
             <summary>
-            Inizializzatore componenti
+            Inizializzatore componenti grafici.
             </summary>
         </member>
         <member name="F:KingOfPirates.GUI.MenuNassau.Locanda_form.components">
@@ -96,6 +99,11 @@
             the contents of this method with the code editor.
             </summary>
         </member>
+        <member name="T:KingOfPirates.GUI.MenuPrincipale.StartMenu">
+            <summary>
+            Menu principale dell'app
+            </summary>
+        </member>
         <member name="F:KingOfPirates.GUI.MenuPrincipale.StartMenu.components">
             <summary>
             Variabile di progettazione necessaria.
@@ -130,75 +138,168 @@
             the contents of this method with the code editor.
             </summary>
         </member>
+        <member name="T:KingOfPirates.Missioni.Griglia">
+            <summary>
+            Griglia numerica su cui verrà basata la griglia grafica
+            </summary>
+        </member>
         <member name="T:KingOfPirates.Missioni.Missione">
             <summary>
             Classe rappresentante una missione nel gioco
             </summary>
         </member>
         <member name="P:KingOfPirates.Missioni.Missione.Reward">
-            <value> Soldi che vengono dati al giocatore come premio </value>
+            <value> Soldi che vengono dati al giocatore come premio. </value>
         </member>
         <member name="P:KingOfPirates.Missioni.Missione.Descrizione">
-            <value> Descrizione della missione, viene visualizzata nella scelta missione </value>
+            <value> Descrizione della missione, viene visualizzata nella scelta missione. </value>
         </member>
         <member name="P:KingOfPirates.Missioni.Missione.Mappa">
             <value>
-            Griglia della missione
+            Griglia della missione.
             </value>
         </member>
         <member name="P:KingOfPirates.Missioni.Missione.Nemici">
             <value>
-            Array dei nemici presenti nella missione
+            Array dei nemici presenti nella missione.
             </value>
         </member>
         <member name="P:KingOfPirates.Missioni.Missione.PosNave">
             <value>
-            Posizione iniziale nave
+            Posizione iniziale nave.
             </value>
         </member>
         <member name="P:KingOfPirates.Missioni.Missione.PosBandiera">
             <value>
-            Posizione bandiera
+            Posizione bandiera.
             </value>
         </member>
         <member name="P:KingOfPirates.Missioni.Missione.Griglia_numerica">
-            <value> Griglia su cui viene generata la mappa grafica </value>
+            <value> Griglia su cui viene generata la mappa grafica. </value>
         </member>
-        <member name="M:KingOfPirates.Missioni.Missione.#ctor(KingOfPirates.Missioni.Griglia,KingOfPirates.Missioni.Roba.Loc2D,KingOfPirates.Missioni.Roba.Loc2D,System.Int32)">
+        <member name="M:KingOfPirates.Missioni.Missione.#ctor(KingOfPirates.Missioni.Griglia,KingOfPirates.Missioni.Roba.Loc2D,KingOfPirates.Missioni.Roba.Loc2D,System.Int32,KingOfPirates.Missioni.Navi.NaveNemico[])">
             <summary>
-            Costruttore che prende tutti i parametri
+            Costruttore che prende tutti i parametri.
             </summary>
-            <param name="Griglia_numerica"></param>
-            <param name="posNave"></param>
-            <param name="posBandiera"></param>
-            <param name="reward"></param>
+            <param name="Griglia_numerica">Griglia su cui verra basata la griglia grafica</param>
+            <param name="posNave">Posizione iniziale nave giocatore</param>
+            <param name="posBandiera">Posizione obiettivo finale</param>
+            <param name="reward">Premio per il raggiungimento della bandiera</param>
+            <param name="nemici">Vettore contenente i nemici e le loro info</param>
+        </member>
+        <member name="T:KingOfPirates.Missioni.Navi.Nave">
+            <summary>
+            Contiene tutti i metodi di base per tutte le navi.
+            </summary>
+        </member>
+        <member name="M:KingOfPirates.Missioni.Navi.Nave.#ctor(System.String,System.Drawing.Image,KingOfPirates.Missioni.Roba.Stats,KingOfPirates.Missioni.Roba.Loc2D)">
+            <summary>
+            Costruttore con tutti i parametri necessari.
+            </summary>
+            <param name="nome_">Assegna il nome alla nave.</param>
+            <param name="immagine_">Assegna l'aspetto della nave per il FormMissione.</param>
+            <param name="stats_">Statistiche per la nave.</param>
+            <param name="loc_">Coordinate da usare nel FormMissione.</param>
+        </member>
+        <member name="M:KingOfPirates.Missioni.Navi.Nave.Attacca(KingOfPirates.Missioni.Navi.Nave)">
+            <summary>
+            Attacca la neva specificata con danno random.
+            </summary>
+            <param name="nave">Nave da attaccare</param>
         </member>
         <member name="M:KingOfPirates.Missioni.Navi.Nave.Movimento(KingOfPirates.Missioni.Missione,KingOfPirates.Missioni.Roba.Direzione)">
             <summary>
-            La funzione fa muovere la nave data la missione in cui effetuare il movimento e la direzione in cui muoversi
+            La funzione fa muovere la nave data la missione in cui effetuare il movimento e la direzione in cui muoversi.
             </summary>
-            <param name="missione"></param>
-            <param name="direzione"></param>
+            <param name="missione">Per permettere il movimento all'interno della mappa della missione.</param>
+            <param name="direzione">per specificare la direzione in cui effetuare il movimento.</param>
+        </member>
+        <member name="M:KingOfPirates.Missioni.Navi.Nave.RemEnergia(System.Int32)">
+            <summary>
+            Rimuove punti azione dopo un'azione
+            </summary>
+            <param name="enTolta">punti da rimuovere</param>
+        </member>
+        <member name="T:KingOfPirates.Missioni.Navi.NaveGiocatore">
+            <summary>
+            Nave rappresentante il giocatore con funzioni speciali.
+            </summary>
         </member>
         <member name="P:KingOfPirates.Missioni.Navi.NaveGiocatore.StaNavigando">
             <summary>
-            Verifica che sia su terreno o meno
+            Verifica che sia su terreno o meno.
+            </summary>
+        </member>
+        <member name="P:KingOfPirates.Missioni.Navi.NaveGiocatore.Ubriachezza">
+            <summary>
+            Parte da 0, Aumenta più si scava
+            </summary>
+        </member>
+        <member name="P:KingOfPirates.Missioni.Navi.NaveGiocatore.Determinazione">
+            <summary>
+            Inizia al 75% della DeterminazioneMax
+            </summary>
+        </member>
+        <member name="P:KingOfPirates.Missioni.Navi.NaveGiocatore.Inventario">
+            <summary>
+            Il giocatore ha degli oggetti speciali che vengono immagazzinati qui
             </summary>
         </member>
         <member name="M:KingOfPirates.Missioni.Navi.NaveGiocatore.#ctor(System.String,System.Drawing.Image,KingOfPirates.Missioni.Roba.Stats,KingOfPirates.Missioni.Roba.Loc2D,System.Int32,System.Int32)">
             <summary>
-            Unico costruttore con tutti parametri
+            Unico costruttore con tutti parametri.
             </summary>
-            <param name="nome_"></param>
-            <param name="immagine_"></param>
-            <param name="stats_"></param>
-            <param name="loc_"></param>
-            <param name="ubriachezzaMax"></param>
-            <param name="determinazioneMax"></param>
+            <param name="nome_">Assegna il nome alla nave.</param>
+            <param name="immagine_">Assegna l'aspetto della nave per il FormMissione.</param>
+            <param name="stats_">Statistiche per la nave.</param>
+            <param name="loc_">Coordinate da usare nel FormMissione.</param>
+            <param name="ubriachezzaMax">Indicatore per l'equipaggio.</param>
+            <param name="determinazioneMax">Indicatore per le carte</param>
+        </member>
+        <member name="M:KingOfPirates.Missioni.Navi.NaveGiocatore.Movimento(KingOfPirates.Missioni.Missione,KingOfPirates.Missioni.Roba.Direzione)">
+            <summary>
+            La funzione fa muovere la nave data la missione in cui effetuare il movimento e la direzione in cui muoversi.
+            </summary>
+            <param name="missione">Per permettere il movimento all'interno della mappa della missione.</param>
+            <param name="direzione">per specificare la direzione in cui effetuare il movimento.</param>
+        </member>
+        <member name="T:KingOfPirates.Missioni.Navi.NaveNemico">
+            <summary>
+            Classe astratta con funzioni e valori per il controllo dei nemici.
+            </summary>
+        </member>
+        <member name="M:KingOfPirates.Missioni.Navi.NaveNemico.Movimento(KingOfPirates.Missioni.Missione,KingOfPirates.Missioni.Roba.Direzione)">
+            <summary>
+            Movimento specifico per i nemici secondo un percorso predefinito
+            </summary>
+            <param name="missione"></param>
+            <param name="direzione"></param>
+        </member>
+        <member name="M:KingOfPirates.Missioni.Navi.NaveNemico.RemEnergia(System.Int32)">
+            <summary>
+            Funzione astratta della classe Nave, non implementata.
+            Non serve perché il nemico non ha punti azione
+            </summary>
+            <param name="enTolta">Punti azione da togliere</param>
+        </member>
+        <member name="T:KingOfPirates.Missioni.Navi.Nemici.Generici.Caravella">
+            <summary>
+            Nave di forza intermedia
+            </summary>
+        </member>
+        <member name="T:KingOfPirates.Missioni.Navi.Nemici.Generici.Fregata">
+            <summary>
+            Nave più forte
+            </summary>
         </member>
         <member name="T:KingOfPirates.Missioni.Navi.Nemici.Generici.Mercantile">
             <summary>
             Nave più debole
+            </summary>
+        </member>
+        <member name="T:KingOfPirates.Missioni.Navi.Opponenti.Inventario">
+            <summary>
+            Contiene i consumabili del giocatore, usabili i missione
             </summary>
         </member>
         <member name="T:KingOfPirates.Missioni.Roba.Direzione">
@@ -243,23 +344,28 @@
         </member>
         <member name="T:KingOfPirates.Missioni.Roba.Stats">
             <summary>
-            Contenitore di variabili per le navi
+            Contenitore di statistiche per le navi
             </summary>
         </member>
         <member name="M:KingOfPirates.Missioni.Roba.Stats.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
             <summary>
             Inizializza le Stats per navi con tutti parametri
             </summary>
-            <param name="hp"></param>
-            <param name="hpMax"></param>
-            <param name="pa"></param>
-            <param name="paMax"></param>
-            <param name="minHit"></param>
-            <param name="maxHit"></param>
+            <param name="hp">Punti vita.</param>
+            <param name="hpMax">Punti vita massimi.</param>
+            <param name="pa">Punti azione.</param>
+            <param name="paMax">Punti azione massimi.</param>
+            <param name="minHit">Danno minimo per l'attacco</param>
+            <param name="maxHit">Danno massimo per l'attacco</param>
         </member>
         <member name="M:KingOfPirates.Missioni.Roba.Stats.#ctor">
             <summary>
             Inizializza le Stats per navi con nessun parametro
+            </summary>
+        </member>
+        <member name="T:KingOfPirates.Program">
+            <summary>
+            Classe di ingresso principale.
             </summary>
         </member>
         <member name="M:KingOfPirates.Program.Main">
@@ -269,7 +375,7 @@
         </member>
         <member name="T:KingOfPirates.Gioco">
             <summary>
-            Classe che contiene variabili necessarie per il funzionamento del programma e per aiutare nell'avvio e terminazione del programma.
+            Classe che contiene variabili necessarie per il funzionamento del programma.
             </summary>
         </member>
         <member name="P:KingOfPirates.Gioco.Giocatore">
@@ -277,255 +383,265 @@
             Proprietà rappresentante il giocatore
             </summary>
         </member>
-        <member name="F:KingOfPirates.Gioco.initTask">
+        <member name="M:KingOfPirates.Gioco.Start">
             <summary>
-            Task asincrona per inizializzare componenti pesanti
+            Avviatore dell'applicazione
+            </summary>
+        </member>
+        <member name="M:KingOfPirates.Gioco.End">
+            <summary>
+            Terminatore dell'applicazione
             </summary>
         </member>
         <member name="T:KingOfPirates.Properties.Resources">
             <summary>
-              A strongly-typed resource class, for looking up localized strings, etc.
+              Classe di risorse fortemente tipizzata per la ricerca di stringhe localizzate e così via.
             </summary>
         </member>
         <member name="P:KingOfPirates.Properties.Resources.ResourceManager">
             <summary>
-              Returns the cached ResourceManager instance used by this class.
+              Restituisce l'istanza di ResourceManager nella cache utilizzata da questa classe.
             </summary>
         </member>
         <member name="P:KingOfPirates.Properties.Resources.Culture">
             <summary>
-              Overrides the current thread's CurrentUICulture property for all
-              resource lookups using this strongly typed resource class.
+              Esegue l'override della proprietà CurrentUICulture del thread corrente per tutte le
+              ricerche di risorse eseguite utilizzando questa classe di risorse fortemente tipizzata.
             </summary>
         </member>
         <member name="P:KingOfPirates.Properties.Resources.ant">
             <summary>
-              Looks up a localized resource of type System.Drawing.Bitmap.
+              Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
             </summary>
         </member>
         <member name="P:KingOfPirates.Properties.Resources.assLeg">
             <summary>
-              Looks up a localized resource of type System.Drawing.Bitmap.
+              Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
             </summary>
         </member>
         <member name="P:KingOfPirates.Properties.Resources.back_arrow">
             <summary>
-              Looks up a localized resource of type System.Drawing.Bitmap.
+              Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
             </summary>
         </member>
         <member name="P:KingOfPirates.Properties.Resources.bevDet">
             <summary>
-              Looks up a localized resource of type System.Drawing.Bitmap.
+              Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
             </summary>
         </member>
         <member name="P:KingOfPirates.Properties.Resources.bottone_attacco">
             <summary>
-              Looks up a localized resource of type System.Drawing.Bitmap.
+              Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
             </summary>
         </member>
         <member name="P:KingOfPirates.Properties.Resources.BufferDrink">
             <summary>
-              Looks up a localized resource of type System.Drawing.Bitmap.
+              Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
             </summary>
         </member>
         <member name="P:KingOfPirates.Properties.Resources.cartaVuota">
             <summary>
-              Looks up a localized resource of type System.Drawing.Bitmap.
+              Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
             </summary>
         </member>
         <member name="P:KingOfPirates.Properties.Resources.cross">
             <summary>
-              Looks up a localized resource of type System.Drawing.Bitmap.
+              Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
             </summary>
         </member>
         <member name="P:KingOfPirates.Properties.Resources.curaEstesa">
             <summary>
-              Looks up a localized resource of type System.Drawing.Bitmap.
+              Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
             </summary>
         </member>
         <member name="P:KingOfPirates.Properties.Resources.curaPozione">
             <summary>
-              Looks up a localized resource of type System.Drawing.Bitmap.
+              Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
             </summary>
         </member>
         <member name="P:KingOfPirates.Properties.Resources.dannoPerpetuo">
             <summary>
-              Looks up a localized resource of type System.Drawing.Bitmap.
+              Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
             </summary>
         </member>
         <member name="P:KingOfPirates.Properties.Resources.debuff">
             <summary>
-              Looks up a localized resource of type System.Drawing.Bitmap.
+              Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
             </summary>
         </member>
         <member name="P:KingOfPirates.Properties.Resources.depotenziamento">
             <summary>
-              Looks up a localized resource of type System.Drawing.Bitmap.
+              Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
             </summary>
         </member>
         <member name="P:KingOfPirates.Properties.Resources.file_example_WAV_1MG">
             <summary>
-              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+              Cerca una risorsa localizzata di tipo System.IO.UnmanagedMemoryStream simile a System.IO.MemoryStream.
             </summary>
         </member>
         <member name="P:KingOfPirates.Properties.Resources.fuoco">
             <summary>
-              Looks up a localized resource of type System.Drawing.Bitmap.
+              Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
             </summary>
         </member>
         <member name="P:KingOfPirates.Properties.Resources.ghiaccio">
             <summary>
-              Looks up a localized resource of type System.Drawing.Bitmap.
+              Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
             </summary>
         </member>
         <member name="P:KingOfPirates.Properties.Resources.info">
             <summary>
-              Looks up a localized resource of type System.Drawing.Bitmap.
+              Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
             </summary>
         </member>
         <member name="P:KingOfPirates.Properties.Resources.isola1">
             <summary>
-              Looks up a localized resource of type System.Drawing.Bitmap.
+              Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
             </summary>
         </member>
         <member name="P:KingOfPirates.Properties.Resources.isola2">
             <summary>
-              Looks up a localized resource of type System.Drawing.Bitmap.
+              Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
             </summary>
         </member>
         <member name="P:KingOfPirates.Properties.Resources.isola3">
             <summary>
-              Looks up a localized resource of type System.Drawing.Bitmap.
+              Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
             </summary>
         </member>
         <member name="P:KingOfPirates.Properties.Resources.isola4">
             <summary>
-              Looks up a localized resource of type System.Drawing.Bitmap.
+              Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
             </summary>
         </member>
         <member name="P:KingOfPirates.Properties.Resources.isola5">
             <summary>
-              Looks up a localized resource of type System.Drawing.Bitmap.
+              Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
             </summary>
         </member>
         <member name="P:KingOfPirates.Properties.Resources.mare">
             <summary>
-              Looks up a localized resource of type System.Drawing.Bitmap.
+              Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:KingOfPirates.Properties.Resources.menuBackImg">
+            <summary>
+              Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
             </summary>
         </member>
         <member name="P:KingOfPirates.Properties.Resources.montagna">
             <summary>
-              Looks up a localized resource of type System.Drawing.Bitmap.
+              Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
             </summary>
         </member>
         <member name="P:KingOfPirates.Properties.Resources.mute">
             <summary>
-              Looks up a localized resource of type System.Drawing.Bitmap.
+              Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
             </summary>
         </member>
         <member name="P:KingOfPirates.Properties.Resources.nascondi">
             <summary>
-              Looks up a localized resource of type System.Drawing.Bitmap.
+              Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
             </summary>
         </member>
         <member name="P:KingOfPirates.Properties.Resources.nave_bianca">
             <summary>
-              Looks up a localized resource of type System.Drawing.Bitmap.
+              Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
             </summary>
         </member>
         <member name="P:KingOfPirates.Properties.Resources.nave_pirata">
             <summary>
-              Looks up a localized resource of type System.Drawing.Bitmap.
+              Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
             </summary>
         </member>
         <member name="P:KingOfPirates.Properties.Resources.nave_rossa">
             <summary>
-              Looks up a localized resource of type System.Drawing.Bitmap.
+              Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
             </summary>
         </member>
         <member name="P:KingOfPirates.Properties.Resources.nave_verde">
             <summary>
-              Looks up a localized resource of type System.Drawing.Bitmap.
+              Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
             </summary>
         </member>
         <member name="P:KingOfPirates.Properties.Resources.next">
             <summary>
-              Looks up a localized resource of type System.Drawing.Bitmap.
+              Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
             </summary>
         </member>
         <member name="P:KingOfPirates.Properties.Resources.omino">
             <summary>
-              Looks up a localized resource of type System.Drawing.Bitmap.
+              Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
             </summary>
         </member>
         <member name="P:KingOfPirates.Properties.Resources.play">
             <summary>
-              Looks up a localized resource of type System.Drawing.Bitmap.
+              Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
             </summary>
         </member>
         <member name="P:KingOfPirates.Properties.Resources.pow_buff">
             <summary>
-              Looks up a localized resource of type System.Drawing.Bitmap.
+              Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
             </summary>
         </member>
         <member name="P:KingOfPirates.Properties.Resources.prova">
             <summary>
-              Looks up a localized resource of type System.Drawing.Bitmap.
+              Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
             </summary>
         </member>
         <member name="P:KingOfPirates.Properties.Resources.pun_pun">
             <summary>
-              Looks up a localized resource of type System.Drawing.Bitmap.
+              Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
             </summary>
         </member>
         <member name="P:KingOfPirates.Properties.Resources.pun_pun1">
             <summary>
-              Looks up a localized resource of type System.Drawing.Bitmap.
+              Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
             </summary>
         </member>
         <member name="P:KingOfPirates.Properties.Resources.pun_pun2">
             <summary>
-              Looks up a localized resource of type System.Drawing.Bitmap.
+              Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
             </summary>
         </member>
         <member name="P:KingOfPirates.Properties.Resources.ruby">
             <summary>
-              Looks up a localized resource of type System.Drawing.Bitmap.
+              Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
             </summary>
         </member>
         <member name="P:KingOfPirates.Properties.Resources.Rude_Buster_HQ">
             <summary>
-              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+              Cerca una risorsa localizzata di tipo System.IO.UnmanagedMemoryStream simile a System.IO.MemoryStream.
             </summary>
         </member>
         <member name="P:KingOfPirates.Properties.Resources.rum">
             <summary>
-              Looks up a localized resource of type System.Drawing.Bitmap.
+              Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
             </summary>
         </member>
         <member name="P:KingOfPirates.Properties.Resources.sangue">
             <summary>
-              Looks up a localized resource of type System.Drawing.Bitmap.
+              Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
             </summary>
         </member>
         <member name="P:KingOfPirates.Properties.Resources.Sasso">
             <summary>
-              Looks up a localized resource of type System.Drawing.Bitmap.
+              Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
             </summary>
         </member>
         <member name="P:KingOfPirates.Properties.Resources.sfondo_carta">
             <summary>
-              Looks up a localized resource of type System.Drawing.Bitmap.
+              Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
             </summary>
         </member>
         <member name="P:KingOfPirates.Properties.Resources.SpazioVuoto">
             <summary>
-              Looks up a localized resource of type System.Drawing.Bitmap.
+              Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
             </summary>
         </member>
         <member name="P:KingOfPirates.Properties.Resources.vita_buff">
             <summary>
-              Looks up a localized resource of type System.Drawing.Bitmap.
+              Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
             </summary>
         </member>
     </members>

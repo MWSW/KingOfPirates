@@ -10,6 +10,9 @@ using System.Windows.Forms;
 
 namespace KingOfPirates.GUI.MenuPrincipale
 {
+    /// <summary>
+    /// Menu principale dell'app
+    /// </summary>
     public partial class StartMenu : Form
     {
         public StartMenu()
@@ -36,6 +39,21 @@ namespace KingOfPirates.GUI.MenuPrincipale
         }
 
         private void StartMenu_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Gioco.End();
+        }
+
+        private void Start_button_Click(object sender, EventArgs e)
+        {
+            //
+        }
+
+        private void Crediti_button_Click(object sender, EventArgs e)
+        {
+            //TODO
+        }
+
+        private void Exit_button_Click(object sender, EventArgs e)
         {
             Gioco.End();
         }

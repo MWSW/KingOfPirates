@@ -4,8 +4,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using KingOfPirates;
+using KingOfPirates.Missioni.ScontroCarte.Opponenti;
 using KingOfPirates.Missioni;
 using KingOfPirates.Missioni.Navi;
+using KingOfPirates.Missioni.Navi.Nemici.Generici;
 using KingOfPirates.Missioni.Roba;
 using KingOfPirates.GUI.MenuPrincipale;
 using KingOfPirates.GUI.MenuNassau;
@@ -13,8 +15,13 @@ using KingOfPirates.GUI.ScontroCarte;
 using KingOfPirates.GUI.MenuMissioni;
 using KingOfPirates.Cartina;
 
+
+
 namespace KingOfPirates
 {
+    /// <summary>
+    /// Classe di ingresso principale.
+    /// </summary>
     static class Program
     {
         /// <summary>
@@ -31,9 +38,8 @@ namespace KingOfPirates
     }
 
     /// <summary>
-    /// Classe che contiene variabili necessarie per il funzionamento del programma e per aiutare nell'avvio e terminazione del programma.
+    /// Classe che contiene variabili necessarie per il funzionamento del programma.
     /// </summary>
-
     static class Gioco
     {
         /// <summary>
@@ -47,12 +53,32 @@ namespace KingOfPirates
         public static GUI.MenuNassau.Nassau_form nassauForm;
         public static GUI.MenuMissioni.FormMissione menuMissioni;
         public static GUI.ScontroCarte.ScontroCarte scontroCarte;
+
         /// <summary>
-        /// Task asincrona per inizializzare componenti pesanti
+        /// Avviatore dell'applicazione
         /// </summary>
-        private static Task initTask = new Task(() =>
+        public static void Start()
         {
-            Console.WriteLine("#+ Inizializzazione con Task");
+            startMenu = new StartMenu();
+            Init();
+            startMenu.Show();
+        }
+
+        /// <summary>
+        /// Terminatore dell'applicazione
+        /// </summary>
+        public static void End()
+        {
+            TestMissione.EndMissione();
+            scontroCarte.Dispose();
+            nassauForm.Dispose();
+            startMenu.Dispose();
+            Application.Exit();
+        }
+
+        private static void Init()
+        {
+            Console.WriteLine("#+ Inizializzazione");
             // Il giocatore deve essere inizializzato per primo
             Giocatore = new NaveGiocatore("Nave da Test", Properties.Resources.nave_rossa, new Stats(), new Loc2D(), 5, 10);
             Dominio = new GestioneDominio();
@@ -76,28 +102,15 @@ namespace KingOfPirates
                                                                  {0,0,0,0,0,0,0,0,0,0,0,0},
                                                                  {0,0,0,0,0,0,0,0,0,0,0,0},
                                                                  {0,0,0,0,0,0,0,0,0,0,0,0}});
-            TestMissione = new Missione(griglia_prova, new Loc2D(3, 3), new Loc2D(10, 10), 5);
+
+            NaveNemico[] testNemici = new NaveNemico[1];
+            Loc2D[] testPatrol = new Loc2D[] { new Loc2D(5, 5), new Loc2D(5, 6), new Loc2D(6, 6) };
+            testNemici[0] = new Mercantile(new Stats(), testPatrol, ListaCarte.GetCarta(1));
+            TestMissione = new Missione(griglia_prova, new Loc2D(3, 3), new Loc2D(10, 10), 5, testNemici);
 
             scontroCarte = new GUI.ScontroCarte.ScontroCarte();
             nassauForm = new GUI.MenuNassau.Nassau_form();
-            Console.WriteLine("#- Inizializzazione con Task");
-        });
-
-        public static void Start()
-        {
-            initTask.Start();
-            startMenu = new StartMenu();
-            startMenu.Show();
-            initTask.Wait();
-        }
-
-        public static void End()
-        {
-            TestMissione.EndMissione();
-            scontroCarte.Dispose();
-            nassauForm.Dispose();
-            startMenu.Dispose();
-            Application.Exit();
+            Console.WriteLine("#- Inizializzazione");
         }
     }
 }

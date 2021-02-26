@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['panel2_1450',['panel2',['../db/d60/class_king_of_pirates_1_1_g_u_i_1_1_menu_nassau_1_1_negozio__form.html#a3a2e2c30832ff3cdfc104f3fdcc0c95c',1,'KingOfPirates::GUI::MenuNassau::Negozio_form']]],
+  ['picturebox1_1451',['pictureBox1',['../db/da2/class_king_of_pirates_1_1_g_u_i_1_1_menu_principale_1_1_start_menu.html#ab387c3b940ff852ccd41e6fea0849754',1,'KingOfPirates::GUI::MenuPrincipale::StartMenu']]],
+  ['picturebox12_1452',['pictureBox12',['../db/d60/class_king_of_pirates_1_1_g_u_i_1_1_menu_nassau_1_1_negozio__form.html#af28df7271600036ec732334a367169dc',1,'KingOfPirates::GUI::MenuNassau::Negozio_form']]],
+  ['picturebox2_1453',['pictureBox2',['../db/da2/class_king_of_pirates_1_1_g_u_i_1_1_menu_principale_1_1_start_menu.html#a25f4324967f8085e088ceaabd9f53634',1,'KingOfPirates::GUI::MenuPrincipale::StartMenu']]],
+  ['picturebox3_1454',['pictureBox3',['../db/da2/class_king_of_pirates_1_1_g_u_i_1_1_menu_principale_1_1_start_menu.html#a8d759b7dda02861d97d21cbdc854701b',1,'KingOfPirates::GUI::MenuPrincipale::StartMenu']]],
+  ['picturebox4_1455',['pictureBox4',['../db/da2/class_king_of_pirates_1_1_g_u_i_1_1_menu_principale_1_1_start_menu.html#a48b157f9e05c18ee1b9c16fa1a7eb73b',1,'KingOfPirates::GUI::MenuPrincipale::StartMenu']]],
+  ['picturebox5_1456',['pictureBox5',['../db/da2/class_king_of_pirates_1_1_g_u_i_1_1_menu_principale_1_1_start_menu.html#ae34dea1465b8fae74e492c36b620da65',1,'KingOfPirates::GUI::MenuPrincipale::StartMenu']]],
+  ['picturebox8_1457',['pictureBox8',['../d0/da2/class_king_of_pirates_1_1_g_u_i_1_1_scontro_carte_1_1_scontro_carte.html#a681de385121644988756325cc9c7f08e',1,'KingOfPirates::GUI::ScontroCarte::ScontroCarte']]],
+  ['player_1458',['player',['../d0/da2/class_king_of_pirates_1_1_g_u_i_1_1_scontro_carte_1_1_scontro_carte.html#ab54560eea481344f67f1db9adf2d4a88',1,'KingOfPirates::GUI::ScontroCarte::ScontroCarte']]],
+  ['porto_1459',['porto',['../d8/d8d/class_king_of_pirates_1_1_g_u_i_1_1_menu_nassau_1_1_nassau__form.html#a6792f868f57e5fa5cb0246c41c1caeb6',1,'KingOfPirates.GUI.MenuNassau.Nassau_form.porto()'],['../dc/dc6/class_king_of_pirates_1_1_g_u_i_1_1_menu_nassau_1_1_porto__form.html#ad1c126f2fdc15225e5897439db436db4',1,'KingOfPirates.GUI.MenuNassau.Porto_form.porto()']]],
+  ['porto_5fback_5fbutton_1460',['Porto_Back_Button',['../dc/dc6/class_king_of_pirates_1_1_g_u_i_1_1_menu_nassau_1_1_porto__form.html#aa3ce70d8bf65f2617cac28ba3b914190',1,'KingOfPirates::GUI::MenuNassau::Porto_form']]],
+  ['porto_5fcanprezzo_5flabel_1461',['Porto_CanPrezzo_Label',['../dc/dc6/class_king_of_pirates_1_1_g_u_i_1_1_menu_nassau_1_1_porto__form.html#a0d5f32b05e9e6d6adcb04e3fa81983c7',1,'KingOfPirates::GUI::MenuNassau::Porto_form']]],
+  ['porto_5ffondi_5flabel_1462',['Porto_Fondi_Label',['../dc/dc6/class_king_of_pirates_1_1_g_u_i_1_1_menu_nassau_1_1_porto__form.html#acae2f605724d1ee32f283f398303b023',1,'KingOfPirates::GUI::MenuNassau::Porto_form']]],
+  ['porto_5fsalpa_5fbutton_1463',['Porto_Salpa_Button',['../dc/dc6/class_king_of_pirates_1_1_g_u_i_1_1_menu_nassau_1_1_porto__form.html#ada11e231fbbc9d715a5e7976f1b25d6e',1,'KingOfPirates::GUI::MenuNassau::Porto_form']]],
+  ['porto_5fscaprezzo_5flabel_1464',['Porto_ScaPrezzo_Label',['../dc/dc6/class_king_of_pirates_1_1_g_u_i_1_1_menu_nassau_1_1_porto__form.html#ad2061560f9cee5f17f97eb5a4a5ddf32',1,'KingOfPirates::GUI::MenuNassau::Porto_form']]],
+  ['porto_5fupcannoni_5fbutton_1465',['Porto_UpCannoni_Button',['../dc/dc6/class_king_of_pirates_1_1_g_u_i_1_1_menu_nassau_1_1_porto__form.html#a11a13a7f3a0a423a125e6d8e622f6189',1,'KingOfPirates::GUI::MenuNassau::Porto_form']]],
+  ['porto_5fupscafo_5fbutton_1466',['Porto_UpScafo_Button',['../dc/dc6/class_king_of_pirates_1_1_g_u_i_1_1_menu_nassau_1_1_porto__form.html#a5868d849d91f52044805997a8ee995e3',1,'KingOfPirates::GUI::MenuNassau::Porto_form']]],
+  ['porto_5fupvela_5fbutton_1467',['Porto_UpVela_Button',['../dc/dc6/class_king_of_pirates_1_1_g_u_i_1_1_menu_nassau_1_1_porto__form.html#ab83bde3d6c50bc6bff9383464c2ddbea',1,'KingOfPirates::GUI::MenuNassau::Porto_form']]],
+  ['porto_5fvelprezzo_5flabel_1468',['Porto_VelPrezzo_Label',['../dc/dc6/class_king_of_pirates_1_1_g_u_i_1_1_menu_nassau_1_1_porto__form.html#a54dc7800809a0023bd471bbba56b4efe',1,'KingOfPirates::GUI::MenuNassau::Porto_form']]],
+  ['portoimgbutton_1469',['PortoImgButton',['../d8/d8d/class_king_of_pirates_1_1_g_u_i_1_1_menu_nassau_1_1_nassau__form.html#a71d1bf3af914a4264ba8989c527d591e',1,'KingOfPirates::GUI::MenuNassau::Nassau_form']]],
+  ['prezzioggetti_1470',['prezziOggetti',['../d7/dee/class_king_of_pirates_1_1_nassau_1_1_negozio.html#ae714c9d7a057334e2901dfd7d476a940',1,'KingOfPirates::Nassau::Negozio']]],
+  ['prezzocannoni_1471',['prezzoCannoni',['../d6/d14/class_king_of_pirates_1_1_nassau_1_1_porto.html#a205c7a8105e3253f7c509d6bc09115f8',1,'KingOfPirates::Nassau::Porto']]],
+  ['prezzoscafo_1472',['prezzoScafo',['../d6/d14/class_king_of_pirates_1_1_nassau_1_1_porto.html#ae14ea3fb3dcec90b775f72b4af20a04a',1,'KingOfPirates::Nassau::Porto']]],
+  ['prezzovele_1473',['prezzoVele',['../d6/d14/class_king_of_pirates_1_1_nassau_1_1_porto.html#a29032d054ef898b035252698570b16d7',1,'KingOfPirates::Nassau::Porto']]],
+  ['punteggio_1474',['punteggio',['../d6/df4/class_king_of_pirates_1_1_missioni_1_1_gestore_missione.html#a7e0417a053e8a4eefa61a396dc71d4a4',1,'KingOfPirates::Missioni::GestoreMissione']]]
+];

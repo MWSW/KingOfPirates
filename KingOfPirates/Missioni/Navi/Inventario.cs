@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace KingOfPirates.Missioni.Navi.Opponenti
 {
+    /// <summary>
+    /// Contiene i consumabili del giocatore, usabili i missione
+    /// </summary>
     public class Inventario
     {
         public int BevandaDeterminazione { get; set; }

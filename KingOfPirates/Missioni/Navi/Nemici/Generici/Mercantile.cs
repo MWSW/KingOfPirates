@@ -12,12 +12,17 @@ namespace KingOfPirates.Missioni.Navi.Nemici.Generici
     /// <summary>
     /// Nave più debole
     /// </summary>
-    internal class Mercantile
+    internal class Mercantile : NaveNemico
     {
-        Carta[] Mazzo { get; set; }
-        Mercantile(string nome, Image immagine, Stats stats, Loc2D loc, Carta[] mazzo) //: base(nome, immagine, stats, loc)
+        Carta Mazzo { get; set; }
+        public Mercantile(Stats stats, Loc2D[] patrol, Carta mazzo) : base("Nave Mercantile", Properties.Resources.nave_bianca, stats, patrol)
         {
             Mazzo = mazzo;
+        }
+
+        public override void Attacca(Nave nave)
+        {
+            throw new NotImplementedException();
         }
     }
 }

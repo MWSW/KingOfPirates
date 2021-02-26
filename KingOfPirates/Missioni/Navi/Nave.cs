@@ -10,16 +10,26 @@ using KingOfPirates.GUI.MenuMissioni;
 
 namespace KingOfPirates.Missioni.Navi
 {
+    /// <summary>
+    /// Contiene tutti i metodi di base per tutte le navi.
+    /// </summary>
     public abstract class Nave
     {
-        private string nome;
-        private Image immagine;
+        protected string nome;
+        protected Image immagine;
         private bool isGameOver;
 
         public Stats Stats { get; set; }
         public Loc2D Loc { get; set; }
 
-        protected Nave(String nome_, Image immagine_, Stats stats_,  Loc2D loc_)
+        /// <summary>
+        /// Costruttore con tutti i parametri necessari.
+        /// </summary>
+        /// <param name="nome_">Assegna il nome alla nave.</param>
+        /// <param name="immagine_">Assegna l'aspetto della nave per il FormMissione.</param>
+        /// <param name="stats_">Statistiche per la nave.</param>
+        /// <param name="loc_">Coordinate da usare nel FormMissione.</param>
+        protected Nave(String nome_, Image immagine_, Stats stats_, Loc2D loc_)
         {
             nome = nome_;
             immagine = immagine_;
@@ -29,111 +39,39 @@ namespace KingOfPirates.Missioni.Navi
             isGameOver = false; //la nave parte in vita
         }
 
+        public void IncPuntiVita(int punti)
+        {
+            Stats.Hp += punti;
+
+            if (Stats.Hp > Stats.HpMax)
+                Stats.Hp = Stats.HpMax;
+        }
+
+        public void DecPuntiVita(int punti)
+        {
+            Stats.Hp -= punti;
+
+            if (Stats.Hp < 0)
+                Stats.Hp = 0;
+        }
+
         /// <summary>
-        /// La funzione fa muovere la nave data la missione in cui effetuare il movimento e la direzione in cui muoversi
+        /// Attacca la neva specificata con danno random.
         /// </summary>
-        /// <param name="missione"></param>
-        /// <param name="direzione"></param>
+        /// <param name="nave">Nave da attaccare</param>
+        public abstract void Attacca(Nave nave);
 
-        public virtual void Movimento(Missione missione, Direzione direzione) //(Virtual) indica che può essere esteso dai figli
-        {
-            if (Stats.Pa <= 0) {
-                MessageBox.Show("Energia finita!");
-                Stats.Pa = Stats.PaMax; //ripristino energia
-                missione.Mappa.EnergiaNave_label.Text = "Punti azione: " + Stats.Pa + "/" + Stats.PaMax; //aggiorna energia_label
-                return;
-            }
-            switch (direzione)
-            {
-                case Direzione.SOPRA:
-                    if (Gioco.Giocatore.Loc.Y - 1 < 0) return;
-                    if (missione.Griglia_numerica.Mat[this.Loc.X, this.Loc.Y - 1] == 2) return;
+        /// <summary>
+        /// La funzione fa muovere la nave data la missione in cui effetuare il movimento e la direzione in cui muoversi.
+        /// </summary>
+        /// <param name="missione">Per permettere il movimento all'interno della mappa della missione.</param>
+        /// <param name="direzione">per specificare la direzione in cui effetuare il movimento.</param>
+        public abstract void Movimento(Missione missione, Direzione direzione);
 
-                    missione.Mappa.Griglia_pictureBox[this.Loc.X, this.Loc.Y].BackgroundImage = missione.Mappa.temp; //texture vecchia
-                    this.Loc.Y--; //aggiorno la posizione
-                    missione.Mappa.temp =missione.Mappa.Griglia_pictureBox[this.Loc.X, this.Loc.Y].BackgroundImage; //aggiorno temp
-
-                    //cambia immagine se è sopra una isola
-                    if (missione.Griglia_numerica.Mat[Loc.X, Loc.Y] == 1)
-                        missione.Mappa.Griglia_pictureBox[Loc.X, Loc.Y].BackgroundImage = Properties.Resources.omino;
-                    else
-                        missione.Mappa.Griglia_pictureBox[Loc.X, Loc.Y].BackgroundImage = Properties.Resources.nave_pirata;
-
-                    Gioco.Giocatore.RemEnergia(1); //consumi energia
-                    missione.Mappa.EnergiaNave_label.Text = "Punti azione: " + Stats.Pa + "/" + Stats.PaMax; //aggiorna energia_label
-                    break;
-                case Direzione.DESTRA:
-                    if (Gioco.Giocatore.Loc.X - 1 < 0) return;
-                    if (missione.Griglia_numerica.Mat[this.Loc.X + 1, this.Loc.Y] == 2) return;
-
-                    missione.Mappa.Griglia_pictureBox[this.Loc.X, this.Loc.Y].BackgroundImage = missione.Mappa.temp; //texture vecchia
-                    this.Loc.X++; //aggiorno la posizione
-                    missione.Mappa.temp = missione.Mappa.Griglia_pictureBox[this.Loc.X, this.Loc.Y].BackgroundImage; //aggiorno temp
-
-                    //cambia immagine se è sopra una isola
-                    if (missione.Griglia_numerica.Mat[Loc.X, Loc.Y] == 1)
-                        missione.Mappa.Griglia_pictureBox[Loc.X, Loc.Y].BackgroundImage = Properties.Resources.omino;
-                    else
-                        missione.Mappa.Griglia_pictureBox[Loc.X, Loc.Y].BackgroundImage = Properties.Resources.nave_pirata;
-
-                    Gioco.Giocatore.RemEnergia(1); //consumi energia
-                    missione.Mappa.EnergiaNave_label.Text = "Punti azione: " + Stats.Pa + "/" + Stats.PaMax; //aggiorna energia_label
-                    break;
-                case Direzione.SINISTRA:
-                    if (Gioco.Giocatore.Loc.X + 1 < 0) return;
-                    if (missione.Griglia_numerica.Mat[this.Loc.X - 1, this.Loc.Y] == 2) return;
-
-                    missione.Mappa.Griglia_pictureBox[this.Loc.X, this.Loc.Y].BackgroundImage = missione.Mappa.temp; //texture vecchia
-                    this.Loc.X--; //aggiorno la posizione
-                    missione.Mappa.temp = missione.Mappa.Griglia_pictureBox[this.Loc.X, this.Loc.Y].BackgroundImage; //aggiorno temp
-
-                    //cambia immagine se è sopra una isola
-                    if (missione.Griglia_numerica.Mat[Loc.X, Loc.Y] == 1)
-                        missione.Mappa.Griglia_pictureBox[Loc.X, Loc.Y].BackgroundImage = Properties.Resources.omino;
-                    else
-                        missione.Mappa.Griglia_pictureBox[Loc.X, Loc.Y].BackgroundImage = Properties.Resources.nave_pirata;
-
-                    Gioco.Giocatore.RemEnergia(1); //consumi energia
-                    missione.Mappa.EnergiaNave_label.Text = "Punti azione: " + Stats.Pa + "/" + Stats.PaMax; //aggiorna energia_label
-                    break;
-                case Direzione.SOTTO:
-                    if (Gioco.Giocatore.Loc.Y + 1 < 0) return;
-                    if (missione.Griglia_numerica.Mat[this.Loc.X, this.Loc.Y + 1] == 2) return;
-
-                    missione.Mappa.Griglia_pictureBox[this.Loc.X, this.Loc.Y].BackgroundImage = missione.Mappa.temp; //texture vecchia
-                    this.Loc.Y++; //aggiorno la posizione
-                    missione.Mappa.temp = missione.Mappa.Griglia_pictureBox[this.Loc.X, this.Loc.Y].BackgroundImage; //aggiorno temp
-
-                    //cambia immagine se è sopra una isola
-                    if (missione.Griglia_numerica.Mat[Loc.X, Loc.Y] == 1)
-                        missione.Mappa.Griglia_pictureBox[Loc.X, Loc.Y].BackgroundImage = Properties.Resources.omino;
-                    else
-                        missione.Mappa.Griglia_pictureBox[Loc.X, Loc.Y].BackgroundImage = Properties.Resources.nave_pirata;
-
-                    RemEnergia(1); //consumi energia
-                    missione.Mappa.EnergiaNave_label.Text = "Punti azione: " + Stats.Pa + "/" + Stats.PaMax; //aggiorna energia_label
-                    break;
-                default:
-                    break;
-            }
-        }
-
-        public virtual void Movimento(Nave nave, Loc2D spostamento) //(Virtual) indica che può essere esteso dai figli
-        {
-            //
-        }
-
-        public virtual void Attacca(Nave nave) 
-        {
-            //
-        }
-
+        /// <summary>
+        /// Rimuove punti azione dopo un'azione
+        /// </summary>
+        /// <param name="enTolta">punti da rimuovere</param>
         public abstract void RemEnergia(int enTolta);
-        public abstract void IncUbriachezza(int punti);
-        public abstract void DecUbriachezza(int punti);
-        public abstract void IncDeterminazione(int punti);
-        public abstract void DecDeterminazione(int punti);
-        public abstract void IncPuntiVita(int punti);
-        public abstract void DecPuntiVita(int punti);
     }
 }

@@ -8,6 +8,9 @@ using System.Threading.Tasks;
 
 namespace KingOfPirates.Missioni.Navi.Nemici.Generici
 {
+    /// <summary>
+    /// Nave più forte
+    /// </summary>
     class Fregata
     {
     }

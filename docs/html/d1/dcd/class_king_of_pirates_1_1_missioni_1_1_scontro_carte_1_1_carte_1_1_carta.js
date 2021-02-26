@@ -1,0 +1,26 @@
+var class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_carte_1_1_carta =
+[
+    [ "Carta", "d1/dcd/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_carte_1_1_carta.html#a4f5f2e59bd6f15de9d89aebc6ecf7470", null ],
+    [ "AddDeterminazione", "d1/dcd/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_carte_1_1_carta.html#a09ae00a1975935b118ca749d97a37b83", null ],
+    [ "Clona", "d1/dcd/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_carte_1_1_carta.html#a406cdfbe75b68c91f93313ac2ab67477", null ],
+    [ "DimDeterminazione", "d1/dcd/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_carte_1_1_carta.html#a0810fbdafebbdfac286eed3674a08c1f", null ],
+    [ "GetUtilizzabile", "d1/dcd/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_carte_1_1_carta.html#ac97888f9f302adec648b1ea2f5bcb555", null ],
+    [ "Nascondi", "d1/dcd/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_carte_1_1_carta.html#a421b1c50085236c36046923c2434c848", null ],
+    [ "Nascondi", "d1/dcd/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_carte_1_1_carta.html#a3d0f79a49d0b6fd59d9663b33e964cb3", null ],
+    [ "SetUtilizzabile", "d1/dcd/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_carte_1_1_carta.html#a36cbbbcddc9006566871b07cb1de92e4", null ],
+    [ "UsaCarta", "d1/dcd/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_carte_1_1_carta.html#a3f6e83999f962e7656bffbe85ddf6c35", null ],
+    [ "Visualizza", "d1/dcd/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_carte_1_1_carta.html#a548bb13006347426a7b5294564685a01", null ],
+    [ "Visualizza", "d1/dcd/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_carte_1_1_carta.html#a1ebb4c3851805f010d21bc5bcfa9d217", null ],
+    [ "curDet", "d1/dcd/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_carte_1_1_carta.html#adc006b234a0c787ff4a5e4a01ae7f2b3", null ],
+    [ "determinazione", "d1/dcd/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_carte_1_1_carta.html#a656a02a901c94fdd2fe67e443ab274c6", null ],
+    [ "immagine", "d1/dcd/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_carte_1_1_carta.html#a0efc1f861406cc9be573279fc37cb825", null ],
+    [ "indice", "d1/dcd/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_carte_1_1_carta.html#ad480b118a1e2e3b766cb4586a3d3a470", null ],
+    [ "nome", "d1/dcd/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_carte_1_1_carta.html#a37ccc22ab9424ab2cf7e12ce8b83c027", null ],
+    [ "tipo", "d1/dcd/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_carte_1_1_carta.html#ae279c5fc3b89fdbd69d9489dc79adee4", null ],
+    [ "utilizzabile", "d1/dcd/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_carte_1_1_carta.html#a7379730938ee0ed694ebad699cbf2030", null ],
+    [ "Determinazione", "d1/dcd/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_carte_1_1_carta.html#a97199f189f619086313c93a7901bcd2c", null ],
+    [ "Immagine", "d1/dcd/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_carte_1_1_carta.html#aad054565d0fcdbbccc5fb2d74330f4cb", null ],
+    [ "Indice", "d1/dcd/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_carte_1_1_carta.html#aa2b66fd0320c23b496e2a08aff32d1bf", null ],
+    [ "Nome", "d1/dcd/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_carte_1_1_carta.html#a0d83137b064f282e5577be792cbb791f", null ],
+    [ "Tipo", "d1/dcd/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_carte_1_1_carta.html#add6b88aeb6b58f256b91ded62b6d6aa4", null ]
+];

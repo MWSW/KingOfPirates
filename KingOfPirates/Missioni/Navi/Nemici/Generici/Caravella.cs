@@ -8,6 +8,9 @@ using System.Threading.Tasks;
 
 namespace KingOfPirates.Missioni.Navi.Nemici.Generici
 {
+    /// <summary>
+    /// Nave di forza intermedia
+    /// </summary>
     class Caravella
     {
     }
