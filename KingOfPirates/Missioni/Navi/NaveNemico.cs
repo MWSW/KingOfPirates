@@ -61,6 +61,7 @@ namespace KingOfPirates.Missioni.Navi
                     temp = missione.Mappa.Griglia_pictureBox[patrol[patrolIndex].X, patrol[patrolIndex].Y].BackgroundImage;
                     missione.Mappa.Griglia_pictureBox[patrol[patrolIndex].X, patrol[patrolIndex].Y].BackgroundImage = immagine;
                 }
+                else continue;
             }
         }
 
