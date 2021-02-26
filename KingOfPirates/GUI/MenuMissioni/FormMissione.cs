@@ -46,21 +46,43 @@ namespace KingOfPirates.GUI.MenuMissioni
         private void Sopra_button_Click(object sender, EventArgs e)
         {
             Gioco.Giocatore.Movimento(missione, Direzione.SOPRA);
+
+            if (missione.Griglia_numerica.Mat[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y] == 1)
+                Scavo_button.Show();
+            else
+                Scavo_button.Hide();
+
         }
 
         private void Sotto_button_Click(object sender, EventArgs e)
         {
             Gioco.Giocatore.Movimento(missione, Direzione.SOTTO);
+
+            if (missione.Griglia_numerica.Mat[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y] == 1)
+                Scavo_button.Show();
+            else
+                Scavo_button.Hide();
         }
 
         private void Sinistra_button_Click(object sender, EventArgs e)
         {
             Gioco.Giocatore.Movimento(missione, Direzione.SINISTRA);
+
+            if (missione.Griglia_numerica.Mat[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y] == 1)
+                Scavo_button.Show();
+            else
+                Scavo_button.Hide();
         }
 
         private void Destra_button_Click(object sender, EventArgs e)
         {
             Gioco.Giocatore.Movimento(missione, Direzione.DESTRA);
+
+
+            if (missione.Griglia_numerica.Mat[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y] == 1)
+                Scavo_button.Show();
+            else
+                Scavo_button.Hide();
         }
 
         private void Azione_button_Click(object sender, EventArgs e)
