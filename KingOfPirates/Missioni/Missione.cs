@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using KingOfPirates.Missioni.Navi;
 using KingOfPirates.Missioni.Roba;
 using KingOfPirates.GUI.MenuMissioni;
@@ -44,15 +45,22 @@ namespace KingOfPirates.Missioni
         /// <param name="posNave">Posizione iniziale nave giocatore</param>
         /// <param name="posBandiera">Posizione obiettivo finale</param>
         /// <param name="reward">Premio per il raggiungimento della bandiera</param>
+        /// <param name="nemici">Vettore contenente i nemici e le loro info</param>
 
-        public Missione(Griglia Griglia_numerica, Loc2D posNave, Loc2D posBandiera, int reward)
+        public Missione(Griglia Griglia_numerica, Loc2D posNave, Loc2D posBandiera, int reward, NaveNemico[] nemici)
         {
             this.PosBandiera = posBandiera;
             this.PosNave = posNave;
             this.Reward = reward;
+            this.Nemici = nemici;
 
             this.Griglia_numerica = Griglia_numerica;
-            this.Mappa = new GUI.MenuMissioni.FormMissione(this);
+            this.Mappa = new FormMissione(this);
+        }
+
+        public void TurnoNemico()
+        {
+            MessageBox.Show("Turno nemico");
         }
 
         public void StartMissione()

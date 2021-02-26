@@ -158,6 +158,9 @@
     <EmbeddedResource Include="GUI\MenuNassau\Porto_form.resx">
       <DependentUpon>Porto_form.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\MenuPrincipale\StartMenu.resx">
+      <DependentUpon>StartMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\ScontroCarte\ScontroCarte.resx">
       <DependentUpon>ScontroCarte.cs</DependentUpon>
     </EmbeddedResource>
@@ -291,6 +294,7 @@
     <Content Include="Resources\isole_default\isola5.png" />
     <Content Include="Resources\mare.png" />
     <None Include="Resources\montagna.png" />
+    <None Include="Resources\menuBackImg.jpg" />
     <Content Include="Resources\nave Nera\pos_1.png" />
     <Content Include="Resources\nave Nera\pos_2.png" />
     <Content Include="Resources\nave Nera\pos_3.png" />

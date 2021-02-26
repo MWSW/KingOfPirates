@@ -39,5 +39,20 @@ namespace KingOfPirates.GUI.MenuPrincipale
         {
             Gioco.End();
         }
+
+        private void Start_button_Click(object sender, EventArgs e)
+        {
+            //
+        }
+
+        private void Crediti_button_Click(object sender, EventArgs e)
+        {
+            //TODO
+        }
+
+        private void Exit_button_Click(object sender, EventArgs e)
+        {
+            Gioco.End();
+        }
     }
 }

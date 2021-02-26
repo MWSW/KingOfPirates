@@ -40,7 +40,6 @@ namespace KingOfPirates.GUI.MenuMissioni
             Gioco.Giocatore.Loc.X = missione.PosNave.X; Gioco.Giocatore.Loc.Y = missione.PosNave.Y;
             temp = Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage;
 
-
             //cambia immagine se è sopra una isola
             if (missione.Griglia_numerica.Mat[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y + 1] == 1)
                 Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = Properties.Resources.omino;
@@ -73,6 +72,7 @@ namespace KingOfPirates.GUI.MenuMissioni
             MessageBox.Show("Hai passato il turno!");
             Gioco.Giocatore.Stats.Pa = Gioco.Giocatore.Stats.Pa;
             EnergiaNave_label.Text = "Punti azione: " + Gioco.Giocatore.Stats.Pa + "/" + Gioco.Giocatore.Stats.PaMax; //aggiorna energia_label
+            missione.TurnoNemico();
         }
 
         private void Rum_button_Click(object sender, EventArgs e)

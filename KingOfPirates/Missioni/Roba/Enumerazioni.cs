@@ -14,7 +14,8 @@ namespace KingOfPirates.Missioni.Roba
         SOPRA,
         DESTRA,
         SINISTRA,
-        SOTTO
+        SOTTO,
+        NO
     }
 
 }
