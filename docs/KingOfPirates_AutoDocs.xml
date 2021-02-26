@@ -99,6 +99,11 @@
             the contents of this method with the code editor.
             </summary>
         </member>
+        <member name="T:KingOfPirates.GUI.MenuPrincipale.StartMenu">
+            <summary>
+            Menu principale dell'app
+            </summary>
+        </member>
         <member name="F:KingOfPirates.GUI.MenuPrincipale.StartMenu.components">
             <summary>
             Variabile di progettazione necessaria.
@@ -172,7 +177,7 @@
         <member name="P:KingOfPirates.Missioni.Missione.Griglia_numerica">
             <value> Griglia su cui viene generata la mappa grafica. </value>
         </member>
-        <member name="M:KingOfPirates.Missioni.Missione.#ctor(KingOfPirates.Missioni.Griglia,KingOfPirates.Missioni.Roba.Loc2D,KingOfPirates.Missioni.Roba.Loc2D,System.Int32)">
+        <member name="M:KingOfPirates.Missioni.Missione.#ctor(KingOfPirates.Missioni.Griglia,KingOfPirates.Missioni.Roba.Loc2D,KingOfPirates.Missioni.Roba.Loc2D,System.Int32,KingOfPirates.Missioni.Navi.NaveNemico[])">
             <summary>
             Costruttore che prende tutti i parametri.
             </summary>
@@ -180,6 +185,7 @@
             <param name="posNave">Posizione iniziale nave giocatore</param>
             <param name="posBandiera">Posizione obiettivo finale</param>
             <param name="reward">Premio per il raggiungimento della bandiera</param>
+            <param name="nemici">Vettore contenente i nemici e le loro info</param>
         </member>
         <member name="T:KingOfPirates.Missioni.Navi.Nave">
             <summary>
@@ -195,18 +201,18 @@
             <param name="stats_">Statistiche per la nave.</param>
             <param name="loc_">Coordinate da usare nel FormMissione.</param>
         </member>
+        <member name="M:KingOfPirates.Missioni.Navi.Nave.Attacca(KingOfPirates.Missioni.Navi.Nave)">
+            <summary>
+            Attacca la neva specificata con danno random.
+            </summary>
+            <param name="nave">Nave da attaccare</param>
+        </member>
         <member name="M:KingOfPirates.Missioni.Navi.Nave.Movimento(KingOfPirates.Missioni.Missione,KingOfPirates.Missioni.Roba.Direzione)">
             <summary>
             La funzione fa muovere la nave data la missione in cui effetuare il movimento e la direzione in cui muoversi.
             </summary>
             <param name="missione">Per permettere il movimento all'interno della mappa della missione.</param>
             <param name="direzione">per specificare la direzione in cui effetuare il movimento.</param>
-        </member>
-        <member name="M:KingOfPirates.Missioni.Navi.Nave.IncPuntiVita(System.Int32)">
-            <summary>
-            Attacca la neva specificata con danno random.
-            </summary>
-            <param name="nave">Nave da attaccare</param>
         </member>
         <member name="M:KingOfPirates.Missioni.Navi.Nave.RemEnergia(System.Int32)">
             <summary>
@@ -216,7 +222,7 @@
         </member>
         <member name="T:KingOfPirates.Missioni.Navi.NaveGiocatore">
             <summary>
-            Nave rappresentante con funzioni speciali per il giocatore.
+            Nave rappresentante il giocatore con funzioni speciali.
             </summary>
         </member>
         <member name="P:KingOfPirates.Missioni.Navi.NaveGiocatore.StaNavigando">
@@ -249,6 +255,25 @@
             <param name="loc_">Coordinate da usare nel FormMissione.</param>
             <param name="ubriachezzaMax">Indicatore per l'equipaggio.</param>
             <param name="determinazioneMax">Indicatore per le carte</param>
+        </member>
+        <member name="M:KingOfPirates.Missioni.Navi.NaveGiocatore.Movimento(KingOfPirates.Missioni.Missione,KingOfPirates.Missioni.Roba.Direzione)">
+            <summary>
+            La funzione fa muovere la nave data la missione in cui effetuare il movimento e la direzione in cui muoversi.
+            </summary>
+            <param name="missione">Per permettere il movimento all'interno della mappa della missione.</param>
+            <param name="direzione">per specificare la direzione in cui effetuare il movimento.</param>
+        </member>
+        <member name="T:KingOfPirates.Missioni.Navi.NaveNemico">
+            <summary>
+            Classe astratta con funzioni e valori per il controllo dei nemici.
+            </summary>
+        </member>
+        <member name="M:KingOfPirates.Missioni.Navi.NaveNemico.Movimento(KingOfPirates.Missioni.Missione,KingOfPirates.Missioni.Roba.Direzione)">
+            <summary>
+            Movimento specifico per i nemici secondo un percorso predefinito
+            </summary>
+            <param name="missione"></param>
+            <param name="direzione"></param>
         </member>
         <member name="M:KingOfPirates.Missioni.Navi.NaveNemico.RemEnergia(System.Int32)">
             <summary>
@@ -358,9 +383,14 @@
             Proprietà rappresentante il giocatore
             </summary>
         </member>
-        <member name="F:KingOfPirates.Gioco.initTask">
+        <member name="M:KingOfPirates.Gioco.Start">
             <summary>
-            Task asincrona per inizializzare componenti pesanti
+            Avviatore dell'applicazione
+            </summary>
+        </member>
+        <member name="M:KingOfPirates.Gioco.End">
+            <summary>
+            Terminatore dell'applicazione
             </summary>
         </member>
         <member name="T:KingOfPirates.Properties.Resources">

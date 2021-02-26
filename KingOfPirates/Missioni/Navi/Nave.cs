@@ -15,8 +15,8 @@ namespace KingOfPirates.Missioni.Navi
     /// </summary>
     public abstract class Nave
     {
-        private string nome;
-        private Image immagine;
+        protected string nome;
+        protected Image immagine;
         private bool isGameOver;
 
         public Stats Stats { get; set; }

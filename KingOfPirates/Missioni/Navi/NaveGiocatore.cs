@@ -11,7 +11,7 @@ using KingOfPirates.Missioni.Navi.Opponenti;
 namespace KingOfPirates.Missioni.Navi
 {
     /// <summary>
-    /// Nave rappresentante con funzioni speciali per il giocatore.
+    /// Nave rappresentante il giocatore con funzioni speciali.
     /// </summary>
     public class NaveGiocatore : Nave
     {

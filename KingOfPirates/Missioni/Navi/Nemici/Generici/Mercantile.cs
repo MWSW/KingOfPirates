@@ -15,7 +15,7 @@ namespace KingOfPirates.Missioni.Navi.Nemici.Generici
     internal class Mercantile : NaveNemico
     {
         Carta Mazzo { get; set; }
-        Mercantile(Stats stats, Loc2D loc, Loc2D[] patrol, Carta mazzo) : base("Nave Mercantile", Properties.Resources.nave_bianca, stats, loc, patrol)
+        public Mercantile(Stats stats, Loc2D[] patrol, Carta mazzo) : base("Nave Mercantile", Properties.Resources.nave_bianca, stats, patrol)
         {
             Mazzo = mazzo;
         }

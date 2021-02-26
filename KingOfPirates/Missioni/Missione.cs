@@ -26,7 +26,7 @@ namespace KingOfPirates.Missioni
         /// <value>
         /// Array dei nemici presenti nella missione.
         /// </value>
-        protected NaveNemico[] Nemici { get; set; }
+        internal NaveNemico[] Nemici { get; set; }
         /// <value>
         /// Posizione iniziale nave.
         /// </value>
@@ -60,7 +60,10 @@ namespace KingOfPirates.Missioni
 
         public void TurnoNemico()
         {
-            MessageBox.Show("Turno nemico");
+            for (int i = 0; i < Nemici.Length; i++)
+            {
+                Nemici[i].Movimento(this, Direzione.NO);
+            }
         }
 
         public void StartMissione()

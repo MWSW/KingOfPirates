@@ -10,6 +10,9 @@ using System.Windows.Forms;
 
 namespace KingOfPirates.GUI.MenuPrincipale
 {
+    /// <summary>
+    /// Menu principale dell'app
+    /// </summary>
     public partial class StartMenu : Form
     {
         public StartMenu()

@@ -10,6 +10,9 @@ using KingOfPirates.Missioni.Roba;
 
 namespace KingOfPirates.Missioni.Navi
 {
+    /// <summary>
+    /// Classe astratta con funzioni e valori per il controllo dei nemici.
+    /// </summary>
     public abstract class NaveNemico : Nave
     {
         internal Mazzo MazzoNave { get; set; }
@@ -20,19 +23,45 @@ namespace KingOfPirates.Missioni.Navi
         private int patrolIndex;
         private bool patrolInv;
         private Loc2D[] patrol; //Coordinate per il movimento
+        private Image temp;
 
         //Le varianti: Mercantile, Fregata, Vascello (saranno definite tramite i parametri degli oggetti
-        public NaveNemico(String nome_, Image immagine_, Stats stats_, Loc2D loc_, Loc2D[] patrol) : base(nome_, immagine_, stats_, loc_)
+        public NaveNemico(String nome_, Image immagine_, Stats stats_, Loc2D[] patrol) : base(nome_, immagine_, stats_, patrol[0])
         {
             this.patrol = patrol;
+            temp = Properties.Resources.mare;
             dimTrigger = 2;
             patrolIndex = 0;
             patrolInv = false;
         }
 
+        /// <summary>
+        /// Movimento specifico per i nemici secondo un percorso predefinito
+        /// </summary>
+        /// <param name="missione"></param>
+        /// <param name="direzione"></param>
         public override void Movimento(Missione missione, Direzione direzione)
         {
-            throw new NotImplementedException();
+            // Controlla se l'indice punta alla fine dell'array di movimento
+            // e nel caso accenda una flag che fa diminuire l'indice invece che aumentare
+            if (patrolIndex > patrol.Length) patrolInv = true;
+            else if (patrolIndex < 0) patrolInv = false;
+            
+
+            for (int i = 0; i < missione.Nemici.Length; i++)
+            {
+                if (this.Equals(missione.Nemici[i]))
+                {
+                    missione.Nemici[i].Loc = patrol[patrolIndex];
+                    missione.Mappa.Griglia_pictureBox[patrol[patrolIndex].X, patrol[patrolIndex].Y].BackgroundImage = temp;
+                    if (patrolInv)
+                        patrolIndex--;
+                    else
+                        patrolIndex++;
+                    temp = missione.Mappa.Griglia_pictureBox[patrol[patrolIndex].X, patrol[patrolIndex].Y].BackgroundImage;
+                    missione.Mappa.Griglia_pictureBox[patrol[patrolIndex].X, patrol[patrolIndex].Y].BackgroundImage = immagine;
+                }
+            }
         }
 
         public void Affonda()
