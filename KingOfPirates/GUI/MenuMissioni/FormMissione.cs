@@ -66,6 +66,13 @@ namespace KingOfPirates.GUI.MenuMissioni
             else
                 Scavo_button.Hide();
 
+
+            //patrol del nemico
+            foreach (NaveNemico n in missione.Nemici)
+            {
+                n.Movimento(missione, Direzione.NO);
+            }
+
         }
 
         private void Sotto_button_Click(object sender, EventArgs e)
@@ -76,6 +83,12 @@ namespace KingOfPirates.GUI.MenuMissioni
                 Scavo_button.Show();
             else
                 Scavo_button.Hide();
+
+            //patrol del nemico
+            foreach (NaveNemico n in missione.Nemici)
+            {
+                n.Movimento(missione, Direzione.NO);
+            }
         }
 
         private void Sinistra_button_Click(object sender, EventArgs e)
@@ -86,6 +99,12 @@ namespace KingOfPirates.GUI.MenuMissioni
                 Scavo_button.Show();
             else
                 Scavo_button.Hide();
+
+            //patrol del nemico
+            foreach (NaveNemico n in missione.Nemici)
+            {
+                n.Movimento(missione, Direzione.NO);
+            }
         }
 
         private void Destra_button_Click(object sender, EventArgs e)
@@ -97,6 +116,13 @@ namespace KingOfPirates.GUI.MenuMissioni
                 Scavo_button.Show();
             else
                 Scavo_button.Hide();
+
+
+            //patrol del nemico
+            foreach (NaveNemico n in missione.Nemici)
+            {
+                n.Movimento(missione, Direzione.NO);
+            }
         }
 
         private void Azione_button_Click(object sender, EventArgs e)
