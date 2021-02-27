@@ -53,11 +53,6 @@ namespace KingOfPirates.Nassau
         public int[] PrezzoScafo { get => prezzoScafo; set => prezzoScafo = value; }
         public int[] PrezzoVele { get => prezzoVele; set => prezzoVele = value; }
 
-        public void Salpa() 
-        {
-
-        }
-
         public void PotenziaCannoni() {
             if(LivelloCannoni <= 3)
             {

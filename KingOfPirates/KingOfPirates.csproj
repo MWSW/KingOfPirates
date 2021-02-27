@@ -194,6 +194,7 @@
     <None Include="Resources\SpazioVuoto.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\unchecked.png" />
     <None Include="Resources\vita_buff.png" />
     <None Include="Resources\nascondi.png" />
     <None Include="Resources\next.png" />
@@ -211,10 +212,13 @@
     <Content Include="OST\Rude Buster-HQ.wav" />
     <None Include="Resources\mute.png" />
     <None Include="Resources\play.png" />
+    <None Include="Resources\adesivi-vecchia-mappa-del-tesoro.jpg.jpg" />
     <Content Include="Resources\ant.jpg" />
     <Content Include="Resources\assLeg.png" />
     <Content Include="Resources\back_arrow.jpg" />
     <Content Include="Resources\bevDet.jpg" />
+    <None Include="Resources\emptyCheckBox.png" />
+    <None Include="Resources\checked.png" />
     <Content Include="Resources\HUD - interfaccia\box_5_mosse.png" />
     <Content Include="Resources\HUD - interfaccia\box_5_mosse_blocchi.png" />
     <Content Include="Resources\HUD - interfaccia\box_domanda.png" />
@@ -268,6 +272,7 @@
     <Content Include="Resources\isole_default\isola3.png" />
     <Content Include="Resources\isole_default\isola4.png" />
     <Content Include="Resources\isole_default\isola5.png" />
+    <None Include="Resources\mappa-del-tesoro.jpg" />
     <Content Include="Resources\mare.png" />
     <Content Include="Resources\nave Nera\pos_1.png" />
     <Content Include="Resources\nave Nera\pos_2.png" />

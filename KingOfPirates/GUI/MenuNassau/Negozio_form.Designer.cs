@@ -149,6 +149,7 @@ namespace KingOfPirates.GUI.MenuNassau
             this.Negozio_BevAnt_Img = new System.Windows.Forms.PictureBox();
             this.Negozio_Rum_Img = new System.Windows.Forms.PictureBox();
             this.Negozio_BevDet_Img = new System.Windows.Forms.PictureBox();
+            this.Negozio_CarteNome_Label = new System.Windows.Forms.Label();
             this.Negozio_acqCarte_Panel.SuspendLayout();
             this.Negozio_CarteInfo_Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Negozio_CarteInfo_Img)).BeginInit();
@@ -447,6 +448,7 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             // Negozio_CarteInfo_Panel
             // 
+            this.Negozio_CarteInfo_Panel.Controls.Add(this.Negozio_CarteNome_Label);
             this.Negozio_CarteInfo_Panel.Controls.Add(this.Negozio_CarteDescrizione_Label);
             this.Negozio_CarteInfo_Panel.Controls.Add(this.Negozio_CarteElemento_Label);
             this.Negozio_CarteInfo_Panel.Controls.Add(this.Negozio_CarteDef_Label);
@@ -460,9 +462,9 @@ namespace KingOfPirates.GUI.MenuNassau
             // Negozio_CarteDescrizione_Label
             // 
             this.Negozio_CarteDescrizione_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Negozio_CarteDescrizione_Label.Location = new System.Drawing.Point(280, 173);
+            this.Negozio_CarteDescrizione_Label.Location = new System.Drawing.Point(280, 191);
             this.Negozio_CarteDescrizione_Label.Name = "Negozio_CarteDescrizione_Label";
-            this.Negozio_CarteDescrizione_Label.Size = new System.Drawing.Size(269, 126);
+            this.Negozio_CarteDescrizione_Label.Size = new System.Drawing.Size(269, 108);
             this.Negozio_CarteDescrizione_Label.TabIndex = 4;
             this.Negozio_CarteDescrizione_Label.Text = "Descrizione";
             this.Negozio_CarteDescrizione_Label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -470,7 +472,7 @@ namespace KingOfPirates.GUI.MenuNassau
             // Negozio_CarteElemento_Label
             // 
             this.Negozio_CarteElemento_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Negozio_CarteElemento_Label.Location = new System.Drawing.Point(280, 128);
+            this.Negozio_CarteElemento_Label.Location = new System.Drawing.Point(283, 157);
             this.Negozio_CarteElemento_Label.Name = "Negozio_CarteElemento_Label";
             this.Negozio_CarteElemento_Label.Size = new System.Drawing.Size(272, 34);
             this.Negozio_CarteElemento_Label.TabIndex = 3;
@@ -480,7 +482,7 @@ namespace KingOfPirates.GUI.MenuNassau
             // Negozio_CarteDef_Label
             // 
             this.Negozio_CarteDef_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Negozio_CarteDef_Label.Location = new System.Drawing.Point(280, 84);
+            this.Negozio_CarteDef_Label.Location = new System.Drawing.Point(283, 120);
             this.Negozio_CarteDef_Label.Name = "Negozio_CarteDef_Label";
             this.Negozio_CarteDef_Label.Size = new System.Drawing.Size(272, 34);
             this.Negozio_CarteDef_Label.TabIndex = 2;
@@ -490,7 +492,7 @@ namespace KingOfPirates.GUI.MenuNassau
             // Negozio_CarteAtk_Label
             // 
             this.Negozio_CarteAtk_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Negozio_CarteAtk_Label.Location = new System.Drawing.Point(280, 35);
+            this.Negozio_CarteAtk_Label.Location = new System.Drawing.Point(283, 78);
             this.Negozio_CarteAtk_Label.Name = "Negozio_CarteAtk_Label";
             this.Negozio_CarteAtk_Label.Size = new System.Drawing.Size(275, 34);
             this.Negozio_CarteAtk_Label.TabIndex = 1;
@@ -1513,6 +1515,16 @@ namespace KingOfPirates.GUI.MenuNassau
             this.Negozio_BevDet_Img.TabIndex = 19;
             this.Negozio_BevDet_Img.TabStop = false;
             // 
+            // Negozio_CarteNome_Label
+            // 
+            this.Negozio_CarteNome_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Negozio_CarteNome_Label.Location = new System.Drawing.Point(281, 36);
+            this.Negozio_CarteNome_Label.Name = "Negozio_CarteNome_Label";
+            this.Negozio_CarteNome_Label.Size = new System.Drawing.Size(275, 34);
+            this.Negozio_CarteNome_Label.TabIndex = 5;
+            this.Negozio_CarteNome_Label.Text = "NOME";
+            this.Negozio_CarteNome_Label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // Negozio_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1720,5 +1732,6 @@ namespace KingOfPirates.GUI.MenuNassau
         private System.Windows.Forms.Label Negozio_CarteAtk_Label;
         private System.Windows.Forms.Label Negozio_CartePossedute_Label;
         private System.Windows.Forms.Label Negozio_CarteFondi_Label;
+        private System.Windows.Forms.Label Negozio_CarteNome_Label;
     }
 }

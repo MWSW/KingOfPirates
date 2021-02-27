@@ -77,6 +77,8 @@ namespace KingOfPirates.GUI.MenuNassau
         {
             Negozio_CarteInfo_Img.BackgroundImage = ListaCarte.GetCarta(currentIndex).Immagine;
 
+            Negozio_CarteNome_Label.Text = ListaCarte.GetCarta(currentIndex).Nome;
+
             if (ListaCarte.GetCarta(currentIndex).Tipo == "attacco")
                 Negozio_CarteAtk_Label.Text = "ATK: " + ((CartaBase)(ListaCarte.GetCarta(currentIndex))).Atk;
             else
@@ -210,519 +212,519 @@ namespace KingOfPirates.GUI.MenuNassau
 
         private void Pirata1_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 0;
+            Seleziona();
         }
         
         private void Negozio_CartePirata1_Label_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 0;
+            Seleziona();
         }
         
         private void Negozio_CartaPirata1_Img_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 0;
+            Seleziona();
         }
         
         private void Negozio_CartePrezzo1_Label_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 0;
+            Seleziona();
         }
         
         ///////////////////////////
 
         private void Pirata2_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 1;
+            Seleziona();
         }
         
         private void Negozio_CartePirata2_Label_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 1;
+            Seleziona();
         }
 
         private void Negozio_CartaPirata2_Img_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 1;
+            Seleziona();
         }
         
         private void Negozio_CartePrezzo2_Label_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 1;
+            Seleziona();
         }
 
         ///////////////////////////
         
         private void Pirata3_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 2;
+            Seleziona();
         }
 
         private void Negozio_CartePirata3_Label_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 2;
+            Seleziona();
         }
         
         private void Negozio_CartaPirata3_Img_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 2;
+            Seleziona();
         }
         
         private void Negozio_CartePrezzo3_Label_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 2;
+            Seleziona();
         }
 
         ///////////////////////////
 
         private void Pirata4_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 3;
+            Seleziona();
         }
         
         private void Negozio_CartePirata4_Label_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 3;
+            Seleziona();
         }
         
         private void Negozio_CartaPirata4_Img_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 3;
+            Seleziona();
         }
         
         private void Negozio_CartePrezzo4_Label_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 3;
+            Seleziona();
         }
 
         ///////////////////////////
 
         private void Pirata5_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 4;
+            Seleziona();
         }
         
         private void Negozio_CartePirata5_Label_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 4;
+            Seleziona();
         }
         
         private void Negozio_CartaPirata5_Img_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 4;
+            Seleziona();
         }
 
         private void Negozio_CartePrezzo5_Label_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 4;
+            Seleziona();
         }
 
         ///////////////////////////
 
         private void Pirata6_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 5;
+            Seleziona();
         }
         
         private void Negozio_CartePirata6_Label_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 5;
+            Seleziona();
         }
 
         private void Negozio_CartaPirata6_Img_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 5;
+            Seleziona();
         }
 
         private void Negozio_CartePrezzo6_Label_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 5;
+            Seleziona();
         }
 
         ///////////////////////////
 
         private void Pirata7_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 6;
+            Seleziona();
         }
         
         private void Negozio_CartePirata7_Label_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 6;
+            Seleziona();
         }
 
         private void Negozio_CartaPirata7_Img_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 6;
+            Seleziona();
         }
 
         private void Negozio_CartePrezzo7_Label_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 6;
+            Seleziona();
         }
 
         ///////////////////////////
 
         private void Pirata8_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 7;
+            Seleziona();
         }
         
         private void Negozio_CartePirata8_Label_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 7;
+            Seleziona();
         }
 
         private void Negozio_CartaPirata8_Img_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 7;
+            Seleziona();
         }
 
         private void Negozio_CartePrezzo8_Label_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 7;
+            Seleziona();
         }
 
         ///////////////////////////
 
         private void Pirata9_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 8;
+            Seleziona();
         }
         
         private void Negozio_CartePirata9_Label_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 8;
+            Seleziona();
         }
 
         private void Negozio_CartaPirata9_Img_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 8;
+            Seleziona();
         }
 
         private void Negozio_CartePrezzo9_Label_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 8;
+            Seleziona();
         }
 
         ///////////////////////////
 
         private void Pirata10_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 9;
+            Seleziona();
         }
         
         private void Negozio_CartePirata10_Label_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 9;
+            Seleziona();
         }
 
         private void Negozio_CartaPirata10_Img_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 9;
+            Seleziona();
         }
 
         private void Negozio_CartePrezzo10_Label_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 9;
+            Seleziona();
         }
 
         ///////////////////////////
 
         private void Pirata11_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 10;
+            Seleziona();
         }
         
         private void Negozio_CartePirata11_Label_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 10;
+            Seleziona();
         }
 
         private void Negozio_CartaPirata11_Img_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 10;
+            Seleziona();
         }
 
         private void Negozio_CartePrezzo11_Label_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 10;
+            Seleziona();
         }
 
         ///////////////////////////
 
         private void Pirata12_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 11;
+            Seleziona();
         }
         
         private void Negozio_CartePirata12_Label_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 11;
+            Seleziona();
         }
 
         private void Negozio_CartaPirata12_Img_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 11;
+            Seleziona();
         }
 
         private void Negozio_CartePrezzo12_Label_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 11;
+            Seleziona();
         }
 
         ///////////////////////////
 
         private void Pirata13_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 12;
+            Seleziona();
         }
         
         private void Negozio_CartePirata13_Label_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 12;
+            Seleziona();
         }
 
         private void Negozio_CartaPirata13_Img_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 12;
+            Seleziona();
         }
 
         private void Negozio_CartePrezzo13_Label_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 12;
+            Seleziona();
         }
 
         ///////////////////////////
 
         private void Pirata14_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 13;
+            Seleziona();
         }
         
         private void Negozio_CartePirata14_Label_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 13;
+            Seleziona();
         }
 
         private void Negozio_CartaPirata14_Img_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 13;
+            Seleziona();
         }
 
         private void Negozio_CartePrezzo14_Label_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 13;
+            Seleziona();
         }
 
         ///////////////////////////
 
         private void Pirata15_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 14;
+            Seleziona();
         }
         
         private void Negozio_CartePirata15_Label_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 14;
+            Seleziona();
         }
 
         private void Negozio_CartaPirata15_Img_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 14;
+            Seleziona();
         }
 
         private void Negozio_CartePrezzo15_Label_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 14;
+            Seleziona();
         }
 
         ///////////////////////////
 
         private void Pirata16_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 15;
+            Seleziona();
         }
         
         private void Negozio_CartePirata16_Label_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 15;
+            Seleziona();
         }
 
         private void Negozio_CartaPirata16_Img_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 15;
+            Seleziona();
         }
 
         private void Negozio_CartePrezzo16_Label_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 15;
+            Seleziona();
         }
 
         ///////////////////////////
 
         private void Pirata17_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 16;
+            Seleziona();
         }
 
         private void Negozio_CartePirata17_Label_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 16;
+            Seleziona();
         }
 
         private void Negozio_CartaPirata17_Img_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 16;
+            Seleziona();
         }
 
         private void Negozio_CartePrezzo17_Label_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 16;
+            Seleziona();
         }
 
         ///////////////////////////
 
         private void Pirata18_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 17;
+            Seleziona();
         }
 
         private void Negozio_CartePirata18_Label_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 17;
+            Seleziona();
         }
 
         private void Negozio_CartaPirata18_Img_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 17;
+            Seleziona();
         }
 
         private void Negozio_CartePrezzo18_Label_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 17;
+            Seleziona();
         }
 
         ///////////////////////////
 
         private void Pirata19_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 18;
+            Seleziona();
         }
         private void Negozio_CartePirata19_Label_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 18;
+            Seleziona();
         }
 
         private void Negozio_CartaPirata19_Img_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 18;
+            Seleziona();
         }
 
         private void Negozio_CartePrezzo19_Label_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 18;
+            Seleziona();
         }
 
         ///////////////////////////
 
         private void Pirata20_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 19;
+            Seleziona();
         }
         
         private void Negozio_CartePirata20_Label_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 19;
+            Seleziona();
         }
 
         private void Negozio_CartaPirata20_Img_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 19;
+            Seleziona();
         }
 
         private void Negozio_CartePrezzo20_Label_Click(object sender, EventArgs e)
         {
-            Seleziona();
             currentIndex = 19;
+            Seleziona();
         } 
     }
 }

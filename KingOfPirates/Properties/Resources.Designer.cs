@@ -63,6 +63,76 @@ namespace KingOfPirates.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _checked {
+            get {
+                object obj = ResourceManager.GetObject("checked", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _unchecked {
+            get {
+                object obj = ResourceManager.GetObject("unchecked", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap adesivi_vecchia_mappa_del_tesoro_jpg {
+            get {
+                object obj = ResourceManager.GetObject("adesivi-vecchia-mappa-del-tesoro.jpg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ant {
+            get {
+                object obj = ResourceManager.GetObject("ant", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap assLeg {
+            get {
+                object obj = ResourceManager.GetObject("assLeg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap back_arrow {
+            get {
+                object obj = ResourceManager.GetObject("back_arrow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bevDet {
+            get {
+                object obj = ResourceManager.GetObject("bevDet", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bottone_attacco {
             get {
                 object obj = ResourceManager.GetObject("bottone_attacco", resourceCulture);
@@ -136,6 +206,16 @@ namespace KingOfPirates.Properties {
         internal static System.Drawing.Bitmap depotenziamento {
             get {
                 object obj = ResourceManager.GetObject("depotenziamento", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap emptyCheckBox {
+            get {
+                object obj = ResourceManager.GetObject("emptyCheckBox", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -225,6 +305,16 @@ namespace KingOfPirates.Properties {
         internal static System.Drawing.Bitmap isola5 {
             get {
                 object obj = ResourceManager.GetObject("isola5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mappa_del_tesoro {
+            get {
+                object obj = ResourceManager.GetObject("mappa-del-tesoro", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -371,6 +461,16 @@ namespace KingOfPirates.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap rum {
+            get {
+                object obj = ResourceManager.GetObject("rum", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap sangue {
             get {
                 object obj = ResourceManager.GetObject("sangue", resourceCulture);
@@ -414,51 +514,6 @@ namespace KingOfPirates.Properties {
         internal static System.Drawing.Bitmap vita_buff {
             get {
                 object obj = ResourceManager.GetObject("vita_buff", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-
-        internal static System.Drawing.Bitmap rum
-        {
-            get
-            {
-                object obj = ResourceManager.GetObject("rum", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-
-        internal static System.Drawing.Bitmap bevDet
-        {
-            get
-            {
-                object obj = ResourceManager.GetObject("bevDet", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-
-        internal static System.Drawing.Bitmap back_arrow
-        {
-            get
-            {
-                object obj = ResourceManager.GetObject("back_arrow", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-
-        internal static System.Drawing.Bitmap assLeg
-        {
-            get
-            {
-                object obj = ResourceManager.GetObject("assLeg", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-
-        internal static System.Drawing.Bitmap ant
-        {
-            get
-            {
-                object obj = ResourceManager.GetObject("ant", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
