@@ -86,7 +86,7 @@ namespace KingOfPirates
                  ListaCarte.GetCartaClone(18), ListaCarte.GetCartaClone(19)};
 
 
-            Player_carte player_prova = new Player_carte(1, new Mazzo(carte_player));
+            Player_carte player_prova = new Player_carte(10, new Mazzo(carte_player));
 
             Giocatore = new NaveGiocatore("Nave da Test", Properties.Resources.nave_rossa, new Stats(), new Loc2D(3,3), 5, 10, player_prova);
             Dominio = new GestioneDominio();

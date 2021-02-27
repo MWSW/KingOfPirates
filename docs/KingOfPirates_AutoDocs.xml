@@ -4,6 +4,23 @@
         <name>KingOfPirates</name>
     </assembly>
     <members>
+        <member name="F:KingOfPirates.GUI.MenuMissioni.FineMissione.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:KingOfPirates.GUI.MenuMissioni.FineMissione.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:KingOfPirates.GUI.MenuMissioni.FineMissione.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
         <member name="T:KingOfPirates.GUI.MenuMissioni.FormMissione">
             <summary>
             Form che rappresenta la griglia grafica della missione, fatto a mano.
@@ -167,6 +184,11 @@
         <member name="P:KingOfPirates.Missioni.Missione.Griglia_numerica">
             <value>
             Posizione iniziale nave.
+            </value>
+        </member>
+        <member name="P:KingOfPirates.Missioni.Missione.Ranking">
+            <value>
+            Ranking della missione.
             </value>
         </member>
         <member name="M:KingOfPirates.Missioni.Missione.#ctor(KingOfPirates.Missioni.Griglia,System.Int32,KingOfPirates.Missioni.Navi.NaveNemico[])">

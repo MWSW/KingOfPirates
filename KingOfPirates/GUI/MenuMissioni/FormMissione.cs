@@ -73,6 +73,8 @@ namespace KingOfPirates.GUI.MenuMissioni
             else
             {
                 EnergiaNave_label.ForeColor = Color.Black;
+
+                missione.Ranking.IncTurni(); //aumenta il conteggio per il ranking
             }
 
             //controlla vita nemici
@@ -102,8 +104,18 @@ namespace KingOfPirates.GUI.MenuMissioni
             {
                 //TEMP
                 MessageBox.Show("Hai completato la missione!");
-                //torna a nassau
-                Gioco.nassauForm.Show();
+
+                //conteggio delle navi affondate
+                foreach (NaveNemico n in missione.Nemici)
+                {
+                    if (n.IsGameOver)
+                        missione.Ranking.IncNaviAffondate();
+                }
+
+                GUI.MenuMissioni.FineMissione fineMissione = new GUI.MenuMissioni.FineMissione(missione.Ranking);
+                
+                fineMissione.Show();
+                //Gioco.nassauForm.Show();
                 this.Hide();
             }
         }
@@ -156,11 +168,14 @@ namespace KingOfPirates.GUI.MenuMissioni
         {
             Gioco.Giocatore.Inventario.DecRum(); //consumi una unità di rum
 
-            Gioco.Giocatore.IncUbriachezza(2); //aumenta l'ubriachezza
+            Gioco.Giocatore.IncUbriachezza(1); //aumenta l'ubriachezza
+
+            Gioco.Giocatore.IncDeterminazione(5); //aumenta la determinazione
 
             //aggiorno label
             this.Rum_label.Text = "Rum rimasto: " + Gioco.Giocatore.Inventario.Rum;
             this.Ubriachezza_label.Text = "Ubriachezza: " + Gioco.Giocatore.Ubriachezza + "/" + Gioco.Giocatore.UbriachezzaMax;
+            this.Determinazione_label.Text = "Determinazione: " + Gioco.Giocatore.Determinazione + "/" + Gioco.Giocatore.DeterminazioneMax;
         }
 
         private void AssLeg_button_Click(object sender, EventArgs e)
@@ -199,22 +214,31 @@ namespace KingOfPirates.GUI.MenuMissioni
         {
             if (missione.Griglia_numerica.Mat[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y] != -1)
             {
-                Random rand = new Random();
-
-                int rng = rand.Next() * 100;
-
-                if (rng < 70)
-                    temp = Properties.Resources.cross; //sostituisco la texure sabbia con quella scavo
-                else
+                //Puoi scavare solo se hai abbastanza determinazione
+                if (Gioco.Giocatore.Determinazione > 0)
                 {
-                    temp = Properties.Resources.ruby; //sostituisco la texure sabbia con rubino
-                    Gioco.Dominio.CassaRubini++; //ottieni un rubino
-                    this.Rubini_label.Text = "Rubini: " + Gioco.Dominio.CassaRubini;
-                }
+                    Gioco.Giocatore.DecDeterminazione(3);
+                    this.Determinazione_label.Text = "Determinazione: " + Gioco.Giocatore.Determinazione + "/" + Gioco.Giocatore.DeterminazioneMax;
 
-                //uso la matrice di inizializzazione per verificare se le celle sono già state scavate
-                missione.Griglia_numerica.Mat[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y] = -1;
-                Scavo_button.Hide(); //la componente non serve più quindi la si nasconde
+                    Random rand = new Random();
+
+                    int rng = rand.Next() * 100;
+
+                    if (rng < 70)
+                        temp = Properties.Resources.cross; //sostituisco la texure sabbia con quella scavo
+                    else
+                    {
+                        temp = Properties.Resources.ruby; //sostituisco la texure sabbia con rubino
+                        Gioco.Dominio.CassaRubini++; //ottieni un rubino
+
+                        missione.Ranking.IncRubini(); //aumenta il conteggio per il ranking
+                        this.Rubini_label.Text = "Rubini: " + Gioco.Dominio.CassaRubini;
+                    }
+
+                    //uso la matrice di inizializzazione per verificare se le celle sono già state scavate
+                    missione.Griglia_numerica.Mat[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y] = -1;
+                    Scavo_button.Hide(); //la componente non serve più quindi la si nasconde
+                }
             }
         }
 
@@ -233,6 +257,8 @@ namespace KingOfPirates.GUI.MenuMissioni
                 {
                     Gioco.Giocatore.Restart();
                     missione.TurnoNemico(); //faccio muovere i nemici per mettere apposto le celle
+
+                    missione.Ranking.IncGameOver(); //aumenta il conteggio dei tuoi game over
 
                     Gioco.Giocatore.Stats.Pa = Gioco.Giocatore.Stats.PaMax;
                     EnergiaNave_label.Text = "Punti azione: " + Gioco.Giocatore.Stats.Pa + "/" + Gioco.Giocatore.Stats.PaMax; //aggiorna energia_label

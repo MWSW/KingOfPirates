@@ -32,6 +32,11 @@ namespace KingOfPirates.Missioni
         /// </value>
         internal Griglia Griglia_numerica { get; set; }
 
+        /// <value>
+        /// Ranking della missione.
+        /// </value>
+        internal Ranking Ranking { get; set; }
+
         /// <summary>
         /// Costruttore che prende tutti i parametri.
         /// </summary>
@@ -46,6 +51,8 @@ namespace KingOfPirates.Missioni
 
             this.Griglia_numerica = Griglia_numerica;
             this.Mappa = new FormMissione(this);
+
+            this.Ranking = new Ranking();
         }
 
         public void TurnoNemico()

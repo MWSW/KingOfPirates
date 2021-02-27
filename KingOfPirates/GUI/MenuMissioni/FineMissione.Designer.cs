@@ -30,9 +30,9 @@
         {
             this.Title_label = new System.Windows.Forms.Label();
             this.Turni_label = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.GameOver_label = new System.Windows.Forms.Label();
+            this.Rubini_label = new System.Windows.Forms.Label();
+            this.NaviAffondate_label = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.Rank_label = new System.Windows.Forms.Label();
@@ -62,35 +62,35 @@
             this.Turni_label.TabIndex = 1;
             this.Turni_label.Text = "Turni:";
             // 
-            // label1
+            // GameOver_label
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Stencil", 25.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(41, 249);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(263, 52);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "GameOver:";
+            this.GameOver_label.AutoSize = true;
+            this.GameOver_label.Font = new System.Drawing.Font("Stencil", 25.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GameOver_label.Location = new System.Drawing.Point(41, 249);
+            this.GameOver_label.Name = "GameOver_label";
+            this.GameOver_label.Size = new System.Drawing.Size(263, 52);
+            this.GameOver_label.TabIndex = 2;
+            this.GameOver_label.Text = "GameOver:";
             // 
-            // label2
+            // Rubini_label
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Stencil", 25.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(41, 373);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(191, 52);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Rubini:";
+            this.Rubini_label.AutoSize = true;
+            this.Rubini_label.Font = new System.Drawing.Font("Stencil", 25.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Rubini_label.Location = new System.Drawing.Point(41, 373);
+            this.Rubini_label.Name = "Rubini_label";
+            this.Rubini_label.Size = new System.Drawing.Size(191, 52);
+            this.Rubini_label.TabIndex = 3;
+            this.Rubini_label.Text = "Rubini:";
             // 
-            // label3
+            // NaviAffondate_label
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Stencil", 25.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(41, 480);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(392, 52);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Navi affondate:";
+            this.NaviAffondate_label.AutoSize = true;
+            this.NaviAffondate_label.Font = new System.Drawing.Font("Stencil", 25.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NaviAffondate_label.Location = new System.Drawing.Point(41, 480);
+            this.NaviAffondate_label.Name = "NaviAffondate_label";
+            this.NaviAffondate_label.Size = new System.Drawing.Size(392, 52);
+            this.NaviAffondate_label.TabIndex = 4;
+            this.NaviAffondate_label.Text = "Navi affondate:";
             // 
             // pictureBox1
             // 
@@ -127,6 +127,7 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = global::KingOfPirates.Properties.Resources.next;
             this.pictureBox2.Location = new System.Drawing.Point(1085, 25);
             this.pictureBox2.Name = "pictureBox2";
@@ -134,6 +135,7 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 8;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.OnClick);
             // 
             // FineMissione
             // 
@@ -144,9 +146,9 @@
             this.Controls.Add(this.Rank_label);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.NaviAffondate_label);
+            this.Controls.Add(this.Rubini_label);
+            this.Controls.Add(this.GameOver_label);
             this.Controls.Add(this.Turni_label);
             this.Controls.Add(this.Title_label);
             this.Name = "FineMissione";
@@ -162,9 +164,9 @@
 
         private System.Windows.Forms.Label Title_label;
         private System.Windows.Forms.Label Turni_label;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label GameOver_label;
+        private System.Windows.Forms.Label Rubini_label;
+        private System.Windows.Forms.Label NaviAffondate_label;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label Rank_label;

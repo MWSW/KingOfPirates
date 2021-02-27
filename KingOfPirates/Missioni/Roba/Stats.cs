@@ -46,7 +46,7 @@ namespace KingOfPirates.Missioni.Roba
         {
             Hp = 10;
             HpMax = 20;
-            PaMax = 3;
+            PaMax = 5;
             Pa = PaMax;
             MinHit = 1;
             MaxHit = 5;
