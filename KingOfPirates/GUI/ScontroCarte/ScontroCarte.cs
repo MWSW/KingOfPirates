@@ -60,9 +60,12 @@ namespace KingOfPirates.GUI.ScontroCarte
             //display grafico degli sfindanti
             img_avversario.Image = nemico.Img;
             label_avversario.Text = nemico.Nome;
+            vita_avversario.Text = "HP: " + nemico.CurHp + "/" + nemico.MaxHp;
+
 
             img_giocatore.Image = player.Img;
             label_giocatore.Text = player.Nome;
+            vita_giocatore.Text = "HP: " + player.CurHp + "/" + player.MaxHp;
 
             //Componenti grafiche
             img_carta = new PictureBox[4];

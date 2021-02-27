@@ -40,6 +40,8 @@ namespace KingOfPirates.Missioni.Navi
         /// </summary>
         public Player_carte GiocatoreCarte { get; set; }
 
+        private Loc2D startLoc;
+
         /// <summary>
         /// Unico costruttore con tutti parametri.
         /// </summary>
@@ -59,7 +61,11 @@ namespace KingOfPirates.Missioni.Navi
             DeterminazioneMax = determinazioneMax;
             Determinazione = (int)(DeterminazioneMax * 0.75f); //parte da 3/4 del totale
             Inventario = new Inventario(5,5,5,5); //FIXME
-            GiocatoreCarte = giocatoreCarte_; 
+            GiocatoreCarte = giocatoreCarte_;
+
+            //memorizzo la posizione iniziale
+            startLoc = new Loc2D(loc_.X, loc_.Y);
+
         }
 
         public override void Attacca(Nave nave)
@@ -192,6 +198,19 @@ namespace KingOfPirates.Missioni.Navi
         public void Scavare() 
         {
             //
+        }
+
+        public void Restart()
+        {
+            //riporta il giocatore alla posizione iniziale
+            Loc.X = startLoc.X;
+            Loc.Y = startLoc.Y;
+
+            //riporta vita al massimo
+            GiocatoreCarte.AddHp(GiocatoreCarte.MaxHp);
+
+            //ritorni a giocare
+            GiocatoreCarte.IsGameOver = false;
         }
 
         public override void RemEnergia(int enTolta)

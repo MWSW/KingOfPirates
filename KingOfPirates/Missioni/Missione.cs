@@ -30,27 +30,17 @@ namespace KingOfPirates.Missioni
         /// <value>
         /// Posizione iniziale nave.
         /// </value>
-        internal Loc2D PosNave { get; set; }
-        /// <value>
-        /// Posizione bandiera.
-        /// </value>
-        internal Loc2D PosBandiera { get; set; }
-        /// <value> Griglia su cui viene generata la mappa grafica. </value>
         internal Griglia Griglia_numerica { get; set; }
 
         /// <summary>
         /// Costruttore che prende tutti i parametri.
         /// </summary>
         /// <param name="Griglia_numerica">Griglia su cui verra basata la griglia grafica</param>
-        /// <param name="posNave">Posizione iniziale nave giocatore</param>
-        /// <param name="posBandiera">Posizione obiettivo finale</param>
         /// <param name="reward">Premio per il raggiungimento della bandiera</param>
         /// <param name="nemici">Vettore contenente i nemici e le loro info</param>
 
-        public Missione(Griglia Griglia_numerica, Loc2D posNave, Loc2D posBandiera, int reward, NaveNemico[] nemici)
+        public Missione(Griglia Griglia_numerica, int reward, NaveNemico[] nemici)
         {
-            this.PosBandiera = posBandiera;
-            this.PosNave = posNave;
             this.Reward = reward;
             this.Nemici = nemici;
 

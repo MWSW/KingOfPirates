@@ -38,7 +38,7 @@ namespace KingOfPirates.GUI.MenuMissioni
             this.missione = missione;
             InitializeComponent(19, 12);
 
-            Gioco.Giocatore.Loc.X = missione.PosNave.X; Gioco.Giocatore.Loc.Y = missione.PosNave.Y;
+            //Gioco.Giocatore.Loc.X = missione.PosNave.X; Gioco.Giocatore.Loc.Y = missione.PosNave.Y;
             temp = Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage;
 
             //stampa del giocatore
@@ -202,6 +202,37 @@ namespace KingOfPirates.GUI.MenuMissioni
             e.Cancel = true;
             this.Hide();
             Gioco.startMenu.Show();
+        }
+
+        private void OnVisibleChanged(object sender, EventArgs e)
+        {
+            if(this.Visible)
+            {
+                if(Gioco.Giocatore.GiocatoreCarte.IsGameOver)
+                {
+                    Gioco.Giocatore.Restart();
+                    missione.TurnoNemico(); //faccio muovere i nemici per mettere apposto le celle
+
+                    Gioco.Giocatore.Stats.Pa = Gioco.Giocatore.Stats.PaMax;
+                    EnergiaNave_label.Text = "Punti azione: " + Gioco.Giocatore.Stats.Pa + "/" + Gioco.Giocatore.Stats.PaMax; //aggiorna energia_label
+
+                    Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = Properties.Resources.nave_pirata;
+
+                    switch (missione.Griglia_numerica.Mat[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y])
+                    {
+                        case 0:
+                            missione.Mappa.temp = Properties.Resources.mare;
+                            break;
+                        case 1:
+                            missione.Mappa.temp = Properties.Resources.isola1;
+                            break;
+                        case -1:
+                            missione.Mappa.temp = Properties.Resources.cross;
+                            break;
+                    }
+                        
+                }
+            }
         }
     }
 }
