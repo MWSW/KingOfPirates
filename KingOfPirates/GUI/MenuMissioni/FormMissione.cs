@@ -60,6 +60,21 @@ namespace KingOfPirates.GUI.MenuMissioni
         {
             Gioco.Giocatore.Movimento(missione, dir);
 
+            //Segnala che l'enegia è finità
+            if (Gioco.Giocatore.Stats.Pa <= 0)
+            {
+                EnergiaNave_label.ForeColor = Color.Red;
+
+                Sopra_button.ForeColor = Color.LightCoral;
+                Sotto_button.ForeColor = Color.LightCoral;
+                Destra_button.ForeColor = Color.LightCoral;
+                Sinistra_button.ForeColor = Color.LightCoral;
+            }
+            else
+            {
+                EnergiaNave_label.ForeColor = Color.Black;
+            }
+
             //controlla vita nemici
             foreach (NaveNemico n in missione.Nemici)
             {
@@ -117,7 +132,13 @@ namespace KingOfPirates.GUI.MenuMissioni
         {
             Gioco.Giocatore.Stats.Pa = Gioco.Giocatore.Stats.PaMax;
             EnergiaNave_label.Text = "Punti azione: " + Gioco.Giocatore.Stats.Pa + "/" + Gioco.Giocatore.Stats.PaMax; //aggiorna energia_label
+            EnergiaNave_label.ForeColor = Color.Black;
             missione.TurnoNemico();
+
+            Sopra_button.ForeColor = Color.Black;
+            Sotto_button.ForeColor = Color.Black;
+            Destra_button.ForeColor = Color.Black;
+            Sinistra_button.ForeColor = Color.Black;
 
             //abbordaggio
             foreach (NaveNemico n in missione.Nemici)
