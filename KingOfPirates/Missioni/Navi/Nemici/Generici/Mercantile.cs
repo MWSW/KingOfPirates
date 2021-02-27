@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using KingOfPirates.Missioni.Roba;
 using KingOfPirates.Missioni.ScontroCarte.Carte;
+using KingOfPirates.Missioni.ScontroCarte.Opponenti;
 
 namespace KingOfPirates.Missioni.Navi.Nemici.Generici
 {
@@ -14,10 +15,10 @@ namespace KingOfPirates.Missioni.Navi.Nemici.Generici
     /// </summary>
     internal class Mercantile : NaveNemico
     {
-        Carta Mazzo { get; set; }
-        public Mercantile(Stats stats, Loc2D[] patrol, Carta mazzo) : base("Nave Mercantile", Properties.Resources.nave_bianca, stats, patrol)
+        public Mercantile(Stats stats, Loc2D[] patrol, Nemico_carte nemico_carte)
+            : base("Nave Mercantile", Properties.Resources.nave_bianca, stats, patrol, nemico_carte)
         {
-            Mazzo = mazzo;
+            
         }
 
         public override void Attacca(Nave nave)

@@ -14,15 +14,16 @@ namespace KingOfPirates.Missioni.ScontroCarte.Opponenti
         private int maxHp;
         private int curHp;
 
+        private string nome;
         private Bitmap img;
 
-
-        public Giocatore_carte_base(int maxHp_, Bitmap img_)
+        public Giocatore_carte_base(int maxHp_, Bitmap img_, string nome_)
         {
             maxHp = maxHp_;
             curHp = maxHp;
 
             img = img_;
+            nome = nome_;
         }
 
 
@@ -43,5 +44,7 @@ namespace KingOfPirates.Missioni.ScontroCarte.Opponenti
 
         public int CurHp {get => curHp;}
         public int MaxHp { get => maxHp; }
+
+        public string Nome { get => nome; }
     }
 }

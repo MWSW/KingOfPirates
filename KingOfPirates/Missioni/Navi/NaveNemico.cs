@@ -7,6 +7,7 @@ using System.Drawing; //Per le Bitmap
 using KingOfPirates.Missioni.Roba;
 using KingOfPirates.Missioni.ScontroCarte.Opponenti;
 using KingOfPirates.Missioni.Roba;
+using KingOfPirates.Missioni.ScontroCarte.Carte;
 
 namespace KingOfPirates.Missioni.Navi
 {
@@ -15,7 +16,7 @@ namespace KingOfPirates.Missioni.Navi
     /// </summary>
     public abstract class NaveNemico : Nave
     {
-        internal Mazzo MazzoNave { get; set; }
+        internal Nemico_carte Nemico_Carte { get; set; }
         // raggio in cui la nave attacca
         private int dimTrigger;
         private int dobloni; //Ricompensa per il giocatore
@@ -26,9 +27,10 @@ namespace KingOfPirates.Missioni.Navi
         private Image temp;
 
         //Le varianti: Mercantile, Fregata, Vascello (saranno definite tramite i parametri degli oggetti
-        public NaveNemico(String nome_, Image immagine_, Stats stats_, Loc2D[] patrol) : base(nome_, immagine_, stats_, patrol[0])
+        public NaveNemico(String nome_, Image immagine_, Stats stats_, Loc2D[] patrol, Nemico_carte nemico_Carte) : base(nome_, immagine_, stats_, patrol[0])
         {
             this.patrol = patrol;
+            this.Nemico_Carte = nemico_Carte;
             temp = Properties.Resources.mare;
             dimTrigger = 2;
             patrolIndex = 0;

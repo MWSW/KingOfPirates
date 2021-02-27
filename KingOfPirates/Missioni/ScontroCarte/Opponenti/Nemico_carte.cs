@@ -8,7 +8,7 @@ using KingOfPirates.Missioni.ScontroCarte.Carte;
 
 namespace KingOfPirates.Missioni.ScontroCarte.Opponenti
 {
-    class Nemico_carte : Giocatore_carte_base
+    public class Nemico_carte : Giocatore_carte_base
     {
         private Carta[] mazzo;
         private Carta cartaUsata;
@@ -21,8 +21,8 @@ namespace KingOfPirates.Missioni.ScontroCarte.Opponenti
         private int nTurniDanno;
         private bool dannoApplicato;
 
-        public Nemico_carte(int hp_, Bitmap img_, Carta[] mazzo_)
-            : base(hp_, img_)
+        public Nemico_carte(int hp_, Bitmap img_, Carta[] mazzo_, string nome_)
+            : base(hp_, img_, nome_)
         {
             debuffApplicato = false;
             nTurniDebuff = 0;

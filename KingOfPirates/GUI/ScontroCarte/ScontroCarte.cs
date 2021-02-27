@@ -107,7 +107,7 @@ namespace KingOfPirates.GUI.ScontroCarte
 
 
             player = new Player_carte(10, new Mazzo(carte_player));
-            nemico = new Nemico_carte(10, null, carte_nemico); //FIX-ME
+            nemico = new Nemico_carte(10, null, carte_nemico, "Gerri"); //FIX-ME
 
             //Devo differenziare se poi la carta è normale oppure effetto
 

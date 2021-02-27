@@ -24,7 +24,7 @@ namespace KingOfPirates.Missioni.ScontroCarte.Opponenti
         private bool buffApplicato;
 
         public Player_carte(int hp_, Mazzo mazzo_)
-            : base(hp_, Properties.Resources.pun_pun) //pup pun è un'immagine di prova
+            : base(hp_, Properties.Resources.pun_pun, "Ishmael") //pup pun è un'immagine di prova
         {
             mazzo = mazzo_;
 

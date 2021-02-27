@@ -14,8 +14,7 @@ using KingOfPirates.GUI.MenuNassau;
 using KingOfPirates.GUI.ScontroCarte;
 using KingOfPirates.GUI.MenuMissioni;
 using KingOfPirates.Cartina;
-
-
+using KingOfPirates.Missioni.ScontroCarte.Carte;
 
 namespace KingOfPirates
 {
@@ -103,9 +102,17 @@ namespace KingOfPirates
                                                                  {0,0,0,0,0,0,0,0,0,0,0,0},
                                                                  {0,0,3,0,0,0,0,0,0,0,0,0}});
 
-            NaveNemico[] testNemici = new NaveNemico[1];
+            NaveNemico[] testNemici = new NaveNemico[3];
             Loc2D[] testPatrol = new Loc2D[] { new Loc2D(5, 5), new Loc2D(5, 6), new Loc2D(6, 6) };
-            testNemici[0] = new Mercantile(new Stats(), testPatrol, ListaCarte.GetCarta(1));
+            Loc2D[] testPatrol2 = new Loc2D[] { new Loc2D(10, 10), new Loc2D(10, 9), new Loc2D(9, 9) };
+            Loc2D[] testPatrol3 = new Loc2D[] { new Loc2D(13, 8), new Loc2D(12, 8), new Loc2D(11, 8),
+                                                new Loc2D(11, 7) };
+
+            Nemico_carte nemico_prova = new Nemico_carte(10, Properties.Resources.pub, new Carta[] { ListaCarte.GetCarta(1) }, "ErNemiko!");
+
+            testNemici[0] = new Mercantile(new Stats(), testPatrol, nemico_prova);
+            testNemici[1] = new Caravella(new Stats(), testPatrol2, nemico_prova);
+            testNemici[2] = new Fregata(new Stats(), testPatrol3, nemico_prova);
             TestMissione = new Missione(griglia_prova, new Loc2D(3, 3), new Loc2D(10, 10), 5, testNemici);
 
             scontroCarte = new GUI.ScontroCarte.ScontroCarte();
