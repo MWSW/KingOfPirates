@@ -103,7 +103,7 @@ namespace KingOfPirates
                                                                  {0,0,0,0,0,0,0,0,0,0,0,0},
                                                                  {0,0,0,0,0,0,0,0,0,0,0,0}});
 
-            Loc2D[] testPatrol = new Loc2D[] { new Loc2D(5, 5), new Loc2D(5, 6), new Loc2D(6, 6) };
+            Loc2D[] testPatrol = new Loc2D[] { new Loc2D(10, 10), new Loc2D(10, 11), new Loc2D(11, 11) };
             NaveNemico[] testNemici = { new Mercantile(new Stats(), testPatrol, ListaCarte.GetCarta(1)) };
             TestMissione = new Missione(griglia_prova, new Loc2D(3, 3), new Loc2D(10, 10), 5, testNemici);
 

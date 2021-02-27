@@ -19,10 +19,5 @@ namespace KingOfPirates.Missioni.Navi.Nemici.Generici
         {
             Mazzo = mazzo;
         }
-
-        public override void Attacca(Nave nave)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

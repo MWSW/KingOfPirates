@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 using System.Drawing; //Per le Bitmap
 using KingOfPirates.Missioni.Roba;
 using KingOfPirates.Missioni.ScontroCarte.Opponenti;
-using KingOfPirates.Missioni.Roba;
 
 namespace KingOfPirates.Missioni.Navi
 {
@@ -29,6 +28,7 @@ namespace KingOfPirates.Missioni.Navi
         public NaveNemico(String nome_, Image immagine_, Stats stats_, Loc2D[] patrol) : base(nome_, immagine_, stats_, patrol[0])
         {
             this.patrol = patrol;
+            //temp = missione.Mappa.Griglia_pictureBox[patrol[patrolIndex].X, patrol[patrolIndex].Y].BackgroundImage;
             temp = Properties.Resources.mare;
             dimTrigger = 2;
             patrolIndex = 0;
@@ -36,12 +36,33 @@ namespace KingOfPirates.Missioni.Navi
         }
 
         /// <summary>
-        /// Movimento specifico per i nemici secondo un percorso predefinito
+        /// Attacca la nave specificata. in questo caso sarà sempre il giocatore.
         /// </summary>
-        /// <param name="missione"></param>
-        /// <param name="direzione"></param>
+        /// <param name="nave">Nave da attacare.</param>
+        public override void Attacca(Nave nave)
+        {
+            int remPunti = new Random().Next(Stats.MinHit, Stats.MaxHit);
+            nave.DecPuntiVita(remPunti);
+        }
+
+        /// <summary>
+        /// Movimento specifico per i nemici secondo un percorso predefinito.
+        /// </summary>
+        /// <param name="missione">Missione in cui effetuare il movimento.</param>
+        /// <param name="direzione">Direzione in cui effetuare il movimento.</param>
         public override void Movimento(Missione missione, Direzione direzione)
         {
+            for (int i = -1; i <= 1; i++)
+            {
+                for (int j = -1; j <= 1; j++)
+                {
+                    if (Gioco.Giocatore.Loc.Equals(new Loc2D(i, j)));
+                    {
+                        Attacca(Gioco.Giocatore);
+                        //return;
+                    }
+                }
+            }
             Loc = patrol[patrolIndex];
             missione.Mappa.Griglia_pictureBox[patrol[patrolIndex].X, patrol[patrolIndex].Y].BackgroundImage = temp;
             if (patrolInv)

@@ -45,7 +45,7 @@ namespace KingOfPirates.Missioni.Roba
         public Stats()
         {
             Hp = 10;
-            HpMax = 20;
+            HpMax = 10;
             Pa = 10;
             PaMax = 10;
             MinHit = 1;

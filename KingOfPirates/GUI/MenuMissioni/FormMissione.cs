@@ -61,10 +61,7 @@ namespace KingOfPirates.GUI.MenuMissioni
         {
             Gioco.Giocatore.Movimento(missione, Direzione.SOPRA);
 
-            if (missione.Griglia_numerica.Mat[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y] == 1)
-                Scavo_button.Show();
-            else
-                Scavo_button.Hide();
+            UpdateForm();
 
 
             //patrol del nemico
@@ -79,10 +76,7 @@ namespace KingOfPirates.GUI.MenuMissioni
         {
             Gioco.Giocatore.Movimento(missione, Direzione.SOTTO);
 
-            if (missione.Griglia_numerica.Mat[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y] == 1)
-                Scavo_button.Show();
-            else
-                Scavo_button.Hide();
+            UpdateForm();
 
             //patrol del nemico
             foreach (NaveNemico n in missione.Nemici)
@@ -95,10 +89,7 @@ namespace KingOfPirates.GUI.MenuMissioni
         {
             Gioco.Giocatore.Movimento(missione, Direzione.SINISTRA);
 
-            if (missione.Griglia_numerica.Mat[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y] == 1)
-                Scavo_button.Show();
-            else
-                Scavo_button.Hide();
+            UpdateForm();
 
             //patrol del nemico
             foreach (NaveNemico n in missione.Nemici)
@@ -111,12 +102,7 @@ namespace KingOfPirates.GUI.MenuMissioni
         {
             Gioco.Giocatore.Movimento(missione, Direzione.DESTRA);
 
-
-            if (missione.Griglia_numerica.Mat[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y] == 1)
-                Scavo_button.Show();
-            else
-                Scavo_button.Hide();
-
+            UpdateForm();
 
             //patrol del nemico
             foreach (NaveNemico n in missione.Nemici)
@@ -129,7 +115,7 @@ namespace KingOfPirates.GUI.MenuMissioni
         {
             MessageBox.Show("Hai passato il turno!");
             Gioco.Giocatore.Stats.Pa = Gioco.Giocatore.Stats.Pa;
-            EnergiaNave_label.Text = "Punti azione: " + Gioco.Giocatore.Stats.Pa + "/" + Gioco.Giocatore.Stats.PaMax; //aggiorna energia_label
+            UpdateForm();
             missione.TurnoNemico();
         }
 
@@ -140,8 +126,7 @@ namespace KingOfPirates.GUI.MenuMissioni
             Gioco.Giocatore.IncUbriachezza(2); //aumenta l'ubriachezza
 
             //aggiorno label
-            this.Rum_label.Text = "Rum rimasto: " + Gioco.Giocatore.Inventario.Rum;
-            this.Ubriachezza_label.Text = "Ubriachezza: " + Gioco.Giocatore.Ubriachezza + "/" + Gioco.Giocatore.UbriachezzaMax;
+            UpdateForm();
         }
 
         private void AssLeg_button_Click(object sender, EventArgs e)
@@ -151,8 +136,7 @@ namespace KingOfPirates.GUI.MenuMissioni
             Gioco.Giocatore.IncPuntiVita(3); //aumenta punti vita
 
             //aggiorno label
-            this.AssLeg_label.Text = "Assi rimaste: " + Gioco.Giocatore.Inventario.AssiLegno;
-            this.VitaNave_label.Text = "Punti Vita: " + Gioco.Giocatore.Stats.Hp + "/" + Gioco.Giocatore.Stats.HpMax;
+            UpdateForm();
         }
 
         private void BevandaDet_button_Click(object sender, EventArgs e)
@@ -161,9 +145,7 @@ namespace KingOfPirates.GUI.MenuMissioni
 
             Gioco.Giocatore.IncDeterminazione(2); //aumenta determinazione
             //aggiorno il label
-            this.BevandaDet_label.Text = "Bevande Det Rimaste: " + Gioco.Giocatore.Inventario.BevandaDeterminazione;
-            this.Determinazione_label.Text = "Determinazione: " + Gioco.Giocatore.Determinazione + "/" + Gioco.Giocatore.DeterminazioneMax;
-
+            UpdateForm();
         }
 
         private void AntiUbriachezza_button_Click(object sender, EventArgs e)
@@ -172,8 +154,7 @@ namespace KingOfPirates.GUI.MenuMissioni
             Gioco.Giocatore.DecUbriachezza(2); //diminuisce l'ubriachezza
 
             //aggiorno il label
-            this.AntiUbriachezza_label.Text = "AntiUbriachezza rimasti: " + Gioco.Giocatore.Inventario.AntiUbriachezza;
-            this.Ubriachezza_label.Text = "Ubriachezza: " + Gioco.Giocatore.Ubriachezza + "/" + Gioco.Giocatore.UbriachezzaMax;
+            UpdateForm();
         }
 
         private void Scavo_button_Click(object sender, EventArgs e)
@@ -204,6 +185,26 @@ namespace KingOfPirates.GUI.MenuMissioni
             e.Cancel = true;
             this.Hide();
             Gioco.startMenu.Show();
+        }
+
+        /// <summary>
+        /// Funzione per aggiornare tutti i componenti del form in modo semplice
+        /// </summary>
+        protected void UpdateForm()
+        {
+            // controllo se posso scavare
+            if (missione.Griglia_numerica.Mat[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y] == 1)
+                Scavo_button.Show();
+            else
+                Scavo_button.Hide();
+            // aggiorno tutti i label
+            AntiUbriachezza_label.Text = "AntiUbriachezza rimasti: " + Gioco.Giocatore.Inventario.AntiUbriachezza;
+            Ubriachezza_label.Text = "Ubriachezza: " + Gioco.Giocatore.Ubriachezza + "/" + Gioco.Giocatore.UbriachezzaMax;
+            BevandaDet_label.Text = "Bevande Det Rimaste: " + Gioco.Giocatore.Inventario.BevandaDeterminazione;
+            Determinazione_label.Text = "Determinazione: " + Gioco.Giocatore.Determinazione + "/" + Gioco.Giocatore.DeterminazioneMax;
+            Rum_label.Text = "Rum rimasto: " + Gioco.Giocatore.Inventario.Rum;
+            Ubriachezza_label.Text = "Ubriachezza: " + Gioco.Giocatore.Ubriachezza + "/" + Gioco.Giocatore.UbriachezzaMax;
+            EnergiaNave_label.Text = "Punti azione: " + Gioco.Giocatore.Stats.Pa + "/" + Gioco.Giocatore.Stats.PaMax;
         }
     }
 }
