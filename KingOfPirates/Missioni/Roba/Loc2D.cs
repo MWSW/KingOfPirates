@@ -50,5 +50,11 @@ namespace KingOfPirates.Missioni.Roba
         /// </returns>
 
         public override string ToString() => $"({X}, {Y})";
+        public bool IsEqualTo(Loc2D loc) => this.X == loc.X && this.Y == loc.Y;
+
+        internal bool IsEqualTo(object loc)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

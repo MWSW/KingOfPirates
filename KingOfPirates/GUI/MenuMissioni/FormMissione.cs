@@ -48,7 +48,6 @@ namespace KingOfPirates.GUI.MenuMissioni
             else
                 Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = Gioco.Giocatore.Immagine;
 
-
             //mostra nemici a schermo
             foreach(NaveNemico n in missione.Nemici)
             {
@@ -57,9 +56,26 @@ namespace KingOfPirates.GUI.MenuMissioni
             
         }
 
-        private void Sopra_button_Click(object sender, EventArgs e)
+        private void Update(Direzione dir)
         {
-            Gioco.Giocatore.Movimento(missione, Direzione.SOPRA);
+            Gioco.Giocatore.Movimento(missione, dir);
+
+            //controlla vita nemici
+            foreach (NaveNemico n in missione.Nemici)
+            {
+               if(n.Nemico_Carte.IsGameOver)
+                    n.Affonda(missione);
+            }
+
+            //abbordaggio
+            foreach (NaveNemico n in missione.Nemici)
+            {
+                if (Gioco.Giocatore.Loc.IsEqualTo(n.Loc) && !n.IsGameOver)
+                {
+                    MessageBox.Show("Hai abbordato una nave pirata!");
+                    Gioco.Giocatore.Abborda(n);
+                }
+            }
 
             if (missione.Griglia_numerica.Mat[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y] == 1)
                 Scavo_button.Show();
@@ -67,7 +83,7 @@ namespace KingOfPirates.GUI.MenuMissioni
                 Scavo_button.Hide();
 
             //bandiera (fine missione)
-            if(missione.Griglia_numerica.Mat[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y] == 3)
+            if (missione.Griglia_numerica.Mat[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y] == 3)
             {
                 //TEMP
                 MessageBox.Show("Hai completato la missione!");
@@ -75,102 +91,44 @@ namespace KingOfPirates.GUI.MenuMissioni
                 Gioco.nassauForm.Show();
                 this.Hide();
             }
+        }
 
-
-            //patrol del nemico
-            foreach (NaveNemico n in missione.Nemici)
-            {
-                n.Movimento(missione, Direzione.NO);
-            }
-
+        private void Sopra_button_Click(object sender, EventArgs e)
+        {
+            Update(Direzione.SOPRA);
         }
 
         private void Sotto_button_Click(object sender, EventArgs e)
         {
-            Gioco.Giocatore.Movimento(missione, Direzione.SOTTO);
-
-            if (missione.Griglia_numerica.Mat[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y] == 1)
-                Scavo_button.Show();
-            else
-                Scavo_button.Hide();
-
-            //bandiera (fine missione)
-            if (missione.Griglia_numerica.Mat[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y] == 3)
-            {
-                //TEMP
-                MessageBox.Show("Hai completato la missione!");
-                //torna a nassau
-                Gioco.nassauForm.Show();
-                this.Hide();
-            }
-
-            //patrol del nemico
-            foreach (NaveNemico n in missione.Nemici)
-            {
-                n.Movimento(missione, Direzione.NO);
-            }
+            Update(Direzione.SOTTO);
         }
 
         private void Sinistra_button_Click(object sender, EventArgs e)
         {
-            Gioco.Giocatore.Movimento(missione, Direzione.SINISTRA);
-
-            if (missione.Griglia_numerica.Mat[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y] == 1)
-                Scavo_button.Show();
-            else
-                Scavo_button.Hide();
-
-            //bandiera (fine missione)
-            if (missione.Griglia_numerica.Mat[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y] == 3)
-            {
-                //TEMP
-                MessageBox.Show("Hai completato la missione!");
-                //torna a nassau
-                Gioco.nassauForm.Show();
-                this.Hide();
-            }
-
-            //patrol del nemico
-            foreach (NaveNemico n in missione.Nemici)
-            {
-                n.Movimento(missione, Direzione.NO);
-            }
+            Update(Direzione.SINISTRA);
         }
 
         private void Destra_button_Click(object sender, EventArgs e)
         {
-            Gioco.Giocatore.Movimento(missione, Direzione.DESTRA);
-
-
-            if (missione.Griglia_numerica.Mat[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y] == 1)
-                Scavo_button.Show();
-            else
-                Scavo_button.Hide();
-
-            //bandiera (fine missione)
-            if (missione.Griglia_numerica.Mat[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y] == 3)
-            {
-                //TEMP
-                MessageBox.Show("Hai completato la missione!");
-                //torna a nassau
-                Gioco.nassauForm.Show();
-                this.Hide();
-            }
-
-
-            //patrol del nemico
-            foreach (NaveNemico n in missione.Nemici)
-            {
-                n.Movimento(missione, Direzione.NO);
-            }
+            Update(Direzione.DESTRA);
         }
 
         private void Azione_button_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Hai passato il turno!");
-            Gioco.Giocatore.Stats.Pa = Gioco.Giocatore.Stats.Pa;
+            Gioco.Giocatore.Stats.Pa = Gioco.Giocatore.Stats.PaMax;
             EnergiaNave_label.Text = "Punti azione: " + Gioco.Giocatore.Stats.Pa + "/" + Gioco.Giocatore.Stats.PaMax; //aggiorna energia_label
             missione.TurnoNemico();
+
+            //abbordaggio
+            foreach (NaveNemico n in missione.Nemici)
+            {
+                if (Gioco.Giocatore.Loc.IsEqualTo(n.Loc) && !n.IsGameOver)
+                {
+                    MessageBox.Show("Il nemico ti ha abbordato!");
+                    Gioco.Giocatore.Abborda(n);
+                    n.IsGameOver = true;
+                }
+            }
         }
 
         private void Rum_button_Click(object sender, EventArgs e)

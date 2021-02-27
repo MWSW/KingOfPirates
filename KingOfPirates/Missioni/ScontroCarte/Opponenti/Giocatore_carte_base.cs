@@ -17,6 +17,8 @@ namespace KingOfPirates.Missioni.ScontroCarte.Opponenti
         private string nome;
         private Bitmap img;
 
+        public bool IsGameOver { get; set; }
+
         public Giocatore_carte_base(int maxHp_, Bitmap img_, string nome_)
         {
             maxHp = maxHp_;
@@ -24,9 +26,17 @@ namespace KingOfPirates.Missioni.ScontroCarte.Opponenti
 
             img = img_;
             nome = nome_;
+
+            IsGameOver = false;
         }
 
+        public void GameOver()
+        {
+            IsGameOver = true;
 
+            Gioco.scontroCarte.Hide();
+            Gioco.TestMissione.Mappa.Show();
+        }
 
         public void AddHp(int val)
         {
@@ -46,5 +56,6 @@ namespace KingOfPirates.Missioni.ScontroCarte.Opponenti
         public int MaxHp { get => maxHp; }
 
         public string Nome { get => nome; }
+        public Bitmap Img { get => img; }
     }
 }

@@ -50,7 +50,7 @@ namespace KingOfPirates
 
         public static GUI.MenuPrincipale.StartMenu startMenu;
         public static GUI.MenuNassau.Nassau_form nassauForm;
-        public static GUI.MenuMissioni.FormMissione menuMissioni;
+        //public static GUI.MenuMissioni.FormMissione menuMissioni;
         public static GUI.ScontroCarte.ScontroCarte scontroCarte;
 
         /// <summary>
@@ -79,7 +79,16 @@ namespace KingOfPirates
         {
             Console.WriteLine("#+ Inizializzazione");
             // Il giocatore deve essere inizializzato per primo
-            Giocatore = new NaveGiocatore("Nave da Test", Properties.Resources.nave_rossa, new Stats(), new Loc2D(), 5, 10);
+
+            Carta[] carte_player = {ListaCarte.GetCartaClone(1),
+                 ListaCarte.GetCartaClone(2), ListaCarte.GetCartaClone(3), ListaCarte.GetCartaClone(4),
+                 ListaCarte.GetCartaClone(5), ListaCarte.GetCartaClone(6), ListaCarte.GetCartaClone(17),
+                 ListaCarte.GetCartaClone(18), ListaCarte.GetCartaClone(19)};
+
+
+            Player_carte player_prova = new Player_carte(10, new Mazzo(carte_player));
+
+            Giocatore = new NaveGiocatore("Nave da Test", Properties.Resources.nave_rossa, new Stats(), new Loc2D(), 5, 10, player_prova);
             Dominio = new GestioneDominio();
 
             Griglia griglia_prova = new Griglia(new int[19, 12] {{0,0,0,0,0,0,0,0,0,0,0,0},
@@ -109,13 +118,15 @@ namespace KingOfPirates
                                                 new Loc2D(11, 7) };
 
             Nemico_carte nemico_prova = new Nemico_carte(10, Properties.Resources.pub, new Carta[] { ListaCarte.GetCarta(1) }, "ErNemiko!");
+            Nemico_carte nemico_prova1 = new Nemico_carte(10, Properties.Resources.pub, new Carta[] { ListaCarte.GetCarta(2) }, "ErNemiko!");
+            Nemico_carte nemico_prova2 = new Nemico_carte(10, Properties.Resources.pub, new Carta[] { ListaCarte.GetCarta(3) }, "ErNemiko!");
 
             testNemici[0] = new Mercantile(new Stats(), testPatrol, nemico_prova);
-            testNemici[1] = new Caravella(new Stats(), testPatrol2, nemico_prova);
-            testNemici[2] = new Fregata(new Stats(), testPatrol3, nemico_prova);
+            testNemici[1] = new Caravella(new Stats(), testPatrol2, nemico_prova1);
+            testNemici[2] = new Fregata(new Stats(), testPatrol3, nemico_prova2);
             TestMissione = new Missione(griglia_prova, new Loc2D(3, 3), new Loc2D(10, 10), 5, testNemici);
 
-            scontroCarte = new GUI.ScontroCarte.ScontroCarte();
+            scontroCarte = new GUI.ScontroCarte.ScontroCarte(nemico_prova);
             nassauForm = new GUI.MenuNassau.Nassau_form();
             Console.WriteLine("#- Inizializzazione");
         }

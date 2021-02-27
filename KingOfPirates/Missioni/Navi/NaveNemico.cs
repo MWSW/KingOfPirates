@@ -24,17 +24,19 @@ namespace KingOfPirates.Missioni.Navi
         private int patrolIndex;
         private bool patrolInv;
         private Loc2D[] patrol; //Coordinate per il movimento
-        private Image temp;
+
+        public bool IsGameOver { get; set; }
 
         //Le varianti: Mercantile, Fregata, Vascello (saranno definite tramite i parametri degli oggetti
         public NaveNemico(String nome_, Image immagine_, Stats stats_, Loc2D[] patrol, Nemico_carte nemico_Carte) : base(nome_, immagine_, stats_, patrol[0])
         {
             this.patrol = patrol;
             this.Nemico_Carte = nemico_Carte;
-            temp = Properties.Resources.mare;
             dimTrigger = 2;
             patrolIndex = 0;
             patrolInv = false;
+
+            IsGameOver = false;
         }
 
         /// <summary>
@@ -44,34 +46,37 @@ namespace KingOfPirates.Missioni.Navi
         /// <param name="direzione"></param>
         public override void Movimento(Missione missione, Direzione direzione)
         {
-
-            Loc = patrol[patrolIndex];
-            missione.Mappa.Griglia_pictureBox[patrol[patrolIndex].X, patrol[patrolIndex].Y].BackgroundImage = temp;
-            if (patrolInv)
+            if (!IsGameOver)
             {
-                patrolIndex--;
+                missione.Mappa.Griglia_pictureBox[patrol[patrolIndex].X, patrol[patrolIndex].Y].BackgroundImage = Properties.Resources.mare;
+                if (patrolInv)
+                {
+                    patrolIndex--;
 
-                // Controlla se l'indice punta alla base dell'array di movimento
-                // e nel caso accenda una flag che fa aumentare l'indice invece che diminuire
-                if (patrolIndex <= 0)
-                    patrolInv = false;
-            }
-            else
-            {
-                patrolIndex++;
+                    // Controlla se l'indice punta alla base dell'array di movimento
+                    // e nel caso accenda una flag che fa aumentare l'indice invece che diminuire
+                    if (patrolIndex <= 0)
+                        patrolInv = false;
+                }
+                else
+                {
+                    patrolIndex++;
 
-                // Controlla se l'indice punta alla fine dell'array di movimento
-                // e nel caso accenda una flag che fa diminuire l'indice invece che aumentare
-                if (patrolIndex >= patrol.Length - 1)
-                    patrolInv = true;
+                    // Controlla se l'indice punta alla fine dell'array di movimento
+                    // e nel caso accenda una flag che fa diminuire l'indice invece che aumentare
+                    if (patrolIndex >= patrol.Length - 1)
+                        patrolInv = true;
+                }
+                //aggiorna posizione
+                missione.Mappa.Griglia_pictureBox[patrol[patrolIndex].X, patrol[patrolIndex].Y].BackgroundImage = Immagine;
+                Loc = patrol[patrolIndex];
             }
-            temp = missione.Mappa.Griglia_pictureBox[patrol[patrolIndex].X, patrol[patrolIndex].Y].BackgroundImage;
-            missione.Mappa.Griglia_pictureBox[patrol[patrolIndex].X, patrol[patrolIndex].Y].BackgroundImage = immagine;
         }
 
-        public void Affonda()
+        public void Affonda(Missione missione)
         {
-            //
+            //missione.Mappa.Griglia_pictureBox[Loc.X, Loc.Y].BackgroundImage = Properties.Resources.mare;
+            IsGameOver = true;
         }
 
         /// <summary>

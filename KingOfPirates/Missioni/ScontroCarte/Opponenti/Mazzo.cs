@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace KingOfPirates.Missioni.ScontroCarte.Opponenti
 {
-    class Mazzo
+    public class Mazzo
     {
         Carta[] carte;
         bool[] disponibile;

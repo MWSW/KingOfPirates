@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace KingOfPirates.Missioni.ScontroCarte.Opponenti
 {
-    class Player_carte : Giocatore_carte_base
+    public class Player_carte : Giocatore_carte_base
     {
         private Carta[] carteInMano;
         private Mazzo mazzo;

@@ -245,7 +245,12 @@
             Il giocatore ha degli oggetti speciali che vengono immagazzinati qui
             </summary>
         </member>
-        <member name="M:KingOfPirates.Missioni.Navi.NaveGiocatore.#ctor(System.String,System.Drawing.Image,KingOfPirates.Missioni.Roba.Stats,KingOfPirates.Missioni.Roba.Loc2D,System.Int32,System.Int32)">
+        <member name="P:KingOfPirates.Missioni.Navi.NaveGiocatore.GiocatoreCarte">
+            <summary>
+            Questo oggetto viene usato per gli scontri a carte negli abbordaggi
+            </summary>
+        </member>
+        <member name="M:KingOfPirates.Missioni.Navi.NaveGiocatore.#ctor(System.String,System.Drawing.Image,KingOfPirates.Missioni.Roba.Stats,KingOfPirates.Missioni.Roba.Loc2D,System.Int32,System.Int32,KingOfPirates.Missioni.ScontroCarte.Opponenti.Player_carte)">
             <summary>
             Unico costruttore con tutti parametri.
             </summary>
@@ -255,8 +260,9 @@
             <param name="loc_">Coordinate da usare nel FormMissione.</param>
             <param name="ubriachezzaMax">Indicatore per l'equipaggio.</param>
             <param name="determinazioneMax">Indicatore per le carte</param>
+            <param name="giocatoreCarte_"> Player per lo scontro a carte.</param>
         </member>
-        <member name="M:KingOfPirates.Missioni.Navi.NaveGiocatore.Movimento(KingOfPirates.Missioni.Missione,KingOfPirates.Missioni.Roba.Direzione)">
+        <member name="M:KingOfPirates.Missioni.Navi.NaveGiocatore.Background(KingOfPirates.Missioni.Missione)">
             <summary>
             La funzione fa muovere la nave data la missione in cui effetuare il movimento e la direzione in cui muoversi.
             </summary>

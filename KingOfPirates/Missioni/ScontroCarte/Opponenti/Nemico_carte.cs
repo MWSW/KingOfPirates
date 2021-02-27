@@ -84,6 +84,7 @@ namespace KingOfPirates.Missioni.ScontroCarte.Opponenti
             }
         }
 
+
         public Carta CartaUsata { get => cartaUsata; }
         public bool DebuffApplicato { get => debuffApplicato; }
         public bool DannoApplicato { get => dannoApplicato; }

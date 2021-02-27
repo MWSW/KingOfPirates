@@ -73,7 +73,7 @@
             this.img_cartaA = new System.Windows.Forms.PictureBox();
             this.elem0 = new System.Windows.Forms.PictureBox();
             this.img_carta0 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.img_giocatore = new System.Windows.Forms.PictureBox();
             this.elem4 = new System.Windows.Forms.PictureBox();
             this.img_carta4 = new System.Windows.Forms.PictureBox();
             this.elem3 = new System.Windows.Forms.PictureBox();
@@ -96,7 +96,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.img_cartaA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.elem0)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_carta0)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.img_giocatore)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.elem4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_carta4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.elem3)).BeginInit();
@@ -638,16 +638,16 @@
             this.img_carta0.TabIndex = 41;
             this.img_carta0.TabStop = false;
             // 
-            // pictureBox8
+            // img_giocatore
             // 
-            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(35, 124);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(201, 204);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox8.TabIndex = 24;
-            this.pictureBox8.TabStop = false;
+            this.img_giocatore.Image = ((System.Drawing.Image)(resources.GetObject("img_giocatore.Image")));
+            this.img_giocatore.Location = new System.Drawing.Point(35, 124);
+            this.img_giocatore.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.img_giocatore.Name = "img_giocatore";
+            this.img_giocatore.Size = new System.Drawing.Size(201, 204);
+            this.img_giocatore.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.img_giocatore.TabIndex = 24;
+            this.img_giocatore.TabStop = false;
             // 
             // elem4
             // 
@@ -809,7 +809,7 @@
             this.Controls.Add(this.nomeCarta2);
             this.Controls.Add(this.nomeCarta1);
             this.Controls.Add(this.det1);
-            this.Controls.Add(this.pictureBox8);
+            this.Controls.Add(this.img_giocatore);
             this.Controls.Add(this.elem4);
             this.Controls.Add(this.def4);
             this.Controls.Add(this.att4);
@@ -850,7 +850,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.img_cartaA)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.elem0)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_carta0)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.img_giocatore)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.elem4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_carta4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.elem3)).EndInit();
@@ -888,7 +888,7 @@
         private System.Windows.Forms.Label def3;
         private System.Windows.Forms.Label att3;
         private System.Windows.Forms.PictureBox img_carta3;
-        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.PictureBox img_giocatore;
         private System.Windows.Forms.Label det1;
         private System.Windows.Forms.Label nomeCarta1;
         private System.Windows.Forms.Label nomeCarta2;
