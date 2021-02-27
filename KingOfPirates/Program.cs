@@ -101,7 +101,7 @@ namespace KingOfPirates
                                                                  {0,0,0,0,0,0,0,0,0,0,0,0},
                                                                  {0,0,0,0,0,0,0,0,0,0,0,0},
                                                                  {0,0,0,0,0,0,0,0,0,0,0,0},
-                                                                 {0,0,0,0,0,0,0,0,0,0,0,0}});
+                                                                 {0,0,3,0,0,0,0,0,0,0,0,0}});
 
             NaveNemico[] testNemici = new NaveNemico[1];
             Loc2D[] testPatrol = new Loc2D[] { new Loc2D(5, 5), new Loc2D(5, 6), new Loc2D(6, 6) };

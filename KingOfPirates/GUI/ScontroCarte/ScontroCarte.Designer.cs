@@ -836,6 +836,7 @@
             this.Text = "ScontroCarte";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ScontroCarte_FormClosing);
             this.Load += new System.EventHandler(this.OnLoad);
+            this.VisibleChanged += new System.EventHandler(this.OnVisibleChanged);
             ((System.ComponentModel.ISupportInitialize)(this.audio)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_debuff)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_dannoPerpetuo)).EndInit();

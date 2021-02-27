@@ -217,6 +217,8 @@
     <None Include="Resources\SpazioVuoto.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Shop_.png" />
+    <None Include="Resources\Shop.png" />
     <None Include="Resources\vita_buff.png" />
     <None Include="Resources\nascondi.png" />
     <None Include="Resources\next.png" />
@@ -237,8 +239,12 @@
     <Content Include="Resources\ant.jpg" />
     <Content Include="Resources\assLeg.png" />
     <Content Include="Resources\back_arrow.jpg" />
+    <None Include="Resources\bandiera.png" />
     <Content Include="Resources\bevDet.jpg" />
     <None Include="Resources\cross.png" />
+    <None Include="Resources\GerriInn.jpg" />
+    <None Include="Resources\GerriInn.png" />
+    <None Include="Resources\GerriInn1.png" />
     <Content Include="Resources\HUD - interfaccia\box_5_mosse.png" />
     <Content Include="Resources\HUD - interfaccia\box_5_mosse_blocchi.png" />
     <Content Include="Resources\HUD - interfaccia\box_domanda.png" />
@@ -295,6 +301,7 @@
     <Content Include="Resources\mare.png" />
     <None Include="Resources\montagna.png" />
     <None Include="Resources\menuBackImg.jpg" />
+    <None Include="Resources\MokeyIslandBackground.jpg" />
     <Content Include="Resources\nave Nera\pos_1.png" />
     <Content Include="Resources\nave Nera\pos_2.png" />
     <Content Include="Resources\nave Nera\pos_3.png" />
@@ -320,8 +327,11 @@
     <Content Include="Resources\navi_laterali\nave_rossa.png" />
     <Content Include="Resources\navi_laterali\nave_verde.png" />
     <None Include="Resources\omino.png" />
+    <None Include="Resources\Port_Sign.png" />
+    <None Include="Resources\Porto_.png" />
     <Content Include="Resources\prova.jpg" />
     <None Include="Resources\ruby.png" />
+    <None Include="Resources\pub.jpg" />
     <Content Include="Resources\rum.jpg" />
     <Content Include="Resources\sfondo_carta.jpg" />
   </ItemGroup>

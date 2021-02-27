@@ -66,6 +66,16 @@ namespace KingOfPirates.GUI.MenuMissioni
             else
                 Scavo_button.Hide();
 
+            //bandiera (fine missione)
+            if(missione.Griglia_numerica.Mat[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y] == 3)
+            {
+                //TEMP
+                MessageBox.Show("Hai completato la missione!");
+                //torna a nassau
+                Gioco.nassauForm.Show();
+                this.Hide();
+            }
+
 
             //patrol del nemico
             foreach (NaveNemico n in missione.Nemici)
@@ -84,6 +94,16 @@ namespace KingOfPirates.GUI.MenuMissioni
             else
                 Scavo_button.Hide();
 
+            //bandiera (fine missione)
+            if (missione.Griglia_numerica.Mat[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y] == 3)
+            {
+                //TEMP
+                MessageBox.Show("Hai completato la missione!");
+                //torna a nassau
+                Gioco.nassauForm.Show();
+                this.Hide();
+            }
+
             //patrol del nemico
             foreach (NaveNemico n in missione.Nemici)
             {
@@ -99,6 +119,16 @@ namespace KingOfPirates.GUI.MenuMissioni
                 Scavo_button.Show();
             else
                 Scavo_button.Hide();
+
+            //bandiera (fine missione)
+            if (missione.Griglia_numerica.Mat[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y] == 3)
+            {
+                //TEMP
+                MessageBox.Show("Hai completato la missione!");
+                //torna a nassau
+                Gioco.nassauForm.Show();
+                this.Hide();
+            }
 
             //patrol del nemico
             foreach (NaveNemico n in missione.Nemici)
@@ -116,6 +146,16 @@ namespace KingOfPirates.GUI.MenuMissioni
                 Scavo_button.Show();
             else
                 Scavo_button.Hide();
+
+            //bandiera (fine missione)
+            if (missione.Griglia_numerica.Mat[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y] == 3)
+            {
+                //TEMP
+                MessageBox.Show("Hai completato la missione!");
+                //torna a nassau
+                Gioco.nassauForm.Show();
+                this.Hide();
+            }
 
 
             //patrol del nemico

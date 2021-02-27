@@ -372,6 +372,9 @@ namespace KingOfPirates.GUI.MenuMissioni
                         case 2: //montagna
                             this.Griglia_pictureBox[i, j].BackgroundImage = Properties.Resources.montagna;
                             break;
+                        case 3: //bandiera
+                            this.Griglia_pictureBox[i, j].BackgroundImage = Properties.Resources.bandiera;
+                            break;
                     }
                 }
             }

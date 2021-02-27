@@ -41,7 +41,7 @@ namespace KingOfPirates.GUI.ScontroCarte
         public ScontroCarte()
         {
             InitializeComponent();
-            // isPlaying = true;
+            //isPlaying = true;
             //musicBox.PlayLooping();
 
         }
@@ -555,6 +555,18 @@ namespace KingOfPirates.GUI.ScontroCarte
             e.Cancel = true;
             this.Hide();
             Gioco.startMenu.Show();
+        }
+
+        private void OnVisibleChanged(object sender, EventArgs e)
+        {
+            if(this.Visible)
+            {
+                musicBox.PlayLooping(); //attiva musica al riavvio
+            }
+            else
+            {
+                musicBox.Stop(); //disattiva la musica alla chiusura
+            }
         }
     }
 }
