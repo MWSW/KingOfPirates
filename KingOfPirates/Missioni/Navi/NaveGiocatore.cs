@@ -42,7 +42,7 @@ namespace KingOfPirates.Missioni.Navi
         /// <param name="stats_">Statistiche per la nave.</param>
         /// <param name="loc_">Coordinate da usare nel FormMissione.</param>
         /// <param name="ubriachezzaMax">Indicatore per l'equipaggio.</param>
-        /// <param name="determinazioneMax">Indicatore per le carte</param>
+        /// <param name="determinazioneMax">Valore per le carte</param>
 
         public NaveGiocatore(string nome_, Image immagine_, Stats stats_, Loc2D loc_, int ubriachezzaMax, int determinazioneMax) : base(nome_, immagine_, stats_, loc_)
         {
@@ -127,7 +127,7 @@ namespace KingOfPirates.Missioni.Navi
             //
         }
 
-        public override void RemEnergia(int enTolta)
+        public void RemEnergia(int enTolta)
         {
             Stats.Pa -= enTolta;
         }

@@ -42,7 +42,6 @@ namespace KingOfPirates.Missioni.Navi
         /// <param name="direzione"></param>
         public override void Movimento(Missione missione, Direzione direzione)
         {
-
             Loc = patrol[patrolIndex];
             missione.Mappa.Griglia_pictureBox[patrol[patrolIndex].X, patrol[patrolIndex].Y].BackgroundImage = temp;
             if (patrolInv)
@@ -70,16 +69,6 @@ namespace KingOfPirates.Missioni.Navi
         public void Affonda()
         {
             //
-        }
-
-        /// <summary>
-        /// Funzione astratta della classe Nave, non implementata.
-        /// Non serve perché il nemico non ha punti azione
-        /// </summary>
-        /// <param name="enTolta">Punti azione da togliere</param>
-        public override void RemEnergia(int enTolta)
-        {
-            return;
         }
     }
 }

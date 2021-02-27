@@ -68,12 +68,6 @@ namespace KingOfPirates.Missioni.Navi
         /// <param name="direzione">per specificare la direzione in cui effetuare il movimento.</param>
         public abstract void Movimento(Missione missione, Direzione direzione);
 
-        /// <summary>
-        /// Rimuove punti azione dopo un'azione
-        /// </summary>
-        /// <param name="enTolta">punti da rimuovere</param>
-        public abstract void RemEnergia(int enTolta);
-
         public Image Immagine { get => immagine; set => immagine = value; }
     }
 }
