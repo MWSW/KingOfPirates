@@ -600,7 +600,7 @@
             // img_cartaA
             // 
             this.img_cartaA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.img_cartaA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.img_cartaA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.img_cartaA.Cursor = System.Windows.Forms.Cursors.Default;
             this.img_cartaA.Image = global::KingOfPirates.Properties.Resources.SpazioVuoto;
             this.img_cartaA.Location = new System.Drawing.Point(759, 174);
@@ -627,7 +627,7 @@
             // img_carta0
             // 
             this.img_carta0.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.img_carta0.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.img_carta0.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.img_carta0.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.img_carta0.Image = global::KingOfPirates.Properties.Resources.SpazioVuoto;
             this.img_carta0.Location = new System.Drawing.Point(339, 174);
@@ -665,7 +665,7 @@
             // 
             this.img_carta4.BackColor = System.Drawing.Color.White;
             this.img_carta4.BackgroundImage = global::KingOfPirates.Properties.Resources.dannoPerpetuo;
-            this.img_carta4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.img_carta4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.img_carta4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.img_carta4.Image = global::KingOfPirates.Properties.Resources.cartaVuota;
             this.img_carta4.Location = new System.Drawing.Point(903, 432);
@@ -693,7 +693,7 @@
             // 
             this.img_carta3.BackColor = System.Drawing.Color.White;
             this.img_carta3.BackgroundImage = global::KingOfPirates.Properties.Resources.cross;
-            this.img_carta3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.img_carta3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.img_carta3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.img_carta3.Image = global::KingOfPirates.Properties.Resources.cartaVuota;
             this.img_carta3.Location = new System.Drawing.Point(693, 432);
@@ -721,7 +721,7 @@
             // 
             this.img_carta2.BackColor = System.Drawing.Color.White;
             this.img_carta2.BackgroundImage = global::KingOfPirates.Properties.Resources.pun_pun2;
-            this.img_carta2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.img_carta2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.img_carta2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.img_carta2.Image = global::KingOfPirates.Properties.Resources.cartaVuota;
             this.img_carta2.Location = new System.Drawing.Point(460, 432);
@@ -748,8 +748,8 @@
             // img_carta1
             // 
             this.img_carta1.BackColor = System.Drawing.Color.White;
-            this.img_carta1.BackgroundImage = global::KingOfPirates.Properties.Resources.PiratessaA;
-            this.img_carta1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.img_carta1.BackgroundImage = global::KingOfPirates.Properties.Resources.pun_pun;
+            this.img_carta1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.img_carta1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.img_carta1.Image = global::KingOfPirates.Properties.Resources.cartaVuota;
             this.img_carta1.Location = new System.Drawing.Point(221, 432);

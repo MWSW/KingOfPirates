@@ -16,7 +16,7 @@ namespace KingOfPirates.Missioni.Navi.Nemici.Generici
     internal class Caravella : NaveNemico
     {
         public Caravella(Stats stats, Loc2D[] patrol, Nemico_carte nemico_carte)
-           : base("Caravella bella", Properties.Resources.NaveCaravella, stats, patrol, nemico_carte)
+           : base("Caravella bella", Properties.Resources.nave_verde, stats, patrol, nemico_carte)
         {
 
         }

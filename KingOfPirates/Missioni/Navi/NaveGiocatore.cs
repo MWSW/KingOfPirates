@@ -120,7 +120,7 @@ namespace KingOfPirates.Missioni.Navi
                     if (missione.Griglia_numerica.Mat[Loc.X, Loc.Y] == 1)
                         missione.Mappa.Griglia_pictureBox[Loc.X, Loc.Y].BackgroundImage = Properties.Resources.omino;
                     else
-                        missione.Mappa.Griglia_pictureBox[Loc.X, Loc.Y].BackgroundImage = Properties.Resources.NaveGiocatore;
+                        missione.Mappa.Griglia_pictureBox[Loc.X, Loc.Y].BackgroundImage = Properties.Resources.nave_pirata;
 
                     Gioco.Giocatore.RemEnergia(1); //consumi energia
                     missione.Mappa.EnergiaNave_label.Text = "Punti azione: " + Stats.Pa + "/" + Stats.PaMax; //aggiorna energia_label
@@ -138,7 +138,7 @@ namespace KingOfPirates.Missioni.Navi
                     if (missione.Griglia_numerica.Mat[Loc.X, Loc.Y] == 1)
                         missione.Mappa.Griglia_pictureBox[Loc.X, Loc.Y].BackgroundImage = Properties.Resources.omino;
                     else
-                        missione.Mappa.Griglia_pictureBox[Loc.X, Loc.Y].BackgroundImage = Properties.Resources.NaveGiocatore;
+                        missione.Mappa.Griglia_pictureBox[Loc.X, Loc.Y].BackgroundImage = Properties.Resources.nave_pirata;
 
                     Gioco.Giocatore.RemEnergia(1); //consumi energia
                     missione.Mappa.EnergiaNave_label.Text = "Punti azione: " + Stats.Pa + "/" + Stats.PaMax; //aggiorna energia_label
@@ -156,7 +156,7 @@ namespace KingOfPirates.Missioni.Navi
                     if (missione.Griglia_numerica.Mat[Loc.X, Loc.Y] == 1)
                         missione.Mappa.Griglia_pictureBox[Loc.X, Loc.Y].BackgroundImage = Properties.Resources.omino;
                     else
-                        missione.Mappa.Griglia_pictureBox[Loc.X, Loc.Y].BackgroundImage = Properties.Resources.NaveGiocatore;
+                        missione.Mappa.Griglia_pictureBox[Loc.X, Loc.Y].BackgroundImage = Properties.Resources.nave_pirata;
 
                     Gioco.Giocatore.RemEnergia(1); //consumi energia
                     missione.Mappa.EnergiaNave_label.Text = "Punti azione: " + Stats.Pa + "/" + Stats.PaMax; //aggiorna energia_label
@@ -174,7 +174,7 @@ namespace KingOfPirates.Missioni.Navi
                     if (missione.Griglia_numerica.Mat[Loc.X, Loc.Y] == 1)
                         missione.Mappa.Griglia_pictureBox[Loc.X, Loc.Y].BackgroundImage = Properties.Resources.omino;
                     else
-                        missione.Mappa.Griglia_pictureBox[Loc.X, Loc.Y].BackgroundImage = Properties.Resources.NaveGiocatore;
+                        missione.Mappa.Griglia_pictureBox[Loc.X, Loc.Y].BackgroundImage = Properties.Resources.nave_pirata;
 
                     RemEnergia(1); //consumi energia
                     missione.Mappa.EnergiaNave_label.Text = "Punti azione: " + Stats.Pa + "/" + Stats.PaMax; //aggiorna energia_label

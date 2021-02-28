@@ -13,7 +13,7 @@ namespace KingOfPirates.Missioni.ScontroCarte.Opponenti
     {
 
         private static Carta[] listaCarte = 
-        { new CartaBase("Piratessa", 20, Properties.Resources.PiratessaA, 3, 1, 'f'),
+        { new CartaBase("PunPun1", 20, Properties.Resources.pun_pun, 3, 1, 'f'),
         new CartaBase("PunPun2", 20, Properties.Resources.pun_pun1, 2, 2, 'g'),
         new CartaBase("PunPun3", 20, Properties.Resources.pun_pun2, 2, 2, 's'),
         new CartaBase("CoolPun", 20, Properties.Resources.pun_pun, 3, 1, 's'),

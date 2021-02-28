@@ -80,7 +80,7 @@ namespace KingOfPirates
             Console.WriteLine("#+ Inizializzazione");
             // Il giocatore deve essere inizializzato per primo
 
-            Carta[] carte_player = {ListaCarte.GetCartaClone(0),
+            Carta[] carte_player = {ListaCarte.GetCartaClone(1),
                  ListaCarte.GetCartaClone(2), ListaCarte.GetCartaClone(3), ListaCarte.GetCartaClone(4),
                  ListaCarte.GetCartaClone(5), ListaCarte.GetCartaClone(6), ListaCarte.GetCartaClone(17),
                  ListaCarte.GetCartaClone(18), ListaCarte.GetCartaClone(19)};
