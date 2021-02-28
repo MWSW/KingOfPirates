@@ -24,7 +24,7 @@ namespace KingOfPirates.GUI.MenuMissioni
 
             //Calcolo del rank
 
-            int score = 120;
+            int score = 100;
 
             score -= (int)(ranking.Turni * 1.5f);
             score -= ranking.GameOver * 20;
