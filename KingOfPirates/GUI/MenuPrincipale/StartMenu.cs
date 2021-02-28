@@ -19,7 +19,6 @@ namespace KingOfPirates.GUI.MenuPrincipale
         public StartMenu()
         {
             InitializeComponent();
-            NassauForm = new MenuNassau.Nassau_form();
         }
 
         private void Nassau_button_Click(object sender, EventArgs e)

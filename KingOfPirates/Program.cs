@@ -112,7 +112,7 @@ namespace KingOfPirates
                                                                  {0,0,3,0,0,0,0,0,0,0,0,0}});
 
             NaveNemico[] testNemici = new NaveNemico[3];
-            Loc2D[] testPatrol = new Loc2D[] { new Loc2D(5, 5), new Loc2D(5, 6), new Loc2D(6, 6) };
+            Loc2D[] testPatrol = new Loc2D[] { new Loc2D(6, 6), new Loc2D(6, 7), new Loc2D(7, 7) };
             Loc2D[] testPatrol2 = new Loc2D[] { new Loc2D(10, 10), new Loc2D(10, 9), new Loc2D(9, 9) };
             Loc2D[] testPatrol3 = new Loc2D[] { new Loc2D(13, 8), new Loc2D(12, 8), new Loc2D(11, 8), new Loc2D(11, 7) };
 
