@@ -6,28 +6,39 @@ using System.Threading.Tasks;
 
 namespace KingOfPirates.Missioni
 {
-    class Ranking
+    public class Ranking
     {
-        private int rankGiocatore;
-        private int[] livelli; //TODO
+        public int Turni { get; set; }
+        public int GameOver { get; set; }
+        public int Rubini { get; set; }
+        public int NaviAffondate { get; set; }
 
-        public Ranking(int[] livelli)
+        public Ranking()
         {
-            this.livelli = livelli;
-            rankGiocatore = 0; //TODO
+            Turni = 0;
+            GameOver = 0;
+            Rubini = 0;
+            NaviAffondate = 0;
         }
 
-        public void IncRank(int size)
+        public void IncTurni()
         {
-            //TODO
+            Turni++;
         }
 
-        public void DecRank(int size)
+        public void IncGameOver()
         {
-            //TODO
+            GameOver++;
         }
 
-        public int RankGiocatore { get => rankGiocatore; set => rankGiocatore = value; }
-        public int[] Livelli { get => livelli; set => livelli = value; }
+        public void IncRubini()
+        {
+            Rubini++;
+        }
+
+        public void IncNaviAffondate()
+        {
+            NaviAffondate++;
+        }
     }
 }

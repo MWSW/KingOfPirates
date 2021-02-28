@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace KingOfPirates.Missioni.ScontroCarte.Opponenti
 {
-    class Player_carte : Giocatore_carte_base
+    public class Player_carte : Giocatore_carte_base
     {
         private Carta[] carteInMano;
         private Mazzo mazzo;
@@ -24,7 +24,7 @@ namespace KingOfPirates.Missioni.ScontroCarte.Opponenti
         private bool buffApplicato;
 
         public Player_carte(int hp_, Mazzo mazzo_)
-            : base(hp_, Properties.Resources.pun_pun) //pup pun è un'immagine di prova
+            : base(hp_, Properties.Resources.pun_pun, "Ishmael") //pup pun è un'immagine di prova
         {
             mazzo = mazzo_;
 

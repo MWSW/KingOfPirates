@@ -124,8 +124,8 @@
   <data name="cartaVuota" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cartaVuota.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="depotenziamento" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\depotenziamento.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pow_buff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pow_buff.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bevDet" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bevDet.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -138,6 +138,9 @@
   </data>
   <data name="pun_pun1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pun_pun1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ruby" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ruby.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="play" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\play.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,6 +160,15 @@
   <data name="nascondi" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\nascondi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="GerriInn2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GerriInn1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="depotenziamento" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\depotenziamento.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cross" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cross.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="debuff" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\debuff.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -166,8 +178,8 @@
   <data name="sfondo_carta" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sfondo_carta.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pow_buff" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pow_buff.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="file_example_WAV_1MG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\OST\file_example_WAV_1MG.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="nave_bianca" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\navi_laterali\nave_bianca.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -181,11 +193,17 @@
   <data name="rum" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rum.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Shop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Shop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="isola2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\isole_default\isola2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="sangue" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sangue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GerriInn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GerriInn.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="info" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\info.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -199,11 +217,17 @@
   <data name="pun_pun" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pun_pun.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="GerriInn1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GerriInn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="isola3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\isole_default\isola3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ant" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ant.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Shop_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Shop_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Port_Sign" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Port_Sign.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bottone_attacco" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bottone_attacco.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -217,11 +241,14 @@
   <data name="Rude_Buster_HQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\OST\Rude Buster-HQ.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="mare" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mare.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pub" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pub.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="assLeg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\assLeg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MokeyIslandBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MokeyIslandBackground.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="omino" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\omino.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -232,6 +259,9 @@
   <data name="isola5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\isole_default\isola5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="menuBackImg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menuBackImg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="BufferDrink" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BufferDrink.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -241,8 +271,8 @@
   <data name="SpazioVuoto" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SpazioVuoto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="file_example_WAV_1MG" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\OST\file_example_WAV_1MG.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="mare" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mare.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="nave_rossa" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\navi_laterali\nave_rossa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -250,14 +280,14 @@
   <data name="vita_buff" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\vita_buff.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cross" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cross.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ant" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ant.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ruby" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ruby.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bandiera" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bandiera.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="menuBackImg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\menuBackImg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Porto_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Porto_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pirataJerriSkotty" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pirataJerriSkotty.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

@@ -38,12 +38,13 @@ namespace KingOfPirates.GUI.ScontroCarte
         SoundPlayer musicBox; //FIXME
         bool isPlaying;
 
-        public ScontroCarte()
+
+
+        public ScontroCarte(Nemico_carte nemico_)
         {
             InitializeComponent();
-            // isPlaying = true;
-            //musicBox.PlayLooping();
-
+            player = Gioco.Giocatore.GiocatoreCarte;
+            nemico = nemico_;
         }
 
         private void OnLoad(object sender, EventArgs e)
@@ -55,6 +56,16 @@ namespace KingOfPirates.GUI.ScontroCarte
 
             cartaSelezionata = -1;
             tuoTurno = true; //inizi sempre tu 
+
+            //display grafico degli sfindanti
+            img_avversario.Image = nemico.Img;
+            label_avversario.Text = nemico.Nome;
+            vita_avversario.Text = "HP: " + nemico.CurHp + "/" + nemico.MaxHp;
+
+
+            img_giocatore.Image = player.Img;
+            label_giocatore.Text = player.Nome;
+            vita_giocatore.Text = "HP: " + player.CurHp + "/" + player.MaxHp;
 
             //Componenti grafiche
             img_carta = new PictureBox[4];
@@ -92,24 +103,6 @@ namespace KingOfPirates.GUI.ScontroCarte
             elem[1] = elem2;
             elem[2] = elem3;
             elem[3] = elem4;
-
-
-            //Inizializzo gli oggetti
-
-            Carta[] carte_nemico = {ListaCarte.GetCartaClone(0),
-                 ListaCarte.GetCartaClone(1), ListaCarte.GetCartaClone(2), ListaCarte.GetCartaClone(3), ListaCarte.GetCartaClone(4), ListaCarte.GetCartaClone(5)};
-
-
-            Carta[] carte_player = {ListaCarte.GetCartaClone(19),
-                 ListaCarte.GetCartaClone(18), ListaCarte.GetCartaClone(17), ListaCarte.GetCartaClone(16),
-                 ListaCarte.GetCartaClone(15), ListaCarte.GetCartaClone(5), ListaCarte.GetCartaClone(9),
-                 ListaCarte.GetCartaClone(10), ListaCarte.GetCartaClone(1)};
-
-
-            player = new Player_carte(10, new Mazzo(carte_player));
-            nemico = new Nemico_carte(10, null, carte_nemico); //FIX-ME
-
-            //Devo differenziare se poi la carta è normale oppure effetto
 
             //Prima mano
             for (int i = 0; i < player.CarteInMano.Length; i++)
@@ -434,6 +427,19 @@ namespace KingOfPirates.GUI.ScontroCarte
                 img_dannoPerpetuo.Hide();
             }
 
+
+            //controlla vita del nemico
+            if (nemico.CurHp <= 0)
+            {
+                MessageBox.Show("Hai vinto lo scontro!");
+                nemico.GameOver();
+            }
+            else if (player.CurHp <= 0)
+            {
+                MessageBox.Show("Hai perso lo scontro.");
+                player.GameOver();
+            }
+                
         }
 
         private void bt_nascondi_Click(object sender, EventArgs e)
@@ -554,7 +560,22 @@ namespace KingOfPirates.GUI.ScontroCarte
         {
             e.Cancel = true;
             this.Hide();
-            Gioco.startMenu.Show();
+            //Gioco.startMenu.Show();
+        }
+
+        private void OnVisibleChanged(object sender, EventArgs e)
+        {
+            if(this.Visible)
+            {
+                musicBox.PlayLooping(); //attiva musica al riavvio
+            }
+            else
+            {
+                musicBox.Stop(); //disattiva la musica alla chiusura
+            }
+
+            //TEMP
+            musicBox.Stop();
         }
     }
 }

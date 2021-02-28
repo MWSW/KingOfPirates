@@ -171,6 +171,7 @@ namespace KingOfPirates.GUI.MenuMissioni
             this.Sopra_button.Click += new System.EventHandler(this.Sopra_button_Click);
             // 
             // Sinistra_button
+            // FormMissione
             // 
             this.Sinistra_button.Location = new System.Drawing.Point(JoystickStartPointX, JoystickStartPointY + 53);
             this.Sinistra_button.Name = "Sinistra_button";
@@ -372,6 +373,9 @@ namespace KingOfPirates.GUI.MenuMissioni
                         case 2: //montagna
                             this.Griglia_pictureBox[i, j].BackgroundImage = Properties.Resources.montagna;
                             break;
+                        case 3: //bandiera
+                            this.Griglia_pictureBox[i, j].BackgroundImage = Properties.Resources.bandiera;
+                            break;
                     }
                 }
             }
@@ -407,6 +411,7 @@ namespace KingOfPirates.GUI.MenuMissioni
             this.Controls.Add(this.Rubini_label);
             this.Controls.Add(this.Scavo_button);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MenuMissioni_FormClosing);
+            this.VisibleChanged += new System.EventHandler(this.OnVisibleChanged);
             this.Name = "MenuMissioni";
             this.Text = "MenuMissioni";
             ((System.ComponentModel.ISupportInitialize)(this.cartinaBindingSource)).EndInit();
