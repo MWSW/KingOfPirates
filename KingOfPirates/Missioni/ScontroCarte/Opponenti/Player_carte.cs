@@ -115,6 +115,7 @@ namespace KingOfPirates.Missioni.ScontroCarte.Opponenti
         }
 
         public Carta[] CarteInMano { get => carteInMano; }
+        public Mazzo Mazzo { get => mazzo; }
         public bool CuraEstesa { get => curaEstesa; }
         public bool BuffApplicato { get => buffApplicato; }
         public int ValBuff { get => buffStats; }

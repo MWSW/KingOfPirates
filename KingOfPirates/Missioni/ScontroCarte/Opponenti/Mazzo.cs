@@ -40,6 +40,12 @@ namespace KingOfPirates.Missioni.ScontroCarte.Opponenti
             disponibile[indice] = true;
         }
 
+        public void MorteCarta(int indice)
+        {
+            //sostituisci posizione con carta morta
+            carte[indice] = ListaCarte.GetMorto();
+        }
+
         public bool CartaDisponibile(int indice)
         {
             return disponibile[indice];
