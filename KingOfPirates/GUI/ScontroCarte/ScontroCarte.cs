@@ -442,7 +442,8 @@ namespace KingOfPirates.GUI.ScontroCarte
             }
 
             //controlla determinazione
-            if (player.CarteInMano[cartaSelezionata].Determinazione <= 0)
+            if (player.CarteInMano[cartaSelezionata].Determinazione <= 0 &&
+                player.CarteInMano[cartaSelezionata].Tipo != "morto") //ovviamente la carta non deve essere già morta
             {
                 //la carta viene rimpiazzata con la carta morto
                 int indice = player.CarteInMano[cartaSelezionata].Indice; //salvo il vecchio indice
@@ -452,7 +453,6 @@ namespace KingOfPirates.GUI.ScontroCarte
 
                 player.CarteInMano[cartaSelezionata].Visualizza(img_carta0, nomeCarta0, det0, att0, def0, elem0);
 
-                //dopo che la carta è morta scompare... FIXME
             }
 
         }
