@@ -88,7 +88,7 @@ namespace KingOfPirates
 
             Player_carte player_prova = new Player_carte(10, new Mazzo(carte_player));
 
-            Giocatore = new NaveGiocatore("Nave da Test", Properties.Resources.nave_rossa, new Stats(), new Loc2D(3,3), 5, 10, player_prova);
+            Giocatore = new NaveGiocatore("Nave da Test", Properties.Resources.nave_rossa, new Stats(), new Loc2D(3, 3), 5, 10, player_prova);
             Dominio = new GestioneDominio();
 
             Griglia griglia_prova = new Griglia(new int[19, 12] {{0,0,0,0,0,0,0,0,0,0,0,0},
@@ -114,8 +114,7 @@ namespace KingOfPirates
             NaveNemico[] testNemici = new NaveNemico[3];
             Loc2D[] testPatrol = new Loc2D[] { new Loc2D(5, 5), new Loc2D(5, 6), new Loc2D(6, 6) };
             Loc2D[] testPatrol2 = new Loc2D[] { new Loc2D(10, 10), new Loc2D(10, 9), new Loc2D(9, 9) };
-            Loc2D[] testPatrol3 = new Loc2D[] { new Loc2D(13, 8), new Loc2D(12, 8), new Loc2D(11, 8),
-                                                new Loc2D(11, 7) };
+            Loc2D[] testPatrol3 = new Loc2D[] { new Loc2D(13, 8), new Loc2D(12, 8), new Loc2D(11, 8), new Loc2D(11, 7) };
 
             Nemico_carte nemico_prova = new Nemico_carte(10, Properties.Resources.pub, new Carta[] { ListaCarte.GetCarta(1) }, "ErNemiko!");
             Nemico_carte nemico_prova1 = new Nemico_carte(10, Properties.Resources.pub, new Carta[] { ListaCarte.GetCarta(2) }, "ErNemiko2!");

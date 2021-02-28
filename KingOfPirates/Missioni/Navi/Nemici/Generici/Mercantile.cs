@@ -20,10 +20,5 @@ namespace KingOfPirates.Missioni.Navi.Nemici.Generici
         {
             
         }
-
-        public override void Attacca(Nave nave)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

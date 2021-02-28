@@ -42,10 +42,21 @@ namespace KingOfPirates.Missioni.Navi
         /// <summary>
         /// Movimento specifico per i nemici secondo un percorso predefinito
         /// </summary>
-        /// <param name="missione"></param>
-        /// <param name="direzione"></param>
+        /// <param name="missione">Missione in cui effetuare il movimento.</param>
+        /// <param name="direzione">Direzione in cui effetuare il movimento</param>
         public override void Movimento(Missione missione, Direzione direzione)
         {
+            for (int i = -1; i <= 1; i++)
+            {
+                for (int j = -1; j <= 1; j++)
+                {
+                    if (Gioco.Giocatore.Loc.IsEqualTo(new Loc2D(i, j)));
+                    {
+                        Attacca(Gioco.Giocatore);
+                        return;
+                    }
+                }
+            }
             if (!IsGameOver)
             {
                 missione.Mappa.Griglia_pictureBox[patrol[patrolIndex].X, patrol[patrolIndex].Y].BackgroundImage = Properties.Resources.mare;
@@ -73,20 +84,16 @@ namespace KingOfPirates.Missioni.Navi
             }
         }
 
+        public override void Attacca(Nave nave)
+        {
+            int remPunti = new Random().Next(Stats.MinHit, Stats.MaxHit);
+            nave.DecPuntiVita(remPunti);
+        }
+
         public void Affonda(Missione missione)
         {
             //missione.Mappa.Griglia_pictureBox[Loc.X, Loc.Y].BackgroundImage = Properties.Resources.mare;
             IsGameOver = true;
-        }
-
-        /// <summary>
-        /// Funzione astratta della classe Nave, non implementata.
-        /// Non serve perché il nemico non ha punti azione
-        /// </summary>
-        /// <param name="enTolta">Punti azione da togliere</param>
-        public override void RemEnergia(int enTolta)
-        {
-            return;
         }
     }
 }

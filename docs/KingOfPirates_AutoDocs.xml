@@ -226,12 +226,6 @@
             <param name="missione">Per permettere il movimento all'interno della mappa della missione.</param>
             <param name="direzione">per specificare la direzione in cui effetuare il movimento.</param>
         </member>
-        <member name="M:KingOfPirates.Missioni.Navi.Nave.RemEnergia(System.Int32)">
-            <summary>
-            Rimuove punti azione dopo un'azione
-            </summary>
-            <param name="enTolta">punti da rimuovere</param>
-        </member>
         <member name="T:KingOfPirates.Missioni.Navi.NaveGiocatore">
             <summary>
             Nave rappresentante il giocatore con funzioni speciali.
@@ -281,6 +275,13 @@
             <param name="missione">Per permettere il movimento all'interno della mappa della missione.</param>
             <param name="direzione">per specificare la direzione in cui effetuare il movimento.</param>
         </member>
+        <member name="M:KingOfPirates.Missioni.Navi.NaveGiocatore.Movimento(KingOfPirates.Missioni.Missione,KingOfPirates.Missioni.Roba.Direzione)">
+            <summary>
+            
+            </summary>
+            <param name="missione"></param>
+            <param name="direzione"></param>
+        </member>
         <member name="T:KingOfPirates.Missioni.Navi.NaveNemico">
             <summary>
             Classe astratta con funzioni e valori per il controllo dei nemici.
@@ -290,15 +291,8 @@
             <summary>
             Movimento specifico per i nemici secondo un percorso predefinito
             </summary>
-            <param name="missione"></param>
-            <param name="direzione"></param>
-        </member>
-        <member name="M:KingOfPirates.Missioni.Navi.NaveNemico.RemEnergia(System.Int32)">
-            <summary>
-            Funzione astratta della classe Nave, non implementata.
-            Non serve perché il nemico non ha punti azione
-            </summary>
-            <param name="enTolta">Punti azione da togliere</param>
+            <param name="missione">Missione in cui effetuare il movimento.</param>
+            <param name="direzione">Direzione in cui effetuare il movimento</param>
         </member>
         <member name="T:KingOfPirates.Missioni.Navi.Nemici.Generici.Caravella">
             <summary>
@@ -617,9 +611,14 @@
               Looks up a localized resource of type System.Drawing.Bitmap.
             </summary>
         </member>
-        <member name="P:KingOfPirates.Properties.Resources.play">
+        <member name="P:KingOfPirates.Properties.Resources.pirataJerriSkotty">
             <summary>
               Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:KingOfPirates.Properties.Resources.play">
+            <summary>
+              Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
             </summary>
         </member>
         <member name="P:KingOfPirates.Properties.Resources.Port_Sign">

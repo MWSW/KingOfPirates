@@ -15,9 +15,11 @@ namespace KingOfPirates.GUI.MenuPrincipale
     /// </summary>
     public partial class StartMenu : Form
     {
+        private MenuNassau.Nassau_form NassauForm { get; set; }
         public StartMenu()
         {
             InitializeComponent();
+            NassauForm = new MenuNassau.Nassau_form();
         }
 
         private void Nassau_button_Click(object sender, EventArgs e)
@@ -45,7 +47,7 @@ namespace KingOfPirates.GUI.MenuPrincipale
 
         private void Start_button_Click(object sender, EventArgs e)
         {
-            //
+            NassauForm.Show();
         }
 
         private void Crediti_button_Click(object sender, EventArgs e)
@@ -55,6 +57,7 @@ namespace KingOfPirates.GUI.MenuPrincipale
 
         private void Exit_button_Click(object sender, EventArgs e)
         {
+            NassauForm.Dispose();
             Gioco.End();
         }
     }
