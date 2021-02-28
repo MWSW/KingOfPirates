@@ -11,15 +11,18 @@ namespace KingOfPirates.Mappa
 {
     class Cartina
     {
-        private Bitmap immagine;
-
         Missione[] arcipelago1;
-        Missione[] arcipelago2;
+        //Missione[] arcipelago2;
 
-        public Cartina(Bitmap immagine_)
+        int currentMissionIndex;
+
+        public Cartina()
         {
-            immagine = immagine_;
+            arcipelago1 = new Missione[3];
+            currentMissionIndex = 0;
         }
+
+        public int CurrentMissionIndex { get => currentMissionIndex; set => currentMissionIndex = value; }
 
         public void AvvioMissione()
         {

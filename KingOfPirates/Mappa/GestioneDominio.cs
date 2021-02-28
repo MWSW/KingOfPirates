@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KingOfPirates.Cartina
+namespace KingOfPirates.Mappa
 {
     public class GestioneDominio
     {
@@ -18,8 +18,8 @@ namespace KingOfPirates.Cartina
         public GestioneDominio()
         {
             dobloniPerTurno = 0;
-            CassaDobloni = 0;
-            CassaRubini = 0;
+            cassaDobloni = 0;
+            cassaRubini = 0;
             taglieMercantile = 0;
             taglieCaravella = 0;
             taglieFregata = 0;

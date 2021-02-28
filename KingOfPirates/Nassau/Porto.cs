@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Drawing; //per le Bitmap
 using KingOfPirates.Missioni.Navi;
-using KingOfPirates.Cartina;
+using KingOfPirates.Mappa;
 
 namespace KingOfPirates.Nassau
 {
@@ -53,31 +53,26 @@ namespace KingOfPirates.Nassau
         public int[] PrezzoScafo { get => prezzoScafo; set => prezzoScafo = value; }
         public int[] PrezzoVele { get => prezzoVele; set => prezzoVele = value; }
 
-        public void Salpa() 
-        {
-
-        }
-
-        public void PotenziaCannoni(NaveGiocatore nave, GestioneDominio gestoreDominio) {
+        public void PotenziaCannoni() {
             if(LivelloCannoni <= 3)
             {
-                gestoreDominio.RemDobloni(PrezzoCannoni[LivelloCannoni]);
+                Gioco.Dominio.RemDobloni(PrezzoCannoni[LivelloCannoni]);
                 LivelloCannoni ++;
             }
         }
 
-        public void PotenziaVele(NaveGiocatore nave, GestioneDominio gestoreDominio) {
+        public void PotenziaVele() {
             if (LivelloVele <= 3)
             {
-                gestoreDominio.RemDobloni(PrezzoVele[LivelloVele]);
+                Gioco.Dominio.RemDobloni(PrezzoVele[LivelloVele]);
                 LivelloVele ++;
             }
         }
 
-        public void PotenziaScafo(NaveGiocatore nave, GestioneDominio gestoreDominio) {
+        public void PotenziaScafo() {
             if (LivelloScafo <= 3)
             {
-                gestoreDominio.RemDobloni(PrezzoScafo[LivelloScafo]);
+                Gioco.Dominio.RemDobloni(PrezzoScafo[LivelloScafo]);
                 LivelloScafo ++;
             }
         }
