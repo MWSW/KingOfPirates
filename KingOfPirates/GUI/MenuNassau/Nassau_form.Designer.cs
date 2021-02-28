@@ -39,58 +39,46 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             // NegozioImgButton
             // 
-            this.NegozioImgButton.BackColor = System.Drawing.Color.Transparent;
+            this.NegozioImgButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.NegozioImgButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.NegozioImgButton.Image = global::KingOfPirates.Properties.Resources.Shop_;
-            this.NegozioImgButton.Location = new System.Drawing.Point(688, 473);
-            this.NegozioImgButton.Margin = new System.Windows.Forms.Padding(4);
+            this.NegozioImgButton.Location = new System.Drawing.Point(187, 275);
             this.NegozioImgButton.Name = "NegozioImgButton";
-            this.NegozioImgButton.Size = new System.Drawing.Size(213, 284);
-            this.NegozioImgButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.NegozioImgButton.Size = new System.Drawing.Size(203, 107);
             this.NegozioImgButton.TabIndex = 5;
             this.NegozioImgButton.TabStop = false;
             this.NegozioImgButton.Click += new System.EventHandler(this.NegozioImgButton_Click);
             // 
             // LocandaImgButton
             // 
-            this.LocandaImgButton.BackColor = System.Drawing.Color.Transparent;
+            this.LocandaImgButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.LocandaImgButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.LocandaImgButton.Image = global::KingOfPirates.Properties.Resources.GerriInn2;
-            this.LocandaImgButton.Location = new System.Drawing.Point(1209, 310);
-            this.LocandaImgButton.Margin = new System.Windows.Forms.Padding(4);
+            this.LocandaImgButton.Location = new System.Drawing.Point(500, 275);
             this.LocandaImgButton.Name = "LocandaImgButton";
-            this.LocandaImgButton.Size = new System.Drawing.Size(248, 350);
-            this.LocandaImgButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.LocandaImgButton.Size = new System.Drawing.Size(209, 107);
             this.LocandaImgButton.TabIndex = 4;
             this.LocandaImgButton.TabStop = false;
             this.LocandaImgButton.Click += new System.EventHandler(this.LocandaImgButton_Click);
             // 
             // PortoImgButton
             // 
-            this.PortoImgButton.BackColor = System.Drawing.Color.LightGray;
+            this.PortoImgButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.PortoImgButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.PortoImgButton.Image = global::KingOfPirates.Properties.Resources.Porto_;
-            this.PortoImgButton.Location = new System.Drawing.Point(66, 310);
-            this.PortoImgButton.Margin = new System.Windows.Forms.Padding(4);
+            this.PortoImgButton.Location = new System.Drawing.Point(826, 275);
             this.PortoImgButton.Name = "PortoImgButton";
-            this.PortoImgButton.Size = new System.Drawing.Size(244, 342);
-            this.PortoImgButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PortoImgButton.Size = new System.Drawing.Size(225, 107);
             this.PortoImgButton.TabIndex = 3;
             this.PortoImgButton.TabStop = false;
             this.PortoImgButton.Click += new System.EventHandler(this.PortoImgButton_Click);
             // 
             // Nassau_form
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.BackgroundImage = global::KingOfPirates.Properties.Resources.MokeyIslandBackground;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1685, 838);
+            this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.NegozioImgButton);
             this.Controls.Add(this.LocandaImgButton);
             this.Controls.Add(this.PortoImgButton);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Nassau_form";
             this.Text = "King of Pirates - Nassau";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Nassau_form_FormClosing);
