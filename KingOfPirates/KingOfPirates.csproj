@@ -339,6 +339,8 @@
     <None Include="Resources\omino.png" />
     <None Include="Resources\Port_Sign.png" />
     <None Include="Resources\Porto_.png" />
+    <None Include="Resources\PiratessaA.png" />
+    <None Include="Resources\PirataA.jpeg" />
     <Content Include="Resources\prova.jpg" />
     <None Include="Resources\ruby.png" />
     <None Include="Resources\pub.jpg" />

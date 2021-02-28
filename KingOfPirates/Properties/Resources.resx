@@ -178,9 +178,6 @@
   <data name="sfondo_carta" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sfondo_carta.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="file_example_WAV_1MG" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\OST\file_example_WAV_1MG.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="nave_bianca" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\navi_laterali\nave_bianca.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -211,6 +208,12 @@
   <data name="ghiaccio" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ghiaccio.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Port_Sign" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Port_Sign.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ant" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ant.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="isola1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\isole_default\isola1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -226,8 +229,8 @@
   <data name="Shop_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Shop_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Port_Sign" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Port_Sign.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="file_example_WAV_1MG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\OST\file_example_WAV_1MG.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="bottone_attacco" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bottone_attacco.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -265,6 +268,9 @@
   <data name="BufferDrink" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BufferDrink.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="PiratessaA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PiratessaA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="montagna" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\montagna.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -280,13 +286,13 @@
   <data name="vita_buff" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\vita_buff.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ant" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ant.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Porto_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Porto_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bandiera" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bandiera.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Porto_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Porto_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="PirataA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PirataA.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -617,6 +617,16 @@
               Looks up a localized resource of type System.Drawing.Bitmap.
             </summary>
         </member>
+        <member name="P:KingOfPirates.Properties.Resources.PirataA">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:KingOfPirates.Properties.Resources.PiratessaA">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
         <member name="P:KingOfPirates.Properties.Resources.play">
             <summary>
               Looks up a localized resource of type System.Drawing.Bitmap.

@@ -14,8 +14,8 @@ namespace KingOfPirates.Missioni.ScontroCarte.Opponenti
 
         private static Carta[] listaCarte = 
         { new CartaBase("PunPun1", 20, Properties.Resources.pun_pun, 3, 1, 'f'),
-        new CartaBase("PunPun2", 20, Properties.Resources.pun_pun1, 2, 2, 'g'),
-        new CartaBase("PunPun3", 20, Properties.Resources.pun_pun2, 2, 2, 's'),
+        new CartaBase("PunPun2", 20, Properties.Resources.PirataA, 2, 2, 'g'),
+        new CartaBase("PunPun3", 20, Properties.Resources.PiratessaA, 2, 2, 's'),
         new CartaBase("CoolPun", 20, Properties.Resources.pun_pun, 3, 1, 's'),
         new CartaBase("SaddyPun", 20, Properties.Resources.pun_pun2, 1, 3, 'g'),
         new CartaBase("Punpunya", 20, Properties.Resources.pun_pun1, 2, 2, 'f'),
