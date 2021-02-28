@@ -12,13 +12,18 @@ namespace KingOfPirates.Missioni.ScontroCarte.Carte.CarteEffetto
     class CartaResa : Carta
     {
         public CartaResa(string nome_, int determinazione_, Bitmap immagine_)
-            : base(nome_, determinazione_, immagine_)
+            : base(nome_, determinazione_, immagine_, "resa")
         {
             
         }
-        public override void UsaCarta(Giocatore g)
+        public override void UsaCarta(Giocatore_carte_base g)
         {
            
+        }
+
+        public override Carta Clona()
+        {
+            throw new NotImplementedException(); //da vedere poi
         }
     }
 }

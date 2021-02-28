@@ -14,14 +14,23 @@ namespace KingOfPirates.Missioni.ScontroCarte.Carte.CarteEffetto
         int danno;
         int durata;
         public CartaDannoContinuo(string nome_, int determinazione_, Bitmap immagine_, int danno_, int durata_)
-              : base(nome_, determinazione_, immagine_)
+              : base(nome_, determinazione_, immagine_, "dannoContiuno")
         {
             danno = danno_;
             durata = durata_;
         }
-        public override void UsaCarta(Giocatore g)
+        public override void UsaCarta(Giocatore_carte_base g)
         {
+            base.UsaCarta(g);
 
+            //funziona solo sui nemici
+            Nemico_carte nemico = (Nemico_carte)g;
+            nemico.DannoPerpetuo(danno, durata);
+        }
+
+        public override Carta Clona()
+        {
+            return new CartaDannoContinuo(nome, determinazione, immagine, danno, durata);
         }
     }
 }

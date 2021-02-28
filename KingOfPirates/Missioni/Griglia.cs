@@ -3,24 +3,44 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using KingOfPirates.Missioni.Roba;
 
 namespace KingOfPirates.Missioni
 {
-    class Griglia
+    /// <summary>
+    /// Griglia numerica su cui verrà basata la griglia grafica
+    /// </summary>
+    public class Griglia
     {
-        private int righe;
-        private int colonne;
+        private int[,] mat;
+        private Loc2D matSize;
 
-        int[] mat;
-
-        public Griglia(int righe_, int colonne_)
+        public Griglia(Loc2D matSize, bool randomizzaMatr)
         {
-            righe = righe_;
-            colonne = colonne_;
+            this.matSize = matSize;
+            mat = new int[matSize.X, matSize.Y];
 
-            //usare y*colonne + x -> per trovare una posizione della matrice [x][y]
-            //realizzata così perchè dava errore nella generazione della matrice classica
-            mat = new int[righe*colonne];
+            if (randomizzaMatr) RandMatrice();
         }
+
+        public Griglia(int[,] mat)
+        {
+            this.mat = mat;
+        }
+
+        private void RandMatrice()
+        {
+            for (int i = 0; i < matSize.X; i++)
+            {
+                for (int j = 0; j < matSize.Y; j++)
+                {
+                    mat[i, j] = new Random().Next(3);
+                }
+            }
+        }
+
+        //Properties/Proprieta'
+
+        public int[,] Mat { get => mat; set => mat = value; }
     }
 }
