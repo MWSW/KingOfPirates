@@ -16,7 +16,7 @@ namespace KingOfPirates.Missioni.Navi.Nemici.Generici
     internal class Fregata : NaveNemico
     {
         public Fregata(Stats stats, Loc2D[] patrol, Nemico_carte nemico_carte)
-         : base("Fregata", Properties.Resources.nave_rossa, stats, patrol, nemico_carte)
+         : base("Fregata", Properties.Resources.NaveFregata, stats, patrol, nemico_carte)
         {
 
         }

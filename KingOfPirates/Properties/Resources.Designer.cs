@@ -422,6 +422,46 @@ namespace KingOfPirates.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap NaveCaravella {
+            get {
+                object obj = ResourceManager.GetObject("NaveCaravella", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap NaveFregata {
+            get {
+                object obj = ResourceManager.GetObject("NaveFregata", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap NaveGiocatore {
+            get {
+                object obj = ResourceManager.GetObject("NaveGiocatore", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap NaveMercantile {
+            get {
+                object obj = ResourceManager.GetObject("NaveMercantile", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap next {
             get {
                 object obj = ResourceManager.GetObject("next", resourceCulture);
@@ -435,6 +475,16 @@ namespace KingOfPirates.Properties {
         internal static System.Drawing.Bitmap omino {
             get {
                 object obj = ResourceManager.GetObject("omino", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PiratessaA {
+            get {
+                object obj = ResourceManager.GetObject("PiratessaA", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

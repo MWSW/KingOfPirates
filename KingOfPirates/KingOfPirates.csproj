@@ -332,6 +332,10 @@
     <Content Include="Resources\naveVerde\ship2_2.png" />
     <Content Include="Resources\naveVerde\ship2_3.png" />
     <Content Include="Resources\naveVerde\ship2_4.png" />
+    <Content Include="Resources\Navigazione\NaveCaravella.jpeg" />
+    <Content Include="Resources\Navigazione\NaveFregata.jpeg" />
+    <Content Include="Resources\Navigazione\NaveGiocatore.jpeg" />
+    <Content Include="Resources\Navigazione\NaveMercantile.jpeg" />
     <Content Include="Resources\navi_laterali\nave_bianca.png" />
     <Content Include="Resources\navi_laterali\nave_pirata.png" />
     <Content Include="Resources\navi_laterali\nave_rossa.png" />
@@ -339,6 +343,7 @@
     <None Include="Resources\omino.png" />
     <None Include="Resources\Port_Sign.png" />
     <None Include="Resources\Porto_.png" />
+    <Content Include="Resources\Personaggi\PiratessaA.jpeg" />
     <Content Include="Resources\prova.jpg" />
     <None Include="Resources\ruby.png" />
     <None Include="Resources\pub.jpg" />

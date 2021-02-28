@@ -607,12 +607,37 @@
               Looks up a localized resource of type System.Drawing.Bitmap.
             </summary>
         </member>
+        <member name="P:KingOfPirates.Properties.Resources.NaveCaravella">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:KingOfPirates.Properties.Resources.NaveFregata">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:KingOfPirates.Properties.Resources.NaveGiocatore">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:KingOfPirates.Properties.Resources.NaveMercantile">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
         <member name="P:KingOfPirates.Properties.Resources.next">
             <summary>
               Looks up a localized resource of type System.Drawing.Bitmap.
             </summary>
         </member>
         <member name="P:KingOfPirates.Properties.Resources.omino">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:KingOfPirates.Properties.Resources.PiratessaA">
             <summary>
               Looks up a localized resource of type System.Drawing.Bitmap.
             </summary>
