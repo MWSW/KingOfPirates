@@ -334,6 +334,7 @@
     <Content Include="Resources\naveBianca\ship1_2.png" />
     <Content Include="Resources\naveBianca\ship1_3.png" />
     <Content Include="Resources\naveBianca\ship1_4.png" />
+    <None Include="Resources\NaveGiocatore.jpeg.jpeg" />
     <Content Include="Resources\naveNemica\ship1_1.png" />
     <Content Include="Resources\naveNemica\ship1_2.png" />
     <Content Include="Resources\naveNemica\ship1_3.png" />
