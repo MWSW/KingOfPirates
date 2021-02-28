@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using KingOfPirates.GUI.MenuNassau;
 
 namespace KingOfPirates.GUI.MenuPrincipale
 {
@@ -19,6 +20,7 @@ namespace KingOfPirates.GUI.MenuPrincipale
         public StartMenu()
         {
             InitializeComponent();
+            NassauForm = new Nassau_form();
         }
 
         private void Nassau_button_Click(object sender, EventArgs e)

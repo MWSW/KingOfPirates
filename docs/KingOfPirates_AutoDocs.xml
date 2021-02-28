@@ -23,12 +23,12 @@
         </member>
         <member name="T:KingOfPirates.GUI.MenuMissioni.FormMissione">
             <summary>
-            Form che rappresenta la griglia grafica della missione, fatto a mano.
+                Form che rappresenta la griglia grafica della missione, fatto a mano.
             </summary>
         </member>
         <member name="M:KingOfPirates.GUI.MenuMissioni.FormMissione.#ctor(KingOfPirates.Missioni.Missione)">
             <summary>
-            Costruttore, inizializza i componenti grafici.
+                Costruttore, inizializza i componenti grafici.
             </summary>
             <param name="missione">Per manipolare la missione nel Form.</param>
         </member>

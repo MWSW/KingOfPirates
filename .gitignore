@@ -16,6 +16,12 @@
 # Mono auto generated files
 mono_crash.*
 
+# JetBrains Files
+.idea/
+
+# VS Code Files
+.vscode/
+
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/
