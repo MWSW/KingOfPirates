@@ -276,7 +276,7 @@ namespace KingOfPirates.GUI.MenuMissioni
                     Gioco.Giocatore.Stats.Pa = Gioco.Giocatore.Stats.PaMax;
                     EnergiaNave_label.Text = "Punti azione: " + Gioco.Giocatore.Stats.Pa + "/" + Gioco.Giocatore.Stats.PaMax; //aggiorna energia_label
 
-                    Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = Properties.Resources.NaveGiocatore_jpeg;
+                    Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = Properties.Resources.nave_pirata;
 
                     switch (missione.Griglia_numerica.Mat[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y])
                     {
