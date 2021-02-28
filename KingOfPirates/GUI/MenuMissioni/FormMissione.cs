@@ -73,8 +73,23 @@ namespace KingOfPirates.GUI.MenuMissioni
             else
             {
                 EnergiaNave_label.ForeColor = Color.Black;
-
                 missione.Ranking.IncTurni(); //aumenta il conteggio per il ranking
+
+                //riporta tutti i label al colore nero
+                Ubriachezza_label.ForeColor = Color.Black;
+                Determinazione_label.ForeColor = Color.Black;
+                VitaNave_label.ForeColor = Color.Black;
+                Rubini_label.ForeColor = Color.Black;
+            }
+
+            //puoi scavare solo con abbastanza determinazione
+            if(Gioco.Giocatore.Determinazione <= 0)
+            {
+                Scavo_button.ForeColor = Color.Red;
+            }
+            else
+            {
+                Scavo_button.ForeColor = Color.Black;
             }
 
             //controlla vita nemici
@@ -144,7 +159,14 @@ namespace KingOfPirates.GUI.MenuMissioni
         {
             Gioco.Giocatore.Stats.Pa = Gioco.Giocatore.Stats.PaMax;
             EnergiaNave_label.Text = "Punti azione: " + Gioco.Giocatore.Stats.Pa + "/" + Gioco.Giocatore.Stats.PaMax; //aggiorna energia_label
+
+            //riporta tutti i label al colore nero
             EnergiaNave_label.ForeColor = Color.Black;
+            Ubriachezza_label.ForeColor = Color.Black;
+            Determinazione_label.ForeColor = Color.Black;
+            VitaNave_label.ForeColor = Color.Black;
+            Rubini_label.ForeColor = Color.Black;
+
             missione.TurnoNemico();
 
             Sopra_button.ForeColor = Color.Black;
@@ -166,48 +188,92 @@ namespace KingOfPirates.GUI.MenuMissioni
 
         private void Rum_button_Click(object sender, EventArgs e)
         {
-            Gioco.Giocatore.Inventario.DecRum(); //consumi una unità di rum
+            if (Gioco.Giocatore.Inventario.Rum > 0)
+            {
+                Gioco.Giocatore.Inventario.DecRum(); //consumi una unità di rum
 
-            Gioco.Giocatore.IncUbriachezza(1); //aumenta l'ubriachezza
+                Gioco.Giocatore.IncUbriachezza(1); //aumenta l'ubriachezza
 
-            Gioco.Giocatore.IncDeterminazione(5); //aumenta la determinazione
+                Gioco.Giocatore.IncDeterminazione(5); //aumenta la determinazione
 
-            //aggiorno label
-            this.Rum_label.Text = "Rum rimasto: " + Gioco.Giocatore.Inventario.Rum;
-            this.Ubriachezza_label.Text = "Ubriachezza: " + Gioco.Giocatore.Ubriachezza + "/" + Gioco.Giocatore.UbriachezzaMax;
-            this.Determinazione_label.Text = "Determinazione: " + Gioco.Giocatore.Determinazione + "/" + Gioco.Giocatore.DeterminazioneMax;
+                //aggiorno label
+                this.Rum_label.Text = "Rum rimasto: " + Gioco.Giocatore.Inventario.Rum;
+                this.Ubriachezza_label.Text = "Ubriachezza: " + Gioco.Giocatore.Ubriachezza + "/" + Gioco.Giocatore.UbriachezzaMax;
+                this.Determinazione_label.Text = "Determinazione: " + Gioco.Giocatore.Determinazione + "/" + Gioco.Giocatore.DeterminazioneMax;
+
+                //cambia i colori
+                this.Ubriachezza_label.ForeColor = Color.Red;
+                this.Determinazione_label.ForeColor = Color.Green;
+
+                //Se è l'ultimo rum
+                if(Gioco.Giocatore.Inventario.Rum == 0)
+                    Rum_button.ForeColor = Color.Red;
+            }
         }
 
         private void AssLeg_button_Click(object sender, EventArgs e)
         {
-            Gioco.Giocatore.Inventario.DecAssiLegno(); //consumi un'asse di legno
+            if (Gioco.Giocatore.Inventario.AssiLegno > 0)
+            {
+                Gioco.Giocatore.Inventario.DecAssiLegno(); //consumi un'asse di legno
 
-            Gioco.Giocatore.IncPuntiVita(3); //aumenta punti vita
+                Gioco.Giocatore.IncPuntiVita(3); //aumenta punti vita
 
-            //aggiorno label
-            this.AssLeg_label.Text = "Assi rimaste: " + Gioco.Giocatore.Inventario.AssiLegno;
-            this.VitaNave_label.Text = "Punti Vita: " + Gioco.Giocatore.Stats.Hp + "/" + Gioco.Giocatore.Stats.HpMax;
+                //aggiorno label
+                this.AssLeg_label.Text = "Assi rimaste: " + Gioco.Giocatore.Inventario.AssiLegno;
+                this.VitaNave_label.Text = "Punti Vita: " + Gioco.Giocatore.Stats.Hp + "/" + Gioco.Giocatore.Stats.HpMax;
+
+                //cambia colori
+                VitaNave_label.ForeColor = Color.Green;
+
+                //Se è l'utima asse di legno
+                if(Gioco.Giocatore.Inventario.AssiLegno == 0)
+                    AssLeg_button.ForeColor = Color.Red;
+            }
         }
 
         private void BevandaDet_button_Click(object sender, EventArgs e)
         {
-            Gioco.Giocatore.Inventario.DecBevandaDeterminazione(); //consumi una bevanda della determinazione
+            if (Gioco.Giocatore.Inventario.BevandaDeterminazione > 0)
+            {
+                Gioco.Giocatore.Inventario.DecBevandaDeterminazione(); //consumi una bevanda della determinazione
 
-            Gioco.Giocatore.IncDeterminazione(2); //aumenta determinazione
-            //aggiorno il label
-            this.BevandaDet_label.Text = "Bevande Det Rimaste: " + Gioco.Giocatore.Inventario.BevandaDeterminazione;
-            this.Determinazione_label.Text = "Determinazione: " + Gioco.Giocatore.Determinazione + "/" + Gioco.Giocatore.DeterminazioneMax;
+                Gioco.Giocatore.IncDeterminazione(2); //aumenta determinazione
+                                                      //aggiorno il label
+                this.BevandaDet_label.Text = "Bevande Det Rimaste: " + Gioco.Giocatore.Inventario.BevandaDeterminazione;
+                this.Determinazione_label.Text = "Determinazione: " + Gioco.Giocatore.Determinazione + "/" + Gioco.Giocatore.DeterminazioneMax;
+
+                //cambia colori
+                Determinazione_label.ForeColor = Color.Green;
+
+                if (Gioco.Giocatore.Determinazione > 0)
+                    Scavo_button.ForeColor = Color.Black;
+
+                //Se e' l'utima bevandaDet
+                if(Gioco.Giocatore.Inventario.BevandaDeterminazione == 0)
+                    BevandaDet_button.ForeColor = Color.Red;
+            }
 
         }
 
         private void AntiUbriachezza_button_Click(object sender, EventArgs e)
         {
-            Gioco.Giocatore.Inventario.DecAntiUbriachezza(); //consumi una bevanda anti ubriachezza
-            Gioco.Giocatore.DecUbriachezza(2); //diminuisce l'ubriachezza
+            if (Gioco.Giocatore.Inventario.AntiUbriachezza > 0)
+            {
+                Gioco.Giocatore.Inventario.DecAntiUbriachezza(); //consumi una bevanda anti ubriachezza
+                Gioco.Giocatore.DecUbriachezza(2); //diminuisce l'ubriachezza
 
-            //aggiorno il label
-            this.AntiUbriachezza_label.Text = "AntiUbriachezza rimasti: " + Gioco.Giocatore.Inventario.AntiUbriachezza;
-            this.Ubriachezza_label.Text = "Ubriachezza: " + Gioco.Giocatore.Ubriachezza + "/" + Gioco.Giocatore.UbriachezzaMax;
+                //aggiorno il label
+                this.AntiUbriachezza_label.Text = "AntiUbriachezza rimasti: " + Gioco.Giocatore.Inventario.AntiUbriachezza;
+                this.Ubriachezza_label.Text = "Ubriachezza: " + Gioco.Giocatore.Ubriachezza + "/" + Gioco.Giocatore.UbriachezzaMax;
+
+                //cambia colori
+                Ubriachezza_label.ForeColor = Color.Green;
+
+                //Se è l'utima anti ubriachezza
+                if(Gioco.Giocatore.Inventario.AntiUbriachezza == 0)
+                    AntiUbriachezza_button.ForeColor = Color.Red;
+            }
         }
 
         private void Scavo_button_Click(object sender, EventArgs e)
@@ -217,8 +283,17 @@ namespace KingOfPirates.GUI.MenuMissioni
                 //Puoi scavare solo se hai abbastanza determinazione
                 if (Gioco.Giocatore.Determinazione > 0)
                 {
+                    //riporto i label ai colori normali
+                    Ubriachezza_label.ForeColor = Color.Black;
+                    Determinazione_label.ForeColor = Color.Black;
+                    VitaNave_label.ForeColor = Color.Black;
+
                     Gioco.Giocatore.DecDeterminazione(3);
-                    this.Determinazione_label.Text = "Determinazione: " + Gioco.Giocatore.Determinazione + "/" + Gioco.Giocatore.DeterminazioneMax;
+                    //aggiorna label
+                    Determinazione_label.Text = "Determinazione: " + Gioco.Giocatore.Determinazione + "/" + Gioco.Giocatore.DeterminazioneMax;
+                    //cambia colore
+                    Determinazione_label.ForeColor = Color.Red;
+
 
                     Random rand = new Random();
 
@@ -232,7 +307,11 @@ namespace KingOfPirates.GUI.MenuMissioni
                         Gioco.Dominio.CassaRubini++; //ottieni un rubino
 
                         missione.Ranking.IncRubini(); //aumenta il conteggio per il ranking
-                        this.Rubini_label.Text = "Rubini: " + Gioco.Dominio.CassaRubini;
+
+                        //aggiorna label
+                        Rubini_label.Text = "Rubini: " + Gioco.Dominio.CassaRubini;
+                        //cambia colore
+                        Rubini_label.ForeColor = Color.Green;
                     }
 
                     //uso la matrice di inizializzazione per verificare se le celle sono già state scavate
