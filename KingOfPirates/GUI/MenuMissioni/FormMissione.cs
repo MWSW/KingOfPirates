@@ -49,11 +49,11 @@ namespace KingOfPirates.GUI.MenuMissioni
                 Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = Gioco.Giocatore.Immagine;
 
             //mostra nemici a schermo
-            foreach(NaveNemico n in missione.Nemici)
+            foreach (NaveNemico n in missione.Nemici)
             {
                 Griglia_pictureBox[n.Loc.X, n.Loc.Y].BackgroundImage = n.Immagine;
             }
-            
+
         }
 
         private void Update(Direzione dir)
@@ -80,7 +80,7 @@ namespace KingOfPirates.GUI.MenuMissioni
             //controlla vita nemici
             foreach (NaveNemico n in missione.Nemici)
             {
-               if(n.Nemico_Carte.IsGameOver)
+                if (n.Nemico_Carte.IsGameOver)
                     n.Affonda(missione);
             }
 
@@ -113,11 +113,12 @@ namespace KingOfPirates.GUI.MenuMissioni
                 }
 
                 GUI.MenuMissioni.FineMissione fineMissione = new GUI.MenuMissioni.FineMissione(missione.Ranking);
-                
+
                 fineMissione.Show();
                 //Gioco.nassauForm.Show();
                 this.Hide();
             }
+            UpdateComponenti();
         }
 
         private void Sopra_button_Click(object sender, EventArgs e)
@@ -172,10 +173,7 @@ namespace KingOfPirates.GUI.MenuMissioni
 
             Gioco.Giocatore.IncDeterminazione(5); //aumenta la determinazione
 
-            //aggiorno label
-            this.Rum_label.Text = "Rum rimasto: " + Gioco.Giocatore.Inventario.Rum;
-            this.Ubriachezza_label.Text = "Ubriachezza: " + Gioco.Giocatore.Ubriachezza + "/" + Gioco.Giocatore.UbriachezzaMax;
-            this.Determinazione_label.Text = "Determinazione: " + Gioco.Giocatore.Determinazione + "/" + Gioco.Giocatore.DeterminazioneMax;
+            UpdateComponenti();
         }
 
         private void AssLeg_button_Click(object sender, EventArgs e)
@@ -184,9 +182,7 @@ namespace KingOfPirates.GUI.MenuMissioni
 
             Gioco.Giocatore.IncPuntiVita(3); //aumenta punti vita
 
-            //aggiorno label
-            this.AssLeg_label.Text = "Assi rimaste: " + Gioco.Giocatore.Inventario.AssiLegno;
-            this.VitaNave_label.Text = "Punti Vita: " + Gioco.Giocatore.Stats.Hp + "/" + Gioco.Giocatore.Stats.HpMax;
+            UpdateComponenti();
         }
 
         private void BevandaDet_button_Click(object sender, EventArgs e)
@@ -194,10 +190,8 @@ namespace KingOfPirates.GUI.MenuMissioni
             Gioco.Giocatore.Inventario.DecBevandaDeterminazione(); //consumi una bevanda della determinazione
 
             Gioco.Giocatore.IncDeterminazione(2); //aumenta determinazione
-            //aggiorno il label
-            this.BevandaDet_label.Text = "Bevande Det Rimaste: " + Gioco.Giocatore.Inventario.BevandaDeterminazione;
-            this.Determinazione_label.Text = "Determinazione: " + Gioco.Giocatore.Determinazione + "/" + Gioco.Giocatore.DeterminazioneMax;
 
+            UpdateComponenti();
         }
 
         private void AntiUbriachezza_button_Click(object sender, EventArgs e)
@@ -205,9 +199,7 @@ namespace KingOfPirates.GUI.MenuMissioni
             Gioco.Giocatore.Inventario.DecAntiUbriachezza(); //consumi una bevanda anti ubriachezza
             Gioco.Giocatore.DecUbriachezza(2); //diminuisce l'ubriachezza
 
-            //aggiorno il label
-            this.AntiUbriachezza_label.Text = "AntiUbriachezza rimasti: " + Gioco.Giocatore.Inventario.AntiUbriachezza;
-            this.Ubriachezza_label.Text = "Ubriachezza: " + Gioco.Giocatore.Ubriachezza + "/" + Gioco.Giocatore.UbriachezzaMax;
+            UpdateComponenti();
         }
 
         private void Scavo_button_Click(object sender, EventArgs e)
@@ -242,6 +234,24 @@ namespace KingOfPirates.GUI.MenuMissioni
             }
         }
 
+        private void UpdateComponenti()
+        {
+            //aggiorno il label ubriachezza
+            AntiUbriachezza_label.Text = "AntiUbriachezza rimasti: " + Gioco.Giocatore.Inventario.AntiUbriachezza;
+            Ubriachezza_label.Text = "Ubriachezza: " + Gioco.Giocatore.Ubriachezza + "/" + Gioco.Giocatore.UbriachezzaMax;
+            //aggiorno il label determinazione
+            BevandaDet_label.Text = "Bevande Det Rimaste: " + Gioco.Giocatore.Inventario.BevandaDeterminazione;
+            Determinazione_label.Text = "Determinazione: " + Gioco.Giocatore.Determinazione + "/" + Gioco.Giocatore.DeterminazioneMax;
+            //aggiorno label assi legno
+            AssLeg_label.Text = "Assi rimaste: " + Gioco.Giocatore.Inventario.AssiLegno;
+            VitaNave_label.Text = "Punti Vita: " + Gioco.Giocatore.Stats.Hp + "/" + Gioco.Giocatore.Stats.HpMax;
+            //aggiorno label rum
+            Rum_label.Text = "Rum rimasto: " + Gioco.Giocatore.Inventario.Rum;
+            //aggiorna energia_label
+            EnergiaNave_label.Text = "Punti azione: " + Gioco.Giocatore.Stats.Pa + "/" + Gioco.Giocatore.Stats.PaMax;
+
+        }
+
         private void MenuMissioni_FormClosing(object sender, FormClosingEventArgs e)
         {
             e.Cancel = true;
@@ -251,9 +261,9 @@ namespace KingOfPirates.GUI.MenuMissioni
 
         private void OnVisibleChanged(object sender, EventArgs e)
         {
-            if(this.Visible)
+            if (this.Visible)
             {
-                if(Gioco.Giocatore.GiocatoreCarte.IsGameOver)
+                if (Gioco.Giocatore.GiocatoreCarte.IsGameOver)
                 {
                     Gioco.Giocatore.Restart();
                     missione.TurnoNemico(); //faccio muovere i nemici per mettere apposto le celle
@@ -277,7 +287,7 @@ namespace KingOfPirates.GUI.MenuMissioni
                             missione.Mappa.temp = Properties.Resources.cross;
                             break;
                     }
-                        
+
                 }
             }
         }
