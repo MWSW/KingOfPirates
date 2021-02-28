@@ -281,9 +281,15 @@
             <param name="immagine_">Assegna l'aspetto della nave per il FormMissione.</param>
             <param name="stats_">Statistiche per la nave.</param>
             <param name="loc_">Coordinate da usare nel FormMissione.</param>
-            <param name="ubriachezzaMax">Indicatore per l'equipaggio.</param>
+            <param name="ubriachezzaMax">Indicatore di ubriachezza per l'equipaggio.</param>
             <param name="determinazioneMax">Indicatore per le carte</param>
             <param name="giocatoreCarte_"> Player per lo scontro a carte.</param>
+        </member>
+        <member name="M:KingOfPirates.Missioni.Navi.NaveGiocatore.Attacca(KingOfPirates.Missioni.Navi.Nave)">
+            <summary>
+            Attacca la nave specificata.
+            </summary>
+            <param name="nave">Nave da attaccare.</param>
         </member>
         <member name="M:KingOfPirates.Missioni.Navi.NaveGiocatore.Background(KingOfPirates.Missioni.Missione)">
             <summary>
@@ -294,10 +300,10 @@
         </member>
         <member name="M:KingOfPirates.Missioni.Navi.NaveGiocatore.Movimento(KingOfPirates.Missioni.Missione,KingOfPirates.Missioni.Roba.Direzione)">
             <summary>
-            
+            Muove la nave del giocatore all'interno della missione.
             </summary>
-            <param name="missione"></param>
-            <param name="direzione"></param>
+            <param name="missione">Missione in cui muoversi.</param>
+            <param name="direzione">Direzione in cui muoversi.</param>
         </member>
         <member name="T:KingOfPirates.Missioni.Navi.NaveNemico">
             <summary>

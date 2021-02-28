@@ -50,7 +50,8 @@ namespace KingOfPirates.Missioni.Navi
             {
                 for (int j = -1; j <= 1; j++)
                 {
-                    if (Gioco.Giocatore.Loc.IsEqualTo(new Loc2D(i, j)));
+                    Loc2D tempLoc = new Loc2D(i + Loc.X, j + Loc.Y);
+                    if (Gioco.Giocatore.Loc.IsEqualTo(tempLoc));
                     {
                         Attacca(Gioco.Giocatore);
                         return;

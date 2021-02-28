@@ -49,10 +49,9 @@ namespace KingOfPirates.Missioni.Navi
         /// <param name="immagine_">Assegna l'aspetto della nave per il FormMissione.</param>
         /// <param name="stats_">Statistiche per la nave.</param>
         /// <param name="loc_">Coordinate da usare nel FormMissione.</param>
-        /// <param name="ubriachezzaMax">Indicatore per l'equipaggio.</param>
+        /// <param name="ubriachezzaMax">Indicatore di ubriachezza per l'equipaggio.</param>
         /// <param name="determinazioneMax">Indicatore per le carte</param>
         /// <param name="giocatoreCarte_"> Player per lo scontro a carte.</param>
-
         public NaveGiocatore(string nome_, Image immagine_, Stats stats_, Loc2D loc_, int ubriachezzaMax, int determinazioneMax, Player_carte giocatoreCarte_) : base(nome_, immagine_, stats_, loc_)
         {
             StaNavigando = false;
@@ -68,6 +67,10 @@ namespace KingOfPirates.Missioni.Navi
 
         }
 
+        /// <summary>
+        /// Attacca la nave specificata.
+        /// </summary>
+        /// <param name="nave">Nave da attaccare.</param>
         public override void Attacca(Nave nave)
         {
             throw new NotImplementedException();
@@ -97,10 +100,10 @@ namespace KingOfPirates.Missioni.Navi
         }
         
         /// <summary>
-        /// 
+        /// Muove la nave del giocatore all'interno della missione.
         /// </summary>
-        /// <param name="missione"></param>
-        /// <param name="direzione"></param>
+        /// <param name="missione">Missione in cui muoversi.</param>
+        /// <param name="direzione">Direzione in cui muoversi.</param>
         public override void Movimento(Missione missione, Direzione direzione) //(Virtual) indica che può essere esteso dai figli
         {
             // Se hai finito la Pa non puoi muoverti
