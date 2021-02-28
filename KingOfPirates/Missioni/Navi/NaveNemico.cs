@@ -46,18 +46,7 @@ namespace KingOfPirates.Missioni.Navi
         /// <param name="direzione">Direzione in cui effetuare il movimento</param>
         public override void Movimento(Missione missione, Direzione direzione)
         {
-            for (int i = -1; i <= 1; i++)
-            {
-                for (int j = -1; j <= 1; j++)
-                {
-                    Loc2D tempLoc = new Loc2D(i + Loc.X, j + Loc.Y);
-                    if (Gioco.Giocatore.Loc.IsEqualTo(tempLoc));
-                    {
-                        Attacca(Gioco.Giocatore);
-                        return;
-                    }
-                }
-            }
+            if (Attacca(missione, Gioco.Giocatore)) return;
             if (!IsGameOver)
             {
                 missione.Mappa.Griglia_pictureBox[patrol[patrolIndex].X, patrol[patrolIndex].Y].BackgroundImage = Properties.Resources.mare;
@@ -85,10 +74,27 @@ namespace KingOfPirates.Missioni.Navi
             }
         }
 
-        public override void Attacca(Nave nave)
+        /// <summary>
+        /// Attacca la nave specificata nella missione specificata.
+        /// </summary>
+        /// <param name="nave">Nave da attaccare.</param>
+        /// <param name="missione">Missione in cui attaccare</param>
+        public override bool Attacca(Missione missione, Nave nave)
         {
-            int remPunti = new Random().Next(Stats.MinHit, Stats.MaxHit);
-            nave.DecPuntiVita(remPunti);
+            for (int i = -dimTrigger + 1; i < dimTrigger; i++)
+            {
+                for (int j = -dimTrigger + 1; j < dimTrigger; j++)
+                {
+                    Loc2D tempLoc = new Loc2D(i + Loc.X, j + Loc.Y);
+                    if (tempLoc.IsEqualTo(Gioco.Giocatore.Loc))
+                    {
+                        int remPunti = new Random().Next(Stats.MinHit, Stats.MaxHit);
+                        nave.DecPuntiVita(remPunti);
+                        return true;
+                    }
+                }
+            }
+            return false;
         }
 
         public void Affonda(Missione missione)

@@ -59,6 +59,7 @@ namespace KingOfPirates.Missioni
         {
             for (int i = 0; i < Nemici.Length; i++)
             {
+                //Nemici[i].Attacca(this, Gioco.Giocatore);
                 Nemici[i].Movimento(this, Direzione.NO);
             }
         }

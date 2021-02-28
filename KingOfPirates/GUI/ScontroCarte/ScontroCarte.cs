@@ -560,7 +560,7 @@ namespace KingOfPirates.GUI.ScontroCarte
         {
             e.Cancel = true;
             this.Hide();
-            //Gioco.startMenu.Show();
+            Gioco.startMenu.Show();
         }
 
         private void OnVisibleChanged(object sender, EventArgs e)

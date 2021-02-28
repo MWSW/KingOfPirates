@@ -118,6 +118,7 @@ namespace KingOfPirates.GUI.MenuMissioni
                 //Gioco.nassauForm.Show();
                 this.Hide();
             }
+
             UpdateComponenti();
         }
 
@@ -232,6 +233,7 @@ namespace KingOfPirates.GUI.MenuMissioni
                     Scavo_button.Hide(); //la componente non serve più quindi la si nasconde
                 }
             }
+            UpdateComponenti();
         }
 
         private void UpdateComponenti()
@@ -244,11 +246,12 @@ namespace KingOfPirates.GUI.MenuMissioni
             Determinazione_label.Text = "Determinazione: " + Gioco.Giocatore.Determinazione + "/" + Gioco.Giocatore.DeterminazioneMax;
             //aggiorno label assi legno
             AssLeg_label.Text = "Assi rimaste: " + Gioco.Giocatore.Inventario.AssiLegno;
-            VitaNave_label.Text = "Punti Vita: " + Gioco.Giocatore.Stats.Hp + "/" + Gioco.Giocatore.Stats.HpMax;
             //aggiorno label rum
             Rum_label.Text = "Rum rimasto: " + Gioco.Giocatore.Inventario.Rum;
             //aggiorna energia_label
             EnergiaNave_label.Text = "Punti azione: " + Gioco.Giocatore.Stats.Pa + "/" + Gioco.Giocatore.Stats.PaMax;
+            // aggiorna label vita
+            VitaNave_label.Text = "Punti Vita: " + Gioco.Giocatore.Stats.Hp + "/" + Gioco.Giocatore.Stats.HpMax;
 
         }
 

@@ -68,15 +68,6 @@ namespace KingOfPirates.Missioni.Navi
         }
 
         /// <summary>
-        /// Attacca la nave specificata.
-        /// </summary>
-        /// <param name="nave">Nave da attaccare.</param>
-        public override void Attacca(Nave nave)
-        {
-            throw new NotImplementedException();
-        }
-
-        /// <summary>
         /// La funzione fa muovere la nave data la missione in cui effetuare il movimento e la direzione in cui muoversi.
         /// </summary>
         /// <param name="missione">Per permettere il movimento all'interno della mappa della missione.</param>
@@ -224,6 +215,16 @@ namespace KingOfPirates.Missioni.Navi
 
             if (Determinazione < 0)
                 Determinazione = 0;
+        }
+
+        /// <summary>
+        /// Attacca la nave specificata nella missione specificata.
+        /// </summary>
+        /// <param name="nave">Nave da attaccare.</param>
+        /// <param name="missione">Missione in cui attaccare</param>
+        public override bool Attacca(Missione missione, Nave nave)
+        {
+            throw new NotImplementedException();
         }
 
         //TODO: public void UsaOggetto(Oggetto ob){}

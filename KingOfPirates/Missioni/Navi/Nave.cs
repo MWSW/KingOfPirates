@@ -59,7 +59,7 @@ namespace KingOfPirates.Missioni.Navi
         /// Attacca la neva specificata con danno random.
         /// </summary>
         /// <param name="nave">Nave da attaccare</param>
-        public abstract void Attacca(Nave nave);
+        public abstract bool Attacca(Missione missione, Nave nave);
 
         /// <summary>
         /// La funzione fa muovere la nave data la missione in cui effetuare il movimento e la direzione in cui muoversi.
