@@ -235,6 +235,7 @@
     <None Include="Resources\SpazioVuoto.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\unchecked.png" />
     <None Include="Resources\Shop_.png" />
     <None Include="Resources\Shop.png" />
     <None Include="Resources\vita_buff.png" />
@@ -255,6 +256,7 @@
     <Content Include="OST\Rude Buster-HQ.wav" />
     <None Include="Resources\mute.png" />
     <None Include="Resources\play.png" />
+    <None Include="Resources\adesivi-vecchia-mappa-del-tesoro.jpg.jpg" />
     <Content Include="Resources\ant.jpg" />
     <Content Include="Resources\assLeg.png" />
     <Content Include="Resources\back_arrow.jpg" />
@@ -264,6 +266,8 @@
     <None Include="Resources\GerriInn.jpg" />
     <None Include="Resources\GerriInn.png" />
     <None Include="Resources\GerriInn1.png" />
+    <None Include="Resources\checked.png" />
+    <None Include="Resources\emptyCheckBox.png" />
     <Content Include="Resources\HUD - interfaccia\box_5_mosse.png" />
     <Content Include="Resources\HUD - interfaccia\box_5_mosse_blocchi.png" />
     <Content Include="Resources\HUD - interfaccia\box_domanda.png" />
@@ -317,6 +321,7 @@
     <Content Include="Resources\isole_default\isola3.png" />
     <Content Include="Resources\isole_default\isola4.png" />
     <Content Include="Resources\isole_default\isola5.png" />
+    <None Include="Resources\mappa-del-tesoro.jpg" />
     <Content Include="Resources\mare.png" />
     <None Include="Resources\montagna.png" />
     <None Include="Resources\menuBackImg.jpg" />

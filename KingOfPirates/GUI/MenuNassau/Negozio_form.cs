@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using KingOfPirates.Cartina;
+using KingOfPirates.Mappa;
 using KingOfPirates.Missioni.Navi;
 using KingOfPirates.Missioni.ScontroCarte.Opponenti;
 
@@ -82,7 +82,7 @@ namespace KingOfPirates.GUI.MenuNassau
         private void Seleziona(int indice)
         {
           
-            //Negozio_CarteInfo_Img.BackgroundImage = /*getCarta(indice).[...]*/;
+            //Negozio_CarteInfo_Img.BackgroundImage = getCarta(indice).[...];
             //Negozio_CarteAtk_Label.Text = "ATK: " + /*[...]*/;
             //Negozio_CarteDef_Label.Text = "DEF: " + /*[...]*/;
             //Negozio_CarteElemento_Label.Text = "Elemento: " + /*[...]*/;

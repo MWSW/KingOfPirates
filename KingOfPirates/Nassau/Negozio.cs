@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using KingOfPirates.Cartina;
+using KingOfPirates.Mappa;
 using KingOfPirates.Missioni.Navi;
 using System.Drawing; //Per le Bitmap
 

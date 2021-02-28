@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using KingOfPirates.Cartina;
+using KingOfPirates.Mappa;
 using KingOfPirates.Missioni.Navi;
 using KingOfPirates.Missioni.ScontroCarte.Opponenti;
 
@@ -35,7 +35,7 @@ namespace KingOfPirates.GUI.MenuNassau
             InitializeComponent();
             negozio = new Negozio_form(gestoreDomino, Gioco.Giocatore, listaCarte);
             locanda = new Locanda_form(gestoreDomino);
-            porto = new Porto_form(gestoreDomino, Gioco.Giocatore);
+            porto = new Porto_form();
         }
         
         private void NegozioImgButton_Click(object sender, EventArgs e)

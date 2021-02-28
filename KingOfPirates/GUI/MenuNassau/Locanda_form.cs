@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using KingOfPirates.Nassau;
-using KingOfPirates.Cartina;
+using KingOfPirates.Mappa;
 
 namespace KingOfPirates.GUI.MenuNassau
 {

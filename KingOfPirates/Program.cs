@@ -13,7 +13,7 @@ using KingOfPirates.GUI.MenuPrincipale;
 using KingOfPirates.GUI.MenuNassau;
 using KingOfPirates.GUI.ScontroCarte;
 using KingOfPirates.GUI.MenuMissioni;
-using KingOfPirates.Cartina;
+using KingOfPirates.Mappa;
 using KingOfPirates.Missioni.ScontroCarte.Carte;
 
 namespace KingOfPirates
@@ -45,7 +45,7 @@ namespace KingOfPirates
         /// Proprietà rappresentante il giocatore
         /// </summary>
         public static KingOfPirates.Missioni.Navi.NaveGiocatore Giocatore { get; set; }
-        public static KingOfPirates.Cartina.GestioneDominio Dominio { get; set; }
+        public static KingOfPirates.Mappa.GestioneDominio Dominio { get; set; }
         public static Missione TestMissione { get; set; }
 
         public static GUI.MenuPrincipale.StartMenu startMenu;

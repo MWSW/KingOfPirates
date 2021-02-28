@@ -19,7 +19,7 @@ namespace KingOfPirates.GUI.MenuNassau
     {
 
         private Porto porto = new Porto();
-        private Cartina cartina = new Cartina();
+        private Cartina Mappa = new Cartina();
 
         int indiceMazzo;
         bool[] isSelected;
@@ -85,17 +85,17 @@ namespace KingOfPirates.GUI.MenuNassau
 
         private void Porto_Missione1_Button_Click(object sender, EventArgs e)
         {
-            cartina.CurrentMissionIndex = 0;
+            Mappa.CurrentMissionIndex = 0;
         }
 
         private void Porto_Missione2_Button_Click(object sender, EventArgs e)
         {
-            cartina.CurrentMissionIndex = 1;
+            Mappa.CurrentMissionIndex = 1;
         }
 
         private void Porto_Missione3_Button_Click(object sender, EventArgs e)
         {
-            cartina.CurrentMissionIndex = 2;
+            Mappa.CurrentMissionIndex = 2;
         }
 
 
