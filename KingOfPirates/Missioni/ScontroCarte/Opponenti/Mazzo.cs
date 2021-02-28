@@ -11,11 +11,15 @@ namespace KingOfPirates.Missioni.ScontroCarte.Opponenti
     {
         Carta[] carte;
         bool[] disponibile;
+
+        public int CarteMorte { get; set; }
             
         public Mazzo(Carta[] carte_)
         {
             carte = carte_;
             disponibile = new bool[carte.Length];
+
+            CarteMorte = 0; //contatore parte da zero
 
             for (int i = 0; i < disponibile.Length; i++)
             {
@@ -38,6 +42,14 @@ namespace KingOfPirates.Missioni.ScontroCarte.Opponenti
         public void RiponiCarta(int indice)
         {
             disponibile[indice] = true;
+        }
+
+        public void MorteCarta(int indice)
+        {
+            //sostituisci posizione con carta morta
+            carte[indice] = ListaCarte.GetMorto();
+
+            CarteMorte++; //incrementa il contatore
         }
 
         public bool CartaDisponibile(int indice)

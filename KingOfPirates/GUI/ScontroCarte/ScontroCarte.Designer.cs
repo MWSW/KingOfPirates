@@ -692,7 +692,7 @@
             // img_carta3
             // 
             this.img_carta3.BackColor = System.Drawing.Color.White;
-            this.img_carta3.BackgroundImage = global::KingOfPirates.Properties.Resources.pun_pun1;
+            this.img_carta3.BackgroundImage = global::KingOfPirates.Properties.Resources.cross;
             this.img_carta3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.img_carta3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.img_carta3.Image = global::KingOfPirates.Properties.Resources.cartaVuota;

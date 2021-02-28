@@ -22,6 +22,8 @@ namespace KingOfPirates.GUI.MenuMissioni
             Rubini_label.Text = "RUBINI: " + ranking.Rubini;
             NaviAffondate_label.Text = "NAVI AFFONDATE: " + ranking.NaviAffondate;
 
+            CartePerse_label.Text = "CARTE PERSE: " + Gioco.Giocatore.GiocatoreCarte.Mazzo.CarteMorte;
+
             //Calcolo del rank
 
             int score = 100;
@@ -31,6 +33,8 @@ namespace KingOfPirates.GUI.MenuMissioni
 
             score += ranking.Rubini * 5;
             score += ranking.NaviAffondate * 30;
+
+            score -= Gioco.Giocatore.GiocatoreCarte.Mazzo.CarteMorte*2;
 
             if (score >= 90)
                 Rank_label.Text = "S";

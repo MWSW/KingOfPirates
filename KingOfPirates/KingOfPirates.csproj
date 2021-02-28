@@ -143,6 +143,7 @@
     <Compile Include="Missioni\ScontroCarte\Carte\CarteEffetto\CartaCuraEstesa.cs" />
     <Compile Include="Missioni\ScontroCarte\Carte\CarteEffetto\CartaDannoContinuo.cs" />
     <Compile Include="Missioni\ScontroCarte\Carte\CarteEffetto\CartaDebuff.cs" />
+    <Compile Include="Missioni\ScontroCarte\Carte\CarteEffetto\CartaMorto.cs" />
     <Compile Include="Missioni\ScontroCarte\Carte\CarteEffetto\CartaResa.cs" />
     <Compile Include="Missioni\ScontroCarte\Carte\CarteEffetto\CartaTurniExtra.cs" />
     <Compile Include="Missioni\ScontroCarte\Opponenti\ListaCarte.cs" />

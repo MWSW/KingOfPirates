@@ -294,6 +294,7 @@ namespace KingOfPirates.GUI.ScontroCarte
                         cartaTua.DimDeterminazione(1); //perdi un punto
                         det0.Text = cartaTua.Determinazione.ToString(); //aggiorni la scritta
                     }
+
                 }
                 else
                 {
@@ -439,7 +440,21 @@ namespace KingOfPirates.GUI.ScontroCarte
                 MessageBox.Show("Hai perso lo scontro.");
                 player.GameOver();
             }
-                
+
+            //controlla determinazione
+            if (player.CarteInMano[cartaSelezionata].Determinazione <= 0 &&
+                player.CarteInMano[cartaSelezionata].Tipo != "morto") //ovviamente la carta non deve essere già morta
+            {
+                //la carta viene rimpiazzata con la carta morto
+                int indice = player.CarteInMano[cartaSelezionata].Indice; //salvo il vecchio indice
+                player.CarteInMano[cartaSelezionata] = ListaCarte.GetMorto();
+
+                player.Mazzo.MorteCarta(cartaSelezionata); //uccide la carta
+
+                player.CarteInMano[cartaSelezionata].Visualizza(img_carta0, nomeCarta0, det0, att0, def0, elem0);
+
+            }
+
         }
 
         private void bt_nascondi_Click(object sender, EventArgs e)

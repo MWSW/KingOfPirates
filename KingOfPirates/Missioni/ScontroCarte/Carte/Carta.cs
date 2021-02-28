@@ -45,7 +45,7 @@ namespace KingOfPirates.Missioni.ScontroCarte.Carte
 
             img_carta.BackgroundImage = immagine;
             nomeCarta.Text = nome;
-            det.Text = determinazione.ToString();
+            det.Text = curDet.ToString();
         }
 
         public void Nascondi(PictureBox img_carta, Label nomeCarta, Label det)

@@ -37,6 +37,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.Rank_label = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.CartePerse_label = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -48,7 +49,7 @@
             this.Title_label.Font = new System.Drawing.Font("Stencil", 25.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Title_label.Location = new System.Drawing.Point(381, 25);
             this.Title_label.Name = "Title_label";
-            this.Title_label.Size = new System.Drawing.Size(509, 54);
+            this.Title_label.Size = new System.Drawing.Size(499, 53);
             this.Title_label.TabIndex = 0;
             this.Title_label.Text = "Missione completata";
             // 
@@ -56,9 +57,9 @@
             // 
             this.Turni_label.AutoSize = true;
             this.Turni_label.Font = new System.Drawing.Font("Stencil", 25.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Turni_label.Location = new System.Drawing.Point(41, 152);
+            this.Turni_label.Location = new System.Drawing.Point(41, 110);
             this.Turni_label.Name = "Turni_label";
-            this.Turni_label.Size = new System.Drawing.Size(171, 52);
+            this.Turni_label.Size = new System.Drawing.Size(167, 51);
             this.Turni_label.TabIndex = 1;
             this.Turni_label.Text = "Turni:";
             // 
@@ -66,9 +67,9 @@
             // 
             this.GameOver_label.AutoSize = true;
             this.GameOver_label.Font = new System.Drawing.Font("Stencil", 25.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GameOver_label.Location = new System.Drawing.Point(41, 249);
+            this.GameOver_label.Location = new System.Drawing.Point(41, 207);
             this.GameOver_label.Name = "GameOver_label";
-            this.GameOver_label.Size = new System.Drawing.Size(263, 52);
+            this.GameOver_label.Size = new System.Drawing.Size(257, 51);
             this.GameOver_label.TabIndex = 2;
             this.GameOver_label.Text = "GameOver:";
             // 
@@ -76,9 +77,9 @@
             // 
             this.Rubini_label.AutoSize = true;
             this.Rubini_label.Font = new System.Drawing.Font("Stencil", 25.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Rubini_label.Location = new System.Drawing.Point(41, 373);
+            this.Rubini_label.Location = new System.Drawing.Point(41, 325);
             this.Rubini_label.Name = "Rubini_label";
-            this.Rubini_label.Size = new System.Drawing.Size(191, 52);
+            this.Rubini_label.Size = new System.Drawing.Size(187, 51);
             this.Rubini_label.TabIndex = 3;
             this.Rubini_label.Text = "Rubini:";
             // 
@@ -86,9 +87,9 @@
             // 
             this.NaviAffondate_label.AutoSize = true;
             this.NaviAffondate_label.Font = new System.Drawing.Font("Stencil", 25.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NaviAffondate_label.Location = new System.Drawing.Point(41, 480);
+            this.NaviAffondate_label.Location = new System.Drawing.Point(41, 432);
             this.NaviAffondate_label.Name = "NaviAffondate_label";
-            this.NaviAffondate_label.Size = new System.Drawing.Size(392, 52);
+            this.NaviAffondate_label.Size = new System.Drawing.Size(383, 51);
             this.NaviAffondate_label.TabIndex = 4;
             this.NaviAffondate_label.Text = "Navi affondate:";
             // 
@@ -109,7 +110,7 @@
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.label4.Location = new System.Drawing.Point(942, 558);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(143, 52);
+            this.label4.Size = new System.Drawing.Size(140, 51);
             this.label4.TabIndex = 6;
             this.label4.Text = "RANK";
             // 
@@ -137,11 +138,22 @@
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.OnClick);
             // 
+            // CartePerse_label
+            // 
+            this.CartePerse_label.AutoSize = true;
+            this.CartePerse_label.Font = new System.Drawing.Font("Stencil", 25.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CartePerse_label.Location = new System.Drawing.Point(41, 523);
+            this.CartePerse_label.Name = "CartePerse_label";
+            this.CartePerse_label.Size = new System.Drawing.Size(311, 51);
+            this.CartePerse_label.TabIndex = 9;
+            this.CartePerse_label.Text = "Carte perse:";
+            // 
             // FineMissione
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1262, 673);
+            this.Controls.Add(this.CartePerse_label);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.Rank_label);
             this.Controls.Add(this.label4);
@@ -171,5 +183,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label Rank_label;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label CartePerse_label;
     }
 }
