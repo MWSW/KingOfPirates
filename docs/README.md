@@ -13,6 +13,7 @@ Gioco sui pirati fatto con i form di windows come compito per scuola
 
 ### File importanti:
 - [Wiki](https://github.com/chichibio-savoiardi/KingOfPirates/wiki)
+- [/docs/html](https://github.com/chichibio-savoiardi/KingOfPirates/tree/master/docs/html): Documentazione generata da Doxygen
 - [/docs/GiocoPirati.pdf](https://github.com/chichibio-savoiardi/KingOfPirates/blob/master/docs/GiocoPirati.pdf): PDF con le consegne.
 - [/docs/KingOfPirates.xml](https://github.com/chichibio-savoiardi/KingOfPirates/blob/master/docs/KingOfPirates.xml): da aprire con draw.io, contiene tutti i grafici creati in progettazione tra cui l'UML ([Viewer](https://viewer.diagrams.net/?target=self&highlight=0000ff&layers=1&nav=1&title=KingOfPirates.xml#Uhttps%3A%2F%2Fraw.githubusercontent.com%2Fchichibio-savoiardi%2FKingOfPirates%2Fmaster%2Fdocs%2FKingOfPirates.xml)).
 - [/docs/Pre-Meccaniche.pdf](https://github.com/chichibio-savoiardi/KingOfPirates/blob/master/docs/Pre-meccaniche.pdf): Disegni in preparazione alla creazione delle meccaniche di gioco
@@ -21,6 +22,9 @@ Gioco sui pirati fatto con i form di windows come compito per scuola
 ## Installazione
 
 Apri con Visual Studio 2019 e compila la soluzione, poi avvia l'.exe che dovrebbe essere in `~/KingOfPirates/bin/Debug` o `~/KingOfPirates/bin/Release`. In alternativa si può avviare la soluzione direttamente da Visual Studio
+
+Oppure:  
+Entra nella cartella del progetto che hai clonato, apri il terminale di sviluppo di Visual Studio e scrivi `msbuild` per compilare il progetto, l'eseguibile sara nella cartella /bin
 
 ## Crediti
 
