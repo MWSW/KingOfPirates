@@ -140,18 +140,20 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Porto_Selected19_PB.BackgroundImage = global::KingOfPirates.Properties.Resources.emptyCheckBox;
             this.Porto_Selected19_PB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Porto_Selected19_PB.Location = new System.Drawing.Point(123, 193);
+            this.Porto_Selected19_PB.Location = new System.Drawing.Point(164, 238);
+            this.Porto_Selected19_PB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Porto_Selected19_PB.Name = "Porto_Selected19_PB";
-            this.Porto_Selected19_PB.Size = new System.Drawing.Size(48, 48);
+            this.Porto_Selected19_PB.Size = new System.Drawing.Size(64, 59);
             this.Porto_Selected19_PB.TabIndex = 4;
             this.Porto_Selected19_PB.TabStop = false;
             // 
             // Porto_Salpa_Button
             // 
             this.Porto_Salpa_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Porto_Salpa_Button.Location = new System.Drawing.Point(51, 510);
+            this.Porto_Salpa_Button.Location = new System.Drawing.Point(68, 628);
+            this.Porto_Salpa_Button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Porto_Salpa_Button.Name = "Porto_Salpa_Button";
-            this.Porto_Salpa_Button.Size = new System.Drawing.Size(556, 117);
+            this.Porto_Salpa_Button.Size = new System.Drawing.Size(741, 144);
             this.Porto_Salpa_Button.TabIndex = 14;
             this.Porto_Salpa_Button.Text = "S A L P A !";
             this.Porto_Salpa_Button.UseVisualStyleBackColor = true;
@@ -160,9 +162,10 @@ namespace KingOfPirates.GUI.MenuNassau
             // Porto_UpVela_Button
             // 
             this.Porto_UpVela_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Porto_UpVela_Button.Location = new System.Drawing.Point(676, 337);
+            this.Porto_UpVela_Button.Location = new System.Drawing.Point(901, 415);
+            this.Porto_UpVela_Button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Porto_UpVela_Button.Name = "Porto_UpVela_Button";
-            this.Porto_UpVela_Button.Size = new System.Drawing.Size(351, 79);
+            this.Porto_UpVela_Button.Size = new System.Drawing.Size(468, 97);
             this.Porto_UpVela_Button.TabIndex = 15;
             this.Porto_UpVela_Button.Text = "Migliora le Vele";
             this.Porto_UpVela_Button.UseVisualStyleBackColor = true;
@@ -171,9 +174,10 @@ namespace KingOfPirates.GUI.MenuNassau
             // Porto_UpScafo_Button
             // 
             this.Porto_UpScafo_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Porto_UpScafo_Button.Location = new System.Drawing.Point(676, 201);
+            this.Porto_UpScafo_Button.Location = new System.Drawing.Point(901, 247);
+            this.Porto_UpScafo_Button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Porto_UpScafo_Button.Name = "Porto_UpScafo_Button";
-            this.Porto_UpScafo_Button.Size = new System.Drawing.Size(351, 80);
+            this.Porto_UpScafo_Button.Size = new System.Drawing.Size(468, 98);
             this.Porto_UpScafo_Button.TabIndex = 17;
             this.Porto_UpScafo_Button.Text = "Migliora lo Scafo";
             this.Porto_UpScafo_Button.UseVisualStyleBackColor = true;
@@ -182,9 +186,10 @@ namespace KingOfPirates.GUI.MenuNassau
             // Porto_CanPrezzo_Label
             // 
             this.Porto_CanPrezzo_Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Porto_CanPrezzo_Label.Location = new System.Drawing.Point(1033, 71);
+            this.Porto_CanPrezzo_Label.Location = new System.Drawing.Point(1377, 87);
+            this.Porto_CanPrezzo_Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Porto_CanPrezzo_Label.Name = "Porto_CanPrezzo_Label";
-            this.Porto_CanPrezzo_Label.Size = new System.Drawing.Size(147, 79);
+            this.Porto_CanPrezzo_Label.Size = new System.Drawing.Size(195, 97);
             this.Porto_CanPrezzo_Label.TabIndex = 18;
             this.Porto_CanPrezzo_Label.Text = "- $";
             this.Porto_CanPrezzo_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -192,9 +197,10 @@ namespace KingOfPirates.GUI.MenuNassau
             // Porto_ScaPrezzo_Label
             // 
             this.Porto_ScaPrezzo_Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Porto_ScaPrezzo_Label.Location = new System.Drawing.Point(1033, 202);
+            this.Porto_ScaPrezzo_Label.Location = new System.Drawing.Point(1377, 249);
+            this.Porto_ScaPrezzo_Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Porto_ScaPrezzo_Label.Name = "Porto_ScaPrezzo_Label";
-            this.Porto_ScaPrezzo_Label.Size = new System.Drawing.Size(147, 79);
+            this.Porto_ScaPrezzo_Label.Size = new System.Drawing.Size(195, 97);
             this.Porto_ScaPrezzo_Label.TabIndex = 19;
             this.Porto_ScaPrezzo_Label.Text = "- $";
             this.Porto_ScaPrezzo_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -202,9 +208,10 @@ namespace KingOfPirates.GUI.MenuNassau
             // Porto_VelPrezzo_Label
             // 
             this.Porto_VelPrezzo_Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Porto_VelPrezzo_Label.Location = new System.Drawing.Point(1033, 337);
+            this.Porto_VelPrezzo_Label.Location = new System.Drawing.Point(1377, 415);
+            this.Porto_VelPrezzo_Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Porto_VelPrezzo_Label.Name = "Porto_VelPrezzo_Label";
-            this.Porto_VelPrezzo_Label.Size = new System.Drawing.Size(147, 79);
+            this.Porto_VelPrezzo_Label.Size = new System.Drawing.Size(195, 97);
             this.Porto_VelPrezzo_Label.TabIndex = 20;
             this.Porto_VelPrezzo_Label.Text = "- $";
             this.Porto_VelPrezzo_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -214,9 +221,10 @@ namespace KingOfPirates.GUI.MenuNassau
             this.Porto_UpCannoni_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Porto_UpCannoni_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Porto_UpCannoni_Button.ForeColor = System.Drawing.Color.Black;
-            this.Porto_UpCannoni_Button.Location = new System.Drawing.Point(676, 71);
+            this.Porto_UpCannoni_Button.Location = new System.Drawing.Point(901, 87);
+            this.Porto_UpCannoni_Button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Porto_UpCannoni_Button.Name = "Porto_UpCannoni_Button";
-            this.Porto_UpCannoni_Button.Size = new System.Drawing.Size(351, 79);
+            this.Porto_UpCannoni_Button.Size = new System.Drawing.Size(468, 97);
             this.Porto_UpCannoni_Button.TabIndex = 16;
             this.Porto_UpCannoni_Button.Text = "Migliora i Cannoni";
             this.Porto_UpCannoni_Button.UseVisualStyleBackColor = true;
@@ -225,9 +233,10 @@ namespace KingOfPirates.GUI.MenuNassau
             // Porto_Fondi_Label
             // 
             this.Porto_Fondi_Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Porto_Fondi_Label.Location = new System.Drawing.Point(676, 535);
+            this.Porto_Fondi_Label.Location = new System.Drawing.Point(901, 658);
+            this.Porto_Fondi_Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Porto_Fondi_Label.Name = "Porto_Fondi_Label";
-            this.Porto_Fondi_Label.Size = new System.Drawing.Size(504, 79);
+            this.Porto_Fondi_Label.Size = new System.Drawing.Size(671, 97);
             this.Porto_Fondi_Label.TabIndex = 21;
             this.Porto_Fondi_Label.Text = "- $";
             this.Porto_Fondi_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -244,8 +253,9 @@ namespace KingOfPirates.GUI.MenuNassau
             this.Porto_Missioni_Panel.Controls.Add(this.Porto_Salpa2_Button);
             this.Porto_Missioni_Panel.Controls.Add(this.Porto_MissioniBack_Button);
             this.Porto_Missioni_Panel.Location = new System.Drawing.Point(0, 0);
+            this.Porto_Missioni_Panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Porto_Missioni_Panel.Name = "Porto_Missioni_Panel";
-            this.Porto_Missioni_Panel.Size = new System.Drawing.Size(1262, 681);
+            this.Porto_Missioni_Panel.Size = new System.Drawing.Size(1683, 838);
             this.Porto_Missioni_Panel.TabIndex = 22;
             this.Porto_Missioni_Panel.Visible = false;
             // 
@@ -259,8 +269,9 @@ namespace KingOfPirates.GUI.MenuNassau
             this.Porto_SelezioneCarte_Panel.Controls.Add(this.Porto_Salpa3_Button);
             this.Porto_SelezioneCarte_Panel.Controls.Add(this.Porto_SelCarBack_Button);
             this.Porto_SelezioneCarte_Panel.Location = new System.Drawing.Point(0, 0);
+            this.Porto_SelezioneCarte_Panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Porto_SelezioneCarte_Panel.Name = "Porto_SelezioneCarte_Panel";
-            this.Porto_SelezioneCarte_Panel.Size = new System.Drawing.Size(1262, 681);
+            this.Porto_SelezioneCarte_Panel.Size = new System.Drawing.Size(1683, 838);
             this.Porto_SelezioneCarte_Panel.TabIndex = 23;
             this.Porto_SelezioneCarte_Panel.Visible = false;
             // 
@@ -270,9 +281,10 @@ namespace KingOfPirates.GUI.MenuNassau
             this.Porto_SelCarNum_Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Porto_SelCarNum_Label.Font = new System.Drawing.Font("Ink Free", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Porto_SelCarNum_Label.ForeColor = System.Drawing.Color.Black;
-            this.Porto_SelCarNum_Label.Location = new System.Drawing.Point(751, 535);
+            this.Porto_SelCarNum_Label.Location = new System.Drawing.Point(1001, 658);
+            this.Porto_SelCarNum_Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Porto_SelCarNum_Label.Name = "Porto_SelCarNum_Label";
-            this.Porto_SelCarNum_Label.Size = new System.Drawing.Size(247, 92);
+            this.Porto_SelCarNum_Label.Size = new System.Drawing.Size(329, 113);
             this.Porto_SelCarNum_Label.TabIndex = 18;
             this.Porto_SelCarNum_Label.Text = "0/10";
             this.Porto_SelCarNum_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -301,17 +313,19 @@ namespace KingOfPirates.GUI.MenuNassau
             this.flowLayoutPanel1.Controls.Add(this.Locanda_Carta18_Panel);
             this.flowLayoutPanel1.Controls.Add(this.Locanda_Carta19_Panel);
             this.flowLayoutPanel1.Controls.Add(this.Locanda_Carta20_Panel);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(182, 172);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(243, 212);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(904, 332);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1205, 408);
             this.flowLayoutPanel1.TabIndex = 17;
             // 
             // Locanda_Carta1_Panel
             // 
             this.Locanda_Carta1_Panel.Controls.Add(this.Porto_Selected1_PB);
-            this.Locanda_Carta1_Panel.Location = new System.Drawing.Point(3, 3);
+            this.Locanda_Carta1_Panel.Location = new System.Drawing.Point(4, 4);
+            this.Locanda_Carta1_Panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Locanda_Carta1_Panel.Name = "Locanda_Carta1_Panel";
-            this.Locanda_Carta1_Panel.Size = new System.Drawing.Size(171, 241);
+            this.Locanda_Carta1_Panel.Size = new System.Drawing.Size(228, 297);
             this.Locanda_Carta1_Panel.TabIndex = 0;
             this.Locanda_Carta1_Panel.Click += new System.EventHandler(this.Locanda_Carta1_Panel_Click);
             // 
@@ -319,18 +333,20 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Porto_Selected1_PB.BackgroundImage = global::KingOfPirates.Properties.Resources.emptyCheckBox;
             this.Porto_Selected1_PB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Porto_Selected1_PB.Location = new System.Drawing.Point(123, 193);
+            this.Porto_Selected1_PB.Location = new System.Drawing.Point(164, 238);
+            this.Porto_Selected1_PB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Porto_Selected1_PB.Name = "Porto_Selected1_PB";
-            this.Porto_Selected1_PB.Size = new System.Drawing.Size(48, 48);
+            this.Porto_Selected1_PB.Size = new System.Drawing.Size(64, 59);
             this.Porto_Selected1_PB.TabIndex = 0;
             this.Porto_Selected1_PB.TabStop = false;
             // 
             // Locanda_Carta2_Panel
             // 
             this.Locanda_Carta2_Panel.Controls.Add(this.Porto_Selected2_PB);
-            this.Locanda_Carta2_Panel.Location = new System.Drawing.Point(180, 3);
+            this.Locanda_Carta2_Panel.Location = new System.Drawing.Point(240, 4);
+            this.Locanda_Carta2_Panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Locanda_Carta2_Panel.Name = "Locanda_Carta2_Panel";
-            this.Locanda_Carta2_Panel.Size = new System.Drawing.Size(171, 241);
+            this.Locanda_Carta2_Panel.Size = new System.Drawing.Size(228, 297);
             this.Locanda_Carta2_Panel.TabIndex = 14;
             this.Locanda_Carta2_Panel.Click += new System.EventHandler(this.Locanda_Carta2_Panel_Click);
             // 
@@ -338,18 +354,20 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Porto_Selected2_PB.BackgroundImage = global::KingOfPirates.Properties.Resources.emptyCheckBox;
             this.Porto_Selected2_PB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Porto_Selected2_PB.Location = new System.Drawing.Point(123, 193);
+            this.Porto_Selected2_PB.Location = new System.Drawing.Point(164, 238);
+            this.Porto_Selected2_PB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Porto_Selected2_PB.Name = "Porto_Selected2_PB";
-            this.Porto_Selected2_PB.Size = new System.Drawing.Size(48, 48);
+            this.Porto_Selected2_PB.Size = new System.Drawing.Size(64, 59);
             this.Porto_Selected2_PB.TabIndex = 1;
             this.Porto_Selected2_PB.TabStop = false;
             // 
             // Locanda_Carta3_Panel
             // 
             this.Locanda_Carta3_Panel.Controls.Add(this.Porto_Selected3_PB);
-            this.Locanda_Carta3_Panel.Location = new System.Drawing.Point(357, 3);
+            this.Locanda_Carta3_Panel.Location = new System.Drawing.Point(476, 4);
+            this.Locanda_Carta3_Panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Locanda_Carta3_Panel.Name = "Locanda_Carta3_Panel";
-            this.Locanda_Carta3_Panel.Size = new System.Drawing.Size(171, 241);
+            this.Locanda_Carta3_Panel.Size = new System.Drawing.Size(228, 297);
             this.Locanda_Carta3_Panel.TabIndex = 14;
             this.Locanda_Carta3_Panel.Click += new System.EventHandler(this.Locanda_Carta3_Panel_Click);
             // 
@@ -357,18 +375,20 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Porto_Selected3_PB.BackgroundImage = global::KingOfPirates.Properties.Resources.emptyCheckBox;
             this.Porto_Selected3_PB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Porto_Selected3_PB.Location = new System.Drawing.Point(123, 193);
+            this.Porto_Selected3_PB.Location = new System.Drawing.Point(164, 238);
+            this.Porto_Selected3_PB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Porto_Selected3_PB.Name = "Porto_Selected3_PB";
-            this.Porto_Selected3_PB.Size = new System.Drawing.Size(48, 48);
+            this.Porto_Selected3_PB.Size = new System.Drawing.Size(64, 59);
             this.Porto_Selected3_PB.TabIndex = 2;
             this.Porto_Selected3_PB.TabStop = false;
             // 
             // Locanda_Carta4_Panel
             // 
             this.Locanda_Carta4_Panel.Controls.Add(this.Porto_Selected4_PB);
-            this.Locanda_Carta4_Panel.Location = new System.Drawing.Point(534, 3);
+            this.Locanda_Carta4_Panel.Location = new System.Drawing.Point(712, 4);
+            this.Locanda_Carta4_Panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Locanda_Carta4_Panel.Name = "Locanda_Carta4_Panel";
-            this.Locanda_Carta4_Panel.Size = new System.Drawing.Size(171, 241);
+            this.Locanda_Carta4_Panel.Size = new System.Drawing.Size(228, 297);
             this.Locanda_Carta4_Panel.TabIndex = 14;
             this.Locanda_Carta4_Panel.Click += new System.EventHandler(this.Locanda_Carta4_Panel_Click);
             // 
@@ -376,18 +396,20 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Porto_Selected4_PB.BackgroundImage = global::KingOfPirates.Properties.Resources.emptyCheckBox;
             this.Porto_Selected4_PB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Porto_Selected4_PB.Location = new System.Drawing.Point(123, 193);
+            this.Porto_Selected4_PB.Location = new System.Drawing.Point(164, 238);
+            this.Porto_Selected4_PB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Porto_Selected4_PB.Name = "Porto_Selected4_PB";
-            this.Porto_Selected4_PB.Size = new System.Drawing.Size(48, 48);
+            this.Porto_Selected4_PB.Size = new System.Drawing.Size(64, 59);
             this.Porto_Selected4_PB.TabIndex = 3;
             this.Porto_Selected4_PB.TabStop = false;
             // 
             // Locanda_Carta5_Panel
             // 
             this.Locanda_Carta5_Panel.Controls.Add(this.Porto_Selected5_PB);
-            this.Locanda_Carta5_Panel.Location = new System.Drawing.Point(711, 3);
+            this.Locanda_Carta5_Panel.Location = new System.Drawing.Point(948, 4);
+            this.Locanda_Carta5_Panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Locanda_Carta5_Panel.Name = "Locanda_Carta5_Panel";
-            this.Locanda_Carta5_Panel.Size = new System.Drawing.Size(171, 241);
+            this.Locanda_Carta5_Panel.Size = new System.Drawing.Size(228, 297);
             this.Locanda_Carta5_Panel.TabIndex = 14;
             this.Locanda_Carta5_Panel.Click += new System.EventHandler(this.Locanda_Carta5_Panel_Click);
             // 
@@ -395,18 +417,20 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Porto_Selected5_PB.BackgroundImage = global::KingOfPirates.Properties.Resources.emptyCheckBox;
             this.Porto_Selected5_PB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Porto_Selected5_PB.Location = new System.Drawing.Point(123, 193);
+            this.Porto_Selected5_PB.Location = new System.Drawing.Point(164, 238);
+            this.Porto_Selected5_PB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Porto_Selected5_PB.Name = "Porto_Selected5_PB";
-            this.Porto_Selected5_PB.Size = new System.Drawing.Size(48, 48);
+            this.Porto_Selected5_PB.Size = new System.Drawing.Size(64, 59);
             this.Porto_Selected5_PB.TabIndex = 4;
             this.Porto_Selected5_PB.TabStop = false;
             // 
             // Locanda_Carta6_Panel
             // 
             this.Locanda_Carta6_Panel.Controls.Add(this.Porto_Selected6_PB);
-            this.Locanda_Carta6_Panel.Location = new System.Drawing.Point(3, 250);
+            this.Locanda_Carta6_Panel.Location = new System.Drawing.Point(4, 309);
+            this.Locanda_Carta6_Panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Locanda_Carta6_Panel.Name = "Locanda_Carta6_Panel";
-            this.Locanda_Carta6_Panel.Size = new System.Drawing.Size(171, 241);
+            this.Locanda_Carta6_Panel.Size = new System.Drawing.Size(228, 297);
             this.Locanda_Carta6_Panel.TabIndex = 14;
             this.Locanda_Carta6_Panel.Click += new System.EventHandler(this.Locanda_Carta6_Panel_Click);
             // 
@@ -414,18 +438,20 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Porto_Selected6_PB.BackgroundImage = global::KingOfPirates.Properties.Resources.emptyCheckBox;
             this.Porto_Selected6_PB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Porto_Selected6_PB.Location = new System.Drawing.Point(123, 193);
+            this.Porto_Selected6_PB.Location = new System.Drawing.Point(164, 238);
+            this.Porto_Selected6_PB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Porto_Selected6_PB.Name = "Porto_Selected6_PB";
-            this.Porto_Selected6_PB.Size = new System.Drawing.Size(48, 48);
+            this.Porto_Selected6_PB.Size = new System.Drawing.Size(64, 59);
             this.Porto_Selected6_PB.TabIndex = 14;
             this.Porto_Selected6_PB.TabStop = false;
             // 
             // Locanda_Carta7_Panel
             // 
             this.Locanda_Carta7_Panel.Controls.Add(this.Porto_Selected7_PB);
-            this.Locanda_Carta7_Panel.Location = new System.Drawing.Point(180, 250);
+            this.Locanda_Carta7_Panel.Location = new System.Drawing.Point(240, 309);
+            this.Locanda_Carta7_Panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Locanda_Carta7_Panel.Name = "Locanda_Carta7_Panel";
-            this.Locanda_Carta7_Panel.Size = new System.Drawing.Size(171, 241);
+            this.Locanda_Carta7_Panel.Size = new System.Drawing.Size(228, 297);
             this.Locanda_Carta7_Panel.TabIndex = 15;
             this.Locanda_Carta7_Panel.Click += new System.EventHandler(this.Locanda_Carta7_Panel_Click);
             // 
@@ -433,18 +459,20 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Porto_Selected7_PB.BackgroundImage = global::KingOfPirates.Properties.Resources.emptyCheckBox;
             this.Porto_Selected7_PB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Porto_Selected7_PB.Location = new System.Drawing.Point(123, 193);
+            this.Porto_Selected7_PB.Location = new System.Drawing.Point(164, 238);
+            this.Porto_Selected7_PB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Porto_Selected7_PB.Name = "Porto_Selected7_PB";
-            this.Porto_Selected7_PB.Size = new System.Drawing.Size(48, 48);
+            this.Porto_Selected7_PB.Size = new System.Drawing.Size(64, 59);
             this.Porto_Selected7_PB.TabIndex = 15;
             this.Porto_Selected7_PB.TabStop = false;
             // 
             // Locanda_Carta8_Panel
             // 
             this.Locanda_Carta8_Panel.Controls.Add(this.Porto_Selected8_PB);
-            this.Locanda_Carta8_Panel.Location = new System.Drawing.Point(357, 250);
+            this.Locanda_Carta8_Panel.Location = new System.Drawing.Point(476, 309);
+            this.Locanda_Carta8_Panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Locanda_Carta8_Panel.Name = "Locanda_Carta8_Panel";
-            this.Locanda_Carta8_Panel.Size = new System.Drawing.Size(171, 241);
+            this.Locanda_Carta8_Panel.Size = new System.Drawing.Size(228, 297);
             this.Locanda_Carta8_Panel.TabIndex = 15;
             this.Locanda_Carta8_Panel.Click += new System.EventHandler(this.Locanda_Carta8_Panel_Click);
             // 
@@ -452,18 +480,20 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Porto_Selected8_PB.BackgroundImage = global::KingOfPirates.Properties.Resources.emptyCheckBox;
             this.Porto_Selected8_PB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Porto_Selected8_PB.Location = new System.Drawing.Point(123, 193);
+            this.Porto_Selected8_PB.Location = new System.Drawing.Point(164, 238);
+            this.Porto_Selected8_PB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Porto_Selected8_PB.Name = "Porto_Selected8_PB";
-            this.Porto_Selected8_PB.Size = new System.Drawing.Size(48, 48);
+            this.Porto_Selected8_PB.Size = new System.Drawing.Size(64, 59);
             this.Porto_Selected8_PB.TabIndex = 16;
             this.Porto_Selected8_PB.TabStop = false;
             // 
             // Locanda_Carta9_Panel
             // 
             this.Locanda_Carta9_Panel.Controls.Add(this.Porto_Selected9_PB);
-            this.Locanda_Carta9_Panel.Location = new System.Drawing.Point(534, 250);
+            this.Locanda_Carta9_Panel.Location = new System.Drawing.Point(712, 309);
+            this.Locanda_Carta9_Panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Locanda_Carta9_Panel.Name = "Locanda_Carta9_Panel";
-            this.Locanda_Carta9_Panel.Size = new System.Drawing.Size(171, 241);
+            this.Locanda_Carta9_Panel.Size = new System.Drawing.Size(228, 297);
             this.Locanda_Carta9_Panel.TabIndex = 15;
             this.Locanda_Carta9_Panel.Click += new System.EventHandler(this.Locanda_Carta9_Panel_Click);
             // 
@@ -471,18 +501,20 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Porto_Selected9_PB.BackgroundImage = global::KingOfPirates.Properties.Resources.emptyCheckBox;
             this.Porto_Selected9_PB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Porto_Selected9_PB.Location = new System.Drawing.Point(123, 193);
+            this.Porto_Selected9_PB.Location = new System.Drawing.Point(164, 238);
+            this.Porto_Selected9_PB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Porto_Selected9_PB.Name = "Porto_Selected9_PB";
-            this.Porto_Selected9_PB.Size = new System.Drawing.Size(48, 48);
+            this.Porto_Selected9_PB.Size = new System.Drawing.Size(64, 59);
             this.Porto_Selected9_PB.TabIndex = 17;
             this.Porto_Selected9_PB.TabStop = false;
             // 
             // Locanda_Carta10_Panel
             // 
             this.Locanda_Carta10_Panel.Controls.Add(this.Porto_Selected10_PB);
-            this.Locanda_Carta10_Panel.Location = new System.Drawing.Point(711, 250);
+            this.Locanda_Carta10_Panel.Location = new System.Drawing.Point(948, 309);
+            this.Locanda_Carta10_Panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Locanda_Carta10_Panel.Name = "Locanda_Carta10_Panel";
-            this.Locanda_Carta10_Panel.Size = new System.Drawing.Size(171, 241);
+            this.Locanda_Carta10_Panel.Size = new System.Drawing.Size(228, 297);
             this.Locanda_Carta10_Panel.TabIndex = 15;
             this.Locanda_Carta10_Panel.Click += new System.EventHandler(this.Locanda_Carta10_Panel_Click);
             // 
@@ -490,18 +522,20 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Porto_Selected10_PB.BackgroundImage = global::KingOfPirates.Properties.Resources.emptyCheckBox;
             this.Porto_Selected10_PB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Porto_Selected10_PB.Location = new System.Drawing.Point(123, 193);
+            this.Porto_Selected10_PB.Location = new System.Drawing.Point(164, 238);
+            this.Porto_Selected10_PB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Porto_Selected10_PB.Name = "Porto_Selected10_PB";
-            this.Porto_Selected10_PB.Size = new System.Drawing.Size(48, 48);
+            this.Porto_Selected10_PB.Size = new System.Drawing.Size(64, 59);
             this.Porto_Selected10_PB.TabIndex = 18;
             this.Porto_Selected10_PB.TabStop = false;
             // 
             // Locanda_Carta11_Panel
             // 
             this.Locanda_Carta11_Panel.Controls.Add(this.Porto_Selected11_PB);
-            this.Locanda_Carta11_Panel.Location = new System.Drawing.Point(3, 497);
+            this.Locanda_Carta11_Panel.Location = new System.Drawing.Point(4, 614);
+            this.Locanda_Carta11_Panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Locanda_Carta11_Panel.Name = "Locanda_Carta11_Panel";
-            this.Locanda_Carta11_Panel.Size = new System.Drawing.Size(171, 241);
+            this.Locanda_Carta11_Panel.Size = new System.Drawing.Size(228, 297);
             this.Locanda_Carta11_Panel.TabIndex = 15;
             this.Locanda_Carta11_Panel.Click += new System.EventHandler(this.Locanda_Carta11_Panel_Click);
             // 
@@ -509,18 +543,20 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Porto_Selected11_PB.BackgroundImage = global::KingOfPirates.Properties.Resources.emptyCheckBox;
             this.Porto_Selected11_PB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Porto_Selected11_PB.Location = new System.Drawing.Point(123, 193);
+            this.Porto_Selected11_PB.Location = new System.Drawing.Point(164, 238);
+            this.Porto_Selected11_PB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Porto_Selected11_PB.Name = "Porto_Selected11_PB";
-            this.Porto_Selected11_PB.Size = new System.Drawing.Size(48, 48);
+            this.Porto_Selected11_PB.Size = new System.Drawing.Size(64, 59);
             this.Porto_Selected11_PB.TabIndex = 1;
             this.Porto_Selected11_PB.TabStop = false;
             // 
             // Locanda_Carta12_Panel
             // 
             this.Locanda_Carta12_Panel.Controls.Add(this.Porto_Selected12_PB);
-            this.Locanda_Carta12_Panel.Location = new System.Drawing.Point(180, 497);
+            this.Locanda_Carta12_Panel.Location = new System.Drawing.Point(240, 614);
+            this.Locanda_Carta12_Panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Locanda_Carta12_Panel.Name = "Locanda_Carta12_Panel";
-            this.Locanda_Carta12_Panel.Size = new System.Drawing.Size(171, 241);
+            this.Locanda_Carta12_Panel.Size = new System.Drawing.Size(228, 297);
             this.Locanda_Carta12_Panel.TabIndex = 15;
             this.Locanda_Carta12_Panel.Click += new System.EventHandler(this.Locanda_Carta12_Panel_Click);
             // 
@@ -528,18 +564,20 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Porto_Selected12_PB.BackgroundImage = global::KingOfPirates.Properties.Resources.emptyCheckBox;
             this.Porto_Selected12_PB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Porto_Selected12_PB.Location = new System.Drawing.Point(123, 193);
+            this.Porto_Selected12_PB.Location = new System.Drawing.Point(164, 238);
+            this.Porto_Selected12_PB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Porto_Selected12_PB.Name = "Porto_Selected12_PB";
-            this.Porto_Selected12_PB.Size = new System.Drawing.Size(48, 48);
+            this.Porto_Selected12_PB.Size = new System.Drawing.Size(64, 59);
             this.Porto_Selected12_PB.TabIndex = 2;
             this.Porto_Selected12_PB.TabStop = false;
             // 
             // Locanda_Carta13_Panel
             // 
             this.Locanda_Carta13_Panel.Controls.Add(this.Porto_Selected13_PB);
-            this.Locanda_Carta13_Panel.Location = new System.Drawing.Point(357, 497);
+            this.Locanda_Carta13_Panel.Location = new System.Drawing.Point(476, 614);
+            this.Locanda_Carta13_Panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Locanda_Carta13_Panel.Name = "Locanda_Carta13_Panel";
-            this.Locanda_Carta13_Panel.Size = new System.Drawing.Size(171, 241);
+            this.Locanda_Carta13_Panel.Size = new System.Drawing.Size(228, 297);
             this.Locanda_Carta13_Panel.TabIndex = 15;
             this.Locanda_Carta13_Panel.Click += new System.EventHandler(this.Locanda_Carta13_Panel_Click);
             // 
@@ -547,18 +585,20 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Porto_Selected13_PB.BackgroundImage = global::KingOfPirates.Properties.Resources.emptyCheckBox;
             this.Porto_Selected13_PB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Porto_Selected13_PB.Location = new System.Drawing.Point(123, 193);
+            this.Porto_Selected13_PB.Location = new System.Drawing.Point(164, 238);
+            this.Porto_Selected13_PB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Porto_Selected13_PB.Name = "Porto_Selected13_PB";
-            this.Porto_Selected13_PB.Size = new System.Drawing.Size(48, 48);
+            this.Porto_Selected13_PB.Size = new System.Drawing.Size(64, 59);
             this.Porto_Selected13_PB.TabIndex = 3;
             this.Porto_Selected13_PB.TabStop = false;
             // 
             // Locanda_Carta14_Panel
             // 
             this.Locanda_Carta14_Panel.Controls.Add(this.Porto_Selected14_PB);
-            this.Locanda_Carta14_Panel.Location = new System.Drawing.Point(534, 497);
+            this.Locanda_Carta14_Panel.Location = new System.Drawing.Point(712, 614);
+            this.Locanda_Carta14_Panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Locanda_Carta14_Panel.Name = "Locanda_Carta14_Panel";
-            this.Locanda_Carta14_Panel.Size = new System.Drawing.Size(171, 241);
+            this.Locanda_Carta14_Panel.Size = new System.Drawing.Size(228, 297);
             this.Locanda_Carta14_Panel.TabIndex = 15;
             this.Locanda_Carta14_Panel.Click += new System.EventHandler(this.Locanda_Carta14_Panel_Click);
             // 
@@ -566,18 +606,20 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Porto_Selected14_PB.BackgroundImage = global::KingOfPirates.Properties.Resources.emptyCheckBox;
             this.Porto_Selected14_PB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Porto_Selected14_PB.Location = new System.Drawing.Point(123, 193);
+            this.Porto_Selected14_PB.Location = new System.Drawing.Point(164, 238);
+            this.Porto_Selected14_PB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Porto_Selected14_PB.Name = "Porto_Selected14_PB";
-            this.Porto_Selected14_PB.Size = new System.Drawing.Size(48, 48);
+            this.Porto_Selected14_PB.Size = new System.Drawing.Size(64, 59);
             this.Porto_Selected14_PB.TabIndex = 4;
             this.Porto_Selected14_PB.TabStop = false;
             // 
             // Locanda_Carta15_Panel
             // 
             this.Locanda_Carta15_Panel.Controls.Add(this.Porto_Selected15_PB);
-            this.Locanda_Carta15_Panel.Location = new System.Drawing.Point(711, 497);
+            this.Locanda_Carta15_Panel.Location = new System.Drawing.Point(948, 614);
+            this.Locanda_Carta15_Panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Locanda_Carta15_Panel.Name = "Locanda_Carta15_Panel";
-            this.Locanda_Carta15_Panel.Size = new System.Drawing.Size(171, 241);
+            this.Locanda_Carta15_Panel.Size = new System.Drawing.Size(228, 297);
             this.Locanda_Carta15_Panel.TabIndex = 15;
             this.Locanda_Carta15_Panel.Click += new System.EventHandler(this.Locanda_Carta15_Panel_Click);
             // 
@@ -585,18 +627,20 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Porto_Selected15_PB.BackgroundImage = global::KingOfPirates.Properties.Resources.emptyCheckBox;
             this.Porto_Selected15_PB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Porto_Selected15_PB.Location = new System.Drawing.Point(123, 193);
+            this.Porto_Selected15_PB.Location = new System.Drawing.Point(164, 238);
+            this.Porto_Selected15_PB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Porto_Selected15_PB.Name = "Porto_Selected15_PB";
-            this.Porto_Selected15_PB.Size = new System.Drawing.Size(48, 48);
+            this.Porto_Selected15_PB.Size = new System.Drawing.Size(64, 59);
             this.Porto_Selected15_PB.TabIndex = 5;
             this.Porto_Selected15_PB.TabStop = false;
             // 
             // Locanda_Carta16_Panel
             // 
             this.Locanda_Carta16_Panel.Controls.Add(this.Porto_Selected16_PB);
-            this.Locanda_Carta16_Panel.Location = new System.Drawing.Point(3, 744);
+            this.Locanda_Carta16_Panel.Location = new System.Drawing.Point(4, 919);
+            this.Locanda_Carta16_Panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Locanda_Carta16_Panel.Name = "Locanda_Carta16_Panel";
-            this.Locanda_Carta16_Panel.Size = new System.Drawing.Size(171, 241);
+            this.Locanda_Carta16_Panel.Size = new System.Drawing.Size(228, 297);
             this.Locanda_Carta16_Panel.TabIndex = 15;
             this.Locanda_Carta16_Panel.Click += new System.EventHandler(this.Locanda_Carta16_Panel_Click);
             // 
@@ -604,18 +648,20 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Porto_Selected16_PB.BackgroundImage = global::KingOfPirates.Properties.Resources.emptyCheckBox;
             this.Porto_Selected16_PB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Porto_Selected16_PB.Location = new System.Drawing.Point(123, 193);
+            this.Porto_Selected16_PB.Location = new System.Drawing.Point(164, 238);
+            this.Porto_Selected16_PB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Porto_Selected16_PB.Name = "Porto_Selected16_PB";
-            this.Porto_Selected16_PB.Size = new System.Drawing.Size(48, 48);
+            this.Porto_Selected16_PB.Size = new System.Drawing.Size(64, 59);
             this.Porto_Selected16_PB.TabIndex = 1;
             this.Porto_Selected16_PB.TabStop = false;
             // 
             // Locanda_Carta17_Panel
             // 
             this.Locanda_Carta17_Panel.Controls.Add(this.Porto_Selected17_PB);
-            this.Locanda_Carta17_Panel.Location = new System.Drawing.Point(180, 744);
+            this.Locanda_Carta17_Panel.Location = new System.Drawing.Point(240, 919);
+            this.Locanda_Carta17_Panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Locanda_Carta17_Panel.Name = "Locanda_Carta17_Panel";
-            this.Locanda_Carta17_Panel.Size = new System.Drawing.Size(171, 241);
+            this.Locanda_Carta17_Panel.Size = new System.Drawing.Size(228, 297);
             this.Locanda_Carta17_Panel.TabIndex = 15;
             this.Locanda_Carta17_Panel.Click += new System.EventHandler(this.Locanda_Carta17_Panel_Click);
             // 
@@ -623,18 +669,20 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Porto_Selected17_PB.BackgroundImage = global::KingOfPirates.Properties.Resources.emptyCheckBox;
             this.Porto_Selected17_PB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Porto_Selected17_PB.Location = new System.Drawing.Point(123, 193);
+            this.Porto_Selected17_PB.Location = new System.Drawing.Point(164, 238);
+            this.Porto_Selected17_PB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Porto_Selected17_PB.Name = "Porto_Selected17_PB";
-            this.Porto_Selected17_PB.Size = new System.Drawing.Size(48, 48);
+            this.Porto_Selected17_PB.Size = new System.Drawing.Size(64, 59);
             this.Porto_Selected17_PB.TabIndex = 2;
             this.Porto_Selected17_PB.TabStop = false;
             // 
             // Locanda_Carta18_Panel
             // 
             this.Locanda_Carta18_Panel.Controls.Add(this.Porto_Selected18_PB);
-            this.Locanda_Carta18_Panel.Location = new System.Drawing.Point(357, 744);
+            this.Locanda_Carta18_Panel.Location = new System.Drawing.Point(476, 919);
+            this.Locanda_Carta18_Panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Locanda_Carta18_Panel.Name = "Locanda_Carta18_Panel";
-            this.Locanda_Carta18_Panel.Size = new System.Drawing.Size(171, 241);
+            this.Locanda_Carta18_Panel.Size = new System.Drawing.Size(228, 297);
             this.Locanda_Carta18_Panel.TabIndex = 15;
             this.Locanda_Carta18_Panel.Click += new System.EventHandler(this.Locanda_Carta18_Panel_Click);
             // 
@@ -642,27 +690,30 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Porto_Selected18_PB.BackgroundImage = global::KingOfPirates.Properties.Resources.emptyCheckBox;
             this.Porto_Selected18_PB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Porto_Selected18_PB.Location = new System.Drawing.Point(123, 193);
+            this.Porto_Selected18_PB.Location = new System.Drawing.Point(164, 238);
+            this.Porto_Selected18_PB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Porto_Selected18_PB.Name = "Porto_Selected18_PB";
-            this.Porto_Selected18_PB.Size = new System.Drawing.Size(48, 48);
+            this.Porto_Selected18_PB.Size = new System.Drawing.Size(64, 59);
             this.Porto_Selected18_PB.TabIndex = 3;
             this.Porto_Selected18_PB.TabStop = false;
             // 
             // Locanda_Carta19_Panel
             // 
             this.Locanda_Carta19_Panel.Controls.Add(this.Porto_Selected19_PB);
-            this.Locanda_Carta19_Panel.Location = new System.Drawing.Point(534, 744);
+            this.Locanda_Carta19_Panel.Location = new System.Drawing.Point(712, 919);
+            this.Locanda_Carta19_Panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Locanda_Carta19_Panel.Name = "Locanda_Carta19_Panel";
-            this.Locanda_Carta19_Panel.Size = new System.Drawing.Size(171, 241);
+            this.Locanda_Carta19_Panel.Size = new System.Drawing.Size(228, 297);
             this.Locanda_Carta19_Panel.TabIndex = 14;
             this.Locanda_Carta19_Panel.Click += new System.EventHandler(this.Locanda_Carta19_Panel_Click);
             // 
             // Locanda_Carta20_Panel
             // 
             this.Locanda_Carta20_Panel.Controls.Add(this.Porto_Selected20_PB);
-            this.Locanda_Carta20_Panel.Location = new System.Drawing.Point(711, 744);
+            this.Locanda_Carta20_Panel.Location = new System.Drawing.Point(948, 919);
+            this.Locanda_Carta20_Panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Locanda_Carta20_Panel.Name = "Locanda_Carta20_Panel";
-            this.Locanda_Carta20_Panel.Size = new System.Drawing.Size(171, 241);
+            this.Locanda_Carta20_Panel.Size = new System.Drawing.Size(228, 297);
             this.Locanda_Carta20_Panel.TabIndex = 14;
             this.Locanda_Carta20_Panel.Click += new System.EventHandler(this.Locanda_Carta20_Panel_Click);
             // 
@@ -670,9 +721,10 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Porto_Selected20_PB.BackgroundImage = global::KingOfPirates.Properties.Resources.emptyCheckBox;
             this.Porto_Selected20_PB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Porto_Selected20_PB.Location = new System.Drawing.Point(123, 193);
+            this.Porto_Selected20_PB.Location = new System.Drawing.Point(164, 238);
+            this.Porto_Selected20_PB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Porto_Selected20_PB.Name = "Porto_Selected20_PB";
-            this.Porto_Selected20_PB.Size = new System.Drawing.Size(48, 48);
+            this.Porto_Selected20_PB.Size = new System.Drawing.Size(64, 59);
             this.Porto_Selected20_PB.TabIndex = 5;
             this.Porto_Selected20_PB.TabStop = false;
             // 
@@ -682,9 +734,10 @@ namespace KingOfPirates.GUI.MenuNassau
             this.Porto_SelCarTitle_Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Porto_SelCarTitle_Label.Font = new System.Drawing.Font("Ink Free", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Porto_SelCarTitle_Label.ForeColor = System.Drawing.Color.Black;
-            this.Porto_SelCarTitle_Label.Location = new System.Drawing.Point(192, 0);
+            this.Porto_SelCarTitle_Label.Location = new System.Drawing.Point(256, 0);
+            this.Porto_SelCarTitle_Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Porto_SelCarTitle_Label.Name = "Porto_SelCarTitle_Label";
-            this.Porto_SelCarTitle_Label.Size = new System.Drawing.Size(883, 150);
+            this.Porto_SelCarTitle_Label.Size = new System.Drawing.Size(1177, 184);
             this.Porto_SelCarTitle_Label.TabIndex = 16;
             this.Porto_SelCarTitle_Label.Text = "Scegli le carte da portare in missione! ARGHHHH";
             this.Porto_SelCarTitle_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -692,9 +745,10 @@ namespace KingOfPirates.GUI.MenuNassau
             // Porto_Salpa3_Button
             // 
             this.Porto_Salpa3_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Porto_Salpa3_Button.Location = new System.Drawing.Point(264, 535);
+            this.Porto_Salpa3_Button.Location = new System.Drawing.Point(352, 658);
+            this.Porto_Salpa3_Button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Porto_Salpa3_Button.Name = "Porto_Salpa3_Button";
-            this.Porto_Salpa3_Button.Size = new System.Drawing.Size(463, 92);
+            this.Porto_Salpa3_Button.Size = new System.Drawing.Size(617, 113);
             this.Porto_Salpa3_Button.TabIndex = 15;
             this.Porto_Salpa3_Button.Text = "S A L P A !";
             this.Porto_Salpa3_Button.UseVisualStyleBackColor = true;
@@ -704,18 +758,20 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Porto_SelCarBack_Button.BackgroundImage = global::KingOfPirates.Properties.Resources.back_arrow;
             this.Porto_SelCarBack_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Porto_SelCarBack_Button.Location = new System.Drawing.Point(12, 12);
+            this.Porto_SelCarBack_Button.Location = new System.Drawing.Point(16, 15);
+            this.Porto_SelCarBack_Button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Porto_SelCarBack_Button.Name = "Porto_SelCarBack_Button";
-            this.Porto_SelCarBack_Button.Size = new System.Drawing.Size(89, 79);
+            this.Porto_SelCarBack_Button.Size = new System.Drawing.Size(119, 97);
             this.Porto_SelCarBack_Button.TabIndex = 13;
             this.Porto_SelCarBack_Button.UseVisualStyleBackColor = true;
             this.Porto_SelCarBack_Button.Click += new System.EventHandler(this.Porto_SelCarBack_Button_Click);
             // 
             // Porto_Missione2_Button
             // 
-            this.Porto_Missione2_Button.Location = new System.Drawing.Point(259, 356);
+            this.Porto_Missione2_Button.Location = new System.Drawing.Point(345, 438);
+            this.Porto_Missione2_Button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Porto_Missione2_Button.Name = "Porto_Missione2_Button";
-            this.Porto_Missione2_Button.Size = new System.Drawing.Size(107, 96);
+            this.Porto_Missione2_Button.Size = new System.Drawing.Size(143, 118);
             this.Porto_Missione2_Button.TabIndex = 19;
             this.Porto_Missione2_Button.Text = "Missione 2";
             this.Porto_Missione2_Button.UseVisualStyleBackColor = true;
@@ -723,9 +779,10 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             // Porto_Missione1_Button
             // 
-            this.Porto_Missione1_Button.Location = new System.Drawing.Point(89, 176);
+            this.Porto_Missione1_Button.Location = new System.Drawing.Point(119, 217);
+            this.Porto_Missione1_Button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Porto_Missione1_Button.Name = "Porto_Missione1_Button";
-            this.Porto_Missione1_Button.Size = new System.Drawing.Size(107, 96);
+            this.Porto_Missione1_Button.Size = new System.Drawing.Size(143, 118);
             this.Porto_Missione1_Button.TabIndex = 18;
             this.Porto_Missione1_Button.Text = "Missione 1";
             this.Porto_Missione1_Button.UseVisualStyleBackColor = true;
@@ -733,9 +790,10 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             // Porto_Missione3_Button
             // 
-            this.Porto_Missione3_Button.Location = new System.Drawing.Point(759, 176);
+            this.Porto_Missione3_Button.Location = new System.Drawing.Point(1012, 217);
+            this.Porto_Missione3_Button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Porto_Missione3_Button.Name = "Porto_Missione3_Button";
-            this.Porto_Missione3_Button.Size = new System.Drawing.Size(107, 96);
+            this.Porto_Missione3_Button.Size = new System.Drawing.Size(143, 118);
             this.Porto_Missione3_Button.TabIndex = 17;
             this.Porto_Missione3_Button.Text = "Missione 3";
             this.Porto_Missione3_Button.UseVisualStyleBackColor = true;
@@ -747,9 +805,10 @@ namespace KingOfPirates.GUI.MenuNassau
             this.Porto_MissioniTitle_Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Porto_MissioniTitle_Label.Font = new System.Drawing.Font("Ink Free", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Porto_MissioniTitle_Label.ForeColor = System.Drawing.Color.Black;
-            this.Porto_MissioniTitle_Label.Location = new System.Drawing.Point(173, 0);
+            this.Porto_MissioniTitle_Label.Location = new System.Drawing.Point(231, 0);
+            this.Porto_MissioniTitle_Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Porto_MissioniTitle_Label.Name = "Porto_MissioniTitle_Label";
-            this.Porto_MissioniTitle_Label.Size = new System.Drawing.Size(883, 114);
+            this.Porto_MissioniTitle_Label.Size = new System.Drawing.Size(1177, 140);
             this.Porto_MissioniTitle_Label.TabIndex = 16;
             this.Porto_MissioniTitle_Label.Text = "Seleziona la missione! ARGHHHH";
             this.Porto_MissioniTitle_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -757,21 +816,24 @@ namespace KingOfPirates.GUI.MenuNassau
             // Porto_Salpa2_Button
             // 
             this.Porto_Salpa2_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Porto_Salpa2_Button.Location = new System.Drawing.Point(391, 535);
+            this.Porto_Salpa2_Button.Location = new System.Drawing.Point(521, 658);
+            this.Porto_Salpa2_Button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Porto_Salpa2_Button.Name = "Porto_Salpa2_Button";
-            this.Porto_Salpa2_Button.Size = new System.Drawing.Size(444, 92);
+            this.Porto_Salpa2_Button.Size = new System.Drawing.Size(592, 113);
             this.Porto_Salpa2_Button.TabIndex = 15;
             this.Porto_Salpa2_Button.Text = "S A L P A !";
             this.Porto_Salpa2_Button.UseVisualStyleBackColor = true;
+            this.Porto_Salpa2_Button.Visible = false;
             this.Porto_Salpa2_Button.Click += new System.EventHandler(this.Porto_Salpa2_Button_Click);
             // 
             // Porto_MissioniBack_Button
             // 
             this.Porto_MissioniBack_Button.BackgroundImage = global::KingOfPirates.Properties.Resources.back_arrow;
             this.Porto_MissioniBack_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Porto_MissioniBack_Button.Location = new System.Drawing.Point(12, 12);
+            this.Porto_MissioniBack_Button.Location = new System.Drawing.Point(16, 15);
+            this.Porto_MissioniBack_Button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Porto_MissioniBack_Button.Name = "Porto_MissioniBack_Button";
-            this.Porto_MissioniBack_Button.Size = new System.Drawing.Size(89, 79);
+            this.Porto_MissioniBack_Button.Size = new System.Drawing.Size(119, 97);
             this.Porto_MissioniBack_Button.TabIndex = 13;
             this.Porto_MissioniBack_Button.UseVisualStyleBackColor = true;
             this.Porto_MissioniBack_Button.Click += new System.EventHandler(this.Porto_MissioniBack_Button_Click);
@@ -780,18 +842,19 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Porto_Back_Button.BackgroundImage = global::KingOfPirates.Properties.Resources.back_arrow;
             this.Porto_Back_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Porto_Back_Button.Location = new System.Drawing.Point(12, 12);
+            this.Porto_Back_Button.Location = new System.Drawing.Point(16, 15);
+            this.Porto_Back_Button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Porto_Back_Button.Name = "Porto_Back_Button";
-            this.Porto_Back_Button.Size = new System.Drawing.Size(89, 79);
+            this.Porto_Back_Button.Size = new System.Drawing.Size(119, 97);
             this.Porto_Back_Button.TabIndex = 13;
             this.Porto_Back_Button.UseVisualStyleBackColor = true;
             this.Porto_Back_Button.Click += new System.EventHandler(this.Porto_Back_Button_Click);
             // 
             // Porto_form
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.ClientSize = new System.Drawing.Size(1685, 838);
             this.Controls.Add(this.Porto_Missioni_Panel);
             this.Controls.Add(this.Porto_Fondi_Label);
             this.Controls.Add(this.Porto_VelPrezzo_Label);
@@ -802,6 +865,7 @@ namespace KingOfPirates.GUI.MenuNassau
             this.Controls.Add(this.Porto_UpVela_Button);
             this.Controls.Add(this.Porto_Salpa_Button);
             this.Controls.Add(this.Porto_Back_Button);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Porto_form";
             this.Text = "Porto_form";
             ((System.ComponentModel.ISupportInitialize)(this.Porto_Selected19_PB)).EndInit();

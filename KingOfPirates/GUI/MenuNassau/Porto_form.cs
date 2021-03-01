@@ -102,16 +102,46 @@ namespace KingOfPirates.GUI.MenuNassau
         private void Porto_Missione1_Button_Click(object sender, EventArgs e)
         {
             cartina.CurrentMissionIndex = 0;
+
+
+            Porto_Missione1_Button.ForeColor = Color.Black;
+            Porto_Missione2_Button.ForeColor = Color.Black;
+            Porto_Missione3_Button.ForeColor = Color.Black;
+
+            Porto_Missione1_Button.ForeColor = Color.Green;
+
+            //mostra bottone salpa
+            Porto_Salpa2_Button.Visible = true;
         }
 
         private void Porto_Missione2_Button_Click(object sender, EventArgs e)
         {
             cartina.CurrentMissionIndex = 1;
+
+
+            Porto_Missione1_Button.ForeColor = Color.Black;
+            Porto_Missione2_Button.ForeColor = Color.Black;
+            Porto_Missione3_Button.ForeColor = Color.Black;
+
+            Porto_Missione2_Button.ForeColor = Color.Green;
+
+
+            //mostra bottone salpa
+            Porto_Salpa2_Button.Visible = true;
         }
 
         private void Porto_Missione3_Button_Click(object sender, EventArgs e)
         {
             cartina.CurrentMissionIndex = 2;
+
+            Porto_Missione1_Button.ForeColor = Color.Black;
+            Porto_Missione2_Button.ForeColor = Color.Black;
+            Porto_Missione3_Button.ForeColor = Color.Black;
+
+            Porto_Missione3_Button.ForeColor = Color.Green;
+
+            //mostra bottone salpa
+            Porto_Salpa2_Button.Visible = true;
         }
 
 

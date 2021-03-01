@@ -151,6 +151,10 @@ namespace KingOfPirates.GUI.MenuMissioni
 
             missione.TurnoNemico();
 
+            UpdateComponenti();
+
+            VitaNave_label.ForeColor = Color.Red;
+
             Sopra_button.ForeColor = Color.Black;
             Sotto_button.ForeColor = Color.Black;
             Destra_button.ForeColor = Color.Black;
