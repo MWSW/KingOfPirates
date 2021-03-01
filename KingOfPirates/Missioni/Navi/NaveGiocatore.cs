@@ -160,7 +160,7 @@ namespace KingOfPirates.Missioni.Navi
             Gioco.scontroCarte.Show();
 
             //nascondo form vecchio
-            Gioco.TestMissione.Mappa.Hide();
+            Gioco.MissioneSelezionata.Mappa.Hide();
         }
         public void Scavare()
         {

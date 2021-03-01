@@ -126,6 +126,7 @@
     <Compile Include="Missioni\Bandiera.cs" />
     <Compile Include="Missioni\GestoreMissione.cs" />
     <Compile Include="Missioni\Griglia.cs" />
+    <Compile Include="Missioni\ListaMissioni.cs" />
     <Compile Include="Missioni\Missione.cs" />
     <Compile Include="Missioni\Navi\Nave.cs" />
     <Compile Include="Missioni\Navi\NaveGiocatore.cs" />

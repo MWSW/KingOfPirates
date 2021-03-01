@@ -27,6 +27,11 @@ namespace KingOfPirates.Missioni.ScontroCarte.Opponenti
             : base(hp_, Properties.Resources.pun_pun, "Ishmael") //pup pun è un'immagine di prova
         {
             mazzo = mazzo_;
+            Init();
+        }
+
+        public void Init()
+        {
 
             curaEstesa = false;
             buffCura = 0;
@@ -36,7 +41,7 @@ namespace KingOfPirates.Missioni.ScontroCarte.Opponenti
             carteInMano = new Carta[4];
 
             Random rng = new Random();
-            for(int i = 0; i < carteInMano.Length; i++)
+            for (int i = 0; i < carteInMano.Length; i++)
             {
 
                 int num;
@@ -115,7 +120,7 @@ namespace KingOfPirates.Missioni.ScontroCarte.Opponenti
         }
 
         public Carta[] CarteInMano { get => carteInMano; }
-        public Mazzo Mazzo { get => mazzo; }
+        public Mazzo Mazzo { get => mazzo; set => mazzo = value; }
         public bool CuraEstesa { get => curaEstesa; }
         public bool BuffApplicato { get => buffApplicato; }
         public int ValBuff { get => buffStats; }

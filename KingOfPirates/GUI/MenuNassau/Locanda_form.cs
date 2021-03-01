@@ -28,6 +28,7 @@ namespace KingOfPirates.GUI.MenuNassau
         private void Locanda_Back_Button_Click(object sender, EventArgs e)
         {
             this.Hide();
+            Gioco.nassauForm.Show();
         }
 
         public void LoadData()

@@ -12,6 +12,10 @@ using KingOfPirates.Missioni.Navi;
 using KingOfPirates.Nassau;
 using KingOfPirates.Missioni.ScontroCarte.Carte;
 using KingOfPirates.Missioni.ScontroCarte.Opponenti;
+using KingOfPirates.Missioni;
+using KingOfPirates.Missioni.Roba;
+using KingOfPirates.Missioni.Navi.Nemici.Generici;
+using KingOfPirates.Properties;
 
 namespace KingOfPirates.GUI.MenuNassau
 {
@@ -32,6 +36,17 @@ namespace KingOfPirates.GUI.MenuNassau
             isSelected = new bool[20];
             nCarteMax = 10 - 1;
             nCarteSelezionate = 0;
+
+            //prova
+            ListaCarte.GetCarta(1).SetUtilizzabile(true);
+            ListaCarte.GetCarta(2).SetUtilizzabile(true);
+            ListaCarte.GetCarta(3).SetUtilizzabile(true);
+            ListaCarte.GetCarta(4).SetUtilizzabile(true);
+            ListaCarte.GetCarta(5).SetUtilizzabile(true);
+            ListaCarte.GetCarta(6).SetUtilizzabile(true);
+            ListaCarte.GetCarta(17).SetUtilizzabile(true);
+            ListaCarte.GetCarta(18).SetUtilizzabile(true);
+            ListaCarte.GetCarta(19).SetUtilizzabile(true);
 
             InitializeComponent();
 
@@ -67,6 +82,7 @@ namespace KingOfPirates.GUI.MenuNassau
         private void Porto_Back_Button_Click(object sender, EventArgs e)
         {
             this.Hide();
+            Gioco.nassauForm.Show();
         }
 
         private void Porto_MissioniBack_Button_Click(object sender, EventArgs e)
@@ -86,22 +102,52 @@ namespace KingOfPirates.GUI.MenuNassau
         private void Porto_Missione1_Button_Click(object sender, EventArgs e)
         {
             cartina.CurrentMissionIndex = 0;
+
+
+            Porto_Missione1_Button.ForeColor = Color.Black;
+            Porto_Missione2_Button.ForeColor = Color.Black;
+            Porto_Missione3_Button.ForeColor = Color.Black;
+
+            Porto_Missione1_Button.ForeColor = Color.Green;
+
+            //mostra bottone salpa
+            Porto_Salpa2_Button.Visible = true;
         }
 
         private void Porto_Missione2_Button_Click(object sender, EventArgs e)
         {
             cartina.CurrentMissionIndex = 1;
+
+
+            Porto_Missione1_Button.ForeColor = Color.Black;
+            Porto_Missione2_Button.ForeColor = Color.Black;
+            Porto_Missione3_Button.ForeColor = Color.Black;
+
+            Porto_Missione2_Button.ForeColor = Color.Green;
+
+
+            //mostra bottone salpa
+            Porto_Salpa2_Button.Visible = true;
         }
 
         private void Porto_Missione3_Button_Click(object sender, EventArgs e)
         {
             cartina.CurrentMissionIndex = 2;
+
+            Porto_Missione1_Button.ForeColor = Color.Black;
+            Porto_Missione2_Button.ForeColor = Color.Black;
+            Porto_Missione3_Button.ForeColor = Color.Black;
+
+            Porto_Missione3_Button.ForeColor = Color.Green;
+
+            //mostra bottone salpa
+            Porto_Salpa2_Button.Visible = true;
         }
 
 
         //Selezione carte mazzo
 
-        private void mazzoFiller()
+        private Carta[] mazzoFiller()
         {
             int count = 0, indiceSelezionato = - 1;
 
@@ -120,6 +166,7 @@ namespace KingOfPirates.GUI.MenuNassau
             }
 
             //TODO passaggio di mazzo al Mazzo della missione
+            return mazzo;
         }
 
         private int getIsSelectedIndex(int indiceSelezionato)
@@ -142,8 +189,19 @@ namespace KingOfPirates.GUI.MenuNassau
         {
             if(nCarteSelezionate >= 5 && nCarteSelezionate <= nCarteMax + 1)
             {
-                mazzoFiller();
+                Carta[] mazzo = mazzoFiller();
                 //TODO avvio missione
+
+                //Passo il mazzo al giocatore
+                Gioco.Giocatore.GiocatoreCarte.Mazzo = new Mazzo(mazzo);
+                Gioco.Giocatore.GiocatoreCarte.Init();
+
+                int index = cartina.CurrentMissionIndex;
+
+                Gioco.MissioneSelezionata = ListaMissioni.GetMissione(index);
+
+                //fa partire la missione selezionata
+                Gioco.MissioneSelezionata.StartMissione();
             }
         }
 
