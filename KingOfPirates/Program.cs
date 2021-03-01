@@ -85,11 +85,24 @@ namespace KingOfPirates
                  ListaCarte.GetCartaClone(5), ListaCarte.GetCartaClone(6), ListaCarte.GetCartaClone(17),
                  ListaCarte.GetCartaClone(18), ListaCarte.GetCartaClone(19)};
 
-
             Player_carte player_prova = new Player_carte(10, new Mazzo(carte_player));
 
             Giocatore = new NaveGiocatore("Nave da Test", Properties.Resources.nave_rossa, new Stats(), new Loc2D(3, 3), 5, 10, player_prova);
             Dominio = new GestioneDominio();
+
+            //prova
+            ListaCarte.GetCarta(1).SetUtilizzabile(true);
+            ListaCarte.GetCarta(2).SetUtilizzabile(true);
+            ListaCarte.GetCarta(3).SetUtilizzabile(true);
+            ListaCarte.GetCarta(4).SetUtilizzabile(true);
+            ListaCarte.GetCarta(5).SetUtilizzabile(true);
+            ListaCarte.GetCarta(6).SetUtilizzabile(true);
+            ListaCarte.GetCarta(17).SetUtilizzabile(true);
+            ListaCarte.GetCarta(18).SetUtilizzabile(true);
+            ListaCarte.GetCarta(19).SetUtilizzabile(true);
+
+            Dominio.AddDobloni(1000);
+            //
 
             Griglia griglia_prova = new Griglia(new int[19, 12] {{0,0,0,0,0,0,0,0,0,0,0,0},
                                                                  {0,0,0,0,2,2,2,0,0,0,0,0},

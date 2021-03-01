@@ -20,6 +20,7 @@ namespace KingOfPirates.GUI.MenuNassau
         Negozio negozio = new Negozio();
 
         private int currentIndex;
+        Panel componenteSelezionato;
 
         public Negozio_form()
         {
@@ -102,26 +103,29 @@ namespace KingOfPirates.GUI.MenuNassau
                 Negozio_CarteElemento_Label.Text = "Elemento: - carta effetto -";
 
             Negozio_CarteDescrizione_Label.Text = "Descrizione: " + ListaCarte.GetCarta(currentIndex).Descrizione;
-
-            Negozio_CartePossedute_Label.Text = "Possiedi " + "n" + " carte di questo tipo";    //TODO////////////////////////////////////
         }
 
         private void Negozio_CarteAcquista_Button_Click(object sender, EventArgs e)
         {
-            Negozio_acqCarte_Panel.Show();
             negozio.AcquistaCarta(currentIndex);
+            componenteSelezionato.Hide();
             UpdateOutput();
         }
 
         private void LoadData()
         {
+            //
             //Negozio principale
+            //
+
             Negozio_CostoBevDet_Label.Text = (negozio.getPrezziOggetti(0)).ToString() + " $";
             Negozio_CostoRum_Label.Text = (negozio.getPrezziOggetti(1)).ToString() + " $";
             Negozio_CostoBevAnt_Label.Text = (negozio.getPrezziOggetti(2)).ToString() + " $";
             Negozio_CostoAssLeg_Label.Text = (negozio.getPrezziOggetti(3)).ToString() + " $";
             
+            //
             //Negozio carte
+            //
 
             //Riga - nome
             Negozio_CartePirata1_Label.Text = ListaCarte.GetCarta(0).Nome;
@@ -213,24 +217,28 @@ namespace KingOfPirates.GUI.MenuNassau
         private void Pirata1_Click(object sender, EventArgs e)
         {
             currentIndex = 0;
+            componenteSelezionato = Negozio_CartePirata1_Button;
             Seleziona();
         }
         
         private void Negozio_CartePirata1_Label_Click(object sender, EventArgs e)
         {
             currentIndex = 0;
+            componenteSelezionato = Negozio_CartePirata1_Button;
             Seleziona();
         }
         
         private void Negozio_CartaPirata1_Img_Click(object sender, EventArgs e)
         {
             currentIndex = 0;
+            componenteSelezionato = Negozio_CartePirata1_Button;
             Seleziona();
         }
         
         private void Negozio_CartePrezzo1_Label_Click(object sender, EventArgs e)
         {
             currentIndex = 0;
+            componenteSelezionato = Negozio_CartePirata1_Button;
             Seleziona();
         }
         
@@ -239,24 +247,28 @@ namespace KingOfPirates.GUI.MenuNassau
         private void Pirata2_Click(object sender, EventArgs e)
         {
             currentIndex = 1;
+            componenteSelezionato = Negozio_CartePirata2_Button;
             Seleziona();
         }
         
         private void Negozio_CartePirata2_Label_Click(object sender, EventArgs e)
         {
             currentIndex = 1;
+            componenteSelezionato = Negozio_CartePirata2_Button;
             Seleziona();
         }
 
         private void Negozio_CartaPirata2_Img_Click(object sender, EventArgs e)
         {
             currentIndex = 1;
+            componenteSelezionato = Negozio_CartePirata2_Button;
             Seleziona();
         }
         
         private void Negozio_CartePrezzo2_Label_Click(object sender, EventArgs e)
         {
             currentIndex = 1;
+            componenteSelezionato = Negozio_CartePirata2_Button;
             Seleziona();
         }
 
@@ -265,24 +277,28 @@ namespace KingOfPirates.GUI.MenuNassau
         private void Pirata3_Click(object sender, EventArgs e)
         {
             currentIndex = 2;
+            componenteSelezionato = Negozio_CartePirata3_Button;
             Seleziona();
         }
 
         private void Negozio_CartePirata3_Label_Click(object sender, EventArgs e)
         {
             currentIndex = 2;
+            componenteSelezionato = Negozio_CartePirata3_Button;
             Seleziona();
         }
         
         private void Negozio_CartaPirata3_Img_Click(object sender, EventArgs e)
         {
             currentIndex = 2;
+            componenteSelezionato = Negozio_CartePirata3_Button;
             Seleziona();
         }
         
         private void Negozio_CartePrezzo3_Label_Click(object sender, EventArgs e)
         {
             currentIndex = 2;
+            componenteSelezionato = Negozio_CartePirata3_Button;
             Seleziona();
         }
 
@@ -291,24 +307,28 @@ namespace KingOfPirates.GUI.MenuNassau
         private void Pirata4_Click(object sender, EventArgs e)
         {
             currentIndex = 3;
+            componenteSelezionato = Negozio_CartePirata4_Button;
             Seleziona();
         }
         
         private void Negozio_CartePirata4_Label_Click(object sender, EventArgs e)
         {
             currentIndex = 3;
+            componenteSelezionato = Negozio_CartePirata4_Button;
             Seleziona();
         }
         
         private void Negozio_CartaPirata4_Img_Click(object sender, EventArgs e)
         {
             currentIndex = 3;
+            componenteSelezionato = Negozio_CartePirata4_Button;
             Seleziona();
         }
         
         private void Negozio_CartePrezzo4_Label_Click(object sender, EventArgs e)
         {
             currentIndex = 3;
+            componenteSelezionato = Negozio_CartePirata4_Button;
             Seleziona();
         }
 
@@ -317,24 +337,28 @@ namespace KingOfPirates.GUI.MenuNassau
         private void Pirata5_Click(object sender, EventArgs e)
         {
             currentIndex = 4;
+            componenteSelezionato = Negozio_CartePirata5_Button;
             Seleziona();
         }
         
         private void Negozio_CartePirata5_Label_Click(object sender, EventArgs e)
         {
             currentIndex = 4;
+            componenteSelezionato = Negozio_CartePirata5_Button;
             Seleziona();
         }
         
         private void Negozio_CartaPirata5_Img_Click(object sender, EventArgs e)
         {
             currentIndex = 4;
+            componenteSelezionato = Negozio_CartePirata5_Button;
             Seleziona();
         }
 
         private void Negozio_CartePrezzo5_Label_Click(object sender, EventArgs e)
         {
             currentIndex = 4;
+            componenteSelezionato = Negozio_CartePirata5_Button;
             Seleziona();
         }
 
@@ -343,24 +367,28 @@ namespace KingOfPirates.GUI.MenuNassau
         private void Pirata6_Click(object sender, EventArgs e)
         {
             currentIndex = 5;
+            componenteSelezionato = Negozio_CartePirata6_Button;
             Seleziona();
         }
         
         private void Negozio_CartePirata6_Label_Click(object sender, EventArgs e)
         {
             currentIndex = 5;
+            componenteSelezionato = Negozio_CartePirata6_Button;
             Seleziona();
         }
 
         private void Negozio_CartaPirata6_Img_Click(object sender, EventArgs e)
         {
             currentIndex = 5;
+            componenteSelezionato = Negozio_CartePirata6_Button;
             Seleziona();
         }
 
         private void Negozio_CartePrezzo6_Label_Click(object sender, EventArgs e)
         {
             currentIndex = 5;
+            componenteSelezionato = Negozio_CartePirata6_Button;
             Seleziona();
         }
 
@@ -369,24 +397,28 @@ namespace KingOfPirates.GUI.MenuNassau
         private void Pirata7_Click(object sender, EventArgs e)
         {
             currentIndex = 6;
+            componenteSelezionato = Negozio_CartePirata7_Button;
             Seleziona();
         }
         
         private void Negozio_CartePirata7_Label_Click(object sender, EventArgs e)
         {
             currentIndex = 6;
+            componenteSelezionato = Negozio_CartePirata7_Button;
             Seleziona();
         }
 
         private void Negozio_CartaPirata7_Img_Click(object sender, EventArgs e)
         {
             currentIndex = 6;
+            componenteSelezionato = Negozio_CartePirata7_Button;
             Seleziona();
         }
 
         private void Negozio_CartePrezzo7_Label_Click(object sender, EventArgs e)
         {
             currentIndex = 6;
+            componenteSelezionato = Negozio_CartePirata7_Button;
             Seleziona();
         }
 
@@ -395,24 +427,28 @@ namespace KingOfPirates.GUI.MenuNassau
         private void Pirata8_Click(object sender, EventArgs e)
         {
             currentIndex = 7;
+            componenteSelezionato = Negozio_CartePirata8_Button;
             Seleziona();
         }
         
         private void Negozio_CartePirata8_Label_Click(object sender, EventArgs e)
         {
             currentIndex = 7;
+            componenteSelezionato = Negozio_CartePirata8_Button;
             Seleziona();
         }
 
         private void Negozio_CartaPirata8_Img_Click(object sender, EventArgs e)
         {
             currentIndex = 7;
+            componenteSelezionato = Negozio_CartePirata8_Button;
             Seleziona();
         }
 
         private void Negozio_CartePrezzo8_Label_Click(object sender, EventArgs e)
         {
             currentIndex = 7;
+            componenteSelezionato = Negozio_CartePirata8_Button;
             Seleziona();
         }
 
@@ -421,24 +457,28 @@ namespace KingOfPirates.GUI.MenuNassau
         private void Pirata9_Click(object sender, EventArgs e)
         {
             currentIndex = 8;
+            componenteSelezionato = Negozio_CartePirata9_Button;
             Seleziona();
         }
         
         private void Negozio_CartePirata9_Label_Click(object sender, EventArgs e)
         {
             currentIndex = 8;
+            componenteSelezionato = Negozio_CartePirata9_Button;
             Seleziona();
         }
 
         private void Negozio_CartaPirata9_Img_Click(object sender, EventArgs e)
         {
             currentIndex = 8;
+            componenteSelezionato = Negozio_CartePirata9_Button;
             Seleziona();
         }
 
         private void Negozio_CartePrezzo9_Label_Click(object sender, EventArgs e)
         {
             currentIndex = 8;
+            componenteSelezionato = Negozio_CartePirata9_Button;
             Seleziona();
         }
 
@@ -447,24 +487,28 @@ namespace KingOfPirates.GUI.MenuNassau
         private void Pirata10_Click(object sender, EventArgs e)
         {
             currentIndex = 9;
+            componenteSelezionato = Negozio_CartePirata10_Button;
             Seleziona();
         }
         
         private void Negozio_CartePirata10_Label_Click(object sender, EventArgs e)
         {
             currentIndex = 9;
+            componenteSelezionato = Negozio_CartePirata10_Button;
             Seleziona();
         }
 
         private void Negozio_CartaPirata10_Img_Click(object sender, EventArgs e)
         {
             currentIndex = 9;
+            componenteSelezionato = Negozio_CartePirata10_Button;
             Seleziona();
         }
 
         private void Negozio_CartePrezzo10_Label_Click(object sender, EventArgs e)
         {
             currentIndex = 9;
+            componenteSelezionato = Negozio_CartePirata10_Button;
             Seleziona();
         }
 
@@ -473,24 +517,28 @@ namespace KingOfPirates.GUI.MenuNassau
         private void Pirata11_Click(object sender, EventArgs e)
         {
             currentIndex = 10;
+            componenteSelezionato = Negozio_CartePirata11_Button;
             Seleziona();
         }
         
         private void Negozio_CartePirata11_Label_Click(object sender, EventArgs e)
         {
             currentIndex = 10;
+            componenteSelezionato = Negozio_CartePirata11_Button;
             Seleziona();
         }
 
         private void Negozio_CartaPirata11_Img_Click(object sender, EventArgs e)
         {
             currentIndex = 10;
+            componenteSelezionato = Negozio_CartePirata11_Button;
             Seleziona();
         }
 
         private void Negozio_CartePrezzo11_Label_Click(object sender, EventArgs e)
         {
             currentIndex = 10;
+            componenteSelezionato = Negozio_CartePirata11_Button;
             Seleziona();
         }
 
@@ -499,24 +547,28 @@ namespace KingOfPirates.GUI.MenuNassau
         private void Pirata12_Click(object sender, EventArgs e)
         {
             currentIndex = 11;
+            componenteSelezionato = Negozio_CartePirata12_Button;
             Seleziona();
         }
         
         private void Negozio_CartePirata12_Label_Click(object sender, EventArgs e)
         {
             currentIndex = 11;
+            componenteSelezionato = Negozio_CartePirata12_Button;
             Seleziona();
         }
 
         private void Negozio_CartaPirata12_Img_Click(object sender, EventArgs e)
         {
             currentIndex = 11;
+            componenteSelezionato = Negozio_CartePirata12_Button;
             Seleziona();
         }
 
         private void Negozio_CartePrezzo12_Label_Click(object sender, EventArgs e)
         {
             currentIndex = 11;
+            componenteSelezionato = Negozio_CartePirata12_Button;
             Seleziona();
         }
 
@@ -525,24 +577,28 @@ namespace KingOfPirates.GUI.MenuNassau
         private void Pirata13_Click(object sender, EventArgs e)
         {
             currentIndex = 12;
+            componenteSelezionato = Negozio_CartePirata13_Button;
             Seleziona();
         }
         
         private void Negozio_CartePirata13_Label_Click(object sender, EventArgs e)
         {
             currentIndex = 12;
+            componenteSelezionato = Negozio_CartePirata13_Button;
             Seleziona();
         }
 
         private void Negozio_CartaPirata13_Img_Click(object sender, EventArgs e)
         {
             currentIndex = 12;
+            componenteSelezionato = Negozio_CartePirata13_Button;
             Seleziona();
         }
 
         private void Negozio_CartePrezzo13_Label_Click(object sender, EventArgs e)
         {
             currentIndex = 12;
+            componenteSelezionato = Negozio_CartePirata13_Button;
             Seleziona();
         }
 
@@ -551,24 +607,28 @@ namespace KingOfPirates.GUI.MenuNassau
         private void Pirata14_Click(object sender, EventArgs e)
         {
             currentIndex = 13;
+            componenteSelezionato = Negozio_CartePirata14_Button;
             Seleziona();
         }
         
         private void Negozio_CartePirata14_Label_Click(object sender, EventArgs e)
         {
             currentIndex = 13;
+            componenteSelezionato = Negozio_CartePirata14_Button;
             Seleziona();
         }
 
         private void Negozio_CartaPirata14_Img_Click(object sender, EventArgs e)
         {
             currentIndex = 13;
+            componenteSelezionato = Negozio_CartePirata14_Button;
             Seleziona();
         }
 
         private void Negozio_CartePrezzo14_Label_Click(object sender, EventArgs e)
         {
             currentIndex = 13;
+            componenteSelezionato = Negozio_CartePirata14_Button;
             Seleziona();
         }
 
@@ -577,24 +637,28 @@ namespace KingOfPirates.GUI.MenuNassau
         private void Pirata15_Click(object sender, EventArgs e)
         {
             currentIndex = 14;
+            componenteSelezionato = Negozio_CartePirata15_Button;
             Seleziona();
         }
         
         private void Negozio_CartePirata15_Label_Click(object sender, EventArgs e)
         {
             currentIndex = 14;
+            componenteSelezionato = Negozio_CartePirata15_Button;
             Seleziona();
         }
 
         private void Negozio_CartaPirata15_Img_Click(object sender, EventArgs e)
         {
             currentIndex = 14;
+            componenteSelezionato = Negozio_CartePirata15_Button;
             Seleziona();
         }
 
         private void Negozio_CartePrezzo15_Label_Click(object sender, EventArgs e)
         {
             currentIndex = 14;
+            componenteSelezionato = Negozio_CartePirata15_Button;
             Seleziona();
         }
 
@@ -603,24 +667,28 @@ namespace KingOfPirates.GUI.MenuNassau
         private void Pirata16_Click(object sender, EventArgs e)
         {
             currentIndex = 15;
+            componenteSelezionato = Negozio_CartePirata16_Button;
             Seleziona();
         }
         
         private void Negozio_CartePirata16_Label_Click(object sender, EventArgs e)
         {
             currentIndex = 15;
+            componenteSelezionato = Negozio_CartePirata16_Button;
             Seleziona();
         }
 
         private void Negozio_CartaPirata16_Img_Click(object sender, EventArgs e)
         {
             currentIndex = 15;
+            componenteSelezionato = Negozio_CartePirata16_Button;
             Seleziona();
         }
 
         private void Negozio_CartePrezzo16_Label_Click(object sender, EventArgs e)
         {
             currentIndex = 15;
+            componenteSelezionato = Negozio_CartePirata16_Button;
             Seleziona();
         }
 
@@ -629,24 +697,28 @@ namespace KingOfPirates.GUI.MenuNassau
         private void Pirata17_Click(object sender, EventArgs e)
         {
             currentIndex = 16;
+            componenteSelezionato = Negozio_CartePirata17_Button;
             Seleziona();
         }
 
         private void Negozio_CartePirata17_Label_Click(object sender, EventArgs e)
         {
             currentIndex = 16;
+            componenteSelezionato = Negozio_CartePirata17_Button;
             Seleziona();
         }
 
         private void Negozio_CartaPirata17_Img_Click(object sender, EventArgs e)
         {
             currentIndex = 16;
+            componenteSelezionato = Negozio_CartePirata17_Button;
             Seleziona();
         }
 
         private void Negozio_CartePrezzo17_Label_Click(object sender, EventArgs e)
         {
             currentIndex = 16;
+            componenteSelezionato = Negozio_CartePirata17_Button;
             Seleziona();
         }
 
@@ -655,24 +727,28 @@ namespace KingOfPirates.GUI.MenuNassau
         private void Pirata18_Click(object sender, EventArgs e)
         {
             currentIndex = 17;
+            componenteSelezionato = Negozio_CartePirata18_Button;
             Seleziona();
         }
 
         private void Negozio_CartePirata18_Label_Click(object sender, EventArgs e)
         {
             currentIndex = 17;
+            componenteSelezionato = Negozio_CartePirata18_Button;
             Seleziona();
         }
 
         private void Negozio_CartaPirata18_Img_Click(object sender, EventArgs e)
         {
             currentIndex = 17;
+            componenteSelezionato = Negozio_CartePirata18_Button;
             Seleziona();
         }
 
         private void Negozio_CartePrezzo18_Label_Click(object sender, EventArgs e)
         {
             currentIndex = 17;
+            componenteSelezionato = Negozio_CartePirata18_Button;
             Seleziona();
         }
 
@@ -681,23 +757,27 @@ namespace KingOfPirates.GUI.MenuNassau
         private void Pirata19_Click(object sender, EventArgs e)
         {
             currentIndex = 18;
+            componenteSelezionato = Negozio_CartePirata19_Button;
             Seleziona();
         }
         private void Negozio_CartePirata19_Label_Click(object sender, EventArgs e)
         {
             currentIndex = 18;
+            componenteSelezionato = Negozio_CartePirata19_Button;
             Seleziona();
         }
 
         private void Negozio_CartaPirata19_Img_Click(object sender, EventArgs e)
         {
             currentIndex = 18;
+            componenteSelezionato = Negozio_CartePirata19_Button;
             Seleziona();
         }
 
         private void Negozio_CartePrezzo19_Label_Click(object sender, EventArgs e)
         {
             currentIndex = 18;
+            componenteSelezionato = Negozio_CartePirata19_Button;
             Seleziona();
         }
 
@@ -706,24 +786,28 @@ namespace KingOfPirates.GUI.MenuNassau
         private void Pirata20_Click(object sender, EventArgs e)
         {
             currentIndex = 19;
+            componenteSelezionato = Negozio_CartePirata20_Button;
             Seleziona();
         }
         
         private void Negozio_CartePirata20_Label_Click(object sender, EventArgs e)
         {
             currentIndex = 19;
+            componenteSelezionato = Negozio_CartePirata20_Button;
             Seleziona();
         }
 
         private void Negozio_CartaPirata20_Img_Click(object sender, EventArgs e)
         {
             currentIndex = 19;
+            componenteSelezionato = Negozio_CartePirata20_Button;
             Seleziona();
         }
 
         private void Negozio_CartePrezzo20_Label_Click(object sender, EventArgs e)
         {
             currentIndex = 19;
+            componenteSelezionato = Negozio_CartePirata20_Button;
             Seleziona();
         } 
     }

@@ -17,12 +17,13 @@ namespace KingOfPirates.GUI.MenuNassau
     public partial class Locanda_form : Form
     {
         Locanda locanda = new Locanda();
+        private int indiceCartaSelezionata;
 
         public Locanda_form()
         {
             InitializeComponent();
 
-            LoadData();
+            Update();
         }
 
         private void Locanda_Back_Button_Click(object sender, EventArgs e)
@@ -30,7 +31,7 @@ namespace KingOfPirates.GUI.MenuNassau
             this.Hide();
         }
 
-        public void LoadData()
+        public void Update()
         {
 
             Locanda_Carta1_Panel.BackgroundImage = ListaCarte.GetCarta(0).Immagine;
@@ -95,8 +96,6 @@ namespace KingOfPirates.GUI.MenuNassau
             Locanda_Det18_Label.Text = (ListaCarte.GetCarta(17).Determinazione).ToString();
             Locanda_Det19_Label.Text = (ListaCarte.GetCarta(18).Determinazione).ToString();
             Locanda_Det20_Label.Text = (ListaCarte.GetCarta(19).Determinazione).ToString();
-
-
         }
 
         private void showHideUtilizzabile(Control component, int indice)                     //se la carta non è utilizzabile la nasconde
@@ -105,109 +104,130 @@ namespace KingOfPirates.GUI.MenuNassau
                 component.Hide();
         }
 
+
         //////////////////////////////DRAG
 
         private void Locanda_Carta1_Panel_MouseDown(object sender, MouseEventArgs e)
         {
+            indiceCartaSelezionata = 0;
             Locanda_Carta1_Panel.DoDragDrop(Locanda_Carta1_Panel.BackgroundImage, DragDropEffects.Copy | DragDropEffects.Move);
         }
 
         private void Locanda_Carta2_Panel_MouseDown(object sender, MouseEventArgs e)
         {
+            indiceCartaSelezionata = 1;
             Locanda_Carta2_Panel.DoDragDrop(Locanda_Carta2_Panel.BackgroundImage, DragDropEffects.Copy | DragDropEffects.Move);
         }
 
         private void Locanda_Carta3_Panel_MouseDown(object sender, MouseEventArgs e)
         {
+            indiceCartaSelezionata = 2;
             Locanda_Carta3_Panel.DoDragDrop(Locanda_Carta3_Panel.BackgroundImage, DragDropEffects.Copy | DragDropEffects.Move);
         }
 
         private void Locanda_Carta4_Panel_MouseDown(object sender, MouseEventArgs e)
         {
+            indiceCartaSelezionata = 3;
             Locanda_Carta4_Panel.DoDragDrop(Locanda_Carta4_Panel.BackgroundImage, DragDropEffects.Copy | DragDropEffects.Move);
         }
 
         private void Locanda_Carta5_Panel_MouseDown(object sender, MouseEventArgs e)
         {
+            indiceCartaSelezionata = 4;
             Locanda_Carta5_Panel.DoDragDrop(Locanda_Carta5_Panel.BackgroundImage, DragDropEffects.Copy | DragDropEffects.Move);
         }
 
         private void Locanda_Carta6_Panel_MouseDown(object sender, MouseEventArgs e)
         {
+            indiceCartaSelezionata = 5;
             Locanda_Carta6_Panel.DoDragDrop(Locanda_Carta6_Panel.BackgroundImage, DragDropEffects.Copy | DragDropEffects.Move);
         }
 
         private void Locanda_Carta7_Panel_MouseDown(object sender, MouseEventArgs e)
         {
+            indiceCartaSelezionata = 6;
             Locanda_Carta7_Panel.DoDragDrop(Locanda_Carta7_Panel.BackgroundImage, DragDropEffects.Copy | DragDropEffects.Move);
         }
 
         private void Locanda_Carta8_Panel_MouseDown(object sender, MouseEventArgs e)
         {
+            indiceCartaSelezionata = 7;
             Locanda_Carta8_Panel.DoDragDrop(Locanda_Carta8_Panel.BackgroundImage, DragDropEffects.Copy | DragDropEffects.Move);
         }
 
         private void Locanda_Carta9_Panel_MouseDown(object sender, MouseEventArgs e)
         {
+            indiceCartaSelezionata = 8;
             Locanda_Carta9_Panel.DoDragDrop(Locanda_Carta9_Panel.BackgroundImage, DragDropEffects.Copy | DragDropEffects.Move);
         }
 
         private void Locanda_Carta10_Panel_MouseDown(object sender, MouseEventArgs e)
         {
+            indiceCartaSelezionata = 9;
             Locanda_Carta10_Panel.DoDragDrop(Locanda_Carta10_Panel.BackgroundImage, DragDropEffects.Copy | DragDropEffects.Move);
         }
 
         private void Locanda_Carta11_Panel_MouseDown(object sender, MouseEventArgs e)
         {
+            indiceCartaSelezionata = 10;
             Locanda_Carta11_Panel.DoDragDrop(Locanda_Carta11_Panel.BackgroundImage, DragDropEffects.Copy | DragDropEffects.Move);
         }
 
         private void Locanda_Carta12_Panel_MouseDown(object sender, MouseEventArgs e)
         {
+            indiceCartaSelezionata = 11;
             Locanda_Carta12_Panel.DoDragDrop(Locanda_Carta12_Panel.BackgroundImage, DragDropEffects.Copy | DragDropEffects.Move);
         }
 
         private void Locanda_Carta13_Panel_MouseDown(object sender, MouseEventArgs e)
         {
+            indiceCartaSelezionata = 12;
             Locanda_Carta13_Panel.DoDragDrop(Locanda_Carta13_Panel.BackgroundImage, DragDropEffects.Copy | DragDropEffects.Move);
         }
 
         private void Locanda_Carta14_Panel_MouseDown(object sender, MouseEventArgs e)
         {
+            indiceCartaSelezionata = 13;
             Locanda_Carta14_Panel.DoDragDrop(Locanda_Carta14_Panel.BackgroundImage, DragDropEffects.Copy | DragDropEffects.Move);
         }
 
         private void Locanda_Carta15_Panel_MouseDown(object sender, MouseEventArgs e)
         {
+            indiceCartaSelezionata = 14;
             Locanda_Carta15_Panel.DoDragDrop(Locanda_Carta15_Panel.BackgroundImage, DragDropEffects.Copy | DragDropEffects.Move);
         }
 
         private void Locanda_Carta16_Panel_MouseDown(object sender, MouseEventArgs e)
         {
+            indiceCartaSelezionata = 15;
             Locanda_Carta16_Panel.DoDragDrop(Locanda_Carta16_Panel.BackgroundImage, DragDropEffects.Copy | DragDropEffects.Move);
         }
 
         private void Locanda_Carta17_Panel_MouseDown(object sender, MouseEventArgs e)
         {
+            indiceCartaSelezionata = 16;
             Locanda_Carta17_Panel.DoDragDrop(Locanda_Carta17_Panel.BackgroundImage, DragDropEffects.Copy | DragDropEffects.Move);
         }
 
         private void Locanda_Carta18_Panel_MouseDown(object sender, MouseEventArgs e)
         {
+            indiceCartaSelezionata = 17;
             Locanda_Carta18_Panel.DoDragDrop(Locanda_Carta18_Panel.BackgroundImage, DragDropEffects.Copy | DragDropEffects.Move);
         }
 
         private void Locanda_Carta19_Panel_MouseDown(object sender, MouseEventArgs e)
         {
+            indiceCartaSelezionata = 18;
             Locanda_Carta19_Panel.DoDragDrop(Locanda_Carta19_Panel.BackgroundImage, DragDropEffects.Copy | DragDropEffects.Move);
         }
 
         private void Locanda_Carta20_Panel_MouseDown(object sender, MouseEventArgs e)
         {
+            indiceCartaSelezionata = 19;
             Locanda_Carta20_Panel.DoDragDrop(Locanda_Carta20_Panel.BackgroundImage, DragDropEffects.Copy | DragDropEffects.Move);
         }
 
-        //////////////////////////////DROP
+        //////////////////////////////ENTER
 
         private void Locanda_Slot1_Panel_DragEnter(object sender, DragEventArgs e)
         {
@@ -271,6 +291,73 @@ namespace KingOfPirates.GUI.MenuNassau
                 e.Effect = DragDropEffects.Copy;
             else
                 e.Effect = DragDropEffects.None;
+        }
+
+
+        //////////////////////////////DROP
+
+        private void Locanda_Slot1_Panel_DragDrop(object sender, DragEventArgs e)
+        {
+            ListaCarte.GetCarta(indiceCartaSelezionata).SetUtilizzabile(false);
+            ListaCarte.GetCarta(indiceCartaSelezionata).IsSleeping = true;
+            Locanda_Slot1_Panel.BackgroundImage = (Image)e.Data.GetData(DataFormats.Bitmap);
+            Update();
+        }
+
+        private void Locanda_Slot2_Panel_DragDrop(object sender, DragEventArgs e)
+        {
+            ListaCarte.GetCarta(indiceCartaSelezionata).SetUtilizzabile(false);
+            ListaCarte.GetCarta(indiceCartaSelezionata).IsSleeping = true;
+            Locanda_Slot2_Panel.BackgroundImage = (Image)e.Data.GetData(DataFormats.Bitmap);
+            Update();
+        }
+
+        private void Locanda_Slot3_Panel_DragDrop(object sender, DragEventArgs e)
+        {
+            ListaCarte.GetCarta(indiceCartaSelezionata).SetUtilizzabile(false);
+            ListaCarte.GetCarta(indiceCartaSelezionata).IsSleeping = true;
+            Locanda_Slot3_Panel.BackgroundImage = (Image)e.Data.GetData(DataFormats.Bitmap);
+            Update();
+        }
+
+        private void Locanda_Slot4_Panel_DragDrop(object sender, DragEventArgs e)
+        {
+            ListaCarte.GetCarta(indiceCartaSelezionata).SetUtilizzabile(false);
+            ListaCarte.GetCarta(indiceCartaSelezionata).IsSleeping = true;
+            Locanda_Slot4_Panel.BackgroundImage = (Image)e.Data.GetData(DataFormats.Bitmap);
+            Update();
+        }
+
+        private void Locanda_Slot5_Panel_DragDrop(object sender, DragEventArgs e)
+        {
+            ListaCarte.GetCarta(indiceCartaSelezionata).SetUtilizzabile(false);
+            ListaCarte.GetCarta(indiceCartaSelezionata).IsSleeping = true;
+            Locanda_Slot5_Panel.BackgroundImage = (Image)e.Data.GetData(DataFormats.Bitmap);
+            Update();
+        }
+
+        private void Locanda_Slot6_Panel_DragDrop(object sender, DragEventArgs e)
+        {
+            ListaCarte.GetCarta(indiceCartaSelezionata).SetUtilizzabile(false);
+            ListaCarte.GetCarta(indiceCartaSelezionata).IsSleeping = true;
+            Locanda_Slot6_Panel.BackgroundImage = (Image)e.Data.GetData(DataFormats.Bitmap);
+            Update();
+        }
+
+        private void Locanda_Slot7_Panel_DragDrop(object sender, DragEventArgs e)
+        {
+            ListaCarte.GetCarta(indiceCartaSelezionata).SetUtilizzabile(false);
+            ListaCarte.GetCarta(indiceCartaSelezionata).IsSleeping = true;
+            Locanda_Slot7_Panel.BackgroundImage = (Image)e.Data.GetData(DataFormats.Bitmap);
+            Update();
+        }
+
+        private void Locanda_Slot8_Panel_DragDrop(object sender, DragEventArgs e)
+        {
+            ListaCarte.GetCarta(indiceCartaSelezionata).SetUtilizzabile(false);
+            ListaCarte.GetCarta(indiceCartaSelezionata).IsSleeping = true;
+            Locanda_Slot8_Panel.BackgroundImage = (Image)e.Data.GetData(DataFormats.Bitmap);
+            Update();
         }
     }
 }
