@@ -124,7 +124,6 @@
     <Compile Include="Mappa\Cartina.cs" />
     <Compile Include="Mappa\GestioneDominio.cs" />
     <Compile Include="Missioni\Bandiera.cs" />
-    <Compile Include="Missioni\GestoreMissione.cs" />
     <Compile Include="Missioni\Griglia.cs" />
     <Compile Include="Missioni\ListaMissioni.cs" />
     <Compile Include="Missioni\Missione.cs" />

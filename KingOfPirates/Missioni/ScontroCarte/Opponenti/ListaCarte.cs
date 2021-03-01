@@ -30,9 +30,9 @@ namespace KingOfPirates.Missioni.ScontroCarte.Opponenti
         new CartaBase("756", 20, Properties.Resources.pun_pun1, 4, 4, 'f'),
         new CartaCura("Cura", 5, Properties.Resources.curaPozione, 4),
         new CartaCuraEstesa("Cura+", 5, Properties.Resources.curaEstesa, 1, 3),
-        new CartaBuff("Pow", 2, Properties.Resources.BufferDrink, 1, 3),
-        new CartaDebuff("Fear", 2, Properties.Resources.depotenziamento, -1, 3),
-        new CartaDannoContinuo("Bleeding", 2, Properties.Resources.dannoPerpetuo, 1, 3)};
+        new CartaBuff("Pow", 5, Properties.Resources.BufferDrink, 1, 3),
+        new CartaDebuff("Fear", 5, Properties.Resources.depotenziamento, -1, 3),
+        new CartaDannoContinuo("Bleeding", 5, Properties.Resources.dannoPerpetuo, 1, 3)};
 
         private static Carta cartaMorta = new CartaMorto("morto", 0, Properties.Resources.cross);
        public static Carta GetCarta(int indice)

@@ -34,7 +34,7 @@ namespace KingOfPirates.GUI.MenuMissioni
             score += ranking.Rubini * 5;
             score += ranking.NaviAffondate * 30;
 
-            score -= Gioco.Giocatore.GiocatoreCarte.Mazzo.CarteMorte*2;
+            score -= Gioco.Giocatore.GiocatoreCarte.Mazzo.CarteMorte*10;
 
             if (score >= 90)
                 Rank_label.Text = "S";

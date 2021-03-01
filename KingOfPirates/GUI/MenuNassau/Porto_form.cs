@@ -38,7 +38,7 @@ namespace KingOfPirates.GUI.MenuNassau
             nCarteSelezionate = 0;
 
             //prova
-            ListaCarte.GetCarta(1).SetUtilizzabile(true);
+            //ListaCarte.GetCarta(1).SetUtilizzabile(true);
             ListaCarte.GetCarta(2).SetUtilizzabile(true);
             ListaCarte.GetCarta(3).SetUtilizzabile(true);
             ListaCarte.GetCarta(4).SetUtilizzabile(true);
@@ -201,8 +201,8 @@ namespace KingOfPirates.GUI.MenuNassau
                 Gioco.MissioneSelezionata = ListaMissioni.GetMissione(index);
 
                 //fa partire la missione selezionata
-                this.Hide();
                 Gioco.MissioneSelezionata.StartMissione();
+                this.Hide();
             }
         }
 
@@ -744,6 +744,39 @@ namespace KingOfPirates.GUI.MenuNassau
             {
                Porto_Missioni_Panel.Hide();
                Porto_SelezioneCarte_Panel.Hide();
+
+               //deseleziona tutto
+               for(int i = 0; i < isSelected.Length; i++)
+                    isSelected[i] = false;
+
+               nCarteSelezionate = 0;
+
+               Porto_Selected1_PB.BackgroundImage = null;
+               Porto_Selected2_PB.BackgroundImage = null;
+               Porto_Selected3_PB.BackgroundImage = null;
+
+               Porto_Selected4_PB.BackgroundImage = null;
+               Porto_Selected5_PB.BackgroundImage = null;
+               Porto_Selected6_PB.BackgroundImage = null;
+               
+               Porto_Selected7_PB.BackgroundImage = null;
+               Porto_Selected8_PB.BackgroundImage = null;
+               Porto_Selected9_PB.BackgroundImage = null;
+               
+               Porto_Selected10_PB.BackgroundImage = null;
+               Porto_Selected11_PB.BackgroundImage = null;
+               Porto_Selected12_PB.BackgroundImage = null;
+               
+               Porto_Selected13_PB.BackgroundImage = null;
+               Porto_Selected14_PB.BackgroundImage = null;
+               Porto_Selected15_PB.BackgroundImage = null;
+               
+               Porto_Selected16_PB.BackgroundImage = null;
+               Porto_Selected17_PB.BackgroundImage = null;
+               Porto_Selected18_PB.BackgroundImage = null;
+               
+               Porto_Selected19_PB.BackgroundImage = null;
+               Porto_Selected20_PB.BackgroundImage = null;
             }
         }
     }

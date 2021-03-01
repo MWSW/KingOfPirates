@@ -449,7 +449,10 @@ namespace KingOfPirates.GUI.ScontroCarte
                 int indice = player.CarteInMano[cartaSelezionata].Indice; //salvo il vecchio indice
                 player.CarteInMano[cartaSelezionata] = ListaCarte.GetMorto();
 
-                player.Mazzo.MorteCarta(cartaSelezionata); //uccide la carta
+                //setto un idice altimenti esplode tutto
+                player.CarteInMano[cartaSelezionata].Indice = indice;
+
+                player.Mazzo.MorteCarta(indice); //uccide la carta
 
                 player.CarteInMano[cartaSelezionata].Visualizza(img_carta0, nomeCarta0, det0, att0, def0, elem0);
 
