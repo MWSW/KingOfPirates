@@ -316,7 +316,7 @@ namespace KingOfPirates.GUI.MenuMissioni
             //
             this.Scavo_button.Location = new System.Drawing.Point(ActionButtonStartPointX, ActionButtonStartPointY);
             this.Scavo_button.Name = "Scavo_button";
-            this.Scavo_button.Size = new System.Drawing.Size(150, 35);
+            this.Scavo_button.Size = new System.Drawing.Size(150, 40);
             this.Scavo_button.TabIndex = 1;
             this.Scavo_button.Text = "Scava!";
             this.Scavo_button.UseVisualStyleBackColor = true;
@@ -324,14 +324,15 @@ namespace KingOfPirates.GUI.MenuMissioni
             //
             // Attacca_button
             //
-            ActionButtonStartPointY += 40;
+            ActionButtonStartPointY += 43;
             this.Attacca_button.Location = new System.Drawing.Point(ActionButtonStartPointX, ActionButtonStartPointY);
             this.Attacca_button.Name = "Attacca_button";
-            this.Attacca_button.Size = new System.Drawing.Size(150, 35);
+            this.Attacca_button.Size = new System.Drawing.Size(150, 40);
             this.Attacca_button.TabIndex = 1;
             this.Attacca_button.Text = "Attacca: ";
             this.Attacca_button.UseVisualStyleBackColor = true;
             this.Attacca_button.Click += new System.EventHandler(this.Attacca_button_Click);
+            ActionButtonStartPointY += 43;
 
             #endregion
 
