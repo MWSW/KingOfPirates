@@ -336,7 +336,8 @@ namespace KingOfPirates.GUI.MenuMissioni
 
         private void MenuMissioni_FormClosing(object sender, FormClosingEventArgs e)
         {
-            missione.EndMissione();
+            e.Cancel = true;
+            MessageBox.Show("Finisci la missione");
         }
 
         private void OnVisibleChanged(object sender, EventArgs e)

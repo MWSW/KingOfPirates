@@ -57,12 +57,12 @@ namespace KingOfPirates.GUI.MenuMissioni
             //torna a Nassau
             Gioco.nassauForm.Show();
 
-            Close();
+            missione.EndMissione();
         }
 
         private void FineMissione_FormClosing(object sender, FormClosingEventArgs e)
         {
-            missione.EndMissione();
+            OnClick(sender, e);
         }
     }
 }
