@@ -213,6 +213,16 @@ namespace KingOfPirates.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap DEAL {
+            get {
+                object obj = ResourceManager.GetObject("DEAL", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap debuff {
             get {
                 object obj = ResourceManager.GetObject("debuff", resourceCulture);

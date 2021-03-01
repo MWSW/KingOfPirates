@@ -321,6 +321,7 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             // Locanda_Carta1_Panel
             // 
+            this.Locanda_Carta1_Panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Locanda_Carta1_Panel.Controls.Add(this.Porto_Selected1_PB);
             this.Locanda_Carta1_Panel.Location = new System.Drawing.Point(4, 4);
             this.Locanda_Carta1_Panel.Margin = new System.Windows.Forms.Padding(4);
@@ -342,6 +343,7 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             // Locanda_Carta2_Panel
             // 
+            this.Locanda_Carta2_Panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Locanda_Carta2_Panel.Controls.Add(this.Porto_Selected2_PB);
             this.Locanda_Carta2_Panel.Location = new System.Drawing.Point(240, 4);
             this.Locanda_Carta2_Panel.Margin = new System.Windows.Forms.Padding(4);
@@ -363,6 +365,7 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             // Locanda_Carta3_Panel
             // 
+            this.Locanda_Carta3_Panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Locanda_Carta3_Panel.Controls.Add(this.Porto_Selected3_PB);
             this.Locanda_Carta3_Panel.Location = new System.Drawing.Point(476, 4);
             this.Locanda_Carta3_Panel.Margin = new System.Windows.Forms.Padding(4);
@@ -384,6 +387,7 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             // Locanda_Carta4_Panel
             // 
+            this.Locanda_Carta4_Panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Locanda_Carta4_Panel.Controls.Add(this.Porto_Selected4_PB);
             this.Locanda_Carta4_Panel.Location = new System.Drawing.Point(712, 4);
             this.Locanda_Carta4_Panel.Margin = new System.Windows.Forms.Padding(4);
@@ -405,6 +409,7 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             // Locanda_Carta5_Panel
             // 
+            this.Locanda_Carta5_Panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Locanda_Carta5_Panel.Controls.Add(this.Porto_Selected5_PB);
             this.Locanda_Carta5_Panel.Location = new System.Drawing.Point(948, 4);
             this.Locanda_Carta5_Panel.Margin = new System.Windows.Forms.Padding(4);
@@ -426,6 +431,7 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             // Locanda_Carta6_Panel
             // 
+            this.Locanda_Carta6_Panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Locanda_Carta6_Panel.Controls.Add(this.Porto_Selected6_PB);
             this.Locanda_Carta6_Panel.Location = new System.Drawing.Point(4, 309);
             this.Locanda_Carta6_Panel.Margin = new System.Windows.Forms.Padding(4);
@@ -447,6 +453,7 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             // Locanda_Carta7_Panel
             // 
+            this.Locanda_Carta7_Panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Locanda_Carta7_Panel.Controls.Add(this.Porto_Selected7_PB);
             this.Locanda_Carta7_Panel.Location = new System.Drawing.Point(240, 309);
             this.Locanda_Carta7_Panel.Margin = new System.Windows.Forms.Padding(4);
@@ -468,6 +475,7 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             // Locanda_Carta8_Panel
             // 
+            this.Locanda_Carta8_Panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Locanda_Carta8_Panel.Controls.Add(this.Porto_Selected8_PB);
             this.Locanda_Carta8_Panel.Location = new System.Drawing.Point(476, 309);
             this.Locanda_Carta8_Panel.Margin = new System.Windows.Forms.Padding(4);
@@ -489,6 +497,7 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             // Locanda_Carta9_Panel
             // 
+            this.Locanda_Carta9_Panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Locanda_Carta9_Panel.Controls.Add(this.Porto_Selected9_PB);
             this.Locanda_Carta9_Panel.Location = new System.Drawing.Point(712, 309);
             this.Locanda_Carta9_Panel.Margin = new System.Windows.Forms.Padding(4);
@@ -510,6 +519,7 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             // Locanda_Carta10_Panel
             // 
+            this.Locanda_Carta10_Panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Locanda_Carta10_Panel.Controls.Add(this.Porto_Selected10_PB);
             this.Locanda_Carta10_Panel.Location = new System.Drawing.Point(948, 309);
             this.Locanda_Carta10_Panel.Margin = new System.Windows.Forms.Padding(4);
@@ -531,6 +541,7 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             // Locanda_Carta11_Panel
             // 
+            this.Locanda_Carta11_Panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Locanda_Carta11_Panel.Controls.Add(this.Porto_Selected11_PB);
             this.Locanda_Carta11_Panel.Location = new System.Drawing.Point(4, 614);
             this.Locanda_Carta11_Panel.Margin = new System.Windows.Forms.Padding(4);
@@ -552,6 +563,7 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             // Locanda_Carta12_Panel
             // 
+            this.Locanda_Carta12_Panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Locanda_Carta12_Panel.Controls.Add(this.Porto_Selected12_PB);
             this.Locanda_Carta12_Panel.Location = new System.Drawing.Point(240, 614);
             this.Locanda_Carta12_Panel.Margin = new System.Windows.Forms.Padding(4);
@@ -573,6 +585,7 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             // Locanda_Carta13_Panel
             // 
+            this.Locanda_Carta13_Panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Locanda_Carta13_Panel.Controls.Add(this.Porto_Selected13_PB);
             this.Locanda_Carta13_Panel.Location = new System.Drawing.Point(476, 614);
             this.Locanda_Carta13_Panel.Margin = new System.Windows.Forms.Padding(4);
@@ -594,6 +607,7 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             // Locanda_Carta14_Panel
             // 
+            this.Locanda_Carta14_Panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Locanda_Carta14_Panel.Controls.Add(this.Porto_Selected14_PB);
             this.Locanda_Carta14_Panel.Location = new System.Drawing.Point(712, 614);
             this.Locanda_Carta14_Panel.Margin = new System.Windows.Forms.Padding(4);
@@ -615,6 +629,7 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             // Locanda_Carta15_Panel
             // 
+            this.Locanda_Carta15_Panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Locanda_Carta15_Panel.Controls.Add(this.Porto_Selected15_PB);
             this.Locanda_Carta15_Panel.Location = new System.Drawing.Point(948, 614);
             this.Locanda_Carta15_Panel.Margin = new System.Windows.Forms.Padding(4);
@@ -636,6 +651,7 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             // Locanda_Carta16_Panel
             // 
+            this.Locanda_Carta16_Panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Locanda_Carta16_Panel.Controls.Add(this.Porto_Selected16_PB);
             this.Locanda_Carta16_Panel.Location = new System.Drawing.Point(4, 919);
             this.Locanda_Carta16_Panel.Margin = new System.Windows.Forms.Padding(4);
@@ -657,6 +673,7 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             // Locanda_Carta17_Panel
             // 
+            this.Locanda_Carta17_Panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Locanda_Carta17_Panel.Controls.Add(this.Porto_Selected17_PB);
             this.Locanda_Carta17_Panel.Location = new System.Drawing.Point(240, 919);
             this.Locanda_Carta17_Panel.Margin = new System.Windows.Forms.Padding(4);
@@ -678,6 +695,7 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             // Locanda_Carta18_Panel
             // 
+            this.Locanda_Carta18_Panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Locanda_Carta18_Panel.Controls.Add(this.Porto_Selected18_PB);
             this.Locanda_Carta18_Panel.Location = new System.Drawing.Point(476, 919);
             this.Locanda_Carta18_Panel.Margin = new System.Windows.Forms.Padding(4);
@@ -699,6 +717,7 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             // Locanda_Carta19_Panel
             // 
+            this.Locanda_Carta19_Panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Locanda_Carta19_Panel.Controls.Add(this.Porto_Selected19_PB);
             this.Locanda_Carta19_Panel.Location = new System.Drawing.Point(712, 919);
             this.Locanda_Carta19_Panel.Margin = new System.Windows.Forms.Padding(4);
@@ -709,6 +728,7 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             // Locanda_Carta20_Panel
             // 
+            this.Locanda_Carta20_Panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Locanda_Carta20_Panel.Controls.Add(this.Porto_Selected20_PB);
             this.Locanda_Carta20_Panel.Location = new System.Drawing.Point(948, 919);
             this.Locanda_Carta20_Panel.Margin = new System.Windows.Forms.Padding(4);

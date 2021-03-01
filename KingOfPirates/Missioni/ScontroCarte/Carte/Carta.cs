@@ -18,7 +18,8 @@ namespace KingOfPirates.Missioni.ScontroCarte.Carte
         private int prezzo;
         private String descrizione;
 
-        protected bool utilizzabile; //Non so se va in conflitto con mazzo
+        protected bool utilizzabile;
+        private bool isSleeping;
         protected Bitmap immagine;
 
         private int indice;
@@ -34,6 +35,9 @@ namespace KingOfPirates.Missioni.ScontroCarte.Carte
             immagine = immagine_;
 
             tipo = tipo_;
+
+            utilizzabile = false;
+            IsSleeping = false;
         }
 
         public void Visualizza(PictureBox img_carta, Label nomeCarta, Label det)
@@ -105,5 +109,6 @@ namespace KingOfPirates.Missioni.ScontroCarte.Carte
         public string Tipo { get => tipo; }
         public int Prezzo { get => prezzo; set => prezzo = value; }
         public string Descrizione { get => descrizione; set => descrizione = value; }
+        public bool IsSleeping { get => isSleeping; set => isSleeping = value; }
     }
 }

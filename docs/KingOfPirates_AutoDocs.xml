@@ -527,6 +527,11 @@
               Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
             </summary>
         </member>
+        <member name="P:KingOfPirates.Properties.Resources.DEAL">
+            <summary>
+              Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
         <member name="P:KingOfPirates.Properties.Resources.debuff">
             <summary>
               Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.

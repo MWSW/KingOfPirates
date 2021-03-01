@@ -88,7 +88,7 @@ namespace KingOfPirates.Nassau
         
         public void AcquistaCarta(int indice){
             Gioco.Dominio.RemDobloni(ListaCarte.GetCartaClone(indice).Prezzo);
-            ListaCarte.GetCartaClone(indice).SetUtilizzabile(true);
+            ListaCarte.GetCarta(indice).SetUtilizzabile(true);
         }
 
         public override void Upgrade()
