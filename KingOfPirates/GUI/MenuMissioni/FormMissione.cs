@@ -90,7 +90,7 @@ namespace KingOfPirates.GUI.MenuMissioni
                     Gioco.Giocatore.Abborda(n);
                 }
 
-            
+
             //bandiera (fine missione)
             if (missione.Griglia_numerica.Mat[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y] == 3)
             {
@@ -111,29 +111,40 @@ namespace KingOfPirates.GUI.MenuMissioni
 
         internal void UpdateComponenti()
         {
-            //attacco
-
-            for (int i = -1; i < 2; i++)
+            void CercaNemico()
             {
-                for (int j = -1; j < 2; j++)
+                for (int i = -1; i < 2; i++)
                 {
-                    foreach (var n in missione.Nemici)
+                    for (int j = -1; j < 2; j++)
                     {
-                        var tempLoc = new Loc2D(Gioco.Giocatore.Loc.X + i, Gioco.Giocatore.Loc.Y + j);
-                        if (tempLoc.IsEqualTo(n.Loc) && !n.IsGameOver)
+                        foreach (var n in missione.Nemici)
                         {
-                            Attacca_button.Show();
-                            Attacca_button.Text = "Attacca: " + n.Nome + "\nHP: " + n.Stats.Hp + "/" + n.Stats.HpMax;
-                            goto a_quel_paese; //plz dont kill me
-                        }
-                        else
-                        {
-                            Attacca_button.Hide();
+                            var tempLoc = new Loc2D(Gioco.Giocatore.Loc.X + i, Gioco.Giocatore.Loc.Y + j);
+                            if (tempLoc.IsEqualTo(n.Loc) && !n.IsGameOver)
+                            {
+                                Attacca_button.Enabled = true;
+                                Attacca_button.Show();
+                                Attacca_button.Text = "Attacca: " + n.Nome + "\nHP: " + n.Stats.Hp + "/" + n.Stats.HpMax;
+                                return;
+                            }
+                            else
+                            {
+                                Attacca_button.Hide();
+                            }
                         }
                     }
                 }
             }
-        a_quel_paese:
+            if (Gioco.Giocatore.Stats.Pa > 0)// controllo attacco
+            {
+                CercaNemico();
+            }
+            else
+            {
+                Attacca_button.Text = "Attacca:\nNon hai energia";
+                Attacca_button.Enabled = false;
+            }
+
 
             // Controllo per scavare
             if (missione.Griglia_numerica.Mat[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y] == 1)
@@ -378,14 +389,11 @@ namespace KingOfPirates.GUI.MenuMissioni
                         {
                             Gioco.Giocatore.Attacca(missione, n);
                             Gioco.Giocatore.Stats.Pa = 0;
-                            Attacca_button.Text = "Attacca: " + n.Nome + "\nHP: " + n.Stats.Hp + "/" + n.Stats.HpMax;
-                            goto exitLoop; //no kill plz
+                            return;
                         }
                     }
                 }
             }
-        exitLoop:
-            return;
         }
 
         private void MenuMissioni_FormClosing(object sender, FormClosingEventArgs e)
