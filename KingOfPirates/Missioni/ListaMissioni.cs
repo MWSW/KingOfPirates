@@ -158,7 +158,11 @@ namespace KingOfPirates.Missioni
 
         public static Missione GetMissione(int index)
         {
-            switch(index)
+
+            //setto il giocatore per l'inizio della partita
+            Gioco.Giocatore.ReloadGame();
+
+            switch (index)
             {
                 case 0:
                     return Missione1();

@@ -28,7 +28,7 @@ namespace KingOfPirates.Missioni
         /// </value>
         internal NaveNemico[] Nemici { get; set; }
         /// <value>
-        /// Posizione iniziale nave.
+        /// Griglia numerica per settare le celle della missione.
         /// </value>
         internal Griglia Griglia_numerica { get; set; }
 

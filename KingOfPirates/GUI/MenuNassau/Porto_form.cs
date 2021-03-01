@@ -201,6 +201,7 @@ namespace KingOfPirates.GUI.MenuNassau
                 Gioco.MissioneSelezionata = ListaMissioni.GetMissione(index);
 
                 //fa partire la missione selezionata
+                this.Hide();
                 Gioco.MissioneSelezionata.StartMissione();
             }
         }
@@ -735,6 +736,15 @@ namespace KingOfPirates.GUI.MenuNassau
                 Locanda_Carta20_Panel.BackgroundImage = ListaCarte.GetCarta(19).Immagine;
             }
 
+        }
+
+        private void OnVisibleChanged(object sender, EventArgs e)
+        {
+            if(this.Visible)
+            {
+               Porto_Missioni_Panel.Hide();
+               Porto_SelezioneCarte_Panel.Hide();
+            }
         }
     }
 }

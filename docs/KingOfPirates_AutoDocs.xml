@@ -200,7 +200,7 @@
         </member>
         <member name="P:KingOfPirates.Missioni.Missione.Griglia_numerica">
             <value>
-            Posizione iniziale nave.
+            Griglia numerica per settare le celle della missione.
             </value>
         </member>
         <member name="P:KingOfPirates.Missioni.Missione.Ranking">

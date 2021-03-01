@@ -180,6 +180,18 @@ namespace KingOfPirates.Missioni.Navi
             GiocatoreCarte.IsGameOver = false;
         }
 
+        //Quando carichi una nuova missione
+        public void ReloadGame()
+        {
+            Restart();
+
+            //inserisco i parametri di partenza
+            Ubriachezza = 0;
+            Determinazione = (int)(Determinazione * 0.75f);
+            Stats.Pa = Stats.PaMax;
+            Stats.Hp = Stats.HpMax / 2;
+        }
+
         public void RemEnergia(int enTolta)
         {
             Stats.Pa -= enTolta;
