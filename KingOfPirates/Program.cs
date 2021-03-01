@@ -57,8 +57,8 @@ namespace KingOfPirates
         /// </summary>
         public static void Start()
         {
-            startMenu = new StartMenu();
             Init();
+            startMenu = new StartMenu();
             startMenu.Show();
         }
 
@@ -92,6 +92,7 @@ namespace KingOfPirates
 
             Giocatore = new NaveGiocatore("Nave da Test", Resources.nave_rossa, new Stats(), new Loc2D(3, 3),
                 5, 10, player_prova);
+
             Dominio = new GestioneDominio();
 
             Griglia griglia_prova = new Griglia(new int[19, 12]
