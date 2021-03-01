@@ -58,6 +58,7 @@ namespace KingOfPirates.GUI.MenuMissioni
             this.Dobloni_label = new Label();
             this.Rubini_label = new Label();
             this.Scavo_button = new Button();
+            this.Attacca_button = new Button();
             this.Griglia_pictureBox = new System.Windows.Forms.PictureBox[picBoxXSize, picBoxYSize];
             ((System.ComponentModel.ISupportInitialize)(this.cartinaBindingSource)).BeginInit();
             this.Griglia_tableLayoutPanel.SuspendLayout();
@@ -315,14 +316,24 @@ namespace KingOfPirates.GUI.MenuMissioni
             //
             this.Scavo_button.Location = new System.Drawing.Point(ActionButtonStartPointX, ActionButtonStartPointY);
             this.Scavo_button.Name = "Scavo_button";
-            this.Scavo_button.Size = new System.Drawing.Size(156, 35);
+            this.Scavo_button.Size = new System.Drawing.Size(150, 35);
             this.Scavo_button.TabIndex = 1;
             this.Scavo_button.Text = "Scava!";
             this.Scavo_button.UseVisualStyleBackColor = true;
             this.Scavo_button.Click += new System.EventHandler(this.Scavo_button_Click);
+            //
+            // Attacca_button
+            //
+            ActionButtonStartPointY += 40;
+            this.Attacca_button.Location = new System.Drawing.Point(ActionButtonStartPointX, ActionButtonStartPointY);
+            this.Attacca_button.Name = "Attacca_button";
+            this.Attacca_button.Size = new System.Drawing.Size(150, 35);
+            this.Attacca_button.TabIndex = 1;
+            this.Attacca_button.Text = "Attacca: ";
+            this.Attacca_button.UseVisualStyleBackColor = true;
+            this.Attacca_button.Click += new System.EventHandler(this.Attacca_button_Click);
+
             #endregion
-
-
 
             #region Matrice pictureBox
 
@@ -410,6 +421,7 @@ namespace KingOfPirates.GUI.MenuMissioni
             this.Controls.Add(this.Dobloni_label);
             this.Controls.Add(this.Rubini_label);
             this.Controls.Add(this.Scavo_button);
+            this.Controls.Add(this.Attacca_button);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MenuMissioni_FormClosing);
             this.VisibleChanged += new System.EventHandler(this.OnVisibleChanged);
             this.Name = "MenuMissioni";
@@ -453,5 +465,6 @@ namespace KingOfPirates.GUI.MenuMissioni
         private Label Rubini_label;
 
         private Button Scavo_button;
+        private Button Attacca_button;
     }
 }

@@ -57,6 +57,7 @@ namespace KingOfPirates.GUI.MenuMissioni
                 Sotto_button.ForeColor = Color.LightCoral;
                 Destra_button.ForeColor = Color.LightCoral;
                 Sinistra_button.ForeColor = Color.LightCoral;
+                Attacca_button.ForeColor = Color.LightCoral;
             }
             else
             {
@@ -75,6 +76,26 @@ namespace KingOfPirates.GUI.MenuMissioni
                 Scavo_button.ForeColor = Color.Red;
             else
                 Scavo_button.ForeColor = Color.Black;
+
+            //attacco
+            foreach (var n in missione.Nemici)
+            {
+                for (int i = -1; i < 2; i++)
+                {
+                    for (int j = -1; j < 2; j++)
+                    {
+                        var tempLoc = new Loc2D(Gioco.Giocatore.Loc.X + i, Gioco.Giocatore.Loc.Y + j);
+                        if (tempLoc.IsEqualTo(n.Loc))
+                        {
+                            Attacca_button.Show();
+                        }
+                        else
+                        {
+                            Attacca_button.Hide();
+                        }
+                    }
+                }
+            }
 
             //controlla vita nemici
             foreach (var n in missione.Nemici)
@@ -315,6 +336,24 @@ namespace KingOfPirates.GUI.MenuMissioni
                 }
 
             UpdateComponenti();
+        }
+
+        private void Attacca_button_Click(object sender, EventArgs e)
+        {
+            foreach (var n in missione.Nemici)
+            {
+                for (int i = -1; i < 2; i++)
+                {
+                    for (int j = -1; j < 2; j++)
+                    {
+                        var tempLoc = new Loc2D(Gioco.Giocatore.Loc.X + i, Gioco.Giocatore.Loc.Y + j);
+                        if (tempLoc.IsEqualTo(n.Loc))
+                        {
+                            Gioco.Giocatore.Attacca(missione, n);
+                        }
+                    }
+                }
+            }
         }
 
         internal void UpdateComponenti()
