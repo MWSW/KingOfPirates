@@ -1,0 +1,5 @@
+<map id="KingOfPirates.GUI.MenuMissioni.FormMissione" name="KingOfPirates.GUI.MenuMissioni.FormMissione">
+<area shape="rect" id="node1" title="Form che rappresenta la griglia grafica della missione, fatto a mano." alt="" coords="5,95,221,136"/>
+<area shape="rect" id="node2" title=" " alt="" coords="10,5,62,32"/>
+<area shape="rect" id="node3" href="$d5/dfd/class_king_of_pirates_1_1_missioni_1_1_missione.html" title="Classe rappresentante una missione nel gioco" alt="" coords="87,5,297,32"/>
+</map>

@@ -105,7 +105,6 @@ namespace KingOfPirates.GUI.MenuMissioni
                     if (n.IsGameOver)
                         missione.Ranking.IncNaviAffondate();
 
-                missione.Fine = new FineMissione(missione);
                 missione.Fine.Show();
                 Hide();
             }

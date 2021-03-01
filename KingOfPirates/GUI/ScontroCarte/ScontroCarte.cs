@@ -2,19 +2,15 @@
 using KingOfPirates.Missioni.ScontroCarte.Carte.CarteEffetto;
 using KingOfPirates.Missioni.ScontroCarte.Opponenti;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.IO;
-using System.Linq;
 using System.Media;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace KingOfPirates.GUI.ScontroCarte
 {
+    /// <summary>
+    /// Componente grafica dello scontro a carte.
+    /// </summary>
     public partial class ScontroCarte : Form
     {
 
@@ -38,8 +34,10 @@ namespace KingOfPirates.GUI.ScontroCarte
         SoundPlayer musicBox; //FIXME
         bool isPlaying;
 
-
-
+        /// <summary>
+        /// Costruttore semplice
+        /// </summary>
+        /// <param name="nemico_">Bersaglio con cui iniziare lo scontro.</param>
         public ScontroCarte(Nemico_carte nemico_)
         {
             InitializeComponent();
@@ -108,13 +106,13 @@ namespace KingOfPirates.GUI.ScontroCarte
             for (int i = 0; i < player.CarteInMano.Length; i++)
             {
                 player.CarteInMano[i].Visualizza(img_carta[i], nomeCarta[i], det[i], att[i], def[i], elem[i]);
-                if(player.CarteInMano[i].Tipo != "attacco")
+                if (player.CarteInMano[i].Tipo != "attacco")
                 {
                     att[i].Hide();
                     def[i].Hide();
                     elem[i].Hide();
                 }
-            }     
+            }
 
         }
 
@@ -147,7 +145,7 @@ namespace KingOfPirates.GUI.ScontroCarte
                 bt_nascondi.Show();
 
                 //Buff a livello grafico
-                if(player.BuffApplicato)
+                if (player.BuffApplicato)
                 {
                     att0.Text += "+" + player.ValBuff;
                     def0.Text += "+" + player.ValBuff;
@@ -199,7 +197,7 @@ namespace KingOfPirates.GUI.ScontroCarte
 
             //Per ora la determinazione non conta
             int dmg = attaccante.Atk - difensore.Def;
-            dmg += plus; 
+            dmg += plus;
 
             if (dmg < 0)
                 dmg = 0;
@@ -386,7 +384,7 @@ namespace KingOfPirates.GUI.ScontroCarte
                     curaEstesa.Show();
                 }
 
-                if(player.BuffApplicato)
+                if (player.BuffApplicato)
                 {
                     player.ApplicaBuffStats();
                     img_buff.Show();
@@ -394,12 +392,12 @@ namespace KingOfPirates.GUI.ScontroCarte
             }
             else
             {
-                if(nemico.DebuffApplicato)
+                if (nemico.DebuffApplicato)
                 {
                     nemico.ApplicaDebuff();
                 }
 
-                if(nemico.DannoApplicato)
+                if (nemico.DannoApplicato)
                 {
                     nemico.ApplicaDannoPerpetuo();
                     vita_avversario.Text = "HP: " + nemico.CurHp + "/" + nemico.MaxHp;
@@ -418,12 +416,12 @@ namespace KingOfPirates.GUI.ScontroCarte
                 img_buff.Hide();
             }
 
-            if(!nemico.DebuffApplicato)
+            if (!nemico.DebuffApplicato)
             {
                 img_debuff.Hide();
             }
 
-            if(!nemico.DannoApplicato)
+            if (!nemico.DannoApplicato)
             {
                 img_dannoPerpetuo.Hide();
             }
@@ -469,7 +467,7 @@ namespace KingOfPirates.GUI.ScontroCarte
 
             img_carta0.Show();
             img_carta0.Image = Properties.Resources.SpazioVuoto;
-            
+
 
             bt_attacco.Hide();
             bt_nascondi.Hide();
@@ -521,9 +519,9 @@ namespace KingOfPirates.GUI.ScontroCarte
                 detA.BackColor = Color.LightGoldenrodYellow;
 
                 messaggioGiocatore.Hide();
-                messaggioNemico.Show();    
-                    
-                    
+                messaggioNemico.Show();
+
+
                 //Buff a livello grafico
                 if (nemico.DebuffApplicato)
                 {
@@ -557,7 +555,7 @@ namespace KingOfPirates.GUI.ScontroCarte
 
         private void audio_Click(object sender, EventArgs e)
         {
-            if(isPlaying)
+            if (isPlaying)
             {
                 musicBox.Stop();
                 audio.Image = Properties.Resources.play;
@@ -580,7 +578,7 @@ namespace KingOfPirates.GUI.ScontroCarte
 
         private void OnVisibleChanged(object sender, EventArgs e)
         {
-            if(this.Visible)
+            if (this.Visible)
             {
                 musicBox.PlayLooping(); //attiva musica al riavvio
             }

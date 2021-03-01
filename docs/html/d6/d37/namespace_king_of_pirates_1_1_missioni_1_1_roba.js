@@ -6,6 +6,7 @@ var namespace_king_of_pirates_1_1_missioni_1_1_roba =
       [ "SOPRA", "d6/d37/namespace_king_of_pirates_1_1_missioni_1_1_roba.html#ae84745bbd5df5a83802ef0424ef5f974a4b1bf760f05f28698c9b12cde992d7cb", null ],
       [ "DESTRA", "d6/d37/namespace_king_of_pirates_1_1_missioni_1_1_roba.html#ae84745bbd5df5a83802ef0424ef5f974a66acd4238791e63be792215092a6b029", null ],
       [ "SINISTRA", "d6/d37/namespace_king_of_pirates_1_1_missioni_1_1_roba.html#ae84745bbd5df5a83802ef0424ef5f974a07218a1a6943727f898be14584b0b9f5", null ],
-      [ "SOTTO", "d6/d37/namespace_king_of_pirates_1_1_missioni_1_1_roba.html#ae84745bbd5df5a83802ef0424ef5f974a4423911fca31c276400005a3ea731fb5", null ]
+      [ "SOTTO", "d6/d37/namespace_king_of_pirates_1_1_missioni_1_1_roba.html#ae84745bbd5df5a83802ef0424ef5f974a4423911fca31c276400005a3ea731fb5", null ],
+      [ "NO", "d6/d37/namespace_king_of_pirates_1_1_missioni_1_1_roba.html#ae84745bbd5df5a83802ef0424ef5f974ac2f3f489a00553e7a01d369c103c7251", null ]
     ] ]
 ];

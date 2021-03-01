@@ -90,7 +90,7 @@ namespace KingOfPirates
 
             Player_carte player_prova = new Player_carte(10, new Mazzo(carte_player));
 
-            Giocatore = new NaveGiocatore("Nave da Test", Resources.nave_rossa, new Stats(), new Loc2D(3, 3),
+            Giocatore = new NaveGiocatore("Nave da Test", Resources.nave_pirata, new Stats(), new Loc2D(3, 3),
                 5, 10, player_prova);
 
             Dominio = new GestioneDominio();

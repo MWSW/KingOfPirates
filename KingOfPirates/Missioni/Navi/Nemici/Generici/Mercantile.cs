@@ -15,6 +15,12 @@ namespace KingOfPirates.Missioni.Navi.Nemici.Generici
     /// </summary>
     internal class Mercantile : NaveNemico
     {
+        /// <summary>
+        /// Inizializza con nome e immagine della nave mercantile
+        /// </summary>
+        /// <param name="stats"></param>
+        /// <param name="patrol"></param>
+        /// <param name="nemico_carte"></param>
         public Mercantile(Stats stats, Loc2D[] patrol, Nemico_carte nemico_carte)
             : base("Nave Mercantile", Properties.Resources.nave_bianca, stats, patrol, nemico_carte)
         {

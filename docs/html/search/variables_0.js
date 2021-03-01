@@ -1,19 +1,4 @@
 var searchData=
 [
-  ['antiubriachezza_5fbutton_1132',['AntiUbriachezza_button',['../dd/da1/class_king_of_pirates_1_1_g_u_i_1_1_menu_missioni_1_1_form_missione.html#a831ee442239c6e98fd10a431292316ea',1,'KingOfPirates::GUI::MenuMissioni::FormMissione']]],
-  ['antiubriachezza_5flabel_1133',['AntiUbriachezza_label',['../dd/da1/class_king_of_pirates_1_1_g_u_i_1_1_menu_missioni_1_1_form_missione.html#a177b2cf1f709fc1ab6538774dbf765ac',1,'KingOfPirates::GUI::MenuMissioni::FormMissione']]],
-  ['arcipelago1_1134',['arcipelago1',['../d4/d8e/class_king_of_pirates_1_1_mappa_1_1_cartina.html#aaef9b643ae3ce9f2973af610a0457594',1,'KingOfPirates::Mappa::Cartina']]],
-  ['arcipelago2_1135',['arcipelago2',['../d4/d8e/class_king_of_pirates_1_1_mappa_1_1_cartina.html#af3bfac030b2d5e247c41ea0283cdbde4',1,'KingOfPirates::Mappa::Cartina']]],
-  ['assleg_5fbutton_1136',['AssLeg_button',['../dd/da1/class_king_of_pirates_1_1_g_u_i_1_1_menu_missioni_1_1_form_missione.html#a95bc3b2edf2bc4031018082a2fb792c2',1,'KingOfPirates::GUI::MenuMissioni::FormMissione']]],
-  ['assleg_5flabel_1137',['AssLeg_label',['../dd/da1/class_king_of_pirates_1_1_g_u_i_1_1_menu_missioni_1_1_form_missione.html#a5fc706874c73c5ae42231c005d522011',1,'KingOfPirates::GUI::MenuMissioni::FormMissione']]],
-  ['atk_1138',['atk',['../d8/d9e/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_carte_1_1_carta_base.html#a0aa62dc616a3ad446042cffcf58685be',1,'KingOfPirates::Missioni::ScontroCarte::Carte::CartaBase']]],
-  ['att_1139',['att',['../d0/da2/class_king_of_pirates_1_1_g_u_i_1_1_scontro_carte_1_1_scontro_carte.html#a833b2fa847b34e50baa2ae4979234a9f',1,'KingOfPirates::GUI::ScontroCarte::ScontroCarte']]],
-  ['att0_1140',['att0',['../d0/da2/class_king_of_pirates_1_1_g_u_i_1_1_scontro_carte_1_1_scontro_carte.html#ab93c8eb6c9fa62d0dce126a5481ac0b0',1,'KingOfPirates::GUI::ScontroCarte::ScontroCarte']]],
-  ['att1_1141',['att1',['../d0/da2/class_king_of_pirates_1_1_g_u_i_1_1_scontro_carte_1_1_scontro_carte.html#a39ff42d577a26180f9f9f9a729d7932b',1,'KingOfPirates::GUI::ScontroCarte::ScontroCarte']]],
-  ['att2_1142',['att2',['../d0/da2/class_king_of_pirates_1_1_g_u_i_1_1_scontro_carte_1_1_scontro_carte.html#a157df40cfa9b9d0da859000ae38decb9',1,'KingOfPirates::GUI::ScontroCarte::ScontroCarte']]],
-  ['att3_1143',['att3',['../d0/da2/class_king_of_pirates_1_1_g_u_i_1_1_scontro_carte_1_1_scontro_carte.html#ad51b667612b62f21ce0d54c1aa163282',1,'KingOfPirates::GUI::ScontroCarte::ScontroCarte']]],
-  ['att4_1144',['att4',['../d0/da2/class_king_of_pirates_1_1_g_u_i_1_1_scontro_carte_1_1_scontro_carte.html#a128861832cb169e715e11c669bb8945f',1,'KingOfPirates::GUI::ScontroCarte::ScontroCarte']]],
-  ['atta_1145',['attA',['../d0/da2/class_king_of_pirates_1_1_g_u_i_1_1_scontro_carte_1_1_scontro_carte.html#a9e954f748b15b27089dc110f58c34ef5',1,'KingOfPirates::GUI::ScontroCarte::ScontroCarte']]],
-  ['audio_1146',['audio',['../d0/da2/class_king_of_pirates_1_1_g_u_i_1_1_scontro_carte_1_1_scontro_carte.html#aeb5a1fa1b47b184090763c4fbf356b48',1,'KingOfPirates::GUI::ScontroCarte::ScontroCarte']]],
-  ['azione_5fbutton_1147',['Azione_button',['../dd/da1/class_king_of_pirates_1_1_g_u_i_1_1_menu_missioni_1_1_form_missione.html#ad4529ce2860ea0e9c2709f9b17a56645',1,'KingOfPirates::GUI::MenuMissioni::FormMissione']]]
+  ['determinazione_638',['determinazione',['../d1/dcd/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_carte_1_1_carta.html#a656a02a901c94fdd2fe67e443ab274c6',1,'KingOfPirates::Missioni::ScontroCarte::Carte::Carta']]]
 ];

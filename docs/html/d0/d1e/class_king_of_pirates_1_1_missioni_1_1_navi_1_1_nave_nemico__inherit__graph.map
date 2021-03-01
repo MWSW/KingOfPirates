@@ -1,0 +1,7 @@
+<map id="KingOfPirates.Missioni.Navi.NaveNemico" name="KingOfPirates.Missioni.Navi.NaveNemico">
+<area shape="rect" id="node1" title="Classe astratta con funzioni e valori per il controllo dei nemici." alt="" coords="104,71,291,112"/>
+<area shape="rect" id="node3" href="$d4/de6/class_king_of_pirates_1_1_missioni_1_1_navi_1_1_nemici_1_1_generici_1_1_caravella.html" title="Nave di forza intermedia" alt="" coords="339,5,525,47"/>
+<area shape="rect" id="node4" href="$d0/d8d/class_king_of_pirates_1_1_missioni_1_1_navi_1_1_nemici_1_1_generici_1_1_fregata.html" title="Nave più forte" alt="" coords="339,71,525,112"/>
+<area shape="rect" id="node5" href="$dc/d08/class_king_of_pirates_1_1_missioni_1_1_navi_1_1_nemici_1_1_generici_1_1_mercantile.html" title="Nave più debole" alt="" coords="339,136,525,177"/>
+<area shape="rect" id="node2" href="$dc/dc9/class_king_of_pirates_1_1_missioni_1_1_navi_1_1_nave.html" title="Contiene tutti i metodi di base per tutte le navi." alt="" coords="5,78,56,105"/>
+</map>

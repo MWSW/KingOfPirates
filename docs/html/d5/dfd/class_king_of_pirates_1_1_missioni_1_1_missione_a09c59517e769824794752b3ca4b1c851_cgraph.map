@@ -1,0 +1,7 @@
+<map id="KingOfPirates.Missioni.Missione.TurnoNemico" name="KingOfPirates.Missioni.Missione.TurnoNemico">
+<area shape="rect" id="node1" title="Muove i nemici" alt="" coords="5,39,220,80"/>
+<area shape="rect" id="node2" href="$d8/d5c/class_king_of_pirates_1_1_missioni_1_1_navi_1_1_nave_nemico.html#a56f7bc8d048b828995bec45a69f50329" title="Movimento specifico per i nemici secondo un percorso predefinito." alt="" coords="268,39,455,80"/>
+<area shape="rect" id="node3" href="$d8/d5c/class_king_of_pirates_1_1_missioni_1_1_navi_1_1_nave_nemico.html#a29e929f0d1430186c82b64336d5a1885" title="Attacca la nave specificata nella missione specificata." alt="" coords="503,39,689,80"/>
+<area shape="rect" id="node4" href="$dc/dc9/class_king_of_pirates_1_1_missioni_1_1_navi_1_1_nave.html#aa0474497f07cec24c2bcd0f6ae94e1ef" title=" " alt="" coords="740,5,927,47"/>
+<area shape="rect" id="node5" href="$dd/db5/class_king_of_pirates_1_1_missioni_1_1_roba_1_1_loc2_d.html#aa7a6355dba4bcd16dc0cce9df77a83d4" title="Comapara la locazione con un&#39;altra" alt="" coords="737,71,929,112"/>
+</map>

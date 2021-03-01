@@ -6,8 +6,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-// nave piu forte
-
 namespace KingOfPirates.Missioni.Navi.Nemici.Generici
 {
     /// <summary>
@@ -15,6 +13,12 @@ namespace KingOfPirates.Missioni.Navi.Nemici.Generici
     /// </summary>
     internal class Fregata : NaveNemico
     {
+        /// <summary>
+        /// Inizializza con nome e immagine della nave fregata
+        /// </summary>
+        /// <param name="stats"></param>
+        /// <param name="patrol"></param>
+        /// <param name="nemico_carte"></param>
         public Fregata(Stats stats, Loc2D[] patrol, Nemico_carte nemico_carte)
          : base("Fregata", Properties.Resources.nave_rossa, stats, patrol, nemico_carte)
         {

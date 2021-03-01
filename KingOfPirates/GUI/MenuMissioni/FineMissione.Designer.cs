@@ -177,6 +177,7 @@
             this.Name = "FineMissione";
             this.Text = "FineMissione";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FineMissione_FormClosing);
+            this.Shown += new System.EventHandler(this.FineMissione_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);

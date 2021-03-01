@@ -1,0 +1,12 @@
+<map id="KingOfPirates.Missioni.ScontroCarte.Carte.Carta" name="KingOfPirates.Missioni.ScontroCarte.Carte.Carta">
+<area shape="rect" id="node1" title=" " alt="" coords="5,289,208,331"/>
+<area shape="rect" id="node2" href="$d8/d9e/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_carte_1_1_carta_base.html" title=" " alt="" coords="282,5,485,47"/>
+<area shape="rect" id="node3" href="$d5/d58/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_carte_1_1_carte_effetto_1_1_carta_buff.html" title=" " alt="" coords="275,71,492,112"/>
+<area shape="rect" id="node4" href="$da/d88/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_carte_1_1_carte_effetto_1_1_carta_cura.html" title=" " alt="" coords="272,136,495,177"/>
+<area shape="rect" id="node5" href="$da/d4d/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_carte_1_1_carte_effetto_1_1_carta_cura_estesa.html" title=" " alt="" coords="272,202,495,258"/>
+<area shape="rect" id="node6" href="$d8/ddd/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_carte_1_1_carte_effetto_1_1_carta_danno_continuo.html" title=" " alt="" coords="267,282,499,338"/>
+<area shape="rect" id="node7" href="$d6/d4b/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_carte_1_1_carte_effetto_1_1_carta_debuff.html" title=" " alt="" coords="268,363,499,404"/>
+<area shape="rect" id="node8" href="$d8/d5c/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_carte_1_1_carte_effetto_1_1_carta_morto.html" title=" " alt="" coords="269,428,497,469"/>
+<area shape="rect" id="node9" href="$d2/d54/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_carte_1_1_carte_effetto_1_1_carta_resa.html" title=" " alt="" coords="271,493,496,535"/>
+<area shape="rect" id="node10" href="$d7/d92/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_carte_1_1_carte_effetto_1_1_carta_turni_extra.html" title=" " alt="" coords="256,559,511,600"/>
+</map>

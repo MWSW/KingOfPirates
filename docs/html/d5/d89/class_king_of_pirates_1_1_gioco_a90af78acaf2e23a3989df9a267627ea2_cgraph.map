@@ -1,0 +1,9 @@
+<map id="KingOfPirates.Gioco.End" name="KingOfPirates.Gioco.End">
+<area shape="rect" id="node1" title="Terminatore dell&#39;applicazione" alt="" coords="5,111,172,138"/>
+<area shape="rect" id="node2" href="$d8/d8d/class_king_of_pirates_1_1_g_u_i_1_1_menu_nassau_1_1_nassau__form.html#a2db061e2d71ff2afc26f7ba39fe36f7e" title="Clean up any resources being used." alt="" coords="227,5,439,47"/>
+<area shape="rect" id="node3" href="$db/da2/class_king_of_pirates_1_1_g_u_i_1_1_menu_principale_1_1_start_menu.html#aa426d7cab1bff0959e4f9f57d3bde92f" title="Pulire le risorse in uso." alt="" coords="220,71,445,112"/>
+<area shape="rect" id="node4" href="$d0/da2/class_king_of_pirates_1_1_g_u_i_1_1_scontro_carte_1_1_scontro_carte.html#a85bf7148f57a63a18451866af2b42e52" title="Clean up any resources being used." alt="" coords="241,136,425,177"/>
+<area shape="rect" id="node5" href="$d5/dfd/class_king_of_pirates_1_1_missioni_1_1_missione.html#a639bb8a807d4b5a3a534034a118466ad" title="Terminatore missione. Esegue il dispose dei Form e libera le risorse" alt="" coords="225,201,440,243"/>
+<area shape="rect" id="node6" href="$d2/d54/class_king_of_pirates_1_1_g_u_i_1_1_menu_missioni_1_1_fine_missione.html#a527f77b918398fc12eea85935e2a7162" title="Clean up any resources being used." alt="" coords="493,168,709,209"/>
+<area shape="rect" id="node7" href="$dd/da1/class_king_of_pirates_1_1_g_u_i_1_1_menu_missioni_1_1_form_missione.html#a450ff4b2f24ef04114e249b28279e531" title="Clean up any resources being used." alt="" coords="493,233,709,275"/>
+</map>

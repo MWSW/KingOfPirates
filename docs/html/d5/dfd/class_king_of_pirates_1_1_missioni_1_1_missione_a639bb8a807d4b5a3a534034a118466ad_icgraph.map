@@ -1,0 +1,4 @@
+<map id="KingOfPirates.Missioni.Missione.EndMissione" name="KingOfPirates.Missioni.Missione.EndMissione">
+<area shape="rect" id="node1" title="Terminatore missione. Esegue il dispose dei Form e libera le risorse" alt="" coords="220,5,435,47"/>
+<area shape="rect" id="node2" href="$d5/d89/class_king_of_pirates_1_1_gioco.html#a90af78acaf2e23a3989df9a267627ea2" title="Terminatore dell&#39;applicazione" alt="" coords="5,13,172,39"/>
+</map>

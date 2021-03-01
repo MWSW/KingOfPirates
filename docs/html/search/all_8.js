@@ -1,5 +1,28 @@
 var searchData=
 [
-  ['hp_229',['Hp',['../de/dca/class_king_of_pirates_1_1_missioni_1_1_roba_1_1_stats.html#a78fc2454650dcf763b867a8950041198',1,'KingOfPirates::Missioni::Roba::Stats']]],
-  ['hpmax_230',['HpMax',['../de/dca/class_king_of_pirates_1_1_missioni_1_1_roba_1_1_stats.html#ac96dca7dfbbaeed71b53a55b980ee01f',1,'KingOfPirates::Missioni::Roba::Stats']]]
+  ['gameover_133',['GameOver',['../d6/df4/class_king_of_pirates_1_1_missioni_1_1_gestore_missione.html#aec51c4aba7ebcde093d3b37e38481133',1,'KingOfPirates.Missioni.GestoreMissione.GameOver()'],['../d3/dd0/class_king_of_pirates_1_1_missioni_1_1_ranking.html#a66e49f756389e4226508d2c27cd40363',1,'KingOfPirates.Missioni.Ranking.GameOver()'],['../de/d8c/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_opponenti_1_1_giocatore__carte__base.html#a8ffc42be5b8b6561d18e0b25c6a35db5',1,'KingOfPirates.Missioni.ScontroCarte.Opponenti.Giocatore_carte_base.GameOver()']]],
+  ['gerriinn_134',['GerriInn',['../df/d2f/class_king_of_pirates_1_1_properties_1_1_resources.html#a952cabc2489dd19440829accfb7bf27d',1,'KingOfPirates::Properties::Resources']]],
+  ['gerriinn1_135',['GerriInn1',['../df/d2f/class_king_of_pirates_1_1_properties_1_1_resources.html#ad8f8328bfe5c93afda2158339242de5a',1,'KingOfPirates::Properties::Resources']]],
+  ['gerriinn2_136',['GerriInn2',['../df/d2f/class_king_of_pirates_1_1_properties_1_1_resources.html#af9a5cc228d74f4f4ddac45a78f4b1688',1,'KingOfPirates::Properties::Resources']]],
+  ['gestionedominio_137',['GestioneDominio',['../d2/d2e/class_king_of_pirates_1_1_mappa_1_1_gestione_dominio.html#ad3d047151ddedb667b9e01ce48055ef8',1,'KingOfPirates.Mappa.GestioneDominio.GestioneDominio()'],['../d2/d2e/class_king_of_pirates_1_1_mappa_1_1_gestione_dominio.html',1,'KingOfPirates.Mappa.GestioneDominio']]],
+  ['gestionedominio_2ecs_138',['GestioneDominio.cs',['../d9/da6/_gestione_dominio_8cs.html',1,'']]],
+  ['gestoremissione_139',['GestoreMissione',['../d6/df4/class_king_of_pirates_1_1_missioni_1_1_gestore_missione.html#afb20575eb66f0228a2a2134fc11cd84e',1,'KingOfPirates.Missioni.GestoreMissione.GestoreMissione()'],['../d6/df4/class_king_of_pirates_1_1_missioni_1_1_gestore_missione.html',1,'KingOfPirates.Missioni.GestoreMissione']]],
+  ['gestoremissione_2ecs_140',['GestoreMissione.cs',['../d4/dfb/_gestore_missione_8cs.html',1,'']]],
+  ['getcarta_141',['GetCarta',['../d2/db1/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_opponenti_1_1_lista_carte.html#ace060a277346e0b589a4c71d5a4f242f',1,'KingOfPirates::Missioni::ScontroCarte::Opponenti::ListaCarte']]],
+  ['getcartaclone_142',['GetCartaClone',['../d2/db1/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_opponenti_1_1_lista_carte.html#a521054505c6eaeaac59891b6700748fd',1,'KingOfPirates::Missioni::ScontroCarte::Opponenti::ListaCarte']]],
+  ['getmissione_143',['GetMissione',['../de/d57/class_king_of_pirates_1_1_missioni_1_1_lista_missioni.html#ae7cec3ffbda3d6322e1362215fdbe7e1',1,'KingOfPirates::Missioni::ListaMissioni']]],
+  ['getmorto_144',['GetMorto',['../d2/db1/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_opponenti_1_1_lista_carte.html#a5d85e88a7e0652c23a11df42b96833d7',1,'KingOfPirates::Missioni::ScontroCarte::Opponenti::ListaCarte']]],
+  ['getprezzioggetti_145',['getPrezziOggetti',['../d7/dee/class_king_of_pirates_1_1_nassau_1_1_negozio.html#af1a491b2b62108500bf9f6bc97a29ea8',1,'KingOfPirates::Nassau::Negozio']]],
+  ['getutilizzabile_146',['GetUtilizzabile',['../d1/dcd/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_carte_1_1_carta.html#ac97888f9f302adec648b1ea2f5bcb555',1,'KingOfPirates::Missioni::ScontroCarte::Carte::Carta']]],
+  ['ghiaccio_147',['ghiaccio',['../df/d2f/class_king_of_pirates_1_1_properties_1_1_resources.html#a876c0ad17f82f71db24a9a9255d57032',1,'KingOfPirates::Properties::Resources']]],
+  ['giocatore_148',['Giocatore',['../d5/d89/class_king_of_pirates_1_1_gioco.html#a039f7fbb5df00338ae4b707ab525d424',1,'KingOfPirates::Gioco']]],
+  ['giocatore_5fcarte_5fbase_149',['Giocatore_carte_base',['../de/d8c/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_opponenti_1_1_giocatore__carte__base.html#a85f68db132cf0160f32eb0d180a4dfeb',1,'KingOfPirates.Missioni.ScontroCarte.Opponenti.Giocatore_carte_base.Giocatore_carte_base()'],['../de/d8c/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_opponenti_1_1_giocatore__carte__base.html',1,'KingOfPirates.Missioni.ScontroCarte.Opponenti.Giocatore_carte_base']]],
+  ['giocatore_5fcarte_5fbase_2ecs_150',['Giocatore_carte_base.cs',['../d6/d32/_giocatore__carte__base_8cs.html',1,'']]],
+  ['giocatorecarte_151',['GiocatoreCarte',['../db/d05/class_king_of_pirates_1_1_missioni_1_1_navi_1_1_nave_giocatore.html#a956039f0504d05fa2b4a5e3e85368b93',1,'KingOfPirates::Missioni::Navi::NaveGiocatore']]],
+  ['gioco_152',['Gioco',['../d5/d89/class_king_of_pirates_1_1_gioco.html',1,'KingOfPirates']]],
+  ['giocoend_153',['GiocoEnd',['../d6/d99/class_king_of_pirates_1_1_missioni_1_1_bandiera.html#a2c6345b2303b5b82c1867bf603629a1a',1,'KingOfPirates::Missioni::Bandiera']]],
+  ['griglia_154',['Griglia',['../d3/d68/class_king_of_pirates_1_1_missioni_1_1_griglia.html#aaae3baa5bd705e02ee9b66fe437fdf7f',1,'KingOfPirates.Missioni.Griglia.Griglia()'],['../d3/d68/class_king_of_pirates_1_1_missioni_1_1_griglia.html',1,'KingOfPirates.Missioni.Griglia']]],
+  ['griglia_2ecs_155',['Griglia.cs',['../dd/d4d/_griglia_8cs.html',1,'']]],
+  ['griglia_5fnumerica_156',['Griglia_numerica',['../d5/dfd/class_king_of_pirates_1_1_missioni_1_1_missione.html#aca8652ac91d4847933c15187ee188547',1,'KingOfPirates::Missioni::Missione']]],
+  ['griglia_5fpicturebox_157',['Griglia_pictureBox',['../dd/da1/class_king_of_pirates_1_1_g_u_i_1_1_menu_missioni_1_1_form_missione.html#afc7a66d366986d4965c43bf1cb3f5537',1,'KingOfPirates::GUI::MenuMissioni::FormMissione']]]
 ];

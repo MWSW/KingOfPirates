@@ -1,0 +1,7 @@
+<map id="KingOfPirates.Gioco" name="KingOfPirates.Gioco">
+<area shape="rect" id="node1" title="Classe che contiene variabili necessarie per il funzionamento del programma." alt="" coords="459,78,599,105"/>
+<area shape="rect" id="node2" href="$d8/d8d/class_king_of_pirates_1_1_g_u_i_1_1_menu_nassau_1_1_nassau__form.html" title=" " alt="" coords="113,5,325,47"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,78,57,105"/>
+<area shape="rect" id="node4" href="$d0/da2/class_king_of_pirates_1_1_g_u_i_1_1_scontro_carte_1_1_scontro_carte.html" title="Componente grafica dello scontro a carte." alt="" coords="131,71,308,112"/>
+<area shape="rect" id="node5" href="$db/da2/class_king_of_pirates_1_1_g_u_i_1_1_menu_principale_1_1_start_menu.html" title="Menu principale dell&#39;app" alt="" coords="107,136,332,177"/>
+</map>

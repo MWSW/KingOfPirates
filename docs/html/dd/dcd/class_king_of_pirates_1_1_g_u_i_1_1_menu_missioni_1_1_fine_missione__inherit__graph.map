@@ -1,0 +1,4 @@
+<map id="KingOfPirates.GUI.MenuMissioni.FineMissione" name="KingOfPirates.GUI.MenuMissioni.FineMissione">
+<area shape="rect" id="node1" title="Classe che mostra al giocatore la sua performance. Gestisce la fine della missione chiamando Missione..." alt="" coords="5,80,221,121"/>
+<area shape="rect" id="node2" title=" " alt="" coords="87,5,139,32"/>
+</map>

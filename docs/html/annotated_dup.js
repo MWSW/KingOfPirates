@@ -1,11 +1,9 @@
 var annotated_dup =
 [
     [ "KingOfPirates", "d0/d8a/namespace_king_of_pirates.html", [
-      [ "Cartina", "dd/def/namespace_king_of_pirates_1_1_cartina.html", [
-        [ "GestioneDominio", "dc/dbc/class_king_of_pirates_1_1_cartina_1_1_gestione_dominio.html", "dc/dbc/class_king_of_pirates_1_1_cartina_1_1_gestione_dominio" ]
-      ] ],
       [ "GUI", "d2/d9e/namespace_king_of_pirates_1_1_g_u_i.html", [
         [ "MenuMissioni", "d3/dca/namespace_king_of_pirates_1_1_g_u_i_1_1_menu_missioni.html", [
+          [ "FineMissione", "d2/d54/class_king_of_pirates_1_1_g_u_i_1_1_menu_missioni_1_1_fine_missione.html", "d2/d54/class_king_of_pirates_1_1_g_u_i_1_1_menu_missioni_1_1_fine_missione" ],
           [ "FormMissione", "dd/da1/class_king_of_pirates_1_1_g_u_i_1_1_menu_missioni_1_1_form_missione.html", "dd/da1/class_king_of_pirates_1_1_g_u_i_1_1_menu_missioni_1_1_form_missione" ]
         ] ],
         [ "MenuNassau", "d2/d37/namespace_king_of_pirates_1_1_g_u_i_1_1_menu_nassau.html", [
@@ -15,6 +13,7 @@ var annotated_dup =
           [ "Porto_form", "dc/dc6/class_king_of_pirates_1_1_g_u_i_1_1_menu_nassau_1_1_porto__form.html", "dc/dc6/class_king_of_pirates_1_1_g_u_i_1_1_menu_nassau_1_1_porto__form" ]
         ] ],
         [ "MenuPrincipale", "dd/d95/namespace_king_of_pirates_1_1_g_u_i_1_1_menu_principale.html", [
+          [ "CreditiForm", "dd/de6/class_king_of_pirates_1_1_g_u_i_1_1_menu_principale_1_1_crediti_form.html", "dd/de6/class_king_of_pirates_1_1_g_u_i_1_1_menu_principale_1_1_crediti_form" ],
           [ "StartMenu", "db/da2/class_king_of_pirates_1_1_g_u_i_1_1_menu_principale_1_1_start_menu.html", "db/da2/class_king_of_pirates_1_1_g_u_i_1_1_menu_principale_1_1_start_menu" ]
         ] ],
         [ "ScontroCarte", "d6/d0d/namespace_king_of_pirates_1_1_g_u_i_1_1_scontro_carte.html", [
@@ -22,14 +21,15 @@ var annotated_dup =
         ] ]
       ] ],
       [ "Mappa", "dd/dd3/namespace_king_of_pirates_1_1_mappa.html", [
-        [ "Cartina", "d4/d8e/class_king_of_pirates_1_1_mappa_1_1_cartina.html", "d4/d8e/class_king_of_pirates_1_1_mappa_1_1_cartina" ]
+        [ "Cartina", "d4/d8e/class_king_of_pirates_1_1_mappa_1_1_cartina.html", "d4/d8e/class_king_of_pirates_1_1_mappa_1_1_cartina" ],
+        [ "GestioneDominio", "d2/d2e/class_king_of_pirates_1_1_mappa_1_1_gestione_dominio.html", "d2/d2e/class_king_of_pirates_1_1_mappa_1_1_gestione_dominio" ]
       ] ],
       [ "Missioni", "dd/d44/namespace_king_of_pirates_1_1_missioni.html", [
         [ "Navi", "db/d75/namespace_king_of_pirates_1_1_missioni_1_1_navi.html", [
           [ "Nemici", "d0/d2b/namespace_king_of_pirates_1_1_missioni_1_1_navi_1_1_nemici.html", [
             [ "Generici", "d8/d2c/namespace_king_of_pirates_1_1_missioni_1_1_navi_1_1_nemici_1_1_generici.html", [
-              [ "Caravella", "d4/de6/class_king_of_pirates_1_1_missioni_1_1_navi_1_1_nemici_1_1_generici_1_1_caravella.html", null ],
-              [ "Fregata", "d0/d8d/class_king_of_pirates_1_1_missioni_1_1_navi_1_1_nemici_1_1_generici_1_1_fregata.html", null ],
+              [ "Caravella", "d4/de6/class_king_of_pirates_1_1_missioni_1_1_navi_1_1_nemici_1_1_generici_1_1_caravella.html", "d4/de6/class_king_of_pirates_1_1_missioni_1_1_navi_1_1_nemici_1_1_generici_1_1_caravella" ],
+              [ "Fregata", "d0/d8d/class_king_of_pirates_1_1_missioni_1_1_navi_1_1_nemici_1_1_generici_1_1_fregata.html", "d0/d8d/class_king_of_pirates_1_1_missioni_1_1_navi_1_1_nemici_1_1_generici_1_1_fregata" ],
               [ "Mercantile", "dc/d08/class_king_of_pirates_1_1_missioni_1_1_navi_1_1_nemici_1_1_generici_1_1_mercantile.html", "dc/d08/class_king_of_pirates_1_1_missioni_1_1_navi_1_1_nemici_1_1_generici_1_1_mercantile" ]
             ] ]
           ] ],
@@ -52,6 +52,7 @@ var annotated_dup =
               [ "CartaCuraEstesa", "da/d4d/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_carte_1_1_carte_effetto_1_1_carta_cura_estesa.html", "da/d4d/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_carte_1_1_carte_effetto_1_1_carta_cura_estesa" ],
               [ "CartaDannoContinuo", "d8/ddd/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_carte_1_1_carte_effetto_1_1_carta_danno_continuo.html", "d8/ddd/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_carte_1_1_carte_effetto_1_1_carta_danno_continuo" ],
               [ "CartaDebuff", "d6/d4b/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_carte_1_1_carte_effetto_1_1_carta_debuff.html", "d6/d4b/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_carte_1_1_carte_effetto_1_1_carta_debuff" ],
+              [ "CartaMorto", "d8/d5c/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_carte_1_1_carte_effetto_1_1_carta_morto.html", "d8/d5c/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_carte_1_1_carte_effetto_1_1_carta_morto" ],
               [ "CartaResa", "d2/d54/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_carte_1_1_carte_effetto_1_1_carta_resa.html", "d2/d54/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_carte_1_1_carte_effetto_1_1_carta_resa" ],
               [ "CartaTurniExtra", "d7/d92/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_carte_1_1_carte_effetto_1_1_carta_turni_extra.html", "d7/d92/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_carte_1_1_carte_effetto_1_1_carta_turni_extra" ]
             ] ],
@@ -69,6 +70,7 @@ var annotated_dup =
         [ "Bandiera", "d6/d99/class_king_of_pirates_1_1_missioni_1_1_bandiera.html", "d6/d99/class_king_of_pirates_1_1_missioni_1_1_bandiera" ],
         [ "GestoreMissione", "d6/df4/class_king_of_pirates_1_1_missioni_1_1_gestore_missione.html", "d6/df4/class_king_of_pirates_1_1_missioni_1_1_gestore_missione" ],
         [ "Griglia", "d3/d68/class_king_of_pirates_1_1_missioni_1_1_griglia.html", "d3/d68/class_king_of_pirates_1_1_missioni_1_1_griglia" ],
+        [ "ListaMissioni", "de/d57/class_king_of_pirates_1_1_missioni_1_1_lista_missioni.html", "de/d57/class_king_of_pirates_1_1_missioni_1_1_lista_missioni" ],
         [ "Missione", "d5/dfd/class_king_of_pirates_1_1_missioni_1_1_missione.html", "d5/dfd/class_king_of_pirates_1_1_missioni_1_1_missione" ],
         [ "Ranking", "d3/dd0/class_king_of_pirates_1_1_missioni_1_1_ranking.html", "d3/dd0/class_king_of_pirates_1_1_missioni_1_1_ranking" ]
       ] ],
@@ -82,7 +84,7 @@ var annotated_dup =
         [ "Resources", "df/d2f/class_king_of_pirates_1_1_properties_1_1_resources.html", "df/d2f/class_king_of_pirates_1_1_properties_1_1_resources" ],
         [ "Settings", "d4/dfc/class_king_of_pirates_1_1_properties_1_1_settings.html", "d4/dfc/class_king_of_pirates_1_1_properties_1_1_settings" ]
       ] ],
-      [ "Program", "d9/d39/class_king_of_pirates_1_1_program.html", "d9/d39/class_king_of_pirates_1_1_program" ],
+      [ "Program", "d9/d39/class_king_of_pirates_1_1_program.html", null ],
       [ "Gioco", "d5/d89/class_king_of_pirates_1_1_gioco.html", "d5/d89/class_king_of_pirates_1_1_gioco" ]
     ] ]
 ];

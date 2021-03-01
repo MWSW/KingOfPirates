@@ -7,7 +7,7 @@ var dir_1d6d0acdcbf0bc6377d9e166cf52176c =
     [ "obj", "dir_f64b589fec7bc40320dd15d48d3afbd2.html", "dir_f64b589fec7bc40320dd15d48d3afbd2" ],
     [ "Properties", "dir_ac24449965713b9381cb5c29d02906ad.html", "dir_ac24449965713b9381cb5c29d02906ad" ],
     [ "Program.cs", "dd/d5c/_program_8cs.html", [
-      [ "Program", "d9/d39/class_king_of_pirates_1_1_program.html", "d9/d39/class_king_of_pirates_1_1_program" ],
+      [ "Program", "d9/d39/class_king_of_pirates_1_1_program.html", null ],
       [ "Gioco", "d5/d89/class_king_of_pirates_1_1_gioco.html", "d5/d89/class_king_of_pirates_1_1_gioco" ]
     ] ]
 ];

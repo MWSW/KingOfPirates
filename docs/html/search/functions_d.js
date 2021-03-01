@@ -1,13 +1,13 @@
 var searchData=
 [
-  ['randmatrice_1095',['RandMatrice',['../d3/d68/class_king_of_pirates_1_1_missioni_1_1_griglia.html#a5595e81e70cda24ab649fc539db849b4',1,'KingOfPirates::Missioni::Griglia']]],
-  ['ranking_1096',['Ranking',['../d3/dd0/class_king_of_pirates_1_1_missioni_1_1_ranking.html#a4942ec205412dcf42b18580f3d95013f',1,'KingOfPirates::Missioni::Ranking']]],
-  ['remdobloni_1097',['RemDobloni',['../dc/dbc/class_king_of_pirates_1_1_cartina_1_1_gestione_dominio.html#a8b1988caf557ca8883dba5d101eda08c',1,'KingOfPirates::Cartina::GestioneDominio']]],
-  ['remenergia_1098',['RemEnergia',['../dc/dc9/class_king_of_pirates_1_1_missioni_1_1_navi_1_1_nave.html#a8c438562070fd6f448437619abc2a246',1,'KingOfPirates.Missioni.Navi.Nave.RemEnergia()'],['../db/d05/class_king_of_pirates_1_1_missioni_1_1_navi_1_1_nave_giocatore.html#a9bd9853fdd6beccb2443d0dbfa9e63c4',1,'KingOfPirates.Missioni.Navi.NaveGiocatore.RemEnergia()']]],
-  ['remrubini_1099',['RemRubini',['../dc/dbc/class_king_of_pirates_1_1_cartina_1_1_gestione_dominio.html#afe72e6eb1e481888844292133211c396',1,'KingOfPirates::Cartina::GestioneDominio']]],
-  ['resources_1100',['Resources',['../df/d2f/class_king_of_pirates_1_1_properties_1_1_resources.html#a365ff5f48c99b49c3b3dfb1c68c8046c',1,'KingOfPirates::Properties::Resources']]],
-  ['riponicarta_1101',['RiponiCarta',['../df/d97/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_opponenti_1_1_mazzo.html#a81d881589eaedaac06d6e6141cc4d58c',1,'KingOfPirates::Missioni::ScontroCarte::Opponenti::Mazzo']]],
-  ['ripristinacarta_1102',['RipristinaCarta',['../d4/dc4/class_king_of_pirates_1_1_nassau_1_1_locanda.html#aea48c8f84cfe0dbeb65a84fb6d1fafaa',1,'KingOfPirates::Nassau::Locanda']]],
-  ['riscattataglie_1103',['RiscattaTaglie',['../d7/dee/class_king_of_pirates_1_1_nassau_1_1_negozio.html#acecd4d07958889d59c9f03b29e209d72',1,'KingOfPirates::Nassau::Negozio']]],
-  ['rum_5fbutton_5fclick_1104',['Rum_button_Click',['../dd/da1/class_king_of_pirates_1_1_g_u_i_1_1_menu_missioni_1_1_form_missione.html#ae3adfe7dbf9a24626eadf3c31a5ff2e3',1,'KingOfPirates::GUI::MenuMissioni::FormMissione']]]
+  ['scavare_621',['Scavare',['../db/d05/class_king_of_pirates_1_1_missioni_1_1_navi_1_1_nave_giocatore.html#af35e65d03ff50c1db205140acfaade21',1,'KingOfPirates::Missioni::Navi::NaveGiocatore']]],
+  ['sceglicarta_622',['ScegliCarta',['../d6/d20/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_opponenti_1_1_nemico__carte.html#aef46f6a7d6d731b0406e5f62432b26c2',1,'KingOfPirates::Missioni::ScontroCarte::Opponenti::Nemico_carte']]],
+  ['scontrocarte_623',['ScontroCarte',['../d0/da2/class_king_of_pirates_1_1_g_u_i_1_1_scontro_carte_1_1_scontro_carte.html#a656afc6ea2a906875b6239b799bd9dab',1,'KingOfPirates::GUI::ScontroCarte::ScontroCarte']]],
+  ['scottagerri_624',['ScottaGerri',['../d4/dc4/class_king_of_pirates_1_1_nassau_1_1_locanda.html#a20fdf4a72e0b3725c0cf08901ed296ca',1,'KingOfPirates::Nassau::Locanda']]],
+  ['setbuff_625',['SetBuff',['../d8/d9e/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_carte_1_1_carta_base.html#ada69a5f359700cdea3c0648ba600ebcf',1,'KingOfPirates::Missioni::ScontroCarte::Carte::CartaBase']]],
+  ['setutilizzabile_626',['SetUtilizzabile',['../d1/dcd/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_carte_1_1_carta.html#a36cbbbcddc9006566871b07cb1de92e4',1,'KingOfPirates::Missioni::ScontroCarte::Carte::Carta']]],
+  ['start_627',['Start',['../d5/d89/class_king_of_pirates_1_1_gioco.html#a44b6ca67a6724e8c58defa671aa6675a',1,'KingOfPirates::Gioco']]],
+  ['startmenu_628',['StartMenu',['../db/da2/class_king_of_pirates_1_1_g_u_i_1_1_menu_principale_1_1_start_menu.html#a988cdb4256f218cd7c1db1c095c4af74',1,'KingOfPirates::GUI::MenuPrincipale::StartMenu']]],
+  ['startmissione_629',['StartMissione',['../d5/dfd/class_king_of_pirates_1_1_missioni_1_1_missione.html#ac09c3f8a10a59fad322802e27b324ada',1,'KingOfPirates::Missioni::Missione']]],
+  ['stats_630',['Stats',['../de/dca/class_king_of_pirates_1_1_missioni_1_1_roba_1_1_stats.html#a04888d1d4d29f57a3c9b822fffaa3e71',1,'KingOfPirates.Missioni.Roba.Stats.Stats(int hp, int hpMax, int pa, int paMax, int minHit, int maxHit)'],['../de/dca/class_king_of_pirates_1_1_missioni_1_1_roba_1_1_stats.html#a63be3cfb122e53f8222af8fd9e055385',1,'KingOfPirates.Missioni.Roba.Stats.Stats()']]]
 ];

@@ -59,8 +59,12 @@ namespace KingOfPirates.Missioni
             this.Mappa = new FormMissione(this);
 
             this.Ranking = new Ranking();
+            this.Fine = new FineMissione(this);
         }
 
+        /// <summary>
+        /// Muove i nemici
+        /// </summary>
         public void TurnoNemico()
         {
             for (int i = 0; i < Nemici.Length; i++)

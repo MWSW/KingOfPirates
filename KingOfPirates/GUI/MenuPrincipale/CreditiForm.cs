@@ -10,6 +10,9 @@ using System.Windows.Forms;
 
 namespace KingOfPirates.GUI.MenuPrincipale
 {
+    /// <summary>
+    /// Form che mostra i crediti
+    /// </summary>
     public partial class CreditiForm : Form
     {
         public CreditiForm()

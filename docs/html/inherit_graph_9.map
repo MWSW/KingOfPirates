@@ -1,0 +1,8 @@
+<map id="Grafico della gerarchia delle classi" name="Grafico della gerarchia delle classi">
+<area shape="rect" id="node1" href="$dc/dc9/class_king_of_pirates_1_1_missioni_1_1_navi_1_1_nave.html" title="Contiene tutti i metodi di base per tutte le navi." alt="" coords="5,46,220,73"/>
+<area shape="rect" id="node2" href="$db/d05/class_king_of_pirates_1_1_missioni_1_1_navi_1_1_nave_giocatore.html" title="Nave rappresentante il giocatore con funzioni speciali." alt="" coords="268,5,455,47"/>
+<area shape="rect" id="node3" href="$d8/d5c/class_king_of_pirates_1_1_missioni_1_1_navi_1_1_nave_nemico.html" title="Classe astratta con funzioni e valori per il controllo dei nemici." alt="" coords="268,71,455,112"/>
+<area shape="rect" id="node4" href="$d4/de6/class_king_of_pirates_1_1_missioni_1_1_navi_1_1_nemici_1_1_generici_1_1_caravella.html" title="Nave di forza intermedia" alt="" coords="503,5,689,47"/>
+<area shape="rect" id="node5" href="$d0/d8d/class_king_of_pirates_1_1_missioni_1_1_navi_1_1_nemici_1_1_generici_1_1_fregata.html" title="Nave più forte" alt="" coords="503,71,689,112"/>
+<area shape="rect" id="node6" href="$dc/d08/class_king_of_pirates_1_1_missioni_1_1_navi_1_1_nemici_1_1_generici_1_1_mercantile.html" title="Nave più debole" alt="" coords="503,136,689,177"/>
+</map>
