@@ -58,7 +58,6 @@ namespace KingOfPirates.GUI.MenuPrincipale
 
         private void Exit_button_Click(object sender, EventArgs e)
         {
-            NassauForm.Dispose();
             Gioco.End();
         }
     }
