@@ -46,8 +46,10 @@ namespace KingOfPirates.Missioni.ScontroCarte.Opponenti
        }
 
        public static Carta GetMorto()
-        {
+       {
             return cartaMorta.Clona();
-        }
+       }
+
+       public static int GetLength() { return listaCarte.Length; }
     }
 }

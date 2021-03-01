@@ -19,22 +19,13 @@ namespace KingOfPirates.GUI.MenuNassau
         Locanda locanda = new Locanda();
         private int indiceCartaSelezionata;
 
+        private bool[] slotDisponibile;
+
         public Locanda_form()
         {
             InitializeComponent();
 
-            Update();
-        }
-
-        private void Locanda_Back_Button_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Gioco.nassauForm.Show();
-        }
-
-        public void Update()
-        {
-
+            //inizialization panel
             Locanda_Carta1_Panel.BackgroundImage = ListaCarte.GetCarta(0).Immagine;
             Locanda_Carta2_Panel.BackgroundImage = ListaCarte.GetCarta(1).Immagine;
             Locanda_Carta3_Panel.BackgroundImage = ListaCarte.GetCarta(2).Immagine;
@@ -56,6 +47,38 @@ namespace KingOfPirates.GUI.MenuNassau
             Locanda_Carta19_Panel.BackgroundImage = ListaCarte.GetCarta(18).Immagine;
             Locanda_Carta20_Panel.BackgroundImage = ListaCarte.GetCarta(19).Immagine;
 
+            //numero pari alle componenti slot
+            slotDisponibile = new bool[8];
+
+            for (int i = 0; i < slotDisponibile.Length; i++)
+                slotDisponibile[i] = true;
+
+            Update();
+        }
+
+        private void Locanda_Back_Button_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Gioco.nassauForm.Show();
+        }
+
+        public void Reset()
+        {
+            Locanda_Slot1_Panel.BackgroundImage = null;
+            Locanda_Slot2_Panel.BackgroundImage = null;
+            Locanda_Slot3_Panel.BackgroundImage = null;
+            Locanda_Slot4_Panel.BackgroundImage = null;
+            Locanda_Slot5_Panel.BackgroundImage = null;
+            Locanda_Slot6_Panel.BackgroundImage = null;
+            Locanda_Slot7_Panel.BackgroundImage = null;
+            Locanda_Slot8_Panel.BackgroundImage = null;
+
+            for (int i = 0; i < slotDisponibile.Length; i++)
+                slotDisponibile[i] = true;
+        }
+
+        public void Update()
+        {
             showHideUtilizzabile(Locanda_Carta1_Panel, 0);
             showHideUtilizzabile(Locanda_Carta2_Panel, 1);
             showHideUtilizzabile(Locanda_Carta3_Panel, 2);
@@ -299,66 +322,135 @@ namespace KingOfPirates.GUI.MenuNassau
 
         private void Locanda_Slot1_Panel_DragDrop(object sender, DragEventArgs e)
         {
-            ListaCarte.GetCarta(indiceCartaSelezionata).SetUtilizzabile(false);
-            ListaCarte.GetCarta(indiceCartaSelezionata).IsSleeping = true;
-            Locanda_Slot1_Panel.BackgroundImage = (Image)e.Data.GetData(DataFormats.Bitmap);
-            Update();
+            if (slotDisponibile[0])
+            {
+                ListaCarte.GetCarta(indiceCartaSelezionata).SetUtilizzabile(false);
+                ListaCarte.GetCarta(indiceCartaSelezionata).IsSleeping = true;
+                Locanda_Slot1_Panel.BackgroundImage = (Image)e.Data.GetData(DataFormats.Bitmap);
+                Update();
+
+                slotDisponibile[0] = false;
+            }
         }
 
         private void Locanda_Slot2_Panel_DragDrop(object sender, DragEventArgs e)
         {
-            ListaCarte.GetCarta(indiceCartaSelezionata).SetUtilizzabile(false);
-            ListaCarte.GetCarta(indiceCartaSelezionata).IsSleeping = true;
-            Locanda_Slot2_Panel.BackgroundImage = (Image)e.Data.GetData(DataFormats.Bitmap);
-            Update();
+            if (slotDisponibile[1])
+            {
+                ListaCarte.GetCarta(indiceCartaSelezionata).SetUtilizzabile(false);
+                ListaCarte.GetCarta(indiceCartaSelezionata).IsSleeping = true;
+                Locanda_Slot2_Panel.BackgroundImage = (Image)e.Data.GetData(DataFormats.Bitmap);
+                Update();
+
+                slotDisponibile[1] = false;
+            }
         }
 
         private void Locanda_Slot3_Panel_DragDrop(object sender, DragEventArgs e)
         {
-            ListaCarte.GetCarta(indiceCartaSelezionata).SetUtilizzabile(false);
-            ListaCarte.GetCarta(indiceCartaSelezionata).IsSleeping = true;
-            Locanda_Slot3_Panel.BackgroundImage = (Image)e.Data.GetData(DataFormats.Bitmap);
-            Update();
+            if (slotDisponibile[2])
+            {
+                ListaCarte.GetCarta(indiceCartaSelezionata).SetUtilizzabile(false);
+                ListaCarte.GetCarta(indiceCartaSelezionata).IsSleeping = true;
+                Locanda_Slot3_Panel.BackgroundImage = (Image)e.Data.GetData(DataFormats.Bitmap);
+                Update();
+
+                slotDisponibile[2] = false;
+            }
         }
 
         private void Locanda_Slot4_Panel_DragDrop(object sender, DragEventArgs e)
         {
-            ListaCarte.GetCarta(indiceCartaSelezionata).SetUtilizzabile(false);
-            ListaCarte.GetCarta(indiceCartaSelezionata).IsSleeping = true;
-            Locanda_Slot4_Panel.BackgroundImage = (Image)e.Data.GetData(DataFormats.Bitmap);
-            Update();
+            if (slotDisponibile[3])
+            {
+                ListaCarte.GetCarta(indiceCartaSelezionata).SetUtilizzabile(false);
+                ListaCarte.GetCarta(indiceCartaSelezionata).IsSleeping = true;
+                Locanda_Slot4_Panel.BackgroundImage = (Image)e.Data.GetData(DataFormats.Bitmap);
+                Update();
+
+                slotDisponibile[3] = false;
+            }
         }
 
         private void Locanda_Slot5_Panel_DragDrop(object sender, DragEventArgs e)
         {
-            ListaCarte.GetCarta(indiceCartaSelezionata).SetUtilizzabile(false);
-            ListaCarte.GetCarta(indiceCartaSelezionata).IsSleeping = true;
-            Locanda_Slot5_Panel.BackgroundImage = (Image)e.Data.GetData(DataFormats.Bitmap);
-            Update();
+            if (slotDisponibile[4])
+            {
+                ListaCarte.GetCarta(indiceCartaSelezionata).SetUtilizzabile(false);
+                ListaCarte.GetCarta(indiceCartaSelezionata).IsSleeping = true;
+                Locanda_Slot5_Panel.BackgroundImage = (Image)e.Data.GetData(DataFormats.Bitmap);
+                Update();
+
+                slotDisponibile[4] = false;
+            }
         }
 
         private void Locanda_Slot6_Panel_DragDrop(object sender, DragEventArgs e)
         {
-            ListaCarte.GetCarta(indiceCartaSelezionata).SetUtilizzabile(false);
-            ListaCarte.GetCarta(indiceCartaSelezionata).IsSleeping = true;
-            Locanda_Slot6_Panel.BackgroundImage = (Image)e.Data.GetData(DataFormats.Bitmap);
-            Update();
+            if (slotDisponibile[5])
+            {
+                ListaCarte.GetCarta(indiceCartaSelezionata).SetUtilizzabile(false);
+                ListaCarte.GetCarta(indiceCartaSelezionata).IsSleeping = true;
+                Locanda_Slot6_Panel.BackgroundImage = (Image)e.Data.GetData(DataFormats.Bitmap);
+                Update();
+
+                slotDisponibile[5] = false;
+            }
         }
 
         private void Locanda_Slot7_Panel_DragDrop(object sender, DragEventArgs e)
         {
-            ListaCarte.GetCarta(indiceCartaSelezionata).SetUtilizzabile(false);
-            ListaCarte.GetCarta(indiceCartaSelezionata).IsSleeping = true;
-            Locanda_Slot7_Panel.BackgroundImage = (Image)e.Data.GetData(DataFormats.Bitmap);
-            Update();
+            if (slotDisponibile[6])
+            {
+                ListaCarte.GetCarta(indiceCartaSelezionata).SetUtilizzabile(false);
+                ListaCarte.GetCarta(indiceCartaSelezionata).IsSleeping = true;
+                Locanda_Slot7_Panel.BackgroundImage = (Image)e.Data.GetData(DataFormats.Bitmap);
+                Update();
+
+                slotDisponibile[6] = false;
+            }
         }
 
         private void Locanda_Slot8_Panel_DragDrop(object sender, DragEventArgs e)
         {
-            ListaCarte.GetCarta(indiceCartaSelezionata).SetUtilizzabile(false);
-            ListaCarte.GetCarta(indiceCartaSelezionata).IsSleeping = true;
-            Locanda_Slot8_Panel.BackgroundImage = (Image)e.Data.GetData(DataFormats.Bitmap);
-            Update();
+            if (slotDisponibile[7])
+            {
+                ListaCarte.GetCarta(indiceCartaSelezionata).SetUtilizzabile(false);
+                ListaCarte.GetCarta(indiceCartaSelezionata).IsSleeping = true;
+                Locanda_Slot8_Panel.BackgroundImage = (Image)e.Data.GetData(DataFormats.Bitmap);
+                Update();
+
+                slotDisponibile[7] = false;
+            }
+        }
+
+        private void OnVisibleChanged(object sender, EventArgs e)
+        {
+            if (Visible)
+            {
+                Locanda_Carta1_Panel.Show();
+                Locanda_Carta2_Panel.Show();
+                Locanda_Carta3_Panel.Show();
+                Locanda_Carta4_Panel.Show();
+                Locanda_Carta5_Panel.Show();
+                Locanda_Carta6_Panel.Show();
+                Locanda_Carta7_Panel.Show();
+                Locanda_Carta8_Panel.Show();
+                Locanda_Carta9_Panel.Show();
+                Locanda_Carta10_Panel.Show();
+                Locanda_Carta11_Panel.Show();
+                Locanda_Carta12_Panel.Show();
+                Locanda_Carta13_Panel.Show();
+                Locanda_Carta14_Panel.Show();
+                Locanda_Carta15_Panel.Show();
+                Locanda_Carta16_Panel.Show();
+                Locanda_Carta17_Panel.Show();
+                Locanda_Carta18_Panel.Show();
+                Locanda_Carta19_Panel.Show();
+                Locanda_Carta20_Panel.Show();
+
+                Update();
+            }
         }
     }
 }

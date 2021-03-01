@@ -129,27 +129,30 @@ namespace KingOfPirates.GUI.MenuNassau
             this.flowLayoutPanel1.Controls.Add(this.Locanda_Carta18_Panel);
             this.flowLayoutPanel1.Controls.Add(this.Locanda_Carta19_Panel);
             this.flowLayoutPanel1.Controls.Add(this.Locanda_Carta20_Panel);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(300, 396);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(400, 487);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(905, 244);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1206, 300);
             this.flowLayoutPanel1.TabIndex = 1;
             // 
             // Locanda_Carta1_Panel
             // 
             this.Locanda_Carta1_Panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Locanda_Carta1_Panel.Controls.Add(this.Locanda_Det1_Label);
-            this.Locanda_Carta1_Panel.Location = new System.Drawing.Point(3, 3);
+            this.Locanda_Carta1_Panel.Location = new System.Drawing.Point(4, 4);
+            this.Locanda_Carta1_Panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Locanda_Carta1_Panel.Name = "Locanda_Carta1_Panel";
-            this.Locanda_Carta1_Panel.Size = new System.Drawing.Size(171, 241);
+            this.Locanda_Carta1_Panel.Size = new System.Drawing.Size(228, 297);
             this.Locanda_Carta1_Panel.TabIndex = 0;
             this.Locanda_Carta1_Panel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Locanda_Carta1_Panel_MouseDown);
             // 
             // Locanda_Det1_Label
             // 
             this.Locanda_Det1_Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Locanda_Det1_Label.Location = new System.Drawing.Point(123, 196);
+            this.Locanda_Det1_Label.Location = new System.Drawing.Point(164, 241);
+            this.Locanda_Det1_Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Locanda_Det1_Label.Name = "Locanda_Det1_Label";
-            this.Locanda_Det1_Label.Size = new System.Drawing.Size(48, 45);
+            this.Locanda_Det1_Label.Size = new System.Drawing.Size(63, 55);
             this.Locanda_Det1_Label.TabIndex = 13;
             this.Locanda_Det1_Label.Text = "Det";
             this.Locanda_Det1_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -158,18 +161,20 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Locanda_Carta2_Panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Locanda_Carta2_Panel.Controls.Add(this.Locanda_Det2_Label);
-            this.Locanda_Carta2_Panel.Location = new System.Drawing.Point(180, 3);
+            this.Locanda_Carta2_Panel.Location = new System.Drawing.Point(240, 4);
+            this.Locanda_Carta2_Panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Locanda_Carta2_Panel.Name = "Locanda_Carta2_Panel";
-            this.Locanda_Carta2_Panel.Size = new System.Drawing.Size(171, 241);
+            this.Locanda_Carta2_Panel.Size = new System.Drawing.Size(228, 297);
             this.Locanda_Carta2_Panel.TabIndex = 14;
             this.Locanda_Carta2_Panel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Locanda_Carta2_Panel_MouseDown);
             // 
             // Locanda_Det2_Label
             // 
             this.Locanda_Det2_Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Locanda_Det2_Label.Location = new System.Drawing.Point(123, 196);
+            this.Locanda_Det2_Label.Location = new System.Drawing.Point(164, 241);
+            this.Locanda_Det2_Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Locanda_Det2_Label.Name = "Locanda_Det2_Label";
-            this.Locanda_Det2_Label.Size = new System.Drawing.Size(48, 45);
+            this.Locanda_Det2_Label.Size = new System.Drawing.Size(63, 55);
             this.Locanda_Det2_Label.TabIndex = 13;
             this.Locanda_Det2_Label.Text = "Det";
             this.Locanda_Det2_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -178,18 +183,20 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Locanda_Carta3_Panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Locanda_Carta3_Panel.Controls.Add(this.Locanda_Det3_Label);
-            this.Locanda_Carta3_Panel.Location = new System.Drawing.Point(357, 3);
+            this.Locanda_Carta3_Panel.Location = new System.Drawing.Point(476, 4);
+            this.Locanda_Carta3_Panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Locanda_Carta3_Panel.Name = "Locanda_Carta3_Panel";
-            this.Locanda_Carta3_Panel.Size = new System.Drawing.Size(171, 241);
+            this.Locanda_Carta3_Panel.Size = new System.Drawing.Size(228, 297);
             this.Locanda_Carta3_Panel.TabIndex = 14;
             this.Locanda_Carta3_Panel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Locanda_Carta3_Panel_MouseDown);
             // 
             // Locanda_Det3_Label
             // 
             this.Locanda_Det3_Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Locanda_Det3_Label.Location = new System.Drawing.Point(123, 196);
+            this.Locanda_Det3_Label.Location = new System.Drawing.Point(164, 241);
+            this.Locanda_Det3_Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Locanda_Det3_Label.Name = "Locanda_Det3_Label";
-            this.Locanda_Det3_Label.Size = new System.Drawing.Size(48, 45);
+            this.Locanda_Det3_Label.Size = new System.Drawing.Size(63, 55);
             this.Locanda_Det3_Label.TabIndex = 13;
             this.Locanda_Det3_Label.Text = "Det";
             this.Locanda_Det3_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -198,18 +205,20 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Locanda_Carta4_Panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Locanda_Carta4_Panel.Controls.Add(this.Locanda_Det4_Label);
-            this.Locanda_Carta4_Panel.Location = new System.Drawing.Point(534, 3);
+            this.Locanda_Carta4_Panel.Location = new System.Drawing.Point(712, 4);
+            this.Locanda_Carta4_Panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Locanda_Carta4_Panel.Name = "Locanda_Carta4_Panel";
-            this.Locanda_Carta4_Panel.Size = new System.Drawing.Size(171, 241);
+            this.Locanda_Carta4_Panel.Size = new System.Drawing.Size(228, 297);
             this.Locanda_Carta4_Panel.TabIndex = 14;
             this.Locanda_Carta4_Panel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Locanda_Carta4_Panel_MouseDown);
             // 
             // Locanda_Det4_Label
             // 
             this.Locanda_Det4_Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Locanda_Det4_Label.Location = new System.Drawing.Point(123, 196);
+            this.Locanda_Det4_Label.Location = new System.Drawing.Point(164, 241);
+            this.Locanda_Det4_Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Locanda_Det4_Label.Name = "Locanda_Det4_Label";
-            this.Locanda_Det4_Label.Size = new System.Drawing.Size(48, 45);
+            this.Locanda_Det4_Label.Size = new System.Drawing.Size(63, 55);
             this.Locanda_Det4_Label.TabIndex = 13;
             this.Locanda_Det4_Label.Text = "Det";
             this.Locanda_Det4_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -218,18 +227,20 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Locanda_Carta5_Panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Locanda_Carta5_Panel.Controls.Add(this.Locanda_Det5_Label);
-            this.Locanda_Carta5_Panel.Location = new System.Drawing.Point(711, 3);
+            this.Locanda_Carta5_Panel.Location = new System.Drawing.Point(948, 4);
+            this.Locanda_Carta5_Panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Locanda_Carta5_Panel.Name = "Locanda_Carta5_Panel";
-            this.Locanda_Carta5_Panel.Size = new System.Drawing.Size(171, 241);
+            this.Locanda_Carta5_Panel.Size = new System.Drawing.Size(228, 297);
             this.Locanda_Carta5_Panel.TabIndex = 14;
             this.Locanda_Carta5_Panel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Locanda_Carta5_Panel_MouseDown);
             // 
             // Locanda_Det5_Label
             // 
             this.Locanda_Det5_Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Locanda_Det5_Label.Location = new System.Drawing.Point(123, 196);
+            this.Locanda_Det5_Label.Location = new System.Drawing.Point(164, 241);
+            this.Locanda_Det5_Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Locanda_Det5_Label.Name = "Locanda_Det5_Label";
-            this.Locanda_Det5_Label.Size = new System.Drawing.Size(48, 45);
+            this.Locanda_Det5_Label.Size = new System.Drawing.Size(63, 55);
             this.Locanda_Det5_Label.TabIndex = 13;
             this.Locanda_Det5_Label.Text = "Det";
             this.Locanda_Det5_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -238,18 +249,20 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Locanda_Carta6_Panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Locanda_Carta6_Panel.Controls.Add(this.Locanda_Det6_Label);
-            this.Locanda_Carta6_Panel.Location = new System.Drawing.Point(3, 250);
+            this.Locanda_Carta6_Panel.Location = new System.Drawing.Point(4, 309);
+            this.Locanda_Carta6_Panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Locanda_Carta6_Panel.Name = "Locanda_Carta6_Panel";
-            this.Locanda_Carta6_Panel.Size = new System.Drawing.Size(171, 241);
+            this.Locanda_Carta6_Panel.Size = new System.Drawing.Size(228, 297);
             this.Locanda_Carta6_Panel.TabIndex = 14;
             this.Locanda_Carta6_Panel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Locanda_Carta6_Panel_MouseDown);
             // 
             // Locanda_Det6_Label
             // 
             this.Locanda_Det6_Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Locanda_Det6_Label.Location = new System.Drawing.Point(123, 196);
+            this.Locanda_Det6_Label.Location = new System.Drawing.Point(164, 241);
+            this.Locanda_Det6_Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Locanda_Det6_Label.Name = "Locanda_Det6_Label";
-            this.Locanda_Det6_Label.Size = new System.Drawing.Size(48, 45);
+            this.Locanda_Det6_Label.Size = new System.Drawing.Size(63, 55);
             this.Locanda_Det6_Label.TabIndex = 13;
             this.Locanda_Det6_Label.Text = "Det";
             this.Locanda_Det6_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -258,18 +271,20 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Locanda_Carta7_Panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Locanda_Carta7_Panel.Controls.Add(this.Locanda_Det7_Label);
-            this.Locanda_Carta7_Panel.Location = new System.Drawing.Point(180, 250);
+            this.Locanda_Carta7_Panel.Location = new System.Drawing.Point(240, 309);
+            this.Locanda_Carta7_Panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Locanda_Carta7_Panel.Name = "Locanda_Carta7_Panel";
-            this.Locanda_Carta7_Panel.Size = new System.Drawing.Size(171, 241);
+            this.Locanda_Carta7_Panel.Size = new System.Drawing.Size(228, 297);
             this.Locanda_Carta7_Panel.TabIndex = 15;
             this.Locanda_Carta7_Panel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Locanda_Carta7_Panel_MouseDown);
             // 
             // Locanda_Det7_Label
             // 
             this.Locanda_Det7_Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Locanda_Det7_Label.Location = new System.Drawing.Point(123, 196);
+            this.Locanda_Det7_Label.Location = new System.Drawing.Point(164, 241);
+            this.Locanda_Det7_Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Locanda_Det7_Label.Name = "Locanda_Det7_Label";
-            this.Locanda_Det7_Label.Size = new System.Drawing.Size(48, 45);
+            this.Locanda_Det7_Label.Size = new System.Drawing.Size(63, 55);
             this.Locanda_Det7_Label.TabIndex = 13;
             this.Locanda_Det7_Label.Text = "Det";
             this.Locanda_Det7_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -278,18 +293,20 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Locanda_Carta8_Panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Locanda_Carta8_Panel.Controls.Add(this.Locanda_Det8_Label);
-            this.Locanda_Carta8_Panel.Location = new System.Drawing.Point(357, 250);
+            this.Locanda_Carta8_Panel.Location = new System.Drawing.Point(476, 309);
+            this.Locanda_Carta8_Panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Locanda_Carta8_Panel.Name = "Locanda_Carta8_Panel";
-            this.Locanda_Carta8_Panel.Size = new System.Drawing.Size(171, 241);
+            this.Locanda_Carta8_Panel.Size = new System.Drawing.Size(228, 297);
             this.Locanda_Carta8_Panel.TabIndex = 15;
             this.Locanda_Carta8_Panel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Locanda_Carta8_Panel_MouseDown);
             // 
             // Locanda_Det8_Label
             // 
             this.Locanda_Det8_Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Locanda_Det8_Label.Location = new System.Drawing.Point(123, 196);
+            this.Locanda_Det8_Label.Location = new System.Drawing.Point(164, 241);
+            this.Locanda_Det8_Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Locanda_Det8_Label.Name = "Locanda_Det8_Label";
-            this.Locanda_Det8_Label.Size = new System.Drawing.Size(48, 45);
+            this.Locanda_Det8_Label.Size = new System.Drawing.Size(63, 55);
             this.Locanda_Det8_Label.TabIndex = 13;
             this.Locanda_Det8_Label.Text = "Det";
             this.Locanda_Det8_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -298,18 +315,20 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Locanda_Carta9_Panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Locanda_Carta9_Panel.Controls.Add(this.Locanda_Det9_Label);
-            this.Locanda_Carta9_Panel.Location = new System.Drawing.Point(534, 250);
+            this.Locanda_Carta9_Panel.Location = new System.Drawing.Point(712, 309);
+            this.Locanda_Carta9_Panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Locanda_Carta9_Panel.Name = "Locanda_Carta9_Panel";
-            this.Locanda_Carta9_Panel.Size = new System.Drawing.Size(171, 241);
+            this.Locanda_Carta9_Panel.Size = new System.Drawing.Size(228, 297);
             this.Locanda_Carta9_Panel.TabIndex = 15;
             this.Locanda_Carta9_Panel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Locanda_Carta9_Panel_MouseDown);
             // 
             // Locanda_Det9_Label
             // 
             this.Locanda_Det9_Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Locanda_Det9_Label.Location = new System.Drawing.Point(123, 196);
+            this.Locanda_Det9_Label.Location = new System.Drawing.Point(164, 241);
+            this.Locanda_Det9_Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Locanda_Det9_Label.Name = "Locanda_Det9_Label";
-            this.Locanda_Det9_Label.Size = new System.Drawing.Size(48, 45);
+            this.Locanda_Det9_Label.Size = new System.Drawing.Size(63, 55);
             this.Locanda_Det9_Label.TabIndex = 13;
             this.Locanda_Det9_Label.Text = "Det";
             this.Locanda_Det9_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -318,18 +337,20 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Locanda_Carta10_Panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Locanda_Carta10_Panel.Controls.Add(this.Locanda_Det10_Label);
-            this.Locanda_Carta10_Panel.Location = new System.Drawing.Point(711, 250);
+            this.Locanda_Carta10_Panel.Location = new System.Drawing.Point(948, 309);
+            this.Locanda_Carta10_Panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Locanda_Carta10_Panel.Name = "Locanda_Carta10_Panel";
-            this.Locanda_Carta10_Panel.Size = new System.Drawing.Size(171, 241);
+            this.Locanda_Carta10_Panel.Size = new System.Drawing.Size(228, 297);
             this.Locanda_Carta10_Panel.TabIndex = 15;
             this.Locanda_Carta10_Panel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Locanda_Carta10_Panel_MouseDown);
             // 
             // Locanda_Det10_Label
             // 
             this.Locanda_Det10_Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Locanda_Det10_Label.Location = new System.Drawing.Point(123, 196);
+            this.Locanda_Det10_Label.Location = new System.Drawing.Point(164, 241);
+            this.Locanda_Det10_Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Locanda_Det10_Label.Name = "Locanda_Det10_Label";
-            this.Locanda_Det10_Label.Size = new System.Drawing.Size(48, 45);
+            this.Locanda_Det10_Label.Size = new System.Drawing.Size(63, 55);
             this.Locanda_Det10_Label.TabIndex = 13;
             this.Locanda_Det10_Label.Text = "Det";
             this.Locanda_Det10_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -338,18 +359,20 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Locanda_Carta11_Panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Locanda_Carta11_Panel.Controls.Add(this.Locanda_Det11_Label);
-            this.Locanda_Carta11_Panel.Location = new System.Drawing.Point(3, 497);
+            this.Locanda_Carta11_Panel.Location = new System.Drawing.Point(4, 614);
+            this.Locanda_Carta11_Panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Locanda_Carta11_Panel.Name = "Locanda_Carta11_Panel";
-            this.Locanda_Carta11_Panel.Size = new System.Drawing.Size(171, 241);
+            this.Locanda_Carta11_Panel.Size = new System.Drawing.Size(228, 297);
             this.Locanda_Carta11_Panel.TabIndex = 15;
             this.Locanda_Carta11_Panel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Locanda_Carta11_Panel_MouseDown);
             // 
             // Locanda_Det11_Label
             // 
             this.Locanda_Det11_Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Locanda_Det11_Label.Location = new System.Drawing.Point(123, 196);
+            this.Locanda_Det11_Label.Location = new System.Drawing.Point(164, 241);
+            this.Locanda_Det11_Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Locanda_Det11_Label.Name = "Locanda_Det11_Label";
-            this.Locanda_Det11_Label.Size = new System.Drawing.Size(48, 45);
+            this.Locanda_Det11_Label.Size = new System.Drawing.Size(63, 55);
             this.Locanda_Det11_Label.TabIndex = 13;
             this.Locanda_Det11_Label.Text = "Det";
             this.Locanda_Det11_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -358,18 +381,20 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Locanda_Carta12_Panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Locanda_Carta12_Panel.Controls.Add(this.Locanda_Det12_Label);
-            this.Locanda_Carta12_Panel.Location = new System.Drawing.Point(180, 497);
+            this.Locanda_Carta12_Panel.Location = new System.Drawing.Point(240, 614);
+            this.Locanda_Carta12_Panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Locanda_Carta12_Panel.Name = "Locanda_Carta12_Panel";
-            this.Locanda_Carta12_Panel.Size = new System.Drawing.Size(171, 241);
+            this.Locanda_Carta12_Panel.Size = new System.Drawing.Size(228, 297);
             this.Locanda_Carta12_Panel.TabIndex = 15;
             this.Locanda_Carta12_Panel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Locanda_Carta12_Panel_MouseDown);
             // 
             // Locanda_Det12_Label
             // 
             this.Locanda_Det12_Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Locanda_Det12_Label.Location = new System.Drawing.Point(123, 196);
+            this.Locanda_Det12_Label.Location = new System.Drawing.Point(164, 241);
+            this.Locanda_Det12_Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Locanda_Det12_Label.Name = "Locanda_Det12_Label";
-            this.Locanda_Det12_Label.Size = new System.Drawing.Size(48, 45);
+            this.Locanda_Det12_Label.Size = new System.Drawing.Size(63, 55);
             this.Locanda_Det12_Label.TabIndex = 13;
             this.Locanda_Det12_Label.Text = "Det";
             this.Locanda_Det12_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -378,18 +403,20 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Locanda_Carta13_Panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Locanda_Carta13_Panel.Controls.Add(this.Locanda_Det13_Label);
-            this.Locanda_Carta13_Panel.Location = new System.Drawing.Point(357, 497);
+            this.Locanda_Carta13_Panel.Location = new System.Drawing.Point(476, 614);
+            this.Locanda_Carta13_Panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Locanda_Carta13_Panel.Name = "Locanda_Carta13_Panel";
-            this.Locanda_Carta13_Panel.Size = new System.Drawing.Size(171, 241);
+            this.Locanda_Carta13_Panel.Size = new System.Drawing.Size(228, 297);
             this.Locanda_Carta13_Panel.TabIndex = 15;
             this.Locanda_Carta13_Panel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Locanda_Carta13_Panel_MouseDown);
             // 
             // Locanda_Det13_Label
             // 
             this.Locanda_Det13_Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Locanda_Det13_Label.Location = new System.Drawing.Point(123, 196);
+            this.Locanda_Det13_Label.Location = new System.Drawing.Point(164, 241);
+            this.Locanda_Det13_Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Locanda_Det13_Label.Name = "Locanda_Det13_Label";
-            this.Locanda_Det13_Label.Size = new System.Drawing.Size(48, 45);
+            this.Locanda_Det13_Label.Size = new System.Drawing.Size(63, 55);
             this.Locanda_Det13_Label.TabIndex = 13;
             this.Locanda_Det13_Label.Text = "Det";
             this.Locanda_Det13_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -398,18 +425,20 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Locanda_Carta14_Panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Locanda_Carta14_Panel.Controls.Add(this.Locanda_Det14_Label);
-            this.Locanda_Carta14_Panel.Location = new System.Drawing.Point(534, 497);
+            this.Locanda_Carta14_Panel.Location = new System.Drawing.Point(712, 614);
+            this.Locanda_Carta14_Panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Locanda_Carta14_Panel.Name = "Locanda_Carta14_Panel";
-            this.Locanda_Carta14_Panel.Size = new System.Drawing.Size(171, 241);
+            this.Locanda_Carta14_Panel.Size = new System.Drawing.Size(228, 297);
             this.Locanda_Carta14_Panel.TabIndex = 15;
             this.Locanda_Carta14_Panel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Locanda_Carta14_Panel_MouseDown);
             // 
             // Locanda_Det14_Label
             // 
             this.Locanda_Det14_Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Locanda_Det14_Label.Location = new System.Drawing.Point(123, 196);
+            this.Locanda_Det14_Label.Location = new System.Drawing.Point(164, 241);
+            this.Locanda_Det14_Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Locanda_Det14_Label.Name = "Locanda_Det14_Label";
-            this.Locanda_Det14_Label.Size = new System.Drawing.Size(48, 45);
+            this.Locanda_Det14_Label.Size = new System.Drawing.Size(63, 55);
             this.Locanda_Det14_Label.TabIndex = 13;
             this.Locanda_Det14_Label.Text = "Det";
             this.Locanda_Det14_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -418,18 +447,20 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Locanda_Carta15_Panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Locanda_Carta15_Panel.Controls.Add(this.Locanda_Det15_Label);
-            this.Locanda_Carta15_Panel.Location = new System.Drawing.Point(711, 497);
+            this.Locanda_Carta15_Panel.Location = new System.Drawing.Point(948, 614);
+            this.Locanda_Carta15_Panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Locanda_Carta15_Panel.Name = "Locanda_Carta15_Panel";
-            this.Locanda_Carta15_Panel.Size = new System.Drawing.Size(171, 241);
+            this.Locanda_Carta15_Panel.Size = new System.Drawing.Size(228, 297);
             this.Locanda_Carta15_Panel.TabIndex = 15;
             this.Locanda_Carta15_Panel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Locanda_Carta15_Panel_MouseDown);
             // 
             // Locanda_Det15_Label
             // 
             this.Locanda_Det15_Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Locanda_Det15_Label.Location = new System.Drawing.Point(123, 196);
+            this.Locanda_Det15_Label.Location = new System.Drawing.Point(164, 241);
+            this.Locanda_Det15_Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Locanda_Det15_Label.Name = "Locanda_Det15_Label";
-            this.Locanda_Det15_Label.Size = new System.Drawing.Size(48, 45);
+            this.Locanda_Det15_Label.Size = new System.Drawing.Size(63, 55);
             this.Locanda_Det15_Label.TabIndex = 13;
             this.Locanda_Det15_Label.Text = "Det";
             this.Locanda_Det15_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -438,18 +469,20 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Locanda_Carta16_Panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Locanda_Carta16_Panel.Controls.Add(this.Locanda_Det16_Label);
-            this.Locanda_Carta16_Panel.Location = new System.Drawing.Point(3, 744);
+            this.Locanda_Carta16_Panel.Location = new System.Drawing.Point(4, 919);
+            this.Locanda_Carta16_Panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Locanda_Carta16_Panel.Name = "Locanda_Carta16_Panel";
-            this.Locanda_Carta16_Panel.Size = new System.Drawing.Size(171, 241);
+            this.Locanda_Carta16_Panel.Size = new System.Drawing.Size(228, 297);
             this.Locanda_Carta16_Panel.TabIndex = 15;
             this.Locanda_Carta16_Panel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Locanda_Carta16_Panel_MouseDown);
             // 
             // Locanda_Det16_Label
             // 
             this.Locanda_Det16_Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Locanda_Det16_Label.Location = new System.Drawing.Point(123, 196);
+            this.Locanda_Det16_Label.Location = new System.Drawing.Point(164, 241);
+            this.Locanda_Det16_Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Locanda_Det16_Label.Name = "Locanda_Det16_Label";
-            this.Locanda_Det16_Label.Size = new System.Drawing.Size(48, 45);
+            this.Locanda_Det16_Label.Size = new System.Drawing.Size(63, 55);
             this.Locanda_Det16_Label.TabIndex = 13;
             this.Locanda_Det16_Label.Text = "Det";
             this.Locanda_Det16_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -458,18 +491,20 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Locanda_Carta17_Panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Locanda_Carta17_Panel.Controls.Add(this.Locanda_Det17_Label);
-            this.Locanda_Carta17_Panel.Location = new System.Drawing.Point(180, 744);
+            this.Locanda_Carta17_Panel.Location = new System.Drawing.Point(240, 919);
+            this.Locanda_Carta17_Panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Locanda_Carta17_Panel.Name = "Locanda_Carta17_Panel";
-            this.Locanda_Carta17_Panel.Size = new System.Drawing.Size(171, 241);
+            this.Locanda_Carta17_Panel.Size = new System.Drawing.Size(228, 297);
             this.Locanda_Carta17_Panel.TabIndex = 15;
             this.Locanda_Carta17_Panel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Locanda_Carta17_Panel_MouseDown);
             // 
             // Locanda_Det17_Label
             // 
             this.Locanda_Det17_Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Locanda_Det17_Label.Location = new System.Drawing.Point(123, 196);
+            this.Locanda_Det17_Label.Location = new System.Drawing.Point(164, 241);
+            this.Locanda_Det17_Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Locanda_Det17_Label.Name = "Locanda_Det17_Label";
-            this.Locanda_Det17_Label.Size = new System.Drawing.Size(48, 45);
+            this.Locanda_Det17_Label.Size = new System.Drawing.Size(63, 55);
             this.Locanda_Det17_Label.TabIndex = 13;
             this.Locanda_Det17_Label.Text = "Det";
             this.Locanda_Det17_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -478,18 +513,20 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Locanda_Carta18_Panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Locanda_Carta18_Panel.Controls.Add(this.Locanda_Det18_Label);
-            this.Locanda_Carta18_Panel.Location = new System.Drawing.Point(357, 744);
+            this.Locanda_Carta18_Panel.Location = new System.Drawing.Point(476, 919);
+            this.Locanda_Carta18_Panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Locanda_Carta18_Panel.Name = "Locanda_Carta18_Panel";
-            this.Locanda_Carta18_Panel.Size = new System.Drawing.Size(171, 241);
+            this.Locanda_Carta18_Panel.Size = new System.Drawing.Size(228, 297);
             this.Locanda_Carta18_Panel.TabIndex = 15;
             this.Locanda_Carta18_Panel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Locanda_Carta18_Panel_MouseDown);
             // 
             // Locanda_Det18_Label
             // 
             this.Locanda_Det18_Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Locanda_Det18_Label.Location = new System.Drawing.Point(123, 196);
+            this.Locanda_Det18_Label.Location = new System.Drawing.Point(164, 241);
+            this.Locanda_Det18_Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Locanda_Det18_Label.Name = "Locanda_Det18_Label";
-            this.Locanda_Det18_Label.Size = new System.Drawing.Size(48, 45);
+            this.Locanda_Det18_Label.Size = new System.Drawing.Size(63, 55);
             this.Locanda_Det18_Label.TabIndex = 13;
             this.Locanda_Det18_Label.Text = "Det";
             this.Locanda_Det18_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -498,18 +535,20 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Locanda_Carta19_Panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Locanda_Carta19_Panel.Controls.Add(this.Locanda_Det19_Label);
-            this.Locanda_Carta19_Panel.Location = new System.Drawing.Point(534, 744);
+            this.Locanda_Carta19_Panel.Location = new System.Drawing.Point(712, 919);
+            this.Locanda_Carta19_Panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Locanda_Carta19_Panel.Name = "Locanda_Carta19_Panel";
-            this.Locanda_Carta19_Panel.Size = new System.Drawing.Size(171, 241);
+            this.Locanda_Carta19_Panel.Size = new System.Drawing.Size(228, 297);
             this.Locanda_Carta19_Panel.TabIndex = 14;
             this.Locanda_Carta19_Panel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Locanda_Carta19_Panel_MouseDown);
             // 
             // Locanda_Det19_Label
             // 
             this.Locanda_Det19_Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Locanda_Det19_Label.Location = new System.Drawing.Point(123, 196);
+            this.Locanda_Det19_Label.Location = new System.Drawing.Point(164, 241);
+            this.Locanda_Det19_Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Locanda_Det19_Label.Name = "Locanda_Det19_Label";
-            this.Locanda_Det19_Label.Size = new System.Drawing.Size(48, 45);
+            this.Locanda_Det19_Label.Size = new System.Drawing.Size(63, 55);
             this.Locanda_Det19_Label.TabIndex = 13;
             this.Locanda_Det19_Label.Text = "Det";
             this.Locanda_Det19_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -518,27 +557,30 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Locanda_Carta20_Panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Locanda_Carta20_Panel.Controls.Add(this.Locanda_Det20_Label);
-            this.Locanda_Carta20_Panel.Location = new System.Drawing.Point(711, 744);
+            this.Locanda_Carta20_Panel.Location = new System.Drawing.Point(948, 919);
+            this.Locanda_Carta20_Panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Locanda_Carta20_Panel.Name = "Locanda_Carta20_Panel";
-            this.Locanda_Carta20_Panel.Size = new System.Drawing.Size(171, 241);
+            this.Locanda_Carta20_Panel.Size = new System.Drawing.Size(228, 297);
             this.Locanda_Carta20_Panel.TabIndex = 14;
             this.Locanda_Carta20_Panel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Locanda_Carta20_Panel_MouseDown);
             // 
             // Locanda_Det20_Label
             // 
             this.Locanda_Det20_Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Locanda_Det20_Label.Location = new System.Drawing.Point(123, 196);
+            this.Locanda_Det20_Label.Location = new System.Drawing.Point(164, 241);
+            this.Locanda_Det20_Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Locanda_Det20_Label.Name = "Locanda_Det20_Label";
-            this.Locanda_Det20_Label.Size = new System.Drawing.Size(48, 45);
+            this.Locanda_Det20_Label.Size = new System.Drawing.Size(63, 55);
             this.Locanda_Det20_Label.TabIndex = 13;
             this.Locanda_Det20_Label.Text = "Det";
             this.Locanda_Det20_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Locanda_Radio_Button
             // 
-            this.Locanda_Radio_Button.Location = new System.Drawing.Point(468, 213);
+            this.Locanda_Radio_Button.Location = new System.Drawing.Point(624, 262);
+            this.Locanda_Radio_Button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Locanda_Radio_Button.Name = "Locanda_Radio_Button";
-            this.Locanda_Radio_Button.Size = new System.Drawing.Size(200, 128);
+            this.Locanda_Radio_Button.Size = new System.Drawing.Size(267, 158);
             this.Locanda_Radio_Button.TabIndex = 13;
             // 
             // Locanda_Slot1_Panel
@@ -546,9 +588,10 @@ namespace KingOfPirates.GUI.MenuNassau
             this.Locanda_Slot1_Panel.AllowDrop = true;
             this.Locanda_Slot1_Panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Locanda_Slot1_Panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Locanda_Slot1_Panel.Location = new System.Drawing.Point(721, 55);
+            this.Locanda_Slot1_Panel.Location = new System.Drawing.Point(961, 68);
+            this.Locanda_Slot1_Panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Locanda_Slot1_Panel.Name = "Locanda_Slot1_Panel";
-            this.Locanda_Slot1_Panel.Size = new System.Drawing.Size(100, 128);
+            this.Locanda_Slot1_Panel.Size = new System.Drawing.Size(133, 157);
             this.Locanda_Slot1_Panel.TabIndex = 14;
             this.Locanda_Slot1_Panel.DragDrop += new System.Windows.Forms.DragEventHandler(this.Locanda_Slot1_Panel_DragDrop);
             this.Locanda_Slot1_Panel.DragEnter += new System.Windows.Forms.DragEventHandler(this.Locanda_Slot1_Panel_DragEnter);
@@ -558,9 +601,10 @@ namespace KingOfPirates.GUI.MenuNassau
             this.Locanda_Slot2_Panel.AllowDrop = true;
             this.Locanda_Slot2_Panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Locanda_Slot2_Panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Locanda_Slot2_Panel.Location = new System.Drawing.Point(849, 55);
+            this.Locanda_Slot2_Panel.Location = new System.Drawing.Point(1132, 68);
+            this.Locanda_Slot2_Panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Locanda_Slot2_Panel.Name = "Locanda_Slot2_Panel";
-            this.Locanda_Slot2_Panel.Size = new System.Drawing.Size(100, 128);
+            this.Locanda_Slot2_Panel.Size = new System.Drawing.Size(133, 157);
             this.Locanda_Slot2_Panel.TabIndex = 15;
             this.Locanda_Slot2_Panel.DragDrop += new System.Windows.Forms.DragEventHandler(this.Locanda_Slot2_Panel_DragDrop);
             this.Locanda_Slot2_Panel.DragEnter += new System.Windows.Forms.DragEventHandler(this.Locanda_Slot2_Panel_DragEnter);
@@ -570,9 +614,10 @@ namespace KingOfPirates.GUI.MenuNassau
             this.Locanda_Slot3_Panel.AllowDrop = true;
             this.Locanda_Slot3_Panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Locanda_Slot3_Panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Locanda_Slot3_Panel.Location = new System.Drawing.Point(979, 55);
+            this.Locanda_Slot3_Panel.Location = new System.Drawing.Point(1305, 68);
+            this.Locanda_Slot3_Panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Locanda_Slot3_Panel.Name = "Locanda_Slot3_Panel";
-            this.Locanda_Slot3_Panel.Size = new System.Drawing.Size(100, 128);
+            this.Locanda_Slot3_Panel.Size = new System.Drawing.Size(133, 157);
             this.Locanda_Slot3_Panel.TabIndex = 15;
             this.Locanda_Slot3_Panel.DragDrop += new System.Windows.Forms.DragEventHandler(this.Locanda_Slot3_Panel_DragDrop);
             this.Locanda_Slot3_Panel.DragEnter += new System.Windows.Forms.DragEventHandler(this.Locanda_Slot3_Panel_DragEnter);
@@ -582,9 +627,10 @@ namespace KingOfPirates.GUI.MenuNassau
             this.Locanda_Slot4_Panel.AllowDrop = true;
             this.Locanda_Slot4_Panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Locanda_Slot4_Panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Locanda_Slot4_Panel.Location = new System.Drawing.Point(1105, 55);
+            this.Locanda_Slot4_Panel.Location = new System.Drawing.Point(1473, 68);
+            this.Locanda_Slot4_Panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Locanda_Slot4_Panel.Name = "Locanda_Slot4_Panel";
-            this.Locanda_Slot4_Panel.Size = new System.Drawing.Size(100, 128);
+            this.Locanda_Slot4_Panel.Size = new System.Drawing.Size(133, 157);
             this.Locanda_Slot4_Panel.TabIndex = 15;
             this.Locanda_Slot4_Panel.DragDrop += new System.Windows.Forms.DragEventHandler(this.Locanda_Slot4_Panel_DragDrop);
             this.Locanda_Slot4_Panel.DragEnter += new System.Windows.Forms.DragEventHandler(this.Locanda_Slot4_Panel_DragEnter);
@@ -594,9 +640,10 @@ namespace KingOfPirates.GUI.MenuNassau
             this.Locanda_Slot5_Panel.AllowDrop = true;
             this.Locanda_Slot5_Panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Locanda_Slot5_Panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Locanda_Slot5_Panel.Location = new System.Drawing.Point(721, 213);
+            this.Locanda_Slot5_Panel.Location = new System.Drawing.Point(961, 262);
+            this.Locanda_Slot5_Panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Locanda_Slot5_Panel.Name = "Locanda_Slot5_Panel";
-            this.Locanda_Slot5_Panel.Size = new System.Drawing.Size(100, 128);
+            this.Locanda_Slot5_Panel.Size = new System.Drawing.Size(133, 157);
             this.Locanda_Slot5_Panel.TabIndex = 15;
             this.Locanda_Slot5_Panel.DragDrop += new System.Windows.Forms.DragEventHandler(this.Locanda_Slot5_Panel_DragDrop);
             this.Locanda_Slot5_Panel.DragEnter += new System.Windows.Forms.DragEventHandler(this.Locanda_Slot5_Panel_DragEnter);
@@ -606,9 +653,10 @@ namespace KingOfPirates.GUI.MenuNassau
             this.Locanda_Slot6_Panel.AllowDrop = true;
             this.Locanda_Slot6_Panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Locanda_Slot6_Panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Locanda_Slot6_Panel.Location = new System.Drawing.Point(849, 213);
+            this.Locanda_Slot6_Panel.Location = new System.Drawing.Point(1132, 262);
+            this.Locanda_Slot6_Panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Locanda_Slot6_Panel.Name = "Locanda_Slot6_Panel";
-            this.Locanda_Slot6_Panel.Size = new System.Drawing.Size(100, 128);
+            this.Locanda_Slot6_Panel.Size = new System.Drawing.Size(133, 157);
             this.Locanda_Slot6_Panel.TabIndex = 15;
             this.Locanda_Slot6_Panel.DragDrop += new System.Windows.Forms.DragEventHandler(this.Locanda_Slot6_Panel_DragDrop);
             this.Locanda_Slot6_Panel.DragEnter += new System.Windows.Forms.DragEventHandler(this.Locanda_Slot6_Panel_DragEnter);
@@ -618,9 +666,10 @@ namespace KingOfPirates.GUI.MenuNassau
             this.Locanda_Slot7_Panel.AllowDrop = true;
             this.Locanda_Slot7_Panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Locanda_Slot7_Panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Locanda_Slot7_Panel.Location = new System.Drawing.Point(979, 213);
+            this.Locanda_Slot7_Panel.Location = new System.Drawing.Point(1305, 262);
+            this.Locanda_Slot7_Panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Locanda_Slot7_Panel.Name = "Locanda_Slot7_Panel";
-            this.Locanda_Slot7_Panel.Size = new System.Drawing.Size(100, 128);
+            this.Locanda_Slot7_Panel.Size = new System.Drawing.Size(133, 157);
             this.Locanda_Slot7_Panel.TabIndex = 15;
             this.Locanda_Slot7_Panel.DragDrop += new System.Windows.Forms.DragEventHandler(this.Locanda_Slot7_Panel_DragDrop);
             this.Locanda_Slot7_Panel.DragEnter += new System.Windows.Forms.DragEventHandler(this.Locanda_Slot7_Panel_DragEnter);
@@ -630,9 +679,10 @@ namespace KingOfPirates.GUI.MenuNassau
             this.Locanda_Slot8_Panel.AllowDrop = true;
             this.Locanda_Slot8_Panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Locanda_Slot8_Panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Locanda_Slot8_Panel.Location = new System.Drawing.Point(1105, 213);
+            this.Locanda_Slot8_Panel.Location = new System.Drawing.Point(1473, 262);
+            this.Locanda_Slot8_Panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Locanda_Slot8_Panel.Name = "Locanda_Slot8_Panel";
-            this.Locanda_Slot8_Panel.Size = new System.Drawing.Size(100, 128);
+            this.Locanda_Slot8_Panel.Size = new System.Drawing.Size(133, 157);
             this.Locanda_Slot8_Panel.TabIndex = 15;
             this.Locanda_Slot8_Panel.DragDrop += new System.Windows.Forms.DragEventHandler(this.Locanda_Slot8_Panel_DragDrop);
             this.Locanda_Slot8_Panel.DragEnter += new System.Windows.Forms.DragEventHandler(this.Locanda_Slot8_Panel_DragEnter);
@@ -641,9 +691,10 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Locanda_Back_Button.BackgroundImage = global::KingOfPirates.Properties.Resources.back_arrow;
             this.Locanda_Back_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Locanda_Back_Button.Location = new System.Drawing.Point(12, 12);
+            this.Locanda_Back_Button.Location = new System.Drawing.Point(16, 15);
+            this.Locanda_Back_Button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Locanda_Back_Button.Name = "Locanda_Back_Button";
-            this.Locanda_Back_Button.Size = new System.Drawing.Size(89, 79);
+            this.Locanda_Back_Button.Size = new System.Drawing.Size(119, 97);
             this.Locanda_Back_Button.TabIndex = 12;
             this.Locanda_Back_Button.UseVisualStyleBackColor = true;
             this.Locanda_Back_Button.Click += new System.EventHandler(this.Locanda_Back_Button_Click);
@@ -651,17 +702,18 @@ namespace KingOfPirates.GUI.MenuNassau
             // Locanda_Rules_Button
             // 
             this.Locanda_Rules_Button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Locanda_Rules_Button.Location = new System.Drawing.Point(468, 55);
+            this.Locanda_Rules_Button.Location = new System.Drawing.Point(624, 68);
+            this.Locanda_Rules_Button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Locanda_Rules_Button.Name = "Locanda_Rules_Button";
-            this.Locanda_Rules_Button.Size = new System.Drawing.Size(200, 128);
+            this.Locanda_Rules_Button.Size = new System.Drawing.Size(267, 158);
             this.Locanda_Rules_Button.TabIndex = 2;
             this.Locanda_Rules_Button.TabStop = false;
             // 
             // Locanda_form
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.ClientSize = new System.Drawing.Size(1685, 838);
             this.Controls.Add(this.Locanda_Slot8_Panel);
             this.Controls.Add(this.Locanda_Slot7_Panel);
             this.Controls.Add(this.Locanda_Slot6_Panel);
@@ -674,8 +726,10 @@ namespace KingOfPirates.GUI.MenuNassau
             this.Controls.Add(this.Locanda_Back_Button);
             this.Controls.Add(this.Locanda_Rules_Button);
             this.Controls.Add(this.flowLayoutPanel1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Locanda_form";
             this.Text = "King of Pirates - Locanda";
+            this.VisibleChanged += new System.EventHandler(this.OnVisibleChanged);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.Locanda_Carta1_Panel.ResumeLayout(false);
             this.Locanda_Carta2_Panel.ResumeLayout(false);

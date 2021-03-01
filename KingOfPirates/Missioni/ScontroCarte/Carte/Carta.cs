@@ -75,6 +75,11 @@ namespace KingOfPirates.Missioni.ScontroCarte.Carte
             // determinazione--;
         }
 
+        public void MaxDeterminazione()
+        {
+            curDet = determinazione;
+        }
+
         public void AddDeterminazione(int val)
         {
             curDet += val;
@@ -86,8 +91,11 @@ namespace KingOfPirates.Missioni.ScontroCarte.Carte
         {
             curDet -= val;
 
-            if (curDet < 0) //Dovrebbe settare la carta come morta... TODO
+            if (curDet < 0) 
+            {
                 curDet = 0;
+                utilizzabile = false;
+            }
         }
 
         public bool GetUtilizzabile()

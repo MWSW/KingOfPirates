@@ -37,17 +37,6 @@ namespace KingOfPirates.GUI.MenuNassau
             nCarteMax = 10 - 1;
             nCarteSelezionate = 0;
 
-            //prova
-            //ListaCarte.GetCarta(1).SetUtilizzabile(true);
-            ListaCarte.GetCarta(2).SetUtilizzabile(true);
-            ListaCarte.GetCarta(3).SetUtilizzabile(true);
-            ListaCarte.GetCarta(4).SetUtilizzabile(true);
-            ListaCarte.GetCarta(5).SetUtilizzabile(true);
-            ListaCarte.GetCarta(6).SetUtilizzabile(true);
-            ListaCarte.GetCarta(17).SetUtilizzabile(true);
-            ListaCarte.GetCarta(18).SetUtilizzabile(true);
-            ListaCarte.GetCarta(19).SetUtilizzabile(true);
-
             InitializeComponent();
 
             LoadData();
@@ -162,10 +151,10 @@ namespace KingOfPirates.GUI.MenuNassau
             for(int i = 0; i < count; i++)
             {
                 indiceSelezionato = getIsSelectedIndex(indiceSelezionato);
-                mazzo[i] = ListaCarte.GetCartaClone(indiceSelezionato);
+                //mazzo[i] = ListaCarte.GetCartaClone(indiceSelezionato);
+                mazzo[i] = ListaCarte.GetCarta(indiceSelezionato);
             }
 
-            //TODO passaggio di mazzo al Mazzo della missione
             return mazzo;
         }
 
@@ -563,6 +552,7 @@ namespace KingOfPirates.GUI.MenuNassau
             else
             {
                 Locanda_Carta1_Panel.BackgroundImage = ListaCarte.GetCarta(0).Immagine;
+                Locanda_Carta1_Panel.Show();
             }
 
             if (!ListaCarte.GetCarta(1).GetUtilizzabile())
@@ -572,6 +562,7 @@ namespace KingOfPirates.GUI.MenuNassau
             else
             {
                 Locanda_Carta2_Panel.BackgroundImage = ListaCarte.GetCarta(1).Immagine;
+                Locanda_Carta2_Panel.Show();
             }
 
             if (!ListaCarte.GetCarta(2).GetUtilizzabile())
@@ -581,6 +572,7 @@ namespace KingOfPirates.GUI.MenuNassau
             else
             {
                 Locanda_Carta3_Panel.BackgroundImage = ListaCarte.GetCarta(2).Immagine;
+                Locanda_Carta3_Panel.Show();
             }
 
             if (!ListaCarte.GetCarta(3).GetUtilizzabile())
@@ -590,6 +582,7 @@ namespace KingOfPirates.GUI.MenuNassau
             else
             {
                 Locanda_Carta4_Panel.BackgroundImage = ListaCarte.GetCarta(3).Immagine;
+                Locanda_Carta4_Panel.Show();
             }
 
             if (!ListaCarte.GetCarta(4).GetUtilizzabile())
@@ -598,7 +591,8 @@ namespace KingOfPirates.GUI.MenuNassau
             }
             else
             {
-                Locanda_Carta6_Panel.BackgroundImage = ListaCarte.GetCarta(5).Immagine;
+                Locanda_Carta5_Panel.BackgroundImage = ListaCarte.GetCarta(4).Immagine;
+                Locanda_Carta5_Panel.Show();
             }
 
             if (!ListaCarte.GetCarta(5).GetUtilizzabile())
@@ -608,6 +602,7 @@ namespace KingOfPirates.GUI.MenuNassau
             else
             {
                 Locanda_Carta6_Panel.BackgroundImage = ListaCarte.GetCarta(5).Immagine;
+                Locanda_Carta6_Panel.Show();
             }
 
             if (!ListaCarte.GetCarta(6).GetUtilizzabile())
@@ -617,6 +612,7 @@ namespace KingOfPirates.GUI.MenuNassau
             else
             {
                 Locanda_Carta7_Panel.BackgroundImage = ListaCarte.GetCarta(6).Immagine;
+                Locanda_Carta7_Panel.Show();
             }
 
             if (!ListaCarte.GetCarta(7).GetUtilizzabile())
@@ -626,6 +622,7 @@ namespace KingOfPirates.GUI.MenuNassau
             else
             {
                 Locanda_Carta8_Panel.BackgroundImage = ListaCarte.GetCarta(7).Immagine;
+                Locanda_Carta8_Panel.Show();
             }
 
             if (!ListaCarte.GetCarta(8).GetUtilizzabile())
@@ -635,6 +632,7 @@ namespace KingOfPirates.GUI.MenuNassau
             else
             {
                 Locanda_Carta9_Panel.BackgroundImage = ListaCarte.GetCarta(8).Immagine;
+                Locanda_Carta9_Panel.Show();
             }
 
             if (!ListaCarte.GetCarta(9).GetUtilizzabile())
@@ -644,6 +642,7 @@ namespace KingOfPirates.GUI.MenuNassau
             else
             {
                 Locanda_Carta10_Panel.BackgroundImage = ListaCarte.GetCarta(9).Immagine;
+                Locanda_Carta10_Panel.Show();
             }
 
             if (!ListaCarte.GetCarta(10).GetUtilizzabile())
@@ -653,6 +652,7 @@ namespace KingOfPirates.GUI.MenuNassau
             else
             {
                 Locanda_Carta11_Panel.BackgroundImage = ListaCarte.GetCarta(10).Immagine;
+                Locanda_Carta11_Panel.Show();
             }
 
             if (!ListaCarte.GetCarta(11).GetUtilizzabile())
@@ -662,6 +662,7 @@ namespace KingOfPirates.GUI.MenuNassau
             else
             {
                 Locanda_Carta12_Panel.BackgroundImage = ListaCarte.GetCarta(11).Immagine;
+                Locanda_Carta12_Panel.Show();
             }
 
             if (!ListaCarte.GetCarta(12).GetUtilizzabile())
@@ -671,6 +672,7 @@ namespace KingOfPirates.GUI.MenuNassau
             else
             {
                 Locanda_Carta13_Panel.BackgroundImage = ListaCarte.GetCarta(12).Immagine;
+                Locanda_Carta13_Panel.Show();
             }
 
             if (!ListaCarte.GetCarta(13).GetUtilizzabile())
@@ -680,6 +682,7 @@ namespace KingOfPirates.GUI.MenuNassau
             else
             {
                 Locanda_Carta14_Panel.BackgroundImage = ListaCarte.GetCarta(13).Immagine;
+                Locanda_Carta14_Panel.Show();
             }
 
             if (!ListaCarte.GetCarta(14).GetUtilizzabile())
@@ -689,6 +692,7 @@ namespace KingOfPirates.GUI.MenuNassau
             else
             {
                 Locanda_Carta15_Panel.BackgroundImage = ListaCarte.GetCarta(14).Immagine;
+                Locanda_Carta15_Panel.Show();
             }
 
             if (!ListaCarte.GetCarta(15).GetUtilizzabile())
@@ -698,6 +702,7 @@ namespace KingOfPirates.GUI.MenuNassau
             else
             {
                 Locanda_Carta16_Panel.BackgroundImage = ListaCarte.GetCarta(15).Immagine;
+                Locanda_Carta16_Panel.Show();
             }
 
             if (!ListaCarte.GetCarta(16).GetUtilizzabile())
@@ -707,6 +712,7 @@ namespace KingOfPirates.GUI.MenuNassau
             else
             {
                 Locanda_Carta17_Panel.BackgroundImage = ListaCarte.GetCarta(16).Immagine;
+                Locanda_Carta17_Panel.Show();
             }
 
             if (!ListaCarte.GetCarta(17).GetUtilizzabile())
@@ -716,6 +722,7 @@ namespace KingOfPirates.GUI.MenuNassau
             else
             {
                 Locanda_Carta18_Panel.BackgroundImage = ListaCarte.GetCarta(17).Immagine;
+                Locanda_Carta18_Panel.Show();
             }
 
             if (!ListaCarte.GetCarta(18).GetUtilizzabile())
@@ -725,6 +732,7 @@ namespace KingOfPirates.GUI.MenuNassau
             else
             {
                 Locanda_Carta19_Panel.BackgroundImage = ListaCarte.GetCarta(18).Immagine;
+                Locanda_Carta19_Panel.Show();
             }
 
             if (!ListaCarte.GetCarta(19).GetUtilizzabile())
@@ -734,6 +742,7 @@ namespace KingOfPirates.GUI.MenuNassau
             else
             {
                 Locanda_Carta20_Panel.BackgroundImage = ListaCarte.GetCarta(19).Immagine;
+                Locanda_Carta20_Panel.Show();
             }
 
         }
@@ -751,32 +760,32 @@ namespace KingOfPirates.GUI.MenuNassau
 
                nCarteSelezionate = 0;
 
-               Porto_Selected1_PB.BackgroundImage = null;
-               Porto_Selected2_PB.BackgroundImage = null;
-               Porto_Selected3_PB.BackgroundImage = null;
+               Porto_Selected1_PB.BackgroundImage = Resources.emptyCheckBox;
+               Porto_Selected2_PB.BackgroundImage = Resources.emptyCheckBox;
+               Porto_Selected3_PB.BackgroundImage = Resources.emptyCheckBox;
 
-               Porto_Selected4_PB.BackgroundImage = null;
-               Porto_Selected5_PB.BackgroundImage = null;
-               Porto_Selected6_PB.BackgroundImage = null;
+               Porto_Selected4_PB.BackgroundImage = Resources.emptyCheckBox;
+               Porto_Selected5_PB.BackgroundImage = Resources.emptyCheckBox;
+               Porto_Selected6_PB.BackgroundImage = Resources.emptyCheckBox;
                
-               Porto_Selected7_PB.BackgroundImage = null;
-               Porto_Selected8_PB.BackgroundImage = null;
-               Porto_Selected9_PB.BackgroundImage = null;
+               Porto_Selected7_PB.BackgroundImage = Resources.emptyCheckBox;
+               Porto_Selected8_PB.BackgroundImage = Resources.emptyCheckBox;
+               Porto_Selected9_PB.BackgroundImage = Resources.emptyCheckBox;
                
-               Porto_Selected10_PB.BackgroundImage = null;
-               Porto_Selected11_PB.BackgroundImage = null;
-               Porto_Selected12_PB.BackgroundImage = null;
+               Porto_Selected10_PB.BackgroundImage = Resources.emptyCheckBox;
+               Porto_Selected11_PB.BackgroundImage = Resources.emptyCheckBox;
+               Porto_Selected12_PB.BackgroundImage = Resources.emptyCheckBox;
                
-               Porto_Selected13_PB.BackgroundImage = null;
-               Porto_Selected14_PB.BackgroundImage = null;
-               Porto_Selected15_PB.BackgroundImage = null;
+               Porto_Selected13_PB.BackgroundImage = Resources.emptyCheckBox;
+               Porto_Selected14_PB.BackgroundImage = Resources.emptyCheckBox;
+               Porto_Selected15_PB.BackgroundImage = Resources.emptyCheckBox;
                
-               Porto_Selected16_PB.BackgroundImage = null;
-               Porto_Selected17_PB.BackgroundImage = null;
-               Porto_Selected18_PB.BackgroundImage = null;
+               Porto_Selected16_PB.BackgroundImage = Resources.emptyCheckBox;
+               Porto_Selected17_PB.BackgroundImage = Resources.emptyCheckBox;
+               Porto_Selected18_PB.BackgroundImage = Resources.emptyCheckBox;
                
-               Porto_Selected19_PB.BackgroundImage = null;
-               Porto_Selected20_PB.BackgroundImage = null;
+               Porto_Selected19_PB.BackgroundImage = Resources.emptyCheckBox;
+               Porto_Selected20_PB.BackgroundImage = Resources.emptyCheckBox;
             }
         }
     }

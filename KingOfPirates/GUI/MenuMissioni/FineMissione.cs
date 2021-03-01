@@ -1,4 +1,6 @@
 ﻿using KingOfPirates.Missioni;
+using KingOfPirates.Missioni.ScontroCarte.Carte;
+using KingOfPirates.Missioni.ScontroCarte.Opponenti;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -50,9 +52,24 @@ namespace KingOfPirates.GUI.MenuMissioni
 
         private void OnClick(object sender, EventArgs e)
         {
-            //torna a Nassau
-            Gioco.nassauForm.Show();
 
+            //le carte cher riposavano alla locanda si risvegliano dal loro sonno
+            //la loro determinazione torna massima
+            for(int i = 0; i < ListaCarte.GetLength(); i++)
+            {
+                if(ListaCarte.GetCarta(i).IsSleeping == true)
+                {
+                    ListaCarte.GetCarta(i).MaxDeterminazione();
+                    ListaCarte.GetCarta(i).SetUtilizzabile(true);
+                    ListaCarte.GetCarta(i).IsSleeping = false;
+                }
+            }
+
+            //non aggiorna alla locanda
+
+            //torna a Nassau
+            Gioco.nassauForm.GetLocanda_Form().Reset(); //reset visivo
+            Gioco.nassauForm.Show();
             this.Close();
         }
     }

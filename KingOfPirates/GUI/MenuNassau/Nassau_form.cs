@@ -62,5 +62,8 @@ namespace KingOfPirates.GUI.MenuNassau
             this.Hide();
             Gioco.startMenu.Show();
         }
+
+
+        public Locanda_form GetLocanda_Form() { return locanda; }
     }
 }
