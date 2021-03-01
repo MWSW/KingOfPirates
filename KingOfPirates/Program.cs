@@ -46,7 +46,7 @@ namespace KingOfPirates
         /// </summary>
         public static KingOfPirates.Missioni.Navi.NaveGiocatore Giocatore { get; set; }
         public static KingOfPirates.Mappa.GestioneDominio Dominio { get; set; }
-        public static Missione TestMissione { get; set; }
+        public static Missione MissioneSelezionata { get; set; }
 
         public static GUI.MenuPrincipale.StartMenu startMenu;
         public static GUI.MenuNassau.Nassau_form nassauForm;
@@ -58,8 +58,8 @@ namespace KingOfPirates
         /// </summary>
         public static void Start()
         {
-            startMenu = new StartMenu();
             Init();
+            startMenu = new StartMenu();
             startMenu.Show();
         }
 
@@ -68,7 +68,7 @@ namespace KingOfPirates
         /// </summary>
         public static void End()
         {
-            TestMissione.EndMissione();
+            MissioneSelezionata.EndMissione();
             scontroCarte.Dispose();
             nassauForm.Dispose();
             startMenu.Dispose();
@@ -136,7 +136,7 @@ namespace KingOfPirates
             testNemici[0] = new Mercantile(new Stats(), testPatrol, nemico_prova);
             testNemici[1] = new Caravella(new Stats(), testPatrol2, nemico_prova1);
             testNemici[2] = new Fregata(new Stats(), testPatrol3, nemico_prova2);
-            TestMissione = new Missione(griglia_prova, 5, testNemici);
+            MissioneSelezionata = new Missione(griglia_prova, 5, testNemici);
 
             scontroCarte = new GUI.ScontroCarte.ScontroCarte(nemico_prova);
             nassauForm = new GUI.MenuNassau.Nassau_form();
