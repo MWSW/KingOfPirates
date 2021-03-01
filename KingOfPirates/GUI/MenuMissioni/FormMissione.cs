@@ -13,7 +13,7 @@ using KingOfPirates.Properties;
 namespace KingOfPirates.GUI.MenuMissioni
 {
     /// <summary>
-    ///     Form che rappresenta la griglia grafica della missione, fatto a mano.
+    /// Form che rappresenta la griglia grafica della missione, fatto a mano.
     /// </summary>
     public partial class FormMissione : Form
     {
@@ -21,7 +21,7 @@ namespace KingOfPirates.GUI.MenuMissioni
         internal Image temp;
 
         /// <summary>
-        ///     Costruttore, inizializza i componenti grafici.
+        /// Costruttore, inizializza i componenti grafici.
         /// </summary>
         /// <param name="missione">Per manipolare la missione nel Form.</param>
         public FormMissione(Missione missione)
@@ -78,8 +78,7 @@ namespace KingOfPirates.GUI.MenuMissioni
 
             //controlla vita nemici
             foreach (var n in missione.Nemici)
-                if (n.Nemico_Carte.IsGameOver)
-                    n.Affonda(missione);
+                n.Affonda(missione);
 
             //abbordaggio
             foreach (var n in missione.Nemici)
@@ -89,6 +88,7 @@ namespace KingOfPirates.GUI.MenuMissioni
                     Gioco.Giocatore.Abborda(n);
                 }
 
+            // Controllo per scavare
             if (missione.Griglia_numerica.Mat[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y] == 1)
                 Scavo_button.Show();
             else
@@ -105,10 +105,8 @@ namespace KingOfPirates.GUI.MenuMissioni
                     if (n.IsGameOver)
                         missione.Ranking.IncNaviAffondate();
 
-                var fineMissione = new FineMissione(missione.Ranking);
-
-                fineMissione.Show();
-                //Gioco.nassauForm.Show();
+                missione.Fine = new FineMissione(missione);
+                missione.Fine.Show();
                 Hide();
             }
 
@@ -243,7 +241,6 @@ namespace KingOfPirates.GUI.MenuMissioni
                     BevandaDet_button.ForeColor = Color.Red;
             }
 
-
             UpdateComponenti();
         }
 
@@ -339,9 +336,7 @@ namespace KingOfPirates.GUI.MenuMissioni
 
         private void MenuMissioni_FormClosing(object sender, FormClosingEventArgs e)
         {
-            e.Cancel = true;
-            Hide();
-            Gioco.startMenu.Show();
+            missione.EndMissione();
         }
 
         private void OnVisibleChanged(object sender, EventArgs e)

@@ -100,8 +100,11 @@ namespace KingOfPirates.Missioni.Navi
 
         public void Affonda(Missione missione)
         {
-            //missione.Mappa.Griglia_pictureBox[Loc.X, Loc.Y].BackgroundImage = Properties.Resources.mare;
-            IsGameOver = true;
+            if (Stats.Hp <= 0)
+            {
+                missione.Mappa.Griglia_pictureBox[Loc.X, Loc.Y].BackgroundImage = Properties.Resources.mare;
+                IsGameOver = true;
+            }
         }
     }
 }

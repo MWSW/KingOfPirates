@@ -13,14 +13,16 @@ namespace KingOfPirates.GUI.MenuMissioni
 {
     public partial class FineMissione : Form
     {
-        public FineMissione(Ranking ranking)
+        Missione missione;
+        public FineMissione(Missione missione)
         {
             InitializeComponent();
+            this.missione = missione;
 
-            Turni_label.Text = "TURNI: " + ranking.Turni;
-            GameOver_label.Text = "GAMEOVER: " + ranking.GameOver;
-            Rubini_label.Text = "RUBINI: " + ranking.Rubini;
-            NaviAffondate_label.Text = "NAVI AFFONDATE: " + ranking.NaviAffondate;
+            Turni_label.Text = "TURNI: " + missione.Ranking.Turni;
+            GameOver_label.Text = "GAMEOVER: " + missione.Ranking.GameOver;
+            Rubini_label.Text = "RUBINI: " + missione.Ranking.Rubini;
+            NaviAffondate_label.Text = "NAVI AFFONDATE: " + missione.Ranking.NaviAffondate;
 
             CartePerse_label.Text = "CARTE PERSE: " + Gioco.Giocatore.GiocatoreCarte.Mazzo.CarteMorte;
 
@@ -28,11 +30,11 @@ namespace KingOfPirates.GUI.MenuMissioni
 
             int score = 100;
 
-            score -= (int)(ranking.Turni * 1.5f);
-            score -= ranking.GameOver * 20;
+            score -= (int)(missione.Ranking.Turni * 1.5f);
+            score -= missione.Ranking.GameOver * 20;
 
-            score += ranking.Rubini * 5;
-            score += ranking.NaviAffondate * 30;
+            score += missione.Ranking.Rubini * 5;
+            score += missione.Ranking.NaviAffondate * 30;
 
             score -= Gioco.Giocatore.GiocatoreCarte.Mazzo.CarteMorte*2;
 
@@ -48,12 +50,19 @@ namespace KingOfPirates.GUI.MenuMissioni
                 Rank_label.Text = "D";
         }
 
+
+
         private void OnClick(object sender, EventArgs e)
         {
             //torna a Nassau
             Gioco.nassauForm.Show();
 
-            this.Close();
+            Close();
+        }
+
+        private void FineMissione_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            missione.EndMissione();
         }
     }
 }
