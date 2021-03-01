@@ -31,6 +31,7 @@ namespace KingOfPirates.GUI.MenuNassau
         private void back_Button_Click(object sender, EventArgs e)
         {
             this.Hide();
+            Gioco.nassauForm.Show();
         }
 
         private void Negozio_RiscattaTaglie_Button_Click(object sender, EventArgs e)

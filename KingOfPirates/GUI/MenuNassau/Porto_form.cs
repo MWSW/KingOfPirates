@@ -82,6 +82,7 @@ namespace KingOfPirates.GUI.MenuNassau
         private void Porto_Back_Button_Click(object sender, EventArgs e)
         {
             this.Hide();
+            Gioco.nassauForm.Show();
         }
 
         private void Porto_MissioniBack_Button_Click(object sender, EventArgs e)
