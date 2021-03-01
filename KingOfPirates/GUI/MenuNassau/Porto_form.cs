@@ -12,6 +12,10 @@ using KingOfPirates.Missioni.Navi;
 using KingOfPirates.Nassau;
 using KingOfPirates.Missioni.ScontroCarte.Carte;
 using KingOfPirates.Missioni.ScontroCarte.Opponenti;
+using KingOfPirates.Missioni;
+using KingOfPirates.Missioni.Roba;
+using KingOfPirates.Missioni.Navi.Nemici.Generici;
+using KingOfPirates.Properties;
 
 namespace KingOfPirates.GUI.MenuNassau
 {
@@ -32,6 +36,17 @@ namespace KingOfPirates.GUI.MenuNassau
             isSelected = new bool[20];
             nCarteMax = 10 - 1;
             nCarteSelezionate = 0;
+
+            //prova
+            ListaCarte.GetCarta(1).SetUtilizzabile(true);
+            ListaCarte.GetCarta(2).SetUtilizzabile(true);
+            ListaCarte.GetCarta(3).SetUtilizzabile(true);
+            ListaCarte.GetCarta(4).SetUtilizzabile(true);
+            ListaCarte.GetCarta(5).SetUtilizzabile(true);
+            ListaCarte.GetCarta(6).SetUtilizzabile(true);
+            ListaCarte.GetCarta(17).SetUtilizzabile(true);
+            ListaCarte.GetCarta(18).SetUtilizzabile(true);
+            ListaCarte.GetCarta(19).SetUtilizzabile(true);
 
             InitializeComponent();
 
@@ -101,7 +116,7 @@ namespace KingOfPirates.GUI.MenuNassau
 
         //Selezione carte mazzo
 
-        private void mazzoFiller()
+        private Carta[] mazzoFiller()
         {
             int count = 0, indiceSelezionato = - 1;
 
@@ -120,6 +135,7 @@ namespace KingOfPirates.GUI.MenuNassau
             }
 
             //TODO passaggio di mazzo al Mazzo della missione
+            return mazzo;
         }
 
         private int getIsSelectedIndex(int indiceSelezionato)
@@ -142,8 +158,19 @@ namespace KingOfPirates.GUI.MenuNassau
         {
             if(nCarteSelezionate >= 5 && nCarteSelezionate <= nCarteMax + 1)
             {
-                mazzoFiller();
+                Carta[] mazzo = mazzoFiller();
                 //TODO avvio missione
+
+                //Passo il mazzo al giocatore
+                Gioco.Giocatore.GiocatoreCarte.Mazzo = new Mazzo(mazzo);
+                Gioco.Giocatore.GiocatoreCarte.Init();
+
+                int index = cartina.CurrentMissionIndex;
+
+                Gioco.MissioneSelezionata = ListaMissioni.GetMissione(index);
+
+                //fa partire la missione selezionata
+                Gioco.MissioneSelezionata.StartMissione();
             }
         }
 

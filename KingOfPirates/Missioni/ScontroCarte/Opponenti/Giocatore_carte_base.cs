@@ -35,7 +35,7 @@ namespace KingOfPirates.Missioni.ScontroCarte.Opponenti
             IsGameOver = true;
 
             Gioco.scontroCarte.Hide();
-            Gioco.TestMissione.Mappa.Show();
+            Gioco.MissioneSelezionata.Mappa.Show();
         }
 
         public void AddHp(int val)

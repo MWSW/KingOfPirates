@@ -50,7 +50,7 @@ namespace KingOfPirates
         public static NaveGiocatore Giocatore { get; set; }
 
         public static GestioneDominio Dominio { get; set; }
-        public static Missione TestMissione { get; set; }
+        public static Missione MissioneSelezionata { get; set; }
 
         /// <summary>
         /// Avviatore dell'applicazione
@@ -67,7 +67,7 @@ namespace KingOfPirates
         /// </summary>
         public static void End()
         {
-            TestMissione.EndMissione();
+            MissioneSelezionata.EndMissione();
             scontroCarte.Dispose();
             nassauForm.Dispose();
             startMenu.Dispose();
@@ -133,7 +133,7 @@ namespace KingOfPirates
             testNemici[0] = new Mercantile(new Stats(), testPatrol, nemico_prova);
             testNemici[1] = new Caravella(new Stats(), testPatrol2, nemico_prova1);
             testNemici[2] = new Fregata(new Stats(), testPatrol3, nemico_prova2);
-            TestMissione = new Missione(griglia_prova, 5, testNemici);
+            MissioneSelezionata = new Missione(griglia_prova, 5, testNemici);
 
             scontroCarte = new ScontroCarte(nemico_prova);
             nassauForm = new Nassau_form();
