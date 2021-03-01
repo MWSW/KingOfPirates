@@ -57,8 +57,8 @@ namespace KingOfPirates
         /// </summary>
         public static void Start()
         {
-            startMenu = new StartMenu();
             Init();
+            startMenu = new StartMenu();
             startMenu.Show();
         }
 

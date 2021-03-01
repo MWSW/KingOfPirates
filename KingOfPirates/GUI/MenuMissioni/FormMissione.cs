@@ -317,7 +317,7 @@ namespace KingOfPirates.GUI.MenuMissioni
             UpdateComponenti();
         }
 
-        private void UpdateComponenti()
+        internal void UpdateComponenti()
         {
             //aggiorno il label ubriachezza
             AntiUbriachezza_label.Text = "AntiUbriachezza rimasti: " + Gioco.Giocatore.Inventario.AntiUbriachezza;

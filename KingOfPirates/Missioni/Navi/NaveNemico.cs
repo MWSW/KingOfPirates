@@ -90,6 +90,7 @@ namespace KingOfPirates.Missioni.Navi
                     {
                         int remPunti = new Random().Next(Stats.MinHit, Stats.MaxHit);
                         nave.DecPuntiVita(remPunti);
+                        missione.Mappa.UpdateComponenti();
                         return true;
                     }
                 }
