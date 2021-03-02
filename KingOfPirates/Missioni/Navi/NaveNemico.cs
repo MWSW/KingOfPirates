@@ -54,9 +54,10 @@ namespace KingOfPirates.Missioni.Navi
         /// <param name="direzione">Direzione in cui effetuare il movimento.</param>
         public override void Movimento(Missione missione, Direzione direzione)
         {
-            if (Attacca(missione, Gioco.Giocatore)) return;
             if (!IsGameOver)
             {
+                if (Attacca(missione, Gioco.Giocatore)) return;
+
                 missione.Mappa.Griglia_pictureBox[patrol[patrolIndex].X, patrol[patrolIndex].Y].BackgroundImage = Properties.Resources.mare;
                 if (patrolInv)
                 {
@@ -113,10 +114,13 @@ namespace KingOfPirates.Missioni.Navi
         /// <param name="missione">Missione in cui effetuare il controllo</param>
         public void Affonda(Missione missione)
         {
-            if (Stats.Hp <= 0)
+            if (!IsGameOver)
             {
-                missione.Mappa.Griglia_pictureBox[Loc.X, Loc.Y].BackgroundImage = Properties.Resources.mare;
-                IsGameOver = true;
+                if (Stats.Hp <= 0 || Nemico_Carte.CurHp <= 0)
+                {
+                    missione.Mappa.Griglia_pictureBox[Loc.X, Loc.Y].BackgroundImage = Properties.Resources.mare;
+                    IsGameOver = true;
+                }
             }
         }
     }
