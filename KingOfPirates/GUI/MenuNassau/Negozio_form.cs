@@ -68,6 +68,8 @@ namespace KingOfPirates.GUI.MenuNassau
         private void Negozio_AcqCarte_Button_Click(object sender, EventArgs e)
         {
             Negozio_acqCarte_Panel.Show();
+
+            //LoadData();
         }
 
         private void backToNegozio_Button_Click(object sender, EventArgs e)
@@ -195,6 +197,107 @@ namespace KingOfPirates.GUI.MenuNassau
             Negozio_CartaPirata20_Img.BackgroundImage = Properties.Resources.sangue;
 
             UpdateOutput();
+
+            //visibilità componenti
+            if (!ListaCarte.GetCarta(0).GetUtilizzabile())
+                Negozio_CartePirata1_Button.Show();
+            else
+                Negozio_CartePirata1_Button.Hide();
+
+            if (!ListaCarte.GetCarta(1).GetUtilizzabile())
+                Negozio_CartePirata2_Button.Show();
+            else
+                Negozio_CartePirata2_Button.Hide();
+
+            if (!ListaCarte.GetCarta(2).GetUtilizzabile())
+                Negozio_CartePirata3_Button.Show();
+            else
+                Negozio_CartePirata3_Button.Hide();
+
+            if (!ListaCarte.GetCarta(3).GetUtilizzabile())
+                Negozio_CartePirata4_Button.Show();
+            else
+                Negozio_CartePirata4_Button.Hide();
+
+            if (!ListaCarte.GetCarta(4).GetUtilizzabile())
+                Negozio_CartePirata5_Button.Show();
+            else
+                Negozio_CartePirata5_Button.Hide();
+
+            if (!ListaCarte.GetCarta(5).GetUtilizzabile())
+                Negozio_CartePirata6_Button.Show();
+            else
+                Negozio_CartePirata6_Button.Hide();
+
+            if (!ListaCarte.GetCarta(6).GetUtilizzabile())
+                Negozio_CartePirata7_Button.Show();
+            else
+                Negozio_CartePirata7_Button.Hide();
+
+            if (!ListaCarte.GetCarta(7).GetUtilizzabile())
+                Negozio_CartePirata8_Button.Show();
+            else
+                Negozio_CartePirata8_Button.Hide();
+
+            if (!ListaCarte.GetCarta(8).GetUtilizzabile())
+                Negozio_CartePirata9_Button.Show();
+            else
+                Negozio_CartePirata9_Button.Hide();
+
+            if (!ListaCarte.GetCarta(9).GetUtilizzabile())
+                Negozio_CartePirata10_Button.Show();
+            else
+                Negozio_CartePirata10_Button.Hide();
+
+            if (!ListaCarte.GetCarta(10).GetUtilizzabile())
+                Negozio_CartePirata11_Button.Show();
+            else
+                Negozio_CartePirata11_Button.Hide();
+
+            if (!ListaCarte.GetCarta(11).GetUtilizzabile())
+                Negozio_CartePirata12_Button.Show();
+            else
+                Negozio_CartePirata12_Button.Hide();
+
+            if (!ListaCarte.GetCarta(12).GetUtilizzabile())
+                Negozio_CartePirata13_Button.Show();
+            else
+                Negozio_CartePirata13_Button.Hide();
+
+            if (!ListaCarte.GetCarta(13).GetUtilizzabile())
+                Negozio_CartePirata14_Button.Show();
+            else
+                Negozio_CartePirata14_Button.Hide();
+
+            if (!ListaCarte.GetCarta(14).GetUtilizzabile())
+                Negozio_CartePirata15_Button.Show();
+            else
+                Negozio_CartePirata15_Button.Hide();
+
+            if (!ListaCarte.GetCarta(15).GetUtilizzabile())
+                Negozio_CartePirata16_Button.Show();
+            else
+                Negozio_CartePirata16_Button.Hide();
+
+            if (!ListaCarte.GetCarta(16).GetUtilizzabile())
+                Negozio_CartePirata17_Button.Show();
+            else
+                Negozio_CartePirata17_Button.Hide();
+
+            if (!ListaCarte.GetCarta(17).GetUtilizzabile())
+                Negozio_CartePirata18_Button.Show();
+            else
+                Negozio_CartePirata18_Button.Hide();
+
+            if (!ListaCarte.GetCarta(18).GetUtilizzabile())
+                Negozio_CartePirata19_Button.Show();
+            else
+                Negozio_CartePirata19_Button.Hide();
+
+            if (!ListaCarte.GetCarta(19).GetUtilizzabile())
+                Negozio_CartePirata20_Button.Show();
+            else
+                Negozio_CartePirata20_Button.Hide();
         }
 
         private void UpdateOutput()
