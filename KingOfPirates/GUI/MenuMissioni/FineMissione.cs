@@ -32,7 +32,7 @@ namespace KingOfPirates.GUI.MenuMissioni
 
         private void FineMissione_FormClosing(object sender, FormClosingEventArgs e)
         {
-            //OnClick(sender, e);
+            OnClick(sender, e);
         }
 
         private void FineMissione_Shown(object sender, EventArgs e)
