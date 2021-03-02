@@ -14,16 +14,15 @@ namespace KingOfPirates.Nassau
     class Locanda : Edificio
     {
 
-        private int nSlot;                              //Posti letto disponibili (per le carte)
-        private int detPerTurno;                        //Determinazione ripristinata per turno
+        //private int nSlot;                              //Posti letto disponibili (per le carte)
+        //private int detPerTurno;                        //Determinazione ripristinata per turno
 
-        Carta[] slotCarte;
+        //Carta[] slotCarte;
 
 
         //Fa riferimento al costruttore della sua superclasse
         public Locanda() 
         {
-            slotCarte = new Carta[nSlot];
             nome = "Locanda";
         }
 

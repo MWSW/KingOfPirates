@@ -13,12 +13,12 @@ namespace KingOfPirates.Nassau
     class Negozio : Edificio
     {
 
-        private int livelloNegozio; //salva il livello degli upgrade
+        //private int livelloNegozio; //salva il livello degli upgrade
         private int[] prezziOggetti;
 
         public Negozio()
         {
-            livelloNegozio = 0;
+            //livelloNegozio = 0;
             nome = "Negozio";
             prezziOggetti = new int[4];
 
@@ -93,7 +93,7 @@ namespace KingOfPirates.Nassau
 
         public override void Upgrade()
         {
-            livelloNegozio ++;
+            //livelloNegozio ++;
         }
     }
 }

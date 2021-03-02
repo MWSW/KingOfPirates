@@ -8,7 +8,7 @@ namespace KingOfPirates.Mappa
 {
     public class GestioneDominio
     {
-        private int dobloniPerTurno;    //dobloni per turno
+        private int dobloniPerTurno;
         private int cassaDobloni;
         private int cassaRubini;
         private int taglieMercantile;

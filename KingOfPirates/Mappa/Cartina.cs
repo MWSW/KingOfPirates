@@ -14,7 +14,7 @@ namespace KingOfPirates.Mappa
         Missione[] arcipelago1;
         //Missione[] arcipelago2;
 
-        int currentMissionIndex;
+        private int currentMissionIndex;
 
         public Cartina()
         {

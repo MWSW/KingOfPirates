@@ -16,7 +16,7 @@ namespace KingOfPirates.Nassau
         private int livelloVele;
         private int livelloScafo;
 
-        private int livelloPorto;
+        //private int livelloPorto;
 
         private int[] prezzoCannoni;
         private int[] prezzoScafo;
@@ -25,7 +25,7 @@ namespace KingOfPirates.Nassau
         public Porto()
         {
             nome = "Porto";
-            livelloPorto = 0;
+            //livelloPorto = 0;
             LivelloCannoni = 0;
             LivelloVele = 0;
             LivelloScafo = 0;
