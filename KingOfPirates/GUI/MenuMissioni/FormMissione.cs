@@ -135,6 +135,7 @@ namespace KingOfPirates.GUI.MenuMissioni
                     }
                 }
             }
+
             if (Gioco.Giocatore.Stats.Pa > 0)// controllo attacco
             {
                 CercaNemico();
@@ -389,11 +390,20 @@ namespace KingOfPirates.GUI.MenuMissioni
                         {
                             Gioco.Giocatore.Attacca(missione, n);
                             Gioco.Giocatore.Stats.Pa = 0;
+
+                            //affonda se la vita è pari o inferiore a 0
+                            n.Affonda(missione);
+
+                            if(n.IsGameOver)
+                            {
+                                Attacca_button.Hide();
+                            }
                             return;
                         }
                     }
                 }
             }
+
             UpdateComponenti();
         }
 
@@ -434,6 +444,10 @@ namespace KingOfPirates.GUI.MenuMissioni
                             break;
                     }
                 }
+
+            Attacca_button.Hide();
+
+            UpdateComponenti();
         }
     }
 }
