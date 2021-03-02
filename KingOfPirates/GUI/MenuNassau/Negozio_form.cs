@@ -69,7 +69,7 @@ namespace KingOfPirates.GUI.MenuNassau
         {
             Negozio_acqCarte_Panel.Show();
 
-            //LoadData();
+            LoadData();
         }
 
         private void backToNegozio_Button_Click(object sender, EventArgs e)
@@ -117,6 +117,28 @@ namespace KingOfPirates.GUI.MenuNassau
 
         private void LoadData()
         {
+            //nascondi tutto
+            Negozio_CartePirata1_Button.Hide();
+            Negozio_CartePirata2_Button.Hide();
+            Negozio_CartePirata3_Button.Hide();
+            Negozio_CartePirata4_Button.Hide();
+            Negozio_CartePirata5_Button.Hide();
+            Negozio_CartePirata6_Button.Hide();
+            Negozio_CartePirata7_Button.Hide();
+            Negozio_CartePirata8_Button.Hide();
+            Negozio_CartePirata9_Button.Hide();
+            Negozio_CartePirata10_Button.Hide();
+            Negozio_CartePirata11_Button.Hide();
+            Negozio_CartePirata12_Button.Hide();
+            Negozio_CartePirata13_Button.Hide();
+            Negozio_CartePirata14_Button.Hide();
+            Negozio_CartePirata15_Button.Hide();
+            Negozio_CartePirata16_Button.Hide();
+            Negozio_CartePirata17_Button.Hide();
+            Negozio_CartePirata18_Button.Hide();
+            Negozio_CartePirata19_Button.Hide();
+            Negozio_CartePirata20_Button.Hide();
+
             //
             //Negozio principale
             //
@@ -198,6 +220,7 @@ namespace KingOfPirates.GUI.MenuNassau
 
             UpdateOutput();
 
+            
             //visibilità componenti
             if (!ListaCarte.GetCarta(0).GetUtilizzabile())
                 Negozio_CartePirata1_Button.Show();
@@ -298,6 +321,7 @@ namespace KingOfPirates.GUI.MenuNassau
                 Negozio_CartePirata20_Button.Show();
             else
                 Negozio_CartePirata20_Button.Hide();
+
         }
 
         private void UpdateOutput()

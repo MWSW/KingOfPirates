@@ -91,18 +91,6 @@ namespace KingOfPirates.GUI.MenuNassau
             this.Negozio_CartePrezzo8_Label = new System.Windows.Forms.Label();
             this.Negozio_CartaPirata8_Img = new System.Windows.Forms.PictureBox();
             this.Negozio_CartePirata8_Label = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.Negozio_CartePirata9_Button = new System.Windows.Forms.Panel();
-            this.Negozio_CartePrezzo9_Label = new System.Windows.Forms.Label();
-            this.Negozio_CartaPirata9_Img = new System.Windows.Forms.PictureBox();
-            this.Negozio_CartePirata9_Label = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.label24 = new System.Windows.Forms.Label();
-            this.Negozio_CartePirata10_Button = new System.Windows.Forms.Panel();
-            this.Negozio_CartePrezzo10_Label = new System.Windows.Forms.Label();
-            this.Negozio_CartaPirata10_Img = new System.Windows.Forms.PictureBox();
-            this.Negozio_CartePirata10_Label = new System.Windows.Forms.Label();
             this.Negozio_CartePirata11_Button = new System.Windows.Forms.Panel();
             this.Negozio_CartePrezzo11_Label = new System.Windows.Forms.Label();
             this.Negozio_CartaPirata11_Img = new System.Windows.Forms.PictureBox();
@@ -149,6 +137,18 @@ namespace KingOfPirates.GUI.MenuNassau
             this.Negozio_BevAnt_Img = new System.Windows.Forms.PictureBox();
             this.Negozio_Rum_Img = new System.Windows.Forms.PictureBox();
             this.Negozio_BevDet_Img = new System.Windows.Forms.PictureBox();
+            this.Negozio_CartaPirata10_Img = new System.Windows.Forms.PictureBox();
+            this.Negozio_CartePrezzo10_Label = new System.Windows.Forms.Label();
+            this.Negozio_CartePirata10_Button = new System.Windows.Forms.Panel();
+            this.Negozio_CartePirata10_Label = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.Negozio_CartePirata9_Button = new System.Windows.Forms.Panel();
+            this.Negozio_CartePirata9_Label = new System.Windows.Forms.Label();
+            this.Negozio_CartaPirata9_Img = new System.Windows.Forms.PictureBox();
+            this.Negozio_CartePrezzo9_Label = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.Negozio_acqCarte_Panel.SuspendLayout();
             this.Negozio_CarteInfo_Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Negozio_CarteInfo_Img)).BeginInit();
@@ -169,12 +169,6 @@ namespace KingOfPirates.GUI.MenuNassau
             ((System.ComponentModel.ISupportInitialize)(this.Negozio_CartaPirata7_Img)).BeginInit();
             this.Negozio_CartePirata8_Button.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Negozio_CartaPirata8_Img)).BeginInit();
-            this.panel2.SuspendLayout();
-            this.Negozio_CartePirata9_Button.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Negozio_CartaPirata9_Img)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            this.Negozio_CartePirata10_Button.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Negozio_CartaPirata10_Img)).BeginInit();
             this.Negozio_CartePirata11_Button.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Negozio_CartaPirata11_Img)).BeginInit();
             this.Negozio_CartePirata12_Button.SuspendLayout();
@@ -199,12 +193,18 @@ namespace KingOfPirates.GUI.MenuNassau
             ((System.ComponentModel.ISupportInitialize)(this.Negozio_BevAnt_Img)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Negozio_Rum_Img)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Negozio_BevDet_Img)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Negozio_CartaPirata10_Img)).BeginInit();
+            this.Negozio_CartePirata10_Button.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            this.Negozio_CartePirata9_Button.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Negozio_CartaPirata9_Img)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // Negozio_RiscattaTaglie_Button
             // 
             this.Negozio_RiscattaTaglie_Button.Location = new System.Drawing.Point(204, 239);
-            this.Negozio_RiscattaTaglie_Button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Negozio_RiscattaTaglie_Button.Margin = new System.Windows.Forms.Padding(4);
             this.Negozio_RiscattaTaglie_Button.Name = "Negozio_RiscattaTaglie_Button";
             this.Negozio_RiscattaTaglie_Button.Size = new System.Drawing.Size(257, 76);
             this.Negozio_RiscattaTaglie_Button.TabIndex = 4;
@@ -215,7 +215,7 @@ namespace KingOfPirates.GUI.MenuNassau
             // Negozio_AcqBevDet_Button
             // 
             this.Negozio_AcqBevDet_Button.Location = new System.Drawing.Point(677, 89);
-            this.Negozio_AcqBevDet_Button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Negozio_AcqBevDet_Button.Margin = new System.Windows.Forms.Padding(4);
             this.Negozio_AcqBevDet_Button.Name = "Negozio_AcqBevDet_Button";
             this.Negozio_AcqBevDet_Button.Size = new System.Drawing.Size(199, 76);
             this.Negozio_AcqBevDet_Button.TabIndex = 5;
@@ -226,7 +226,7 @@ namespace KingOfPirates.GUI.MenuNassau
             // Negozio_AcqRum_Button
             // 
             this.Negozio_AcqRum_Button.Location = new System.Drawing.Point(677, 213);
-            this.Negozio_AcqRum_Button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Negozio_AcqRum_Button.Margin = new System.Windows.Forms.Padding(4);
             this.Negozio_AcqRum_Button.Name = "Negozio_AcqRum_Button";
             this.Negozio_AcqRum_Button.Size = new System.Drawing.Size(199, 76);
             this.Negozio_AcqRum_Button.TabIndex = 6;
@@ -237,7 +237,7 @@ namespace KingOfPirates.GUI.MenuNassau
             // Negozio_AcqBevAnt_Button
             // 
             this.Negozio_AcqBevAnt_Button.Location = new System.Drawing.Point(677, 335);
-            this.Negozio_AcqBevAnt_Button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Negozio_AcqBevAnt_Button.Margin = new System.Windows.Forms.Padding(4);
             this.Negozio_AcqBevAnt_Button.Name = "Negozio_AcqBevAnt_Button";
             this.Negozio_AcqBevAnt_Button.Size = new System.Drawing.Size(199, 76);
             this.Negozio_AcqBevAnt_Button.TabIndex = 7;
@@ -248,7 +248,7 @@ namespace KingOfPirates.GUI.MenuNassau
             // Negozio_AcqAssLeg_Button
             // 
             this.Negozio_AcqAssLeg_Button.Location = new System.Drawing.Point(677, 462);
-            this.Negozio_AcqAssLeg_Button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Negozio_AcqAssLeg_Button.Margin = new System.Windows.Forms.Padding(4);
             this.Negozio_AcqAssLeg_Button.Name = "Negozio_AcqAssLeg_Button";
             this.Negozio_AcqAssLeg_Button.Size = new System.Drawing.Size(199, 76);
             this.Negozio_AcqAssLeg_Button.TabIndex = 8;
@@ -259,7 +259,7 @@ namespace KingOfPirates.GUI.MenuNassau
             // Negozio_AcqCarte_Button
             // 
             this.Negozio_AcqCarte_Button.Location = new System.Drawing.Point(1159, 310);
-            this.Negozio_AcqCarte_Button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Negozio_AcqCarte_Button.Margin = new System.Windows.Forms.Padding(4);
             this.Negozio_AcqCarte_Button.Name = "Negozio_AcqCarte_Button";
             this.Negozio_AcqCarte_Button.Size = new System.Drawing.Size(257, 76);
             this.Negozio_AcqCarte_Button.TabIndex = 9;
@@ -416,7 +416,7 @@ namespace KingOfPirates.GUI.MenuNassau
             this.Negozio_acqCarte_Panel.Controls.Add(this.backToNegozio_Button);
             this.Negozio_acqCarte_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Negozio_acqCarte_Panel.Location = new System.Drawing.Point(0, 0);
-            this.Negozio_acqCarte_Panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Negozio_acqCarte_Panel.Margin = new System.Windows.Forms.Padding(4);
             this.Negozio_acqCarte_Panel.Name = "Negozio_acqCarte_Panel";
             this.Negozio_acqCarte_Panel.Size = new System.Drawing.Size(1685, 838);
             this.Negozio_acqCarte_Panel.TabIndex = 35;
@@ -453,7 +453,7 @@ namespace KingOfPirates.GUI.MenuNassau
             this.Negozio_CarteInfo_Panel.Controls.Add(this.Negozio_CarteAtk_Label);
             this.Negozio_CarteInfo_Panel.Controls.Add(this.Negozio_CarteInfo_Img);
             this.Negozio_CarteInfo_Panel.Location = new System.Drawing.Point(604, 169);
-            this.Negozio_CarteInfo_Panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Negozio_CarteInfo_Panel.Margin = new System.Windows.Forms.Padding(4);
             this.Negozio_CarteInfo_Panel.Name = "Negozio_CarteInfo_Panel";
             this.Negozio_CarteInfo_Panel.Size = new System.Drawing.Size(983, 418);
             this.Negozio_CarteInfo_Panel.TabIndex = 7;
@@ -517,7 +517,7 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Negozio_CarteInfo_Img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Negozio_CarteInfo_Img.Location = new System.Drawing.Point(57, 43);
-            this.Negozio_CarteInfo_Img.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Negozio_CarteInfo_Img.Margin = new System.Windows.Forms.Padding(4);
             this.Negozio_CarteInfo_Img.Name = "Negozio_CarteInfo_Img";
             this.Negozio_CarteInfo_Img.Size = new System.Drawing.Size(241, 325);
             this.Negozio_CarteInfo_Img.TabIndex = 0;
@@ -528,7 +528,7 @@ namespace KingOfPirates.GUI.MenuNassau
             this.Negozio_CarteAcquista_Button.BackgroundImage = global::KingOfPirates.Properties.Resources.DEAL;
             this.Negozio_CarteAcquista_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Negozio_CarteAcquista_Button.Location = new System.Drawing.Point(912, 615);
-            this.Negozio_CarteAcquista_Button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Negozio_CarteAcquista_Button.Margin = new System.Windows.Forms.Padding(4);
             this.Negozio_CarteAcquista_Button.Name = "Negozio_CarteAcquista_Button";
             this.Negozio_CarteAcquista_Button.Size = new System.Drawing.Size(675, 162);
             this.Negozio_CarteAcquista_Button.TabIndex = 6;
@@ -558,7 +558,7 @@ namespace KingOfPirates.GUI.MenuNassau
             this.flowLayoutPanel1.Controls.Add(this.Negozio_CartePirata19_Button);
             this.flowLayoutPanel1.Controls.Add(this.Negozio_CartePirata20_Button);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(60, 169);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(499, 609);
             this.flowLayoutPanel1.TabIndex = 5;
@@ -570,7 +570,7 @@ namespace KingOfPirates.GUI.MenuNassau
             this.Negozio_CartePirata1_Button.Controls.Add(this.Negozio_CartaPirata1_Img);
             this.Negozio_CartePirata1_Button.Controls.Add(this.Negozio_CartePirata1_Label);
             this.Negozio_CartePirata1_Button.Location = new System.Drawing.Point(4, 4);
-            this.Negozio_CartePirata1_Button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Negozio_CartePirata1_Button.Margin = new System.Windows.Forms.Padding(4);
             this.Negozio_CartePirata1_Button.Name = "Negozio_CartePirata1_Button";
             this.Negozio_CartePirata1_Button.Size = new System.Drawing.Size(466, 60);
             this.Negozio_CartePirata1_Button.TabIndex = 8;
@@ -592,7 +592,7 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Negozio_CartaPirata1_Img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Negozio_CartaPirata1_Img.Location = new System.Drawing.Point(247, -1);
-            this.Negozio_CartaPirata1_Img.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Negozio_CartaPirata1_Img.Margin = new System.Windows.Forms.Padding(4);
             this.Negozio_CartaPirata1_Img.Name = "Negozio_CartaPirata1_Img";
             this.Negozio_CartaPirata1_Img.Size = new System.Drawing.Size(115, 60);
             this.Negozio_CartaPirata1_Img.TabIndex = 1;
@@ -618,7 +618,7 @@ namespace KingOfPirates.GUI.MenuNassau
             this.Negozio_CartePirata2_Button.Controls.Add(this.Negozio_CartaPirata2_Img);
             this.Negozio_CartePirata2_Button.Controls.Add(this.Negozio_CartePirata2_Label);
             this.Negozio_CartePirata2_Button.Location = new System.Drawing.Point(4, 72);
-            this.Negozio_CartePirata2_Button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Negozio_CartePirata2_Button.Margin = new System.Windows.Forms.Padding(4);
             this.Negozio_CartePirata2_Button.Name = "Negozio_CartePirata2_Button";
             this.Negozio_CartePirata2_Button.Size = new System.Drawing.Size(466, 60);
             this.Negozio_CartePirata2_Button.TabIndex = 8;
@@ -640,7 +640,7 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Negozio_CartaPirata2_Img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Negozio_CartaPirata2_Img.Location = new System.Drawing.Point(247, -1);
-            this.Negozio_CartaPirata2_Img.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Negozio_CartaPirata2_Img.Margin = new System.Windows.Forms.Padding(4);
             this.Negozio_CartaPirata2_Img.Name = "Negozio_CartaPirata2_Img";
             this.Negozio_CartaPirata2_Img.Size = new System.Drawing.Size(115, 60);
             this.Negozio_CartaPirata2_Img.TabIndex = 1;
@@ -666,7 +666,7 @@ namespace KingOfPirates.GUI.MenuNassau
             this.Negozio_CartePirata3_Button.Controls.Add(this.Negozio_CartaPirata3_Img);
             this.Negozio_CartePirata3_Button.Controls.Add(this.Negozio_CartePirata3_Label);
             this.Negozio_CartePirata3_Button.Location = new System.Drawing.Point(4, 140);
-            this.Negozio_CartePirata3_Button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Negozio_CartePirata3_Button.Margin = new System.Windows.Forms.Padding(4);
             this.Negozio_CartePirata3_Button.Name = "Negozio_CartePirata3_Button";
             this.Negozio_CartePirata3_Button.Size = new System.Drawing.Size(466, 60);
             this.Negozio_CartePirata3_Button.TabIndex = 8;
@@ -688,7 +688,7 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Negozio_CartaPirata3_Img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Negozio_CartaPirata3_Img.Location = new System.Drawing.Point(247, -1);
-            this.Negozio_CartaPirata3_Img.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Negozio_CartaPirata3_Img.Margin = new System.Windows.Forms.Padding(4);
             this.Negozio_CartaPirata3_Img.Name = "Negozio_CartaPirata3_Img";
             this.Negozio_CartaPirata3_Img.Size = new System.Drawing.Size(115, 60);
             this.Negozio_CartaPirata3_Img.TabIndex = 1;
@@ -714,7 +714,7 @@ namespace KingOfPirates.GUI.MenuNassau
             this.Negozio_CartePirata4_Button.Controls.Add(this.Negozio_CartaPirata4_Img);
             this.Negozio_CartePirata4_Button.Controls.Add(this.Negozio_CartePirata4_Label);
             this.Negozio_CartePirata4_Button.Location = new System.Drawing.Point(4, 208);
-            this.Negozio_CartePirata4_Button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Negozio_CartePirata4_Button.Margin = new System.Windows.Forms.Padding(4);
             this.Negozio_CartePirata4_Button.Name = "Negozio_CartePirata4_Button";
             this.Negozio_CartePirata4_Button.Size = new System.Drawing.Size(466, 60);
             this.Negozio_CartePirata4_Button.TabIndex = 8;
@@ -736,7 +736,7 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Negozio_CartaPirata4_Img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Negozio_CartaPirata4_Img.Location = new System.Drawing.Point(247, -1);
-            this.Negozio_CartaPirata4_Img.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Negozio_CartaPirata4_Img.Margin = new System.Windows.Forms.Padding(4);
             this.Negozio_CartaPirata4_Img.Name = "Negozio_CartaPirata4_Img";
             this.Negozio_CartaPirata4_Img.Size = new System.Drawing.Size(115, 60);
             this.Negozio_CartaPirata4_Img.TabIndex = 1;
@@ -762,7 +762,7 @@ namespace KingOfPirates.GUI.MenuNassau
             this.Negozio_CartePirata5_Button.Controls.Add(this.Negozio_CartaPirata5_Img);
             this.Negozio_CartePirata5_Button.Controls.Add(this.Negozio_CartePirata5_Label);
             this.Negozio_CartePirata5_Button.Location = new System.Drawing.Point(4, 276);
-            this.Negozio_CartePirata5_Button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Negozio_CartePirata5_Button.Margin = new System.Windows.Forms.Padding(4);
             this.Negozio_CartePirata5_Button.Name = "Negozio_CartePirata5_Button";
             this.Negozio_CartePirata5_Button.Size = new System.Drawing.Size(466, 60);
             this.Negozio_CartePirata5_Button.TabIndex = 8;
@@ -784,7 +784,7 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Negozio_CartaPirata5_Img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Negozio_CartaPirata5_Img.Location = new System.Drawing.Point(247, -1);
-            this.Negozio_CartaPirata5_Img.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Negozio_CartaPirata5_Img.Margin = new System.Windows.Forms.Padding(4);
             this.Negozio_CartaPirata5_Img.Name = "Negozio_CartaPirata5_Img";
             this.Negozio_CartaPirata5_Img.Size = new System.Drawing.Size(115, 60);
             this.Negozio_CartaPirata5_Img.TabIndex = 1;
@@ -810,7 +810,7 @@ namespace KingOfPirates.GUI.MenuNassau
             this.Negozio_CartePirata6_Button.Controls.Add(this.Negozio_CartaPirata6_Img);
             this.Negozio_CartePirata6_Button.Controls.Add(this.Negozio_CartePirata6_Label);
             this.Negozio_CartePirata6_Button.Location = new System.Drawing.Point(4, 344);
-            this.Negozio_CartePirata6_Button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Negozio_CartePirata6_Button.Margin = new System.Windows.Forms.Padding(4);
             this.Negozio_CartePirata6_Button.Name = "Negozio_CartePirata6_Button";
             this.Negozio_CartePirata6_Button.Size = new System.Drawing.Size(466, 60);
             this.Negozio_CartePirata6_Button.TabIndex = 8;
@@ -832,7 +832,7 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Negozio_CartaPirata6_Img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Negozio_CartaPirata6_Img.Location = new System.Drawing.Point(247, -1);
-            this.Negozio_CartaPirata6_Img.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Negozio_CartaPirata6_Img.Margin = new System.Windows.Forms.Padding(4);
             this.Negozio_CartaPirata6_Img.Name = "Negozio_CartaPirata6_Img";
             this.Negozio_CartaPirata6_Img.Size = new System.Drawing.Size(115, 60);
             this.Negozio_CartaPirata6_Img.TabIndex = 1;
@@ -858,7 +858,7 @@ namespace KingOfPirates.GUI.MenuNassau
             this.Negozio_CartePirata7_Button.Controls.Add(this.Negozio_CartaPirata7_Img);
             this.Negozio_CartePirata7_Button.Controls.Add(this.Negozio_CartePirata7_Label);
             this.Negozio_CartePirata7_Button.Location = new System.Drawing.Point(4, 412);
-            this.Negozio_CartePirata7_Button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Negozio_CartePirata7_Button.Margin = new System.Windows.Forms.Padding(4);
             this.Negozio_CartePirata7_Button.Name = "Negozio_CartePirata7_Button";
             this.Negozio_CartePirata7_Button.Size = new System.Drawing.Size(466, 60);
             this.Negozio_CartePirata7_Button.TabIndex = 8;
@@ -880,7 +880,7 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Negozio_CartaPirata7_Img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Negozio_CartaPirata7_Img.Location = new System.Drawing.Point(247, -1);
-            this.Negozio_CartaPirata7_Img.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Negozio_CartaPirata7_Img.Margin = new System.Windows.Forms.Padding(4);
             this.Negozio_CartaPirata7_Img.Name = "Negozio_CartaPirata7_Img";
             this.Negozio_CartaPirata7_Img.Size = new System.Drawing.Size(115, 60);
             this.Negozio_CartaPirata7_Img.TabIndex = 1;
@@ -906,7 +906,7 @@ namespace KingOfPirates.GUI.MenuNassau
             this.Negozio_CartePirata8_Button.Controls.Add(this.Negozio_CartaPirata8_Img);
             this.Negozio_CartePirata8_Button.Controls.Add(this.Negozio_CartePirata8_Label);
             this.Negozio_CartePirata8_Button.Location = new System.Drawing.Point(4, 480);
-            this.Negozio_CartePirata8_Button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Negozio_CartePirata8_Button.Margin = new System.Windows.Forms.Padding(4);
             this.Negozio_CartePirata8_Button.Name = "Negozio_CartePirata8_Button";
             this.Negozio_CartePirata8_Button.Size = new System.Drawing.Size(466, 60);
             this.Negozio_CartePirata8_Button.TabIndex = 8;
@@ -928,7 +928,7 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Negozio_CartaPirata8_Img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Negozio_CartaPirata8_Img.Location = new System.Drawing.Point(247, -1);
-            this.Negozio_CartaPirata8_Img.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Negozio_CartaPirata8_Img.Margin = new System.Windows.Forms.Padding(4);
             this.Negozio_CartaPirata8_Img.Name = "Negozio_CartaPirata8_Img";
             this.Negozio_CartaPirata8_Img.Size = new System.Drawing.Size(115, 60);
             this.Negozio_CartaPirata8_Img.TabIndex = 1;
@@ -947,146 +947,6 @@ namespace KingOfPirates.GUI.MenuNassau
             this.Negozio_CartePirata8_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Negozio_CartePirata8_Label.Click += new System.EventHandler(this.Negozio_CartePirata8_Label_Click);
             // 
-            // panel2
-            // 
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.Negozio_CartePirata9_Button);
-            this.panel2.Controls.Add(this.label23);
-            this.panel2.Controls.Add(this.pictureBox12);
-            this.panel2.Controls.Add(this.label24);
-            this.panel2.Location = new System.Drawing.Point(4, 548);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(466, 60);
-            this.panel2.TabIndex = 8;
-            // 
-            // Negozio_CartePirata9_Button
-            // 
-            this.Negozio_CartePirata9_Button.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Negozio_CartePirata9_Button.Controls.Add(this.Negozio_CartePrezzo9_Label);
-            this.Negozio_CartePirata9_Button.Controls.Add(this.Negozio_CartaPirata9_Img);
-            this.Negozio_CartePirata9_Button.Controls.Add(this.Negozio_CartePirata9_Label);
-            this.Negozio_CartePirata9_Button.Location = new System.Drawing.Point(-1, -1);
-            this.Negozio_CartePirata9_Button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Negozio_CartePirata9_Button.Name = "Negozio_CartePirata9_Button";
-            this.Negozio_CartePirata9_Button.Size = new System.Drawing.Size(466, 60);
-            this.Negozio_CartePirata9_Button.TabIndex = 8;
-            this.Negozio_CartePirata9_Button.Click += new System.EventHandler(this.Pirata9_Click);
-            // 
-            // Negozio_CartePrezzo9_Label
-            // 
-            this.Negozio_CartePrezzo9_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Negozio_CartePrezzo9_Label.Location = new System.Drawing.Point(363, -1);
-            this.Negozio_CartePrezzo9_Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Negozio_CartePrezzo9_Label.Name = "Negozio_CartePrezzo9_Label";
-            this.Negozio_CartePrezzo9_Label.Size = new System.Drawing.Size(97, 60);
-            this.Negozio_CartePrezzo9_Label.TabIndex = 2;
-            this.Negozio_CartePrezzo9_Label.Text = "n $";
-            this.Negozio_CartePrezzo9_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Negozio_CartePrezzo9_Label.Click += new System.EventHandler(this.Negozio_CartePrezzo9_Label_Click);
-            // 
-            // Negozio_CartaPirata9_Img
-            // 
-            this.Negozio_CartaPirata9_Img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Negozio_CartaPirata9_Img.Location = new System.Drawing.Point(247, -1);
-            this.Negozio_CartaPirata9_Img.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Negozio_CartaPirata9_Img.Name = "Negozio_CartaPirata9_Img";
-            this.Negozio_CartaPirata9_Img.Size = new System.Drawing.Size(115, 60);
-            this.Negozio_CartaPirata9_Img.TabIndex = 1;
-            this.Negozio_CartaPirata9_Img.TabStop = false;
-            this.Negozio_CartaPirata9_Img.Click += new System.EventHandler(this.Negozio_CartaPirata9_Img_Click);
-            // 
-            // Negozio_CartePirata9_Label
-            // 
-            this.Negozio_CartePirata9_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Negozio_CartePirata9_Label.Location = new System.Drawing.Point(-1, -1);
-            this.Negozio_CartePirata9_Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Negozio_CartePirata9_Label.Name = "Negozio_CartePirata9_Label";
-            this.Negozio_CartePirata9_Label.Size = new System.Drawing.Size(240, 60);
-            this.Negozio_CartePirata9_Label.TabIndex = 0;
-            this.Negozio_CartePirata9_Label.Text = "Pirata piratesco9";
-            this.Negozio_CartePirata9_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Negozio_CartePirata9_Label.Click += new System.EventHandler(this.Negozio_CartePirata9_Label_Click);
-            // 
-            // label23
-            // 
-            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(363, -1);
-            this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(97, 60);
-            this.label23.TabIndex = 2;
-            this.label23.Text = "n $";
-            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.Location = new System.Drawing.Point(247, -1);
-            this.pictureBox12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(115, 60);
-            this.pictureBox12.TabIndex = 1;
-            this.pictureBox12.TabStop = false;
-            // 
-            // label24
-            // 
-            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(-1, -1);
-            this.label24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(240, 60);
-            this.label24.TabIndex = 0;
-            this.label24.Text = "Pirata piratesco10";
-            this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Negozio_CartePirata10_Button
-            // 
-            this.Negozio_CartePirata10_Button.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Negozio_CartePirata10_Button.Controls.Add(this.Negozio_CartePrezzo10_Label);
-            this.Negozio_CartePirata10_Button.Controls.Add(this.Negozio_CartaPirata10_Img);
-            this.Negozio_CartePirata10_Button.Controls.Add(this.Negozio_CartePirata10_Label);
-            this.Negozio_CartePirata10_Button.Location = new System.Drawing.Point(4, 616);
-            this.Negozio_CartePirata10_Button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Negozio_CartePirata10_Button.Name = "Negozio_CartePirata10_Button";
-            this.Negozio_CartePirata10_Button.Size = new System.Drawing.Size(466, 60);
-            this.Negozio_CartePirata10_Button.TabIndex = 8;
-            this.Negozio_CartePirata10_Button.Click += new System.EventHandler(this.Pirata10_Click);
-            // 
-            // Negozio_CartePrezzo10_Label
-            // 
-            this.Negozio_CartePrezzo10_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Negozio_CartePrezzo10_Label.Location = new System.Drawing.Point(363, -1);
-            this.Negozio_CartePrezzo10_Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Negozio_CartePrezzo10_Label.Name = "Negozio_CartePrezzo10_Label";
-            this.Negozio_CartePrezzo10_Label.Size = new System.Drawing.Size(97, 60);
-            this.Negozio_CartePrezzo10_Label.TabIndex = 2;
-            this.Negozio_CartePrezzo10_Label.Text = "n $";
-            this.Negozio_CartePrezzo10_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Negozio_CartePrezzo10_Label.Click += new System.EventHandler(this.Negozio_CartePrezzo10_Label_Click);
-            // 
-            // Negozio_CartaPirata10_Img
-            // 
-            this.Negozio_CartaPirata10_Img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Negozio_CartaPirata10_Img.Location = new System.Drawing.Point(247, -1);
-            this.Negozio_CartaPirata10_Img.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Negozio_CartaPirata10_Img.Name = "Negozio_CartaPirata10_Img";
-            this.Negozio_CartaPirata10_Img.Size = new System.Drawing.Size(115, 60);
-            this.Negozio_CartaPirata10_Img.TabIndex = 1;
-            this.Negozio_CartaPirata10_Img.TabStop = false;
-            this.Negozio_CartaPirata10_Img.Click += new System.EventHandler(this.Negozio_CartaPirata10_Img_Click);
-            // 
-            // Negozio_CartePirata10_Label
-            // 
-            this.Negozio_CartePirata10_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Negozio_CartePirata10_Label.Location = new System.Drawing.Point(-1, -1);
-            this.Negozio_CartePirata10_Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Negozio_CartePirata10_Label.Name = "Negozio_CartePirata10_Label";
-            this.Negozio_CartePirata10_Label.Size = new System.Drawing.Size(240, 60);
-            this.Negozio_CartePirata10_Label.TabIndex = 0;
-            this.Negozio_CartePirata10_Label.Text = "Pirata piratesco10";
-            this.Negozio_CartePirata10_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Negozio_CartePirata10_Label.Click += new System.EventHandler(this.Negozio_CartePirata10_Label_Click);
-            // 
             // Negozio_CartePirata11_Button
             // 
             this.Negozio_CartePirata11_Button.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -1094,7 +954,7 @@ namespace KingOfPirates.GUI.MenuNassau
             this.Negozio_CartePirata11_Button.Controls.Add(this.Negozio_CartaPirata11_Img);
             this.Negozio_CartePirata11_Button.Controls.Add(this.Negozio_CartePirata11_Label);
             this.Negozio_CartePirata11_Button.Location = new System.Drawing.Point(4, 684);
-            this.Negozio_CartePirata11_Button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Negozio_CartePirata11_Button.Margin = new System.Windows.Forms.Padding(4);
             this.Negozio_CartePirata11_Button.Name = "Negozio_CartePirata11_Button";
             this.Negozio_CartePirata11_Button.Size = new System.Drawing.Size(466, 60);
             this.Negozio_CartePirata11_Button.TabIndex = 7;
@@ -1116,7 +976,7 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Negozio_CartaPirata11_Img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Negozio_CartaPirata11_Img.Location = new System.Drawing.Point(247, -1);
-            this.Negozio_CartaPirata11_Img.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Negozio_CartaPirata11_Img.Margin = new System.Windows.Forms.Padding(4);
             this.Negozio_CartaPirata11_Img.Name = "Negozio_CartaPirata11_Img";
             this.Negozio_CartaPirata11_Img.Size = new System.Drawing.Size(115, 60);
             this.Negozio_CartaPirata11_Img.TabIndex = 1;
@@ -1142,7 +1002,7 @@ namespace KingOfPirates.GUI.MenuNassau
             this.Negozio_CartePirata12_Button.Controls.Add(this.Negozio_CartaPirata12_Img);
             this.Negozio_CartePirata12_Button.Controls.Add(this.Negozio_CartePirata12_Label);
             this.Negozio_CartePirata12_Button.Location = new System.Drawing.Point(4, 752);
-            this.Negozio_CartePirata12_Button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Negozio_CartePirata12_Button.Margin = new System.Windows.Forms.Padding(4);
             this.Negozio_CartePirata12_Button.Name = "Negozio_CartePirata12_Button";
             this.Negozio_CartePirata12_Button.Size = new System.Drawing.Size(466, 60);
             this.Negozio_CartePirata12_Button.TabIndex = 6;
@@ -1164,7 +1024,7 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Negozio_CartaPirata12_Img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Negozio_CartaPirata12_Img.Location = new System.Drawing.Point(247, -1);
-            this.Negozio_CartaPirata12_Img.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Negozio_CartaPirata12_Img.Margin = new System.Windows.Forms.Padding(4);
             this.Negozio_CartaPirata12_Img.Name = "Negozio_CartaPirata12_Img";
             this.Negozio_CartaPirata12_Img.Size = new System.Drawing.Size(115, 60);
             this.Negozio_CartaPirata12_Img.TabIndex = 1;
@@ -1190,7 +1050,7 @@ namespace KingOfPirates.GUI.MenuNassau
             this.Negozio_CartePirata13_Button.Controls.Add(this.Negozio_CartaPirata13_Img);
             this.Negozio_CartePirata13_Button.Controls.Add(this.Negozio_CartePirata13_Label);
             this.Negozio_CartePirata13_Button.Location = new System.Drawing.Point(4, 820);
-            this.Negozio_CartePirata13_Button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Negozio_CartePirata13_Button.Margin = new System.Windows.Forms.Padding(4);
             this.Negozio_CartePirata13_Button.Name = "Negozio_CartePirata13_Button";
             this.Negozio_CartePirata13_Button.Size = new System.Drawing.Size(466, 60);
             this.Negozio_CartePirata13_Button.TabIndex = 7;
@@ -1212,7 +1072,7 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Negozio_CartaPirata13_Img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Negozio_CartaPirata13_Img.Location = new System.Drawing.Point(247, -1);
-            this.Negozio_CartaPirata13_Img.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Negozio_CartaPirata13_Img.Margin = new System.Windows.Forms.Padding(4);
             this.Negozio_CartaPirata13_Img.Name = "Negozio_CartaPirata13_Img";
             this.Negozio_CartaPirata13_Img.Size = new System.Drawing.Size(115, 60);
             this.Negozio_CartaPirata13_Img.TabIndex = 1;
@@ -1238,7 +1098,7 @@ namespace KingOfPirates.GUI.MenuNassau
             this.Negozio_CartePirata14_Button.Controls.Add(this.Negozio_CartaPirata14_Img);
             this.Negozio_CartePirata14_Button.Controls.Add(this.Negozio_CartePirata14_Label);
             this.Negozio_CartePirata14_Button.Location = new System.Drawing.Point(4, 888);
-            this.Negozio_CartePirata14_Button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Negozio_CartePirata14_Button.Margin = new System.Windows.Forms.Padding(4);
             this.Negozio_CartePirata14_Button.Name = "Negozio_CartePirata14_Button";
             this.Negozio_CartePirata14_Button.Size = new System.Drawing.Size(466, 60);
             this.Negozio_CartePirata14_Button.TabIndex = 7;
@@ -1260,7 +1120,7 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Negozio_CartaPirata14_Img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Negozio_CartaPirata14_Img.Location = new System.Drawing.Point(247, -1);
-            this.Negozio_CartaPirata14_Img.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Negozio_CartaPirata14_Img.Margin = new System.Windows.Forms.Padding(4);
             this.Negozio_CartaPirata14_Img.Name = "Negozio_CartaPirata14_Img";
             this.Negozio_CartaPirata14_Img.Size = new System.Drawing.Size(115, 60);
             this.Negozio_CartaPirata14_Img.TabIndex = 1;
@@ -1286,7 +1146,7 @@ namespace KingOfPirates.GUI.MenuNassau
             this.Negozio_CartePirata15_Button.Controls.Add(this.Negozio_CartaPirata15_Img);
             this.Negozio_CartePirata15_Button.Controls.Add(this.Negozio_CartePirata15_Label);
             this.Negozio_CartePirata15_Button.Location = new System.Drawing.Point(4, 956);
-            this.Negozio_CartePirata15_Button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Negozio_CartePirata15_Button.Margin = new System.Windows.Forms.Padding(4);
             this.Negozio_CartePirata15_Button.Name = "Negozio_CartePirata15_Button";
             this.Negozio_CartePirata15_Button.Size = new System.Drawing.Size(466, 60);
             this.Negozio_CartePirata15_Button.TabIndex = 7;
@@ -1308,7 +1168,7 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Negozio_CartaPirata15_Img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Negozio_CartaPirata15_Img.Location = new System.Drawing.Point(247, -1);
-            this.Negozio_CartaPirata15_Img.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Negozio_CartaPirata15_Img.Margin = new System.Windows.Forms.Padding(4);
             this.Negozio_CartaPirata15_Img.Name = "Negozio_CartaPirata15_Img";
             this.Negozio_CartaPirata15_Img.Size = new System.Drawing.Size(115, 60);
             this.Negozio_CartaPirata15_Img.TabIndex = 1;
@@ -1334,7 +1194,7 @@ namespace KingOfPirates.GUI.MenuNassau
             this.Negozio_CartePirata16_Button.Controls.Add(this.Negozio_CartaPirata16_Img);
             this.Negozio_CartePirata16_Button.Controls.Add(this.Negozio_CartePirata16_Label);
             this.Negozio_CartePirata16_Button.Location = new System.Drawing.Point(4, 1024);
-            this.Negozio_CartePirata16_Button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Negozio_CartePirata16_Button.Margin = new System.Windows.Forms.Padding(4);
             this.Negozio_CartePirata16_Button.Name = "Negozio_CartePirata16_Button";
             this.Negozio_CartePirata16_Button.Size = new System.Drawing.Size(466, 60);
             this.Negozio_CartePirata16_Button.TabIndex = 7;
@@ -1356,7 +1216,7 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Negozio_CartaPirata16_Img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Negozio_CartaPirata16_Img.Location = new System.Drawing.Point(247, -1);
-            this.Negozio_CartaPirata16_Img.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Negozio_CartaPirata16_Img.Margin = new System.Windows.Forms.Padding(4);
             this.Negozio_CartaPirata16_Img.Name = "Negozio_CartaPirata16_Img";
             this.Negozio_CartaPirata16_Img.Size = new System.Drawing.Size(115, 60);
             this.Negozio_CartaPirata16_Img.TabIndex = 1;
@@ -1382,7 +1242,7 @@ namespace KingOfPirates.GUI.MenuNassau
             this.Negozio_CartePirata17_Button.Controls.Add(this.Negozio_CartaPirata17_Img);
             this.Negozio_CartePirata17_Button.Controls.Add(this.Negozio_CartePirata17_Label);
             this.Negozio_CartePirata17_Button.Location = new System.Drawing.Point(4, 1092);
-            this.Negozio_CartePirata17_Button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Negozio_CartePirata17_Button.Margin = new System.Windows.Forms.Padding(4);
             this.Negozio_CartePirata17_Button.Name = "Negozio_CartePirata17_Button";
             this.Negozio_CartePirata17_Button.Size = new System.Drawing.Size(466, 60);
             this.Negozio_CartePirata17_Button.TabIndex = 7;
@@ -1404,7 +1264,7 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Negozio_CartaPirata17_Img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Negozio_CartaPirata17_Img.Location = new System.Drawing.Point(247, -1);
-            this.Negozio_CartaPirata17_Img.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Negozio_CartaPirata17_Img.Margin = new System.Windows.Forms.Padding(4);
             this.Negozio_CartaPirata17_Img.Name = "Negozio_CartaPirata17_Img";
             this.Negozio_CartaPirata17_Img.Size = new System.Drawing.Size(115, 60);
             this.Negozio_CartaPirata17_Img.TabIndex = 1;
@@ -1430,7 +1290,7 @@ namespace KingOfPirates.GUI.MenuNassau
             this.Negozio_CartePirata18_Button.Controls.Add(this.Negozio_CartaPirata18_Img);
             this.Negozio_CartePirata18_Button.Controls.Add(this.Negozio_CartePirata18_Label);
             this.Negozio_CartePirata18_Button.Location = new System.Drawing.Point(4, 1160);
-            this.Negozio_CartePirata18_Button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Negozio_CartePirata18_Button.Margin = new System.Windows.Forms.Padding(4);
             this.Negozio_CartePirata18_Button.Name = "Negozio_CartePirata18_Button";
             this.Negozio_CartePirata18_Button.Size = new System.Drawing.Size(466, 60);
             this.Negozio_CartePirata18_Button.TabIndex = 7;
@@ -1452,7 +1312,7 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Negozio_CartaPirata18_Img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Negozio_CartaPirata18_Img.Location = new System.Drawing.Point(247, -1);
-            this.Negozio_CartaPirata18_Img.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Negozio_CartaPirata18_Img.Margin = new System.Windows.Forms.Padding(4);
             this.Negozio_CartaPirata18_Img.Name = "Negozio_CartaPirata18_Img";
             this.Negozio_CartaPirata18_Img.Size = new System.Drawing.Size(115, 60);
             this.Negozio_CartaPirata18_Img.TabIndex = 1;
@@ -1478,7 +1338,7 @@ namespace KingOfPirates.GUI.MenuNassau
             this.Negozio_CartePirata19_Button.Controls.Add(this.Negozio_CartaPirata19_Img);
             this.Negozio_CartePirata19_Button.Controls.Add(this.Negozio_CartePirata19_Label);
             this.Negozio_CartePirata19_Button.Location = new System.Drawing.Point(4, 1228);
-            this.Negozio_CartePirata19_Button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Negozio_CartePirata19_Button.Margin = new System.Windows.Forms.Padding(4);
             this.Negozio_CartePirata19_Button.Name = "Negozio_CartePirata19_Button";
             this.Negozio_CartePirata19_Button.Size = new System.Drawing.Size(466, 60);
             this.Negozio_CartePirata19_Button.TabIndex = 7;
@@ -1500,7 +1360,7 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Negozio_CartaPirata19_Img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Negozio_CartaPirata19_Img.Location = new System.Drawing.Point(247, -1);
-            this.Negozio_CartaPirata19_Img.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Negozio_CartaPirata19_Img.Margin = new System.Windows.Forms.Padding(4);
             this.Negozio_CartaPirata19_Img.Name = "Negozio_CartaPirata19_Img";
             this.Negozio_CartaPirata19_Img.Size = new System.Drawing.Size(115, 60);
             this.Negozio_CartaPirata19_Img.TabIndex = 1;
@@ -1526,7 +1386,7 @@ namespace KingOfPirates.GUI.MenuNassau
             this.Negozio_CartePirata20_Button.Controls.Add(this.Negozio_CartaPirata20_Img);
             this.Negozio_CartePirata20_Button.Controls.Add(this.Negozio_CartePirata20_Label);
             this.Negozio_CartePirata20_Button.Location = new System.Drawing.Point(4, 1296);
-            this.Negozio_CartePirata20_Button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Negozio_CartePirata20_Button.Margin = new System.Windows.Forms.Padding(4);
             this.Negozio_CartePirata20_Button.Name = "Negozio_CartePirata20_Button";
             this.Negozio_CartePirata20_Button.Size = new System.Drawing.Size(466, 60);
             this.Negozio_CartePirata20_Button.TabIndex = 7;
@@ -1548,7 +1408,7 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Negozio_CartaPirata20_Img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Negozio_CartaPirata20_Img.Location = new System.Drawing.Point(247, -1);
-            this.Negozio_CartaPirata20_Img.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Negozio_CartaPirata20_Img.Margin = new System.Windows.Forms.Padding(4);
             this.Negozio_CartaPirata20_Img.Name = "Negozio_CartaPirata20_Img";
             this.Negozio_CartaPirata20_Img.Size = new System.Drawing.Size(115, 60);
             this.Negozio_CartaPirata20_Img.TabIndex = 1;
@@ -1572,7 +1432,7 @@ namespace KingOfPirates.GUI.MenuNassau
             this.backToNegozio_Button.BackgroundImage = global::KingOfPirates.Properties.Resources.back_arrow;
             this.backToNegozio_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.backToNegozio_Button.Location = new System.Drawing.Point(16, 15);
-            this.backToNegozio_Button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.backToNegozio_Button.Margin = new System.Windows.Forms.Padding(4);
             this.backToNegozio_Button.Name = "backToNegozio_Button";
             this.backToNegozio_Button.Size = new System.Drawing.Size(119, 97);
             this.backToNegozio_Button.TabIndex = 1;
@@ -1584,7 +1444,7 @@ namespace KingOfPirates.GUI.MenuNassau
             this.back_Button.BackgroundImage = global::KingOfPirates.Properties.Resources.back_arrow;
             this.back_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.back_Button.Location = new System.Drawing.Point(16, 15);
-            this.back_Button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.back_Button.Margin = new System.Windows.Forms.Padding(4);
             this.back_Button.Name = "back_Button";
             this.back_Button.Size = new System.Drawing.Size(119, 97);
             this.back_Button.TabIndex = 23;
@@ -1595,7 +1455,7 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Negozio_AssLeg_Img.Image = global::KingOfPirates.Properties.Resources.assLeg;
             this.Negozio_AssLeg_Img.Location = new System.Drawing.Point(1327, 633);
-            this.Negozio_AssLeg_Img.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Negozio_AssLeg_Img.Margin = new System.Windows.Forms.Padding(4);
             this.Negozio_AssLeg_Img.Name = "Negozio_AssLeg_Img";
             this.Negozio_AssLeg_Img.Size = new System.Drawing.Size(133, 146);
             this.Negozio_AssLeg_Img.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1606,7 +1466,7 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Negozio_BevAnt_Img.Image = global::KingOfPirates.Properties.Resources.ant;
             this.Negozio_BevAnt_Img.Location = new System.Drawing.Point(1087, 633);
-            this.Negozio_BevAnt_Img.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Negozio_BevAnt_Img.Margin = new System.Windows.Forms.Padding(4);
             this.Negozio_BevAnt_Img.Name = "Negozio_BevAnt_Img";
             this.Negozio_BevAnt_Img.Size = new System.Drawing.Size(133, 146);
             this.Negozio_BevAnt_Img.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1617,7 +1477,7 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Negozio_Rum_Img.Image = global::KingOfPirates.Properties.Resources.rum;
             this.Negozio_Rum_Img.Location = new System.Drawing.Point(840, 633);
-            this.Negozio_Rum_Img.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Negozio_Rum_Img.Margin = new System.Windows.Forms.Padding(4);
             this.Negozio_Rum_Img.Name = "Negozio_Rum_Img";
             this.Negozio_Rum_Img.Size = new System.Drawing.Size(133, 146);
             this.Negozio_Rum_Img.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1628,12 +1488,153 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Negozio_BevDet_Img.Image = global::KingOfPirates.Properties.Resources.bevDet;
             this.Negozio_BevDet_Img.Location = new System.Drawing.Point(605, 633);
-            this.Negozio_BevDet_Img.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Negozio_BevDet_Img.Margin = new System.Windows.Forms.Padding(4);
             this.Negozio_BevDet_Img.Name = "Negozio_BevDet_Img";
             this.Negozio_BevDet_Img.Size = new System.Drawing.Size(133, 146);
             this.Negozio_BevDet_Img.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Negozio_BevDet_Img.TabIndex = 19;
             this.Negozio_BevDet_Img.TabStop = false;
+            // 
+            // Negozio_CartaPirata10_Img
+            // 
+            this.Negozio_CartaPirata10_Img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Negozio_CartaPirata10_Img.Location = new System.Drawing.Point(247, -1);
+            this.Negozio_CartaPirata10_Img.Margin = new System.Windows.Forms.Padding(4);
+            this.Negozio_CartaPirata10_Img.Name = "Negozio_CartaPirata10_Img";
+            this.Negozio_CartaPirata10_Img.Size = new System.Drawing.Size(115, 60);
+            this.Negozio_CartaPirata10_Img.TabIndex = 1;
+            this.Negozio_CartaPirata10_Img.TabStop = false;
+            this.Negozio_CartaPirata10_Img.Click += new System.EventHandler(this.Negozio_CartaPirata10_Img_Click);
+            // 
+            // Negozio_CartePrezzo10_Label
+            // 
+            this.Negozio_CartePrezzo10_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Negozio_CartePrezzo10_Label.Location = new System.Drawing.Point(363, -1);
+            this.Negozio_CartePrezzo10_Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Negozio_CartePrezzo10_Label.Name = "Negozio_CartePrezzo10_Label";
+            this.Negozio_CartePrezzo10_Label.Size = new System.Drawing.Size(97, 60);
+            this.Negozio_CartePrezzo10_Label.TabIndex = 2;
+            this.Negozio_CartePrezzo10_Label.Text = "n $";
+            this.Negozio_CartePrezzo10_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Negozio_CartePrezzo10_Label.Click += new System.EventHandler(this.Negozio_CartePrezzo10_Label_Click);
+            // 
+            // Negozio_CartePirata10_Button
+            // 
+            this.Negozio_CartePirata10_Button.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Negozio_CartePirata10_Button.Controls.Add(this.Negozio_CartePrezzo10_Label);
+            this.Negozio_CartePirata10_Button.Controls.Add(this.Negozio_CartaPirata10_Img);
+            this.Negozio_CartePirata10_Button.Controls.Add(this.Negozio_CartePirata10_Label);
+            this.Negozio_CartePirata10_Button.Location = new System.Drawing.Point(4, 616);
+            this.Negozio_CartePirata10_Button.Margin = new System.Windows.Forms.Padding(4);
+            this.Negozio_CartePirata10_Button.Name = "Negozio_CartePirata10_Button";
+            this.Negozio_CartePirata10_Button.Size = new System.Drawing.Size(466, 60);
+            this.Negozio_CartePirata10_Button.TabIndex = 8;
+            this.Negozio_CartePirata10_Button.Click += new System.EventHandler(this.Pirata10_Click);
+            // 
+            // Negozio_CartePirata10_Label
+            // 
+            this.Negozio_CartePirata10_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Negozio_CartePirata10_Label.Location = new System.Drawing.Point(-1, -1);
+            this.Negozio_CartePirata10_Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Negozio_CartePirata10_Label.Name = "Negozio_CartePirata10_Label";
+            this.Negozio_CartePirata10_Label.Size = new System.Drawing.Size(240, 60);
+            this.Negozio_CartePirata10_Label.TabIndex = 0;
+            this.Negozio_CartePirata10_Label.Text = "Pirata piratesco10";
+            this.Negozio_CartePirata10_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Negozio_CartePirata10_Label.Click += new System.EventHandler(this.Negozio_CartePirata10_Label_Click);
+            // 
+            // label24
+            // 
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Location = new System.Drawing.Point(-1, -1);
+            this.label24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(240, 60);
+            this.label24.TabIndex = 0;
+            this.label24.Text = "Pirata piratesco10";
+            this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.Location = new System.Drawing.Point(247, -1);
+            this.pictureBox12.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(115, 60);
+            this.pictureBox12.TabIndex = 1;
+            this.pictureBox12.TabStop = false;
+            // 
+            // label23
+            // 
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(363, -1);
+            this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(97, 60);
+            this.label23.TabIndex = 2;
+            this.label23.Text = "n $";
+            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Negozio_CartePirata9_Button
+            // 
+            this.Negozio_CartePirata9_Button.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Negozio_CartePirata9_Button.Controls.Add(this.Negozio_CartePrezzo9_Label);
+            this.Negozio_CartePirata9_Button.Controls.Add(this.Negozio_CartaPirata9_Img);
+            this.Negozio_CartePirata9_Button.Controls.Add(this.Negozio_CartePirata9_Label);
+            this.Negozio_CartePirata9_Button.Location = new System.Drawing.Point(-1, -1);
+            this.Negozio_CartePirata9_Button.Margin = new System.Windows.Forms.Padding(4);
+            this.Negozio_CartePirata9_Button.Name = "Negozio_CartePirata9_Button";
+            this.Negozio_CartePirata9_Button.Size = new System.Drawing.Size(466, 60);
+            this.Negozio_CartePirata9_Button.TabIndex = 8;
+            this.Negozio_CartePirata9_Button.Click += new System.EventHandler(this.Pirata9_Click);
+            // 
+            // Negozio_CartePirata9_Label
+            // 
+            this.Negozio_CartePirata9_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Negozio_CartePirata9_Label.Location = new System.Drawing.Point(-1, -1);
+            this.Negozio_CartePirata9_Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Negozio_CartePirata9_Label.Name = "Negozio_CartePirata9_Label";
+            this.Negozio_CartePirata9_Label.Size = new System.Drawing.Size(240, 60);
+            this.Negozio_CartePirata9_Label.TabIndex = 0;
+            this.Negozio_CartePirata9_Label.Text = "Pirata piratesco9";
+            this.Negozio_CartePirata9_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Negozio_CartePirata9_Label.Click += new System.EventHandler(this.Negozio_CartePirata9_Label_Click);
+            // 
+            // Negozio_CartaPirata9_Img
+            // 
+            this.Negozio_CartaPirata9_Img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Negozio_CartaPirata9_Img.Location = new System.Drawing.Point(247, -1);
+            this.Negozio_CartaPirata9_Img.Margin = new System.Windows.Forms.Padding(4);
+            this.Negozio_CartaPirata9_Img.Name = "Negozio_CartaPirata9_Img";
+            this.Negozio_CartaPirata9_Img.Size = new System.Drawing.Size(115, 60);
+            this.Negozio_CartaPirata9_Img.TabIndex = 1;
+            this.Negozio_CartaPirata9_Img.TabStop = false;
+            this.Negozio_CartaPirata9_Img.Click += new System.EventHandler(this.Negozio_CartaPirata9_Img_Click);
+            // 
+            // Negozio_CartePrezzo9_Label
+            // 
+            this.Negozio_CartePrezzo9_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Negozio_CartePrezzo9_Label.Location = new System.Drawing.Point(363, -1);
+            this.Negozio_CartePrezzo9_Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Negozio_CartePrezzo9_Label.Name = "Negozio_CartePrezzo9_Label";
+            this.Negozio_CartePrezzo9_Label.Size = new System.Drawing.Size(97, 60);
+            this.Negozio_CartePrezzo9_Label.TabIndex = 2;
+            this.Negozio_CartePrezzo9_Label.Text = "n $";
+            this.Negozio_CartePrezzo9_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Negozio_CartePrezzo9_Label.Click += new System.EventHandler(this.Negozio_CartePrezzo9_Label_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.Negozio_CartePirata9_Button);
+            this.panel2.Controls.Add(this.label23);
+            this.panel2.Controls.Add(this.pictureBox12);
+            this.panel2.Controls.Add(this.label24);
+            this.panel2.Location = new System.Drawing.Point(4, 548);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(466, 60);
+            this.panel2.TabIndex = 8;
+            this.panel2.Visible = false;
             // 
             // Negozio_form
             // 
@@ -1664,7 +1665,7 @@ namespace KingOfPirates.GUI.MenuNassau
             this.Controls.Add(this.Negozio_AcqRum_Button);
             this.Controls.Add(this.Negozio_AcqBevDet_Button);
             this.Controls.Add(this.Negozio_RiscattaTaglie_Button);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Negozio_form";
             this.Text = "King of Pirates - Negozio";
             this.Negozio_acqCarte_Panel.ResumeLayout(false);
@@ -1687,12 +1688,6 @@ namespace KingOfPirates.GUI.MenuNassau
             ((System.ComponentModel.ISupportInitialize)(this.Negozio_CartaPirata7_Img)).EndInit();
             this.Negozio_CartePirata8_Button.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Negozio_CartaPirata8_Img)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.Negozio_CartePirata9_Button.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.Negozio_CartaPirata9_Img)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            this.Negozio_CartePirata10_Button.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.Negozio_CartaPirata10_Img)).EndInit();
             this.Negozio_CartePirata11_Button.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Negozio_CartaPirata11_Img)).EndInit();
             this.Negozio_CartePirata12_Button.ResumeLayout(false);
@@ -1717,6 +1712,12 @@ namespace KingOfPirates.GUI.MenuNassau
             ((System.ComponentModel.ISupportInitialize)(this.Negozio_BevAnt_Img)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Negozio_Rum_Img)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Negozio_BevDet_Img)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Negozio_CartaPirata10_Img)).EndInit();
+            this.Negozio_CartePirata10_Button.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            this.Negozio_CartePirata9_Button.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Negozio_CartaPirata9_Img)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1824,6 +1825,17 @@ namespace KingOfPirates.GUI.MenuNassau
         private System.Windows.Forms.Label Negozio_CartePrezzo8_Label;
         private System.Windows.Forms.PictureBox Negozio_CartaPirata8_Img;
         private System.Windows.Forms.Label Negozio_CartePirata8_Label;
+        private System.Windows.Forms.PictureBox Negozio_CarteInfo_Img;
+        private System.Windows.Forms.Label Negozio_CarteDescrizione_Label;
+        private System.Windows.Forms.Label Negozio_CarteElemento_Label;
+        private System.Windows.Forms.Label Negozio_CarteDef_Label;
+        private System.Windows.Forms.Label Negozio_CarteAtk_Label;
+        private System.Windows.Forms.Label Negozio_CarteFondi_Label;
+        private System.Windows.Forms.Label Negozio_CarteNome_Label;
+        private System.Windows.Forms.Panel Negozio_CartePirata10_Button;
+        private System.Windows.Forms.Label Negozio_CartePrezzo10_Label;
+        private System.Windows.Forms.PictureBox Negozio_CartaPirata10_Img;
+        private System.Windows.Forms.Label Negozio_CartePirata10_Label;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel Negozio_CartePirata9_Button;
         private System.Windows.Forms.Label Negozio_CartePrezzo9_Label;
@@ -1832,16 +1844,5 @@ namespace KingOfPirates.GUI.MenuNassau
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Panel Negozio_CartePirata10_Button;
-        private System.Windows.Forms.Label Negozio_CartePrezzo10_Label;
-        private System.Windows.Forms.PictureBox Negozio_CartaPirata10_Img;
-        private System.Windows.Forms.Label Negozio_CartePirata10_Label;
-        private System.Windows.Forms.PictureBox Negozio_CarteInfo_Img;
-        private System.Windows.Forms.Label Negozio_CarteDescrizione_Label;
-        private System.Windows.Forms.Label Negozio_CarteElemento_Label;
-        private System.Windows.Forms.Label Negozio_CarteDef_Label;
-        private System.Windows.Forms.Label Negozio_CarteAtk_Label;
-        private System.Windows.Forms.Label Negozio_CarteFondi_Label;
-        private System.Windows.Forms.Label Negozio_CarteNome_Label;
     }
 }

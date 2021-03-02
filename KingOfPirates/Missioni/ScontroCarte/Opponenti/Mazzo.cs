@@ -49,6 +49,9 @@ namespace KingOfPirates.Missioni.ScontroCarte.Opponenti
             //sostituisci posizione con carta morta
             carte[indice] = ListaCarte.GetMorto();
 
+            //setto un idice altrimenti esplode tutto
+            carte[indice].Indice = indice;
+
             CarteMorte++; //incrementa il contatore
         }
 

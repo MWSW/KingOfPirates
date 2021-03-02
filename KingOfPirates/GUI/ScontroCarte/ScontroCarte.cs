@@ -431,11 +431,30 @@ namespace KingOfPirates.GUI.ScontroCarte
             if (nemico.CurHp <= 0)
             {
                 MessageBox.Show("Hai vinto lo scontro!");
+
+                /*
+                //Pesca una nuova carta per non rompere il sistema
+                player.PescaCarta(cartaSelezionata);
+
+                player.CarteInMano[cartaSelezionata]
+                   .Visualizza(img_carta[cartaSelezionata], nomeCarta[cartaSelezionata], det[cartaSelezionata],
+                   att[cartaSelezionata], def[cartaSelezionata], elem[cartaSelezionata]);*/
+
                 nemico.GameOver();
             }
             else if (player.CurHp <= 0)
             {
                 MessageBox.Show("Hai perso lo scontro.");
+
+                /*
+                //Pesca una nuova carta per non rompere il sistema
+                player.PescaCarta(cartaSelezionata);
+
+                player.CarteInMano[cartaSelezionata]
+                   .Visualizza(img_carta[cartaSelezionata], nomeCarta[cartaSelezionata], det[cartaSelezionata],
+                   att[cartaSelezionata], def[cartaSelezionata], elem[cartaSelezionata]);
+                */
+
                 player.GameOver();
             }
 
@@ -443,16 +462,21 @@ namespace KingOfPirates.GUI.ScontroCarte
             if (player.CarteInMano[cartaSelezionata].Determinazione <= 0 &&
                 player.CarteInMano[cartaSelezionata].Tipo != "morto") //ovviamente la carta non deve essere già morta
             {
+
+                //nascondi la carta vecchia
+                player.CarteInMano[cartaSelezionata].Nascondi(img_carta0, nomeCarta0, det0, att0, def0, elem0);
+
                 //la carta viene rimpiazzata con la carta morto
                 int indice = player.CarteInMano[cartaSelezionata].Indice; //salvo il vecchio indice
-                player.CarteInMano[cartaSelezionata] = ListaCarte.GetMorto();
+                player.CarteInMano[cartaSelezionata].SetUtilizzabile(false); //la carta verrà rimossa dal mazzo
 
-                //setto un idice altimenti esplode tutto
+                player.CarteInMano[cartaSelezionata] = ListaCarte.GetMorto();
                 player.CarteInMano[cartaSelezionata].Indice = indice;
 
                 player.Mazzo.MorteCarta(indice); //uccide la carta
 
-                player.CarteInMano[cartaSelezionata].Visualizza(img_carta0, nomeCarta0, det0, att0, def0, elem0);
+                //mostra la carta nuova
+                player.CarteInMano[cartaSelezionata].Visualizza(img_carta0, nomeCarta0, det0);
 
             }
 
