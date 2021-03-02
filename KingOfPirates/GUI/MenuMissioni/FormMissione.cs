@@ -394,6 +394,7 @@ namespace KingOfPirates.GUI.MenuMissioni
                     }
                 }
             }
+            UpdateComponenti();
         }
 
         private void MenuMissioni_FormClosing(object sender, FormClosingEventArgs e)
