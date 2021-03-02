@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace KingOfPirates.GUI.MenuPrincipale
 {
@@ -18,6 +19,16 @@ namespace KingOfPirates.GUI.MenuPrincipale
         public CreditiForm()
         {
             InitializeComponent();
+        }
+
+        private void crediti_label_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://github.com/chichibio-savoiardi/KingOfPirates");
+        }
+
+        private void CreditiForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            //Gioco.startMenu.Show();
         }
     }
 }
