@@ -32,7 +32,7 @@ namespace KingOfPirates.GUI.MenuMissioni
 
         private void FineMissione_FormClosing(object sender, FormClosingEventArgs e)
         {
-            OnClick(sender, e);
+            //OnClick(sender, e);
         }
 
         private void FineMissione_Shown(object sender, EventArgs e)
@@ -88,7 +88,8 @@ namespace KingOfPirates.GUI.MenuMissioni
             //torna a Nassau
             Gioco.nassauForm.GetLocanda_Form().Reset(); //reset visivo
             Gioco.nassauForm.Show();
-            this.Close();
+            this.Hide();
+            //this.Close();
         }
     }
 }
