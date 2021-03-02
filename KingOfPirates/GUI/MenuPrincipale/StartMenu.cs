@@ -57,7 +57,7 @@ namespace KingOfPirates.GUI.MenuPrincipale
 
         private void Crediti_button_Click(object sender, EventArgs e)
         {
-            //TODO
+            new CreditiForm().Show();
         }
 
         private void Exit_button_Click(object sender, EventArgs e)
