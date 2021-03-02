@@ -210,7 +210,7 @@ namespace KingOfPirates.GUI.MenuMissioni
 
             UpdateComponenti();
 
-            VitaNave_label.ForeColor = Color.Red;
+            //VitaNave_label.ForeColor = Color.Red;
 
             Sopra_button.ForeColor = Color.Black;
             Sotto_button.ForeColor = Color.Black;
@@ -219,12 +219,14 @@ namespace KingOfPirates.GUI.MenuMissioni
 
             //abbordaggio
             foreach (var n in missione.Nemici)
+            {
                 if (Gioco.Giocatore.Loc.IsEqualTo(n.Loc) && !n.IsGameOver)
                 {
                     MessageBox.Show("Il nemico ti ha abbordato!");
                     Gioco.Giocatore.Abborda(n);
                     n.IsGameOver = true;
                 }
+            }
         }
 
         private void Rum_button_Click(object sender, EventArgs e)
@@ -445,9 +447,15 @@ namespace KingOfPirates.GUI.MenuMissioni
                     }
                 }
 
-            Attacca_button.Hide();
+            foreach (var n in missione.Nemici)
+                n.Affonda(missione);// controllo automatico della vita in Affonda
 
-            UpdateComponenti();
+            //se la nave nemico e quella giocatore sono sovrapposte
+            //la giocatore viene ripristinata
+            Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage =
+                        Resources.nave_pirata;
+
+            Attacca_button.Hide();
         }
     }
 }
