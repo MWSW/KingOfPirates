@@ -1,0 +1,6 @@
+<map id="KingOfPirates.Missioni.Navi.NaveNemico.Movimento" name="KingOfPirates.Missioni.Navi.NaveNemico.Movimento">
+<area shape="rect" id="node1" title="Movimento specifico per i nemici secondo un percorso predefinito." alt="" coords="5,39,192,80"/>
+<area shape="rect" id="node2" href="$d8/d5c/class_king_of_pirates_1_1_missioni_1_1_navi_1_1_nave_nemico.html#a29e929f0d1430186c82b64336d5a1885" title="Attacca la nave specificata nella missione specificata." alt="" coords="240,39,427,80"/>
+<area shape="rect" id="node3" href="$dc/dc9/class_king_of_pirates_1_1_missioni_1_1_navi_1_1_nave.html#aa0474497f07cec24c2bcd0f6ae94e1ef" title=" " alt="" coords="477,5,664,47"/>
+<area shape="rect" id="node4" href="$dd/db5/class_king_of_pirates_1_1_missioni_1_1_roba_1_1_loc2_d.html#aa7a6355dba4bcd16dc0cce9df77a83d4" title="Comapara la locazione con un&#39;altra" alt="" coords="475,71,667,112"/>
+</map>

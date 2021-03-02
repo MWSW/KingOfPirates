@@ -15,7 +15,7 @@ namespace KingOfPirates.Missioni.Navi
     /// </summary>
     public abstract class Nave
     {
-        protected string nome;
+        private string nome;
         protected Image immagine;
         private bool isGameOver;
 
@@ -69,5 +69,6 @@ namespace KingOfPirates.Missioni.Navi
         public abstract void Movimento(Missione missione, Direzione direzione);
 
         public Image Immagine { get => immagine; set => immagine = value; }
+        public string Nome { get => nome; set => nome = value; }
     }
 }

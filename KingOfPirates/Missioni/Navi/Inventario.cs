@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace KingOfPirates.Missioni.Navi.Opponenti
 {
     /// <summary>
-    /// Contiene i consumabili del giocatore, usabili i missione
+    /// Contiene i consumabili del giocatore, usabili in missione.
     /// </summary>
     public class Inventario
     {
@@ -16,6 +16,9 @@ namespace KingOfPirates.Missioni.Navi.Opponenti
         public int AntiUbriachezza { get; set; }
         public int AssiLegno { get; set; }
 
+        /// <summary>
+        /// Inizializza tutto a 0.
+        /// </summary>
         public Inventario()
         {
             BevandaDeterminazione = 0;
@@ -24,6 +27,13 @@ namespace KingOfPirates.Missioni.Navi.Opponenti
             AssiLegno = 0;
         }
 
+        /// <summary>
+        /// Iniizializza tutto con i parametri specificati.
+        /// </summary>
+        /// <param name="bevandaDeterminazione"></param>
+        /// <param name="rum"></param>
+        /// <param name="antiUbriachezza"></param>
+        /// <param name="assiLegno"></param>
         public Inventario(int bevandaDeterminazione, int rum, int antiUbriachezza, int assiLegno)
         {
             BevandaDeterminazione = bevandaDeterminazione;

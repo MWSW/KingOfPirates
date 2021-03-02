@@ -236,7 +236,9 @@ namespace KingOfPirates.Missioni.Navi
         /// <param name="missione">Missione in cui attaccare</param>
         public override bool Attacca(Missione missione, Nave nave)
         {
-            throw new NotImplementedException();
+            nave.DecPuntiVita(new Random().Next(Stats.MinHit, Stats.MaxHit));
+            missione.Mappa.UpdateComponenti();
+            return true;
         }
 
         //TODO: public void UsaOggetto(Oggetto ob){}

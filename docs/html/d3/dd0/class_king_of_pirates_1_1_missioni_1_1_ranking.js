@@ -1,10 +1,12 @@
 var class_king_of_pirates_1_1_missioni_1_1_ranking =
 [
-    [ "Ranking", "d3/dd0/class_king_of_pirates_1_1_missioni_1_1_ranking.html#a4942ec205412dcf42b18580f3d95013f", null ],
-    [ "DecRank", "d3/dd0/class_king_of_pirates_1_1_missioni_1_1_ranking.html#ab3ea99d949d667a4c04d91492fcc4149", null ],
-    [ "IncRank", "d3/dd0/class_king_of_pirates_1_1_missioni_1_1_ranking.html#a0c80e91c06b5a2045f2f04ce5c70bd13", null ],
-    [ "livelli", "d3/dd0/class_king_of_pirates_1_1_missioni_1_1_ranking.html#aa6092d12aacc31dd19465f9981b72653", null ],
-    [ "rankGiocatore", "d3/dd0/class_king_of_pirates_1_1_missioni_1_1_ranking.html#a8841c97d481f7622a79873b4971edb06", null ],
-    [ "Livelli", "d3/dd0/class_king_of_pirates_1_1_missioni_1_1_ranking.html#aa492b8425528e3a17eadade776537669", null ],
-    [ "RankGiocatore", "d3/dd0/class_king_of_pirates_1_1_missioni_1_1_ranking.html#a516eb53b55f369b7bfb468384056b5b1", null ]
+    [ "Ranking", "d3/dd0/class_king_of_pirates_1_1_missioni_1_1_ranking.html#a63cbaf2675db2f8302aa59845710cf47", null ],
+    [ "IncGameOver", "d3/dd0/class_king_of_pirates_1_1_missioni_1_1_ranking.html#a55f93d5975f5af61d6a5f85ce8aa602e", null ],
+    [ "IncNaviAffondate", "d3/dd0/class_king_of_pirates_1_1_missioni_1_1_ranking.html#a041ea8d6d580b7f9933df2c30bb432fd", null ],
+    [ "IncRubini", "d3/dd0/class_king_of_pirates_1_1_missioni_1_1_ranking.html#a299e2ff153d475f52b881a354ee6c99e", null ],
+    [ "IncTurni", "d3/dd0/class_king_of_pirates_1_1_missioni_1_1_ranking.html#a474f672ecd9ae2707281051c66ac4850", null ],
+    [ "GameOver", "d3/dd0/class_king_of_pirates_1_1_missioni_1_1_ranking.html#a66e49f756389e4226508d2c27cd40363", null ],
+    [ "NaviAffondate", "d3/dd0/class_king_of_pirates_1_1_missioni_1_1_ranking.html#a2e07e81d435d3fdae652e78c0a6bea20", null ],
+    [ "Rubini", "d3/dd0/class_king_of_pirates_1_1_missioni_1_1_ranking.html#a365c15c486e7cd1305ac852723243289", null ],
+    [ "Turni", "d3/dd0/class_king_of_pirates_1_1_missioni_1_1_ranking.html#aded718a56da3b6d64ec6484a54160524", null ]
 ];

@@ -13,16 +13,42 @@ using System.Windows.Forms;
 
 namespace KingOfPirates.GUI.MenuMissioni
 {
+    /// <summary>
+    /// Classe che mostra al giocatore la sua performance.
+    /// Gestisce la fine della missione chiamando Missione.EndMissione()
+    /// </summary>
     public partial class FineMissione : Form
     {
-        public FineMissione(Ranking ranking)
+        Missione missione;
+        /// <summary>
+        /// Costruttore che accetta la missione per cui mostrare la performance
+        /// </summary>
+        /// <param name="missione"></param>
+        public FineMissione(Missione missione)
         {
             InitializeComponent();
+            this.missione = missione;
+        }
 
-            Turni_label.Text = "TURNI: " + ranking.Turni;
-            GameOver_label.Text = "GAMEOVER: " + ranking.GameOver;
-            Rubini_label.Text = "RUBINI: " + ranking.Rubini;
-            NaviAffondate_label.Text = "NAVI AFFONDATE: " + ranking.NaviAffondate;
+        private void OnClick(object sender, EventArgs e)
+        {
+            //torna a Nassau
+            Gioco.nassauForm.Show();
+
+            missione.EndMissione();
+        }
+
+        private void FineMissione_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            OnClick(sender, e);
+        }
+
+        private void FineMissione_Shown(object sender, EventArgs e)
+        {
+            Turni_label.Text = "TURNI: " + missione.Ranking.Turni;
+            GameOver_label.Text = "GAMEOVER: " + missione.Ranking.GameOver;
+            Rubini_label.Text = "RUBINI: " + missione.Ranking.Rubini;
+            NaviAffondate_label.Text = "NAVI AFFONDATE: " + missione.Ranking.NaviAffondate;
 
             CartePerse_label.Text = "CARTE PERSE: " + Gioco.Giocatore.GiocatoreCarte.Mazzo.CarteMorte;
 
@@ -30,11 +56,11 @@ namespace KingOfPirates.GUI.MenuMissioni
 
             int score = 100;
 
-            score -= (int)(ranking.Turni * 1.5f);
-            score -= ranking.GameOver * 20;
+            score -= (int)(missione.Ranking.Turni * 1.5f);
+            score -= missione.Ranking.GameOver * 20;
 
-            score += ranking.Rubini * 5;
-            score += ranking.NaviAffondate * 30;
+            score += missione.Ranking.Rubini * 5;
+            score += missione.Ranking.NaviAffondate * 30;
 
             score -= Gioco.Giocatore.GiocatoreCarte.Mazzo.CarteMorte*10;
 

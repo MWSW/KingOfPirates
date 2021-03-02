@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['valbuff_1625',['ValBuff',['../da/dcc/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_opponenti_1_1_player__carte.html#ac37b549683a5e72952e222529cd002d0',1,'KingOfPirates::Missioni::ScontroCarte::Opponenti::Player_carte']]],
-  ['vita_5fbuff_1626',['vita_buff',['../df/d2f/class_king_of_pirates_1_1_properties_1_1_resources.html#a22a19cfac0faca6674e61efa18ef1002',1,'KingOfPirates::Properties::Resources']]]
+  ['ubriachezza_791',['Ubriachezza',['../db/d05/class_king_of_pirates_1_1_missioni_1_1_navi_1_1_nave_giocatore.html#ae83621e4e6b492e53b4d7e9bf38ffa5c',1,'KingOfPirates::Missioni::Navi::NaveGiocatore']]],
+  ['ubriachezzamax_792',['UbriachezzaMax',['../db/d05/class_king_of_pirates_1_1_missioni_1_1_navi_1_1_nave_giocatore.html#abd445eabbb10c775f9a523db746d07ac',1,'KingOfPirates::Missioni::Navi::NaveGiocatore']]]
 ];

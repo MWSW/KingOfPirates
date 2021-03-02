@@ -1,11 +1,20 @@
 var searchData=
 [
-  ['rankgiocatore_1604',['RankGiocatore',['../d3/dd0/class_king_of_pirates_1_1_missioni_1_1_ranking.html#a516eb53b55f369b7bfb468384056b5b1',1,'KingOfPirates::Missioni::Ranking']]],
-  ['resourcemanager_1605',['ResourceManager',['../df/d2f/class_king_of_pirates_1_1_properties_1_1_resources.html#a6757448694889f0d3a76e9ac6156f743',1,'KingOfPirates::Properties::Resources']]],
-  ['reward_1606',['Reward',['../d5/dfd/class_king_of_pirates_1_1_missioni_1_1_missione.html#aa4ce0ee6706ab7a72280cb63fb01c44b',1,'KingOfPirates::Missioni::Missione']]],
-  ['rubiniraccolti_1607',['RubiniRaccolti',['../d6/df4/class_king_of_pirates_1_1_missioni_1_1_gestore_missione.html#a0fe4e4181c9d66ad7ef06070f0eac909',1,'KingOfPirates::Missioni::GestoreMissione']]],
-  ['ruby_1608',['ruby',['../df/d2f/class_king_of_pirates_1_1_properties_1_1_resources.html#a39f86b8e24d9b3a374e1fdd4fe73fad2',1,'KingOfPirates::Properties::Resources']]],
-  ['rude_5fbuster_5fhq_1609',['Rude_Buster_HQ',['../df/d2f/class_king_of_pirates_1_1_properties_1_1_resources.html#adfd1c1b66f9c7b0bd2d45692ccf40970',1,'KingOfPirates::Properties::Resources']]],
-  ['rum_1610',['Rum',['../d6/dc1/class_king_of_pirates_1_1_missioni_1_1_navi_1_1_opponenti_1_1_inventario.html#a82504a3877587d00302c8b05ff4f807c',1,'KingOfPirates::Missioni::Navi::Opponenti::Inventario']]],
-  ['rum_1611',['rum',['../df/d2f/class_king_of_pirates_1_1_properties_1_1_resources.html#aeb61920085cb191fb91f2c0403285869',1,'KingOfPirates::Properties::Resources']]]
+  ['pa_754',['Pa',['../de/dca/class_king_of_pirates_1_1_missioni_1_1_roba_1_1_stats.html#a6a7b2af2fc43b773c8067efa831e38b0',1,'KingOfPirates::Missioni::Roba::Stats']]],
+  ['pamax_755',['PaMax',['../de/dca/class_king_of_pirates_1_1_missioni_1_1_roba_1_1_stats.html#ae4bb0327c0f121c14481da5a493716d2',1,'KingOfPirates::Missioni::Roba::Stats']]],
+  ['piratajerriskotty_756',['pirataJerriSkotty',['../df/d2f/class_king_of_pirates_1_1_properties_1_1_resources.html#abac25b9765b2877405f7dfd838e6f13a',1,'KingOfPirates::Properties::Resources']]],
+  ['play_757',['play',['../df/d2f/class_king_of_pirates_1_1_properties_1_1_resources.html#a4423f961c5c40b0a84cb9d0ade330db0',1,'KingOfPirates::Properties::Resources']]],
+  ['port_5fsign_758',['Port_Sign',['../df/d2f/class_king_of_pirates_1_1_properties_1_1_resources.html#a34fdf8f20f291d09cf33b9669df0c586',1,'KingOfPirates::Properties::Resources']]],
+  ['porto_5f_759',['Porto_',['../df/d2f/class_king_of_pirates_1_1_properties_1_1_resources.html#a2c698168f4f997fd43a9093bfd8d70d3',1,'KingOfPirates::Properties::Resources']]],
+  ['pow_5fbuff_760',['pow_buff',['../df/d2f/class_king_of_pirates_1_1_properties_1_1_resources.html#acd51f023f234825c47608d51b37279a1',1,'KingOfPirates::Properties::Resources']]],
+  ['prezzo_761',['Prezzo',['../d1/dcd/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_carte_1_1_carta.html#acec968f1e113b43085ce0817bb2afa0e',1,'KingOfPirates::Missioni::ScontroCarte::Carte::Carta']]],
+  ['prezzocannoni_762',['PrezzoCannoni',['../d6/d14/class_king_of_pirates_1_1_nassau_1_1_porto.html#a2a739c205673e13a139b5a2190bc36eb',1,'KingOfPirates::Nassau::Porto']]],
+  ['prezzoscafo_763',['PrezzoScafo',['../d6/d14/class_king_of_pirates_1_1_nassau_1_1_porto.html#ad78320ac1d87ff011d92322fc533c998',1,'KingOfPirates::Nassau::Porto']]],
+  ['prezzovele_764',['PrezzoVele',['../d6/d14/class_king_of_pirates_1_1_nassau_1_1_porto.html#a8791fa3963949b0a996e9195d230d438',1,'KingOfPirates::Nassau::Porto']]],
+  ['prova_765',['prova',['../df/d2f/class_king_of_pirates_1_1_properties_1_1_resources.html#acfe77cf031c79bc2a05e308ec930441d',1,'KingOfPirates::Properties::Resources']]],
+  ['pub_766',['pub',['../df/d2f/class_king_of_pirates_1_1_properties_1_1_resources.html#a79c06b1fcf721334a79bfe6b281b0970',1,'KingOfPirates::Properties::Resources']]],
+  ['pun_5fpun_767',['pun_pun',['../df/d2f/class_king_of_pirates_1_1_properties_1_1_resources.html#a001bda8057c02e811ba06d9b5d9082c3',1,'KingOfPirates::Properties::Resources']]],
+  ['pun_5fpun1_768',['pun_pun1',['../df/d2f/class_king_of_pirates_1_1_properties_1_1_resources.html#a7f75f2ae9ef478dcafeac768aa3b7a65',1,'KingOfPirates::Properties::Resources']]],
+  ['pun_5fpun2_769',['pun_pun2',['../df/d2f/class_king_of_pirates_1_1_properties_1_1_resources.html#a0309f59391124d4feb7262f0463eecf5',1,'KingOfPirates::Properties::Resources']]],
+  ['punteggio_770',['Punteggio',['../d6/df4/class_king_of_pirates_1_1_missioni_1_1_gestore_missione.html#ae455f1b4173497a2f236db7b0f364698',1,'KingOfPirates::Missioni::GestoreMissione']]]
 ];

@@ -1,0 +1,12 @@
+<map id="Grafico della gerarchia delle classi" name="Grafico della gerarchia delle classi">
+<area shape="rect" id="node1" title=" " alt="" coords="5,274,57,301"/>
+<area shape="rect" id="node2" href="$d2/d54/class_king_of_pirates_1_1_g_u_i_1_1_menu_missioni_1_1_fine_missione.html" title="Classe che mostra al giocatore la sua performance. Gestisce la fine della missione chiamando Missione..." alt="" coords="110,5,326,47"/>
+<area shape="rect" id="node3" href="$dd/da1/class_king_of_pirates_1_1_g_u_i_1_1_menu_missioni_1_1_form_missione.html" title="Form che rappresenta la griglia grafica della missione, fatto a mano." alt="" coords="110,71,326,112"/>
+<area shape="rect" id="node4" href="$df/d6a/class_king_of_pirates_1_1_g_u_i_1_1_menu_nassau_1_1_locanda__form.html" title=" " alt="" coords="112,136,324,177"/>
+<area shape="rect" id="node5" href="$d8/d8d/class_king_of_pirates_1_1_g_u_i_1_1_menu_nassau_1_1_nassau__form.html" title=" " alt="" coords="112,201,324,243"/>
+<area shape="rect" id="node6" href="$db/d60/class_king_of_pirates_1_1_g_u_i_1_1_menu_nassau_1_1_negozio__form.html" title=" " alt="" coords="112,267,324,308"/>
+<area shape="rect" id="node7" href="$dc/dc6/class_king_of_pirates_1_1_g_u_i_1_1_menu_nassau_1_1_porto__form.html" title=" " alt="" coords="112,332,324,373"/>
+<area shape="rect" id="node8" href="$dd/de6/class_king_of_pirates_1_1_g_u_i_1_1_menu_principale_1_1_crediti_form.html" title="Form che mostra i crediti" alt="" coords="105,397,331,439"/>
+<area shape="rect" id="node9" href="$db/da2/class_king_of_pirates_1_1_g_u_i_1_1_menu_principale_1_1_start_menu.html" title="Menu principale dell&#39;app" alt="" coords="105,463,331,504"/>
+<area shape="rect" id="node10" href="$d0/da2/class_king_of_pirates_1_1_g_u_i_1_1_scontro_carte_1_1_scontro_carte.html" title="Componente grafica dello scontro a carte." alt="" coords="129,528,307,569"/>
+</map>

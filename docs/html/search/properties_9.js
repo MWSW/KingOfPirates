@@ -1,9 +1,14 @@
 var searchData=
 [
-  ['length_1564',['Length',['../df/d97/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_opponenti_1_1_mazzo.html#a99f51e53c353ac6fdffa14a82b57e453',1,'KingOfPirates::Missioni::ScontroCarte::Opponenti::Mazzo']]],
-  ['livelli_1565',['Livelli',['../d3/dd0/class_king_of_pirates_1_1_missioni_1_1_ranking.html#aa492b8425528e3a17eadade776537669',1,'KingOfPirates::Missioni::Ranking']]],
-  ['livellocannoni_1566',['LivelloCannoni',['../d6/d14/class_king_of_pirates_1_1_nassau_1_1_porto.html#af88e8a2ffaeff5a58f8cf979797d74d9',1,'KingOfPirates::Nassau::Porto']]],
-  ['livelloscafo_1567',['LivelloScafo',['../d6/d14/class_king_of_pirates_1_1_nassau_1_1_porto.html#a4d07fe8b72ba69ff14ee8a275db2ce46',1,'KingOfPirates::Nassau::Porto']]],
-  ['livellovele_1568',['LivelloVele',['../d6/d14/class_king_of_pirates_1_1_nassau_1_1_porto.html#a758b894418bebb3223be34b83ee14944',1,'KingOfPirates::Nassau::Porto']]],
-  ['loc_1569',['Loc',['../dc/dc9/class_king_of_pirates_1_1_missioni_1_1_navi_1_1_nave.html#a12f613e09c1bb3c2c87a335a67251a04',1,'KingOfPirates::Missioni::Navi::Nave']]]
+  ['img_712',['Img',['../de/d8c/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_opponenti_1_1_giocatore__carte__base.html#a5d9093c197bbedc1b0f736306bc50bd6',1,'KingOfPirates::Missioni::ScontroCarte::Opponenti::Giocatore_carte_base']]],
+  ['immagine_713',['Immagine',['../dc/dc9/class_king_of_pirates_1_1_missioni_1_1_navi_1_1_nave.html#ada82aa3ebe79d26b77ca0cf91a11ff62',1,'KingOfPirates.Missioni.Navi.Nave.Immagine()'],['../d1/dcd/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_carte_1_1_carta.html#aad054565d0fcdbbccc5fb2d74330f4cb',1,'KingOfPirates.Missioni.ScontroCarte.Carte.Carta.Immagine()']]],
+  ['indice_714',['Indice',['../d1/dcd/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_carte_1_1_carta.html#aa2b66fd0320c23b496e2a08aff32d1bf',1,'KingOfPirates::Missioni::ScontroCarte::Carte::Carta']]],
+  ['info_715',['info',['../df/d2f/class_king_of_pirates_1_1_properties_1_1_resources.html#a94f926fb56e16447456be7dd92f015eb',1,'KingOfPirates::Properties::Resources']]],
+  ['inventario_716',['Inventario',['../db/d05/class_king_of_pirates_1_1_missioni_1_1_navi_1_1_nave_giocatore.html#aceef932ea12795d9fe6e770352001c6f',1,'KingOfPirates::Missioni::Navi::NaveGiocatore']]],
+  ['isgameover_717',['IsGameOver',['../d8/d5c/class_king_of_pirates_1_1_missioni_1_1_navi_1_1_nave_nemico.html#ad5cfd397c742ad76bf1629dabcb33e0f',1,'KingOfPirates.Missioni.Navi.NaveNemico.IsGameOver()'],['../de/d8c/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_opponenti_1_1_giocatore__carte__base.html#a291d3a45238a61a0ea8f9ea2ed9d0735',1,'KingOfPirates.Missioni.ScontroCarte.Opponenti.Giocatore_carte_base.IsGameOver()']]],
+  ['isola1_718',['isola1',['../df/d2f/class_king_of_pirates_1_1_properties_1_1_resources.html#aa2bab2f062d4b75a16cbc8e315b130ff',1,'KingOfPirates::Properties::Resources']]],
+  ['isola2_719',['isola2',['../df/d2f/class_king_of_pirates_1_1_properties_1_1_resources.html#af18dbcbe99009bb89ec08d3fca73389f',1,'KingOfPirates::Properties::Resources']]],
+  ['isola3_720',['isola3',['../df/d2f/class_king_of_pirates_1_1_properties_1_1_resources.html#a0fa1edc57cf5bf68a6fea5b266fb86d4',1,'KingOfPirates::Properties::Resources']]],
+  ['isola4_721',['isola4',['../df/d2f/class_king_of_pirates_1_1_properties_1_1_resources.html#a9decfc5f455712024dd7c421864d1fb5',1,'KingOfPirates::Properties::Resources']]],
+  ['isola5_722',['isola5',['../df/d2f/class_king_of_pirates_1_1_properties_1_1_resources.html#a5d345402dd92574fea22c654533e47ca',1,'KingOfPirates::Properties::Resources']]]
 ];

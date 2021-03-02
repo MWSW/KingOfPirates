@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace KingOfPirates.Mappa
 {
+    /// <summary>
+    /// Gestore delle taglie.
+    /// </summary>
     public class GestioneDominio
     {
         private int dobloniPerTurno;    //dobloni per turno
@@ -15,6 +18,9 @@ namespace KingOfPirates.Mappa
         private int taglieCaravella;
         private int taglieFregata;
 
+        /// <summary>
+        /// Inizializza tutto a 0.
+        /// </summary>
         public GestioneDominio()
         {
             dobloniPerTurno = 0;

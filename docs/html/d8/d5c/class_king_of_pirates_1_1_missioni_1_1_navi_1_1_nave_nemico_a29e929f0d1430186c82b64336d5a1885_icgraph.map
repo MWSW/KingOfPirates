@@ -1,0 +1,5 @@
+<map id="KingOfPirates.Missioni.Navi.NaveNemico.Attacca" name="KingOfPirates.Missioni.Navi.NaveNemico.Attacca">
+<area shape="rect" id="node1" title="Attacca la nave specificata nella missione specificata." alt="" coords="503,5,689,47"/>
+<area shape="rect" id="node2" href="$d8/d5c/class_king_of_pirates_1_1_missioni_1_1_navi_1_1_nave_nemico.html#a56f7bc8d048b828995bec45a69f50329" title="Movimento specifico per i nemici secondo un percorso predefinito." alt="" coords="268,5,455,47"/>
+<area shape="rect" id="node3" href="$d5/dfd/class_king_of_pirates_1_1_missioni_1_1_missione.html#a09c59517e769824794752b3ca4b1c851" title="Muove i nemici" alt="" coords="5,5,220,47"/>
+</map>

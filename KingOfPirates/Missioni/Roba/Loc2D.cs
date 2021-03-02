@@ -33,7 +33,7 @@ namespace KingOfPirates.Missioni.Roba
         }
 
         /// <summary>
-        /// Costruttore con nessun parametro
+        /// Costruttore con nessun parametro. inizializza tutto a 1
         /// </summary>
 
         public Loc2D()
@@ -48,8 +48,13 @@ namespace KingOfPirates.Missioni.Roba
         /// <returns>
         /// Stringa che restituisce le Coordinate
         /// </returns>
-
         public override string ToString() => $"({X}, {Y})";
+
+        /// <summary>
+        /// Comapara la locazione con un'altra
+        /// </summary>
+        /// <param name="loc">Coordinate da comparare</param>
+        /// <returns>Se la locazione data è uguale o no a quella corrente</returns>
         public bool IsEqualTo(Loc2D loc) => this.X == loc.X && this.Y == loc.Y;
 
         internal bool IsEqualTo(object loc)

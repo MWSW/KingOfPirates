@@ -9,6 +9,9 @@ using KingOfPirates.Missioni;
 
 namespace KingOfPirates.Mappa
 {
+    /// <summary>
+    /// Classe che rappresenta la cartina delle missioni
+    /// </summary>
     class Cartina
     {
         Missione[] arcipelago1;
@@ -16,6 +19,9 @@ namespace KingOfPirates.Mappa
 
         int currentMissionIndex;
 
+        /// <summary>
+        /// Inizializza le collezioni di missioni (Arcipelaghi)
+        /// </summary>
         public Cartina()
         {
             arcipelago1 = new Missione[3];

@@ -1,23 +1,5 @@
 var searchData=
 [
-  ['salpa_1105',['Salpa',['../d6/d14/class_king_of_pirates_1_1_nassau_1_1_porto.html#a1ef955a12d712bfc4303749632e8044f',1,'KingOfPirates::Nassau::Porto']]],
-  ['scavare_1106',['Scavare',['../db/d05/class_king_of_pirates_1_1_missioni_1_1_navi_1_1_nave_giocatore.html#af35e65d03ff50c1db205140acfaade21',1,'KingOfPirates::Missioni::Navi::NaveGiocatore']]],
-  ['scavo_5fbutton_5fclick_1107',['Scavo_button_Click',['../dd/da1/class_king_of_pirates_1_1_g_u_i_1_1_menu_missioni_1_1_form_missione.html#ae30cc519de77967c0818ce16840a9817',1,'KingOfPirates::GUI::MenuMissioni::FormMissione']]],
-  ['sceglicarta_1108',['ScegliCarta',['../d0/da2/class_king_of_pirates_1_1_g_u_i_1_1_scontro_carte_1_1_scontro_carte.html#a12d16dad392d4948625cc6aabcbd1bc3',1,'KingOfPirates.GUI.ScontroCarte.ScontroCarte.ScegliCarta()'],['../d6/d20/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_opponenti_1_1_nemico__carte.html#aef46f6a7d6d731b0406e5f62432b26c2',1,'KingOfPirates.Missioni.ScontroCarte.Opponenti.Nemico_carte.ScegliCarta()']]],
-  ['scontro_1109',['Scontro',['../d0/da2/class_king_of_pirates_1_1_g_u_i_1_1_scontro_carte_1_1_scontro_carte.html#a989bd091fd6231e76d907db729a9e51c',1,'KingOfPirates::GUI::ScontroCarte::ScontroCarte']]],
-  ['scontrocarte_1110',['ScontroCarte',['../d0/da2/class_king_of_pirates_1_1_g_u_i_1_1_scontro_carte_1_1_scontro_carte.html#a0dade83a66d65b8c72d66423485f1edd',1,'KingOfPirates::GUI::ScontroCarte::ScontroCarte']]],
-  ['scontrocarte_5fbutton_5fclick_1111',['ScontroCarte_button_Click',['../db/da2/class_king_of_pirates_1_1_g_u_i_1_1_menu_principale_1_1_start_menu.html#a8ecc0f545a22e5c74705ec707a17d3df',1,'KingOfPirates::GUI::MenuPrincipale::StartMenu']]],
-  ['scontrocarte_5fformclosing_1112',['ScontroCarte_FormClosing',['../d0/da2/class_king_of_pirates_1_1_g_u_i_1_1_scontro_carte_1_1_scontro_carte.html#a853fc003c4dcbd0452ac547ce8a01ed2',1,'KingOfPirates::GUI::ScontroCarte::ScontroCarte']]],
-  ['scottagerri_1113',['ScottaGerri',['../d4/dc4/class_king_of_pirates_1_1_nassau_1_1_locanda.html#a20fdf4a72e0b3725c0cf08901ed296ca',1,'KingOfPirates::Nassau::Locanda']]],
-  ['seleziona_1114',['Seleziona',['../db/d60/class_king_of_pirates_1_1_g_u_i_1_1_menu_nassau_1_1_negozio__form.html#a8f34b9b70e4ad1e91c7a1aeea98b839e',1,'KingOfPirates::GUI::MenuNassau::Negozio_form']]],
-  ['setbuff_1115',['SetBuff',['../d8/d9e/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_carte_1_1_carta_base.html#ada69a5f359700cdea3c0648ba600ebcf',1,'KingOfPirates::Missioni::ScontroCarte::Carte::CartaBase']]],
-  ['setutilizzabile_1116',['SetUtilizzabile',['../d1/dcd/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_carte_1_1_carta.html#a36cbbbcddc9006566871b07cb1de92e4',1,'KingOfPirates::Missioni::ScontroCarte::Carte::Carta']]],
-  ['sinistra_5fbutton_5fclick_1117',['Sinistra_button_Click',['../dd/da1/class_king_of_pirates_1_1_g_u_i_1_1_menu_missioni_1_1_form_missione.html#a1dde01c60e40235bc90eaf89efc135a1',1,'KingOfPirates::GUI::MenuMissioni::FormMissione']]],
-  ['sopra_5fbutton_5fclick_1118',['Sopra_button_Click',['../dd/da1/class_king_of_pirates_1_1_g_u_i_1_1_menu_missioni_1_1_form_missione.html#a63e96e92f82176250a382820e47f28b0',1,'KingOfPirates::GUI::MenuMissioni::FormMissione']]],
-  ['sotto_5fbutton_5fclick_1119',['Sotto_button_Click',['../dd/da1/class_king_of_pirates_1_1_g_u_i_1_1_menu_missioni_1_1_form_missione.html#ae13e4d9518708f1309307d82fa66fb67',1,'KingOfPirates::GUI::MenuMissioni::FormMissione']]],
-  ['start_1120',['Start',['../d5/d89/class_king_of_pirates_1_1_gioco.html#a44b6ca67a6724e8c58defa671aa6675a',1,'KingOfPirates::Gioco']]],
-  ['startmenu_1121',['StartMenu',['../db/da2/class_king_of_pirates_1_1_g_u_i_1_1_menu_principale_1_1_start_menu.html#a988cdb4256f218cd7c1db1c095c4af74',1,'KingOfPirates::GUI::MenuPrincipale::StartMenu']]],
-  ['startmenu_5fformclosing_1122',['StartMenu_FormClosing',['../db/da2/class_king_of_pirates_1_1_g_u_i_1_1_menu_principale_1_1_start_menu.html#a35b2b7f683e59acea8b63ea920797926',1,'KingOfPirates::GUI::MenuPrincipale::StartMenu']]],
-  ['startmissione_1123',['StartMissione',['../d5/dfd/class_king_of_pirates_1_1_missioni_1_1_missione.html#ac09c3f8a10a59fad322802e27b324ada',1,'KingOfPirates::Missioni::Missione']]],
-  ['stats_1124',['Stats',['../de/dca/class_king_of_pirates_1_1_missioni_1_1_roba_1_1_stats.html#a04888d1d4d29f57a3c9b822fffaa3e71',1,'KingOfPirates.Missioni.Roba.Stats.Stats(int hp, int hpMax, int pa, int paMax, int minHit, int maxHit)'],['../de/dca/class_king_of_pirates_1_1_missioni_1_1_roba_1_1_stats.html#a63be3cfb122e53f8222af8fd9e055385',1,'KingOfPirates.Missioni.Roba.Stats.Stats()']]]
+  ['tostring_631',['ToString',['../dd/db5/class_king_of_pirates_1_1_missioni_1_1_roba_1_1_loc2_d.html#ab2fd17159959ddfd736a5bfe2347010c',1,'KingOfPirates::Missioni::Roba::Loc2D']]],
+  ['turnonemico_632',['TurnoNemico',['../d5/dfd/class_king_of_pirates_1_1_missioni_1_1_missione.html#a09c59517e769824794752b3ca4b1c851',1,'KingOfPirates::Missioni::Missione']]]
 ];

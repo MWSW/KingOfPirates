@@ -38,8 +38,8 @@ var NAVTREE =
       [ "Gerarchia delle classi", "hierarchy.html", "hierarchy" ],
       [ "Membri dei composti", "functions.html", [
         [ "Tutto", "functions.html", "functions_dup" ],
-        [ "Funzioni", "functions_func.html", "functions_func" ],
-        [ "Variabili", "functions_vars.html", "functions_vars" ],
+        [ "Funzioni", "functions_func.html", null ],
+        [ "Variabili", "functions_vars.html", null ],
         [ "Proprietà", "functions_prop.html", null ]
       ] ]
     ] ],
@@ -52,10 +52,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"d6/d4b/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_carte_1_1_carte_effetto_1_1_carta_debuff.html",
-"db/d60/class_king_of_pirates_1_1_g_u_i_1_1_menu_nassau_1_1_negozio__form.html#a66caba66f562ddb708bb39edf7ee1401",
-"de/d8c/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_opponenti_1_1_giocatore__carte__base.html#a32ca7c57943689be3200628d08a44dfe",
-"functions_vars_r.html"
+"d8/dd3/_enumerazioni_8cs.html#ae84745bbd5df5a83802ef0424ef5f974",
+"dir_a9e202e2024bd2b2b812053957b587c9.html"
 ];
 
 var SYNCONMSG = 'cliccare per disabilitare la sincronizzazione del pannello';

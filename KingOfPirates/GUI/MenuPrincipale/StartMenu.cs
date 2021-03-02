@@ -17,6 +17,9 @@ namespace KingOfPirates.GUI.MenuPrincipale
     public partial class StartMenu : Form
     {
         private MenuNassau.Nassau_form NassauForm { get; set; }
+        /// <summary>
+        /// Inizializza il form di Nassau
+        /// </summary>
         public StartMenu()
         {
             InitializeComponent();

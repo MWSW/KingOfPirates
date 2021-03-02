@@ -1,0 +1,5 @@
+<map id="KingOfPirates.Missioni.Navi.Nemici.Generici.Caravella" name="KingOfPirates.Missioni.Navi.Nemici.Generici.Caravella">
+<area shape="rect" id="node1" title="Nave di forza intermedia" alt="" coords="5,155,192,196"/>
+<area shape="rect" id="node2" href="$d8/d5c/class_king_of_pirates_1_1_missioni_1_1_navi_1_1_nave_nemico.html" title="Classe astratta con funzioni e valori per il controllo dei nemici." alt="" coords="51,80,146,107"/>
+<area shape="rect" id="node3" href="$dc/dc9/class_king_of_pirates_1_1_missioni_1_1_navi_1_1_nave.html" title="Contiene tutti i metodi di base per tutte le navi." alt="" coords="73,5,124,32"/>
+</map>

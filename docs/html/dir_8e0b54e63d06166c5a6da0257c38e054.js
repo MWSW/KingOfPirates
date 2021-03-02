@@ -12,6 +12,9 @@ var dir_8e0b54e63d06166c5a6da0257c38e054 =
     [ "Griglia.cs", "dd/d4d/_griglia_8cs.html", [
       [ "Griglia", "d3/d68/class_king_of_pirates_1_1_missioni_1_1_griglia.html", "d3/d68/class_king_of_pirates_1_1_missioni_1_1_griglia" ]
     ] ],
+    [ "ListaMissioni.cs", "d7/d8c/_lista_missioni_8cs.html", [
+      [ "ListaMissioni", "de/d57/class_king_of_pirates_1_1_missioni_1_1_lista_missioni.html", "de/d57/class_king_of_pirates_1_1_missioni_1_1_lista_missioni" ]
+    ] ],
     [ "Missione.cs", "d0/d8d/_missione_8cs.html", [
       [ "Missione", "d5/dfd/class_king_of_pirates_1_1_missioni_1_1_missione.html", "d5/dfd/class_king_of_pirates_1_1_missioni_1_1_missione" ]
     ] ],

@@ -15,28 +15,13 @@ namespace KingOfPirates.Missioni
         private int[,] mat;
         private Loc2D matSize;
 
-        public Griglia(Loc2D matSize, bool randomizzaMatr)
-        {
-            this.matSize = matSize;
-            mat = new int[matSize.X, matSize.Y];
-
-            if (randomizzaMatr) RandMatrice();
-        }
-
+        /// <summary>
+        /// Costruttore che inizializza una matrice in base a quella data
+        /// </summary>
+        /// <param name="mat">Matrice numerica</param>
         public Griglia(int[,] mat)
         {
             this.mat = mat;
-        }
-
-        private void RandMatrice()
-        {
-            for (int i = 0; i < matSize.X; i++)
-            {
-                for (int j = 0; j < matSize.Y; j++)
-                {
-                    mat[i, j] = new Random().Next(3);
-                }
-            }
         }
 
         //Properties/Proprieta'

@@ -1,8 +1,10 @@
 var searchData=
 [
-  ['tagliecaravella_1618',['TaglieCaravella',['../dc/dbc/class_king_of_pirates_1_1_cartina_1_1_gestione_dominio.html#ab2e5dc291a9eb591a2088aecfd643829',1,'KingOfPirates::Cartina::GestioneDominio']]],
-  ['tagliefregata_1619',['TaglieFregata',['../dc/dbc/class_king_of_pirates_1_1_cartina_1_1_gestione_dominio.html#a695547faaeb48f6920e350c68f3c3ffa',1,'KingOfPirates::Cartina::GestioneDominio']]],
-  ['tagliemercantile_1620',['TaglieMercantile',['../dc/dbc/class_king_of_pirates_1_1_cartina_1_1_gestione_dominio.html#aeaf9eaee95c84c00f59622189d21bbf1',1,'KingOfPirates::Cartina::GestioneDominio']]],
-  ['testmissione_1621',['TestMissione',['../d5/d89/class_king_of_pirates_1_1_gioco.html#aa367b9371e9c14f48246e326584cf7e2',1,'KingOfPirates::Gioco']]],
-  ['tipo_1622',['Tipo',['../d1/dcd/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_carte_1_1_carta.html#add6b88aeb6b58f256b91ded62b6d6aa4',1,'KingOfPirates::Missioni::ScontroCarte::Carte::Carta']]]
+  ['sangue_779',['sangue',['../df/d2f/class_king_of_pirates_1_1_properties_1_1_resources.html#a57474c06e136bdcc557ca040d1bae3fd',1,'KingOfPirates::Properties::Resources']]],
+  ['sasso_780',['Sasso',['../df/d2f/class_king_of_pirates_1_1_properties_1_1_resources.html#a29f9766f614e7493a68d739db16dacf0',1,'KingOfPirates::Properties::Resources']]],
+  ['sfondo_5fcarta_781',['sfondo_carta',['../df/d2f/class_king_of_pirates_1_1_properties_1_1_resources.html#a1ae9506ecb1fd57a7dd7e4fb646255b7',1,'KingOfPirates::Properties::Resources']]],
+  ['shop_782',['Shop',['../df/d2f/class_king_of_pirates_1_1_properties_1_1_resources.html#a5f745eb3ff137242b3abd424cbc37d6e',1,'KingOfPirates::Properties::Resources']]],
+  ['shop_5f_783',['Shop_',['../df/d2f/class_king_of_pirates_1_1_properties_1_1_resources.html#af72debaccdb5d65da537094956510dc7',1,'KingOfPirates::Properties::Resources']]],
+  ['spaziovuoto_784',['SpazioVuoto',['../df/d2f/class_king_of_pirates_1_1_properties_1_1_resources.html#aa069af4015bc4d37891ba316e8fc3d5c',1,'KingOfPirates::Properties::Resources']]],
+  ['stats_785',['Stats',['../dc/dc9/class_king_of_pirates_1_1_missioni_1_1_navi_1_1_nave.html#ac5f439b57f0a10e0fcc967a78f910f5e',1,'KingOfPirates::Missioni::Navi::Nave']]]
 ];

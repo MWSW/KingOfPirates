@@ -15,6 +15,9 @@ var dir_f0c602063eb70b353ff095feabf00f79 =
     [ "CartaDebuff.cs", "da/d65/_carta_debuff_8cs.html", [
       [ "CartaDebuff", "d6/d4b/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_carte_1_1_carte_effetto_1_1_carta_debuff.html", "d6/d4b/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_carte_1_1_carte_effetto_1_1_carta_debuff" ]
     ] ],
+    [ "CartaMorto.cs", "d6/d94/_carta_morto_8cs.html", [
+      [ "CartaMorto", "d8/d5c/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_carte_1_1_carte_effetto_1_1_carta_morto.html", "d8/d5c/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_carte_1_1_carte_effetto_1_1_carta_morto" ]
+    ] ],
     [ "CartaResa.cs", "da/d7f/_carta_resa_8cs.html", [
       [ "CartaResa", "d2/d54/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_carte_1_1_carte_effetto_1_1_carta_resa.html", "d2/d54/class_king_of_pirates_1_1_missioni_1_1_scontro_carte_1_1_carte_1_1_carte_effetto_1_1_carta_resa" ]
     ] ],

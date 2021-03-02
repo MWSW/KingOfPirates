@@ -13,6 +13,9 @@ using System.Windows.Forms;
 
 namespace KingOfPirates.Missioni
 {
+    /// <summary>
+    /// Raccolta di missioni prefatte
+    /// </summary>
     abstract class ListaMissioni
     {
         private static Missione Missione1()
@@ -156,6 +159,11 @@ namespace KingOfPirates.Missioni
             return new Missione(griglia, 5, testNemici);
         }
 
+        /// <summary>
+        /// Getter per ottenere una missione
+        /// </summary>
+        /// <param name="index">Indice della missione</param>
+        /// <returns>La missione specificata</returns>
         public static Missione GetMissione(int index)
         {
 

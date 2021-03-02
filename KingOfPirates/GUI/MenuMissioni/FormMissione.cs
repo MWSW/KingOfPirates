@@ -13,7 +13,7 @@ using KingOfPirates.Properties;
 namespace KingOfPirates.GUI.MenuMissioni
 {
     /// <summary>
-    ///     Form che rappresenta la griglia grafica della missione, fatto a mano.
+    /// Form che rappresenta la griglia grafica della missione, fatto a mano.
     /// </summary>
     public partial class FormMissione : Form
     {
@@ -21,7 +21,7 @@ namespace KingOfPirates.GUI.MenuMissioni
         internal Image temp;
 
         /// <summary>
-        ///     Costruttore, inizializza i componenti grafici.
+        /// Costruttore, inizializza i componenti grafici.
         /// </summary>
         /// <param name="missione">Per manipolare la missione nel Form.</param>
         public FormMissione(Missione missione)
@@ -42,6 +42,8 @@ namespace KingOfPirates.GUI.MenuMissioni
 
             //mostra nemici a schermo
             foreach (var n in missione.Nemici) Griglia_pictureBox[n.Loc.X, n.Loc.Y].BackgroundImage = n.Immagine;
+
+            UpdateComponenti();
         }
 
         private void Update(Direzione dir)
@@ -78,8 +80,7 @@ namespace KingOfPirates.GUI.MenuMissioni
 
             //controlla vita nemici
             foreach (var n in missione.Nemici)
-                if (n.Nemico_Carte.IsGameOver)
-                    n.Affonda(missione);
+                n.Affonda(missione);// controllo automatico della vita in Affonda
 
             //abbordaggio
             foreach (var n in missione.Nemici)
@@ -89,10 +90,6 @@ namespace KingOfPirates.GUI.MenuMissioni
                     Gioco.Giocatore.Abborda(n);
                 }
 
-            if (missione.Griglia_numerica.Mat[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y] == 1)
-                Scavo_button.Show();
-            else
-                Scavo_button.Hide();
 
             //bandiera (fine missione)
             if (missione.Griglia_numerica.Mat[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y] == 3)
@@ -105,15 +102,74 @@ namespace KingOfPirates.GUI.MenuMissioni
                     if (n.IsGameOver)
                         missione.Ranking.IncNaviAffondate();
 
-                var fineMissione = new FineMissione(missione.Ranking);
-
-                fineMissione.Show();
-                //Gioco.nassauForm.Show();
+                missione.Fine.Show();
                 Hide();
             }
 
             UpdateComponenti();
         }
+
+        internal void UpdateComponenti()
+        {
+            void CercaNemico()
+            {
+                for (int i = -1; i < 2; i++)
+                {
+                    for (int j = -1; j < 2; j++)
+                    {
+                        foreach (var n in missione.Nemici)
+                        {
+                            var tempLoc = new Loc2D(Gioco.Giocatore.Loc.X + i, Gioco.Giocatore.Loc.Y + j);
+                            if (tempLoc.IsEqualTo(n.Loc) && !n.IsGameOver)
+                            {
+                                Attacca_button.Enabled = true;
+                                Attacca_button.Show();
+                                Attacca_button.Text = "Attacca: " + n.Nome + "\nHP: " + n.Stats.Hp + "/" + n.Stats.HpMax;
+                                return;
+                            }
+                            else
+                            {
+                                Attacca_button.Hide();
+                            }
+                        }
+                    }
+                }
+            }
+            if (Gioco.Giocatore.Stats.Pa > 0)// controllo attacco
+            {
+                CercaNemico();
+            }
+            else
+            {
+                Attacca_button.Text = "Attacca:\nNon hai energia";
+                Attacca_button.Enabled = false;
+            }
+
+
+            // Controllo per scavare
+            if (missione.Griglia_numerica.Mat[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y] == 1)
+                Scavo_button.Show();
+            else
+                Scavo_button.Hide();
+
+            //aggiorno il label ubriachezza
+            AntiUbriachezza_label.Text = "AntiUbriachezza rimasti: " + Gioco.Giocatore.Inventario.AntiUbriachezza;
+            Ubriachezza_label.Text =
+                "Ubriachezza: " + Gioco.Giocatore.Ubriachezza + "/" + Gioco.Giocatore.UbriachezzaMax;
+            //aggiorno il label determinazione
+            BevandaDet_label.Text = "Bevande Det Rimaste: " + Gioco.Giocatore.Inventario.BevandaDeterminazione;
+            Determinazione_label.Text = "Determinazione: " + Gioco.Giocatore.Determinazione + "/" +
+                                        Gioco.Giocatore.DeterminazioneMax;
+            //aggiorno label assi legno
+            AssLeg_label.Text = "Assi rimaste: " + Gioco.Giocatore.Inventario.AssiLegno;
+            //aggiorno label rum
+            Rum_label.Text = "Rum rimasto: " + Gioco.Giocatore.Inventario.Rum;
+            //aggiorna energia_label
+            EnergiaNave_label.Text = "Punti azione: " + Gioco.Giocatore.Stats.Pa + "/" + Gioco.Giocatore.Stats.PaMax;
+            // aggiorna label vita
+            VitaNave_label.Text = "Punti Vita: " + Gioco.Giocatore.Stats.Hp + "/" + Gioco.Giocatore.Stats.HpMax;
+        }
+
 
         private void Sopra_button_Click(object sender, EventArgs e)
         {
@@ -247,7 +303,6 @@ namespace KingOfPirates.GUI.MenuMissioni
                     BevandaDet_button.ForeColor = Color.Red;
             }
 
-
             UpdateComponenti();
         }
 
@@ -321,31 +376,30 @@ namespace KingOfPirates.GUI.MenuMissioni
             UpdateComponenti();
         }
 
-        private void UpdateComponenti()
+        private void Attacca_button_Click(object sender, EventArgs e)
         {
-            //aggiorno il label ubriachezza
-            AntiUbriachezza_label.Text = "AntiUbriachezza rimasti: " + Gioco.Giocatore.Inventario.AntiUbriachezza;
-            Ubriachezza_label.Text =
-                "Ubriachezza: " + Gioco.Giocatore.Ubriachezza + "/" + Gioco.Giocatore.UbriachezzaMax;
-            //aggiorno il label determinazione
-            BevandaDet_label.Text = "Bevande Det Rimaste: " + Gioco.Giocatore.Inventario.BevandaDeterminazione;
-            Determinazione_label.Text = "Determinazione: " + Gioco.Giocatore.Determinazione + "/" +
-                                        Gioco.Giocatore.DeterminazioneMax;
-            //aggiorno label assi legno
-            AssLeg_label.Text = "Assi rimaste: " + Gioco.Giocatore.Inventario.AssiLegno;
-            //aggiorno label rum
-            Rum_label.Text = "Rum rimasto: " + Gioco.Giocatore.Inventario.Rum;
-            //aggiorna energia_label
-            EnergiaNave_label.Text = "Punti azione: " + Gioco.Giocatore.Stats.Pa + "/" + Gioco.Giocatore.Stats.PaMax;
-            // aggiorna label vita
-            VitaNave_label.Text = "Punti Vita: " + Gioco.Giocatore.Stats.Hp + "/" + Gioco.Giocatore.Stats.HpMax;
+            for (int i = -1; i < 2; i++)
+            {
+                for (int j = -1; j < 2; j++)
+                {
+                    foreach (var n in missione.Nemici)
+                    {
+                        var pLoc = new Loc2D(Gioco.Giocatore.Loc.X + i, Gioco.Giocatore.Loc.Y + j);
+                        if (pLoc.IsEqualTo(n.Loc) && !n.IsGameOver)
+                        {
+                            Gioco.Giocatore.Attacca(missione, n);
+                            Gioco.Giocatore.Stats.Pa = 0;
+                            return;
+                        }
+                    }
+                }
+            }
         }
 
         private void MenuMissioni_FormClosing(object sender, FormClosingEventArgs e)
         {
             e.Cancel = true;
-            Hide();
-            Gioco.startMenu.Show();
+            MessageBox.Show("Finisci la missione");
         }
 
         private void OnVisibleChanged(object sender, EventArgs e)
