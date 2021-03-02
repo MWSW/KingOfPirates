@@ -30,14 +30,6 @@ namespace KingOfPirates.GUI.MenuMissioni
             this.missione = missione;
         }
 
-        private void OnClick(object sender, EventArgs e)
-        {
-            //torna a Nassau
-            Gioco.nassauForm.Show();
-
-            missione.EndMissione();
-        }
-
         private void FineMissione_FormClosing(object sender, FormClosingEventArgs e)
         {
             OnClick(sender, e);

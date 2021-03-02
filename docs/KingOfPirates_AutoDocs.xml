@@ -4,6 +4,18 @@
         <name>KingOfPirates</name>
     </assembly>
     <members>
+        <member name="T:KingOfPirates.GUI.MenuMissioni.FineMissione">
+            <summary>
+            Classe che mostra al giocatore la sua performance.
+            Gestisce la fine della missione chiamando Missione.EndMissione()
+            </summary>
+        </member>
+        <member name="M:KingOfPirates.GUI.MenuMissioni.FineMissione.#ctor(KingOfPirates.Missioni.Missione)">
+            <summary>
+            Costruttore che accetta la missione per cui mostrare la performance
+            </summary>
+            <param name="missione"></param>
+        </member>
         <member name="F:KingOfPirates.GUI.MenuMissioni.FineMissione.components">
             <summary>
             Required designer variable.
@@ -23,12 +35,12 @@
         </member>
         <member name="T:KingOfPirates.GUI.MenuMissioni.FormMissione">
             <summary>
-                Form che rappresenta la griglia grafica della missione, fatto a mano.
+            Form che rappresenta la griglia grafica della missione, fatto a mano.
             </summary>
         </member>
         <member name="M:KingOfPirates.GUI.MenuMissioni.FormMissione.#ctor(KingOfPirates.Missioni.Missione)">
             <summary>
-                Costruttore, inizializza i componenti grafici.
+            Costruttore, inizializza i componenti grafici.
             </summary>
             <param name="missione">Per manipolare la missione nel Form.</param>
         </member>
@@ -116,6 +128,11 @@
             the contents of this method with the code editor.
             </summary>
         </member>
+        <member name="T:KingOfPirates.GUI.MenuPrincipale.CreditiForm">
+            <summary>
+            Form che mostra i crediti
+            </summary>
+        </member>
         <member name="F:KingOfPirates.GUI.MenuPrincipale.CreditiForm.components">
             <summary>
             Required designer variable.
@@ -138,6 +155,11 @@
             Menu principale dell'app
             </summary>
         </member>
+        <member name="M:KingOfPirates.GUI.MenuPrincipale.StartMenu.#ctor">
+            <summary>
+            Inizializza il form di Nassau
+            </summary>
+        </member>
         <member name="F:KingOfPirates.GUI.MenuPrincipale.StartMenu.components">
             <summary>
             Variabile di progettazione necessaria.
@@ -154,6 +176,17 @@
             Metodo necessario per il supporto della finestra di progettazione. Non modificare
             il contenuto del metodo con l'editor di codice.
             </summary>
+        </member>
+        <member name="T:KingOfPirates.GUI.ScontroCarte.ScontroCarte">
+            <summary>
+            Componente grafica dello scontro a carte.
+            </summary>
+        </member>
+        <member name="M:KingOfPirates.GUI.ScontroCarte.ScontroCarte.#ctor(KingOfPirates.Missioni.ScontroCarte.Opponenti.Nemico_carte)">
+            <summary>
+            Costruttore semplice
+            </summary>
+            <param name="nemico_">Bersaglio con cui iniziare lo scontro.</param>
         </member>
         <member name="F:KingOfPirates.GUI.ScontroCarte.ScontroCarte.components">
             <summary>
@@ -172,10 +205,60 @@
             the contents of this method with the code editor.
             </summary>
         </member>
+        <member name="T:KingOfPirates.Mappa.Cartina">
+            <summary>
+            Classe che rappresenta la cartina delle missioni
+            </summary>
+        </member>
+        <member name="M:KingOfPirates.Mappa.Cartina.#ctor">
+            <summary>
+            Inizializza le collezioni di missioni (Arcipelaghi)
+            </summary>
+        </member>
+        <member name="T:KingOfPirates.Mappa.GestioneDominio">
+            <summary>
+            Gestore delle taglie.
+            </summary>
+        </member>
+        <member name="M:KingOfPirates.Mappa.GestioneDominio.#ctor">
+            <summary>
+            Inizializza tutto a 0.
+            </summary>
+        </member>
+        <member name="T:KingOfPirates.Missioni.Bandiera">
+            <summary>
+            Classe che rappresenta il punto di fine della missione
+            </summary>
+        </member>
+        <member name="M:KingOfPirates.Missioni.Bandiera.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Inizializza la bandiera con le coordinate grafiche.
+            </summary>
+            <param name="coordX">Punto X.</param>
+            <param name="coordY">Punto Y.</param>
+        </member>
         <member name="T:KingOfPirates.Missioni.Griglia">
             <summary>
             Griglia numerica su cui verrà basata la griglia grafica
             </summary>
+        </member>
+        <member name="M:KingOfPirates.Missioni.Griglia.#ctor(System.Int32[0:,0:])">
+            <summary>
+            Costruttore che inizializza una matrice in base a quella data
+            </summary>
+            <param name="mat">Matrice numerica</param>
+        </member>
+        <member name="T:KingOfPirates.Missioni.ListaMissioni">
+            <summary>
+            Raccolta di missioni prefatte
+            </summary>
+        </member>
+        <member name="M:KingOfPirates.Missioni.ListaMissioni.GetMissione(System.Int32)">
+            <summary>
+            Getter per ottenere una missione
+            </summary>
+            <param name="index">Indice della missione</param>
+            <returns>La missione specificata</returns>
         </member>
         <member name="T:KingOfPirates.Missioni.Missione">
             <summary>
@@ -183,15 +266,24 @@
             </summary>
         </member>
         <member name="P:KingOfPirates.Missioni.Missione.Reward">
-            <value> Soldi che vengono dati al giocatore come premio. </value>
+            <value>
+            Soldi che vengono dati al giocatore come premio.
+            </value>
         </member>
         <member name="P:KingOfPirates.Missioni.Missione.Descrizione">
-            <value> Descrizione della missione, viene visualizzata nella scelta missione. </value>
+            <value>
+            Descrizione della missione, viene visualizzata nella scelta missione.
+            </value>
         </member>
         <member name="P:KingOfPirates.Missioni.Missione.Mappa">
             <value>
             Griglia della missione.
             </value>
+        </member>
+        <member name="P:KingOfPirates.Missioni.Missione.Fine">
+            <summary>
+            Form che fa vedere all'utente la sua performance
+            </summary>
         </member>
         <member name="P:KingOfPirates.Missioni.Missione.Nemici">
             <value>
@@ -215,6 +307,23 @@
             <param name="Griglia_numerica">Griglia su cui verra basata la griglia grafica</param>
             <param name="reward">Premio per il raggiungimento della bandiera</param>
             <param name="nemici">Vettore contenente i nemici e le loro info</param>
+        </member>
+        <member name="M:KingOfPirates.Missioni.Missione.TurnoNemico">
+            <summary>
+            Muove i nemici
+            </summary>
+        </member>
+        <member name="M:KingOfPirates.Missioni.Missione.StartMissione">
+            <summary>
+            Inizializzatore missione.
+            Mostra form, inizializza i nemici, posiziona il giocatore
+            </summary>
+        </member>
+        <member name="M:KingOfPirates.Missioni.Missione.EndMissione">
+            <summary>
+            Terminatore missione.
+            Esegue il dispose dei Form e libera le risorse
+            </summary>
         </member>
         <member name="T:KingOfPirates.Missioni.Navi.Nave">
             <summary>
@@ -311,39 +420,94 @@
             Classe astratta con funzioni e valori per il controllo dei nemici.
             </summary>
         </member>
+        <member name="M:KingOfPirates.Missioni.Navi.NaveNemico.#ctor(System.String,System.Drawing.Image,KingOfPirates.Missioni.Roba.Stats,KingOfPirates.Missioni.Roba.Loc2D[],KingOfPirates.Missioni.ScontroCarte.Opponenti.Nemico_carte)">
+            <summary>
+            Costruttore con tutti i parametri.
+            </summary>
+            <param name="nome_">Nome della nave, dato dalle classi ereditate.</param>
+            <param name="immagine_">Immagine della nave, data dalle calssi ereditate.</param>
+            <param name="stats_">Statistiche della nave, vita, punti azione etc.</param>
+            <param name="patrol">Percorso della nave nella missione.</param>
+            <param name="nemico_Carte">Carte per lo scontro a carte.</param>
+        </member>
         <member name="M:KingOfPirates.Missioni.Navi.NaveNemico.Movimento(KingOfPirates.Missioni.Missione,KingOfPirates.Missioni.Roba.Direzione)">
             <summary>
-            Movimento specifico per i nemici secondo un percorso predefinito
+            Movimento specifico per i nemici secondo un percorso predefinito.
             </summary>
             <param name="missione">Missione in cui effetuare il movimento.</param>
-            <param name="direzione">Direzione in cui effetuare il movimento</param>
+            <param name="direzione">Direzione in cui effetuare il movimento.</param>
         </member>
         <member name="M:KingOfPirates.Missioni.Navi.NaveNemico.Attacca(KingOfPirates.Missioni.Missione,KingOfPirates.Missioni.Navi.Nave)">
             <summary>
             Attacca la nave specificata nella missione specificata.
             </summary>
             <param name="nave">Nave da attaccare.</param>
-            <param name="missione">Missione in cui attaccare</param>
+            <param name="missione">Missione in cui attaccare.</param>
+            <returns>true se la nave ha attaccato, false se non ha attaccato.</returns>
+        </member>
+        <member name="M:KingOfPirates.Missioni.Navi.NaveNemico.Affonda(KingOfPirates.Missioni.Missione)">
+            <summary>
+            Quando la nave non ha più vita viene alzata una flag che indica la sua morte
+            </summary>
+            <param name="missione">Missione in cui effetuare il controllo</param>
         </member>
         <member name="T:KingOfPirates.Missioni.Navi.Nemici.Generici.Caravella">
             <summary>
             Nave di forza intermedia
             </summary>
         </member>
+        <member name="M:KingOfPirates.Missioni.Navi.Nemici.Generici.Caravella.#ctor(KingOfPirates.Missioni.Roba.Stats,KingOfPirates.Missioni.Roba.Loc2D[],KingOfPirates.Missioni.ScontroCarte.Opponenti.Nemico_carte)">
+            <summary>
+            Inizializza con nome e immagine della nave caravella
+            </summary>
+            <param name="stats"></param>
+            <param name="patrol"></param>
+            <param name="nemico_carte"></param>
+        </member>
         <member name="T:KingOfPirates.Missioni.Navi.Nemici.Generici.Fregata">
             <summary>
             Nave più forte
             </summary>
+        </member>
+        <member name="M:KingOfPirates.Missioni.Navi.Nemici.Generici.Fregata.#ctor(KingOfPirates.Missioni.Roba.Stats,KingOfPirates.Missioni.Roba.Loc2D[],KingOfPirates.Missioni.ScontroCarte.Opponenti.Nemico_carte)">
+            <summary>
+            Inizializza con nome e immagine della nave fregata
+            </summary>
+            <param name="stats"></param>
+            <param name="patrol"></param>
+            <param name="nemico_carte"></param>
         </member>
         <member name="T:KingOfPirates.Missioni.Navi.Nemici.Generici.Mercantile">
             <summary>
             Nave più debole
             </summary>
         </member>
+        <member name="M:KingOfPirates.Missioni.Navi.Nemici.Generici.Mercantile.#ctor(KingOfPirates.Missioni.Roba.Stats,KingOfPirates.Missioni.Roba.Loc2D[],KingOfPirates.Missioni.ScontroCarte.Opponenti.Nemico_carte)">
+            <summary>
+            Inizializza con nome e immagine della nave mercantile
+            </summary>
+            <param name="stats"></param>
+            <param name="patrol"></param>
+            <param name="nemico_carte"></param>
+        </member>
         <member name="T:KingOfPirates.Missioni.Navi.Opponenti.Inventario">
             <summary>
-            Contiene i consumabili del giocatore, usabili i missione
+            Contiene i consumabili del giocatore, usabili in missione.
             </summary>
+        </member>
+        <member name="M:KingOfPirates.Missioni.Navi.Opponenti.Inventario.#ctor">
+            <summary>
+            Inizializza tutto a 0.
+            </summary>
+        </member>
+        <member name="M:KingOfPirates.Missioni.Navi.Opponenti.Inventario.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Iniizializza tutto con i parametri specificati.
+            </summary>
+            <param name="bevandaDeterminazione"></param>
+            <param name="rum"></param>
+            <param name="antiUbriachezza"></param>
+            <param name="assiLegno"></param>
         </member>
         <member name="T:KingOfPirates.Missioni.Roba.Direzione">
             <summary>
@@ -374,7 +538,7 @@
         </member>
         <member name="M:KingOfPirates.Missioni.Roba.Loc2D.#ctor">
             <summary>
-            Costruttore con nessun parametro
+            Costruttore con nessun parametro. inizializza tutto a 1
             </summary>
         </member>
         <member name="M:KingOfPirates.Missioni.Roba.Loc2D.ToString">
@@ -384,6 +548,13 @@
             <returns>
             Stringa che restituisce le Coordinate
             </returns>
+        </member>
+        <member name="M:KingOfPirates.Missioni.Roba.Loc2D.IsEqualTo(KingOfPirates.Missioni.Roba.Loc2D)">
+            <summary>
+            Comapara la locazione con un'altra
+            </summary>
+            <param name="loc">Coordinate da comparare</param>
+            <returns>Se la locazione data è uguale o no a quella corrente</returns>
         </member>
         <member name="T:KingOfPirates.Missioni.Roba.Stats">
             <summary>
@@ -404,6 +575,36 @@
         <member name="M:KingOfPirates.Missioni.Roba.Stats.#ctor">
             <summary>
             Inizializza le Stats per navi con nessun parametro
+            </summary>
+        </member>
+        <member name="T:KingOfPirates.Missioni.Ranking">
+            <summary>
+            Contatore della performance del giocatore
+            </summary>
+        </member>
+        <member name="M:KingOfPirates.Missioni.Ranking.#ctor">
+            <summary>
+            Inizializza tutto a zero
+            </summary>
+        </member>
+        <member name="M:KingOfPirates.Missioni.Ranking.IncTurni">
+            <summary>
+            Incrementa turni fatti
+            </summary>
+        </member>
+        <member name="M:KingOfPirates.Missioni.Ranking.IncGameOver">
+            <summary>
+            Incrementa morti
+            </summary>
+        </member>
+        <member name="M:KingOfPirates.Missioni.Ranking.IncRubini">
+            <summary>
+            Incrementa rubini trovato
+            </summary>
+        </member>
+        <member name="M:KingOfPirates.Missioni.Ranking.IncNaviAffondate">
+            <summary>
+            Incrementa navi sconfitte
             </summary>
         </member>
         <member name="T:KingOfPirates.Program">
