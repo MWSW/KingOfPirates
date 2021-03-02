@@ -91,6 +91,7 @@ namespace KingOfPirates.GUI.MenuNassau
             this.Porto_Salpa2_Button = new System.Windows.Forms.Button();
             this.Porto_MissioniBack_Button = new System.Windows.Forms.Button();
             this.Porto_Back_Button = new System.Windows.Forms.Button();
+            this.Avviso_label = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Porto_Selected19_PB)).BeginInit();
             this.Porto_Missioni_Panel.SuspendLayout();
             this.Porto_SelezioneCarte_Panel.SuspendLayout();
@@ -263,6 +264,7 @@ namespace KingOfPirates.GUI.MenuNassau
             // 
             this.Porto_SelezioneCarte_Panel.BackgroundImage = global::KingOfPirates.Properties.Resources.SpazioVuoto;
             this.Porto_SelezioneCarte_Panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Porto_SelezioneCarte_Panel.Controls.Add(this.Avviso_label);
             this.Porto_SelezioneCarte_Panel.Controls.Add(this.Porto_SelCarNum_Label);
             this.Porto_SelezioneCarte_Panel.Controls.Add(this.flowLayoutPanel1);
             this.Porto_SelezioneCarte_Panel.Controls.Add(this.Porto_SelCarTitle_Label);
@@ -870,6 +872,16 @@ namespace KingOfPirates.GUI.MenuNassau
             this.Porto_Back_Button.UseVisualStyleBackColor = true;
             this.Porto_Back_Button.Click += new System.EventHandler(this.Porto_Back_Button_Click);
             // 
+            // Avviso_label
+            // 
+            this.Avviso_label.AutoSize = true;
+            this.Avviso_label.Font = new System.Drawing.Font("Papyrus", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Avviso_label.Location = new System.Drawing.Point(1337, 687);
+            this.Avviso_label.Name = "Avviso_label";
+            this.Avviso_label.Size = new System.Drawing.Size(245, 60);
+            this.Avviso_label.TabIndex = 19;
+            this.Avviso_label.Text = "(min. 5 carte)";
+            // 
             // Porto_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -892,6 +904,7 @@ namespace KingOfPirates.GUI.MenuNassau
             ((System.ComponentModel.ISupportInitialize)(this.Porto_Selected19_PB)).EndInit();
             this.Porto_Missioni_Panel.ResumeLayout(false);
             this.Porto_SelezioneCarte_Panel.ResumeLayout(false);
+            this.Porto_SelezioneCarte_Panel.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.Locanda_Carta1_Panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Porto_Selected1_PB)).EndInit();
@@ -1000,5 +1013,6 @@ namespace KingOfPirates.GUI.MenuNassau
         private System.Windows.Forms.PictureBox Porto_Selected18_PB;
         private System.Windows.Forms.PictureBox Porto_Selected20_PB;
         private System.Windows.Forms.PictureBox Porto_Selected19_PB;
+        private System.Windows.Forms.Label Avviso_label;
     }
 }
