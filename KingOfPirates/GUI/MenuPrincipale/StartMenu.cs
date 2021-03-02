@@ -51,7 +51,8 @@ namespace KingOfPirates.GUI.MenuPrincipale
 
         private void Start_button_Click(object sender, EventArgs e)
         {
-            NassauForm.Show();
+            Gioco.nassauForm.Show();
+            this.Hide();
         }
 
         private void Crediti_button_Click(object sender, EventArgs e)
