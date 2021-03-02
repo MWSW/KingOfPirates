@@ -208,6 +208,49 @@ namespace KingOfPirates.GUI.MenuMissioni
 
             missione.TurnoNemico();
 
+            //GameOver
+            if (Gioco.Giocatore.Stats.Hp <= 0)
+            {
+                missione.Ranking.IncGameOver(); //viene contato come gameover
+
+                MessageBox.Show("Sei morto! Riparti dall'ultimo check-point.");
+
+                //cambia vecchia posizione
+                switch (missione.Griglia_numerica.Mat[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y])
+                {
+                    case 0:
+                        Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = Resources.mare;
+                        break;
+                    case 1:
+                        Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = Resources.isola1;
+                        break;
+                    case -1:
+                        Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage = Resources.cross;
+                        break;
+                }
+
+                Gioco.Giocatore.Restart();
+
+                //nuova posizione
+                Griglia_pictureBox[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y].BackgroundImage =
+                       Resources.nave_pirata;
+
+                //nuovo temp
+                switch (missione.Griglia_numerica.Mat[Gioco.Giocatore.Loc.X, Gioco.Giocatore.Loc.Y])
+                {
+                    case 0:
+                        missione.Mappa.temp = Resources.mare;
+                        break;
+                    case 1:
+                        missione.Mappa.temp = Resources.isola1;
+                        break;
+                    case -1:
+                        missione.Mappa.temp = Resources.cross;
+                        break;
+                }
+
+            }
+
             UpdateComponenti();
 
             //VitaNave_label.ForeColor = Color.Red;
@@ -400,13 +443,32 @@ namespace KingOfPirates.GUI.MenuMissioni
                             {
                                 Attacca_button.Hide();
                             }
-                            return;
+                            //return;
+                            break;
                         }
                     }
                 }
             }
 
             UpdateComponenti();
+
+            //modifica colori perchè è finita l'energia
+            EnergiaNave_label.Text =
+            "Punti azione: " + Gioco.Giocatore.Stats.Pa + "/" +
+             Gioco.Giocatore.Stats.PaMax; //aggiorna energia_label
+
+            EnergiaNave_label.ForeColor = Color.Red;
+
+
+            Sopra_button.ForeColor = Color.LightCoral;
+            Sotto_button.ForeColor = Color.LightCoral;
+            Destra_button.ForeColor = Color.LightCoral;
+            Sinistra_button.ForeColor = Color.LightCoral;
+
+            //gli attacchi contano come turni
+            missione.Ranking.IncTurni(); 
+
+
         }
 
         private void MenuMissioni_FormClosing(object sender, FormClosingEventArgs e)

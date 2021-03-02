@@ -175,6 +175,7 @@ namespace KingOfPirates.Missioni.Navi
 
             //riporta vita al massimo
             GiocatoreCarte.AddHp(GiocatoreCarte.MaxHp);
+            Stats.Hp = Stats.HpMax;
 
             //ritorni a giocare
             GiocatoreCarte.IsGameOver = false;
