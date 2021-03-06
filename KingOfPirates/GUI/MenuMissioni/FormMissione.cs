@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
+using System.Threading;
+using System.Threading.Tasks;
 using KingOfPirates.Missioni;
 using KingOfPirates.Missioni.Roba;
 using KingOfPirates.Properties;
@@ -19,6 +21,7 @@ namespace KingOfPirates.GUI.MenuMissioni
     {
         internal Missione missione;
         internal Image temp;
+        private Task updateTask;
 
         /// <summary>
         /// Costruttore, inizializza i componenti grafici.
@@ -43,7 +46,8 @@ namespace KingOfPirates.GUI.MenuMissioni
             //mostra nemici a schermo
             foreach (var n in missione.Nemici) Griglia_pictureBox[n.Loc.X, n.Loc.Y].BackgroundImage = n.Immagine;
 
-            UpdateComponenti();
+            updateTask = new Task(UpdateComponenti);
+            updateTask.Start();
         }
 
         private void Update(Direzione dir)
@@ -105,8 +109,6 @@ namespace KingOfPirates.GUI.MenuMissioni
                 missione.Fine.Show();
                 Hide();
             }
-
-            UpdateComponenti();
         }
 
         internal void UpdateComponenti()
@@ -169,6 +171,7 @@ namespace KingOfPirates.GUI.MenuMissioni
             EnergiaNave_label.Text = "Punti azione: " + Gioco.Giocatore.Stats.Pa + "/" + Gioco.Giocatore.Stats.PaMax;
             // aggiorna label vita
             VitaNave_label.Text = "Punti Vita: " + Gioco.Giocatore.Stats.Hp + "/" + Gioco.Giocatore.Stats.HpMax;
+            Thread.Sleep(100);
         }
 
 
